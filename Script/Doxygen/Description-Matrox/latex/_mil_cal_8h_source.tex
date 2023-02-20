@@ -1,0 +1,30 @@
+\hypertarget{_mil_cal_8h_source}{}\doxysection{Mil\+Cal.\+h}
+\label{_mil_cal_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilCal.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilCal.h}}
+\mbox{\hyperlink{_mil_cal_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_class_8h}{MilClass.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define CAL\_FILE \_T("{}CAL.SET"{}})}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define WHITE\_FILE \_T("{}White"{}})}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define DARK\_FILE \_T("{}Dark.tif"{}})}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_cal}{CMilCal}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \mbox{\hyperlink{class_c_mil_cal}{CMilCal}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_c_mil_cal}{\string~CMilCal}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{17         MIL\_ID \mbox{\hyperlink{class_c_mil_cal_a96e0679ff13e244c48ca127a24c963cd}{m\_milIDCal}};}
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} TeachCalParam(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pCalImage, \textcolor{keywordtype}{int} RowCount, \textcolor{keywordtype}{int} ColCount);}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} SaveCalData(CString strFileName);}
+\DoxyCodeLine{20         \textcolor{keywordtype}{int} RestoreCalData(CString strFileName);}
+\DoxyCodeLine{21         \textcolor{keywordtype}{int} TransformImage(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pImageDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pImageSrc);}
+\DoxyCodeLine{22         \textcolor{keywordtype}{int} Alloc(MIL\_ID * pMilIDCal);}
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} Alloc(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} Free(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} Associate(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pImage);}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} TransformCoordinate(\textcolor{keywordtype}{double} posX, \textcolor{keywordtype}{double} PosY, \textcolor{keywordtype}{double} *pGetPosX, \textcolor{keywordtype}{double} *pGetPosY, \textcolor{keywordtype}{int} Dir = M\_PIXEL\_TO\_WORLD);}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} Grid(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pImage, \textcolor{keywordtype}{double} OffsetX, \textcolor{keywordtype}{double} OffsetY, \textcolor{keywordtype}{double} OffsetZ, \textcolor{keywordtype}{int} RowCount, \textcolor{keywordtype}{int} ColumnCount, \textcolor{keywordtype}{double} RowSpacing, \textcolor{keywordtype}{double} ColumnSpacing, \textcolor{keywordtype}{int} OperateMode = M\_DEFAULT, \textcolor{keywordtype}{int} GridType = M\_CIRCLE\_GRID);}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} Inquire(MIL\_ID * pRetValue, \textcolor{keywordtype}{int} InquireType = M\_CALIBRATION\_STATUS + M\_TYPE\_MIL\_INT);}
+\DoxyCodeLine{29 \};}
+
+\end{DoxyCode}

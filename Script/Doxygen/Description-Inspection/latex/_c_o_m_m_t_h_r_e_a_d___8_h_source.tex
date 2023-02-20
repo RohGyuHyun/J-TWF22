@@ -1,0 +1,74 @@
+\hypertarget{_c_o_m_m_t_h_r_e_a_d___8_h_source}{}\doxysection{COMMTHREAD\+\_\+.\+H}
+\label{_c_o_m_m_t_h_r_e_a_d___8_h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/COMMTHREAD\_.H@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/COMMTHREAD\_.H}}
+\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d___8_h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define WM\_COMM\_READ (WM\_USER +4)}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define BUFF\_SIZE                       4192}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define CS\_REGKEY\_SETTINGS              \_T("{}통신환경"{}})}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define CS\_REGENTRY\_PORT                \_T("{}PORT"{}})}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define CS\_REGENTRY\_BAUD                \_T("{}BAUD"{}})}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define CS\_REGENTRY\_PARITY              \_T("{}PARITY"{}})}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define CS\_REGENTRY\_DATABITS    \_T("{}DATABITS"{}})}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define CS\_REGENTRY\_STOPBITS    \_T("{}STOPBITS"{}})}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define CS\_REGENTRY\_FLOW                \_T("{}FLOW"{}})}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{//      통신 클래스  CCommThread }}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// 포트에서 읽기 :}}
+\DoxyCodeLine{18 \textcolor{comment}{//   포트를 연 후에 포트에 자료가 도착하면 WM\_COMM\_READ 메시지가 메인 }}
+\DoxyCodeLine{19 \textcolor{comment}{//   윈도우에 전달된다. ON\_MESSAGE 매크로를 이용, 함수를 연결하고}}
+\DoxyCodeLine{20 \textcolor{comment}{//   m\_ReadData String에 저장된 데이터를 이용 읽기}}
+\DoxyCodeLine{21 \textcolor{comment}{// 포트에 쓰기 : WriteComm(buff, 30)과 같이 버퍼와 그 크기를 건네면 된다.}}
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_queue}{CQueue}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         BYTE \mbox{\hyperlink{class_c_queue_aa9916e774ec0fc3825652ac2c218c448}{buff}}[\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d___8_h_a6c7cd32e1bac137f05e4a752b4ad10af}{BUFF\_SIZE}}];\textcolor{comment}{//큐 버퍼 사이즈는 4192로 만듬 }}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_queue_aa5935d8acdc466f9634df47dbf038341}{m\_iHead}}, \mbox{\hyperlink{class_c_queue_ad6dd8ea4833fadf3109584f68057df8c}{m\_iTail}};\textcolor{comment}{//큐 버퍼에 데이터를 넣고 빼 올때 사용할 변수 }}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_c_queue_a3956eb9fd198317e465b7b622329bec6}{CQueue}}();}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_queue_a730e67c5abf97615bd8e9b3b03dd18c8}{Clear}}();\textcolor{comment}{//버퍼를 초기화 시킴}}
+\DoxyCodeLine{29         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_queue_a517fbc3c681ff9ce7a42dca174731d9b}{GetSize}}();\textcolor{comment}{//현재 버퍼에 들어있는 데이터의 size를 리턴}}
+\DoxyCodeLine{30         BOOL \mbox{\hyperlink{class_c_queue_a99a268a752a5a58456afc9bdc3fd240d}{PutByte}}(BYTE b);\textcolor{comment}{//큐버퍼에 1바이트를 넣음}}
+\DoxyCodeLine{31         BOOL \mbox{\hyperlink{class_c_queue_aa3b2c729e80e95df243fa2710889e585}{GetByte}}(BYTE *pb);\textcolor{comment}{//큐버퍼에서 1바이트를 빼 옴}}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{class   }\mbox{\hyperlink{class_c_comm_thread}{CCommThread}}}
+\DoxyCodeLine{35 \{}
+\DoxyCodeLine{36 \textcolor{keyword}{public}:}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \mbox{\hyperlink{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}{CCommThread}}();}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_c_comm_thread_a175f06af3d0a3f073a94e91f52a17324}{\string~CCommThread}}();}
+\DoxyCodeLine{40         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/ 환경 변수 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{41         BOOL        \mbox{\hyperlink{class_c_comm_thread_a1df3c4c0ed8275b7e757316a59940a9e}{check}};}
+\DoxyCodeLine{42         HANDLE          \mbox{\hyperlink{class_c_comm_thread_a412902ea23286e13d53a17379c9106a8}{m\_hComm}};                         \textcolor{comment}{// 통신 포트 파일 핸들}}
+\DoxyCodeLine{43         CString         \mbox{\hyperlink{class_c_comm_thread_aec33895ba6966ff3a918a597bd56a885}{m\_sPortName}};                 \textcolor{comment}{// 포트 이름 (COM1 ..)}}
+\DoxyCodeLine{44         BOOL            \mbox{\hyperlink{class_c_comm_thread_a86abbbb79dc299c627681773bee019c1}{m\_bConnected}};                       \textcolor{comment}{// 포트가 열렸는지 유무를 나타냄.}}
+\DoxyCodeLine{45         OVERLAPPED      \mbox{\hyperlink{class_c_comm_thread_ab25b89f57bd3a5c5eae4f618e9b517cb}{m\_osRead}}, \mbox{\hyperlink{class_c_comm_thread_ab8644a389e74bbb1d026248d7fd8d6fc}{m\_osWrite}};   \textcolor{comment}{// 포트 파일 Overlapped structure}}
+\DoxyCodeLine{46         HANDLE          \mbox{\hyperlink{class_c_comm_thread_aa99300bfff43b4b25c5f3402c131e63f}{m\_hThreadWatchComm}};           \textcolor{comment}{// Watch함수 Thread 핸들.}}
+\DoxyCodeLine{47         WORD            \mbox{\hyperlink{class_c_comm_thread_a076210091d635ae75404789343c1f933}{m\_wPortID}};                             \textcolor{comment}{// WM\_COMM\_READ와 함께 보내는 인수.}}
+\DoxyCodeLine{48         \mbox{\hyperlink{class_c_queue}{CQueue}}      \mbox{\hyperlink{class_c_comm_thread_a3fd64f003d0ef2a98100c28c4255a5f8}{m\_QueueRead}};                       \textcolor{comment}{//큐버퍼}}
+\DoxyCodeLine{49         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/ 외부 사용 함수 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{50         BOOL    \mbox{\hyperlink{class_c_comm_thread_a9d193c5a0e09f3f1b0dd9b779f41f746}{OpenPort}}(CString strPortName, }
+\DoxyCodeLine{51                                            DWORD dwBaud, BYTE byData = 8, BYTE byStop = 1, BYTE byParity = 0 );\textcolor{comment}{//포트 열기 }}
+\DoxyCodeLine{52         \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}{ClosePort}}();                           \textcolor{comment}{//포트 닫기}}
+\DoxyCodeLine{53         DWORD   \mbox{\hyperlink{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}{WriteComm}}(BYTE *pBuff, DWORD nToWrite);\textcolor{comment}{//포트에 데이터 쓰기}}
+\DoxyCodeLine{54         BOOL    \mbox{\hyperlink{class_c_comm_thread_a46d4c3c662b4abcf7db1a7a554c49520}{WriteCommBlock}}(LPSTR lpByte , DWORD nToWrite);    \textcolor{comment}{//포트에 데이터 쓰기}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/ 내부 사용 함수 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{57         DWORD   \mbox{\hyperlink{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}{ReadComm}}(BYTE *pBuff, DWORD nToRead);   \textcolor{comment}{//포트에서 데이터 읽어오기 (데이터개수)}}
+\DoxyCodeLine{58         CString \mbox{\hyperlink{class_c_comm_thread_a99115b88104c35215f4a8af04c9c8cdb}{GetReturn}}(BYTE *pBuff, DWORD nToRead); \textcolor{comment}{//포트에서 데이터 가져오기 (데이터 값)}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         \textcolor{keyword}{typedef} void(*\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\_FUNCTION\_Event}})(BYTE*, int);}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\_FUNCTION\_Event}} \mbox{\hyperlink{class_c_comm_thread_a157f5fdb594e880f177af977e5d6defa}{callEventfunc}};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}{SetCallBack}}(\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\_FUNCTION\_Event}} event) \{ \mbox{\hyperlink{class_c_comm_thread_a157f5fdb594e880f177af977e5d6defa}{callEventfunc}} = event; \};}
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{comment}{// Thread로 사용할 함수 }}
+\DoxyCodeLine{67 DWORD   \mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d___8_h_aefcabd1e9e4ddbb2015a14ee665e8100}{ThreadWatchComm}}(\mbox{\hyperlink{class_c_comm_thread}{CCommThread}}* pComm);}
+\DoxyCodeLine{68 }
+
+\end{DoxyCode}

@@ -1,0 +1,110 @@
+\hypertarget{_dialog_rect_8h_source}{}\doxysection{Dialog\+Rect.\+h}
+\label{_dialog_rect_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/DialogRect.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/DialogRect.h}}
+\mbox{\hyperlink{_dialog_rect_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_inspection_8h}{Inspection.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{___ctrl_tracker_8h}{\_CtrlTracker.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define         TRACKER\_MAX\_NUM                         10}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define         USER\_MSG\_IMG\_RECT                       WM\_USER+100}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define DEFAULT\_ZOOM\_RATIO      0.045}\textcolor{comment}{//0.162//0.045}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define MAIN\_ZOOM\_RATIO 1.317}\textcolor{comment}{//0.248}}
+\DoxyCodeLine{11 \textcolor{comment}{// CDialogRect 대화 상자입니다.}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_dialog_rect}{CDialogRect}} : \textcolor{keyword}{public} CDialog}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15         DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_dialog_rect}{CDialogRect}})}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_c_dialog_rect}{CDialogRect}}(CWnd* pParent = NULL);   \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{19         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_dialog_rect_a8b1abb39d247eb29f8c0330ad2c91424}{\string~CDialogRect}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{22         \textcolor{keyword}{enum} \{ \mbox{\hyperlink{class_c_dialog_rect_a04f707f20e0867990168d3ef229e2bc1a1a61e0707c23dd834a38241678b9265d}{IDD}} = \mbox{\hyperlink{resource_8h_a5c9288af10f8fcbe98046812aec7065b}{IDD\_DIALOG\_RECT}} \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25         CList<C\_CtrlTracker, C\_CtrlTracker\&> m\_Tracker;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         HWND m\_MainHwnd;}
+\DoxyCodeLine{28         UINT m\_MessageID;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         BOOL \mbox{\hyperlink{class_c_dialog_rect_a9fdc7cfdc07c0b8935ec74942feb127d}{m\_bDbClickUse}};}
+\DoxyCodeLine{32         BOOL \mbox{\hyperlink{class_c_dialog_rect_ac5ded90ed469d795aace48e36c2ed326}{m\_bActive}};}
+\DoxyCodeLine{33         CRect \mbox{\hyperlink{class_c_dialog_rect_a3578afdb54bb89543ffb4f7eddd620e5}{m\_WinRect}};}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_rect_a415b6dcadab9ff8f9ecea001f2338516}{m\_iActiveIdx}};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_af819fba862614426e868afb378fad3e7}{m\_dZoomRatio}};}
+\DoxyCodeLine{36         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_a7f0a0fadc1f0840d31ae2a9662247280}{m\_dDefaultZoomRatio}};}
+\DoxyCodeLine{37         COLORREF \mbox{\hyperlink{class_c_dialog_rect_a98554ebe506b12f79778689b2b02efcf}{m\_curColor}};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_rect_a71026d7bcf3d40f87221bc20fd3ed587}{m\_iImgWd}};}
+\DoxyCodeLine{40         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_rect_a9a520a9e391d003814b56ec694ffe466}{m\_iImgHt}};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_rect_a54475c8d349e469cefdbd660ae63b730}{m\_iDlgIdx}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_rect_aa68874fd1426c63046589424ffcaceab}{m\_iTrackerNum}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_dialog_rect_a316f6a1c1736e933492084cd34c8c943}{m\_lPanSX}};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_dialog_rect_acf8f165121020ed4c2ae700ad9ea43d6}{m\_lPanSY}};}
+\DoxyCodeLine{48         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_dialog_rect_ad3e7998a609422ca35dd829aadcb1d4e}{m\_lPanEX}};}
+\DoxyCodeLine{49         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_dialog_rect_a4fadd5699623c3858422b391d1be5e09}{m\_lPanEY}};}
+\DoxyCodeLine{50         BOOL \mbox{\hyperlink{class_c_dialog_rect_a8c73eacd97c2666afcdc70fd0e87f972}{m\_bPanDN}};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_af2bcfb06836032b63e894ccd322b0fa4}{m\_dPX}};}
+\DoxyCodeLine{53         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_a928a04d6f4fe1a9a04aa1331987c41a1}{m\_dPY}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_a50742a62ba3603b5083a053dbc11d214}{m\_dZoomRat}};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_a165758f452afc996f507a45cb8a54198}{m\_dZoomRatOld}};}
+\DoxyCodeLine{57         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_a99934dd5c3e8ea5aafe7ef5da21f2f77}{m\_dZoomSX}};}
+\DoxyCodeLine{58         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_abf4936dd32b37f67d9694c2af70d0e7b}{m\_dZoomSY}};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         BOOL \mbox{\hyperlink{class_c_dialog_rect_a51a56b3e326cce86974a96d446cae035}{m\_bMainDlg}};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_rect_a7f430af2de320e2dc716c51cfe1bbb26}{GetEnable}}();}
+\DoxyCodeLine{63         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a21ff67965e9b90f0c802a33ceed532a2}{SetEnable}}(\textcolor{keywordtype}{int} idx, BOOL enable);}
+\DoxyCodeLine{64         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a0501925d994be932d20cbb56604811ab}{SetTrackerNum}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{65         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_ac389066f2741c59e6ddc6212d4c79225}{SetDlgIdx}}(\textcolor{keywordtype}{int} idx);}
+\DoxyCodeLine{66         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_dialog_rect_afeb3dd86bdfc4c5334be2b5dea7cd862}{GetZoom}}();}
+\DoxyCodeLine{67         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a9030c94cc593e8f98bc2729127da1c0c}{SetZoom}}(\textcolor{keywordtype}{double} ratio, \textcolor{keywordtype}{long} img\_wd, \textcolor{keywordtype}{long} img\_ht);}
+\DoxyCodeLine{68         HWND \mbox{\hyperlink{class_c_dialog_rect_a7076f39a43ad3b729cc4d85551f2d816}{GetWinHwnd}}();}
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a4f9b3f529831eaf52cab1e706009c5d3}{GetTracker}}(\textcolor{keywordtype}{int} idx, \textcolor{keywordtype}{double} *left, \textcolor{keywordtype}{double} *top, \textcolor{keywordtype}{double} *right, \textcolor{keywordtype}{double} *bottom);}
+\DoxyCodeLine{70         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a8f9ca89f8bc068005ba82449055a2b21}{SetTracker}}(\textcolor{keywordtype}{int} idx, \textcolor{keywordtype}{double} left, \textcolor{keywordtype}{double} top, \textcolor{keywordtype}{double} right, \textcolor{keywordtype}{double} bottom);}
+\DoxyCodeLine{71         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a1579c6d9c5e3f50e522da11bd49224ce}{SetActiveTracker}}(\textcolor{keywordtype}{int} idx, BOOL active);}
+\DoxyCodeLine{72         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a82a14c11f9576bca529e42da378dbb1d}{ZoomDisplay}}();}
+\DoxyCodeLine{73         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a055ebfb449ee313347dc1b93adf5c597}{ZoomTracker}}(CRect *rect, \textcolor{keywordtype}{double} o\_rat);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \textcolor{comment}{//Image display}}
+\DoxyCodeLine{76         LRESULT \mbox{\hyperlink{class_c_dialog_rect_a56cee1d33c46686cc09704ce64da55e3}{OnImageRectMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{77         BOOL \mbox{\hyperlink{class_c_dialog_rect_aeb60ea7334d1d2de10517005c8f26dcc}{CheckTracker}}(\textcolor{keywordtype}{int} idx, CPoint point);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a3159cbd55b5615dbf04bd8e735de5af6}{SetActiveImageRect}}(BOOL active) \{ \mbox{\hyperlink{class_c_dialog_rect_ac5ded90ed469d795aace48e36c2ed326}{m\_bActive}} = active; \};}
+\DoxyCodeLine{80         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a7abc6204c7efdf828c80b8b04730a16c}{DeleteAll}}();}
+\DoxyCodeLine{81         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a428e5366d4eacf1c9bb00606890c6169}{AddTracker}}(\textcolor{keywordtype}{int} type, CRect rect, COLORREF color, \textcolor{keywordtype}{char}* cap);}
+\DoxyCodeLine{82         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_ace0dbf45dd1555d97176b524d526a033}{SetImageSize}}(\textcolor{keywordtype}{int} nWidth, \textcolor{keywordtype}{int} nHeight) \{ \mbox{\hyperlink{class_c_dialog_rect_ad3e7998a609422ca35dd829aadcb1d4e}{m\_lPanEX}} = nWidth; \mbox{\hyperlink{class_c_dialog_rect_a4fadd5699623c3858422b391d1be5e09}{m\_lPanEY}} = nHeight; \};}
+\DoxyCodeLine{83         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a3b29d30ab01accae8550e8deb2536520}{SetMainMessage}}(HWND mainHwnd, UINT nMessgeID) \{ m\_MainHwnd = mainHwnd; m\_MessageID = nMessgeID; \};}
+\DoxyCodeLine{84         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a5d5e7e6d19560959409f8af9b4090972}{SetRect}}(CRect rect) \{ \mbox{\hyperlink{class_c_dialog_rect_a3578afdb54bb89543ffb4f7eddd620e5}{m\_WinRect}} = rect; \};}
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#ifdef MIL\_USE}}
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} SetPointGrayValueDraw(CMilDisplay* milDisplay, CPoint pPoint, \textcolor{keywordtype}{int} nVal);}
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{88 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{89         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_ac9784da6f35f527d0af674f6a4ab3413}{DoDataExchange}}(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{92 public:}
+\DoxyCodeLine{93         virtual BOOL \mbox{\hyperlink{class_c_dialog_rect_a4acff5457bedcbde12d0e7bf1777949e}{OnInitDialog}}();}
+\DoxyCodeLine{94         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a09299aff66e5df584981b5c8fa545641}{OnMouseMove}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{95         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a9fee6e26d111f0617a510909cbce13d1}{OnLButtonDown}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{96         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_ac3c280d66db90a59f9157aff43439e4a}{OnLButtonUp}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{97         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_aeaa82180c540cb01cc7e6109039d0dc0}{OnLButtonDblClk}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{98         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_aa1489af39af7b56957c786c72973c6ba}{OnTimer}}(UINT\_PTR nIDEvent);}
+\DoxyCodeLine{99         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_aea7a07976938c62bd4111ac2bbecdcaa}{OnPaint}}();}
+\DoxyCodeLine{100         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_ac89435ec4c19732583912e433a8a3de3}{OnContextMenu}}(CWnd* \textcolor{comment}{/*pWnd*/}, CPoint \textcolor{comment}{/*point*/});}
+\DoxyCodeLine{101         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_rect_a84e8aa670f56fc638c4b19df053169bf}{OnShowWindow}}(BOOL bShow, UINT nStatus);}
+\DoxyCodeLine{102         afx\_msg HBRUSH \mbox{\hyperlink{class_c_dialog_rect_aadde12dacd7fd26fc71af0f2328dc9e8}{OnCtlColor}}(CDC* pDC, CWnd* pWnd, UINT nCtlColor);}
+\DoxyCodeLine{103         virtual BOOL \mbox{\hyperlink{class_c_dialog_rect_a1fe3db1f4bd0a8424a391e895c1fb97c}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{104 \};}
+
+\end{DoxyCode}

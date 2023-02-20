@@ -1,0 +1,332 @@
+\hypertarget{class_c_comm_thread}{}\doxysection{CComm\+Thread 클래스 참조}
+\label{class_c_comm_thread}\index{CCommThread@{CCommThread}}
+
+
+{\ttfamily \#include $<$COMMTHREAD.\+H$>$}
+
+
+
+CComm\+Thread에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_c_comm_thread__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}}) (BYTE $\ast$, int)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}}) (BYTE $\ast$, int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_comm_thread_a339b595a32c04f1d612668898c2041d1}{Set\+HWnd}} (HWND h\+Wnd)
+\item 
+void \mbox{\hyperlink{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}{Set\+Call\+Back}} (\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} event)
+\item 
+\mbox{\hyperlink{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}{CComm\+Thread}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_a9d193c5a0e09f3f1b0dd9b779f41f746}{Open\+Port}} (HWND h\+Wnd, CString str\+Port\+Name, DWORD dw\+Baud, WORD w\+Param)
+\item 
+DWORD \mbox{\hyperlink{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}{Write\+Comm}} (BYTE $\ast$p\+Buff, DWORD n\+To\+Write)
+\item 
+DWORD \mbox{\hyperlink{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}{Read\+Comm}} (BYTE $\ast$p\+Buff, DWORD n\+To\+Read)
+\item 
+void \mbox{\hyperlink{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}{Close\+Port}} ()
+\item 
+\mbox{\hyperlink{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}{CComm\+Thread}} ()
+\item 
+\mbox{\hyperlink{class_c_comm_thread_a175f06af3d0a3f073a94e91f52a17324}{$\sim$\+CComm\+Thread}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_a1f346ac30c45c9ea9924c22e42fd4604}{Open\+Port}} (CString str\+Port\+Name, DWORD dw\+Baud, BYTE by\+Data=8, BYTE by\+Stop=1, BYTE by\+Parity=0)
+\item 
+void \mbox{\hyperlink{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}{Close\+Port}} ()
+\item 
+DWORD \mbox{\hyperlink{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}{Write\+Comm}} (BYTE $\ast$p\+Buff, DWORD n\+To\+Write)
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_a46d4c3c662b4abcf7db1a7a554c49520}{Write\+Comm\+Block}} (LPSTR lp\+Byte, DWORD n\+To\+Write)
+\item 
+DWORD \mbox{\hyperlink{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}{Read\+Comm}} (BYTE $\ast$p\+Buff, DWORD n\+To\+Read)
+\item 
+CString \mbox{\hyperlink{class_c_comm_thread_a99115b88104c35215f4a8af04c9c8cdb}{Get\+Return}} (BYTE $\ast$p\+Buff, DWORD n\+To\+Read)
+\item 
+void \mbox{\hyperlink{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}{Set\+Call\+Back}} (\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} event)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} \mbox{\hyperlink{class_c_comm_thread_a157f5fdb594e880f177af977e5d6defa}{call\+Eventfunc}}
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_aa1297046ca0bd9d7d54e9dbb67116124}{m\+\_\+b\+Thread\+End}}
+\item 
+HANDLE \mbox{\hyperlink{class_c_comm_thread_ab91dc30efa440ab77ca925eb173c6e43}{m\+\_\+h\+Read}}
+\item 
+HWND \mbox{\hyperlink{class_c_comm_thread_a936a8e898b10c5b0a59cf42c505427a6}{m\+\_\+h\+Wnd}}
+\item 
+HANDLE \mbox{\hyperlink{class_c_comm_thread_a412902ea23286e13d53a17379c9106a8}{m\+\_\+h\+Comm}}
+\item 
+CString \mbox{\hyperlink{class_c_comm_thread_a1a034f6c1fe67537ceb835b62c1a9fe7}{m\+\_\+str\+Port\+Name}}
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_a2cbb7da65d693033144c8fe8782bbf89}{m\+\_\+b\+Port\+Open}}
+\item 
+OVERLAPPED \mbox{\hyperlink{class_c_comm_thread_ab25b89f57bd3a5c5eae4f618e9b517cb}{m\+\_\+os\+Read}}
+\item 
+OVERLAPPED \mbox{\hyperlink{class_c_comm_thread_ab8644a389e74bbb1d026248d7fd8d6fc}{m\+\_\+os\+Write}}
+\item 
+HANDLE \mbox{\hyperlink{class_c_comm_thread_aa99300bfff43b4b25c5f3402c131e63f}{m\+\_\+h\+Thread\+Watch\+Comm}}
+\item 
+WORD \mbox{\hyperlink{class_c_comm_thread_a076210091d635ae75404789343c1f933}{m\+\_\+w\+Port\+ID}}
+\item 
+\mbox{\hyperlink{class_c_queue}{CQueue}} \mbox{\hyperlink{class_c_comm_thread_a3fd64f003d0ef2a98100c28c4255a5f8}{m\+\_\+\+Queue\+Read}}
+\item 
+string \mbox{\hyperlink{class_c_comm_thread_a323ea932960c1cad9188565b589ba39a}{m\+\_\+str\+Read}}
+\item 
+int \mbox{\hyperlink{class_c_comm_thread_a464d918daed4cf448c0a8692d6daa581}{m\+\_\+int\+In\+Queue}}
+\item 
+int \mbox{\hyperlink{class_c_comm_thread_a351439d0c3a0553f23ce20bc6f9a374d}{m\+\_\+int\+Out\+Queue}}
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_a1df3c4c0ed8275b7e757316a59940a9e}{check}}
+\item 
+CString \mbox{\hyperlink{class_c_comm_thread_aec33895ba6966ff3a918a597bd56a885}{m\+\_\+s\+Port\+Name}}
+\item 
+BOOL \mbox{\hyperlink{class_c_comm_thread_a86abbbb79dc299c627681773bee019c1}{m\+\_\+b\+Connected}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}\label{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}} 
+\index{CCommThread@{CCommThread}!CALLBACK\_FUNCTION\_Event@{CALLBACK\_FUNCTION\_Event}}
+\index{CALLBACK\_FUNCTION\_Event@{CALLBACK\_FUNCTION\_Event}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{CALLBACK\_FUNCTION\_Event}{CALLBACK\_FUNCTION\_Event}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily typedef void($\ast$ CComm\+Thread\+::\+CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event) (BYTE $\ast$, int)}
+
+\mbox{\Hypertarget{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}\label{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}} 
+\index{CCommThread@{CCommThread}!CALLBACK\_FUNCTION\_Event@{CALLBACK\_FUNCTION\_Event}}
+\index{CALLBACK\_FUNCTION\_Event@{CALLBACK\_FUNCTION\_Event}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{CALLBACK\_FUNCTION\_Event}{CALLBACK\_FUNCTION\_Event}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily typedef void($\ast$ CComm\+Thread\+::\+CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event) (BYTE $\ast$, int)}
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}\label{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}} 
+\index{CCommThread@{CCommThread}!CCommThread@{CCommThread}}
+\index{CCommThread@{CCommThread}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{CCommThread()}{CCommThread()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CComm\+Thread\+::\+CComm\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}\label{class_c_comm_thread_a3355c15ab6f80dd13e958f4cae9a9517}} 
+\index{CCommThread@{CCommThread}!CCommThread@{CCommThread}}
+\index{CCommThread@{CCommThread}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{CCommThread()}{CCommThread()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CComm\+Thread\+::\+CComm\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a175f06af3d0a3f073a94e91f52a17324}\label{class_c_comm_thread_a175f06af3d0a3f073a94e91f52a17324}} 
+\index{CCommThread@{CCommThread}!````~CCommThread@{$\sim$CCommThread}}
+\index{````~CCommThread@{$\sim$CCommThread}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCommThread()}{~CCommThread()}}
+{\footnotesize\ttfamily CComm\+Thread\+::$\sim$\+CComm\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}\label{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}} 
+\index{CCommThread@{CCommThread}!ClosePort@{ClosePort}}
+\index{ClosePort@{ClosePort}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{ClosePort()}{ClosePort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CComm\+Thread\+::\+Close\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}\label{class_c_comm_thread_af342bd5eb6308deec441388503f11d9d}} 
+\index{CCommThread@{CCommThread}!ClosePort@{ClosePort}}
+\index{ClosePort@{ClosePort}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{ClosePort()}{ClosePort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CComm\+Thread\+::\+Close\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a99115b88104c35215f4a8af04c9c8cdb}\label{class_c_comm_thread_a99115b88104c35215f4a8af04c9c8cdb}} 
+\index{CCommThread@{CCommThread}!GetReturn@{GetReturn}}
+\index{GetReturn@{GetReturn}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{GetReturn()}{GetReturn()}}
+{\footnotesize\ttfamily CString CComm\+Thread\+::\+Get\+Return (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Buff,  }\item[{DWORD}]{n\+To\+Read }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a1f346ac30c45c9ea9924c22e42fd4604}\label{class_c_comm_thread_a1f346ac30c45c9ea9924c22e42fd4604}} 
+\index{CCommThread@{CCommThread}!OpenPort@{OpenPort}}
+\index{OpenPort@{OpenPort}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{OpenPort()}{OpenPort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::\+Open\+Port (\begin{DoxyParamCaption}\item[{CString}]{str\+Port\+Name,  }\item[{DWORD}]{dw\+Baud,  }\item[{BYTE}]{by\+Data = {\ttfamily 8},  }\item[{BYTE}]{by\+Stop = {\ttfamily 1},  }\item[{BYTE}]{by\+Parity = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a9d193c5a0e09f3f1b0dd9b779f41f746}\label{class_c_comm_thread_a9d193c5a0e09f3f1b0dd9b779f41f746}} 
+\index{CCommThread@{CCommThread}!OpenPort@{OpenPort}}
+\index{OpenPort@{OpenPort}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{OpenPort()}{OpenPort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::\+Open\+Port (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{CString}]{str\+Port\+Name,  }\item[{DWORD}]{dw\+Baud,  }\item[{WORD}]{w\+Param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}\label{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}} 
+\index{CCommThread@{CCommThread}!ReadComm@{ReadComm}}
+\index{ReadComm@{ReadComm}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{ReadComm()}{ReadComm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily DWORD CComm\+Thread\+::\+Read\+Comm (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Buff,  }\item[{DWORD}]{n\+To\+Read }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}\label{class_c_comm_thread_af9e7526e19ab6c7af618864a252781d8}} 
+\index{CCommThread@{CCommThread}!ReadComm@{ReadComm}}
+\index{ReadComm@{ReadComm}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{ReadComm()}{ReadComm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily DWORD CComm\+Thread\+::\+Read\+Comm (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Buff,  }\item[{DWORD}]{n\+To\+Read }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}\label{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}} 
+\index{CCommThread@{CCommThread}!SetCallBack@{SetCallBack}}
+\index{SetCallBack@{SetCallBack}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{SetCallBack()}{SetCallBack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CComm\+Thread\+::\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}\label{class_c_comm_thread_a6bcbb436e0e18cb383da8d3cd53e9db2}} 
+\index{CCommThread@{CCommThread}!SetCallBack@{SetCallBack}}
+\index{SetCallBack@{SetCallBack}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{SetCallBack()}{SetCallBack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CComm\+Thread\+::\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_comm_thread_a339b595a32c04f1d612668898c2041d1}\label{class_c_comm_thread_a339b595a32c04f1d612668898c2041d1}} 
+\index{CCommThread@{CCommThread}!SetHWnd@{SetHWnd}}
+\index{SetHWnd@{SetHWnd}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{SetHWnd()}{SetHWnd()}}
+{\footnotesize\ttfamily void CComm\+Thread\+::\+Set\+HWnd (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}\label{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}} 
+\index{CCommThread@{CCommThread}!WriteComm@{WriteComm}}
+\index{WriteComm@{WriteComm}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{WriteComm()}{WriteComm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily DWORD CComm\+Thread\+::\+Write\+Comm (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Buff,  }\item[{DWORD}]{n\+To\+Write }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}\label{class_c_comm_thread_a17e6f1c93459b1c5721743622d87f636}} 
+\index{CCommThread@{CCommThread}!WriteComm@{WriteComm}}
+\index{WriteComm@{WriteComm}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{WriteComm()}{WriteComm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily DWORD CComm\+Thread\+::\+Write\+Comm (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Buff,  }\item[{DWORD}]{n\+To\+Write }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_comm_thread_a46d4c3c662b4abcf7db1a7a554c49520}\label{class_c_comm_thread_a46d4c3c662b4abcf7db1a7a554c49520}} 
+\index{CCommThread@{CCommThread}!WriteCommBlock@{WriteCommBlock}}
+\index{WriteCommBlock@{WriteCommBlock}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{WriteCommBlock()}{WriteCommBlock()}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::\+Write\+Comm\+Block (\begin{DoxyParamCaption}\item[{LPSTR}]{lp\+Byte,  }\item[{DWORD}]{n\+To\+Write }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_comm_thread_a157f5fdb594e880f177af977e5d6defa}\label{class_c_comm_thread_a157f5fdb594e880f177af977e5d6defa}} 
+\index{CCommThread@{CCommThread}!callEventfunc@{callEventfunc}}
+\index{callEventfunc@{callEventfunc}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{callEventfunc}{callEventfunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_comm_thread_a6dc64c3319abf7b30da6d7658bd3eb17}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} CComm\+Thread\+::call\+Eventfunc}
+
+\mbox{\Hypertarget{class_c_comm_thread_a1df3c4c0ed8275b7e757316a59940a9e}\label{class_c_comm_thread_a1df3c4c0ed8275b7e757316a59940a9e}} 
+\index{CCommThread@{CCommThread}!check@{check}}
+\index{check@{check}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{check}{check}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::check}
+
+\mbox{\Hypertarget{class_c_comm_thread_a86abbbb79dc299c627681773bee019c1}\label{class_c_comm_thread_a86abbbb79dc299c627681773bee019c1}} 
+\index{CCommThread@{CCommThread}!m\_bConnected@{m\_bConnected}}
+\index{m\_bConnected@{m\_bConnected}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_bConnected}{m\_bConnected}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::m\+\_\+b\+Connected}
+
+\mbox{\Hypertarget{class_c_comm_thread_a2cbb7da65d693033144c8fe8782bbf89}\label{class_c_comm_thread_a2cbb7da65d693033144c8fe8782bbf89}} 
+\index{CCommThread@{CCommThread}!m\_bPortOpen@{m\_bPortOpen}}
+\index{m\_bPortOpen@{m\_bPortOpen}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_bPortOpen}{m\_bPortOpen}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::m\+\_\+b\+Port\+Open}
+
+\mbox{\Hypertarget{class_c_comm_thread_aa1297046ca0bd9d7d54e9dbb67116124}\label{class_c_comm_thread_aa1297046ca0bd9d7d54e9dbb67116124}} 
+\index{CCommThread@{CCommThread}!m\_bThreadEnd@{m\_bThreadEnd}}
+\index{m\_bThreadEnd@{m\_bThreadEnd}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_bThreadEnd}{m\_bThreadEnd}}
+{\footnotesize\ttfamily BOOL CComm\+Thread\+::m\+\_\+b\+Thread\+End}
+
+\mbox{\Hypertarget{class_c_comm_thread_a412902ea23286e13d53a17379c9106a8}\label{class_c_comm_thread_a412902ea23286e13d53a17379c9106a8}} 
+\index{CCommThread@{CCommThread}!m\_hComm@{m\_hComm}}
+\index{m\_hComm@{m\_hComm}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_hComm}{m\_hComm}}
+{\footnotesize\ttfamily HANDLE CComm\+Thread\+::m\+\_\+h\+Comm}
+
+\mbox{\Hypertarget{class_c_comm_thread_ab91dc30efa440ab77ca925eb173c6e43}\label{class_c_comm_thread_ab91dc30efa440ab77ca925eb173c6e43}} 
+\index{CCommThread@{CCommThread}!m\_hRead@{m\_hRead}}
+\index{m\_hRead@{m\_hRead}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_hRead}{m\_hRead}}
+{\footnotesize\ttfamily HANDLE CComm\+Thread\+::m\+\_\+h\+Read}
+
+\mbox{\Hypertarget{class_c_comm_thread_aa99300bfff43b4b25c5f3402c131e63f}\label{class_c_comm_thread_aa99300bfff43b4b25c5f3402c131e63f}} 
+\index{CCommThread@{CCommThread}!m\_hThreadWatchComm@{m\_hThreadWatchComm}}
+\index{m\_hThreadWatchComm@{m\_hThreadWatchComm}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_hThreadWatchComm}{m\_hThreadWatchComm}}
+{\footnotesize\ttfamily HANDLE CComm\+Thread\+::m\+\_\+h\+Thread\+Watch\+Comm}
+
+\mbox{\Hypertarget{class_c_comm_thread_a936a8e898b10c5b0a59cf42c505427a6}\label{class_c_comm_thread_a936a8e898b10c5b0a59cf42c505427a6}} 
+\index{CCommThread@{CCommThread}!m\_hWnd@{m\_hWnd}}
+\index{m\_hWnd@{m\_hWnd}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_hWnd}{m\_hWnd}}
+{\footnotesize\ttfamily HWND CComm\+Thread\+::m\+\_\+h\+Wnd}
+
+\mbox{\Hypertarget{class_c_comm_thread_a464d918daed4cf448c0a8692d6daa581}\label{class_c_comm_thread_a464d918daed4cf448c0a8692d6daa581}} 
+\index{CCommThread@{CCommThread}!m\_intInQueue@{m\_intInQueue}}
+\index{m\_intInQueue@{m\_intInQueue}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_intInQueue}{m\_intInQueue}}
+{\footnotesize\ttfamily int CComm\+Thread\+::m\+\_\+int\+In\+Queue}
+
+\mbox{\Hypertarget{class_c_comm_thread_a351439d0c3a0553f23ce20bc6f9a374d}\label{class_c_comm_thread_a351439d0c3a0553f23ce20bc6f9a374d}} 
+\index{CCommThread@{CCommThread}!m\_intOutQueue@{m\_intOutQueue}}
+\index{m\_intOutQueue@{m\_intOutQueue}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_intOutQueue}{m\_intOutQueue}}
+{\footnotesize\ttfamily int CComm\+Thread\+::m\+\_\+int\+Out\+Queue}
+
+\mbox{\Hypertarget{class_c_comm_thread_ab25b89f57bd3a5c5eae4f618e9b517cb}\label{class_c_comm_thread_ab25b89f57bd3a5c5eae4f618e9b517cb}} 
+\index{CCommThread@{CCommThread}!m\_osRead@{m\_osRead}}
+\index{m\_osRead@{m\_osRead}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_osRead}{m\_osRead}}
+{\footnotesize\ttfamily OVERLAPPED CComm\+Thread\+::m\+\_\+os\+Read}
+
+\mbox{\Hypertarget{class_c_comm_thread_ab8644a389e74bbb1d026248d7fd8d6fc}\label{class_c_comm_thread_ab8644a389e74bbb1d026248d7fd8d6fc}} 
+\index{CCommThread@{CCommThread}!m\_osWrite@{m\_osWrite}}
+\index{m\_osWrite@{m\_osWrite}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_osWrite}{m\_osWrite}}
+{\footnotesize\ttfamily OVERLAPPED CComm\+Thread\+::m\+\_\+os\+Write}
+
+\mbox{\Hypertarget{class_c_comm_thread_a3fd64f003d0ef2a98100c28c4255a5f8}\label{class_c_comm_thread_a3fd64f003d0ef2a98100c28c4255a5f8}} 
+\index{CCommThread@{CCommThread}!m\_QueueRead@{m\_QueueRead}}
+\index{m\_QueueRead@{m\_QueueRead}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_QueueRead}{m\_QueueRead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_queue}{CQueue}} CComm\+Thread\+::m\+\_\+\+Queue\+Read}
+
+\mbox{\Hypertarget{class_c_comm_thread_aec33895ba6966ff3a918a597bd56a885}\label{class_c_comm_thread_aec33895ba6966ff3a918a597bd56a885}} 
+\index{CCommThread@{CCommThread}!m\_sPortName@{m\_sPortName}}
+\index{m\_sPortName@{m\_sPortName}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_sPortName}{m\_sPortName}}
+{\footnotesize\ttfamily CString CComm\+Thread\+::m\+\_\+s\+Port\+Name}
+
+\mbox{\Hypertarget{class_c_comm_thread_a1a034f6c1fe67537ceb835b62c1a9fe7}\label{class_c_comm_thread_a1a034f6c1fe67537ceb835b62c1a9fe7}} 
+\index{CCommThread@{CCommThread}!m\_strPortName@{m\_strPortName}}
+\index{m\_strPortName@{m\_strPortName}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_strPortName}{m\_strPortName}}
+{\footnotesize\ttfamily CString CComm\+Thread\+::m\+\_\+str\+Port\+Name}
+
+\mbox{\Hypertarget{class_c_comm_thread_a323ea932960c1cad9188565b589ba39a}\label{class_c_comm_thread_a323ea932960c1cad9188565b589ba39a}} 
+\index{CCommThread@{CCommThread}!m\_strRead@{m\_strRead}}
+\index{m\_strRead@{m\_strRead}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_strRead}{m\_strRead}}
+{\footnotesize\ttfamily string CComm\+Thread\+::m\+\_\+str\+Read}
+
+\mbox{\Hypertarget{class_c_comm_thread_a076210091d635ae75404789343c1f933}\label{class_c_comm_thread_a076210091d635ae75404789343c1f933}} 
+\index{CCommThread@{CCommThread}!m\_wPortID@{m\_wPortID}}
+\index{m\_wPortID@{m\_wPortID}!CCommThread@{CCommThread}}
+\doxysubsubsection{\texorpdfstring{m\_wPortID}{m\_wPortID}}
+{\footnotesize\ttfamily WORD CComm\+Thread\+::m\+\_\+w\+Port\+ID}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d_8_h}{COMMTHREAD.\+H}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d___8_h}{COMMTHREAD\+\_\+.\+H}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d_8_c_p_p}{COMMTHREAD.\+CPP}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d___8_c_p_p}{COMMTHREAD\+\_\+.\+CPP}}\end{DoxyCompactItemize}

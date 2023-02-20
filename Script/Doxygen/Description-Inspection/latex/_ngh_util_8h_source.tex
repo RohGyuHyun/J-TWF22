@@ -1,0 +1,245 @@
+\hypertarget{_ngh_util_8h_source}{}\doxysection{Ngh\+Util.\+h}
+\label{_ngh_util_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/NghUtil.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/NghUtil.h}}
+\mbox{\hyperlink{_ngh_util_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SetupAPI.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <Dbt.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <atlstr.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <deque>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#pragma comment(lib, "{}winmm.lib"{}})}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#pragma comment(lib, "{}SetupApi.lib"{}})}
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define MAX\_VAL                                                                                         255}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define M\_PI                                                                                            3.14159265}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e_ae17ed690c93ab2b4e0fb3a44c3a0e72d}{nYear}};}
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e_a51c94156697e2cf2f4469568eb6b71b6}{nMonth}};}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e_af472923b96cbd1e5c80848d10cd41539}{nDay}};}
+\DoxyCodeLine{20         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e_ab5b3b535d0cac49a2885e2d0f731c86b}{nHour}};}
+\DoxyCodeLine{21         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e_a179ba1cfbca8e941f6ddcd9b55a0b101}{nMinute}};}
+\DoxyCodeLine{22         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e_ac53610915bf915d5d7799dfec3507e0e}{nSec}};}
+\DoxyCodeLine{23 \}\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define SEARCH\_USB\_KEYBOARD                             0}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define SEARCH\_USB\_MOUSE                                        1}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define NOT\_USE\_FUNC}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8cpp_aa87625d6d24e987864417739501654fa}{RandVal}}(\textcolor{keywordtype}{int} nStart, \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a07efaa18bdfba0d31b18cefda823374f}{nEnd}});}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#ifndef NOT\_USE\_FUNC}}
+\DoxyCodeLine{32 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL CompareUSBDevice(HRAWINPUT hRawInput, HANDLE *hKeyHandle, \textcolor{keywordtype}{int} nInputDeviceCnt, CString strSerID);}
+\DoxyCodeLine{33 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL SearchUSBDevice(HRAWINPUT hRawInput, HANDLE *hKeyHandle, \textcolor{keywordtype}{int} *nInputDeviceCnt, \textcolor{keywordtype}{int} nSearchType = \mbox{\hyperlink{_ngh_util_8h_a8a60f8362c81bdade1e142f7810a1a23}{SEARCH\_USB\_KEYBOARD}});}
+\DoxyCodeLine{34 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) CString LoadBarcodeID(CString strPath, \textcolor{keywordtype}{int} nChannel);}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define CREATE\_CLASS(nSys,ptr, Class)   if(nSys == TRUE \&\& ptr == NULL) \(\backslash\)}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{                                                                                \{ ptr = new Class;\}}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define CREATE\_DLG(nSys,ptr, Class, nIDD, pWnd, nShow)  if(nSys == TRUE \&\& ptr == NULL) \(\backslash\)}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{                                                                                                                \{ ptr = new Class; \(\backslash\)}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{                                                                                                                ptr-\/>Create(nIDD, pWnd); \(\backslash\)}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{                                                                                                                ptr-\/>ShowWindow(nShow);\}}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define CREATE\_RECT\_DLG(ptr, Class, nIDD, pWnd, rect, nShow)    if(ptr == NULL) \(\backslash\)}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{                                                                                                                                \{ ptr = new Class; \(\backslash\)}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{                                                                                                                                ptr-\/>Create(nIDD, pWnd); \(\backslash\)}}
+\DoxyCodeLine{47 \textcolor{preprocessor}{                                                                                                                                ptr-\/>MoveWindow(rect); \(\backslash\)}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{                                                                                                                                ptr-\/>ShowWindow(nShow);\}}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define CREATE\_EX\_DLG1(ptr, Class, nShow)                               if(ptr == NULL) \(\backslash\)}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{                                                                                                                \{ ptr = new Class; ptr-\/>ShowWindow(nShow);\}}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define DELETE\_CLASS(ptr)                       if(ptr) \{ delete ptr; ptr = NULL;\}}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define DELETE\_DLG(ptr)                         if(ptr) \{(ptr)-\/>DestroyWindow(); delete (ptr); ptr = NULL;\}}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define DELETE\_ARRAY(ptr)                       if(ptr)   \{ delete [] ptr; ptr = NULL;\}}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#define FILE\_CREATE\_TIME                0}}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define FILE\_ACCESS\_TIME                1}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define FILE\_WRITE\_TIME                 2}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#define LIMITE\_RANGE\_CHECK\_TYPE\_INT                                     0}}
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#define LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE                          1}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{const} CString \mbox{\hyperlink{_ngh_util_8h_a1358f699be13109f71df5ca6b1a55d55}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE}}                  = \_T(\textcolor{stringliteral}{"{}GB"{}});}
+\DoxyCodeLine{65 \textcolor{keyword}{const} CString \mbox{\hyperlink{_ngh_util_8h_a0cc04fba13581d77ffe91b097d7492cd}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE}}                  = \_T(\textcolor{stringliteral}{"{}MB"{}});}
+\DoxyCodeLine{66 \textcolor{keyword}{const} CString \mbox{\hyperlink{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT}}                      = \_T(\textcolor{stringliteral}{"{}PER"{}});}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8cpp_a0c31714250c7efa998e14c00d28a2a1e}{limite}}(\textcolor{keywordtype}{int} nVal);}
+\DoxyCodeLine{69 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_af9bd9071e3cf95589d1892dda03c9999}{FileDelete}}(CString FilePath, CString \mbox{\hyperlink{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}{FileName}});}
+\DoxyCodeLine{70 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_afe9ecc23b2250bb5e4e4cbf9b1c55002}{FileSearch}}(CString FilePath, CString \mbox{\hyperlink{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}{FileName}});}
+\DoxyCodeLine{71 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{void} \mbox{\hyperlink{_ngh_util_8cpp_af2a78d13176e842d06b3678b10df905f}{MakeDirectories}}(CString path);}
+\DoxyCodeLine{72 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{void} \mbox{\hyperlink{_ngh_util_8cpp_a979840c0d04cf50cf95a7d0b161bb087}{DeleteFolderAndFile}}(CString strPath);}
+\DoxyCodeLine{73 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_ae403c27e57bcb858d983d3336cbfaaeb}{CreateDir}}(LPCTSTR lpszDirectory);}
+\DoxyCodeLine{74 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_afaa9126ba1ef824bad213ad0555c8c2b}{FolderSearch}}(CString strFolder);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_a37b7afba445e9ed4aadcb64cb3116cc9}{DegreeToRation}}(\textcolor{keywordtype}{double} deg);}
+\DoxyCodeLine{77 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_a76912f2995137f137c5e69f16eeaa545}{RatianToDegree}}(\textcolor{keywordtype}{double} rad);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{void} \mbox{\hyperlink{_ngh_util_8cpp_aae4f250cbabb6f94bfc2a0505f62a474}{DoEvents}}();}
+\DoxyCodeLine{80 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{void} \mbox{\hyperlink{_ngh_util_8cpp_a4b698d87e4619748df5120d08002f3ee}{Delay}}(\textcolor{keywordtype}{long} ms, BOOL \mbox{\hyperlink{_ngh_util_8h_af1300690de3c6a4e76803e83cbd1af51}{bEvent}} = FALSE);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_a9c490d2cc388be966a5f0ae7e184f46f}{LimiteRangeCheck}}(\textcolor{keywordtype}{double} dMin, \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8h_aa93131b56d4f88dadc070f19a7ba2fd6}{dMax}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8h_abe1f95b200441c080d433a188d65504c}{dAfterVal}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8h_a7b3462627b9aacf7aa09979a39fa72ad}{dBeforVal}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a4d9af100b9f858e1dc3c1b66b018bf9b}{nInputType}} = \mbox{\hyperlink{_ngh_util_8h_af0f66dca78a00fede7c3864d4a30e820}{LIMITE\_RANGE\_CHECK\_TYPE\_INT}}, CString \mbox{\hyperlink{_ngh_util_8h_adfc704156de30042497c228c30dbca21}{strInputLabel}} = NULL);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_af9471c31533d998117492fc73103742f}{DriveUseSearch}}(CString strDriveName);}
+\DoxyCodeLine{85 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_a5c66b727ddf14ed68ea62b4fb39ce33d}{UseDriveFreeSize}}(CString strDriveName = \_T(\textcolor{stringliteral}{"{}D:"{}}), CString \mbox{\hyperlink{_ngh_util_8h_a698aca07fc55167ab7b0a1aeb207e85a}{strSizeType}} = \mbox{\hyperlink{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT}});}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_a68b06f6d314a0bf9738d6a4add771b29}{GetWriteFileTime}}(CString strFilePath, SYSTEMTIME *\mbox{\hyperlink{_ngh_util_8h_a1f9cb1d25414ba95ab7ee6f4a04dcd8c}{returnTime}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a05d4a6327dd04c2ce2d512b558c7e237}{nGetTimeType}} = \mbox{\hyperlink{_ngh_util_8h_a62b68c567fb982c17053e8f79804bde7}{FILE\_WRITE\_TIME}});}
+\DoxyCodeLine{88 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL \mbox{\hyperlink{_ngh_util_8cpp_af7b510a30e440ce5b380af504d6acb38}{FileWriteTimeToBackupFile}}(CString strSrcFilePath, CString \mbox{\hyperlink{_ngh_util_8h_af9877f345f4cd49cab225f4f44395460}{strBackupFilePath}}, CString \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{strFileName}});}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_a4200699fb1ae963a326790601cb90eb4}{GetAvg}}(\textcolor{keywordtype}{double} *dEachRsltArr, \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}{nEachRsltCnt}});}
+\DoxyCodeLine{91 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_a2cd9561d97d1fd2b3b9f9de0e8504340}{GetSTD}}(\textcolor{keywordtype}{double} *dEachRsltArr, \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}{nEachRsltCnt}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a8f380b1c54ce5e92a6bf5b2d5b1dae69}{nOption}} = 0);\textcolor{comment}{//nOption = 1 : 표본의 표준편차 구하기 (STDEV), 0 : 모집단 전체의 표준편차 구하기 (STDEVP)}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{comment}{// 피타고라스 정리 ( 대각의 길이 와 밑변을 가지고 높이 구하기)// x = 대각, y = 밑변}}
+\DoxyCodeLine{94 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_a21bc28a6fefaaaac7924cda57f42fe65}{GetPitaHight}}(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}{y}});\textcolor{comment}{// 피타고라스 정리 ( 대각의 길이 와 밑변을 가지고 높이 구하기)}}
+\DoxyCodeLine{95 \textcolor{comment}{// 피타고라스 정리 ( 높이 와 밑변을 가지고 대각의 길이 구하기)// x = 밑변, y = 높이}}
+\DoxyCodeLine{96 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8cpp_aabde5fefde3ef6dedd20b9303e262e84}{GetPita}}(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} \mbox{\hyperlink{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}{y}});\textcolor{comment}{// 피타고라스 정리 ( 높이 와 밑변을 가지고 대각의 길이 구하기)}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#ifdef OPEN\_CV\_LIB}}
+\DoxyCodeLine{99 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} GetDistance(CvPoint2D32f p1, CvPoint2D32f p2);}
+\DoxyCodeLine{100 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) \textcolor{keywordtype}{double} GetAngle(CvPoint2D32f p1, CvPoint2D32f p2);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL LoadIplImage(IplImage *LoadImage, CString strLoadPath, BOOL isColor = FALSE);}
+\DoxyCodeLine{103 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL SaveIplImage(IplImage *SaveImage, CString strSavePath);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL Morphology(IplImage *src, IplImage *dst, CvPoint KernelSize, \textcolor{keywordtype}{int} KernelShape, \textcolor{keywordtype}{int} nOpenClose);}
+\DoxyCodeLine{106 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL SmoothImage(IplImage *src, IplImage *dst, \textcolor{keywordtype}{int} SmoothType, CvPoint KernelSize, CvPoint2D32f KernelSigma);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL FlipImage(IplImage *SrcImage, IplImage *DstImage, \textcolor{keywordtype}{int} nDirection = 0);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL TraceInsp(CStaticMatDisplay *Display, IplImage *Img, CvRect *rcRoi, BOOL bTrace = TRUE);}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL CvThreshHoldRange(IplImage *src, IplImage *dst, \textcolor{keywordtype}{int} nThreshHoldVal, \textcolor{keywordtype}{int} nThreshRange = 50);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\_\_declspec}}(dllexport) BOOL CvCircleSearch(CvSeq *c, CvPoint2D32f *rslt\_center, \textcolor{keywordtype}{double} *rslt\_width, \textcolor{keywordtype}{double} *rslt\_height, \textcolor{keywordtype}{double} * rslt\_angle);}
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{preprocessor}{\#define         NUL             0x00}}
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#define         SOH             0x01}}
+\DoxyCodeLine{120 \textcolor{preprocessor}{\#define         STX             0x02}}
+\DoxyCodeLine{121 \textcolor{preprocessor}{\#define         ETX             0x03}}
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#define         EOT             0x04}}
+\DoxyCodeLine{123 \textcolor{preprocessor}{\#define         ENQ             0x05}}
+\DoxyCodeLine{124 \textcolor{preprocessor}{\#define         ACK             0x06}}
+\DoxyCodeLine{125 \textcolor{preprocessor}{\#define         NAK             0x15}}
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#define         XON             0x11}}
+\DoxyCodeLine{127 \textcolor{preprocessor}{\#define         XOFF    0x13}}
+\DoxyCodeLine{128 \textcolor{preprocessor}{\#define         ESC             0x1b}}
+\DoxyCodeLine{129 \textcolor{preprocessor}{\#define         CR              0x0d}}
+\DoxyCodeLine{130 \textcolor{preprocessor}{\#define         LF              0x0a}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132 \textcolor{keyword}{const}   \textcolor{keywordtype}{int}     \mbox{\hyperlink{_ngh_util_8h_aa79e59d365151a3d3666cf8ca1452334}{DEF\_MAX\_SERIAL\_PORT}}                                                  = 6;                    }
+\DoxyCodeLine{133 \textcolor{keyword}{const}   \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_a84eea3fc328d0baa941fe214ee013a6f}{ERR\_SERIAL\_PORT\_SUCCESS}}                                      = 0;                    \textcolor{comment}{// Success}}
+\DoxyCodeLine{134 \textcolor{keyword}{const}   \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_aca9c7436f9995afe9807cb5f22ab188b}{ERR\_PORT\_OPEN\_FAIL}}                                                        = 1;            }
+\DoxyCodeLine{135 \textcolor{keyword}{const}   \textcolor{keywordtype}{int} \mbox{\hyperlink{_ngh_util_8h_ae589d0a257191d743a17b4a2a9fc6d66}{ERR\_TIME\_OUT}}                                                                    = 2;            }
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137 \textcolor{preprocessor}{\#define SERIAL\_WRITE\_DELAY                                                                      40}\textcolor{comment}{//ms}}
+\DoxyCodeLine{138 \textcolor{preprocessor}{\#define SERIAL\_READ\_DELAY                                                                       100}\textcolor{comment}{//ms}}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140 \textcolor{keyword}{class }\mbox{\hyperlink{class_cd_rect}{CdRect}}}
+\DoxyCodeLine{141 \{}
+\DoxyCodeLine{142 \textcolor{keyword}{public}:}
+\DoxyCodeLine{143         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cd_rect_aaad924d8c1ed3dc020cdd920627da269}{m\_dLeft}};}
+\DoxyCodeLine{144         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cd_rect_a560b49619c6f682f18cfe01fbca5ba10}{m\_dTop}};}
+\DoxyCodeLine{145         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cd_rect_ad4e6ba44ee0d0c2ce5e48ec09369a65b}{m\_dRight}};}
+\DoxyCodeLine{146         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cd_rect_a18bf962526a4e47a479cfc5e91adbf52}{m\_dBottom}};}
+\DoxyCodeLine{147         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cd_rect_a90e06d85b62296d78997e484ec614810}{GetWidth}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cd_rect_ad4e6ba44ee0d0c2ce5e48ec09369a65b}{m\_dRight}} -\/ \mbox{\hyperlink{class_cd_rect_aaad924d8c1ed3dc020cdd920627da269}{m\_dLeft}}; \};}
+\DoxyCodeLine{148         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cd_rect_a1f65417fe6ae352160654192443d752b}{GetHeight}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cd_rect_a18bf962526a4e47a479cfc5e91adbf52}{m\_dBottom}} -\/ \mbox{\hyperlink{class_cd_rect_a560b49619c6f682f18cfe01fbca5ba10}{m\_dTop}}; \};}
+\DoxyCodeLine{149         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cd_rect_a3b8d3bb8fb1d1f8ef6fb3deb75eea367}{SetRect}}(\textcolor{keywordtype}{double} dLeft, \textcolor{keywordtype}{double} dTop, \textcolor{keywordtype}{double} dRight, \textcolor{keywordtype}{double} dBottom) }
+\DoxyCodeLine{150         \{}
+\DoxyCodeLine{151                 \mbox{\hyperlink{class_cd_rect_aaad924d8c1ed3dc020cdd920627da269}{m\_dLeft}} = dLeft; \mbox{\hyperlink{class_cd_rect_a560b49619c6f682f18cfe01fbca5ba10}{m\_dTop}} = dTop; \mbox{\hyperlink{class_cd_rect_ad4e6ba44ee0d0c2ce5e48ec09369a65b}{m\_dRight}} = dRight; \mbox{\hyperlink{class_cd_rect_a18bf962526a4e47a479cfc5e91adbf52}{m\_dBottom}} = dBottom;}
+\DoxyCodeLine{152         \}}
+\DoxyCodeLine{153 \};}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rs_port}{CRsPort}}  }
+\DoxyCodeLine{156 \{}
+\DoxyCodeLine{157 \textcolor{keyword}{public}:}
+\DoxyCodeLine{158         BOOL           \mbox{\hyperlink{class_c_rs_port_a0d3b4589a92582a5f87b17244e765661}{m\_Connect}};}
+\DoxyCodeLine{159     HANDLE         \mbox{\hyperlink{class_c_rs_port_a3db627fe6cbbaae7bd4670a9ae4fd73e}{m\_idComDev}};}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161 \textcolor{keyword}{public}:}
+\DoxyCodeLine{162         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rs_port_a1976ad970f97cfe4b9be364e2afd7316}{ReadCommPort}}( \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *message, DWORD length);}
+\DoxyCodeLine{163         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rs_port_a878c2784561ab73c8ba9bf1b87593d01}{WriteCommPort}}( \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}* message, DWORD dwLength);}
+\DoxyCodeLine{164         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_rs_port_a07e791b009eaf1806e8ed32a629e9166}{IsCommPortOpen}}();}
+\DoxyCodeLine{165         \mbox{\hyperlink{class_c_rs_port}{CRsPort}}(CString m\_portName);}
+\DoxyCodeLine{166     \mbox{\hyperlink{class_c_rs_port}{CRsPort}}(CString m\_portName, DWORD BaudRate, BYTE ByteSize, BYTE Parity, BYTE StopBits);}
+\DoxyCodeLine{167         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_rs_port_a95e897e58b9ca065a3d2539f26db66f7}{\string~CRsPort}}();}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{170         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rs_port_afd3ca5f3ea6fc80915cae27ec77fbcea}{CloseCommPort}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{171         BOOL \mbox{\hyperlink{class_c_rs_port_ac7e0066fa56d80b5ddb480f983393545}{SetupConnection}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{172         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rs_port_acde47f8c821adf5974ca3fee8e661f8b}{initComport}}( CString m\_portName );}
+\DoxyCodeLine{173     OVERLAPPED     \mbox{\hyperlink{class_c_rs_port_a33da384b65c1a2ac506ab0847bd22e9a}{osWrite}};}
+\DoxyCodeLine{174     OVERLAPPED     \mbox{\hyperlink{class_c_rs_port_ae9a0b6db43f31374a0b26e45215d9c92}{osRead}};}
+\DoxyCodeLine{175         DCB            \mbox{\hyperlink{class_c_rs_port_a555f00a0fd60f7f0e4ce46ad1b5212fd}{dcb\_setup}};}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177 \};}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179 \textcolor{preprocessor}{\#define END\_BARCODE\_READER\_CHAR                                         0x0d}}
+\DoxyCodeLine{180 \textcolor{preprocessor}{\#define BARCODE\_MAX\_STRING\_CNT                                          15}}
+\DoxyCodeLine{181 \textcolor{preprocessor}{\#define BARCODE\_READ\_THREAD\_END\_TIMEOUT         1000}}
+\DoxyCodeLine{182 \textcolor{preprocessor}{\#define MAX\_BYTE\_CNT                                                                            200}}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_barcode_rs_port_type}{CBarcodeRsPortType}}}
+\DoxyCodeLine{185 \{}
+\DoxyCodeLine{186 \textcolor{keyword}{private}:}
+\DoxyCodeLine{187         \mbox{\hyperlink{class_c_rs_port}{CRsPort}} *m\_RsPort;}
+\DoxyCodeLine{188         CString m\_strBarcode;}
+\DoxyCodeLine{189         \textcolor{keywordtype}{int} m\_nBarcodeMaxLength;}
+\DoxyCodeLine{190         BYTE m\_byEndChar;}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192         CWinThread* m\_pThreadBarcodeRead;}
+\DoxyCodeLine{193         BOOL m\_bThreadBarcodeStart;}
+\DoxyCodeLine{194         BOOL m\_bThreadBarcodeEnd;}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196         BYTE m\_byReadBarcode[\mbox{\hyperlink{_ngh_util_8h_ac65bc0c9b4760ebb055063ef138cce60}{MAX\_BYTE\_CNT}}];}
+\DoxyCodeLine{197         \textcolor{keywordtype}{int} m\_nReadLenght;}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199         \textcolor{keywordtype}{void} ThreadBarcodeRead();}
+\DoxyCodeLine{200         }
+\DoxyCodeLine{201 \textcolor{keyword}{public}:}
+\DoxyCodeLine{202         \mbox{\hyperlink{class_c_barcode_rs_port_type}{CBarcodeRsPortType}}(CString m\_portName, DWORD BaudRate = CBR\_9600, BYTE ByteSize = 8, BYTE Parity = NOPARITY, BYTE StopBits = ONESTOPBIT, \textcolor{keywordtype}{int} nBarcodeMaxLength = \mbox{\hyperlink{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}{BARCODE\_MAX\_STRING\_CNT}}, BYTE byEndChar = \mbox{\hyperlink{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}{END\_BARCODE\_READER\_CHAR}});}
+\DoxyCodeLine{203         \mbox{\hyperlink{class_c_barcode_rs_port_type_a75b061727bc35cff7b6717607d7a66e6}{\string~CBarcodeRsPortType}}();}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_barcode_rs_port_type_a524d2f2d821d47e4200309fa40bbcc31}{SetBarcodeMaxLength}}(\textcolor{keywordtype}{int} nLength);}
+\DoxyCodeLine{206         CString \mbox{\hyperlink{class_c_barcode_rs_port_type_a0ae77af0f60e78cb147d19f86b3d2b45}{GetBarcodeString}}()\{\textcolor{keywordflow}{return} m\_strBarcode;\};}
+\DoxyCodeLine{207         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_barcode_rs_port_type_aa40e994d99c27b2c7ea8bbc3e6e89f45}{SetInitBarcode}}()\{m\_strBarcode.Format(\_T(\textcolor{stringliteral}{"{}-\/"{}}));\};}
+\DoxyCodeLine{208         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_barcode_rs_port_type_a28db09ffa9b9278ba86178bb7532ceb8}{SetBarcodeReadStart}}(BOOL isStart);}
+\DoxyCodeLine{209         CString \mbox{\hyperlink{class_c_barcode_rs_port_type_a843937f8e4654a29724695f16c131959}{GetBarcodeReader}}();}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211         BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_ae48b247466e5e6d9927384521da67be4}{GetBarcodeConnect}}();}
+\DoxyCodeLine{212         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_barcode_rs_port_type_a2144961cb43aceaa4a4ecc99d09c146d}{GetReadBarcodeLength}}()\{\textcolor{keywordflow}{return} m\_nReadLenght;\};}
+\DoxyCodeLine{213 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{214         UINT \textcolor{keyword}{static} \mbox{\hyperlink{class_c_barcode_rs_port_type_acf4a935317007f9282e9f4e850f1ec77}{BarcodeReadThread}}(LPVOID pParam);}
+\DoxyCodeLine{215         BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_a7a33d5c71f0f97018728be811a30cf97}{InitThread}}();}
+\DoxyCodeLine{216         BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_a2bb7038c18578124caa8d382459a6bf0}{WaitEndThread}}();}
+\DoxyCodeLine{217         BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_ae348c005ec076858d900a2acdae515c2}{ReleaseThread}}();}
+\DoxyCodeLine{218 \};}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_barcode_keyboard_type}{CBarcodeKeyboardType}}}
+\DoxyCodeLine{221 \{}
+\DoxyCodeLine{222 \textcolor{keyword}{private}:}
+\DoxyCodeLine{223         CString m\_strBarcode;}
+\DoxyCodeLine{224         \textcolor{keywordtype}{int} m\_nBarcodeMaxLength;}
+\DoxyCodeLine{225         BYTE m\_byEndChar;}
+\DoxyCodeLine{226         BOOL m\_bBarcodEndChar;}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228 \textcolor{keyword}{public}:}
+\DoxyCodeLine{229         \mbox{\hyperlink{class_c_barcode_keyboard_type}{CBarcodeKeyboardType}}(\textcolor{keywordtype}{int} nBarcodeMaxLength = \mbox{\hyperlink{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}{BARCODE\_MAX\_STRING\_CNT}}, BYTE byEndChar = \mbox{\hyperlink{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}{END\_BARCODE\_READER\_CHAR}});}
+\DoxyCodeLine{230         \mbox{\hyperlink{class_c_barcode_keyboard_type_a70aa74894ebe5028a36d724ab31b6568}{\string~CBarcodeKeyboardType}}();}
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232         CString \mbox{\hyperlink{class_c_barcode_keyboard_type_a854ac5d65ffc0a6ed245e7a06a4c2f07}{GetBarcodeString}}();}
+\DoxyCodeLine{233         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_barcode_keyboard_type_ad1ac925059531d61a19f1d1c9bc927a1}{SetInitBarcode}}()\{m\_strBarcode.Format(\_T(\textcolor{stringliteral}{"{}-\/"{}}));\};}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{235         BOOL \mbox{\hyperlink{class_c_barcode_keyboard_type_a07dbddaa4f65e3e3bb6687435c585140}{SetBarcodeChar}}(BYTE byChar);}
+\DoxyCodeLine{236         BOOL \mbox{\hyperlink{class_c_barcode_keyboard_type_a99e4b0be3b28ed79b6047b98745cccd4}{GetBarcodeEnd}}()\{\textcolor{keywordflow}{return} m\_bBarcodEndChar;\};}
+\DoxyCodeLine{237 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239 \};}
+
+\end{DoxyCode}

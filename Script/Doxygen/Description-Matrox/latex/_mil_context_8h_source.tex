@@ -1,0 +1,31 @@
+\hypertarget{_mil_context_8h_source}{}\doxysection{Mil\+Context.\+h}
+\label{_mil_context_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilContext.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilContext.h}}
+\mbox{\hyperlink{_mil_context_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_system_8h}{MilSystem.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_context}{CMilContext}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_mil_context_ae847f7034bad2b3283c8faa85f0872fd}{tMFtype}}\{\mbox{\hyperlink{class_c_mil_context_ae847f7034bad2b3283c8faa85f0872fda612b9033d322ceaf4f719898dd8d9b10}{MFT\_GEOMETRIC}}, MFT\_GEOMETRIC\_CONTROLLED\};}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_c_mil_context}{CMilContext}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_c_mil_context}{\string~CMilContext}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{15         MIL\_ID \mbox{\hyperlink{class_c_mil_context_a17183a29f135d9e96a079d13f5183719}{m\_milIDContext}};}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} *\mbox{\hyperlink{class_c_mil_context_ad758ebfd51db2ceb1d3bccf34adedc41}{m\_pMilSystem}};}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} GetIDContext(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} SaveContext(TCHAR * szSaveFile);}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} RestoreContext(TCHAR * szLoadFile);}
+\DoxyCodeLine{20         \textcolor{keywordtype}{int} GetImage(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pBuffer);}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} SetMilSystem(\mbox{\hyperlink{class_c_mil_system}{CMilSystem}} * pMilSystem);}
+\DoxyCodeLine{22         \textcolor{keywordtype}{int} Alloc(\textcolor{keywordtype}{int} MFType);}
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} Control(\textcolor{keywordtype}{int} Index=M\_CONTEXT, \textcolor{keywordtype}{int} Type=M\_SPEED, \textcolor{keywordtype}{int} Value=M\_VERY\_HIGH);}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} PreProcess(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} GetModelNumber(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} DelModel(\textcolor{keywordtype}{int} Index);}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} DelAllModel(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} GetImageSize(CSize *pSize);}
+\DoxyCodeLine{30 \};}
+
+\end{DoxyCode}

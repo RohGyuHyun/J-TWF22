@@ -1,0 +1,218 @@
+\hypertarget{class_c_mil_system}{}\doxysection{CMil\+System 클래스 참조}
+\label{class_c_mil_system}\index{CMilSystem@{CMilSystem}}
+
+
+Mil의 System관련 함수를 Class화함, 기본적으로 1개는 있어야 하며, 추가되는것은 Grabber라 생각하면 됨.  
+
+
+
+
+{\ttfamily \#include $<$Mil\+System.\+h$>$}
+
+
+
+CMil\+System에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_c_mil_system__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+System에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_c_mil_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_system_ae46016c7f6a59fffe98e1786c8d3a04a}{CMil\+System}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_system_ac3201f20e6100a1772cebd154c1391d9}{CMil\+System}} (\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$p\+Milapplication)
+\item 
+\mbox{\hyperlink{class_c_mil_system_abe42baaeef96079e5e71381717896d65}{$\sim$\+CMil\+System}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_system_a08159711409846176c490716dac97017}{Close}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_system_a3fdf2b380ae3671b219e1f789ad7bf3f}{Create}} (TCHAR $\ast$sz\+Grabber=\+\_\+T(\char`\"{}NONE\char`\"{}))
+\item 
+int \mbox{\hyperlink{class_c_mil_system_a17dedf61c4f43deeb25cc19ad16e9a39}{Create}} (\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$p\+Mil\+Application)
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_system_a54705f80576b0b6fc3f26a3dbdf281d1}{Get\+System\+ID}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_system_a7c9842fe9dddbbc9d05b538c60f06f8e}{Set\+System\+ID}} (MIL\+\_\+\+ID id\+System)
+\item 
+int \mbox{\hyperlink{class_c_mil_system_ae90b8e05edd907ff60e256330401e296}{Get\+Dongle\+Type}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_digitizer}{CMil\+Digitizer}} $\ast$ \mbox{\hyperlink{class_c_mil_system_a7a4700d44809398d776dc05a1c4fb6a1}{New\+Digitizer}} (TCHAR $\ast$p\+Cam\+File)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ \mbox{\hyperlink{class_c_mil_system_a23040f460eb94b09d3a1faae0dd806c8}{Instance}} (TCHAR $\ast$sz\+Grabber)
+\item 
+static \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ \mbox{\hyperlink{class_c_mil_system_a9dfcae3478a324cc911b0cb892269ac3}{Instance}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_system_a35a46752afc9aed7347f45d8e6e5849d}{m\+\_\+mil\+IDApplication}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_system_a182f383470aad5c2b316e8b64df441b5}{m\+\_\+mil\+IDSystem}}
+\item 
+\mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ \mbox{\hyperlink{class_c_mil_system_ab7c8c7e1c66f72efc642870009265c03}{m\+\_\+p\+Mil\+System}}
+\item 
+CGrabber $\ast$ \mbox{\hyperlink{class_c_mil_system_a09640e4c38724f9f2693d211b369b968}{m\+\_\+p\+Grabber}}
+\item 
+CString \mbox{\hyperlink{class_c_mil_system_a1dea217086c7746c202a8ad8faf94d53}{m\+\_\+str\+Grabber\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$ \mbox{\hyperlink{class_c_mil_system_a9616c8110474fa00a5ae6e0a862e92d6}{m\+\_\+p\+Mil\+Application}}
+\item 
+static vector$<$ \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ $>$ \mbox{\hyperlink{class_c_mil_system_ae2b7297768844ccb2c1082e063ed6c98}{m\+\_\+v\+Mil\+System}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Mil의 System관련 함수를 Class화함, 기본적으로 1개는 있어야 하며, 추가되는것은 Grabber라 생각하면 됨. 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_system_ae46016c7f6a59fffe98e1786c8d3a04a}\label{class_c_mil_system_ae46016c7f6a59fffe98e1786c8d3a04a}} 
+\index{CMilSystem@{CMilSystem}!CMilSystem@{CMilSystem}}
+\index{CMilSystem@{CMilSystem}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{CMilSystem()}{CMilSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CMil\+System\+::\+CMil\+System (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_ac3201f20e6100a1772cebd154c1391d9}\label{class_c_mil_system_ac3201f20e6100a1772cebd154c1391d9}} 
+\index{CMilSystem@{CMilSystem}!CMilSystem@{CMilSystem}}
+\index{CMilSystem@{CMilSystem}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{CMilSystem()}{CMilSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CMil\+System\+::\+CMil\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$}]{p\+Milapplication }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_abe42baaeef96079e5e71381717896d65}\label{class_c_mil_system_abe42baaeef96079e5e71381717896d65}} 
+\index{CMilSystem@{CMilSystem}!````~CMilSystem@{$\sim$CMilSystem}}
+\index{````~CMilSystem@{$\sim$CMilSystem}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilSystem()}{~CMilSystem()}}
+{\footnotesize\ttfamily CMil\+System\+::$\sim$\+CMil\+System (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_system_a08159711409846176c490716dac97017}\label{class_c_mil_system_a08159711409846176c490716dac97017}} 
+\index{CMilSystem@{CMilSystem}!Close@{Close}}
+\index{Close@{Close}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily int CMil\+System\+::\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_a17dedf61c4f43deeb25cc19ad16e9a39}\label{class_c_mil_system_a17dedf61c4f43deeb25cc19ad16e9a39}} 
+\index{CMilSystem@{CMilSystem}!Create@{Create}}
+\index{Create@{Create}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+System\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$}]{p\+Mil\+Application }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_a3fdf2b380ae3671b219e1f789ad7bf3f}\label{class_c_mil_system_a3fdf2b380ae3671b219e1f789ad7bf3f}} 
+\index{CMilSystem@{CMilSystem}!Create@{Create}}
+\index{Create@{Create}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+System\+::\+Create (\begin{DoxyParamCaption}\item[{TCHAR $\ast$}]{sz\+Grabber = {\ttfamily \+\_\+T(\char`\"{}NONE\char`\"{})} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_ae90b8e05edd907ff60e256330401e296}\label{class_c_mil_system_ae90b8e05edd907ff60e256330401e296}} 
+\index{CMilSystem@{CMilSystem}!GetDongleType@{GetDongleType}}
+\index{GetDongleType@{GetDongleType}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{GetDongleType()}{GetDongleType()}}
+{\footnotesize\ttfamily int CMil\+System\+::\+Get\+Dongle\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_a54705f80576b0b6fc3f26a3dbdf281d1}\label{class_c_mil_system_a54705f80576b0b6fc3f26a3dbdf281d1}} 
+\index{CMilSystem@{CMilSystem}!GetSystemID@{GetSystemID}}
+\index{GetSystemID@{GetSystemID}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{GetSystemID()}{GetSystemID()}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+System\+::\+Get\+System\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_a23040f460eb94b09d3a1faae0dd806c8}\label{class_c_mil_system_a23040f460eb94b09d3a1faae0dd806c8}} 
+\index{CMilSystem@{CMilSystem}!Instance@{Instance}}
+\index{Instance@{Instance}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ CMil\+System\+::\+Instance (\begin{DoxyParamCaption}\item[{TCHAR $\ast$}]{sz\+Grabber }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_system_a9dfcae3478a324cc911b0cb892269ac3}\label{class_c_mil_system_a9dfcae3478a324cc911b0cb892269ac3}} 
+\index{CMilSystem@{CMilSystem}!Instance@{Instance}}
+\index{Instance@{Instance}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ CMil\+System\+::\+Instance (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_system_a7a4700d44809398d776dc05a1c4fb6a1}\label{class_c_mil_system_a7a4700d44809398d776dc05a1c4fb6a1}} 
+\index{CMilSystem@{CMilSystem}!NewDigitizer@{NewDigitizer}}
+\index{NewDigitizer@{NewDigitizer}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{NewDigitizer()}{NewDigitizer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_digitizer}{CMil\+Digitizer}} $\ast$ CMil\+System\+::\+New\+Digitizer (\begin{DoxyParamCaption}\item[{TCHAR $\ast$}]{p\+Cam\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_system_a7c9842fe9dddbbc9d05b538c60f06f8e}\label{class_c_mil_system_a7c9842fe9dddbbc9d05b538c60f06f8e}} 
+\index{CMilSystem@{CMilSystem}!SetSystemID@{SetSystemID}}
+\index{SetSystemID@{SetSystemID}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{SetSystemID()}{SetSystemID()}}
+{\footnotesize\ttfamily void CMil\+System\+::\+Set\+System\+ID (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+ID}]{id\+System }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_system_a35a46752afc9aed7347f45d8e6e5849d}\label{class_c_mil_system_a35a46752afc9aed7347f45d8e6e5849d}} 
+\index{CMilSystem@{CMilSystem}!m\_milIDApplication@{m\_milIDApplication}}
+\index{m\_milIDApplication@{m\_milIDApplication}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_milIDApplication}{m\_milIDApplication}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+System\+::m\+\_\+mil\+IDApplication}
+
+\mbox{\Hypertarget{class_c_mil_system_a182f383470aad5c2b316e8b64df441b5}\label{class_c_mil_system_a182f383470aad5c2b316e8b64df441b5}} 
+\index{CMilSystem@{CMilSystem}!m\_milIDSystem@{m\_milIDSystem}}
+\index{m\_milIDSystem@{m\_milIDSystem}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_milIDSystem}{m\_milIDSystem}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+System\+::m\+\_\+mil\+IDSystem}
+
+\mbox{\Hypertarget{class_c_mil_system_a09640e4c38724f9f2693d211b369b968}\label{class_c_mil_system_a09640e4c38724f9f2693d211b369b968}} 
+\index{CMilSystem@{CMilSystem}!m\_pGrabber@{m\_pGrabber}}
+\index{m\_pGrabber@{m\_pGrabber}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_pGrabber}{m\_pGrabber}}
+{\footnotesize\ttfamily CGrabber$\ast$ CMil\+System\+::m\+\_\+p\+Grabber}
+
+\mbox{\Hypertarget{class_c_mil_system_a9616c8110474fa00a5ae6e0a862e92d6}\label{class_c_mil_system_a9616c8110474fa00a5ae6e0a862e92d6}} 
+\index{CMilSystem@{CMilSystem}!m\_pMilApplication@{m\_pMilApplication}}
+\index{m\_pMilApplication@{m\_pMilApplication}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_pMilApplication}{m\_pMilApplication}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$ CMil\+System\+::m\+\_\+p\+Mil\+Application\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_system_ab7c8c7e1c66f72efc642870009265c03}\label{class_c_mil_system_ab7c8c7e1c66f72efc642870009265c03}} 
+\index{CMilSystem@{CMilSystem}!m\_pMilSystem@{m\_pMilSystem}}
+\index{m\_pMilSystem@{m\_pMilSystem}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_pMilSystem}{m\_pMilSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_system}{CMil\+System}}$\ast$ CMil\+System\+::m\+\_\+p\+Mil\+System}
+
+\mbox{\Hypertarget{class_c_mil_system_a1dea217086c7746c202a8ad8faf94d53}\label{class_c_mil_system_a1dea217086c7746c202a8ad8faf94d53}} 
+\index{CMilSystem@{CMilSystem}!m\_strGrabberName@{m\_strGrabberName}}
+\index{m\_strGrabberName@{m\_strGrabberName}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_strGrabberName}{m\_strGrabberName}}
+{\footnotesize\ttfamily CString CMil\+System\+::m\+\_\+str\+Grabber\+Name}
+
+\mbox{\Hypertarget{class_c_mil_system_ae2b7297768844ccb2c1082e063ed6c98}\label{class_c_mil_system_ae2b7297768844ccb2c1082e063ed6c98}} 
+\index{CMilSystem@{CMilSystem}!m\_vMilSystem@{m\_vMilSystem}}
+\index{m\_vMilSystem@{m\_vMilSystem}!CMilSystem@{CMilSystem}}
+\doxysubsubsection{\texorpdfstring{m\_vMilSystem}{m\_vMilSystem}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ $>$ CMil\+System\+::m\+\_\+v\+Mil\+System\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_system_8h}{Mil\+System.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_system_8cpp}{Mil\+System.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,145 @@
+\hypertarget{class_c_rs_port}{}\doxysection{CRs\+Port 클래스 참조}
+\label{class_c_rs_port}\index{CRsPort@{CRsPort}}
+
+
+{\ttfamily \#include $<$Ngh\+Util.\+h$>$}
+
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_rs_port_a1976ad970f97cfe4b9be364e2afd7316}{Read\+Comm\+Port}} (unsigned char $\ast$message, DWORD length)
+\item 
+int \mbox{\hyperlink{class_c_rs_port_a878c2784561ab73c8ba9bf1b87593d01}{Write\+Comm\+Port}} (unsigned char $\ast$message, DWORD dw\+Length)
+\item 
+bool \mbox{\hyperlink{class_c_rs_port_a07e791b009eaf1806e8ed32a629e9166}{Is\+Comm\+Port\+Open}} ()
+\item 
+\mbox{\hyperlink{class_c_rs_port_ac41400db4413dff3946c89b152631726}{CRs\+Port}} (CString m\+\_\+port\+Name)
+\item 
+\mbox{\hyperlink{class_c_rs_port_abf25eb36196b65a02237b46cebbb97a9}{CRs\+Port}} (CString m\+\_\+port\+Name, DWORD Baud\+Rate, BYTE Byte\+Size, BYTE Parity, BYTE Stop\+Bits)
+\item 
+virtual \mbox{\hyperlink{class_c_rs_port_a95e897e58b9ca065a3d2539f26db66f7}{$\sim$\+CRs\+Port}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{class_c_rs_port_a0d3b4589a92582a5f87b17244e765661}{m\+\_\+\+Connect}}
+\item 
+HANDLE \mbox{\hyperlink{class_c_rs_port_a3db627fe6cbbaae7bd4670a9ae4fd73e}{m\+\_\+id\+Com\+Dev}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_rs_port_afd3ca5f3ea6fc80915cae27ec77fbcea}{Close\+Comm\+Port}} (void)
+\item 
+BOOL \mbox{\hyperlink{class_c_rs_port_ac7e0066fa56d80b5ddb480f983393545}{Setup\+Connection}} (void)
+\item 
+void \mbox{\hyperlink{class_c_rs_port_acde47f8c821adf5974ca3fee8e661f8b}{init\+Comport}} (CString m\+\_\+port\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+OVERLAPPED \mbox{\hyperlink{class_c_rs_port_a33da384b65c1a2ac506ab0847bd22e9a}{os\+Write}}
+\item 
+OVERLAPPED \mbox{\hyperlink{class_c_rs_port_ae9a0b6db43f31374a0b26e45215d9c92}{os\+Read}}
+\item 
+DCB \mbox{\hyperlink{class_c_rs_port_a555f00a0fd60f7f0e4ce46ad1b5212fd}{dcb\+\_\+setup}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_rs_port_ac41400db4413dff3946c89b152631726}\label{class_c_rs_port_ac41400db4413dff3946c89b152631726}} 
+\index{CRsPort@{CRsPort}!CRsPort@{CRsPort}}
+\index{CRsPort@{CRsPort}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{CRsPort()}{CRsPort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRs\+Port\+::\+CRs\+Port (\begin{DoxyParamCaption}\item[{CString}]{m\+\_\+port\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rs_port_abf25eb36196b65a02237b46cebbb97a9}\label{class_c_rs_port_abf25eb36196b65a02237b46cebbb97a9}} 
+\index{CRsPort@{CRsPort}!CRsPort@{CRsPort}}
+\index{CRsPort@{CRsPort}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{CRsPort()}{CRsPort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRs\+Port\+::\+CRs\+Port (\begin{DoxyParamCaption}\item[{CString}]{m\+\_\+port\+Name,  }\item[{DWORD}]{Baud\+Rate,  }\item[{BYTE}]{Byte\+Size,  }\item[{BYTE}]{Parity,  }\item[{BYTE}]{Stop\+Bits }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rs_port_a95e897e58b9ca065a3d2539f26db66f7}\label{class_c_rs_port_a95e897e58b9ca065a3d2539f26db66f7}} 
+\index{CRsPort@{CRsPort}!````~CRsPort@{$\sim$CRsPort}}
+\index{````~CRsPort@{$\sim$CRsPort}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRsPort()}{~CRsPort()}}
+{\footnotesize\ttfamily CRs\+Port\+::$\sim$\+CRs\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_rs_port_afd3ca5f3ea6fc80915cae27ec77fbcea}\label{class_c_rs_port_afd3ca5f3ea6fc80915cae27ec77fbcea}} 
+\index{CRsPort@{CRsPort}!CloseCommPort@{CloseCommPort}}
+\index{CloseCommPort@{CloseCommPort}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{CloseCommPort()}{CloseCommPort()}}
+{\footnotesize\ttfamily void CRs\+Port\+::\+Close\+Comm\+Port (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rs_port_acde47f8c821adf5974ca3fee8e661f8b}\label{class_c_rs_port_acde47f8c821adf5974ca3fee8e661f8b}} 
+\index{CRsPort@{CRsPort}!initComport@{initComport}}
+\index{initComport@{initComport}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{initComport()}{initComport()}}
+{\footnotesize\ttfamily void CRs\+Port\+::init\+Comport (\begin{DoxyParamCaption}\item[{CString}]{m\+\_\+port\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rs_port_a07e791b009eaf1806e8ed32a629e9166}\label{class_c_rs_port_a07e791b009eaf1806e8ed32a629e9166}} 
+\index{CRsPort@{CRsPort}!IsCommPortOpen@{IsCommPortOpen}}
+\index{IsCommPortOpen@{IsCommPortOpen}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{IsCommPortOpen()}{IsCommPortOpen()}}
+{\footnotesize\ttfamily bool CRs\+Port\+::\+Is\+Comm\+Port\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rs_port_a1976ad970f97cfe4b9be364e2afd7316}\label{class_c_rs_port_a1976ad970f97cfe4b9be364e2afd7316}} 
+\index{CRsPort@{CRsPort}!ReadCommPort@{ReadCommPort}}
+\index{ReadCommPort@{ReadCommPort}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{ReadCommPort()}{ReadCommPort()}}
+{\footnotesize\ttfamily int CRs\+Port\+::\+Read\+Comm\+Port (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{message,  }\item[{DWORD}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rs_port_ac7e0066fa56d80b5ddb480f983393545}\label{class_c_rs_port_ac7e0066fa56d80b5ddb480f983393545}} 
+\index{CRsPort@{CRsPort}!SetupConnection@{SetupConnection}}
+\index{SetupConnection@{SetupConnection}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{SetupConnection()}{SetupConnection()}}
+{\footnotesize\ttfamily BOOL CRs\+Port\+::\+Setup\+Connection (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rs_port_a878c2784561ab73c8ba9bf1b87593d01}\label{class_c_rs_port_a878c2784561ab73c8ba9bf1b87593d01}} 
+\index{CRsPort@{CRsPort}!WriteCommPort@{WriteCommPort}}
+\index{WriteCommPort@{WriteCommPort}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{WriteCommPort()}{WriteCommPort()}}
+{\footnotesize\ttfamily int CRs\+Port\+::\+Write\+Comm\+Port (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{message,  }\item[{DWORD}]{dw\+Length }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_rs_port_a555f00a0fd60f7f0e4ce46ad1b5212fd}\label{class_c_rs_port_a555f00a0fd60f7f0e4ce46ad1b5212fd}} 
+\index{CRsPort@{CRsPort}!dcb\_setup@{dcb\_setup}}
+\index{dcb\_setup@{dcb\_setup}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{dcb\_setup}{dcb\_setup}}
+{\footnotesize\ttfamily DCB CRs\+Port\+::dcb\+\_\+setup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rs_port_a0d3b4589a92582a5f87b17244e765661}\label{class_c_rs_port_a0d3b4589a92582a5f87b17244e765661}} 
+\index{CRsPort@{CRsPort}!m\_Connect@{m\_Connect}}
+\index{m\_Connect@{m\_Connect}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{m\_Connect}{m\_Connect}}
+{\footnotesize\ttfamily BOOL CRs\+Port\+::m\+\_\+\+Connect}
+
+\mbox{\Hypertarget{class_c_rs_port_a3db627fe6cbbaae7bd4670a9ae4fd73e}\label{class_c_rs_port_a3db627fe6cbbaae7bd4670a9ae4fd73e}} 
+\index{CRsPort@{CRsPort}!m\_idComDev@{m\_idComDev}}
+\index{m\_idComDev@{m\_idComDev}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{m\_idComDev}{m\_idComDev}}
+{\footnotesize\ttfamily HANDLE CRs\+Port\+::m\+\_\+id\+Com\+Dev}
+
+\mbox{\Hypertarget{class_c_rs_port_ae9a0b6db43f31374a0b26e45215d9c92}\label{class_c_rs_port_ae9a0b6db43f31374a0b26e45215d9c92}} 
+\index{CRsPort@{CRsPort}!osRead@{osRead}}
+\index{osRead@{osRead}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{osRead}{osRead}}
+{\footnotesize\ttfamily OVERLAPPED CRs\+Port\+::os\+Read\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rs_port_a33da384b65c1a2ac506ab0847bd22e9a}\label{class_c_rs_port_a33da384b65c1a2ac506ab0847bd22e9a}} 
+\index{CRsPort@{CRsPort}!osWrite@{osWrite}}
+\index{osWrite@{osWrite}!CRsPort@{CRsPort}}
+\doxysubsubsection{\texorpdfstring{osWrite}{osWrite}}
+{\footnotesize\ttfamily OVERLAPPED CRs\+Port\+::os\+Write\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_ngh_util_8h}{Ngh\+Util.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_ngh_util_8cpp}{Ngh\+Util.\+cpp}}\end{DoxyCompactItemize}

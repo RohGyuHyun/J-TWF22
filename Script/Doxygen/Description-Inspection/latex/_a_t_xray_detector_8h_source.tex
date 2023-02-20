@@ -1,0 +1,131 @@
+\hypertarget{_a_t_xray_detector_8h_source}{}\doxysection{ATXray\+Detector.\+h}
+\label{_a_t_xray_detector_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/Detector/ATXrayDetector.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/Detector/ATXrayDetector.h}}
+\mbox{\hyperlink{_a_t_xray_detector_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifdef ATXRAYDETECTOR\_EXPORTS}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define ATXRAYDETECTOR\_API \_\_declspec(dllexport)}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define ATXRAYDETECTOR\_API \_\_declspec(dllimport)}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }XrayDoc;}
+\DoxyCodeLine{9 \textcolor{keyword}{class }ImageMaker;}
+\DoxyCodeLine{10 \textcolor{keyword}{class }DataContain;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{_a_t_xray_detector_8h_a7714392044e026ae85787f9ae227cd80}{ATXRAYDETECTOR\_API}} \mbox{\hyperlink{class_a_t_xray_detector}{ATXrayDetector}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15         \textcolor{keyword}{typedef} \textcolor{keywordtype}{void} *HW, *FT\_HANDLE;}
+\DoxyCodeLine{16         }
+\DoxyCodeLine{17         \textcolor{keyword}{typedef} void(*CALLBACK\_FUNCTION\_Frame)();}
+\DoxyCodeLine{18         \textcolor{keyword}{typedef} void(*CALLBACK\_FUNCTION\_Event)(int,\textcolor{keyword}{const} \textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{19         CALLBACK\_FUNCTION\_Frame callFramefunc;}
+\DoxyCodeLine{20         CALLBACK\_FUNCTION\_Event callEventfunc;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         \textcolor{keywordtype}{bool} mOpened;}
+\DoxyCodeLine{23         \textcolor{keywordtype}{bool} dataRead;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} UsbIndex;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28         \mbox{\hyperlink{class_a_t_xray_detector_ad80c6c5bf26182604ea291ba15bd85b2}{ATXrayDetector}}();}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_a_t_xray_detector_aaf7bdfc5f9ae03fa90032bc47ae9acd2}{\string~ATXrayDetector}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_t_xray_detector_a2f2d04f4025f0a1a801be48b2b83c490}{atd\_GetUsbIndex}}();}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_a517bb785c41a5c0fd17f715be35d380d}{atd\_SetUsbIndex}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a6c3d41fe7095f15cb499422bda68d7b5}{atd\_Connect}}();}
+\DoxyCodeLine{36         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_af1d876cb7c56b544d3dadef9fca824e4}{atd\_Close}}();}
+\DoxyCodeLine{37         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a0915331f7a9d78c5b6c98e6b3afd6bd8}{atd\_Start}}();}
+\DoxyCodeLine{38         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a5bfabe5ca59901fb9e277718f5b6cc42}{atd\_Stop}}();}
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a7f97080844590a891c630bab4fd76184}{atd\_Calibration}}();}
+\DoxyCodeLine{40         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a5935b84ee9cceb59e7320c32aae33fbe}{atd\_isOpen}}();}
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a7985fb5481ce4804d1abde52396bcf0f}{atd\_isRunning}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_a6d189661198256aa9ff33764f5cb601f}{atd\_SetCallback}}(CALLBACK\_FUNCTION\_Frame frame, CALLBACK\_FUNCTION\_Event event);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_a2a552ea83600182b38df76091103481e}{atd\_Version}}();}
+\DoxyCodeLine{46         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a38ed4e4dfc2a6375f02a4efa11332301}{atd\_HWND}}(HW INhMDC);}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_aa05166f64206aa4fa7aa70c8c277a197}{atd\_Draw}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short}* buf);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short}* \mbox{\hyperlink{class_a_t_xray_detector_a3c5dd70e5c08c00f4429554954a5903f}{atd\_Getadress}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_afd3f8ea161fb84e5b909e0d3b09a9e32}{atd\_SetScanSpeed}}(\textcolor{keywordtype}{double} Value);}
+\DoxyCodeLine{52         \textcolor{keywordtype}{double}  \mbox{\hyperlink{class_a_t_xray_detector_a49c0cb416fa57c6bcf659c956ce1c0ca}{atd\_GetScanSpeed}}();}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a73d7540c48d2eb5d56437d5db309a095}{atd\_SetIntegrationTimeRate}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{54         \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_aa58bdc0e5bf4359b4ccc5695420176e2}{atd\_GetIntegrationTimeRate}}();}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_adb20a7158929588064e05a4478e2f083}{atd\_SetAutoCalibration}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{56         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_t_xray_detector_a28a4976615d0286447bff7b1a61db07c}{atd\_GetAutoCalibration}}();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_a04afb6745b566f52a74898c19027518a}{atd\_SetAverage}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{58     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a2a3cd28e700cb2fe1b67c1acd9e44fe6}{atd\_GetAverage}}();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_adfd48b7f6caa4d45923536789aa8b0f3}{atd\_SetWidth}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{60     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a6c307d393ed4ae21720645ceca1995bf}{atd\_GetWidth}}();}
+\DoxyCodeLine{61         \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_abc953a4ee5fa03aaf50c2f832996f9b7}{atd\_SetPixelSize}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{62         \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_ab4408da18439a34164bcbb831d4f1640}{atd\_GetPixelSize}}();}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_aa15bd0f133b2042ee496cd5da63c8c69}{atd\_SetImageFormat}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{64     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a3224bbba20a318dfe001d95094a9cbeb}{atd\_GetImageFormat}}();}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a54ff9ba0889c8ac6b0060093e24dfdcc}{atd\_SetSensitivity}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_ae574d23ef266e7c3a6e3e6b0bdf20c31}{atd\_GetSensitivity}}();}
+\DoxyCodeLine{67     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_ad21e3a308467500a2beab11689c27f0c}{atd\_SetLinetoAvg}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a7355755c14e2181a272964088abbf54d}{atd\_GetLinetoAvg}}();}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a3746f1b1712ddbfd8d5f6dcca9ce28ef}{atd\_SetFrameHeight}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a4d917270509cb4756002b4bfedc9348d}{atd\_GetFrameHeight}}();}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_aa61161fa4edf48122a18b46194f65eaf}{atd\_SetBytesPerPixel}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a2a2342811359861777b7229e7b8395d1}{atd\_GetBytesPerPixel}}();}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a501a8dd1aaea682cc0df71a9b1e63a8e}{atd\_SetFliphorizontal}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_a38ff4a5cf26a4a43b2b195334e4d039c}{atd\_GetFliphorizontal}}();}
+\DoxyCodeLine{75     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_ac565ed12b3a638e07a4a19c328bf10b1}{atd\_SetFlipvertical}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_a497a134aa48a6f334a7febda156ab783}{atd\_GetFlipvertical}}();}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a9600d3ddfbf881c936eafbd63fe42fd0}{atd\_SetObjectDetection}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{78     \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_aa320e802d4f57f2924c3973b579ab006}{atd\_GetObjectDetection}}();}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a09c9f274f5094a23e5fe28ae9a8bf3f0}{atd\_SetUesFilter}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{80     \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_aad3fd684d45f184bc44ff7fcde507119}{atd\_GetUesFilter}}();}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a298b9d3d34ee31268b6ac2710fa2c3dc}{atd\_SetTempCorrection}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{82     \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_a5a860af6ac2c122a90c97293bcd05604}{atd\_GetTempCorrection}}();}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_af58ffc7acbdfa19074606c34e5869314}{atd\_SetObjectDetectionThreshold}}(\textcolor{keywordtype}{int} Value);}
+\DoxyCodeLine{84     \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_a_t_xray_detector_a5149e1010bd9d2108b9dffad37cfb06d}{atd\_GetObjectDetectionThreshold}}();}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a3b49504663e30180e4945898b5d87bf4}{atd\_SetTotalLength}}(\textcolor{keywordtype}{double} Value);}
+\DoxyCodeLine{86     \textcolor{keywordtype}{double}  \mbox{\hyperlink{class_a_t_xray_detector_a9e7fce50ae2759857088fb5caa8edb6a}{atd\_GetTotalLength}}();}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_a_t_xray_detector_a9f3da21238c682cf76e5a1d8f6c9c597}{atd\_SetObjectLength}}(\textcolor{keywordtype}{double} Value);}
+\DoxyCodeLine{88     \textcolor{keywordtype}{double}  \mbox{\hyperlink{class_a_t_xray_detector_ac7880390e39c9d76e2d432cc22b1df1e}{atd\_GetObjectLength}}();}
+\DoxyCodeLine{89         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_ab2fe5cf99bc264390f835bfbde2ec26c}{atd\_SetBinning}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{90         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_t_xray_detector_af658daccb1f75e09fe757499887420a3}{atd\_GetBinning}}();}
+\DoxyCodeLine{91         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_t_xray_detector_adf49acc671641c6a7600949fc434a1f2}{atd\_SetMode}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{92         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_t_xray_detector_adb066630980daff64a4c6ea3d0d1cbd9}{atd\_GetMode}}();}
+\DoxyCodeLine{93         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_t_xray_detector_a2a3fa184bee084083263b0d02030e685}{atd\_GetImageWidth}}();}
+\DoxyCodeLine{94     \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_a4fb1c774660fa6243a16ebefec8523aa}{atd\_LoadCalibrationData}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} str[]);}
+\DoxyCodeLine{95         \textcolor{keywordtype}{bool}  \mbox{\hyperlink{class_a_t_xray_detector_aa01431e9da96b286e816bdcb4a57d464}{atd\_SaveCalibrationData}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} str[]);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{keyword}{private}:}
+\DoxyCodeLine{100         XrayDoc* mXrayDoc;}
+\DoxyCodeLine{101         ImageMaker* mImageMaker;}
+\DoxyCodeLine{102         DataContain* mDataContain;}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104         HDC mhdc;}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106         \textcolor{keywordtype}{int} ftStatus;}
+\DoxyCodeLine{107         FT\_HANDLE ftHandle;}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short}* g\_pImgBuf;}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111         BYTE CstReadPipeNo;}
+\DoxyCodeLine{112         BYTE CstWritePipeNo;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114         \textcolor{keywordtype}{bool} calibration;}
+\DoxyCodeLine{115         \textcolor{keywordtype}{bool} SendStartCommand(\textcolor{keywordtype}{bool} flag=\textcolor{keyword}{false});}
+\DoxyCodeLine{116         \textcolor{keywordtype}{bool} SendStopCommand();}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118         \textcolor{keywordtype}{void} init();}
+\DoxyCodeLine{119         \textcolor{keywordtype}{void} checkOpen();}
+\DoxyCodeLine{120         \textcolor{keywordtype}{void} Write();}
+\DoxyCodeLine{121         \textcolor{keywordtype}{void} Read();}
+\DoxyCodeLine{122         \textcolor{keywordtype}{bool} Calibration();}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \};}
+\DoxyCodeLine{125 }
+
+\end{DoxyCode}

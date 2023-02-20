@@ -1,0 +1,269 @@
+\hypertarget{class_c_mil_display}{}\doxysection{CMil\+Display 클래스 참조}
+\label{class_c_mil_display}\index{CMilDisplay@{CMilDisplay}}
+
+
+Mil의 Display관련 함수군을 Class화하였다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Display.\+h$>$}
+
+
+
+CMil\+Display에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_c_mil_display__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Display에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_c_mil_display__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_display_a059dbba2e3b7b086212cd27cb7bdaf9d}{CMil\+Display}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_display_a5cc9276fb0ed7e2bffb2f5c01e503815}{CMil\+Display}} (\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$p\+Mil\+Application, \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$p\+Mil\+System)
+\item 
+\mbox{\hyperlink{class_c_mil_display_a771b71f8179d9676e1de5afb6d0b2021}{$\sim$\+CMil\+Display}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a079f7f1728418d5f7aa3ec727b5c0e3f}{Create}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_ac8c521cf6bf1132f02ea7b186773919a}{Create}} (\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$p\+Mil\+Application, \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$p\+Mil\+System)
+\item 
+void \mbox{\hyperlink{class_c_mil_display_ad2be18c56f00355fdfd7a3c01ec68306}{Control}} (MIL\+\_\+\+INT ctrl\+Type, MIL\+\_\+\+DOUBLE ctrl\+Value)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_aaf7ef102699c6067d463ef1a9c13731c}{Enable\+Overlay}} (BOOL b\+State=TRUE)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a2bd4457c1c7c83fa2ff5225672ead283}{Close}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a982f9a5f48b3ddf68f07558dd92e46ec}{Get\+Display\+ID}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a563323e2c0ec1854f60a23855a8f9a55}{Get\+IDOverlay}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a2267d52e3c49e20486fe3372c0433f21}{Clear\+Overlay}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a05a065803ee0aa4037699c907b2f3ab8}{Clear\+Overlay}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+Mil\+Display)
+\item 
+BOOL \mbox{\hyperlink{class_c_mil_display_a5d6a1cd32f6d33ea3ff4b17fd42f94c7}{Is\+Selected}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_display_ad827de04f93e831d6eabf504c97d44e4}{Un\+Select\+Disp}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_ae2f1b37de0f3e36284f495b3c80259f6}{Set\+View\+Shift}} (int v\+Shift)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_afb6bc8397546af611a53b42288cf06d1}{Set\+View\+Auto\+Scale}} (BOOL b\+State=TRUE)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_ab0877d0873e9bb1c484f9a2d4357f1f9}{Set\+Zoom\+Factor}} (double XFactor, double YFactor)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a2c24c3a34626703aa37709742e8e4507}{Set\+Pan\+Factor}} (double XOffset, double YOffset)
+\item 
+UINT \mbox{\hyperlink{class_c_mil_display_a5033f9ce2aa721acb29c049774ae61ff}{Get\+Transparency\+Color}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_display_a7a1dd62493ba391d8eaaeaceb4c79bbc}{Fil\+Window}} (bool b\+Status=TRUE)
+\item 
+void \mbox{\hyperlink{class_c_mil_display_af474ea39a7f34c0d85d6d80d02a2228a}{Disp\+Center}} (bool b\+Status=TRUE)
+\item 
+Cdbl\+Size \mbox{\hyperlink{class_c_mil_display_aea724f425994ca43edf80be80a6c5874}{Get\+Zoom\+Factor}} ()
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a0cd9d43d04ada45b3a6973d65bcffeb2}{Get\+Mouse\+Pos\+Img\+XY}} (Cdbl\+Point $\ast$p\+Dbl\+Point)
+\item 
+int \mbox{\hyperlink{class_c_mil_display_a25282ca24597c311955f36b2fbc8e74a}{Enable\+Auto\+Pan\+Zoom}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_display_a2b2bfcb0d80f274764760b5d4c3c1ba7}{m\+\_\+mil\+IDApplication}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_display_a0d14455a4a3b6597a0081f3326c45848}{m\+\_\+mil\+IDDisplay}}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Display관련 함수군을 Class화하였다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_display_a059dbba2e3b7b086212cd27cb7bdaf9d}\label{class_c_mil_display_a059dbba2e3b7b086212cd27cb7bdaf9d}} 
+\index{CMilDisplay@{CMilDisplay}!CMilDisplay@{CMilDisplay}}
+\index{CMilDisplay@{CMilDisplay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{CMilDisplay()}{CMilDisplay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CMil\+Display\+::\+CMil\+Display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a5cc9276fb0ed7e2bffb2f5c01e503815}\label{class_c_mil_display_a5cc9276fb0ed7e2bffb2f5c01e503815}} 
+\index{CMilDisplay@{CMilDisplay}!CMilDisplay@{CMilDisplay}}
+\index{CMilDisplay@{CMilDisplay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{CMilDisplay()}{CMilDisplay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CMil\+Display\+::\+CMil\+Display (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$}]{p\+Mil\+Application,  }\item[{\mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$}]{p\+Mil\+System }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a771b71f8179d9676e1de5afb6d0b2021}\label{class_c_mil_display_a771b71f8179d9676e1de5afb6d0b2021}} 
+\index{CMilDisplay@{CMilDisplay}!````~CMilDisplay@{$\sim$CMilDisplay}}
+\index{````~CMilDisplay@{$\sim$CMilDisplay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilDisplay()}{~CMilDisplay()}}
+{\footnotesize\ttfamily CMil\+Display\+::$\sim$\+CMil\+Display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_display_a05a065803ee0aa4037699c907b2f3ab8}\label{class_c_mil_display_a05a065803ee0aa4037699c907b2f3ab8}} 
+\index{CMilDisplay@{CMilDisplay}!ClearOverlay@{ClearOverlay}}
+\index{ClearOverlay@{ClearOverlay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{ClearOverlay()}{ClearOverlay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Clear\+Overlay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+Mil\+Display }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a2267d52e3c49e20486fe3372c0433f21}\label{class_c_mil_display_a2267d52e3c49e20486fe3372c0433f21}} 
+\index{CMilDisplay@{CMilDisplay}!ClearOverlay@{ClearOverlay}}
+\index{ClearOverlay@{ClearOverlay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{ClearOverlay()}{ClearOverlay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Clear\+Overlay (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a2bd4457c1c7c83fa2ff5225672ead283}\label{class_c_mil_display_a2bd4457c1c7c83fa2ff5225672ead283}} 
+\index{CMilDisplay@{CMilDisplay}!Close@{Close}}
+\index{Close@{Close}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_ad2be18c56f00355fdfd7a3c01ec68306}\label{class_c_mil_display_ad2be18c56f00355fdfd7a3c01ec68306}} 
+\index{CMilDisplay@{CMilDisplay}!Control@{Control}}
+\index{Control@{Control}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{Control()}{Control()}}
+{\footnotesize\ttfamily void CMil\+Display\+::\+Control (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+INT}]{ctrl\+Type,  }\item[{MIL\+\_\+\+DOUBLE}]{ctrl\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_ac8c521cf6bf1132f02ea7b186773919a}\label{class_c_mil_display_ac8c521cf6bf1132f02ea7b186773919a}} 
+\index{CMilDisplay@{CMilDisplay}!Create@{Create}}
+\index{Create@{Create}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$}]{p\+Mil\+Application,  }\item[{\mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$}]{p\+Mil\+System }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a079f7f1728418d5f7aa3ec727b5c0e3f}\label{class_c_mil_display_a079f7f1728418d5f7aa3ec727b5c0e3f}} 
+\index{CMilDisplay@{CMilDisplay}!Create@{Create}}
+\index{Create@{Create}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Create (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_af474ea39a7f34c0d85d6d80d02a2228a}\label{class_c_mil_display_af474ea39a7f34c0d85d6d80d02a2228a}} 
+\index{CMilDisplay@{CMilDisplay}!DispCenter@{DispCenter}}
+\index{DispCenter@{DispCenter}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{DispCenter()}{DispCenter()}}
+{\footnotesize\ttfamily void CMil\+Display\+::\+Disp\+Center (\begin{DoxyParamCaption}\item[{bool}]{b\+Status = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a25282ca24597c311955f36b2fbc8e74a}\label{class_c_mil_display_a25282ca24597c311955f36b2fbc8e74a}} 
+\index{CMilDisplay@{CMilDisplay}!EnableAutoPanZoom@{EnableAutoPanZoom}}
+\index{EnableAutoPanZoom@{EnableAutoPanZoom}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{EnableAutoPanZoom()}{EnableAutoPanZoom()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Enable\+Auto\+Pan\+Zoom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_aaf7ef102699c6067d463ef1a9c13731c}\label{class_c_mil_display_aaf7ef102699c6067d463ef1a9c13731c}} 
+\index{CMilDisplay@{CMilDisplay}!EnableOverlay@{EnableOverlay}}
+\index{EnableOverlay@{EnableOverlay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{EnableOverlay()}{EnableOverlay()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Enable\+Overlay (\begin{DoxyParamCaption}\item[{BOOL}]{b\+State = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a7a1dd62493ba391d8eaaeaceb4c79bbc}\label{class_c_mil_display_a7a1dd62493ba391d8eaaeaceb4c79bbc}} 
+\index{CMilDisplay@{CMilDisplay}!FilWindow@{FilWindow}}
+\index{FilWindow@{FilWindow}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{FilWindow()}{FilWindow()}}
+{\footnotesize\ttfamily void CMil\+Display\+::\+Fil\+Window (\begin{DoxyParamCaption}\item[{bool}]{b\+Status = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a982f9a5f48b3ddf68f07558dd92e46ec}\label{class_c_mil_display_a982f9a5f48b3ddf68f07558dd92e46ec}} 
+\index{CMilDisplay@{CMilDisplay}!GetDisplayID@{GetDisplayID}}
+\index{GetDisplayID@{GetDisplayID}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{GetDisplayID()}{GetDisplayID()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Get\+Display\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a563323e2c0ec1854f60a23855a8f9a55}\label{class_c_mil_display_a563323e2c0ec1854f60a23855a8f9a55}} 
+\index{CMilDisplay@{CMilDisplay}!GetIDOverlay@{GetIDOverlay}}
+\index{GetIDOverlay@{GetIDOverlay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{GetIDOverlay()}{GetIDOverlay()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Get\+IDOverlay (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a0cd9d43d04ada45b3a6973d65bcffeb2}\label{class_c_mil_display_a0cd9d43d04ada45b3a6973d65bcffeb2}} 
+\index{CMilDisplay@{CMilDisplay}!GetMousePosImgXY@{GetMousePosImgXY}}
+\index{GetMousePosImgXY@{GetMousePosImgXY}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{GetMousePosImgXY()}{GetMousePosImgXY()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Get\+Mouse\+Pos\+Img\+XY (\begin{DoxyParamCaption}\item[{Cdbl\+Point $\ast$}]{p\+Dbl\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a5033f9ce2aa721acb29c049774ae61ff}\label{class_c_mil_display_a5033f9ce2aa721acb29c049774ae61ff}} 
+\index{CMilDisplay@{CMilDisplay}!GetTransparencyColor@{GetTransparencyColor}}
+\index{GetTransparencyColor@{GetTransparencyColor}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{GetTransparencyColor()}{GetTransparencyColor()}}
+{\footnotesize\ttfamily UINT CMil\+Display\+::\+Get\+Transparency\+Color (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_aea724f425994ca43edf80be80a6c5874}\label{class_c_mil_display_aea724f425994ca43edf80be80a6c5874}} 
+\index{CMilDisplay@{CMilDisplay}!GetZoomFactor@{GetZoomFactor}}
+\index{GetZoomFactor@{GetZoomFactor}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{GetZoomFactor()}{GetZoomFactor()}}
+{\footnotesize\ttfamily Cdbl\+Size CMil\+Display\+::\+Get\+Zoom\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a5d6a1cd32f6d33ea3ff4b17fd42f94c7}\label{class_c_mil_display_a5d6a1cd32f6d33ea3ff4b17fd42f94c7}} 
+\index{CMilDisplay@{CMilDisplay}!IsSelected@{IsSelected}}
+\index{IsSelected@{IsSelected}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{IsSelected()}{IsSelected()}}
+{\footnotesize\ttfamily BOOL CMil\+Display\+::\+Is\+Selected (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_a2c24c3a34626703aa37709742e8e4507}\label{class_c_mil_display_a2c24c3a34626703aa37709742e8e4507}} 
+\index{CMilDisplay@{CMilDisplay}!SetPanFactor@{SetPanFactor}}
+\index{SetPanFactor@{SetPanFactor}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{SetPanFactor()}{SetPanFactor()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Set\+Pan\+Factor (\begin{DoxyParamCaption}\item[{double}]{XOffset,  }\item[{double}]{YOffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_afb6bc8397546af611a53b42288cf06d1}\label{class_c_mil_display_afb6bc8397546af611a53b42288cf06d1}} 
+\index{CMilDisplay@{CMilDisplay}!SetViewAutoScale@{SetViewAutoScale}}
+\index{SetViewAutoScale@{SetViewAutoScale}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{SetViewAutoScale()}{SetViewAutoScale()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Set\+View\+Auto\+Scale (\begin{DoxyParamCaption}\item[{BOOL}]{b\+State = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_ae2f1b37de0f3e36284f495b3c80259f6}\label{class_c_mil_display_ae2f1b37de0f3e36284f495b3c80259f6}} 
+\index{CMilDisplay@{CMilDisplay}!SetViewShift@{SetViewShift}}
+\index{SetViewShift@{SetViewShift}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{SetViewShift()}{SetViewShift()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Set\+View\+Shift (\begin{DoxyParamCaption}\item[{int}]{v\+Shift }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_ab0877d0873e9bb1c484f9a2d4357f1f9}\label{class_c_mil_display_ab0877d0873e9bb1c484f9a2d4357f1f9}} 
+\index{CMilDisplay@{CMilDisplay}!SetZoomFactor@{SetZoomFactor}}
+\index{SetZoomFactor@{SetZoomFactor}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{SetZoomFactor()}{SetZoomFactor()}}
+{\footnotesize\ttfamily int CMil\+Display\+::\+Set\+Zoom\+Factor (\begin{DoxyParamCaption}\item[{double}]{XFactor,  }\item[{double}]{YFactor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_display_ad827de04f93e831d6eabf504c97d44e4}\label{class_c_mil_display_ad827de04f93e831d6eabf504c97d44e4}} 
+\index{CMilDisplay@{CMilDisplay}!UnSelectDisp@{UnSelectDisp}}
+\index{UnSelectDisp@{UnSelectDisp}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{UnSelectDisp()}{UnSelectDisp()}}
+{\footnotesize\ttfamily void CMil\+Display\+::\+Un\+Select\+Disp (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_display_a2b2bfcb0d80f274764760b5d4c3c1ba7}\label{class_c_mil_display_a2b2bfcb0d80f274764760b5d4c3c1ba7}} 
+\index{CMilDisplay@{CMilDisplay}!m\_milIDApplication@{m\_milIDApplication}}
+\index{m\_milIDApplication@{m\_milIDApplication}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{m\_milIDApplication}{m\_milIDApplication}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Display\+::m\+\_\+mil\+IDApplication}
+
+\mbox{\Hypertarget{class_c_mil_display_a0d14455a4a3b6597a0081f3326c45848}\label{class_c_mil_display_a0d14455a4a3b6597a0081f3326c45848}} 
+\index{CMilDisplay@{CMilDisplay}!m\_milIDDisplay@{m\_milIDDisplay}}
+\index{m\_milIDDisplay@{m\_milIDDisplay}!CMilDisplay@{CMilDisplay}}
+\doxysubsubsection{\texorpdfstring{m\_milIDDisplay}{m\_milIDDisplay}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Display\+::m\+\_\+mil\+IDDisplay}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_display_8h}{Mil\+Display.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_display_8cpp}{Mil\+Display.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Inspection: D:/OneDrive/ngh/J-TWF22/Project/Inspection/include/COMMTHREAD.H 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Inspection<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_bd976f84b5cc9bebc92e068d65fec952.html">OneDrive</a></li><li class="navelem"><a class="el" href="dir_526c377dd3d3fc952efb581059fc7050.html">ngh</a></li><li class="navelem"><a class="el" href="dir_03a9c10c0e9d1674deb214bc7339cb82.html">J-TWF22</a></li><li class="navelem"><a class="el" href="dir_6f840c36a948a9a39ad178e47c4e100c.html">Project</a></li><li class="navelem"><a class="el" href="dir_2fa6b85b08a3d5ce733a4e5a67a1adb8.html">Inspection</a></li><li class="navelem"><a class="el" href="dir_20461e0051bb9014d44a5b4d1d160328.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">COMMTHREAD.H</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_o_m_m_t_h_r_e_a_d_8_h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef         __COMM_THREAD_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define         __COMM_THREAD_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// Thread와 부모 프로세스가 데이터를 주고 받을 Buffer크기 </span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#a6c7cd32e1bac137f05e4a752b4ad10af">    8</a></span><span class="preprocessor">#define BUFF_SIZE               163840                          </span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#a0e64c61e5cdf274d4d6226dd7eaaba24">    9</a></span><span class="preprocessor">#define WM_COMM_READ    (WM_USER+300)           </span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#aca3b498f5936dbe4f3076a47c3e1810d">   10</a></span><span class="preprocessor">#define ASCII_LF                0x0a</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#a089ed4925403ab02a05e603967c74579">   11</a></span><span class="preprocessor">#define ASCII_CR                0x0d</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#afc0f42590f4bdc554d6bc17c54aedc2b">   12</a></span><span class="preprocessor">#define ASCII_XON               0x11</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#afcf583b92f0898d99d86611e5b56d718">   13</a></span><span class="preprocessor">#define ASCII_XOFF              0x13</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//#define       ON                              TRUE;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//#define       OFF                             FALSE;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_c_queue.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_queue.html">CQueue</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        CRITICAL_SECTION        csLock;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_c_queue.html#aa9916e774ec0fc3825652ac2c218c448">   21</a></span>        BYTE    *<a class="code hl_variable" href="class_c_queue.html#aa9916e774ec0fc3825652ac2c218c448">buff</a>;          <span class="comment">// Queue Buffer</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_c_queue.html#aa5935d8acdc466f9634df47dbf038341">   22</a></span>        <span class="keywordtype">int</span>             <a class="code hl_variable" href="class_c_queue.html#aa5935d8acdc466f9634df47dbf038341">m_iHead</a>;                                <span class="comment">// Queue Head 및 Tail Position</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_c_queue.html#ad6dd8ea4833fadf3109584f68057df8c">   23</a></span>        <span class="keywordtype">int</span>             <a class="code hl_variable" href="class_c_queue.html#ad6dd8ea4833fadf3109584f68057df8c">m_iTail</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">int</span>             <a class="code hl_function" href="class_c_queue.html#a517fbc3c681ff9ce7a42dca174731d9b">GetSize</a>();                              <span class="comment">// Queue에 들어있는 데이터의 길이를 Return한다 </span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        BOOL    <a class="code hl_function" href="class_c_queue.html#a9458c4d2da10fdf8ff9973e6e699e737">PutByte</a>(BYTE <span class="keywordtype">byte</span>);             <span class="comment">// Queue에 1 byte 넣기</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        BOOL    <a class="code hl_function" href="class_c_queue.html#abd88c180874347649ba7045eca6c2a70">GetByte</a>(BYTE *pbyte);   <span class="comment">// Queue에 1 byte 꺼내기</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="class_c_queue.html#a3956eb9fd198317e465b7b622329bec6">CQueue</a>();                       </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="class_c_queue.html#a73412173b1f7427ccd1b993acf5fb66c">~CQueue</a>();                      </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="class_c_queue.html#a730e67c5abf97615bd8e9b3b03dd18c8">Clear</a>();                                <span class="comment">// Queue의 내용을 지운다 </span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//      통신 클래스  CCommThread </span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//      포트 열기 : OpenPort(&quot;COM1&quot;, CBR_9600);</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//      포트 읽기 : 포트를 연 후에 포트에 자료가 도착하면 WM_COMM_READ 메시지가</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//                              메인 윈도우에 전달된다. ON_MESSAGE 매크로를 이용, 함수를 </span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//                              연결하고 m_ReadData String에 저장된 데이터를 이용해서 읽는다</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//      포트 쓰기 : WriteComm(buff, 30)과 같이 버퍼와 그 크기를 건네면 된다.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html">   42</a></span><span class="keyword">class   </span><a class="code hl_class" href="class_c_comm_thread.html">CCommThread</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="comment">// 메시지를 받는 윈도를 변경할때 이용한다.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_comm_thread.html#a339b595a32c04f1d612668898c2041d1">SetHWnd</a>(HWND hWnd);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a6dc64c3319abf7b30da6d7658bd3eb17">   47</a></span>        <span class="keyword">typedef</span> void(*<a class="code hl_typedef" href="class_c_comm_thread.html#a6dc64c3319abf7b30da6d7658bd3eb17">CALLBACK_FUNCTION_Event</a>)(BYTE*,int);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a157f5fdb594e880f177af977e5d6defa">   48</a></span>        <a class="code hl_typedef" href="class_c_comm_thread.html#a6dc64c3319abf7b30da6d7658bd3eb17">CALLBACK_FUNCTION_Event</a> <a class="code hl_variable" href="class_c_comm_thread.html#a157f5fdb594e880f177af977e5d6defa">callEventfunc</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a6bcbb436e0e18cb383da8d3cd53e9db2">   50</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_comm_thread.html#a6bcbb436e0e18cb383da8d3cd53e9db2">SetCallBack</a>(<a class="code hl_typedef" href="class_c_comm_thread.html#a6dc64c3319abf7b30da6d7658bd3eb17">CALLBACK_FUNCTION_Event</a> event) { <a class="code hl_variable" href="class_c_comm_thread.html#a157f5fdb594e880f177af977e5d6defa">callEventfunc</a> = event; };</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_function" href="class_c_comm_thread.html#a3355c15ab6f80dd13e958f4cae9a9517">CCommThread</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#aa1297046ca0bd9d7d54e9dbb67116124">   53</a></span>        BOOL            <a class="code hl_variable" href="class_c_comm_thread.html#aa1297046ca0bd9d7d54e9dbb67116124">m_bThreadEnd</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#ab91dc30efa440ab77ca925eb173c6e43">   54</a></span>        HANDLE          <a class="code hl_variable" href="class_c_comm_thread.html#ab91dc30efa440ab77ca925eb173c6e43">m_hRead</a>;                        <span class="comment">// Watch 스레드에서 Read 완료 때까지 대기하기 위한 Event핸들 추가. </span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a936a8e898b10c5b0a59cf42c505427a6">   55</a></span>        HWND            <a class="code hl_variable" href="class_c_comm_thread.html#a936a8e898b10c5b0a59cf42c505427a6">m_hWnd</a>;                         <span class="comment">// 수신 메시지를 받을 윈도의 핸들.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a412902ea23286e13d53a17379c9106a8">   56</a></span>        HANDLE          <a class="code hl_variable" href="class_c_comm_thread.html#a412902ea23286e13d53a17379c9106a8">m_hComm</a>;                        <span class="comment">// 통신 포트 파일 핸들</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//      char            m_szPortName[100];      // 포트 이름 (COM1 ..)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a1a034f6c1fe67537ceb835b62c1a9fe7">   58</a></span>        CString         <a class="code hl_variable" href="class_c_comm_thread.html#a1a034f6c1fe67537ceb835b62c1a9fe7">m_strPortName</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a2cbb7da65d693033144c8fe8782bbf89">   59</a></span>        BOOL            <a class="code hl_variable" href="class_c_comm_thread.html#a2cbb7da65d693033144c8fe8782bbf89">m_bPortOpen</a>;            <span class="comment">// 포트가 열렸는지 유무를 나타냄.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#ab25b89f57bd3a5c5eae4f618e9b517cb">   60</a></span>        OVERLAPPED      <a class="code hl_variable" href="class_c_comm_thread.html#ab25b89f57bd3a5c5eae4f618e9b517cb">m_osRead</a>;                       <span class="comment">// 포트 파일 Overlapped structure</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#ab8644a389e74bbb1d026248d7fd8d6fc">   61</a></span>        OVERLAPPED      <a class="code hl_variable" href="class_c_comm_thread.html#ab8644a389e74bbb1d026248d7fd8d6fc">m_osWrite</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#aa99300bfff43b4b25c5f3402c131e63f">   62</a></span>        HANDLE          <a class="code hl_variable" href="class_c_comm_thread.html#aa99300bfff43b4b25c5f3402c131e63f">m_hThreadWatchComm</a>;     <span class="comment">// Watch함수 Thread 핸들.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a076210091d635ae75404789343c1f933">   63</a></span>        WORD            <a class="code hl_variable" href="class_c_comm_thread.html#a076210091d635ae75404789343c1f933">m_wPortID</a>;                      <span class="comment">// WM_COMM_READ와 함께 보내는 인수.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a3fd64f003d0ef2a98100c28c4255a5f8">   65</a></span>        <a class="code hl_class" href="class_c_queue.html">CQueue</a>  <a class="code hl_variable" href="class_c_comm_thread.html#a3fd64f003d0ef2a98100c28c4255a5f8">m_QueueRead</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a323ea932960c1cad9188565b589ba39a">   66</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="class_c_comm_thread.html#a323ea932960c1cad9188565b589ba39a">m_strRead</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//=============================================================================</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment">//BOOL  OpenPort(HWND hWnd, char *psPortName, DWORD dwBaud, WORD wParam);</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        BOOL    <a class="code hl_function" href="class_c_comm_thread.html#a9d193c5a0e09f3f1b0dd9b779f41f746">OpenPort</a>(HWND hWnd, CString strPortName, DWORD dwBaud, WORD wParam);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//=============================================================================</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        DWORD   <a class="code hl_function" href="class_c_comm_thread.html#a17e6f1c93459b1c5721743622d87f636">WriteComm</a>(BYTE *pBuff, DWORD nToWrite);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        DWORD   <a class="code hl_function" href="class_c_comm_thread.html#af9e7526e19ab6c7af618864a252781d8">ReadComm</a>(BYTE *pBuff, DWORD nToRead);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a464d918daed4cf448c0a8692d6daa581">   75</a></span>        <span class="keywordtype">int</span>             <a class="code hl_variable" href="class_c_comm_thread.html#a464d918daed4cf448c0a8692d6daa581">m_intInQueue</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_c_comm_thread.html#a351439d0c3a0553f23ce20bc6f9a374d">   76</a></span>        <span class="keywordtype">int</span>             <a class="code hl_variable" href="class_c_comm_thread.html#a351439d0c3a0553f23ce20bc6f9a374d">m_intOutQueue</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_comm_thread.html#af342bd5eb6308deec441388503f11d9d">ClosePort</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// Thread로 사용할 함수 </span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>DWORD   <a class="code hl_function" href="_c_o_m_m_t_h_r_e_a_d_8_h.html#aefcabd1e9e4ddbb2015a14ee665e8100">ThreadWatchComm</a>(<a class="code hl_class" href="class_c_comm_thread.html">CCommThread</a>* pComm);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="ttc" id="a_c_o_m_m_t_h_r_e_a_d_8_h_html_aefcabd1e9e4ddbb2015a14ee665e8100"><div class="ttname"><a href="_c_o_m_m_t_h_r_e_a_d_8_h.html#aefcabd1e9e4ddbb2015a14ee665e8100">ThreadWatchComm</a></div><div class="ttdeci">DWORD ThreadWatchComm(CCommThread *pComm)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:455</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html"><div class="ttname"><a href="class_c_comm_thread.html">CCommThread</a></div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:43</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a076210091d635ae75404789343c1f933"><div class="ttname"><a href="class_c_comm_thread.html#a076210091d635ae75404789343c1f933">CCommThread::m_wPortID</a></div><div class="ttdeci">WORD m_wPortID</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:63</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a157f5fdb594e880f177af977e5d6defa"><div class="ttname"><a href="class_c_comm_thread.html#a157f5fdb594e880f177af977e5d6defa">CCommThread::callEventfunc</a></div><div class="ttdeci">CALLBACK_FUNCTION_Event callEventfunc</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:48</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a17e6f1c93459b1c5721743622d87f636"><div class="ttname"><a href="class_c_comm_thread.html#a17e6f1c93459b1c5721743622d87f636">CCommThread::WriteComm</a></div><div class="ttdeci">DWORD WriteComm(BYTE *pBuff, DWORD nToWrite)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:570</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a1a034f6c1fe67537ceb835b62c1a9fe7"><div class="ttname"><a href="class_c_comm_thread.html#a1a034f6c1fe67537ceb835b62c1a9fe7">CCommThread::m_strPortName</a></div><div class="ttdeci">CString m_strPortName</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:58</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a2cbb7da65d693033144c8fe8782bbf89"><div class="ttname"><a href="class_c_comm_thread.html#a2cbb7da65d693033144c8fe8782bbf89">CCommThread::m_bPortOpen</a></div><div class="ttdeci">BOOL m_bPortOpen</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:59</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a323ea932960c1cad9188565b589ba39a"><div class="ttname"><a href="class_c_comm_thread.html#a323ea932960c1cad9188565b589ba39a">CCommThread::m_strRead</a></div><div class="ttdeci">string m_strRead</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:66</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a3355c15ab6f80dd13e958f4cae9a9517"><div class="ttname"><a href="class_c_comm_thread.html#a3355c15ab6f80dd13e958f4cae9a9517">CCommThread::CCommThread</a></div><div class="ttdeci">CCommThread()</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:103</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a339b595a32c04f1d612668898c2041d1"><div class="ttname"><a href="class_c_comm_thread.html#a339b595a32c04f1d612668898c2041d1">CCommThread::SetHWnd</a></div><div class="ttdeci">void SetHWnd(HWND hWnd)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:653</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a351439d0c3a0553f23ce20bc6f9a374d"><div class="ttname"><a href="class_c_comm_thread.html#a351439d0c3a0553f23ce20bc6f9a374d">CCommThread::m_intOutQueue</a></div><div class="ttdeci">int m_intOutQueue</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:76</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a3fd64f003d0ef2a98100c28c4255a5f8"><div class="ttname"><a href="class_c_comm_thread.html#a3fd64f003d0ef2a98100c28c4255a5f8">CCommThread::m_QueueRead</a></div><div class="ttdeci">CQueue m_QueueRead</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:65</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a412902ea23286e13d53a17379c9106a8"><div class="ttname"><a href="class_c_comm_thread.html#a412902ea23286e13d53a17379c9106a8">CCommThread::m_hComm</a></div><div class="ttdeci">HANDLE m_hComm</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:56</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a464d918daed4cf448c0a8692d6daa581"><div class="ttname"><a href="class_c_comm_thread.html#a464d918daed4cf448c0a8692d6daa581">CCommThread::m_intInQueue</a></div><div class="ttdeci">int m_intInQueue</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:75</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a6bcbb436e0e18cb383da8d3cd53e9db2"><div class="ttname"><a href="class_c_comm_thread.html#a6bcbb436e0e18cb383da8d3cd53e9db2">CCommThread::SetCallBack</a></div><div class="ttdeci">void SetCallBack(CALLBACK_FUNCTION_Event event)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:50</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a6dc64c3319abf7b30da6d7658bd3eb17"><div class="ttname"><a href="class_c_comm_thread.html#a6dc64c3319abf7b30da6d7658bd3eb17">CCommThread::CALLBACK_FUNCTION_Event</a></div><div class="ttdeci">void(* CALLBACK_FUNCTION_Event)(BYTE *, int)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:47</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a936a8e898b10c5b0a59cf42c505427a6"><div class="ttname"><a href="class_c_comm_thread.html#a936a8e898b10c5b0a59cf42c505427a6">CCommThread::m_hWnd</a></div><div class="ttdeci">HWND m_hWnd</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:55</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_a9d193c5a0e09f3f1b0dd9b779f41f746"><div class="ttname"><a href="class_c_comm_thread.html#a9d193c5a0e09f3f1b0dd9b779f41f746">CCommThread::OpenPort</a></div><div class="ttdeci">BOOL OpenPort(HWND hWnd, CString strPortName, DWORD dwBaud, WORD wParam)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:127</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_aa1297046ca0bd9d7d54e9dbb67116124"><div class="ttname"><a href="class_c_comm_thread.html#aa1297046ca0bd9d7d54e9dbb67116124">CCommThread::m_bThreadEnd</a></div><div class="ttdeci">BOOL m_bThreadEnd</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:53</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_aa99300bfff43b4b25c5f3402c131e63f"><div class="ttname"><a href="class_c_comm_thread.html#aa99300bfff43b4b25c5f3402c131e63f">CCommThread::m_hThreadWatchComm</a></div><div class="ttdeci">HANDLE m_hThreadWatchComm</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:62</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_ab25b89f57bd3a5c5eae4f618e9b517cb"><div class="ttname"><a href="class_c_comm_thread.html#ab25b89f57bd3a5c5eae4f618e9b517cb">CCommThread::m_osRead</a></div><div class="ttdeci">OVERLAPPED m_osRead</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:60</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_ab8644a389e74bbb1d026248d7fd8d6fc"><div class="ttname"><a href="class_c_comm_thread.html#ab8644a389e74bbb1d026248d7fd8d6fc">CCommThread::m_osWrite</a></div><div class="ttdeci">OVERLAPPED m_osWrite</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:61</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_ab91dc30efa440ab77ca925eb173c6e43"><div class="ttname"><a href="class_c_comm_thread.html#ab91dc30efa440ab77ca925eb173c6e43">CCommThread::m_hRead</a></div><div class="ttdeci">HANDLE m_hRead</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:54</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_af342bd5eb6308deec441388503f11d9d"><div class="ttname"><a href="class_c_comm_thread.html#af342bd5eb6308deec441388503f11d9d">CCommThread::ClosePort</a></div><div class="ttdeci">void ClosePort()</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:552</div></div>
+<div class="ttc" id="aclass_c_comm_thread_html_af9e7526e19ab6c7af618864a252781d8"><div class="ttname"><a href="class_c_comm_thread.html#af9e7526e19ab6c7af618864a252781d8">CCommThread::ReadComm</a></div><div class="ttdeci">DWORD ReadComm(BYTE *pBuff, DWORD nToRead)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:619</div></div>
+<div class="ttc" id="aclass_c_queue_html"><div class="ttname"><a href="class_c_queue.html">CQueue</a></div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:18</div></div>
+<div class="ttc" id="aclass_c_queue_html_a3956eb9fd198317e465b7b622329bec6"><div class="ttname"><a href="class_c_queue.html#a3956eb9fd198317e465b7b622329bec6">CQueue::CQueue</a></div><div class="ttdeci">CQueue()</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:9</div></div>
+<div class="ttc" id="aclass_c_queue_html_a517fbc3c681ff9ce7a42dca174731d9b"><div class="ttname"><a href="class_c_queue.html#a517fbc3c681ff9ce7a42dca174731d9b">CQueue::GetSize</a></div><div class="ttdeci">int GetSize()</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:39</div></div>
+<div class="ttc" id="aclass_c_queue_html_a730e67c5abf97615bd8e9b3b03dd18c8"><div class="ttname"><a href="class_c_queue.html#a730e67c5abf97615bd8e9b3b03dd18c8">CQueue::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:26</div></div>
+<div class="ttc" id="aclass_c_queue_html_a73412173b1f7427ccd1b993acf5fb66c"><div class="ttname"><a href="class_c_queue.html#a73412173b1f7427ccd1b993acf5fb66c">CQueue::~CQueue</a></div><div class="ttdeci">~CQueue()</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:16</div></div>
+<div class="ttc" id="aclass_c_queue_html_a9458c4d2da10fdf8ff9973e6e699e737"><div class="ttname"><a href="class_c_queue.html#a9458c4d2da10fdf8ff9973e6e699e737">CQueue::PutByte</a></div><div class="ttdeci">BOOL PutByte(BYTE byte)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:55</div></div>
+<div class="ttc" id="aclass_c_queue_html_aa5935d8acdc466f9634df47dbf038341"><div class="ttname"><a href="class_c_queue.html#aa5935d8acdc466f9634df47dbf038341">CQueue::m_iHead</a></div><div class="ttdeci">int m_iHead</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:22</div></div>
+<div class="ttc" id="aclass_c_queue_html_aa9916e774ec0fc3825652ac2c218c448"><div class="ttname"><a href="class_c_queue.html#aa9916e774ec0fc3825652ac2c218c448">CQueue::buff</a></div><div class="ttdeci">BYTE * buff</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:21</div></div>
+<div class="ttc" id="aclass_c_queue_html_abd88c180874347649ba7045eca6c2a70"><div class="ttname"><a href="class_c_queue.html#abd88c180874347649ba7045eca6c2a70">CQueue::GetByte</a></div><div class="ttdeci">BOOL GetByte(BYTE *pbyte)</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.CPP:74</div></div>
+<div class="ttc" id="aclass_c_queue_html_ad6dd8ea4833fadf3109584f68057df8c"><div class="ttname"><a href="class_c_queue.html#ad6dd8ea4833fadf3109584f68057df8c">CQueue::m_iTail</a></div><div class="ttdeci">int m_iTail</div><div class="ttdef"><b>Definition:</b> COMMTHREAD.H:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 금 9월 23 2022 14:12:46, 프로젝트명 : Inspection, 생성자 : &#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,128 @@
+\hypertarget{_c_x_ray_class_8h_source}{}\doxysection{CXRay\+Class.\+h}
+\label{_c_x_ray_class_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/x-\/ray/CXRayClass.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/x-\/ray/CXRayClass.h}}
+\mbox{\hyperlink{_c_x_ray_class_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_o_m_m_t_h_r_e_a_d_8_h}{commthread.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_time_check_8h}{TimeCheck.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{comment}{//\#include "{}SerialPort.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{enum} \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\_RAY\_CMD}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}{PROGRAM\_KV}},}
+\DoxyCodeLine{9         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}{PROGRAM\_MA}},}
+\DoxyCodeLine{10         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}{REQUEST\_KV\_SEPOINT}},}
+\DoxyCodeLine{11         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}{REQUEST\_MA\_SEPOINT}},}
+\DoxyCodeLine{12         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}{REQUEST\_KV\_MONITOR}},}
+\DoxyCodeLine{13         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}{REQUEST\_MA\_MONITOR}},}
+\DoxyCodeLine{14         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}{REQUEST\_FILAMENT\_MONITOR}},}
+\DoxyCodeLine{15         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}{TURN\_X\_RAY\_ON\_OFF}},}
+\DoxyCodeLine{16         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}{ENABLE\_COMM\_WATCHDOG}},}
+\DoxyCodeLine{17         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}{TICKLE\_COMM\_WATCHDOG}},}
+\DoxyCodeLine{18         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}{RESET\_FAULTS}},}
+\DoxyCodeLine{19         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}{REQUEST\_FAULTS}},}
+\DoxyCodeLine{20         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}{READ\_X\_RAY\_STATUS}},}
+\DoxyCodeLine{21         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}{REQUEST\_SOFTWARE\_VERSION}},}
+\DoxyCodeLine{22         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}{REQUEST\_VOLTAGE\_SCALING}},}
+\DoxyCodeLine{23         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}{REQUEST\_CURRENT\_SCALING}},}
+\DoxyCodeLine{24         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}{REQUEST\_MODEL\_NUMBER}},}
+\DoxyCodeLine{25         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}{REQUEST\_HARDWARE\_VERSION}},}
+\DoxyCodeLine{26         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}{REQUEST\_SOFTWARE\_BULID\_VERSION}},}
+\DoxyCodeLine{27         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}{REQUEST\_15V\_LVPS}},}
+\DoxyCodeLine{28         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}{REQUEST\_TANK\_TEMPERATURE}},}
+\DoxyCodeLine{29         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}{PROGRAM\_BAUD\_RATE}},}
+\DoxyCodeLine{30         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}{NON}}}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\_RAY\_STATUS}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_abd0ae32c483788d5bf48161c24eed719}{bArc}};}
+\DoxyCodeLine{36         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_a3bd37cd9b5384b5f095a2c9b00eb3d2b}{bOverTemperature}};}
+\DoxyCodeLine{37         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_a5c731f6f213a27500c79557f07f5b6b3}{bOverVoltage}};}
+\DoxyCodeLine{38         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_a278e4821103fbe5d55552f3e4e991218}{bUnderVoltage}};}
+\DoxyCodeLine{39         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_a1cddf8a39ffda6ab93205af35e0391e2}{bOverCurrent}};}
+\DoxyCodeLine{40         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_a0986802f2275b71dc512bd7d0d08e935}{bUnderCurrent}};}
+\DoxyCodeLine{41         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_af2f5d96611f20904751117be416345d3}{bWatchdogTimeOut}};}
+\DoxyCodeLine{42         BOOL \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s_a8f9b47dfc955dc220e4e87e7c24132c8}{bOpenInterlock}};}
+\DoxyCodeLine{43 \}\mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\_RAY\_STATUS}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\_RAY\_INFO}}}
+\DoxyCodeLine{46 \{}
+\DoxyCodeLine{47         \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\_RAY\_STATUS}} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a5c102ec3f66ed036d4796e74fea8b3bf}{stXray\_status}};}
+\DoxyCodeLine{48         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a45703fe9decdffdb510dd9e3a8ada69c}{strSWVersion}}[\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\_CHAR\_LENG}}];}
+\DoxyCodeLine{49         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a23ae19edf5f004e0819d3ab224f9ea98}{strModelNumber}}[\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\_CHAR\_LENG}}];}
+\DoxyCodeLine{50         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a8d91fc5b87d7c9c7e19cf6f42464066a}{strHWVersion}}[\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\_CHAR\_LENG}}];}
+\DoxyCodeLine{51         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a712be7399100e63af6aa04b4948982e6}{strSWBuildVersion}}[\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\_CHAR\_LENG}}];}
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_ae5ac896ecaf658e77d725e055dacdf9c}{nNoScalingSetKV}};}
+\DoxyCodeLine{53         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_ad13bfb0bb95aa92f1fbeb83c986d918c}{nNoScalingSetMA}};}
+\DoxyCodeLine{54         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a0989a94c952764b2c6cec28a72ac7203}{nNoScalingCurKV}};}
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a6150a3a31a086c0a3250e507168a434c}{nNoScalingCurMA}};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_afcd622bab4ab17c8877f1386d23ada52}{nFilament}};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a3bf6b74081915702098ad38f37d96ce7}{dScalingCurKV}};}
+\DoxyCodeLine{59         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_ae193aa1157fce309c16577a4670bba2e}{dScalingCurMA}};}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61         BOOL \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_ab41212f67a6eb07d176699561ee58385}{isOnOff}};}
+\DoxyCodeLine{62         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o_a2a7141d731f5af5d7b59d7069eb56ebf}{dTemp}};}
+\DoxyCodeLine{63 \}\mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\_RAY\_INFO}};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_x_ray_class}{CXRayClass}}}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{68         \mbox{\hyperlink{class_c_comm_thread}{CCommThread}} \mbox{\hyperlink{class_c_x_ray_class_acdc3ebde959450b83a9e4d6adf5e3a0b}{m\_Comport}};}
+\DoxyCodeLine{69         \textcolor{comment}{//CSerialPort m\_Comport;}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71         \mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\_RAY\_CMD}} \mbox{\hyperlink{class_c_x_ray_class_a4fbe835763ff7fc90eed2032696bcbcc}{m\_SendCommand}};}
+\DoxyCodeLine{72         \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\_RAY\_INFO}} \mbox{\hyperlink{class_c_x_ray_class_a041f5aeff3dfcf3ed0438ff90cde0b1c}{m\_XrayInfo}};}
+\DoxyCodeLine{73         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_x_ray_class_a5f8e0ab7d552cd28bc954460b096affa}{m\_nSendDataValue}};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         CWinThread* \mbox{\hyperlink{class_c_x_ray_class_abfe37d5de9cd553f716e759dfa6a34ee}{m\_pStatusPollingThread}};}
+\DoxyCodeLine{76         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_x_ray_class_a0242079700b05e2bf0bd05d708e6e15a}{m\_nPollingInterval}};}
+\DoxyCodeLine{77         BOOL \mbox{\hyperlink{class_c_x_ray_class_a9c01391d22a17713e6c9a2fdee69158b}{m\_bThreadEnd}};}
+\DoxyCodeLine{78         BOOL \mbox{\hyperlink{class_c_x_ray_class_ab573d74a6c9d5c8eb43654bc153ddacf}{m\_bWarmUpState}};}
+\DoxyCodeLine{79         \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} \mbox{\hyperlink{class_c_x_ray_class_a0827bcf0b48e6beeb8710c53893e0016}{m\_XrayEndTime}};}
+\DoxyCodeLine{80         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_x_ray_class_a5f0c2afd35984ade88c6ec2106c106e4}{m\_nSendCmdIndex}};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82         \mbox{\hyperlink{class_c_timer_check}{CTimerCheck}} \mbox{\hyperlink{class_c_x_ray_class_a0b2a55a9943be38f3983d5ae07e62a37}{m\_TimeOutCheck}};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         CString \mbox{\hyperlink{class_c_x_ray_class_aa437f89042c418d5a858cf758b06efee}{m\_strPortName}};}
+\DoxyCodeLine{85         DWORD \mbox{\hyperlink{class_c_x_ray_class_aac01921a8cc6bae8e52e188c9f4a3440}{m\_dwBaud}};}
+\DoxyCodeLine{86 \textcolor{keyword}{private}:}
+\DoxyCodeLine{87         BOOL ReadCommand(BYTE* pData, \textcolor{keywordtype}{int} nCnt);}
+\DoxyCodeLine{88         \textcolor{keywordtype}{int} ReadData(BYTE* pData, \textcolor{keywordtype}{void}* nReadData, \textcolor{keywordtype}{int} nReadCnt = 0, \textcolor{keywordtype}{int} nReadType = 0);\textcolor{comment}{//nReadType = 0 -\/> int, 1 -\/> double, 2 -\/> BOOL Array, 3 -\/> String // return string count}}
+\DoxyCodeLine{89         BOOL SendCommand(\mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\_RAY\_CMD}} cmd, \textcolor{keywordtype}{int} nData = -\/1);}
+\DoxyCodeLine{90         BYTE Checksums(BYTE* pData, \textcolor{keywordtype}{int} nCnt = -\/1);}
+\DoxyCodeLine{91 \textcolor{keyword}{public}:}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}{CXRayClass}}();}
+\DoxyCodeLine{93         \mbox{\hyperlink{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}{\string~CXRayClass}}();}
+\DoxyCodeLine{94         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_x_ray_class}{CXRayClass}}* \mbox{\hyperlink{class_c_x_ray_class_a411bf51de964aa99d496db140a563e7b}{Instance}}();}
+\DoxyCodeLine{95         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_x_ray_class}{CXRayClass}}* \mbox{\hyperlink{class_c_x_ray_class_a762d433cf49a08d861ce4376db526201}{m\_pInstance}};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         UINT \textcolor{keyword}{static} \mbox{\hyperlink{class_c_x_ray_class_a6ab36108b97d538cece98ddf20d3f6b4}{ThreadStatusPolling}}(LPVOID pParam);}
+\DoxyCodeLine{98         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}{StatusPollingThread}}();}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100         BOOL \mbox{\hyperlink{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}{SetSendCommand}}(\mbox{\hyperlink{_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\_RAY\_CMD}} cmd, \textcolor{keywordtype}{int} nData = -\/1) \{ \textcolor{keywordflow}{return} SendCommand(cmd, nData); \};}
+\DoxyCodeLine{101         BOOL \mbox{\hyperlink{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}{SetReadCommand}}(BYTE* pData, \textcolor{keywordtype}{int} nCnt);}
+\DoxyCodeLine{102         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}{OpenPort}}(CString strPortName = \_T(\textcolor{stringliteral}{"{}COM2"{}}), DWORD dwBaud = 9600, \textcolor{keywordtype}{int} nReadInterval = 1);}
+\DoxyCodeLine{103         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}{Close}}();}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105         \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\_RAY\_INFO}} \mbox{\hyperlink{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}{GetXrayInfo}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_x_ray_class_a041f5aeff3dfcf3ed0438ff90cde0b1c}{m\_XrayInfo}}; \};}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107         BOOL \mbox{\hyperlink{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}{GetPorConnection}}() \{}
+\DoxyCodeLine{108                 \textcolor{comment}{//return m\_Comport.IsOpen(); \};}}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_x_ray_class_acdc3ebde959450b83a9e4d6adf5e3a0b}{m\_Comport}}.\mbox{\hyperlink{class_c_comm_thread_a2cbb7da65d693033144c8fe8782bbf89}{m\_bPortOpen}};       \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111         BOOL \mbox{\hyperlink{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}{SetXrayOnOff}}(BOOL isOnOff);}
+\DoxyCodeLine{112         BOOL \mbox{\hyperlink{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}{SetXrayVolCur}}(\textcolor{keywordtype}{double} dVol, \textcolor{keywordtype}{double} dCur);}
+\DoxyCodeLine{113         BOOL \mbox{\hyperlink{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}{SetXrayRestFault}}();}
+\DoxyCodeLine{114         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}{SetWarmupState}}(BOOL isWarmup) \{ \mbox{\hyperlink{class_c_x_ray_class_ab573d74a6c9d5c8eb43654bc153ddacf}{m\_bWarmUpState}} = isWarmup; \};}
+\DoxyCodeLine{115         BOOL \mbox{\hyperlink{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}{GetWarmupState}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_x_ray_class_ab573d74a6c9d5c8eb43654bc153ddacf}{m\_bWarmUpState}}; \};}
+\DoxyCodeLine{116         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}{SetXrayEndTime}}(\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} cEndTime) \{ \mbox{\hyperlink{class_c_x_ray_class_a0827bcf0b48e6beeb8710c53893e0016}{m\_XrayEndTime}} = cEndTime; \};}
+\DoxyCodeLine{117         \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} \mbox{\hyperlink{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}{GetXrayEndTime}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_x_ray_class_a0827bcf0b48e6beeb8710c53893e0016}{m\_XrayEndTime}}; \};}
+\DoxyCodeLine{118 \textcolor{preprocessor}{\#ifndef HW\_USE}}
+\DoxyCodeLine{119         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}{SetTestXRayStatus}}(\textcolor{keywordtype}{int} nIdx, BOOL bVal);}
+\DoxyCodeLine{120 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{121 \};}
+\DoxyCodeLine{122 }
+
+\end{DoxyCode}

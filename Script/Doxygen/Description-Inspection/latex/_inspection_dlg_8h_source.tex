@@ -1,0 +1,266 @@
+\hypertarget{_inspection_dlg_8h_source}{}\doxysection{Inspection\+Dlg.\+h}
+\label{_inspection_dlg_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/InspectionDlg.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/InspectionDlg.h}}
+\mbox{\hyperlink{_inspection_dlg_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{comment}{// InspectionDlg.h: 헤더 파일}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}CDialogAlarm.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}CDialogManual.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}CDialogRecipe.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}CDialogSystem.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_a_t_detector_8h}{CATDetector.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}CXRayClass.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Repository.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_i_o_class_8h}{CIOClass.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{btnenhctrl_8h}{btnenhctrl.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}CDialogTextBox.h"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}CDialogLogin.h"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_inspection_class_8h}{CInspectionClass.h}}"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_ngh_util_8h}{NghUtil.h}}"{}}}
+\DoxyCodeLine{20 \textcolor{comment}{// CInspectionDlg 대화 상자}}
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_inspection_dlg}{CInspectionDlg}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{comment}{// 생성입니다.}}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_c_inspection_dlg}{CInspectionDlg}}(CWnd* pParent = \textcolor{keyword}{nullptr});  \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_c_inspection_dlg_a665e7f7b5ffcaa2904b82848176dcfae}{\string~CInspectionDlg}}();}
+\DoxyCodeLine{27 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{29         \textcolor{keyword}{enum} \{ IDD = \mbox{\hyperlink{resource_8h_add5222bd92c4ff2ab9f9d161dc7209fd}{IDD\_INSPECTION\_DIALOG}} \};}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{keyword}{protected}:}
+\DoxyCodeLine{33         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a6bff9ee7b23343f09a173a2a793da03a}{DoDataExchange}}(CDataExchange* pDX);  \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_c_dialog_alarm}{CDialogAlarm}}* \mbox{\hyperlink{class_c_inspection_dlg_a9a54cccdade7eae64f88da1097197e02}{m\_dlgAlarm}};}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_c_dialog_manual}{CDialogManual}}* \mbox{\hyperlink{class_c_inspection_dlg_a42fa9deff130b539601b8237011e52c0}{m\_dlgManual}};}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_c_dialog_recipe}{CDialogRecipe}}* \mbox{\hyperlink{class_c_inspection_dlg_aebeb534596113ae7a3ee8cdf382c4ff3}{m\_dlgRecipe}};}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_c_dialog_system}{CDialogSystem}}* \mbox{\hyperlink{class_c_inspection_dlg_a7492b6ddb092114511f077075ca33001}{m\_dlgSystem}};}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_c_dialog_text_box}{CDialogTextBox}}* \mbox{\hyperlink{class_c_inspection_dlg_a81c76444e6c56e287e0a084c1b9ce262}{m\_dlgTextBox}};}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_c_dialog_rect}{CDialogRect}}* \mbox{\hyperlink{class_c_inspection_dlg_a4dcbfe02866203c4ed1ffda7f48806e8}{m\_DlgRect}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \mbox{\hyperlink{class_c_at_detector}{CAtDetector}}* \mbox{\hyperlink{class_c_inspection_dlg_a69cfc70ba71e175ec62709d64f3733a6}{m\_AtDetector}};}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_c_x_ray_class}{CXRayClass}}* \mbox{\hyperlink{class_c_inspection_dlg_ab2eb5d2389fedc3dbd91e11ac7e7aa27}{m\_XRayClass}};}
+\DoxyCodeLine{46         \mbox{\hyperlink{class_c_i_o_class}{CIOClass}}* \mbox{\hyperlink{class_c_inspection_dlg_ac7466694dc66a87afc225abb354175cc}{m\_IOClass}};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#ifdef MIL\_USE}}
+\DoxyCodeLine{49         CRepository* m\_pRepository;}
+\DoxyCodeLine{50         CMilDisplay* m\_MilDisplay;}
+\DoxyCodeLine{51         CMilBuffer* m\_MilDispBuff;}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{53         BOOL \mbox{\hyperlink{class_c_inspection_dlg_abc61b1b4f2781beb2d9557a5156d6b26}{m\_bAutoStatus}};}
+\DoxyCodeLine{54         BOOL \mbox{\hyperlink{class_c_inspection_dlg_afaeba3a32c210b860f661b0cf6617b8a}{m\_bXRayOnOff}};}
+\DoxyCodeLine{55         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a65dd44bdd49c32772ea748a3787670f0}{m\_bBeforeXRayOnOff}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a6b281e9c5534a8d4c1f547eda9be9052}{m\_btn\_TotalTackTime}};}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a8da12908ee12c711bb1cc3d95b8ce243}{m\_btn\_InspTackTime}};}
+\DoxyCodeLine{59         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a9513eb103e7aa28b8a061d184e0a6b41}{m\_ctrMainTotalCnt}};}
+\DoxyCodeLine{60         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_aa36fdaedfccded79a423928bb15c9a05}{m\_ctrMainOkCnt}};}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a410f58cd4e31f4d4d08049cf5e20b978}{m\_ctrMainNgCnt1}};\textcolor{comment}{//count ng}}
+\DoxyCodeLine{62         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a6549267ce45e0c876b489c336a23a6e0}{m\_ctrMainNgCnt2}};\textcolor{comment}{//overlap ng}}
+\DoxyCodeLine{63         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a41c8ab31cbf8f229f07670537d40c3d9}{m\_ctrMainNGRatio1}};\textcolor{comment}{//count ng}}
+\DoxyCodeLine{64         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a99446871e768e3d308dc8f668749dfa4}{m\_ctrMainNGRatio2}};\textcolor{comment}{//overlap ng}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a7d6ced6b2445c8076f9b68c69f20666b}{m\_ctrMainXrayOnOff}};}
+\DoxyCodeLine{67         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a0875d7a868036c1982d857e1227fa5e3}{m\_ctrMainCurTime}};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a05cda3eaf6bc7ef451ccd09a80c89c5e}{m\_ctrMainCurRecipe}};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a915e0d77721bfeb548b5ef94a8958224}{m\_ctrMainCurKV}};}
+\DoxyCodeLine{72         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_a284abc62d9dd34e0689c546c917b323a}{m\_ctrMainCurMA}};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_acab730d6745b78f5fb6018160a20431f}{m\_iCount}};   \textcolor{comment}{// Total Count}}
+\DoxyCodeLine{75         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_a69f77df01503ddb701eba7b3bbb8df6f}{m\_iOKCount}};}
+\DoxyCodeLine{76         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_acbb1da269dc0da4f310a62900f442c03}{m\_iPointNGConunt}}[\mbox{\hyperlink{define_8h_a985371fcd4758af6afdefb4afb406081}{MAX\_RSLT\_POINT\_CNT}}];}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         BOOL \mbox{\hyperlink{class_c_inspection_dlg_ac51474eba85aa1f62dae07b55bc50a4f}{m\_bXRayOnCheck}};}
+\DoxyCodeLine{80         BOOL \mbox{\hyperlink{class_c_inspection_dlg_af1d856ca3bec8fc40b0a33a19abb645a}{m\_bGrabStart}};}
+\DoxyCodeLine{81         BOOL \mbox{\hyperlink{class_c_inspection_dlg_afb55c45d1fd35195877de59e34c9ae84}{m\_bGrabEnd}};}
+\DoxyCodeLine{82         BOOL \mbox{\hyperlink{class_c_inspection_dlg_af40fa887667e9d5cc05ebbb09034caa9}{m\_bInspectionStart}};}
+\DoxyCodeLine{83         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a3951d345e982298944dbe81ce3ad59a6}{m\_bInspectionEnd}};}
+\DoxyCodeLine{84         BOOL \mbox{\hyperlink{class_c_inspection_dlg_ac22b7bd05e454612d826bbb57c268d32}{m\_bResultDisplayEnd}};}
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#ifdef MIL\_USE}}
+\DoxyCodeLine{86         CInspectionClass *m\_InspectionClass[\mbox{\hyperlink{define_8h_a8d8b0c283a571ee211dafd94dee021c1}{MAX\_PATTERN\_ADD\_CNT}}];}
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{88         CWinThread* \mbox{\hyperlink{class_c_inspection_dlg_a6296b2479402656df8232864058db0cc}{m\_pSequenceThread}};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_inspection_dlg_a3aa88aadc3ab8d79733acda0d0f1569d}{m\_lInspStartTime}};}
+\DoxyCodeLine{92         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_inspection_dlg_a3b8d83e08134e2eb3ef3d29ad10daa73}{m\_dInspTackTime}};}
+\DoxyCodeLine{93         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_inspection_dlg_a188bbd19f06b0585f5637a2bb3013ade}{m\_lTotalStartTime}};}
+\DoxyCodeLine{94         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_inspection_dlg_a1a88c5076887fca540073f699b6725f7}{m\_dTotalTackTime}};}
+\DoxyCodeLine{95         CTime \mbox{\hyperlink{class_c_inspection_dlg_a0b927a623ffa50c8c020acfa1aaf4ec2}{m\_cStart}};}
+\DoxyCodeLine{96         DWORD \mbox{\hyperlink{class_c_inspection_dlg_aeb62affa067d54715f66dfe5b5ff23e3}{m\_dwPatternResultColor}}[5];}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98         \mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}{LOGIN\_TYPE}} \mbox{\hyperlink{class_c_inspection_dlg_a58d11759b5b89ff7e7864333871a078f}{m\_LoginType}};}
+\DoxyCodeLine{99         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_af134f8e923e5e147ff89615478c08c5d}{m\_nSelectResultDisplayIndex}};}
+\DoxyCodeLine{100         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_inspection_dlg_aedb0ce90852704f560864489d3ded176}{m\_ctrlSelectResultDisplayIdx}}[\mbox{\hyperlink{define_8h_a8d8b0c283a571ee211dafd94dee021c1}{MAX\_PATTERN\_ADD\_CNT}}];}
+\DoxyCodeLine{101         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a12da8c4128a931655b2cbcd6547c2438}{m\_bSelectResultDisplay}};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103         CSize \mbox{\hyperlink{class_c_inspection_dlg_aecd39a666cbe829ac5173c2ef4f073ba}{m\_ImageSize}};}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105         BOOL \mbox{\hyperlink{class_c_inspection_dlg_ad0cb443a3015dead945fb3c5e00ae3fa}{m\_HW\_Connection}}[2];}
+\DoxyCodeLine{106         BOOL \mbox{\hyperlink{class_c_inspection_dlg_adeb0e810f11f3f7d291f6a522d053265}{m\_bInspResult}};}
+\DoxyCodeLine{107         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_aa9a3a42ef8dad3c513599ae3b7387867}{m\_nInspNgIndex}};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109         CTime \mbox{\hyperlink{class_c_inspection_dlg_a717415ba8de4794c3ddf8fa1ab220e8c}{m\_InspStartTime}};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111         CWinThread* \mbox{\hyperlink{class_c_inspection_dlg_aaf95a66eddead13bc940f31481d19f63}{m\_pLogWriteThread}};}
+\DoxyCodeLine{112         BOOL \mbox{\hyperlink{class_c_inspection_dlg_ac6ed14da34985fdc5641eacf4addbf0c}{m\_bLogWriteThreadEnd}};}
+\DoxyCodeLine{113         \mbox{\hyperlink{class_c_log_file}{CLogFile}}* \mbox{\hyperlink{class_c_inspection_dlg_adb8e6ab1ceae7062caaf671f4c3728bd}{m\_pMainLog}};}
+\DoxyCodeLine{114         \mbox{\hyperlink{class_c_log_file}{CLogFile}}* \mbox{\hyperlink{class_c_inspection_dlg_ad2c41c47ff35d6303a5469243613a6d5}{m\_pInspectionLog}};}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_a86654a644a54238d352572347c4a3f1d}{m\_DetectorCalStep}};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a276dcb64f95ac82d79734ebf4433e626}{m\_bExit}};}
+\DoxyCodeLine{119         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a629e4c74a551a28e70ff05d6133529b4}{m\_bAutoAlarm}};}
+\DoxyCodeLine{120 \textcolor{preprocessor}{\#ifndef HW\_USE}}
+\DoxyCodeLine{121         BOOL \mbox{\hyperlink{class_c_inspection_dlg_abc24f67f0203e2f0641f2d0d116e57af}{m\_bTestVal}};}
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{123 \textcolor{keyword}{private}:}
+\DoxyCodeLine{124         \textcolor{keywordtype}{int} InitClass();}
+\DoxyCodeLine{125         \textcolor{keywordtype}{void} DeleteClass();}
+\DoxyCodeLine{126         \textcolor{keywordtype}{int} InitDisplay();}
+\DoxyCodeLine{127         \textcolor{keywordtype}{void} InitList();}
+\DoxyCodeLine{128         \textcolor{keywordtype}{void} StartIOValue();}
+\DoxyCodeLine{129         \textcolor{keywordtype}{int} SequenceStartIOCheck();}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131         \textcolor{keywordtype}{void} CountView();}
+\DoxyCodeLine{132         \textcolor{keywordtype}{void} CountOKAdd();}
+\DoxyCodeLine{133         \textcolor{keywordtype}{void} CountNGAdd(\textcolor{keywordtype}{int} nNgIndex);}
+\DoxyCodeLine{134         \textcolor{keywordtype}{void} CountReset();}
+\DoxyCodeLine{135         \textcolor{keywordtype}{int} CountLoad();}
+\DoxyCodeLine{136         \textcolor{keywordtype}{void} LoadDayCountData();}
+\DoxyCodeLine{137         \textcolor{keywordtype}{void} SaveDayCountData();}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139         \textcolor{keywordtype}{void} StartAutoMode(BOOL isAuto);}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141         BOOL SaveHBITMAPToFile(HBITMAP hBitmap, LPCSTR lpszFileName);}
+\DoxyCodeLine{142         \textcolor{keywordtype}{void} screenshot(LPCSTR filepath);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144         \textcolor{keywordtype}{void} SetMainDisplayImage();}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146         \textcolor{keywordtype}{void} LoginTypeEnableBtn(\mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}{LOGIN\_TYPE}} login\_type);}
+\DoxyCodeLine{147         \textcolor{keywordtype}{void} AutoEnableBtn(BOOL isAuto);}
+\DoxyCodeLine{148         \textcolor{keywordtype}{void} PatternEnableBtn();}
+\DoxyCodeLine{149         BOOL WindowCapture(HWND hTargetWnd, LPCSTR \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{strFileName}});}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152         \textcolor{keywordtype}{void} InitLog();}
+\DoxyCodeLine{153         \textcolor{keywordtype}{void} MainLogWrite(CString strLog);}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155         deque<CString> m\_strMainLog;}
+\DoxyCodeLine{156         deque<CString> m\_strInspectionLog;}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158         \textcolor{keywordtype}{void} SetTowerLamp(\textcolor{keywordtype}{int} nIndex, \textcolor{keywordtype}{int} nBuzzer = -\/1);\textcolor{comment}{//nIndex -\/> 0 : red 1 : yellow 2 : green, nBuzzer -\/> -\/1 : Buzzer Off, 0 : Buzzer 1, 1 : Buzzer 2}}
+\DoxyCodeLine{159         \textcolor{keywordtype}{void} SetMC01On(BOOL isOnOff = FALSE);}
+\DoxyCodeLine{160         \textcolor{keywordtype}{void} SetXRayOn(BOOL isOnOff = FALSE);}
+\DoxyCodeLine{161         \textcolor{keywordtype}{void} SetMotorCWTOCCW(\textcolor{keywordtype}{int} nCW = 0);\textcolor{comment}{//0 : CW 1 : CCW}}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163         \textcolor{keywordtype}{void} WriteRsltData();}
+\DoxyCodeLine{164         BOOL WriteCsvLog(CStdioFile* pFile, CString strLog);}
+\DoxyCodeLine{165         }
+\DoxyCodeLine{166 \textcolor{keyword}{public}:}
+\DoxyCodeLine{167         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a019e129db8ae17e719fab8fdc099a8b1}{SetXrayOnOffLabel}}(BOOL isOn);}
+\DoxyCodeLine{168         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a335ed21c5d1deda0e002fece82c96e7d}{GetInspectionThreadEnd}}();}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170         UINT \textcolor{keyword}{static}   \mbox{\hyperlink{class_c_inspection_dlg_aa1624ab8789cfa223695b939308d0157}{SequenceThread}}(LPVOID pParam);}
+\DoxyCodeLine{171         UINT \textcolor{keyword}{static}   \mbox{\hyperlink{class_c_inspection_dlg_ad9a14b6add72418d10eebb97a4e62a84}{LogWriteThread}}(LPVOID pParam);}
+\DoxyCodeLine{172         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a8126060387616cb414746645fd0e0663}{LogWriteMessage}}();}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174         }
+\DoxyCodeLine{175         BOOL \mbox{\hyperlink{class_c_inspection_dlg_adc99cd215e8baedc38993bac028ab754}{GetXRayOnCheck}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_ac51474eba85aa1f62dae07b55bc50a4f}{m\_bXRayOnCheck}}; \};}
+\DoxyCodeLine{176         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ab3a1ebb13dc5684b987bad3e2acceeeb}{SetGrabStart}}() \{ \mbox{\hyperlink{class_c_inspection_dlg_af1d856ca3bec8fc40b0a33a19abb645a}{m\_bGrabStart}} = TRUE; \mbox{\hyperlink{class_c_inspection_dlg_afb55c45d1fd35195877de59e34c9ae84}{m\_bGrabEnd}} = FALSE; \};}
+\DoxyCodeLine{177         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a700df21d0113cef51b682eef61ccaf00}{GetGrabStart}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_af1d856ca3bec8fc40b0a33a19abb645a}{m\_bGrabStart}}; \};}
+\DoxyCodeLine{178         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ac06af2a5d628a98e871013a6cfcf93b7}{SetInspectionStart}}();}
+\DoxyCodeLine{179         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a074a1605c5e8cca174a2aee12e743b92}{GetInspectionStart}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_af40fa887667e9d5cc05ebbb09034caa9}{m\_bInspectionStart}}; \};}
+\DoxyCodeLine{180         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a01633c4a4a8624407b4efc08f6f6d16f}{GetGrabEnd}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_afb55c45d1fd35195877de59e34c9ae84}{m\_bGrabEnd}}; \};}
+\DoxyCodeLine{181         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a39f58cf77d3669a18a9a182e7d3df93c}{GetInspectionEnd}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_a335ed21c5d1deda0e002fece82c96e7d}{GetInspectionThreadEnd}}(); \};}
+\DoxyCodeLine{182         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a7f12257f0c88dc28db527b54e0cde33c}{SetResultDisplay}}();}
+\DoxyCodeLine{183         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a531f2e278cd14dc934dc825d9422fb75}{GetResultDisplayEnd}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_ac22b7bd05e454612d826bbb57c268d32}{m\_bResultDisplayEnd}}; \};}
+\DoxyCodeLine{184         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a711159a84393474d326846e2ddceda05}{SetInspScreenShotSave}}();}
+\DoxyCodeLine{185         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ab021751b5ea6e51d33ca46b5b2aed29f}{SetInspImageSave}}();}
+\DoxyCodeLine{186         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ab48ec293ece3580c5ba985d14ac41feb}{SetInitInspection}}();}
+\DoxyCodeLine{187         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a1ea87fa6e97163c6d140b06d37a7b4cd}{SetInspStartTime}}(\textcolor{keywordtype}{long} lStart) \{ \mbox{\hyperlink{class_c_inspection_dlg_a3aa88aadc3ab8d79733acda0d0f1569d}{m\_lInspStartTime}} = lStart; \};}
+\DoxyCodeLine{188         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_inspection_dlg_a5bb91a5e1befce97a91c48723f5bce7e}{GetInspStartTime}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_a3aa88aadc3ab8d79733acda0d0f1569d}{m\_lInspStartTime}}; \};}
+\DoxyCodeLine{189         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_aea70c0823160ea053b40adc15cc8a6a7}{SetTotalStartTime}}(\textcolor{keywordtype}{long} lStart) \{ \mbox{\hyperlink{class_c_inspection_dlg_a188bbd19f06b0585f5637a2bb3013ade}{m\_lTotalStartTime}} = lStart; \};}
+\DoxyCodeLine{190         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_inspection_dlg_a26cc0e402a8374df99cf29f2a3236d0d}{GetTotalStartTime}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_a188bbd19f06b0585f5637a2bb3013ade}{m\_lTotalStartTime}}; \};}
+\DoxyCodeLine{191         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ad27019155f141989a8d7db88ba578807}{SetDispTackTime}}(\textcolor{keywordtype}{double} dTime, \textcolor{keywordtype}{int} nType = 0);\textcolor{comment}{//0 = Insp, 1 = Total}}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_afcbca486fdb32db91e4c4f9be2b9d38b}{ShowTextBox}}(CString strText, BOOL isShow = TRUE, BOOL isStop = FALSE);}
+\DoxyCodeLine{194         BOOL \mbox{\hyperlink{class_c_inspection_dlg_ade4db2e9017a5fd8e79cc29471c5632d}{GetStopWait}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_inspection_dlg_a81c76444e6c56e287e0a084c1b9ce262}{m\_dlgTextBox}}-\/>IsWindowVisible(); \};}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a45fa7024079fcfab862507c18dfce9bf}{SelectDisplay}}(\textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198         BOOL \mbox{\hyperlink{class_c_inspection_dlg_afdfd868d39b5aeb522a0523c49ff5d23}{GetXRayInterLock}}();}
+\DoxyCodeLine{199         BOOL \mbox{\hyperlink{class_c_inspection_dlg_afdc8871fc9781666cc5e534f0037b416}{GetDoorInterLock}}();}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a65f8455f247a8de60521b33eb6643c1b}{SetConMove}}(\textcolor{keywordtype}{int} nDirection = 0, BOOL isMove = FALSE);\textcolor{comment}{//0 : CW, 1 : CCW}}
+\DoxyCodeLine{202         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a33f1be4881a06792af509eb83c9d7a2a}{SetInverterReset}}(BOOL isReset = TRUE);}
+\DoxyCodeLine{203         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a260ca2caa23ad0375f890d1279f12c35}{GetEMG}}();}
+\DoxyCodeLine{204         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a86fef730066323334e0838a278c48259}{GetKeySw}}();}
+\DoxyCodeLine{205         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a012b9f87a0680d458d512927e5494bcd}{GetDoor}}();}
+\DoxyCodeLine{206         BOOL \mbox{\hyperlink{class_c_inspection_dlg_ad71673a5cb729b29649e8b8880f1a925}{GetInverterAlarm}}();}
+\DoxyCodeLine{207         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a26b029e6a3a56eef5e991fca752c09e2}{GetTubeAlarm}}();}
+\DoxyCodeLine{208         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a152b95e5cab548d8ff6b13393fd2af3e}{GetXRayLampALM}}();}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a460220c468d943b4879a6724ad7ee91e}{SetXrayEndTimeWrite}}();}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a5aa873b2bf6fd18b68c84c18171fc65a}{SetMainRecipeName}}(CString strName);}
+\DoxyCodeLine{213         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ab893f97f94adbc40e7d83adf3a838230}{SetAlarmStatus}}(BOOL isStatus) \{ \mbox{\hyperlink{class_c_inspection_dlg_a629e4c74a551a28e70ff05d6133529b4}{m\_bAutoAlarm}} = isStatus; \};}
+\DoxyCodeLine{214 \textcolor{preprocessor}{\#ifndef HW\_USE}}
+\DoxyCodeLine{215         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_a300f8c848600c36f8587713cc60f2c9c}{m\_nTestXRayCnt}};}
+\DoxyCodeLine{216         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_inspection_dlg_a8095b418c2314049333dc38832010a2b}{m\_nTestIndex}};}
+\DoxyCodeLine{217         BOOL \mbox{\hyperlink{class_c_inspection_dlg_a96fa917005407ea25d9450a96897c76f}{LoadSqImage}}();}
+\DoxyCodeLine{218 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{219 \textcolor{comment}{// 구현입니다.}}
+\DoxyCodeLine{220 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{221         HICON \mbox{\hyperlink{class_c_inspection_dlg_abf01a33933b32105538b2f835e5dcc1e}{m\_hIcon}};}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223         \textcolor{comment}{// 생성된 메시지 맵 함수}}
+\DoxyCodeLine{224         \textcolor{keyword}{virtual} BOOL \mbox{\hyperlink{class_c_inspection_dlg_a5f8a6e30baed0cfcd65ecd0e16ee875d}{OnInitDialog}}();}
+\DoxyCodeLine{225         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a4e84c9837fe3ede61c71b9ba6f7df08c}{OnSysCommand}}(UINT nID, LPARAM lParam);}
+\DoxyCodeLine{226         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a928ea6b2fff9fe35bb446889596a1cf4}{OnPaint}}();}
+\DoxyCodeLine{227         afx\_msg HCURSOR \mbox{\hyperlink{class_c_inspection_dlg_a2d7d3447864c19e1042a976eb925b8a8}{OnQueryDragIcon}}();}
+\DoxyCodeLine{228         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{229         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_a9ea46f76a56ad803ca42a815f64e5c18}{OnDetectorToMainMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{230         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_a5edbb1d341f75d0bbf4760e7d79b3bea}{OnInspectionEndMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{231         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_a20686a494f0b6f20819d4c3ecef55311}{OnAlarmSequenceMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{232         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_a3f9ac6550dacae968eb98c638a9d6f34}{OnImageViewToMainMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{233         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_aea20b3e3f5ca3625908d82b36332349f}{OnLogToMainMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{234         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_a0f502c44a6b23606ffeee0b7c103caef}{OnLogToInspectionMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{235         LRESULT \mbox{\hyperlink{class_c_inspection_dlg_a01ef16bf715d8c2b658da158da7e10f7}{OnLogWriteMessage}}(WPARAM para0, LPARAM para1);}
+\DoxyCodeLine{236 public:}
+\DoxyCodeLine{237         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a1d5647e79856357e039b5f58b5bf3861}{OnBnClickedButtonImgLoad}}();}
+\DoxyCodeLine{238         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a6abfe9e48373db15e732a722f6544394}{OnBnClickedButtonImgSave}}();}
+\DoxyCodeLine{239         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_af0589d4bab8534f736ded0fef1a1d4ab}{OnBnClickedButtonAuto}}();}
+\DoxyCodeLine{240         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a20914c98488c142bd75065e6efcccee1}{OnBnClickedButtonManual}}();}
+\DoxyCodeLine{241         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a8fb1250603e3718adcd6f22e6ce5a551}{OnBnClickedButtonSystem}}();}
+\DoxyCodeLine{242         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_abf7ece3062fd0f18b9e4d6a5e3442fac}{OnBnClickedButtonRecipe}}();}
+\DoxyCodeLine{243         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a062f22f75164c25c6fa913294a23b054}{OnBnClickedButtonExit}}();}
+\DoxyCodeLine{244         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_ade06b6c6096059bb28e7925168cea2dd}{OnTimer}}(UINT\_PTR nIDEvent);}
+\DoxyCodeLine{245         CListCtrl \mbox{\hyperlink{class_c_inspection_dlg_a81c0ffb215e28e9ad52af1ebd0700fce}{m\_list\_InspResultData}};}
+\DoxyCodeLine{246         CListCtrl \mbox{\hyperlink{class_c_inspection_dlg_a4f1a941f769ba7a4b4b494474c35c909}{m\_list\_Log}};}
+\DoxyCodeLine{247         DECLARE\_EVENTSINK\_MAP()}
+\DoxyCodeLine{248         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a18c39f20d20d1709aa02793952a8ffa1}{ClickBtnenhctrlMainCountReset}}();}
+\DoxyCodeLine{249         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a58a0df7780cdf01ae57f1386dedb9888}{OnWindowPosChanged}}(WINDOWPOS* lpwndpos);}
+\DoxyCodeLine{250         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a7ecbdd9b28728e801db97e32e5f77df1}{ClickBtnenhctrlMainPattern}}();}
+\DoxyCodeLine{251         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a0fac90251064aaaefe576318aae964e0}{ClickBtnenhctrlAuto}}();}
+\DoxyCodeLine{252         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a42d3d55a94013c4399d5a640ff2a0f9a}{ClickBtnenhctrlManual}}();}
+\DoxyCodeLine{253         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_af4fd4b890e8978de61148c8049059aca}{ClickBtnenhctrlSystem}}();}
+\DoxyCodeLine{254         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_adcc5962cbb1ed66f24ef70fea7486f78}{ClickBtnenhctrlRecipe}}();}
+\DoxyCodeLine{255         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a4bf499029b965f41a749d308f9fbffa2}{ClickBtnenhctrlExit}}();}
+\DoxyCodeLine{256         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a6226b12b9863b2d6552161471313fdae}{ClickBtnenhctrlMainLogin}}();}
+\DoxyCodeLine{257         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a0f1ad7d4f52341b2462b854792ce0831}{OnBnClickedButtonTestXRayStatus}}();}
+\DoxyCodeLine{258         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_inspection_dlg_a910ab96c10e14ecea98a5e8bfedb222f}{OnBnClickedButtonTestXRayStatus2}}();}
+\DoxyCodeLine{259         virtual BOOL \mbox{\hyperlink{class_c_inspection_dlg_a66096c6993989292cb355cddfea09168}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{260 \};}
+
+\end{DoxyCode}

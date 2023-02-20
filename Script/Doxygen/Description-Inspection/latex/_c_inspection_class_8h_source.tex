@@ -1,0 +1,117 @@
+\hypertarget{_c_inspection_class_8h_source}{}\doxysection{CInspection\+Class.\+h}
+\label{_c_inspection_class_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/CInspectionClass.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/CInspectionClass.h}}
+\mbox{\hyperlink{_c_inspection_class_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_dialog_rect_8h}{DialogRect.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define DEFAULT\_TIMEOUT                                 3000}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define EACH\_INSP\_THREAD\_CNT                    3}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifdef MIL\_USE}}
+\DoxyCodeLine{7 \textcolor{keyword}{class }CInspectionClass}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{10         \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\_DATA}} m\_ResultData;}
+\DoxyCodeLine{11         \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\_PARA}} m\_InspPara;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13         CMilBuffer* m\_milInspImage[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15         CString m\_strCurrentRecipe;}
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} m\_nPatternModelIndex;}
+\DoxyCodeLine{17         DWORD m\_dwPatternResultColor[5];}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         BOOL m\_bEachInspectionThreadEnd[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{20         BOOL m\_bEachInspectionStart[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{21         BOOL m\_bEachInspecting[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{22         BOOL m\_bEachInspectionEnd[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{23         CWinThread* m\_pThreadEachInsp[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{24         UINT \textcolor{keyword}{static} EachInspThread1(LPVOID pParam);}
+\DoxyCodeLine{25         UINT \textcolor{keyword}{static} EachInspThread2(LPVOID pParam);}
+\DoxyCodeLine{26         UINT \textcolor{keyword}{static} EachInspThread3(LPVOID pParam);}
+\DoxyCodeLine{27         BOOL ReleaseEachThread();}
+\DoxyCodeLine{28         MIL\_ID m\_milModelFile[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{29         \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\_DATA}} m\_EachResultData[\mbox{\hyperlink{_c_inspection_class_8h_a0535ad9bd299130f4f5e567dbcf1b9ef}{EACH\_INSP\_THREAD\_CNT}}];}
+\DoxyCodeLine{30         }
+\DoxyCodeLine{31         CSize m\_ImageSize;}
+\DoxyCodeLine{32         BOOL m\_bResultDisplay;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         BOOL m\_bMainLogWrite;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         HWND m\_hWndMain;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39         BOOL PatternAddFunc(MIL\_ID milGraphicList, MIL\_ID milPatternBuff, MIL\_ID milMaskBuff, \textcolor{keywordtype}{int} nPtnIdx, BOOL isMask = FALSE);}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} ResultDisplay(CMilDisplay* milDisplay, \mbox{\hyperlink{class_c_dialog_rect}{CDialogRect}} *DlgRect, CListCtrl* list\_ctrl = NULL);}
+\DoxyCodeLine{41         BOOL PatternModelLoad();}
+\DoxyCodeLine{42         BOOL PatternModelSave();}
+\DoxyCodeLine{43         BOOL OverlapResultPoint(\textcolor{keywordtype}{double} dX, \textcolor{keywordtype}{double} dY, \textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{44         BOOL OverlapResultPoint(\textcolor{keywordtype}{double} dX, \textcolor{keywordtype}{double} dY);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         BOOL PatternSearchFunc(CMilBuffer* milOrgImageBuff, \textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{47 \textcolor{keyword}{public}:}
+\DoxyCodeLine{48         CInspectionClass();}
+\DoxyCodeLine{49         \string~CInspectionClass();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} SetMainHwnd(HWND hMain) \{ m\_hWndMain = hMain; \};}
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53         \textcolor{keywordtype}{void} InitImage(\textcolor{keywordtype}{long} nWidth, \textcolor{keywordtype}{long} nHeight, BOOL isInit = TRUE);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} SetInspPara(MIL\_ID milSystem, \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\_PARA}} InspPara, CString strCurrentRecipe, \textcolor{keywordtype}{int} nPatternModelIndex)}
+\DoxyCodeLine{56         \{}
+\DoxyCodeLine{57                 m\_InspPara = InspPara;}
+\DoxyCodeLine{58                 }
+\DoxyCodeLine{59                 m\_strCurrentRecipe.Format(\_T(\textcolor{stringliteral}{"{}\%s"{}}), strCurrentRecipe);}
+\DoxyCodeLine{60                 m\_nPatternModelIndex = nPatternModelIndex;}
+\DoxyCodeLine{61                 \textcolor{keywordflow}{if} (m\_InspPara.\mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a_a551ef1d30146e94554cb07a2fd051147}{bInspUse}})}
+\DoxyCodeLine{62                 \{}
+\DoxyCodeLine{63                         PatternModelLoad();}
+\DoxyCodeLine{64                 \}}
+\DoxyCodeLine{65         \};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         \textcolor{keywordtype}{void} InitResultData() \{}
+\DoxyCodeLine{68                 m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a3ed8fe677474a76f61e5ef61cb4c031a}{stEachResultData}}.clear(); m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a3ed8fe677474a76f61e5ef61cb4c031a}{stEachResultData}}.resize(0);}
+\DoxyCodeLine{69                 m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a0786bbab7b778f78ce12859b3d4d47f3}{isAllResult}} = TRUE;}
+\DoxyCodeLine{70                 m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a611997ecdce5bf9114bc732f3e77bf78}{isCountResult}} = TRUE, m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_aaf12b7e2d4b1f546a3dd39c63c343a5c}{isOverlapResult}} = FALSE;}
+\DoxyCodeLine{71         \};}
+\DoxyCodeLine{72         BOOL GetAllResult() \{ \textcolor{keywordflow}{return} m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a0786bbab7b778f78ce12859b3d4d47f3}{isAllResult}}; \};}
+\DoxyCodeLine{73         BOOL GetCountResult() \{ \textcolor{keywordflow}{return} m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a611997ecdce5bf9114bc732f3e77bf78}{isCountResult}}; \};}
+\DoxyCodeLine{74         BOOL GetOverlapResult() \{ \textcolor{keywordflow}{return} m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_aaf12b7e2d4b1f546a3dd39c63c343a5c}{isOverlapResult}}; \};}
+\DoxyCodeLine{75         \textcolor{keywordtype}{int} GetSearchPatternCnt() \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a3ed8fe677474a76f61e5ef61cb4c031a}{stEachResultData}}.size(); \};}
+\DoxyCodeLine{76         \textcolor{keywordtype}{int} GetOverlapPatternCnt() \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_aa52d42412533ed2a7ac63e6c53f9dfdf}{nOverlapCnt}}; \};}
+\DoxyCodeLine{77         \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\_RESULT\_DATA}} GetEachResultData(\textcolor{keywordtype}{int} nIdx) \{ \textcolor{keywordflow}{return} m\_ResultData.\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a_a3ed8fe677474a76f61e5ef61cb4c031a}{stEachResultData}}[nIdx]; \};}
+\DoxyCodeLine{78         \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\_DATA}} GetResultData() \{ \textcolor{keywordflow}{return} m\_ResultData; \};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         BOOL SetPatternAddFunc(MIL\_ID milGraphicList, MIL\_ID milPatternBuff, MIL\_ID milMaskBuff, \textcolor{keywordtype}{int} nPtnIdx, BOOL isMask = FALSE)}
+\DoxyCodeLine{81         \{}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{return} PatternAddFunc(milGraphicList, milPatternBuff, milMaskBuff, nPtnIdx, isMask);}
+\DoxyCodeLine{83         \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         \textcolor{keywordtype}{void} SetResultDisplay(CMilDisplay* milDisplay, \mbox{\hyperlink{class_c_dialog_rect}{CDialogRect}} *dlgRect, CListCtrl* list\_ctrl = NULL) \{}
+\DoxyCodeLine{86                 ResultDisplay(milDisplay, dlgRect, list\_ctrl);}
+\DoxyCodeLine{87         \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         BOOL StartInspectionThread(CMilBuffer* milImageBuff);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \textcolor{keywordtype}{void} SetEachInspectionThread(\textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{93         BOOL WaitEachInspThreadEnd(\textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{94         BOOL SetPatternSearchFunc(CMilBuffer* milImageBuff, \textcolor{keywordtype}{int} nIdx)}
+\DoxyCodeLine{95         \{}
+\DoxyCodeLine{96                 \textcolor{keywordflow}{return} PatternSearchFunc(milImageBuff, nIdx);}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98         BOOL GetAllInspectionEnd();}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100         \textcolor{keywordtype}{void} SetPatternModelSave(\textcolor{keywordtype}{int} nPtnIndex);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102         BOOL SetReleaseEachThread() \{ \textcolor{keywordflow}{return} ReleaseEachThread(); \};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104         \textcolor{keywordtype}{void} SetResultDisplay(BOOL isDisplay) \{ m\_bResultDisplay = isDisplay; \};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106         \textcolor{keywordtype}{void} WriteLog(CString strLog);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108         \textcolor{keywordtype}{void} SetInitEachInspectionThread();}
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

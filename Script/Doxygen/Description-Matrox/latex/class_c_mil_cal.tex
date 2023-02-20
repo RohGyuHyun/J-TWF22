@@ -1,0 +1,198 @@
+\hypertarget{class_c_mil_cal}{}\doxysection{CMil\+Cal 클래스 참조}
+\label{class_c_mil_cal}\index{CMilCal@{CMilCal}}
+
+
+Mil의 Calibration관련 함수를 Class화함  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Cal.\+h$>$}
+
+
+
+CMil\+Cal에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_c_mil_cal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Cal에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_c_mil_cal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_cal_a940e0d1612bd9b142fe8eed4fffb7404}{CMil\+Cal}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_cal_a7e409d596ddf336fe4be521af04faf94}{$\sim$\+CMil\+Cal}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_a1139221a9e871ac1563c5b180471c15f}{Teach\+Cal\+Param}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Cal\+Image, int Row\+Count, int Col\+Count)
+\begin{DoxyCompactList}\small\item\em 영상을 받아 Calibration Data를 만들어 낸다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_cal_a8f06bb7142eb6640f8e2d32b70a03e66}{Save\+Cal\+Data}} (CString str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Calibration 데이터를 저장한다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_cal_a4120568c39cc918dcd9d84e87afd008b}{Restore\+Cal\+Data}} (CString str\+File\+Name)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_aa977d1caa9e69cc6f4b3b316493cef8a}{Transform\+Image}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Image\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Image\+Src)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_a7efd73d499e2c86cbfc791dcd97fa064}{Alloc}} (MIL\+\_\+\+ID $\ast$p\+Mil\+IDCal)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_a3c4b34bffcc3359e6b16effc874e4c88}{Alloc}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_a4b61419948475afcc41fa0a4d733da95}{Free}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_cal_a2cd260b4aa80543fdfcbc7594676dcf9}{Associate}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Image)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_a699072dc3f1910b48ce91fe76208204f}{Transform\+Coordinate}} (double posX, double PosY, double $\ast$p\+Get\+PosX, double $\ast$p\+Get\+PosY, int Dir=M\+\_\+\+PIXEL\+\_\+\+TO\+\_\+\+WORLD)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_af6886433a5f1fc1b96ef72724b2fa8b7}{Grid}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Image, double OffsetX, double OffsetY, double OffsetZ, int Row\+Count, int Column\+Count, double Row\+Spacing, double Column\+Spacing, int Operate\+Mode=M\+\_\+\+DEFAULT, int Grid\+Type=M\+\_\+\+CIRCLE\+\_\+\+GRID)
+\item 
+int \mbox{\hyperlink{class_c_mil_cal_a10c8498791f2243870a70ccff776507c}{Inquire}} (MIL\+\_\+\+ID $\ast$p\+Ret\+Value, int Inquire\+Type=M\+\_\+\+CALIBRATION\+\_\+\+STATUS+M\+\_\+\+TYPE\+\_\+\+MIL\+\_\+\+INT)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_cal_a96e0679ff13e244c48ca127a24c963cd}{m\+\_\+mil\+IDCal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Calibration관련 함수를 Class화함 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_cal_a940e0d1612bd9b142fe8eed4fffb7404}\label{class_c_mil_cal_a940e0d1612bd9b142fe8eed4fffb7404}} 
+\index{CMilCal@{CMilCal}!CMilCal@{CMilCal}}
+\index{CMilCal@{CMilCal}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{CMilCal()}{CMilCal()}}
+{\footnotesize\ttfamily CMil\+Cal\+::\+CMil\+Cal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a7e409d596ddf336fe4be521af04faf94}\label{class_c_mil_cal_a7e409d596ddf336fe4be521af04faf94}} 
+\index{CMilCal@{CMilCal}!````~CMilCal@{$\sim$CMilCal}}
+\index{````~CMilCal@{$\sim$CMilCal}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilCal()}{~CMilCal()}}
+{\footnotesize\ttfamily CMil\+Cal\+::$\sim$\+CMil\+Cal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_cal_a7efd73d499e2c86cbfc791dcd97fa064}\label{class_c_mil_cal_a7efd73d499e2c86cbfc791dcd97fa064}} 
+\index{CMilCal@{CMilCal}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{Alloc()}{Alloc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Alloc (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+ID $\ast$}]{p\+Mil\+IDCal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a3c4b34bffcc3359e6b16effc874e4c88}\label{class_c_mil_cal_a3c4b34bffcc3359e6b16effc874e4c88}} 
+\index{CMilCal@{CMilCal}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{Alloc()}{Alloc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a2cd260b4aa80543fdfcbc7594676dcf9}\label{class_c_mil_cal_a2cd260b4aa80543fdfcbc7594676dcf9}} 
+\index{CMilCal@{CMilCal}!Associate@{Associate}}
+\index{Associate@{Associate}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{Associate()}{Associate()}}
+{\footnotesize\ttfamily void CMil\+Cal\+::\+Associate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a4b61419948475afcc41fa0a4d733da95}\label{class_c_mil_cal_a4b61419948475afcc41fa0a4d733da95}} 
+\index{CMilCal@{CMilCal}!Free@{Free}}
+\index{Free@{Free}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Free (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_af6886433a5f1fc1b96ef72724b2fa8b7}\label{class_c_mil_cal_af6886433a5f1fc1b96ef72724b2fa8b7}} 
+\index{CMilCal@{CMilCal}!Grid@{Grid}}
+\index{Grid@{Grid}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Image,  }\item[{double}]{OffsetX,  }\item[{double}]{OffsetY,  }\item[{double}]{OffsetZ,  }\item[{int}]{Row\+Count,  }\item[{int}]{Column\+Count,  }\item[{double}]{Row\+Spacing,  }\item[{double}]{Column\+Spacing,  }\item[{int}]{Operate\+Mode = {\ttfamily M\+\_\+DEFAULT},  }\item[{int}]{Grid\+Type = {\ttfamily M\+\_\+CIRCLE\+\_\+GRID} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a10c8498791f2243870a70ccff776507c}\label{class_c_mil_cal_a10c8498791f2243870a70ccff776507c}} 
+\index{CMilCal@{CMilCal}!Inquire@{Inquire}}
+\index{Inquire@{Inquire}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{Inquire()}{Inquire()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Inquire (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+ID $\ast$}]{p\+Ret\+Value,  }\item[{int}]{Inquire\+Type = {\ttfamily M\+\_\+CALIBRATION\+\_\+STATUS~+~M\+\_\+TYPE\+\_\+MIL\+\_\+INT} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a4120568c39cc918dcd9d84e87afd008b}\label{class_c_mil_cal_a4120568c39cc918dcd9d84e87afd008b}} 
+\index{CMilCal@{CMilCal}!RestoreCalData@{RestoreCalData}}
+\index{RestoreCalData@{RestoreCalData}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{RestoreCalData()}{RestoreCalData()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Restore\+Cal\+Data (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_a8f06bb7142eb6640f8e2d32b70a03e66}\label{class_c_mil_cal_a8f06bb7142eb6640f8e2d32b70a03e66}} 
+\index{CMilCal@{CMilCal}!SaveCalData@{SaveCalData}}
+\index{SaveCalData@{SaveCalData}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{SaveCalData()}{SaveCalData()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Save\+Cal\+Data (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Calibration 데이터를 저장한다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 데이터가 저장될 폴더를 포함한 파일이름 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_cal_a1139221a9e871ac1563c5b180471c15f}\label{class_c_mil_cal_a1139221a9e871ac1563c5b180471c15f}} 
+\index{CMilCal@{CMilCal}!TeachCalParam@{TeachCalParam}}
+\index{TeachCalParam@{TeachCalParam}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{TeachCalParam()}{TeachCalParam()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Teach\+Cal\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Cal\+Image,  }\item[{int}]{Row\+Count,  }\item[{int}]{Col\+Count }\end{DoxyParamCaption})}
+
+
+
+영상을 받아 Calibration Data를 만들어 낸다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Cal\+Image} & Calibration을 할 영상(ball 영상) \\
+\hline
+{\em Row\+Count} & 가로 방향의 볼갯수 \\
+\hline
+{\em Col\+Count} & 세로 방향의 볼갯수 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+0\+:Calibration이 정상처리됨 -\/1\+:문제발생 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_cal_a699072dc3f1910b48ce91fe76208204f}\label{class_c_mil_cal_a699072dc3f1910b48ce91fe76208204f}} 
+\index{CMilCal@{CMilCal}!TransformCoordinate@{TransformCoordinate}}
+\index{TransformCoordinate@{TransformCoordinate}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{TransformCoordinate()}{TransformCoordinate()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Transform\+Coordinate (\begin{DoxyParamCaption}\item[{double}]{posX,  }\item[{double}]{PosY,  }\item[{double $\ast$}]{p\+Get\+PosX,  }\item[{double $\ast$}]{p\+Get\+PosY,  }\item[{int}]{Dir = {\ttfamily M\+\_\+PIXEL\+\_\+TO\+\_\+WORLD} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_cal_aa977d1caa9e69cc6f4b3b316493cef8a}\label{class_c_mil_cal_aa977d1caa9e69cc6f4b3b316493cef8a}} 
+\index{CMilCal@{CMilCal}!TransformImage@{TransformImage}}
+\index{TransformImage@{TransformImage}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{TransformImage()}{TransformImage()}}
+{\footnotesize\ttfamily int CMil\+Cal\+::\+Transform\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Image\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Image\+Src }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_cal_a96e0679ff13e244c48ca127a24c963cd}\label{class_c_mil_cal_a96e0679ff13e244c48ca127a24c963cd}} 
+\index{CMilCal@{CMilCal}!m\_milIDCal@{m\_milIDCal}}
+\index{m\_milIDCal@{m\_milIDCal}!CMilCal@{CMilCal}}
+\doxysubsubsection{\texorpdfstring{m\_milIDCal}{m\_milIDCal}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Cal\+::m\+\_\+mil\+IDCal}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_cal_8h}{Mil\+Cal.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_cal_8cpp}{Mil\+Cal.\+cpp}}\end{DoxyCompactItemize}

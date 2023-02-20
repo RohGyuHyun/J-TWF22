@@ -1,0 +1,53 @@
+\hypertarget{_profile_data_i_f_8h_source}{}\doxysection{Profile\+Data\+IF.\+h}
+\label{_profile_data_i_f_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/ProfileDataIF.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/ProfileDataIF.h}}
+\mbox{\hyperlink{_profile_data_i_f_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// ProfileDataIF.h: interface for the CProfileDataIF class.}}
+\DoxyCodeLine{2 \textcolor{comment}{//}}
+\DoxyCodeLine{4 \textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#if !defined(AFX\_PROFILEDATAIF\_H\_\_4DFF9E8B\_25BC\_4B96\_B653\_5CA1F2E3EA01\_\_INCLUDED\_)}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define AFX\_PROFILEDATAIF\_H\_\_4DFF9E8B\_25BC\_4B96\_B653\_5CA1F2E3EA01\_\_INCLUDED\_}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#if \_MSC\_VER > 1000}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_MSC\_VER > 1000}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_profile_data_i_f}{CProfileDataIF}} : \textcolor{keyword}{public} CObject}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15         CString m\_sFilePath;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_c_profile_data_i_f_ad49190b81949805acb62b0bfa1fb6c1e}{CProfileDataIF}}();}
+\DoxyCodeLine{19         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_profile_data_i_f_a1ce83b56a095af6e6b47f5181612026e}{\string~CProfileDataIF}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{comment}{// file Read function}}
+\DoxyCodeLine{22         CString \mbox{\hyperlink{class_c_profile_data_i_f_a85832af7936ec61403300d34a51056cf}{GetFilePath}}()}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{24                 \textcolor{keywordflow}{return} m\_sFilePath;}
+\DoxyCodeLine{25         \}}
+\DoxyCodeLine{26         CString \mbox{\hyperlink{class_c_profile_data_i_f_a4012cb1bc61f1bb287dda228f971a933}{GetString}}(CString node, CString key, CString default\_value);}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_profile_data_i_f_ae0166ebb6104745dd932fce5351b5410}{GetInt}}(CString node, CString key, \textcolor{keywordtype}{int} default\_value);}
+\DoxyCodeLine{28         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_profile_data_i_f_afd2ed549f6a09c897138e362dd2b8439}{GetLong}}(CString node, CString key, \textcolor{keywordtype}{long} default\_value);}
+\DoxyCodeLine{29         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_profile_data_i_f_a95292255547b3437a559d967e15e4f12}{GetDouble}}(CString node, CString key, \textcolor{keywordtype}{double} default\_value);}
+\DoxyCodeLine{30         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_a9d3b84ae50838efed0cf34cd3e2b9afe}{GetSectionNames}}(LPTSTR lpszReturnBuffer, DWORD nSize);}
+\DoxyCodeLine{31         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_a9d4846eda00a953b7ec2a7f4d35a5940}{IsExistSection}}(CString node);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{comment}{// file write function}}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_profile_data_i_f_ad2c55c761e85f0df239b12ce63e198be}{SetFilePath}}(CString filepath)}
+\DoxyCodeLine{35         \{}
+\DoxyCodeLine{36                 m\_sFilePath = filepath;}
+\DoxyCodeLine{37         \}}
+\DoxyCodeLine{38         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_a1f83010a16782e72965b459468fff31b}{SetString}}(CString node, CString key, CString s\_data);}
+\DoxyCodeLine{39         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_a8db27443d350ceca7d7c92d1fef27621}{SetInt}}(CString node, CString key, \textcolor{keywordtype}{int} i\_data);}
+\DoxyCodeLine{40         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_a7aca862054154745c27f5eb47e5434f6}{SetLong}}(CString node, CString key, \textcolor{keywordtype}{long} l\_data);}
+\DoxyCodeLine{41         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_af96571cbb2a2b0f98db2c6c49793003e}{SetDouble}}(CString node, CString key, \textcolor{keywordtype}{double} d\_data);}
+\DoxyCodeLine{42         BOOL \mbox{\hyperlink{class_c_profile_data_i_f_a85bc5e3c877e2aa435bbb15004ae371e}{DeleteSection}}(CString node);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \textcolor{comment}{// Language에 따라 언어 반환하기 [2014.10.20 by LJY]}}
+\DoxyCodeLine{45         CString \mbox{\hyperlink{class_c_profile_data_i_f_a3f8d8fe094f16de560f73fd7d2e0ca05}{GetLanguageMessage}}(CString sFindData);}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !defined(AFX\_PROFILEDATAIF\_H\_\_4DFF9E8B\_25BC\_4B96\_B653\_5CA1F2E3EA01\_\_INCLUDED\_)}}
+
+\end{DoxyCode}

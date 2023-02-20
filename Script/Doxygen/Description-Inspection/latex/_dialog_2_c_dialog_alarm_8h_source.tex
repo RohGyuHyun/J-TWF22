@@ -1,0 +1,42 @@
+\hypertarget{_dialog_2_c_dialog_alarm_8h_source}{}\doxysection{CDialog\+Alarm.\+h}
+\label{_dialog_2_c_dialog_alarm_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/Dialog/CDialogAlarm.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/Dialog/CDialogAlarm.h}}
+\mbox{\hyperlink{_dialog_2_c_dialog_alarm_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}afxdialogex.h"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{// CDialogAlarm 대화 상자}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_dialog_alarm}{CDialogAlarm}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9         DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_dialog_alarm}{CDialogAlarm}})}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_c_dialog_alarm}{CDialogAlarm}}(CWnd* pParent = \textcolor{keyword}{nullptr});   \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{13         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_dialog_alarm_afd16d7c6868b6d416ad51526d667ff8f}{\string~CDialogAlarm}}();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{17         \textcolor{keyword}{enum} \{ IDD = \mbox{\hyperlink{resource_8h_a9beeeffe70134f45fa6e3f56fbfcb0de}{IDD\_DIALOG\_ALARM}} \};}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{19 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_alarm_a55ba707c440c1a0812f553db28cc8860}{SetAlarmString}}(\textcolor{keywordtype}{int} nAlarmCode, CString strAlarm);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{29         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_alarm_a25704cfbf2cb4e77540aa178ee78fc46}{DoDataExchange}}(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_alarm_a17df4aa221a54b612c26dc1c40994cf6}{OnBnClickedButton1}}();}
+\DoxyCodeLine{34         \textcolor{keyword}{virtual} BOOL \mbox{\hyperlink{class_c_dialog_alarm_ab9e10846ecec891ca8f86f17dc436e13}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{35         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_alarm_ab3a2116f11c297ac1ba453167fc29268}{OnBnClickedButtonBuzzerOff}}();}
+\DoxyCodeLine{36 \};}
+
+\end{DoxyCode}

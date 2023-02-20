@@ -1,0 +1,12 @@
+<map id="CDialogTeaching" name="CDialogTeaching">
+<area shape="rect" id="node1" title=" " alt="" coords="253,181,371,207"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,88,31"/>
+<area shape="rect" id="node3" href="$class_c_dialog_x_ray_status.html" title=" " alt="" coords="97,93,231,119"/>
+<area shape="rect" id="node4" href="$struct_x___r_a_y___s_t_a_t_u_s.html" title=" " alt="" coords="112,5,232,31"/>
+<area shape="rect" id="node5" href="$struct_i_n_s_p_e_c___p_a_r_a.html" title="INSPEC_PARA struct inspection parameter 검사에 사용 되는 x&#45;ray kv,ma, 검사 parameter" alt="" coords="255,93,369,119"/>
+<area shape="rect" id="node6" href="$struct_r_e_s_u_l_t___d_a_t_a.html" title="RESULT_DATA struct 전체 검사 결과 정보 전체 ok,ng, 수량 ok,ng, 겹침 ok,ng, 개별 결과 정보 struct" alt="" coords="393,93,506,119"/>
+<area shape="rect" id="node7" href="$class_c_dialog_rect.html" title=" " alt="" coords="530,93,625,119"/>
+<area shape="rect" id="node8" title=" " alt="" coords="544,5,611,31"/>
+<area shape="rect" id="node9" href="$class_c_btnenhctrl.html" title=" " alt="" coords="649,93,740,119"/>
+<area shape="rect" id="node10" title=" " alt="" coords="665,5,724,31"/>
+</map>

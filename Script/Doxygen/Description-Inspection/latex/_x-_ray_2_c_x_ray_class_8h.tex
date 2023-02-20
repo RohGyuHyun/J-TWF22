@@ -1,0 +1,309 @@
+\hypertarget{_x-_ray_2_c_x_ray_class_8h}{}\doxysection{D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+X-\/\+Ray/\+CXRay\+Class.h 파일 참조}
+\label{_x-_ray_2_c_x_ray_class_8h}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/X-\/Ray/CXRayClass.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/X-\/Ray/CXRayClass.h}}
+{\ttfamily \#include \char`\"{}commthread.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Time\+Check.\+h\char`\"{}}\newline
+CXRay\+Class.\+h에 대한 include 의존 그래프
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{_x-_ray_2_c_x_ray_class_8h__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_x-_ray_2_c_x_ray_class_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\+\_\+\+RAY\+\_\+\+STATUS}}
+\item 
+struct \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}}
+\item 
+class \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}}
+\end{DoxyCompactItemize}
+\doxysubsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\+\_\+\+RAY\+\_\+\+STATUS}} \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_ad86fb747fcad6ca4dc6a070882fd7054}{X\+\_\+\+RAY\+\_\+\+STATUS}}
+\item 
+typedef struct \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_abe0fb5d31e9cb5899bfb22dc0425d5be}{X\+\_\+\+RAY\+\_\+\+INFO}}
+\end{DoxyCompactItemize}
+\doxysubsection*{열거형 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}} \{ \newline
+\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}{PROGRAM\+\_\+\+KV}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}{PROGRAM\+\_\+\+MA}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}{REQUEST\+\_\+\+KV\+\_\+\+SEPOINT}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}{REQUEST\+\_\+\+MA\+\_\+\+SEPOINT}}
+, \newline
+\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}{REQUEST\+\_\+\+KV\+\_\+\+MONITOR}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}{REQUEST\+\_\+\+MA\+\_\+\+MONITOR}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}{REQUEST\+\_\+\+FILAMENT\+\_\+\+MONITOR}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}{TURN\+\_\+\+X\+\_\+\+RAY\+\_\+\+ON\+\_\+\+OFF}}
+, \newline
+\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}{ENABLE\+\_\+\+COMM\+\_\+\+WATCHDOG}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}{TICKLE\+\_\+\+COMM\+\_\+\+WATCHDOG}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}{RESET\+\_\+\+FAULTS}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}{REQUEST\+\_\+\+FAULTS}}
+, \newline
+\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}{READ\+\_\+\+X\+\_\+\+RAY\+\_\+\+STATUS}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}{REQUEST\+\_\+\+SOFTWARE\+\_\+\+VERSION}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}{REQUEST\+\_\+\+VOLTAGE\+\_\+\+SCALING}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}{REQUEST\+\_\+\+CURRENT\+\_\+\+SCALING}}
+, \newline
+\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}{REQUEST\+\_\+\+MODEL\+\_\+\+NUMBER}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}{REQUEST\+\_\+\+HARDWARE\+\_\+\+VERSION}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}{REQUEST\+\_\+\+SOFTWARE\+\_\+\+BULID\+\_\+\+VERSION}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}{REQUEST\+\_\+15\+V\+\_\+\+LVPS}}
+, \newline
+\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}{REQUEST\+\_\+\+TANK\+\_\+\+TEMPERATURE}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}{PROGRAM\+\_\+\+BAUD\+\_\+\+RATE}}
+, \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}{NON}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}{PROGRAM\+\_\+\+KV}}
+, \newline
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}{PROGRAM\+\_\+\+MA}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}{REQUEST\+\_\+\+KV\+\_\+\+SEPOINT}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}{REQUEST\+\_\+\+MA\+\_\+\+SEPOINT}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}{REQUEST\+\_\+\+KV\+\_\+\+MONITOR}}
+, \newline
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}{REQUEST\+\_\+\+MA\+\_\+\+MONITOR}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}{REQUEST\+\_\+\+FILAMENT\+\_\+\+MONITOR}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}{TURN\+\_\+\+X\+\_\+\+RAY\+\_\+\+ON\+\_\+\+OFF}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}{ENABLE\+\_\+\+COMM\+\_\+\+WATCHDOG}}
+, \newline
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}{TICKLE\+\_\+\+COMM\+\_\+\+WATCHDOG}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}{RESET\+\_\+\+FAULTS}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}{REQUEST\+\_\+\+FAULTS}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}{READ\+\_\+\+X\+\_\+\+RAY\+\_\+\+STATUS}}
+, \newline
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}{REQUEST\+\_\+\+SOFTWARE\+\_\+\+VERSION}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}{REQUEST\+\_\+\+VOLTAGE\+\_\+\+SCALING}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}{REQUEST\+\_\+\+CURRENT\+\_\+\+SCALING}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}{REQUEST\+\_\+\+MODEL\+\_\+\+NUMBER}}
+, \newline
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}{REQUEST\+\_\+\+HARDWARE\+\_\+\+VERSION}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}{REQUEST\+\_\+\+SOFTWARE\+\_\+\+BULID\+\_\+\+VERSION}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}{REQUEST\+\_\+15\+V\+\_\+\+LVPS}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}{REQUEST\+\_\+\+TANK\+\_\+\+TEMPERATURE}}
+, \newline
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}{PROGRAM\+\_\+\+BAUD\+\_\+\+RATE}}
+, \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}{NON}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{타입정의 문서화}
+\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_abe0fb5d31e9cb5899bfb22dc0425d5be}\label{_x-_ray_2_c_x_ray_class_8h_abe0fb5d31e9cb5899bfb22dc0425d5be}} 
+\index{CXRayClass.h@{CXRayClass.h}!X\_RAY\_INFO@{X\_RAY\_INFO}}
+\index{X\_RAY\_INFO@{X\_RAY\_INFO}!CXRayClass.h@{CXRayClass.h}}
+\doxysubsubsection{\texorpdfstring{X\_RAY\_INFO}{X\_RAY\_INFO}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}}}
+
+\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_ad86fb747fcad6ca4dc6a070882fd7054}\label{_x-_ray_2_c_x_ray_class_8h_ad86fb747fcad6ca4dc6a070882fd7054}} 
+\index{CXRayClass.h@{CXRayClass.h}!X\_RAY\_STATUS@{X\_RAY\_STATUS}}
+\index{X\_RAY\_STATUS@{X\_RAY\_STATUS}!CXRayClass.h@{CXRayClass.h}}
+\doxysubsubsection{\texorpdfstring{X\_RAY\_STATUS}{X\_RAY\_STATUS}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\+\_\+\+RAY\+\_\+\+STATUS}} \mbox{\hyperlink{struct_x___r_a_y___s_t_a_t_u_s}{X\+\_\+\+RAY\+\_\+\+STATUS}}}
+
+
+
+\doxysubsection{열거형 타입 문서화}
+\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}} 
+\index{CXRayClass.h@{CXRayClass.h}!X\_RAY\_CMD@{X\_RAY\_CMD}}
+\index{X\_RAY\_CMD@{X\_RAY\_CMD}!CXRayClass.h@{CXRayClass.h}}
+\doxysubsubsection{\texorpdfstring{X\_RAY\_CMD}{X\_RAY\_CMD}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRAM\_KV@{PROGRAM\_KV}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!PROGRAM\_KV@{PROGRAM\_KV}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}} 
+PROGRAM\+\_\+\+KV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRAM\_MA@{PROGRAM\_MA}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!PROGRAM\_MA@{PROGRAM\_MA}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}} 
+PROGRAM\+\_\+\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_KV\_SEPOINT@{REQUEST\_KV\_SEPOINT}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_KV\_SEPOINT@{REQUEST\_KV\_SEPOINT}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}} 
+REQUEST\+\_\+\+KV\+\_\+\+SEPOINT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_MA\_SEPOINT@{REQUEST\_MA\_SEPOINT}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_MA\_SEPOINT@{REQUEST\_MA\_SEPOINT}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}} 
+REQUEST\+\_\+\+MA\+\_\+\+SEPOINT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_KV\_MONITOR@{REQUEST\_KV\_MONITOR}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_KV\_MONITOR@{REQUEST\_KV\_MONITOR}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}} 
+REQUEST\+\_\+\+KV\+\_\+\+MONITOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_MA\_MONITOR@{REQUEST\_MA\_MONITOR}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_MA\_MONITOR@{REQUEST\_MA\_MONITOR}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}} 
+REQUEST\+\_\+\+MA\+\_\+\+MONITOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_FILAMENT\_MONITOR@{REQUEST\_FILAMENT\_MONITOR}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_FILAMENT\_MONITOR@{REQUEST\_FILAMENT\_MONITOR}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}} 
+REQUEST\+\_\+\+FILAMENT\+\_\+\+MONITOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TURN\_X\_RAY\_ON\_OFF@{TURN\_X\_RAY\_ON\_OFF}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!TURN\_X\_RAY\_ON\_OFF@{TURN\_X\_RAY\_ON\_OFF}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}} 
+TURN\+\_\+\+X\+\_\+\+RAY\+\_\+\+ON\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENABLE\_COMM\_WATCHDOG@{ENABLE\_COMM\_WATCHDOG}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!ENABLE\_COMM\_WATCHDOG@{ENABLE\_COMM\_WATCHDOG}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}} 
+ENABLE\+\_\+\+COMM\+\_\+\+WATCHDOG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TICKLE\_COMM\_WATCHDOG@{TICKLE\_COMM\_WATCHDOG}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!TICKLE\_COMM\_WATCHDOG@{TICKLE\_COMM\_WATCHDOG}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}} 
+TICKLE\+\_\+\+COMM\+\_\+\+WATCHDOG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESET\_FAULTS@{RESET\_FAULTS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!RESET\_FAULTS@{RESET\_FAULTS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}} 
+RESET\+\_\+\+FAULTS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_FAULTS@{REQUEST\_FAULTS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_FAULTS@{REQUEST\_FAULTS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}} 
+REQUEST\+\_\+\+FAULTS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READ\_X\_RAY\_STATUS@{READ\_X\_RAY\_STATUS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!READ\_X\_RAY\_STATUS@{READ\_X\_RAY\_STATUS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}} 
+READ\+\_\+\+X\+\_\+\+RAY\+\_\+\+STATUS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_SOFTWARE\_VERSION@{REQUEST\_SOFTWARE\_VERSION}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_SOFTWARE\_VERSION@{REQUEST\_SOFTWARE\_VERSION}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}} 
+REQUEST\+\_\+\+SOFTWARE\+\_\+\+VERSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_VOLTAGE\_SCALING@{REQUEST\_VOLTAGE\_SCALING}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_VOLTAGE\_SCALING@{REQUEST\_VOLTAGE\_SCALING}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}} 
+REQUEST\+\_\+\+VOLTAGE\+\_\+\+SCALING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_CURRENT\_SCALING@{REQUEST\_CURRENT\_SCALING}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_CURRENT\_SCALING@{REQUEST\_CURRENT\_SCALING}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}} 
+REQUEST\+\_\+\+CURRENT\+\_\+\+SCALING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_MODEL\_NUMBER@{REQUEST\_MODEL\_NUMBER}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_MODEL\_NUMBER@{REQUEST\_MODEL\_NUMBER}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}} 
+REQUEST\+\_\+\+MODEL\+\_\+\+NUMBER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_HARDWARE\_VERSION@{REQUEST\_HARDWARE\_VERSION}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_HARDWARE\_VERSION@{REQUEST\_HARDWARE\_VERSION}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}} 
+REQUEST\+\_\+\+HARDWARE\+\_\+\+VERSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_SOFTWARE\_BULID\_VERSION@{REQUEST\_SOFTWARE\_BULID\_VERSION}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_SOFTWARE\_BULID\_VERSION@{REQUEST\_SOFTWARE\_BULID\_VERSION}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}} 
+REQUEST\+\_\+\+SOFTWARE\+\_\+\+BULID\+\_\+\+VERSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_15V\_LVPS@{REQUEST\_15V\_LVPS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_15V\_LVPS@{REQUEST\_15V\_LVPS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}} 
+REQUEST\+\_\+15\+V\+\_\+\+LVPS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_TANK\_TEMPERATURE@{REQUEST\_TANK\_TEMPERATURE}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_TANK\_TEMPERATURE@{REQUEST\_TANK\_TEMPERATURE}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}} 
+REQUEST\+\_\+\+TANK\+\_\+\+TEMPERATURE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRAM\_BAUD\_RATE@{PROGRAM\_BAUD\_RATE}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!PROGRAM\_BAUD\_RATE@{PROGRAM\_BAUD\_RATE}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}} 
+PROGRAM\+\_\+\+BAUD\+\_\+\+RATE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NON@{NON}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!NON@{NON}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}} 
+NON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRAM\_KV@{PROGRAM\_KV}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!PROGRAM\_KV@{PROGRAM\_KV}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58adb77381f0d732bd7362988c3bc386d90}} 
+PROGRAM\+\_\+\+KV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRAM\_MA@{PROGRAM\_MA}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!PROGRAM\_MA@{PROGRAM\_MA}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a8be66ac7a63434ec350cd1d2ee63df4f}} 
+PROGRAM\+\_\+\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_KV\_SEPOINT@{REQUEST\_KV\_SEPOINT}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_KV\_SEPOINT@{REQUEST\_KV\_SEPOINT}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a31a01cf423b22d67c04e6e2b6e2c87ab}} 
+REQUEST\+\_\+\+KV\+\_\+\+SEPOINT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_MA\_SEPOINT@{REQUEST\_MA\_SEPOINT}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_MA\_SEPOINT@{REQUEST\_MA\_SEPOINT}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ad4c28f58ffbeb2d340a7eac248783928}} 
+REQUEST\+\_\+\+MA\+\_\+\+SEPOINT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_KV\_MONITOR@{REQUEST\_KV\_MONITOR}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_KV\_MONITOR@{REQUEST\_KV\_MONITOR}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa59e057ce86b73c6314acd85e97e62d4}} 
+REQUEST\+\_\+\+KV\+\_\+\+MONITOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_MA\_MONITOR@{REQUEST\_MA\_MONITOR}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_MA\_MONITOR@{REQUEST\_MA\_MONITOR}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab9eab09f0b8b062a25de69caf95b9f39}} 
+REQUEST\+\_\+\+MA\+\_\+\+MONITOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_FILAMENT\_MONITOR@{REQUEST\_FILAMENT\_MONITOR}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_FILAMENT\_MONITOR@{REQUEST\_FILAMENT\_MONITOR}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a9571d9dc5a463c625515bfd173915329}} 
+REQUEST\+\_\+\+FILAMENT\+\_\+\+MONITOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TURN\_X\_RAY\_ON\_OFF@{TURN\_X\_RAY\_ON\_OFF}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!TURN\_X\_RAY\_ON\_OFF@{TURN\_X\_RAY\_ON\_OFF}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58aa178ccd5eafdcc7c199cb034452c5ac3}} 
+TURN\+\_\+\+X\+\_\+\+RAY\+\_\+\+ON\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENABLE\_COMM\_WATCHDOG@{ENABLE\_COMM\_WATCHDOG}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!ENABLE\_COMM\_WATCHDOG@{ENABLE\_COMM\_WATCHDOG}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac565aef6b197f3a56f308d59587857c4}} 
+ENABLE\+\_\+\+COMM\+\_\+\+WATCHDOG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TICKLE\_COMM\_WATCHDOG@{TICKLE\_COMM\_WATCHDOG}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!TICKLE\_COMM\_WATCHDOG@{TICKLE\_COMM\_WATCHDOG}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ac092f990cb5040813ee9b6ad9ed738f5}} 
+TICKLE\+\_\+\+COMM\+\_\+\+WATCHDOG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESET\_FAULTS@{RESET\_FAULTS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!RESET\_FAULTS@{RESET\_FAULTS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4ffffd95e33d07abb2a499416e91592d}} 
+RESET\+\_\+\+FAULTS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_FAULTS@{REQUEST\_FAULTS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_FAULTS@{REQUEST\_FAULTS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1bc98433ffdee89432b6720de5c848f}} 
+REQUEST\+\_\+\+FAULTS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READ\_X\_RAY\_STATUS@{READ\_X\_RAY\_STATUS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!READ\_X\_RAY\_STATUS@{READ\_X\_RAY\_STATUS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a77b4a853356ae504f763858b36a60e5a}} 
+READ\+\_\+\+X\+\_\+\+RAY\+\_\+\+STATUS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_SOFTWARE\_VERSION@{REQUEST\_SOFTWARE\_VERSION}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_SOFTWARE\_VERSION@{REQUEST\_SOFTWARE\_VERSION}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a4a46abf56ba8925556c5d8a882071053}} 
+REQUEST\+\_\+\+SOFTWARE\+\_\+\+VERSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_VOLTAGE\_SCALING@{REQUEST\_VOLTAGE\_SCALING}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_VOLTAGE\_SCALING@{REQUEST\_VOLTAGE\_SCALING}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3b3f71946587561595fb53615a61fd17}} 
+REQUEST\+\_\+\+VOLTAGE\+\_\+\+SCALING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_CURRENT\_SCALING@{REQUEST\_CURRENT\_SCALING}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_CURRENT\_SCALING@{REQUEST\_CURRENT\_SCALING}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a3d5e82520bfa21a4456adcb4fd1342ba}} 
+REQUEST\+\_\+\+CURRENT\+\_\+\+SCALING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_MODEL\_NUMBER@{REQUEST\_MODEL\_NUMBER}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_MODEL\_NUMBER@{REQUEST\_MODEL\_NUMBER}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a374820674a32cb367fd2969fc51dac74}} 
+REQUEST\+\_\+\+MODEL\+\_\+\+NUMBER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_HARDWARE\_VERSION@{REQUEST\_HARDWARE\_VERSION}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_HARDWARE\_VERSION@{REQUEST\_HARDWARE\_VERSION}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ab1e8f8d78f1b283c1d742ed809f63bb7}} 
+REQUEST\+\_\+\+HARDWARE\+\_\+\+VERSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_SOFTWARE\_BULID\_VERSION@{REQUEST\_SOFTWARE\_BULID\_VERSION}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_SOFTWARE\_BULID\_VERSION@{REQUEST\_SOFTWARE\_BULID\_VERSION}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a5e63b3bbce41f15d152033e3317b4ea5}} 
+REQUEST\+\_\+\+SOFTWARE\+\_\+\+BULID\+\_\+\+VERSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_15V\_LVPS@{REQUEST\_15V\_LVPS}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_15V\_LVPS@{REQUEST\_15V\_LVPS}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58ae87e616f7e94b51f6fe0a79e06eadccb}} 
+REQUEST\+\_\+15\+V\+\_\+\+LVPS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQUEST\_TANK\_TEMPERATURE@{REQUEST\_TANK\_TEMPERATURE}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!REQUEST\_TANK\_TEMPERATURE@{REQUEST\_TANK\_TEMPERATURE}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58af52704e69895410c42b918f5b03091e6}} 
+REQUEST\+\_\+\+TANK\+\_\+\+TEMPERATURE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRAM\_BAUD\_RATE@{PROGRAM\_BAUD\_RATE}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!PROGRAM\_BAUD\_RATE@{PROGRAM\_BAUD\_RATE}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7864b462eaeb0b0f591fed19e234ddee}} 
+PROGRAM\+\_\+\+BAUD\+\_\+\+RATE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NON@{NON}!CXRayClass.h@{CXRayClass.h}}\index{CXRayClass.h@{CXRayClass.h}!NON@{NON}}}\mbox{\Hypertarget{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}\label{_x-_ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58a7905fcd753e9915a521ea77aa7066415}} 
+NON&\\
+\hline
+
+\end{DoxyEnumFields}

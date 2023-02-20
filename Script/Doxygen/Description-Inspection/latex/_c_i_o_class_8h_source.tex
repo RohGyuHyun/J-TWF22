@@ -1,0 +1,80 @@
+\hypertarget{_c_i_o_class_8h_source}{}\doxysection{CIOClass.\+h}
+\label{_c_i_o_class_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/IO/CIOClass.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/IO/CIOClass.h}}
+\mbox{\hyperlink{_c_i_o_class_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define ALARM\_CODE\_EMG                                  1}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define ALARM\_CODE\_KEY\_SW                               2}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define ALARM\_CODE\_DOOR                                 3}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define ALARM\_CODE\_INVERTER\_ALARM               4}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define ALARM\_CODE\_TUBE\_ALARM                   5}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define ALARM\_CODE\_X\_RAY\_LAMP\_ALARM             6}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a8d18064d3629ae1199e33db2e8c46337}{INPUT\_EMG}}                                         = \_T(\textcolor{stringliteral}{"{}EMG"{}});}
+\DoxyCodeLine{11 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a1134d6d5d4aee638653453bce79c800e}{INPUT\_KEY\_SW}}                           = \_T(\textcolor{stringliteral}{"{}KEY SW"{}});}
+\DoxyCodeLine{12 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_ac81739e76db90fede18e4508a17b9db3}{INPUT\_DOOR}}                               = \_T(\textcolor{stringliteral}{"{}DOOR"{}});}
+\DoxyCodeLine{13 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a03d08cc98a143cc48bdc1792b606135d}{INPUT\_INVERTER\_ALARM}}           = \_T(\textcolor{stringliteral}{"{}INVERTER ALARM"{}});}
+\DoxyCodeLine{14 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a1ac6cca57d17ca6de41005ded4d7bbc5}{INPUT\_TUBE\_ALARM}}                   = \_T(\textcolor{stringliteral}{"{}TUBE ALARM"{}});}
+\DoxyCodeLine{15 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_ad3170598035807f17fb69febf664e40e}{INPUT\_X\_RAY\_LAMP\_ALARM}}       = \_T(\textcolor{stringliteral}{"{}X\_RAY\_LAMP\_ALM"{}});}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a8d2111896e4429ca535f4d821c5af5b1}{OUTPUT\_TOWER\_LAMP\_RED}}                 = \_T(\textcolor{stringliteral}{"{}TOWER LAMP RED"{}});}
+\DoxyCodeLine{18 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a9468f8900acb6dbaa942e544482d17c6}{OUTPUT\_TOWER\_LAMP\_YELLOW}}   = \_T(\textcolor{stringliteral}{"{}TOWER LAMP YELLOW"{}});}
+\DoxyCodeLine{19 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a1b3b211b68468997266d274f9230049f}{OUTPUT\_TOWER\_LAMP\_GREEN}}     = \_T(\textcolor{stringliteral}{"{}TOWER LAMP GREEN"{}});}
+\DoxyCodeLine{20 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_aec4cd4e726b9ccb212ac1e2b9b564b5e}{OUTPUT\_TOWER\_BUZZER1}}           = \_T(\textcolor{stringliteral}{"{}TOWER BUZZER1"{}});}
+\DoxyCodeLine{21 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a1525cde70a6656481abcf3c6d19dc6d2}{OUTPUT\_TOWER\_BUZZER2}}           = \_T(\textcolor{stringliteral}{"{}TOWER BUZZER2"{}});}
+\DoxyCodeLine{22 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_aedc4babf26e4e59ce3c10902964a59ae}{OUTPUT\_MC01\_ON}}                       = \_T(\textcolor{stringliteral}{"{}MC01 ON(INVERTER POWER)"{}});}
+\DoxyCodeLine{23 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_aafc1eeca88df1c3eed16444099ef737e}{OUTPUT\_X\_RAY\_O}}                       = \_T(\textcolor{stringliteral}{"{}X-\/RAY ON"{}});}
+\DoxyCodeLine{24 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_af53dadbcc821e8adf235287338619937}{OUTPUT\_MOTOR\_CW}}                     = \_T(\textcolor{stringliteral}{"{}MOTOR CW"{}});}
+\DoxyCodeLine{25 \textcolor{keyword}{const} CString \mbox{\hyperlink{_c_i_o_class_8h_a7f275b4cd8aaf63bc9565e4808f3d8cb}{OUTPUT\_MOTOR\_CCW}}                   = \_T(\textcolor{stringliteral}{"{}MOTOR CCW"{}});}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{enum} \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3a}{Input\_Enum}}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29         \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3aa20692b56b3348aa06bdd8981319678ae}{INPUT\_INDEX\_EMG}},}
+\DoxyCodeLine{30         \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3aad75d95ae7e9604b4469dc6ba577ed86c}{INPUT\_INDEX\_KEY\_SW}},}
+\DoxyCodeLine{31         \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3aa63f8808215b841e85f650b78f2906d0f}{INPUT\_INDEX\_DOOR}},}
+\DoxyCodeLine{32         \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3aa2fb2666d5d38098ab353ccbb188a41fd}{INPUT\_INDEX\_INVERTER\_ALARM}},}
+\DoxyCodeLine{33         \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3aa213dea6e630109b9b0fc7a79e7a7454b}{INPUT\_INDEX\_TUBE\_ALARM}},}
+\DoxyCodeLine{34         \mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3aa2a98c550ce9206d1a68ff38a5e87dc00}{INPUT\_INDEX\_X\_RAY\_LAMP\_ALM}},}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{enum} \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356b}{Output\_Enum}}}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba273675c90ceaaf06cecb5a40683714fd}{OUTPUT\_INDEX\_TOWER\_LAMP\_RED}},}
+\DoxyCodeLine{40         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356baa4694b0329e919e5d2cd89072a079463}{OUTPUT\_INDEX\_TOWER\_LAMP\_YELLOW}},}
+\DoxyCodeLine{41         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba0dd87e4c9cb017c6fa800a8c1cd00307}{OUTPUT\_INDEX\_TOWER\_LAMP\_GREEN}},}
+\DoxyCodeLine{42         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356bac95a5da5ed5ae1b5814ad7835cd9b17f}{OUTPUT\_INDEX\_TOWER\_BUZZER1}},}
+\DoxyCodeLine{43         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba469759a3a2107a56fdf3902e780c86af}{OUTPUT\_INDEX\_TOWER\_BUZZER2}},}
+\DoxyCodeLine{44         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356baadbbb771e1f73091d3f8d3ecbf81ae5b}{OUTPUT\_INDEX\_MC01\_ON}},}
+\DoxyCodeLine{45         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba1acc6fbc38ebcb1dd580f08e268fa6d2}{OUTPUT\_INDEX\_X\_RAY\_ON}},}
+\DoxyCodeLine{46         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba2738c5453dd32e70b04aa35a2c8ad865}{OUTPUT\_INDEX\_MOTOR\_CW}},}
+\DoxyCodeLine{47         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba682a5a2e2cf1d8c3892d4f1424d85459}{OUTPUT\_INDEX\_MOTOR\_CCW}},}
+\DoxyCodeLine{48         \mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356ba16b5cec5d89d17b5b617b6657e6751fe}{OUTPUT\_INDEX\_INVERTER\_RESET}},}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_i_o_class}{CIOClass}}}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{54         \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\_PARA}} \mbox{\hyperlink{class_c_i_o_class_ae6cc84a71ece49f6b2ed6288410f7fec}{m\_stInput}}[\mbox{\hyperlink{define_8h_a200281399f8f0217d82ea03238a2eb6a}{MAX\_INPUT\_NUM}}];}
+\DoxyCodeLine{55         \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\_PARA}} \mbox{\hyperlink{class_c_i_o_class_aa23a9181659d019e194f67c81a333372}{m\_stOutput}}[\mbox{\hyperlink{define_8h_a53aa580a1c97aec0efd90910de409556}{MAX\_OUTPUT\_NUM}}];}
+\DoxyCodeLine{56 \textcolor{keyword}{private}:}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{keyword}{public}:}
+\DoxyCodeLine{60         \mbox{\hyperlink{class_c_i_o_class_a67db7e66a41a8c32b7efe2030e08749e}{CIOClass}}();}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_c_i_o_class_aa471f2de325736de50773c5702ad4ba7}{\string~CIOClass}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_i_o_class}{CIOClass}}* \mbox{\hyperlink{class_c_i_o_class_a5b12cdc17f7a83c2cc1cf5914dc4c80f}{Instance}}();}
+\DoxyCodeLine{64         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_i_o_class}{CIOClass}}* \mbox{\hyperlink{class_c_i_o_class_a79449018a4d755eb6bfe63c4422a8a11}{m\_pInstance}};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_i_o_class_a0621b2e1f3bdd90e49bb23553783c4b9}{SetIOPara}}(\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\_PARA}}* Input, \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\_PARA}}* Output);}
+\DoxyCodeLine{67         BOOL \mbox{\hyperlink{class_c_i_o_class_aa9128f2a2d10178eea66f32c934c3c31}{GetInputBit}}(\textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{68         BOOL \mbox{\hyperlink{class_c_i_o_class_afa925d22a6af44c554a32a653af3afdc}{GetOutputBit}}(\textcolor{keywordtype}{int} nIdx);}
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_i_o_class_aea7cab8bf93d523b9ee1ab9f1912fda0}{SetOutputBit}}(\textcolor{keywordtype}{int} nIdx, BOOL isOnOff);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_i_o_class_a8db16701aeb952bbb6bda914254f4f98}{GetInputValue}}(\mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3a}{Input\_Enum}} nIdx);\textcolor{comment}{// -\/1 NoLabel Text;}}
+\DoxyCodeLine{72         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_i_o_class_a6e61a1f11779a24f2fc52e5d58232e02}{SetOutputValue}}(\mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356b}{Output\_Enum}} nIdx, BOOL isOnOff);\textcolor{comment}{// -\/1 NoLabel Text;}}
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+
+\end{DoxyCode}

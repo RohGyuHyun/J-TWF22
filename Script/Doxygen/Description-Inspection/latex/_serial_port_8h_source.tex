@@ -1,0 +1,250 @@
+\hypertarget{_serial_port_8h_source}{}\doxysection{Serial\+Port.\+h}
+\label{_serial_port_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/SerialPort.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/SerialPort.h}}
+\mbox{\hyperlink{_serial_port_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{Module : SerialPort.h}}
+\DoxyCodeLine{3 \textcolor{comment}{Purpose: Interface for an C++ wrapper class for serial ports}}
+\DoxyCodeLine{4 \textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{Copyright (c) 1999 -\/ 2015 by PJ Naughter.  }}
+\DoxyCodeLine{6 \textcolor{comment}{}}
+\DoxyCodeLine{7 \textcolor{comment}{All rights reserved.}}
+\DoxyCodeLine{8 \textcolor{comment}{}}
+\DoxyCodeLine{9 \textcolor{comment}{Copyright / Usage Details:}}
+\DoxyCodeLine{10 \textcolor{comment}{}}
+\DoxyCodeLine{11 \textcolor{comment}{You are allowed to include the source code in any product (commercial, shareware, freeware or otherwise) }}
+\DoxyCodeLine{12 \textcolor{comment}{when your product is released in binary form. You are allowed to modify the source code in any way you want }}
+\DoxyCodeLine{13 \textcolor{comment}{except you cannot modify the copyright details at the top of each module. If you want to distribute source }}
+\DoxyCodeLine{14 \textcolor{comment}{code with your application, then you are only allowed to distribute versions released by the author. This is }}
+\DoxyCodeLine{15 \textcolor{comment}{to maintain a single distribution point for the source code. }}
+\DoxyCodeLine{16 \textcolor{comment}{}}
+\DoxyCodeLine{17 \textcolor{comment}{*/}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#ifndef \_\_SERIALPORT\_H\_\_}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define \_\_SERIALPORT\_H\_\_}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#ifndef CSERIALPORT\_EXT\_CLASS}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define CSERIALPORT\_EXT\_CLASS}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef CSERIALPORT\_EXT\_CLASS}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#ifndef \_Out\_writes\_bytes\_}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define \_Out\_writes\_bytes\_(X)}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Out\_writes\_bytes\_}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#ifndef \_\_out\_data\_source}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define \_\_out\_data\_source(X)}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_\_out\_data\_source}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#ifndef \_Out\_writes\_bytes\_to\_opt\_}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define \_Out\_writes\_bytes\_to\_opt\_(X,Y)}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Out\_writes\_bytes\_to\_opt\_}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#ifndef \_Out\_writes\_bytes\_opt\_}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define \_Out\_writes\_bytes\_opt\_(X)}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Out\_writes\_bytes\_opt\_}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#ifndef \_In\_reads\_bytes\_opt\_}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define \_In\_reads\_bytes\_opt\_(X)}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_In\_reads\_bytes\_opt\_}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#ifndef \_In\_}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define \_In\_}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_In\_}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#ifndef \_In\_z\_}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#define \_In\_z\_}}
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_In\_z\_}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#ifndef \_Inout\_opt\_}}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#define \_Inout\_opt\_}}
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Inout\_opt\_}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#ifndef \_Out\_opt\_}}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#define \_Out\_opt\_}}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Out\_opt\_}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#ifndef \_Out\_}}
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#define \_Out\_}}
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Out\_}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#ifndef \_Inout\_}}
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#define \_Inout\_}}
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_Inout\_}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#ifndef \_In\_opt\_}}
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#define \_In\_opt\_}}
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_In\_opt\_}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#include <sal.h>}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{preprocessor}{\#ifndef CSERIALPORT\_MFC\_EXTENSTIONS}}
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef CSERIALPORT\_MFC\_EXTENSTIONS}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 }
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{93 \textcolor{keyword}{class }\mbox{\hyperlink{_serial_port_8h_a24e485b39807d96b21c67b7209df8460}{CSERIALPORT\_EXT\_CLASS}} \mbox{\hyperlink{class_c_serial_exception}{CSerialException}} : \textcolor{keyword}{public} CException}
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{95 class \mbox{\hyperlink{_serial_port_8h_a24e485b39807d96b21c67b7209df8460}{CSERIALPORT\_EXT\_CLASS}} \mbox{\hyperlink{class_c_serial_exception}{CSerialException}} : \textcolor{keyword}{public} std::exception}
+\DoxyCodeLine{96 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{97 \{}
+\DoxyCodeLine{98 \textcolor{keyword}{public}:}
+\DoxyCodeLine{99 \textcolor{comment}{//Constructors / Destructors}}
+\DoxyCodeLine{100   \mbox{\hyperlink{class_c_serial_exception}{CSerialException}}(DWORD dwError);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{comment}{//Methods}}
+\DoxyCodeLine{103 \textcolor{preprocessor}{\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#ifdef \_DEBUG}}
+\DoxyCodeLine{105   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} Dump(CDumpContext\& dc) \textcolor{keyword}{const};}
+\DoxyCodeLine{106 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifdef \_DEBUG}}
+\DoxyCodeLine{107 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \textcolor{preprocessor}{\#if \_MSC\_VER >= 1700}}
+\DoxyCodeLine{110   \textcolor{keyword}{virtual} BOOL \mbox{\hyperlink{class_c_serial_exception_a1df4cf7d9baf53640cce87085522aa13}{GetErrorMessage}}(\_Out\_z\_cap\_(nMaxError) LPTSTR lpszError, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} UINT nMaxError, \mbox{\hyperlink{_serial_port_8h_a0cee083d022d10fcad4840d6debdedb8}{\_Out\_opt\_}} PUINT pnHelpContext = NULL);}
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#else   }}
+\DoxyCodeLine{112   \textcolor{keyword}{virtual} BOOL \mbox{\hyperlink{class_c_serial_exception_a1df4cf7d9baf53640cce87085522aa13}{GetErrorMessage}}(\_\_out\_ecount\_z(nMaxError) LPTSTR lpszError, \_\_in UINT nMaxError, \_\_out\_opt PUINT pnHelpContext = NULL);}
+\DoxyCodeLine{113 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{116   CString \mbox{\hyperlink{class_c_serial_exception_a1df4cf7d9baf53640cce87085522aa13}{GetErrorMessage}}();}
+\DoxyCodeLine{117 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \textcolor{comment}{//Data members}}
+\DoxyCodeLine{120   DWORD \mbox{\hyperlink{class_c_serial_exception_a755bfb3e70a5cd2ceddaa3df1d16d626}{m\_dwError}};}
+\DoxyCodeLine{121 \};}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \textcolor{keyword}{class }\mbox{\hyperlink{_serial_port_8h_a24e485b39807d96b21c67b7209df8460}{CSERIALPORT\_EXT\_CLASS}} \mbox{\hyperlink{class_c_serial_port}{CSerialPort}}}
+\DoxyCodeLine{125 \{}
+\DoxyCodeLine{126 \textcolor{keyword}{public}:}
+\DoxyCodeLine{127 \textcolor{comment}{//Enums}}
+\DoxyCodeLine{128   \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{FlowControl}}}
+\DoxyCodeLine{129   \{}
+\DoxyCodeLine{130     \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}{NoFlowControl}},}
+\DoxyCodeLine{131     \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae174312a5ebdef778e1c00a2726f1a1c}{CtsRtsFlowControl}},}
+\DoxyCodeLine{132     \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae524405638dbea1e2aa32428633f11d3}{CtsDtrFlowControl}},}
+\DoxyCodeLine{133     \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a61516c7c0999af7c5d9cb93cf66fdcb9}{DsrRtsFlowControl}},}
+\DoxyCodeLine{134     \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96afdece2e330bb94a2336abc1aa728c482}{DsrDtrFlowControl}},}
+\DoxyCodeLine{135     XonXoffFlowControl}
+\DoxyCodeLine{136   \};}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138   \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{Parity}}}
+\DoxyCodeLine{139   \{    }
+\DoxyCodeLine{140     NoParity = 0,}
+\DoxyCodeLine{141     OddParity = 1,}
+\DoxyCodeLine{142     EvenParity = 2,}
+\DoxyCodeLine{143     MarkParity = 3,}
+\DoxyCodeLine{144     SpaceParity = 4}
+\DoxyCodeLine{145   \};}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147   \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{StopBits}}}
+\DoxyCodeLine{148   \{}
+\DoxyCodeLine{149     \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}{OneStopBit}},}
+\DoxyCodeLine{150     \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a154a201ce6fb804109528d6a811f1f40}{OnePointFiveStopBits}},}
+\DoxyCodeLine{151     TwoStopBits}
+\DoxyCodeLine{152   \};}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 \textcolor{comment}{//Constructors / Destructors}}
+\DoxyCodeLine{155   \mbox{\hyperlink{class_c_serial_port}{CSerialPort}}();}
+\DoxyCodeLine{156   \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_serial_port}{\string~CSerialPort}}();}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 \textcolor{comment}{//General Methods}}
+\DoxyCodeLine{159   BOOL Open(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} \textcolor{keywordtype}{int} nPort, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwBaud = 9600, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} Parity parity = NoParity, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} BYTE DataBits = 8, }
+\DoxyCodeLine{160             \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} StopBits stopBits = OneStopBit, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} FlowControl fc = NoFlowControl, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} BOOL bOverlapped = FALSE);}
+\DoxyCodeLine{161   BOOL Open(\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\_In\_z\_}} LPCTSTR pszPort, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwBaud = 9600, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} Parity parity = NoParity, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} BYTE DataBits = 8, }
+\DoxyCodeLine{162             \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} StopBits stopBits = OneStopBit, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} FlowControl fc = NoFlowControl, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} BOOL bOverlapped = FALSE);}
+\DoxyCodeLine{163   \textcolor{keywordtype}{void} Close();}
+\DoxyCodeLine{164   \textcolor{keywordtype}{void} Attach(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} HANDLE hComm);}
+\DoxyCodeLine{165   HANDLE Detach();}
+\DoxyCodeLine{166   \textcolor{keyword}{operator} HANDLE()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} m\_hComm; \};}
+\DoxyCodeLine{167   BOOL \mbox{\hyperlink{class_c_serial_port_a75805efcb633290d46a0859cf3c34228}{IsOpen}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} m\_hComm != INVALID\_HANDLE\_VALUE; \};}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169 \textcolor{preprocessor}{\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{170 \textcolor{preprocessor}{\#ifdef \_DEBUG}}
+\DoxyCodeLine{171   \textcolor{keywordtype}{void} Dump(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} CDumpContext\& dc) \textcolor{keyword}{const};}
+\DoxyCodeLine{172 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifdef \_DEBUG}}
+\DoxyCodeLine{173 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifdef CSERIALPORT\_MFC\_EXTENSIONS}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175 \textcolor{comment}{//Reading / Writing Methods}}
+\DoxyCodeLine{176   DWORD Read(\mbox{\hyperlink{_serial_port_8h_a94739e7abc557d7aedd871c65c8d92a4}{\_Out\_writes\_bytes\_}}(dwNumberOfBytesToRead) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\_\_out\_data\_source}}(FILE) \textcolor{keywordtype}{void}* lpBuffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwNumberOfBytesToRead);}
+\DoxyCodeLine{177   \textcolor{keywordtype}{void}  Read(\mbox{\hyperlink{_serial_port_8h_ad4417e0e714eb3711ebc68d2e88356f4}{\_Out\_writes\_bytes\_to\_opt\_}}(dwNumberOfBytesToRead, *lpNumberOfBytesRead) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\_\_out\_data\_source}}(FILE) \textcolor{keywordtype}{void}* lpBuffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwNumberOfBytesToRead, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} OVERLAPPED\& overlapped, \mbox{\hyperlink{_serial_port_8h_a9741e627e14220d0e9a803d9fa222a69}{\_Inout\_opt\_}} DWORD* lpNumberOfBytesRead = NULL);}
+\DoxyCodeLine{178   \textcolor{keywordtype}{void}  ReadEx(\mbox{\hyperlink{_serial_port_8h_ad4b1ff83a10269bb43cc8d7f6a095ca9}{\_Out\_writes\_bytes\_opt\_}}(dwNumberOfBytesToRead) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\_\_out\_data\_source}}(FILE) LPVOID lpBuffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwNumberOfBytesToRead, \mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\_Inout\_}} LPOVERLAPPED lpOverlapped, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} LPOVERLAPPED\_COMPLETION\_ROUTINE lpCompletionRoutine);}
+\DoxyCodeLine{179   DWORD Write(\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\_In\_reads\_bytes\_opt\_}}(dwNumberOfBytesToWrite) \textcolor{keyword}{const} \textcolor{keywordtype}{void}* lpBuffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwNumberOfBytesToWrite);}
+\DoxyCodeLine{180   \textcolor{keywordtype}{void}  Write(\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\_In\_reads\_bytes\_opt\_}}(dwNumberOfBytesToWrite) \textcolor{keyword}{const} \textcolor{keywordtype}{void}* lpBuffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwNumberOfBytesToWrite, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} OVERLAPPED\& overlapped, \mbox{\hyperlink{_serial_port_8h_a0cee083d022d10fcad4840d6debdedb8}{\_Out\_opt\_}} DWORD* lpNumberOfBytesWritten = NULL);}
+\DoxyCodeLine{181   \textcolor{keywordtype}{void}  WriteEx(\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\_In\_reads\_bytes\_opt\_}}(dwNumberOfBytesToWrite) LPCVOID lpBuffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwNumberOfBytesToWrite, \mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\_Inout\_}} LPOVERLAPPED lpOverlapped, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} LPOVERLAPPED\_COMPLETION\_ROUTINE lpCompletionRoutine);}
+\DoxyCodeLine{182   \textcolor{keywordtype}{void}  TransmitChar(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} \textcolor{keywordtype}{char} cChar);}
+\DoxyCodeLine{183   \textcolor{keywordtype}{void}  GetOverlappedResult(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} OVERLAPPED\& overlapped, \mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} DWORD\& dwBytesTransferred, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} BOOL bWait);}
+\DoxyCodeLine{184   \textcolor{keywordtype}{void}  CancelIo();}
+\DoxyCodeLine{185   DWORD BytesWaiting();}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187 \textcolor{comment}{//Configuration Methods}}
+\DoxyCodeLine{188   \textcolor{keywordtype}{void} GetConfig(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} COMMCONFIG\& config);}
+\DoxyCodeLine{189   \textcolor{keyword}{static} \textcolor{keywordtype}{void} GetDefaultConfig(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} \textcolor{keywordtype}{int} nPort, \mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} COMMCONFIG\& config);}
+\DoxyCodeLine{190   \textcolor{keyword}{static} \textcolor{keywordtype}{void} GetDefaultConfig(\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\_In\_z\_}} LPCTSTR pszPort, \mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} COMMCONFIG\& config);}
+\DoxyCodeLine{191   \textcolor{keywordtype}{void} SetConfig(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} COMMCONFIG\& Config);}
+\DoxyCodeLine{192   \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetDefaultConfig(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} \textcolor{keywordtype}{int} nPort, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} COMMCONFIG\& config);}
+\DoxyCodeLine{193   \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetDefaultConfig(\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\_In\_z\_}} LPCTSTR pszPort, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} COMMCONFIG\& config);}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195 \textcolor{comment}{//Misc RS232 Methods}}
+\DoxyCodeLine{196   \textcolor{keywordtype}{void} ClearBreak();}
+\DoxyCodeLine{197   \textcolor{keywordtype}{void} SetBreak();}
+\DoxyCodeLine{198   \textcolor{keywordtype}{void} ClearError(\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} DWORD\& dwErrors);}
+\DoxyCodeLine{199   \textcolor{keywordtype}{void} GetStatus(\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} COMSTAT\& stat);}
+\DoxyCodeLine{200   \textcolor{keywordtype}{void} GetState(\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} DCB\& dcb);}
+\DoxyCodeLine{201   \textcolor{keywordtype}{void} SetState(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DCB\& dcb);}
+\DoxyCodeLine{202   \textcolor{keywordtype}{void} Escape(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwFunc);}
+\DoxyCodeLine{203   \textcolor{keywordtype}{void} ClearDTR();}
+\DoxyCodeLine{204   \textcolor{keywordtype}{void} ClearRTS();}
+\DoxyCodeLine{205   \textcolor{keywordtype}{void} SetDTR();}
+\DoxyCodeLine{206   \textcolor{keywordtype}{void} SetRTS();}
+\DoxyCodeLine{207   \textcolor{keywordtype}{void} SetXOFF();}
+\DoxyCodeLine{208   \textcolor{keywordtype}{void} SetXON();}
+\DoxyCodeLine{209   \textcolor{keywordtype}{void} GetProperties(\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\_Inout\_}} COMMPROP\& properties);}
+\DoxyCodeLine{210   \textcolor{keywordtype}{void} GetModemStatus(\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} DWORD\& dwModemStatus); }
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212 \textcolor{comment}{//Timeouts}}
+\DoxyCodeLine{213   \textcolor{keywordtype}{void} SetTimeouts(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} COMMTIMEOUTS\& timeouts);}
+\DoxyCodeLine{214   \textcolor{keywordtype}{void} GetTimeouts(\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} COMMTIMEOUTS\& timeouts);}
+\DoxyCodeLine{215   \textcolor{keywordtype}{void} Set0Timeout();}
+\DoxyCodeLine{216   \textcolor{keywordtype}{void} Set0WriteTimeout();}
+\DoxyCodeLine{217   \textcolor{keywordtype}{void} Set0ReadTimeout();}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219 \textcolor{comment}{//Event Methods}}
+\DoxyCodeLine{220   \textcolor{keywordtype}{void} SetMask(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwMask);}
+\DoxyCodeLine{221   \textcolor{keywordtype}{void} GetMask(\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\_Out\_}} DWORD\& dwMask);}
+\DoxyCodeLine{222   \textcolor{keywordtype}{void} WaitEvent(\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\_Inout\_}} DWORD\& dwMask);}
+\DoxyCodeLine{223   BOOL WaitEvent(\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\_Inout\_}} DWORD\& dwMask, \mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\_Inout\_}} OVERLAPPED\& overlapped);}
+\DoxyCodeLine{224   }
+\DoxyCodeLine{225 \textcolor{comment}{//Queue Methods}}
+\DoxyCodeLine{226   \textcolor{keywordtype}{void} Flush();}
+\DoxyCodeLine{227   \textcolor{keywordtype}{void} Purge(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwFlags);}
+\DoxyCodeLine{228   \textcolor{keywordtype}{void} TerminateOutstandingWrites();}
+\DoxyCodeLine{229   \textcolor{keywordtype}{void} TerminateOutstandingReads();}
+\DoxyCodeLine{230   \textcolor{keywordtype}{void} ClearWriteBuffer();}
+\DoxyCodeLine{231   \textcolor{keywordtype}{void} ClearReadBuffer();}
+\DoxyCodeLine{232   \textcolor{keywordtype}{void} Setup(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwInQueue, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwOutQueue);}
+\DoxyCodeLine{233 }
+\DoxyCodeLine{234 \textcolor{comment}{//Static methods}}
+\DoxyCodeLine{235   \textcolor{keyword}{static} \textcolor{keywordtype}{void} ThrowSerialException(\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\_In\_}} DWORD dwError = 0);}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{238 \textcolor{comment}{//Member variables}}
+\DoxyCodeLine{239   HANDLE \mbox{\hyperlink{class_c_serial_port_a234faffa92379fada3f91ce21a8cac35}{m\_hComm}};  \textcolor{comment}{//Handle to the comms port}}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241   \textcolor{keyword}{typedef} void(*CALLBACK\_FUNCTION\_Event)(BYTE*, int);}
+\DoxyCodeLine{242   CALLBACK\_FUNCTION\_Event \mbox{\hyperlink{class_c_serial_port_a98e5937b91cc11dd0479efcbee8055f8}{callEventfunc}};}
+\DoxyCodeLine{243   \textcolor{keyword}{public}:}
+\DoxyCodeLine{244   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_serial_port_aaf8e3f9eeb6b7301484c3c87c2027703}{SetCallBack}}(CALLBACK\_FUNCTION\_Event event) \{ callEventfunc = event; \};}
+\DoxyCodeLine{245 \};}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\#ifndef \_\_SERIALPORT\_H\_\_}}
+
+\end{DoxyCode}

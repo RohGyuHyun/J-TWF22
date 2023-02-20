@@ -1,0 +1,131 @@
+\hypertarget{class_c_barcode_rs_port_type}{}\doxysection{CBarcode\+Rs\+Port\+Type 클래스 참조}
+\label{class_c_barcode_rs_port_type}\index{CBarcodeRsPortType@{CBarcodeRsPortType}}
+
+
+{\ttfamily \#include $<$Ngh\+Util.\+h$>$}
+
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_barcode_rs_port_type_a711cd9a806024063dc2a9fcafbdb87e0}{CBarcode\+Rs\+Port\+Type}} (CString m\+\_\+port\+Name, DWORD Baud\+Rate=CBR\+\_\+9600, BYTE Byte\+Size=8, BYTE Parity=NOPARITY, BYTE Stop\+Bits=ONESTOPBIT, int n\+Barcode\+Max\+Length=\mbox{\hyperlink{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}{BARCODE\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+CNT}}, BYTE by\+End\+Char=\mbox{\hyperlink{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}{END\+\_\+\+BARCODE\+\_\+\+READER\+\_\+\+CHAR}})
+\item 
+\mbox{\hyperlink{class_c_barcode_rs_port_type_a75b061727bc35cff7b6717607d7a66e6}{$\sim$\+CBarcode\+Rs\+Port\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_c_barcode_rs_port_type_a524d2f2d821d47e4200309fa40bbcc31}{Set\+Barcode\+Max\+Length}} (int n\+Length)
+\item 
+CString \mbox{\hyperlink{class_c_barcode_rs_port_type_a0ae77af0f60e78cb147d19f86b3d2b45}{Get\+Barcode\+String}} ()
+\item 
+void \mbox{\hyperlink{class_c_barcode_rs_port_type_aa40e994d99c27b2c7ea8bbc3e6e89f45}{Set\+Init\+Barcode}} ()
+\item 
+void \mbox{\hyperlink{class_c_barcode_rs_port_type_a28db09ffa9b9278ba86178bb7532ceb8}{Set\+Barcode\+Read\+Start}} (BOOL is\+Start)
+\item 
+CString \mbox{\hyperlink{class_c_barcode_rs_port_type_a843937f8e4654a29724695f16c131959}{Get\+Barcode\+Reader}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_ae48b247466e5e6d9927384521da67be4}{Get\+Barcode\+Connect}} ()
+\item 
+int \mbox{\hyperlink{class_c_barcode_rs_port_type_a2144961cb43aceaa4a4ecc99d09c146d}{Get\+Read\+Barcode\+Length}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_a7a33d5c71f0f97018728be811a30cf97}{Init\+Thread}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_a2bb7038c18578124caa8d382459a6bf0}{Wait\+End\+Thread}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_barcode_rs_port_type_ae348c005ec076858d900a2acdae515c2}{Release\+Thread}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static UINT \mbox{\hyperlink{class_c_barcode_rs_port_type_acf4a935317007f9282e9f4e850f1ec77}{Barcode\+Read\+Thread}} (LPVOID p\+Param)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a711cd9a806024063dc2a9fcafbdb87e0}\label{class_c_barcode_rs_port_type_a711cd9a806024063dc2a9fcafbdb87e0}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{CBarcodeRsPortType()}{CBarcodeRsPortType()}}
+{\footnotesize\ttfamily CBarcode\+Rs\+Port\+Type\+::\+CBarcode\+Rs\+Port\+Type (\begin{DoxyParamCaption}\item[{CString}]{m\+\_\+port\+Name,  }\item[{DWORD}]{Baud\+Rate = {\ttfamily CBR\+\_\+9600},  }\item[{BYTE}]{Byte\+Size = {\ttfamily 8},  }\item[{BYTE}]{Parity = {\ttfamily NOPARITY},  }\item[{BYTE}]{Stop\+Bits = {\ttfamily ONESTOPBIT},  }\item[{int}]{n\+Barcode\+Max\+Length = {\ttfamily \mbox{\hyperlink{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}{BARCODE\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+CNT}}},  }\item[{BYTE}]{by\+End\+Char = {\ttfamily \mbox{\hyperlink{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}{END\+\_\+\+BARCODE\+\_\+\+READER\+\_\+\+CHAR}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a75b061727bc35cff7b6717607d7a66e6}\label{class_c_barcode_rs_port_type_a75b061727bc35cff7b6717607d7a66e6}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!````~CBarcodeRsPortType@{$\sim$CBarcodeRsPortType}}
+\index{````~CBarcodeRsPortType@{$\sim$CBarcodeRsPortType}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBarcodeRsPortType()}{~CBarcodeRsPortType()}}
+{\footnotesize\ttfamily CBarcode\+Rs\+Port\+Type\+::$\sim$\+CBarcode\+Rs\+Port\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_acf4a935317007f9282e9f4e850f1ec77}\label{class_c_barcode_rs_port_type_acf4a935317007f9282e9f4e850f1ec77}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!BarcodeReadThread@{BarcodeReadThread}}
+\index{BarcodeReadThread@{BarcodeReadThread}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{BarcodeReadThread()}{BarcodeReadThread()}}
+{\footnotesize\ttfamily UINT CBarcode\+Rs\+Port\+Type\+::\+Barcode\+Read\+Thread (\begin{DoxyParamCaption}\item[{LPVOID}]{p\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_ae48b247466e5e6d9927384521da67be4}\label{class_c_barcode_rs_port_type_ae48b247466e5e6d9927384521da67be4}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!GetBarcodeConnect@{GetBarcodeConnect}}
+\index{GetBarcodeConnect@{GetBarcodeConnect}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{GetBarcodeConnect()}{GetBarcodeConnect()}}
+{\footnotesize\ttfamily BOOL CBarcode\+Rs\+Port\+Type\+::\+Get\+Barcode\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a843937f8e4654a29724695f16c131959}\label{class_c_barcode_rs_port_type_a843937f8e4654a29724695f16c131959}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!GetBarcodeReader@{GetBarcodeReader}}
+\index{GetBarcodeReader@{GetBarcodeReader}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{GetBarcodeReader()}{GetBarcodeReader()}}
+{\footnotesize\ttfamily CString CBarcode\+Rs\+Port\+Type\+::\+Get\+Barcode\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a0ae77af0f60e78cb147d19f86b3d2b45}\label{class_c_barcode_rs_port_type_a0ae77af0f60e78cb147d19f86b3d2b45}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!GetBarcodeString@{GetBarcodeString}}
+\index{GetBarcodeString@{GetBarcodeString}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{GetBarcodeString()}{GetBarcodeString()}}
+{\footnotesize\ttfamily CString CBarcode\+Rs\+Port\+Type\+::\+Get\+Barcode\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a2144961cb43aceaa4a4ecc99d09c146d}\label{class_c_barcode_rs_port_type_a2144961cb43aceaa4a4ecc99d09c146d}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!GetReadBarcodeLength@{GetReadBarcodeLength}}
+\index{GetReadBarcodeLength@{GetReadBarcodeLength}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{GetReadBarcodeLength()}{GetReadBarcodeLength()}}
+{\footnotesize\ttfamily int CBarcode\+Rs\+Port\+Type\+::\+Get\+Read\+Barcode\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a7a33d5c71f0f97018728be811a30cf97}\label{class_c_barcode_rs_port_type_a7a33d5c71f0f97018728be811a30cf97}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!InitThread@{InitThread}}
+\index{InitThread@{InitThread}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{InitThread()}{InitThread()}}
+{\footnotesize\ttfamily BOOL CBarcode\+Rs\+Port\+Type\+::\+Init\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_ae348c005ec076858d900a2acdae515c2}\label{class_c_barcode_rs_port_type_ae348c005ec076858d900a2acdae515c2}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!ReleaseThread@{ReleaseThread}}
+\index{ReleaseThread@{ReleaseThread}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{ReleaseThread()}{ReleaseThread()}}
+{\footnotesize\ttfamily BOOL CBarcode\+Rs\+Port\+Type\+::\+Release\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a524d2f2d821d47e4200309fa40bbcc31}\label{class_c_barcode_rs_port_type_a524d2f2d821d47e4200309fa40bbcc31}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!SetBarcodeMaxLength@{SetBarcodeMaxLength}}
+\index{SetBarcodeMaxLength@{SetBarcodeMaxLength}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{SetBarcodeMaxLength()}{SetBarcodeMaxLength()}}
+{\footnotesize\ttfamily void CBarcode\+Rs\+Port\+Type\+::\+Set\+Barcode\+Max\+Length (\begin{DoxyParamCaption}\item[{int}]{n\+Length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a28db09ffa9b9278ba86178bb7532ceb8}\label{class_c_barcode_rs_port_type_a28db09ffa9b9278ba86178bb7532ceb8}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!SetBarcodeReadStart@{SetBarcodeReadStart}}
+\index{SetBarcodeReadStart@{SetBarcodeReadStart}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{SetBarcodeReadStart()}{SetBarcodeReadStart()}}
+{\footnotesize\ttfamily void CBarcode\+Rs\+Port\+Type\+::\+Set\+Barcode\+Read\+Start (\begin{DoxyParamCaption}\item[{BOOL}]{is\+Start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_aa40e994d99c27b2c7ea8bbc3e6e89f45}\label{class_c_barcode_rs_port_type_aa40e994d99c27b2c7ea8bbc3e6e89f45}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!SetInitBarcode@{SetInitBarcode}}
+\index{SetInitBarcode@{SetInitBarcode}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{SetInitBarcode()}{SetInitBarcode()}}
+{\footnotesize\ttfamily void CBarcode\+Rs\+Port\+Type\+::\+Set\+Init\+Barcode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_barcode_rs_port_type_a2bb7038c18578124caa8d382459a6bf0}\label{class_c_barcode_rs_port_type_a2bb7038c18578124caa8d382459a6bf0}} 
+\index{CBarcodeRsPortType@{CBarcodeRsPortType}!WaitEndThread@{WaitEndThread}}
+\index{WaitEndThread@{WaitEndThread}!CBarcodeRsPortType@{CBarcodeRsPortType}}
+\doxysubsubsection{\texorpdfstring{WaitEndThread()}{WaitEndThread()}}
+{\footnotesize\ttfamily BOOL CBarcode\+Rs\+Port\+Type\+::\+Wait\+End\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_ngh_util_8h}{Ngh\+Util.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_ngh_util_8cpp}{Ngh\+Util.\+cpp}}\end{DoxyCompactItemize}

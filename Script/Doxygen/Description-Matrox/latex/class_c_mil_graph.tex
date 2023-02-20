@@ -1,0 +1,320 @@
+\hypertarget{class_c_mil_graph}{}\doxysection{CMil\+Graph 클래스 참조}
+\label{class_c_mil_graph}\index{CMilGraph@{CMilGraph}}
+
+
+Mil의 Graph관련 함수군을 Class화 하였다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Graph.\+h$>$}
+
+
+
+CMil\+Graph에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_c_mil_graph__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Graph에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_mil_graph__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6}{t\+GRACOLOR}} \{ \mbox{\hyperlink{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a6e5f0a12bd3f5193f4924d4999733069}{GRA\+\_\+\+RED}} =M\+\_\+\+COLOR\+\_\+\+RED
+, \mbox{\hyperlink{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a5d68476c8ca4cec18ef2774a8ed7f08e}{GRA\+\_\+\+GREEN}} =M\+\_\+\+COLOR\+\_\+\+GREEN
+, \mbox{\hyperlink{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a878428b48c950bd862dc9ebfb4134413}{GRA\+\_\+\+BLACK}} =M\+\_\+\+COLOR\+\_\+\+BLACK
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0}{t\+FONTSIZE}} \{ \mbox{\hyperlink{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0a28fcae896e054a175c12940c441a15f8}{GRA\+\_\+\+LARGE}} =M\+\_\+\+FONT\+\_\+\+DEFAULT\+\_\+\+LARGE
+, \mbox{\hyperlink{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0adb09aa92cc1355e270e1967e5aa9c712}{GRA\+\_\+\+MEDIUM}} =M\+\_\+\+FONT\+\_\+\+DEFAULT\+\_\+\+MEDIUM
+, \mbox{\hyperlink{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0a9a235603190d2086b2794c00b6c77776}{GRA\+\_\+\+SMALL}} =M\+\_\+\+FONT\+\_\+\+DEFAULT\+\_\+\+SMALL
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_graph_a88d2e2fbd23621197716c2ae987c6e42}{CMil\+Graph}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_graph_a4605bcdb9c0afd6ee31149008b610993}{$\sim$\+CMil\+Graph}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_ade8af8b161455e8550cd01e8111260be}{Set\+Color}} (MIL\+\_\+\+DOUBLE color)
+\begin{DoxyCompactList}\small\item\em color는 Mil Color를 사용 RGB(\+R,\+G,\+B)사용못함 M\+\_\+\+COLOR\+\_\+\+YELLOW, M\+\_\+\+COLOR\+\_\+\+RED등이나 M\+\_\+\+RGB888(\+R,\+G,\+B)로 하여야함 RGB(255,0,0)과 M\+\_\+\+RGB888(255,0,0)은 다른 값임 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_graph_a03ef8928ebdc2aba7026a683927db9bb}{Clear}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_graph_a7a682c5bd11f660358d1adf2ca1c1504}{Enable\+Graph}} (BOOL b\+State=TRUE)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_ab9916765a43298a052f659727ba6e569}{Free}} (void)
+\begin{DoxyCompactList}\small\item\em m\+\_\+mil\+IDBuffer는 상속받는 대상에 따라 Buffer ID로 혹은\+Overlay\+ID로 사용된다. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_graph_a3da18b9981984408b02998d4d8e9b564}{Rect}} (CRect rect\+To\+Draw)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a0d9e85288ab09482659e69834a666b5e}{Rect}} (double dbl\+Left, double dbl\+Top, double dbl\+Right, double dbl\+Bottom)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_ac793bf79d6338a752ee7adee0dc6636f}{Line}} (double dbl\+Left, double dbl\+Top, double dbl\+Right, double dbl\+Bottom)
+\item 
+int \mbox{\hyperlink{class_c_mil_graph_acab99ecb5b9458472d2d507539e634c5}{Get\+IDGraph}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a30027b0bf172f9e2e4e5828893f04b54}{Dot}} (double dblX, double dblY)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a0b46559a8ab8c2efa985a3f1869e73ec}{Output\+Text}} (double dblX, double dblY, TCHAR $\ast$sz\+Text)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a930dee1abd9c1d97039760fceb6903f1}{Font\+Scale}} (double dbl\+XScale, double dbl\+YScale)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a07dd85070c581acb13935f57aa0dac22}{Font\+Size}} (int size\+Font)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a4002995877af385cb15c214bd82f5e87}{Arc}} (double dbl\+XCenter, double dbl\+YCenter, double dbl\+XRad, double dbl\+YRad, double dbl\+Start\+Angle, double dbl\+End\+Angle)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_a3429993deda80391a5695c87823ccf14}{Ellipse}} (double dbl\+XCenter, double dbl\+YCenter, double dbl\+XRad, double dbl\+YRad)
+\item 
+CDC $\ast$ \mbox{\hyperlink{class_c_mil_graph_ac76efc7b4b6dae568735215b2a0c1170}{Get\+DC}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_aedbe47ebb96fe03a105fdbd47f7b308c}{Free\+DC}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_graph_aa112cad46858ece67ed48e6185bdb352}{Modified}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_af2bc71ad0a2a0bcbeab66afbe2a6ebed}{Add\+Interactive\+Rect}} ()
+\item 
+void \mbox{\hyperlink{class_c_mil_graph_ad0b87580944d7858b409629ad1e6a917}{Draw\+Polygon}} (CPtr\+List $\ast$p\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_graph_aacd8a6a0533c116f9bbadf9f0df67f86}{m\+\_\+mil\+IDSystem}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_graph_abd32dd4ff87280f9296752553ec7c7e3}{m\+\_\+mil\+IDGraph}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_graph_a9a13011c09d3e8994fa1c84cedb80585}{m\+\_\+mil\+IDBuffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Graph관련 함수군을 Class화 하였다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0}\label{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0}} 
+\index{CMilGraph@{CMilGraph}!tFONTSIZE@{tFONTSIZE}}
+\index{tFONTSIZE@{tFONTSIZE}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{tFONTSIZE}{tFONTSIZE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0}{CMil\+Graph\+::t\+FONTSIZE}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRA\_LARGE@{GRA\_LARGE}!CMilGraph@{CMilGraph}}\index{CMilGraph@{CMilGraph}!GRA\_LARGE@{GRA\_LARGE}}}\mbox{\Hypertarget{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0a28fcae896e054a175c12940c441a15f8}\label{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0a28fcae896e054a175c12940c441a15f8}} 
+GRA\+\_\+\+LARGE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRA\_MEDIUM@{GRA\_MEDIUM}!CMilGraph@{CMilGraph}}\index{CMilGraph@{CMilGraph}!GRA\_MEDIUM@{GRA\_MEDIUM}}}\mbox{\Hypertarget{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0adb09aa92cc1355e270e1967e5aa9c712}\label{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0adb09aa92cc1355e270e1967e5aa9c712}} 
+GRA\+\_\+\+MEDIUM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRA\_SMALL@{GRA\_SMALL}!CMilGraph@{CMilGraph}}\index{CMilGraph@{CMilGraph}!GRA\_SMALL@{GRA\_SMALL}}}\mbox{\Hypertarget{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0a9a235603190d2086b2794c00b6c77776}\label{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0a9a235603190d2086b2794c00b6c77776}} 
+GRA\+\_\+\+SMALL&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6}\label{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6}} 
+\index{CMilGraph@{CMilGraph}!tGRACOLOR@{tGRACOLOR}}
+\index{tGRACOLOR@{tGRACOLOR}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{tGRACOLOR}{tGRACOLOR}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6}{CMil\+Graph\+::t\+GRACOLOR}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRA\_RED@{GRA\_RED}!CMilGraph@{CMilGraph}}\index{CMilGraph@{CMilGraph}!GRA\_RED@{GRA\_RED}}}\mbox{\Hypertarget{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a6e5f0a12bd3f5193f4924d4999733069}\label{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a6e5f0a12bd3f5193f4924d4999733069}} 
+GRA\+\_\+\+RED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRA\_GREEN@{GRA\_GREEN}!CMilGraph@{CMilGraph}}\index{CMilGraph@{CMilGraph}!GRA\_GREEN@{GRA\_GREEN}}}\mbox{\Hypertarget{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a5d68476c8ca4cec18ef2774a8ed7f08e}\label{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a5d68476c8ca4cec18ef2774a8ed7f08e}} 
+GRA\+\_\+\+GREEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRA\_BLACK@{GRA\_BLACK}!CMilGraph@{CMilGraph}}\index{CMilGraph@{CMilGraph}!GRA\_BLACK@{GRA\_BLACK}}}\mbox{\Hypertarget{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a878428b48c950bd862dc9ebfb4134413}\label{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6a878428b48c950bd862dc9ebfb4134413}} 
+GRA\+\_\+\+BLACK&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_graph_a88d2e2fbd23621197716c2ae987c6e42}\label{class_c_mil_graph_a88d2e2fbd23621197716c2ae987c6e42}} 
+\index{CMilGraph@{CMilGraph}!CMilGraph@{CMilGraph}}
+\index{CMilGraph@{CMilGraph}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{CMilGraph()}{CMilGraph()}}
+{\footnotesize\ttfamily CMil\+Graph\+::\+CMil\+Graph (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a4605bcdb9c0afd6ee31149008b610993}\label{class_c_mil_graph_a4605bcdb9c0afd6ee31149008b610993}} 
+\index{CMilGraph@{CMilGraph}!````~CMilGraph@{$\sim$CMilGraph}}
+\index{````~CMilGraph@{$\sim$CMilGraph}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilGraph()}{~CMilGraph()}}
+{\footnotesize\ttfamily CMil\+Graph\+::$\sim$\+CMil\+Graph (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_graph_af2bc71ad0a2a0bcbeab66afbe2a6ebed}\label{class_c_mil_graph_af2bc71ad0a2a0bcbeab66afbe2a6ebed}} 
+\index{CMilGraph@{CMilGraph}!AddInteractiveRect@{AddInteractiveRect}}
+\index{AddInteractiveRect@{AddInteractiveRect}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{AddInteractiveRect()}{AddInteractiveRect()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Add\+Interactive\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a4002995877af385cb15c214bd82f5e87}\label{class_c_mil_graph_a4002995877af385cb15c214bd82f5e87}} 
+\index{CMilGraph@{CMilGraph}!Arc@{Arc}}
+\index{Arc@{Arc}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Arc()}{Arc()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Arc (\begin{DoxyParamCaption}\item[{double}]{dbl\+XCenter,  }\item[{double}]{dbl\+YCenter,  }\item[{double}]{dbl\+XRad,  }\item[{double}]{dbl\+YRad,  }\item[{double}]{dbl\+Start\+Angle,  }\item[{double}]{dbl\+End\+Angle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a03ef8928ebdc2aba7026a683927db9bb}\label{class_c_mil_graph_a03ef8928ebdc2aba7026a683927db9bb}} 
+\index{CMilGraph@{CMilGraph}!Clear@{Clear}}
+\index{Clear@{Clear}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a30027b0bf172f9e2e4e5828893f04b54}\label{class_c_mil_graph_a30027b0bf172f9e2e4e5828893f04b54}} 
+\index{CMilGraph@{CMilGraph}!Dot@{Dot}}
+\index{Dot@{Dot}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Dot (\begin{DoxyParamCaption}\item[{double}]{dblX,  }\item[{double}]{dblY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_ad0b87580944d7858b409629ad1e6a917}\label{class_c_mil_graph_ad0b87580944d7858b409629ad1e6a917}} 
+\index{CMilGraph@{CMilGraph}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{CPtr\+List $\ast$}]{p\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a3429993deda80391a5695c87823ccf14}\label{class_c_mil_graph_a3429993deda80391a5695c87823ccf14}} 
+\index{CMilGraph@{CMilGraph}!Ellipse@{Ellipse}}
+\index{Ellipse@{Ellipse}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Ellipse()}{Ellipse()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Ellipse (\begin{DoxyParamCaption}\item[{double}]{dbl\+XCenter,  }\item[{double}]{dbl\+YCenter,  }\item[{double}]{dbl\+XRad,  }\item[{double}]{dbl\+YRad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a7a682c5bd11f660358d1adf2ca1c1504}\label{class_c_mil_graph_a7a682c5bd11f660358d1adf2ca1c1504}} 
+\index{CMilGraph@{CMilGraph}!EnableGraph@{EnableGraph}}
+\index{EnableGraph@{EnableGraph}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{EnableGraph()}{EnableGraph()}}
+{\footnotesize\ttfamily int CMil\+Graph\+::\+Enable\+Graph (\begin{DoxyParamCaption}\item[{BOOL}]{b\+State = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a930dee1abd9c1d97039760fceb6903f1}\label{class_c_mil_graph_a930dee1abd9c1d97039760fceb6903f1}} 
+\index{CMilGraph@{CMilGraph}!FontScale@{FontScale}}
+\index{FontScale@{FontScale}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{FontScale()}{FontScale()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Font\+Scale (\begin{DoxyParamCaption}\item[{double}]{dbl\+XScale,  }\item[{double}]{dbl\+YScale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a07dd85070c581acb13935f57aa0dac22}\label{class_c_mil_graph_a07dd85070c581acb13935f57aa0dac22}} 
+\index{CMilGraph@{CMilGraph}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{FontSize()}{FontSize()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Font\+Size (\begin{DoxyParamCaption}\item[{int}]{size\+Font }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_ab9916765a43298a052f659727ba6e569}\label{class_c_mil_graph_ab9916765a43298a052f659727ba6e569}} 
+\index{CMilGraph@{CMilGraph}!Free@{Free}}
+\index{Free@{Free}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Free (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+m\+\_\+mil\+IDBuffer는 상속받는 대상에 따라 Buffer ID로 혹은\+Overlay\+ID로 사용된다. 
+
+\mbox{\Hypertarget{class_c_mil_graph_aedbe47ebb96fe03a105fdbd47f7b308c}\label{class_c_mil_graph_aedbe47ebb96fe03a105fdbd47f7b308c}} 
+\index{CMilGraph@{CMilGraph}!FreeDC@{FreeDC}}
+\index{FreeDC@{FreeDC}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{FreeDC()}{FreeDC()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Free\+DC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_ac76efc7b4b6dae568735215b2a0c1170}\label{class_c_mil_graph_ac76efc7b4b6dae568735215b2a0c1170}} 
+\index{CMilGraph@{CMilGraph}!GetDC@{GetDC}}
+\index{GetDC@{GetDC}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{GetDC()}{GetDC()}}
+{\footnotesize\ttfamily CDC $\ast$ CMil\+Graph\+::\+Get\+DC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_acab99ecb5b9458472d2d507539e634c5}\label{class_c_mil_graph_acab99ecb5b9458472d2d507539e634c5}} 
+\index{CMilGraph@{CMilGraph}!GetIDGraph@{GetIDGraph}}
+\index{GetIDGraph@{GetIDGraph}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{GetIDGraph()}{GetIDGraph()}}
+{\footnotesize\ttfamily int CMil\+Graph\+::\+Get\+IDGraph (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_ac793bf79d6338a752ee7adee0dc6636f}\label{class_c_mil_graph_ac793bf79d6338a752ee7adee0dc6636f}} 
+\index{CMilGraph@{CMilGraph}!Line@{Line}}
+\index{Line@{Line}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Line (\begin{DoxyParamCaption}\item[{double}]{dbl\+Left,  }\item[{double}]{dbl\+Top,  }\item[{double}]{dbl\+Right,  }\item[{double}]{dbl\+Bottom }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_aa112cad46858ece67ed48e6185bdb352}\label{class_c_mil_graph_aa112cad46858ece67ed48e6185bdb352}} 
+\index{CMilGraph@{CMilGraph}!Modified@{Modified}}
+\index{Modified@{Modified}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Modified()}{Modified()}}
+{\footnotesize\ttfamily int CMil\+Graph\+::\+Modified (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a0b46559a8ab8c2efa985a3f1869e73ec}\label{class_c_mil_graph_a0b46559a8ab8c2efa985a3f1869e73ec}} 
+\index{CMilGraph@{CMilGraph}!OutputText@{OutputText}}
+\index{OutputText@{OutputText}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{OutputText()}{OutputText()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Output\+Text (\begin{DoxyParamCaption}\item[{double}]{dblX,  }\item[{double}]{dblY,  }\item[{TCHAR $\ast$}]{sz\+Text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a3da18b9981984408b02998d4d8e9b564}\label{class_c_mil_graph_a3da18b9981984408b02998d4d8e9b564}} 
+\index{CMilGraph@{CMilGraph}!Rect@{Rect}}
+\index{Rect@{Rect}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Rect()}{Rect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Rect (\begin{DoxyParamCaption}\item[{CRect}]{rect\+To\+Draw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_a0d9e85288ab09482659e69834a666b5e}\label{class_c_mil_graph_a0d9e85288ab09482659e69834a666b5e}} 
+\index{CMilGraph@{CMilGraph}!Rect@{Rect}}
+\index{Rect@{Rect}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{Rect()}{Rect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Rect (\begin{DoxyParamCaption}\item[{double}]{dbl\+Left,  }\item[{double}]{dbl\+Top,  }\item[{double}]{dbl\+Right,  }\item[{double}]{dbl\+Bottom }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_graph_ade8af8b161455e8550cd01e8111260be}\label{class_c_mil_graph_ade8af8b161455e8550cd01e8111260be}} 
+\index{CMilGraph@{CMilGraph}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void CMil\+Graph\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+DOUBLE}]{color }\end{DoxyParamCaption})}
+
+
+
+color는 Mil Color를 사용 RGB(\+R,\+G,\+B)사용못함 M\+\_\+\+COLOR\+\_\+\+YELLOW, M\+\_\+\+COLOR\+\_\+\+RED등이나 M\+\_\+\+RGB888(\+R,\+G,\+B)로 하여야함 RGB(255,0,0)과 M\+\_\+\+RGB888(255,0,0)은 다른 값임 
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_graph_a9a13011c09d3e8994fa1c84cedb80585}\label{class_c_mil_graph_a9a13011c09d3e8994fa1c84cedb80585}} 
+\index{CMilGraph@{CMilGraph}!m\_milIDBuffer@{m\_milIDBuffer}}
+\index{m\_milIDBuffer@{m\_milIDBuffer}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{m\_milIDBuffer}{m\_milIDBuffer}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Graph\+::m\+\_\+mil\+IDBuffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_mil_graph_abd32dd4ff87280f9296752553ec7c7e3}\label{class_c_mil_graph_abd32dd4ff87280f9296752553ec7c7e3}} 
+\index{CMilGraph@{CMilGraph}!m\_milIDGraph@{m\_milIDGraph}}
+\index{m\_milIDGraph@{m\_milIDGraph}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{m\_milIDGraph}{m\_milIDGraph}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Graph\+::m\+\_\+mil\+IDGraph}
+
+\mbox{\Hypertarget{class_c_mil_graph_aacd8a6a0533c116f9bbadf9f0df67f86}\label{class_c_mil_graph_aacd8a6a0533c116f9bbadf9f0df67f86}} 
+\index{CMilGraph@{CMilGraph}!m\_milIDSystem@{m\_milIDSystem}}
+\index{m\_milIDSystem@{m\_milIDSystem}!CMilGraph@{CMilGraph}}
+\doxysubsubsection{\texorpdfstring{m\_milIDSystem}{m\_milIDSystem}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Graph\+::m\+\_\+mil\+IDSystem}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_graph_8h}{Mil\+Graph.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_graph_8cpp}{Mil\+Graph.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{_mil_digitizer_8h_source}{}\doxysection{Mil\+Digitizer.\+h}
+\label{_mil_digitizer_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilDigitizer.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilDigitizer.h}}
+\mbox{\hyperlink{_mil_digitizer_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_class_8h}{MilClass.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define METEOR\_CREVIS\_DCF \_T("{}JMV-\/BS20A.dcf"{}})}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}};}
+\DoxyCodeLine{8 \textcolor{keyword}{class }CGrabChannel;}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_system}{CMilSystem}};}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{20         \mbox{\hyperlink{class_c_mil_digitizer}{\string~CMilDigitizer}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         \textcolor{keywordtype}{int} Create(\mbox{\hyperlink{class_c_mil_application}{CMilApplication}} * pMilApplication, \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} *pMilSystem);}
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} Alloc(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} SetContinuous(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} Inquire(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} GetResolution(CSize\& Rect);}
+\DoxyCodeLine{27         MIL\_ID \mbox{\hyperlink{class_c_mil_digitizer_a8a96d790117d996ce9518e1f749cc58e}{m\_milIDApplication}}, m\_milIDSystem, m\_milIDDigitizer;}
+\DoxyCodeLine{28         \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} *\mbox{\hyperlink{class_c_mil_digitizer_a4072287b04f6ee5422369dcd57684184}{m\_pMilSystem}};}
+\DoxyCodeLine{29         \textcolor{keywordtype}{int} SetBuffer(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilBuffer);}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *\mbox{\hyperlink{class_c_mil_digitizer_a9d0aa0dd3fa911479cc215c8fbb2a40b}{m\_pMilBuffer}};}
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} Grab(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} StopGrab(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} StopGrabContinuous(\textcolor{keywordtype}{void}); }
+\DoxyCodeLine{35         \textcolor{keywordtype}{int} SetupTrigger(BOOL OnOff);}
+\DoxyCodeLine{36         \textcolor{keywordtype}{int} GrabTrigger(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}}* \mbox{\hyperlink{class_c_mil_digitizer_a9f1ee87f1d503f2ac3a9f1d1a42d1790}{m\_pInstance}};}
+\DoxyCodeLine{38         CString \mbox{\hyperlink{class_c_mil_digitizer_a364f6157231290ad1386b218cd126561}{m\_strCameraFile}};}
+\DoxyCodeLine{39         CGrabChannel *\mbox{\hyperlink{class_c_mil_digitizer_a9f6ce748035cc5c8e400b5066503686b}{m\_pGrabChannel}};}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * GetGrabBuffer(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{41         \textcolor{keywordtype}{int} Process();}
+\DoxyCodeLine{42         \textcolor{keywordtype}{int} Control(\textcolor{keywordtype}{int} iType, \textcolor{keywordtype}{int} iParam);}
+\DoxyCodeLine{43         \textcolor{keywordtype}{int} SetTimeInfinite();}
+\DoxyCodeLine{44 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,61 @@
+\hypertarget{_mil_mod_finder_8h_source}{}\doxysection{Mil\+Mod\+Finder.\+h}
+\label{_mil_mod_finder_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilModFinder.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilModFinder.h}}
+\mbox{\hyperlink{_mil_mod_finder_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_base_8h}{MilBase.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_buffer_8h}{MilBuffer.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_result_8h}{MilResult.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_context}{CMilContext}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{15 \textcolor{keyword}{struct }\mbox{\hyperlink{structt_mod_result}{tModResult}}\{}
+\DoxyCodeLine{16         MIL\_ID \mbox{\hyperlink{structt_mod_result_afb4cc1c1758078c03666f4f3da775a61}{NumResults}};}
+\DoxyCodeLine{17         CSize \mbox{\hyperlink{structt_mod_result_af79348923e3e1d94c41b9b644ad1ebdb}{ImageSize}};}
+\DoxyCodeLine{18         CdblPoint \mbox{\hyperlink{structt_mod_result_ae6d26b94d7c754584fb9513c2139b9fe}{Pos}};}
+\DoxyCodeLine{19         \textcolor{keywordtype}{double} \mbox{\hyperlink{structt_mod_result_a3e078dd7314812a5780979e576f4263b}{Angle}};}
+\DoxyCodeLine{20         \textcolor{keywordtype}{double} \mbox{\hyperlink{structt_mod_result_ae5ab9e53f6786c941816da44c5a8c53c}{Scale}};}
+\DoxyCodeLine{21         \textcolor{keywordtype}{double} \mbox{\hyperlink{structt_mod_result_acad8a0f195bd5d902fed0e48801814a3}{Score}};}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{//* Alloc과 Close에서 Context와 Result의 Alloc과 Free를 실행한다.}}
+\DoxyCodeLine{31 \textcolor{comment}{}\textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_mod_finder}{CMilModFinder}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34         \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}{tModTargetType}}\{MOD\_TARGET\_RST, MOD\_TARGET\_CXT\};}
+\DoxyCodeLine{35         \mbox{\hyperlink{class_c_mil_mod_finder}{CMilModFinder}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{36         \mbox{\hyperlink{class_c_mil_mod_finder}{\string~CMilModFinder}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{37         MIL\_ID \mbox{\hyperlink{class_c_mil_mod_finder_ac0d19ee64505ba333339e4a2eb7868e7}{m\_mIlIDSystem}};}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_c_mil_context}{CMilContext}} * \mbox{\hyperlink{class_c_mil_mod_finder_a0579dafb618a036c78b0d3e2e14cd143}{m\_pMilContext}};}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * \mbox{\hyperlink{class_c_mil_mod_finder_a0c19b9ca90039e218d92435948496f79}{m\_pMilBuffer}};}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_c_mil_result}{CMilResult}} * \mbox{\hyperlink{class_c_mil_mod_finder_a7363e289e7663d1879af3bfe3ab2038f}{m\_pMilResult}};}
+\DoxyCodeLine{41         \textcolor{keywordtype}{int} SetContext(\mbox{\hyperlink{class_c_mil_context}{CMilContext}} *pMilContext);}
+\DoxyCodeLine{42         \textcolor{keywordtype}{int} GetFeature(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{43         \textcolor{keywordtype}{int} GetFeature(CRect aoiRect);}
+\DoxyCodeLine{44         \textcolor{keywordtype}{int} DelAllFeature(\textcolor{keywordtype}{int} Index);}
+\DoxyCodeLine{45         \textcolor{keywordtype}{int} SetBuffer(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pImage);}
+\DoxyCodeLine{46         \textcolor{keywordtype}{int} SetResult(\mbox{\hyperlink{class_c_mil_result}{CMilResult}} *pResult);}
+\DoxyCodeLine{47         \textcolor{keywordtype}{int} Define(\textcolor{keywordtype}{long} ltype, \textcolor{keywordtype}{double} dblParam1, \textcolor{keywordtype}{double} dblParam2, \textcolor{keywordtype}{double} dblParam3, \textcolor{keywordtype}{double} dblParam4, \textcolor{keywordtype}{double} dblParam5);}
+\DoxyCodeLine{48         \textcolor{keywordtype}{int} SetAOI(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{49         \textcolor{keywordtype}{int} SetAOI(CRect aoiRect);}
+\DoxyCodeLine{50         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_mil_mod_finder_a320d30bd9915ffaf00cb7683b2100645}{Control}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{51         \textcolor{keywordtype}{int} PreProcess();}
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} Find(\mbox{\hyperlink{structt_mod_result}{tModResult}} *pResult);}
+\DoxyCodeLine{53         \textcolor{keywordtype}{int} Find(\mbox{\hyperlink{class_c_mil_result}{CMilResult}} *pResult);}
+\DoxyCodeLine{54         \textcolor{keywordtype}{int} DrawContext(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} SetDrawOffset(CSize Offset=CSize(M\_DEFAULT, M\_DEFAULT));}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} GetDrawBoxOffset(CdblSize *pOffset);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{int} DrawResult(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{58         \textcolor{keywordtype}{int} Alloc(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{59         \textcolor{keywordtype}{int} Control(\textcolor{keywordtype}{long} Index, \textcolor{keywordtype}{long} CtrlType, \textcolor{keywordtype}{double} CtrlValue, \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}{tModTargetType}} Target=MOD\_TARGET\_CXT);}
+\DoxyCodeLine{60         \textcolor{keywordtype}{int} SetSpeed(\textcolor{keywordtype}{long} lSpeed=M\_VERY\_HIGH);}
+\DoxyCodeLine{61         \textcolor{keywordtype}{int} SetSearchAngleRange(\textcolor{keywordtype}{double} dblScore=M\_DEFAULT);}
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} SetSearchScaleRange(\textcolor{keywordtype}{double} dblScore=M\_DEFAULT);}
+\DoxyCodeLine{63         \textcolor{keywordtype}{int} SetAccptanceScore(\textcolor{keywordtype}{double} dblScore);}
+\DoxyCodeLine{64         \textcolor{keywordtype}{int} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{65         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_mil_mod_finder_a9e66a64004becf5e2d5d0cc9dee8ef32}{GetImageSize}}(CSize *pSize);}
+\DoxyCodeLine{66 \};}
+
+\end{DoxyCode}

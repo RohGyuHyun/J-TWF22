@@ -1,0 +1,6 @@
+; UniMotion.def : Declares the module parameters for the DLL.
+
+LIBRARY      "UniMotion"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,61 @@
+\hypertarget{_mil_im_8h_source}{}\doxysection{Mil\+Im.\+h}
+\label{_mil_im_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilIm.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilIm.h}}
+\mbox{\hyperlink{_mil_im_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <Mil.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_base_8h}{MilBase.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <UniUtility.h>}}
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}};}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_im}{CMilIm}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \mbox{\hyperlink{class_c_mil_im}{CMilIm}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_c_mil_im}{\string~CMilIm}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{/***********************************************************************************************************************}}
+\DoxyCodeLine{19 \textcolor{comment}{Operation works: M\_ADD, M\_AND, M\_DIV, M\_MAX, M\_MIN, M\_MULT+,    M\_NAND, M\_NOR, M\_OR, M\_SUB+, M\_SUB\_ABS+, M\_XNOR, M\_XOR                                                                      }}
+\DoxyCodeLine{20 \textcolor{comment}{Option2: M\_SATURATION, M\_FIXED\_POINT}}
+\DoxyCodeLine{21 \textcolor{comment}{Option3: M\_ABS, M\_NEG, M\_NOT, M\_PASS}}
+\DoxyCodeLine{22 \textcolor{comment}{************************************************************************************************************************/} }
+\DoxyCodeLine{23         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Arith(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* pMilSrc1, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* pMilSrc2=M\_NULL, MIL\_INT Operation=M\_ADD);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{/***********************************************************************************************************************}}
+\DoxyCodeLine{26 \textcolor{comment}{pMilSrc와 SConst를 연산하여 pMilDest에 넣는다.}}
+\DoxyCodeLine{27 \textcolor{comment}{Operation works: M\_ADD\_CONST+, M\_AND\_CONST, M\_CONST\_DIV+, M\_CONST\_PASS,M\_CONST\_SUB+, M\_DIV\_CONST+, M\_MAX\_CONST, M\_MIN\_CONST,  }}
+\DoxyCodeLine{28 \textcolor{comment}{Operation continue: M\_MULT\_CONST+, M\_NAND\_CONST,M\_NOR\_CONST,M\_OR\_CONST, M\_SUB\_CONST+, M\_XNOR\_CONST, M\_XOR\_CONST}}
+\DoxyCodeLine{29 \textcolor{comment}{Option2: M\_SATURATION, M\_FIXED\_POINT}}
+\DoxyCodeLine{30 \textcolor{comment}{Option3: M\_ABS, M\_NEG, M\_NOT, M\_PASS}}
+\DoxyCodeLine{31 \textcolor{comment}{************************************************************************************************************************/}}
+\DoxyCodeLine{32         \textcolor{keyword}{static} \textcolor{keywordtype}{void} ArithConst(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_DOUBLE SConst=M\_NULL, MIL\_INT Operation=M\_ADD\_CONST);}
+\DoxyCodeLine{33         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Resize(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, \textcolor{keywordtype}{double} FactorX, \textcolor{keywordtype}{double} FactorY, MIL\_INT InterpolationType=M\_DEFAULT);}
+\DoxyCodeLine{34         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Open(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_INT NbIteration=1, MIL\_INT ProcMode=M\_GRAYSCALE);}
+\DoxyCodeLine{35         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Close(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_INT NbIteration=1, MIL\_INT ProcMode=M\_GRAYSCALE);}
+\DoxyCodeLine{36         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Erode(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_INT NbIteration=1, MIL\_INT ProcMode=M\_GRAYSCALE);}
+\DoxyCodeLine{37         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Dilate(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_INT NbIteration=1, MIL\_INT ProcMode=M\_GRAYSCALE);}
+\DoxyCodeLine{38 \textcolor{comment}{/**********************************************************************************************************************}}
+\DoxyCodeLine{39 \textcolor{comment}{M\_EDGE\_DETECT+, M\_EDGE\_DETECT2+, M\_HORIZ\_EDGE+, M\_LAPLACIAN\_EDGE+, M\_LAPLACIAN\_EDGE2+ }}
+\DoxyCodeLine{40 \textcolor{comment}{M\_SHARPEN+, M\_SHARPEN2+, M\_SMOOTH+, M\_VERT\_EDGE+}}
+\DoxyCodeLine{41 \textcolor{comment}{**********************************************************************************************************************/}}
+\DoxyCodeLine{42         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Convolve(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_INT FilterID);}
+\DoxyCodeLine{43         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Watershed(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_INT MinimumVariation=M\_DEFAULT, MIL\_INT ControlFlag=M\_DEFAULT);}
+\DoxyCodeLine{44         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Binarize(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_DOUBLE CondLow=M\_DEFAULT, MIL\_DOUBLE CondHigh=M\_DEFAULT, MIL\_INT Condition=M\_GREATER\_OR\_EQUAL);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{47         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* \mbox{\hyperlink{class_c_mil_im_a24d8efe71c8ebffe860b8dd7bb88e48a}{m\_pBuffer}};}
+\DoxyCodeLine{48         \textcolor{keyword}{static} \textcolor{keywordtype}{void} Rotate(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_DOUBLE rotAngle, CdblPoint DstCen, CdblPoint SrcCen);}
+\DoxyCodeLine{49         \textcolor{keyword}{static} \textcolor{keywordtype}{int} Histogram(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, MIL\_ID histResult);}
+\DoxyCodeLine{50         \textcolor{keyword}{static} \textcolor{keywordtype}{int} Histogram(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, \textcolor{keywordtype}{int} nValCount, MIL\_INT *pHistoValue);}
+\DoxyCodeLine{51         \textcolor{keyword}{static} \textcolor{keywordtype}{int} Shift(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc, \textcolor{keywordtype}{int} nShift);}
+\DoxyCodeLine{52         \textcolor{keyword}{static} \textcolor{keywordtype}{int} GetMin(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc);}
+\DoxyCodeLine{53         \textcolor{keyword}{static} \textcolor{keywordtype}{int} GetMax(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc);}
+\DoxyCodeLine{54         \textcolor{keyword}{static} \textcolor{keywordtype}{int} GetMinMax(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc, \textcolor{keywordtype}{long} *pMin, \textcolor{keywordtype}{long} *pMax);}
+\DoxyCodeLine{55         \textcolor{keyword}{static} \textcolor{keywordtype}{int} GetLimitedMinMax(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc, \textcolor{keywordtype}{int} Limit, \textcolor{keywordtype}{long} *pMin, \textcolor{keywordtype}{long} *pMax, BOOL bCutHigh=TRUE, BOOL bCutLow=TRUE);}
+\DoxyCodeLine{56         \textcolor{keyword}{static} \textcolor{keywordtype}{int} Median(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc, \textcolor{keywordtype}{int} MaskMethod=M\_3X3\_CROSS, \textcolor{keywordtype}{int} ProcMode=M\_GRAYSCALE);}
+\DoxyCodeLine{57         \textcolor{keyword}{static} \textcolor{keywordtype}{int} UserDefine1(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc);}
+\DoxyCodeLine{58         \textcolor{keyword}{static} \textcolor{keywordtype}{int} Flip(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilDest, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilSrc, \textcolor{keywordtype}{int} iDir=M\_FLIP\_HORIZONTAL);}
+\DoxyCodeLine{59         \textcolor{keyword}{static} \textcolor{keywordtype}{void} SplitLines(\textcolor{keywordtype}{int} nSplit, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pSrcImg, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pFirstLineImg, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pSecondLineImg, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pThirdLineImg);}
+\DoxyCodeLine{60         \textcolor{keyword}{static} \textcolor{keywordtype}{void} SplitLines(\textcolor{keywordtype}{int} nSplit, MIL\_ID idSrcImg, CSize sizeImage, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pFirstLineImg, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pSecondLineImg, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pThirdLineImg);}
+\DoxyCodeLine{61 \};}
+
+\end{DoxyCode}

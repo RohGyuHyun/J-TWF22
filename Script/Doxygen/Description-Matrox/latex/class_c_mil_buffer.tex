@@ -1,0 +1,1038 @@
+\hypertarget{class_c_mil_buffer}{}\doxysection{CMil\+Buffer 클래스 참조}
+\label{class_c_mil_buffer}\index{CMilBuffer@{CMilBuffer}}
+
+
+Mil의 Mil\+Buffer관련 함수군을 Class화하였다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Buffer.\+h$>$}
+
+
+
+CMil\+Buffer에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_mil_buffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Buffer에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_c_mil_buffer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_buffer_a7ca63ae0b573056d11bcab375c15c644}{CMil\+Buffer}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_buffer_a22a722f34a6ca9c41f2f391b1421f804}{CMil\+Buffer}} (CSize Image\+Size)
+\item 
+\mbox{\hyperlink{class_c_mil_buffer_a2237669c3a418c1dee34f2124ad99b70}{$\sim$\+CMil\+Buffer}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_aeb5cfce16fcce8907f01174b927fdf02}{Get\+Mil\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em 할당된 Mil버퍼카운트를 한다.(Child포함) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_ad2d5d2694043b3c82df93cbb3181fe7a}{Restore}} (CString str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em 파일을 읽어 Mil\+Buffer에 넣는다. ~\newline
+ Buffer Alloc이 자동으로 이루어지고 File포멧도 자동으로 확인하여 읽어온다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a24b4c9c706cb43bfd1a826bd61e19523}{Restore\+JPG}} (CString str\+File\+Name, MIL\+\_\+\+ID mil\+IDSystem, MIL\+\_\+\+ID $\ast$p\+Mil\+IDBuffter)
+\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a10968c4e973dc1d2b9a2f1101480aa2e}{Buf\+Load}} (CString str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em 이미 할당되어있는 버퍼에 파일을 읽어 넣는다 ~\newline
+ 이미 크기가 할당되어 있는 버퍼를 사용해야 한다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a9479de252fb51feffaaf5a4e9deb5b75}{Buf\+Import}} (CString str\+File\+Name, MIL\+\_\+\+INT File\+Format=M\+\_\+\+BMP, MIL\+\_\+\+INT Operation=M\+\_\+\+LOAD)
+\begin{DoxyCompactList}\small\item\em 다용도로 로딩시킬수 있는 방법을 제공해준다. ~\newline
+ 포멧을 지정하여 로딩하며, \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a393819448c79c9377a9a35768598929c}{Close}} (void)
+\begin{DoxyCompactList}\small\item\em 디스플레이와 버퍼를 연결 시킨다. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{class_c_mil_buffer_acaf446d7a87784d1da0616af24af079e}{Is\+Alloced}} (void)
+\begin{DoxyCompactList}\small\item\em Mil Buffer가 할당되어 있는지 확인 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a310ef4de3e4c40faa736c05403cd2cd8}{Convert\+To\+BMPFmt}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+BMPBuffer, MIL\+\_\+\+INT64 Buffer\+Attribute=M\+\_\+\+IMAGE+M\+\_\+\+PROC)
+\begin{DoxyCompactList}\small\item\em Mil Buffer을 BMP에서 사용할 수 있는 형태의 버퍼로 만들어줌 ~\newline
+ 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling함 ~\newline
+ buffer할당까지 이루어짐 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a9100efd2fabbc07750c3f0d7e362c7ea}{Export\+BMP}} (CString str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Mil Buffer의 내용을 BMP파일로 저장 ~\newline
+ 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling함 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_aefdff7b32b9fa1bf5205ccc231246136}{Export\+JPG}} (CString str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Mil Buffer의 내용을 JPG파일로 저장-\/\texorpdfstring{$>$}{>}추가 키락 없이 처리하기 위함 ~\newline
+ 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling한 영상을 CImage를 이용하여 JPG로 저장 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_ac071911bf5034976c9911ee4caf8ebe9}{Export}} (CString str\+File\+Name, int \mbox{\hyperlink{class_c_mil_buffer_a5ce9116f490b82c84982a8e2d79cfb9e}{m\+\_\+i\+File\+Format}}=M\+\_\+\+TIFF)
+\begin{DoxyCompactList}\small\item\em Mil Buffer을 각종형태의 파일로 저장 M\+\_\+\+BMP, M\+\_\+\+JPEG, M\+\_\+\+TIFF ~\newline
+ BMP의 경우 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling함 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_aa7296b86602cce86cddc5608341ac09f}{Set\+File\+Format}} (MIL\+\_\+\+INT i\+File\+Format)
+\begin{DoxyCompactList}\small\item\em Mil Buffer을 각종형태의 파일로 저장 M\+\_\+\+BMP, M\+\_\+\+JPEG, M\+\_\+\+TIFF \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_buffer_aa9f560b7ee262a62129eeba443888045}{operator=}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} \&LValue)
+\item 
+MIL\+\_\+\+INT64 \mbox{\hyperlink{class_c_mil_buffer_a725bff1a2a33f4ee8b75c18c8ea7dac5}{Set\+Attribute}} (MIL\+\_\+\+INT64 Buffer\+Attribute)
+\begin{DoxyCompactList}\small\item\em 할당할 Mil Buffer의 Atrribute를 설정한다 ~\newline
+ 이미할당한것을 변경하는것이 아니다. \end{DoxyCompactList}\item 
+MIL\+\_\+\+INT64 \mbox{\hyperlink{class_c_mil_buffer_a8a44f3bdddcc461396822a963720b0c0}{Get\+Attribute}} (void)
+\begin{DoxyCompactList}\small\item\em 할당할때 사용한 Attribute를 가져옴 ~\newline
+ 할당된것을 확인하는것은 Get\+Image\+Properties사용 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a4d47b6b1e64274f025e86f0a44d7c0f6}{Select}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+Mil\+Display)
+\begin{DoxyCompactList}\small\item\em Mil버퍼를 보일 Display를 연결한다. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a898781beea4aa727fe722a6340561ba7}{Un\+Select\+Disp}} (void)
+\begin{DoxyCompactList}\small\item\em Mil Buffer와 Display와 연결된것을 해지한다. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{class_c_mil_buffer_a2a2eb109354c1cfca6b634cefd258302}{Is\+Select\+Disp}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_buffer_ae9aa47568805bfa333b0aae1c11120dd}{Select\+Window}} (HWND Client\+Window\+Handle)
+\begin{DoxyCompactList}\small\item\em Mil버퍼를 보일 Dialog와같은 원도우를 설정하는 함수 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a459083fc1624fe1a0312400e87d7eaff}{Select\+Window}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+Mil\+Display, HWND Client\+Window\+Handle)
+\begin{DoxyCompactList}\small\item\em 파라메터로 들어오는 Display로 윈도우 핸들로 Mil\+Buffer를 연결한다. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_ae6c54c96e48364044a6ca11b299a42a7}{Select\+Window}} (CWnd $\ast$p\+HWindow)
+\begin{DoxyCompactList}\small\item\em Mil Buffer와 윈도우 핸들을 연결시킨다(화면에 보이기위해) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a19fc6122afe80c24e6b691b8e131e170}{Select\+Window}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+Mil\+Display, CWnd $\ast$p\+HWindow, BOOL b\+Remove=FALSE)
+\item 
+BOOL \mbox{\hyperlink{class_c_mil_buffer_af7e39f6af3d5339b58302770e009757f}{Is\+Disp\+Allocated}} (void)
+\begin{DoxyCompactList}\small\item\em Mil Buffer와 Display buffer가 연결되어 있는지 확인할 수 있는 함수 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a0af147a12fa9b03f2ec9e1e89e087eac}{Get\+Image\+Properties}} (\mbox{\hyperlink{structt_image_properties}{t\+Image\+Properties}} $\ast$p\+Image\+Property)
+\begin{DoxyCompactList}\small\item\em mil buffer의 속성을 알려준다. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_aab80208711e40165680d03b6469cfe11}{Resize\+Buf}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, Cdbl\+Size image\+Size)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_af031f3fd91d83fc9b82bd8fc1e3afb5c}{Alloc2D}} (CSize image\+Size)
+\begin{DoxyCompactList}\small\item\em Mil Buffer를 할당한다 ~\newline
+ 버퍼의 속성은 이전에 이미 설정되어 있어야한다(Set\+Attribute, Set\+Depth등) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a0c747126701a316b159f252fc2f189dc}{Alloc\+Color2D}} (CSize image\+Size)
+\begin{DoxyCompactList}\small\item\em Color Mil Buffer를 할당한다 ~\newline
+ 버퍼의 속성은 이전에 이미 설정되어 있어야한다(Set\+Attribute, Set\+Depth등) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a983048db67d8759b4d2d9bf619e17796}{Put2D}} (CSize offset\+Pos, CSize size\+Image, void $\ast$p\+User\+Array\+Ptr)
+\begin{DoxyCompactList}\small\item\em 사용자 배열인 p\+User\+Array\+Ptr에 있는 데이터를 Mil Buffer로 복사한다 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a8f02138bd694e358ce1d10518d9f3836}{Child2D}} (CRect $\ast$p\+Rect)
+\begin{DoxyCompactList}\small\item\em Child버퍼를 만든다. ~\newline
+ Child는 C의 포인터개념으로 Child에서 변경된것은 원본에도 영향을 미친다. 문론 원본을 수정하면 Child에도 영향을 미친다. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a15aada41437c1c34fa1ca6d40f6d86b7}{Child2D}} (int offsetX, int offsetY, int child\+Width, int child\+Height)
+\begin{DoxyCompactList}\small\item\em OffsetX, Offset\+Y에서 Child\+Width폭, child\+Height높이로 Child를 만든다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a7b525205ffe7fb327263adeee81f695c}{Create2D}} (CSize size\+Image, void $\ast$p\+Addr, int n\+Depth=8L+M\+\_\+\+UNSIGNED, int Attr=M\+\_\+\+IMAGE+M\+\_\+\+PROC)
+\begin{DoxyCompactList}\small\item\em size\+Image크기로 p\+Addr를 Host Address로 하는 버퍼를 생성한다. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a51e24d6685705bb5223a550163306adc}{Get\+Addr}} (void)
+\begin{DoxyCompactList}\small\item\em 버퍼의 메모리주소를 얻는다. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a9a5320e1ae9e8ae0278e11fda4190ad2}{Set\+Depth}} (int Depth)
+\begin{DoxyCompactList}\small\item\em 할당할 버퍼의 Depth설정 ~\newline
+ 1,8,16,32 M\+\_\+\+FLOAT, M\+\_\+\+SIGNED, M\+\_\+\+UNSIGNED \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a2b743cb7e424b8508c51ced475a27601}{Set\+Channel\+Count}} (int n\+Channel)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_aced35440ac813b3b7d61f5f3b88243c6}{Get\+Depth}} (void)
+\begin{DoxyCompactList}\small\item\em 할당할 때 사용한 Depth반환 ~\newline
+ 현재값을 정확히 알고자 할때는 Get\+Image\+Properties사용 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a858d2ff7fb18e2823c19e550261b2396}{Duplicate\+Buff}} (void)
+\begin{DoxyCompactList}\small\item\em 동일한 속성과 크기의 버퍼를 생성하여 반환 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_afee52c62aca0de2e4833e3be84203d4b}{Clear}} (MIL\+\_\+\+DOUBLE Clear\+Color=M\+\_\+\+COLOR\+\_\+\+BLACK)
+\begin{DoxyCompactList}\small\item\em 버퍼를 Clear한다 ~\newline
+ 초기생성때 쓰레기값등을 지울때 혹은 있는 이미지를 지울때 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_ac4836723078d3bb72af6c55c89cf077c}{Copy}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src)
+\begin{DoxyCompactList}\small\item\em p\+Mil\+Src에서 이미지를 복사해온다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a7d646f561c9a511634e22ebd429169cc}{Copy\+Clip}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Clip\+Buffer, CPoint Offset)
+\begin{DoxyCompactList}\small\item\em p\+Mil\+Clip\+Buffer의 Offset위치에서 이미지를 읽어 복사해온다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_ad7d119bbbb18d78916a997e8d3b90e12}{Get2D}} (void $\ast$p\+User\+Array, CRect rect)
+\begin{DoxyCompactList}\small\item\em Mil Buffer의 이미지를 사용자 배열인 p\+User\+Array주소로 rect크기 이미지를 읽어온다 ~\newline
+ Mil Buffer의 이미지를 다른 프로그램에서 사용하거나 Pixel단위로 조작하기 위해사용 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a699ec731bd6d7abfee7b86191a96c914}{Get\+Color}} (void $\ast$p\+User\+Array)
+\begin{DoxyCompactList}\small\item\em Mil Buffer의 이미지를 사용자 배열인 p\+User\+Array주소로 이미지를 읽어온다 ~\newline
+ Mil Buffer의 이미지를 다른 프로그램에서 사용하거나 Pixel단위로 조작하기 위해사용 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_af439411f180488c69ab0721f54996359}{Set\+Image\+Properties}} (\mbox{\hyperlink{structt_image_properties}{t\+Image\+Properties}} $\ast$p\+Image\+Properties)
+\begin{DoxyCompactList}\small\item\em Alloc을 할때 다른 Image\+Porperties를 사용하여 설정함 ~\newline
+ Alloc을 해야만 영향을 미침 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_ae204ca847b712f22268b6e096e005e69}{Set\+Display}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+Mil\+Display)
+\begin{DoxyCompactList}\small\item\em Display버퍼를 할당함 ~\newline
+ 연결을 하지 않고 있음 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_a75e5ec71ef4b1a45745c16ff4d025ed1}{Copy\+Color2D}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Buf\+Dest, CRect rect\+Copy, CPoint ofs\+Dest=CPoint(0, 0), int band\+Dest=M\+\_\+\+ALL\+\_\+\+BANDS, int band\+Src=M\+\_\+\+ALL\+\_\+\+BANDS)
+\begin{DoxyCompactList}\small\item\em 버퍼대 버퍼로 복사한다 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a6786ddb84e90c0e04f979f6d36634f12}{Get\+Display}} ()
+\begin{DoxyCompactList}\small\item\em 할당된 Display의 주소를 얻는다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a1ed13ef5eae3f54e268441ffb9a4f2ff}{Wnd\+Lvl\+Tranform}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Buf\+Dest, int Org\+Start, int Org\+End, int Dest\+Start, int Dest\+End)
+\begin{DoxyCompactList}\small\item\em Gray Value Windowing처리를 한다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_buffer_aa4a6a5820151b4458eff656b3ba30a85}{Get\+IDBuffer}} (void)
+\begin{DoxyCompactList}\small\item\em 버퍼의 Mil ID를 받환한다. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mil_buffer_ab8a5c78c2ab42e7c4671f7a3a828635e}{Set\+IDBuffer}} (int mil\+ID)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a80190e51fbc6eeb66d0140a82f66403f}{Get\+Pixel\+Gray}} (int x, int y, int $\ast$v\+Gray)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a28483f1f5f5570833540f6e92012ecc3}{Get\+Pixel\+Gray}} (CPoint pos\+Pixel, int $\ast$v\+Gray)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a6a377cd352c6536d0e1ec988efd0b08f}{Get\+Pixel\+Color}} (int x, int y, COLORREF $\ast$v\+Color, int type\+Color=M\+\_\+\+RGB24)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a4757eb37adbf5565b37a65b938276225}{Get\+Pixel\+Color}} (CPoint pos\+Pixel, COLORREF $\ast$v\+Color)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_adf91b5a03f2abebdfaabdc7ec5274696}{Get\+Color2D}} (int x, int y, CSize size\+Image, void $\ast$p\+Buffer, int type\+Color=M\+\_\+\+RGB24)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_aee4889e26a0756868144728244958630}{Load\+Raw\+File}} (CString str\+File\+Name, CSize raw\+Size)
+\item 
+void \mbox{\hyperlink{class_c_mil_buffer_af19b19500e556de824f54ea0b5d7feab}{Put}} (void $\ast$p\+User\+Array\+Ptr)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_aa765bdbb35aa0dd18a356318fe3d54a7}{Buf\+Import\+JPG}} (CString str\+File\+Name, MIL\+\_\+\+ID mil\+IDSystem, MIL\+\_\+\+ID mil\+IDBuffter)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a7e56c8ee7bde276cd68affcd3c603887}{Export\+AVIOpen}} (\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$p\+EA, int i\+Open\+Mode=M\+\_\+\+OPEN)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a6edfed3c437efbcf1ff36b2cc56bfe6e}{Export\+AVI}} (\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$p\+EA=NULL)
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_ab24d5c2678cc4b468b08c45b0ea22cde}{Export\+AVIClose}} (\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$p\+EA)
+\item 
+void \mbox{\hyperlink{class_c_mil_buffer_ad028a509dcb739d5a527fb0709f2baa4}{Lock}} ()
+\item 
+void \mbox{\hyperlink{class_c_mil_buffer_ae16707f310b9c2399025daf601be1724}{Unlock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+INT \mbox{\hyperlink{class_c_mil_buffer_a322642fdb4985d47abfbdd0aed21d3f1}{m\+\_\+i\+Depth}}
+\item 
+MIL\+\_\+\+INT64 \mbox{\hyperlink{class_c_mil_buffer_a325eb4afcc666d91c0797a922d80db6a}{m\+\_\+\+Buf\+Attr}}
+\item 
+MIL\+\_\+\+INT \mbox{\hyperlink{class_c_mil_buffer_a5ce9116f490b82c84982a8e2d79cfb9e}{m\+\_\+i\+File\+Format}}
+\item 
+\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a38a328d14027686da79b25799c649fa3}{m\+\_\+p\+Export\+AVIInfo}}
+\item 
+CWnd $\ast$ \mbox{\hyperlink{class_c_mil_buffer_a47e7eeeb25bafed83775bce21d2bfe3c}{m\+\_\+p\+HWnd\+Selected}}
+\item 
+BOOL \mbox{\hyperlink{class_c_mil_buffer_aec0ce0448bf826ef372504f0d2d8fef8}{m\+\_\+b\+AVIClosed}}
+\item 
+int \mbox{\hyperlink{class_c_mil_buffer_a4b9a9544567f3f29188ddb988ae8953a}{m\+\_\+n\+Channel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_c_mil_buffer_a4f8de6ecddc206dbf64c6eb5a211af6e}{m\+\_\+mil\+IDBuff\+Counter}} =0
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Mil\+Buffer관련 함수군을 Class화하였다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_buffer_a7ca63ae0b573056d11bcab375c15c644}\label{class_c_mil_buffer_a7ca63ae0b573056d11bcab375c15c644}} 
+\index{CMilBuffer@{CMilBuffer}!CMilBuffer@{CMilBuffer}}
+\index{CMilBuffer@{CMilBuffer}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{CMilBuffer()}{CMilBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CMil\+Buffer\+::\+CMil\+Buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a22a722f34a6ca9c41f2f391b1421f804}\label{class_c_mil_buffer_a22a722f34a6ca9c41f2f391b1421f804}} 
+\index{CMilBuffer@{CMilBuffer}!CMilBuffer@{CMilBuffer}}
+\index{CMilBuffer@{CMilBuffer}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{CMilBuffer()}{CMilBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CMil\+Buffer\+::\+CMil\+Buffer (\begin{DoxyParamCaption}\item[{CSize}]{Image\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a2237669c3a418c1dee34f2124ad99b70}\label{class_c_mil_buffer_a2237669c3a418c1dee34f2124ad99b70}} 
+\index{CMilBuffer@{CMilBuffer}!````~CMilBuffer@{$\sim$CMilBuffer}}
+\index{````~CMilBuffer@{$\sim$CMilBuffer}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilBuffer()}{~CMilBuffer()}}
+{\footnotesize\ttfamily CMil\+Buffer\+::$\sim$\+CMil\+Buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_buffer_af031f3fd91d83fc9b82bd8fc1e3afb5c}\label{class_c_mil_buffer_af031f3fd91d83fc9b82bd8fc1e3afb5c}} 
+\index{CMilBuffer@{CMilBuffer}!Alloc2D@{Alloc2D}}
+\index{Alloc2D@{Alloc2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Alloc2D()}{Alloc2D()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Alloc2D (\begin{DoxyParamCaption}\item[{CSize}]{image\+Size }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer를 할당한다 ~\newline
+ 버퍼의 속성은 이전에 이미 설정되어 있어야한다(Set\+Attribute, Set\+Depth등) 
+
+
+\begin{DoxyParams}{매개변수}
+{\em image\+Size} & 할당할 버퍼의 크기를 지정해준다 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a0c747126701a316b159f252fc2f189dc}\label{class_c_mil_buffer_a0c747126701a316b159f252fc2f189dc}} 
+\index{CMilBuffer@{CMilBuffer}!AllocColor2D@{AllocColor2D}}
+\index{AllocColor2D@{AllocColor2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{AllocColor2D()}{AllocColor2D()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Alloc\+Color2D (\begin{DoxyParamCaption}\item[{CSize}]{image\+Size }\end{DoxyParamCaption})}
+
+
+
+Color Mil Buffer를 할당한다 ~\newline
+ 버퍼의 속성은 이전에 이미 설정되어 있어야한다(Set\+Attribute, Set\+Depth등) 
+
+
+\begin{DoxyParams}{매개변수}
+{\em image\+Size} & 할당할 버퍼의 크기를 지정해준다 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a9479de252fb51feffaaf5a4e9deb5b75}\label{class_c_mil_buffer_a9479de252fb51feffaaf5a4e9deb5b75}} 
+\index{CMilBuffer@{CMilBuffer}!BufImport@{BufImport}}
+\index{BufImport@{BufImport}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{BufImport()}{BufImport()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Buf\+Import (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name,  }\item[{MIL\+\_\+\+INT}]{File\+Format = {\ttfamily M\+\_\+BMP},  }\item[{MIL\+\_\+\+INT}]{Operation = {\ttfamily M\+\_\+LOAD} }\end{DoxyParamCaption})}
+
+
+
+다용도로 로딩시킬수 있는 방법을 제공해준다. ~\newline
+ 포멧을 지정하여 로딩하며, 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 읽어들일 파일명 \\
+\hline
+{\em File\+Format} & 읽어들일 파일의 파일종류 지정해준다 \\
+\hline
+{\em Operation} & 읽어들이는 방법을 지정한다 ~\newline
+ M\+\_\+\+LOAD, M\+\_\+\+RESTORE 버퍼를 할당할지 아니면 할당된 버퍼를 사용할지. return M\+\_\+\+RESOTRE일 경우에만 할당된 ID반환 할당실패의 경우 M\+\_\+\+NULL반환 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_aa765bdbb35aa0dd18a356318fe3d54a7}\label{class_c_mil_buffer_aa765bdbb35aa0dd18a356318fe3d54a7}} 
+\index{CMilBuffer@{CMilBuffer}!BufImportJPG@{BufImportJPG}}
+\index{BufImportJPG@{BufImportJPG}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{BufImportJPG()}{BufImportJPG()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Buf\+Import\+JPG (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name,  }\item[{MIL\+\_\+\+ID}]{mil\+IDSystem,  }\item[{MIL\+\_\+\+ID}]{mil\+IDBuffter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a10968c4e973dc1d2b9a2f1101480aa2e}\label{class_c_mil_buffer_a10968c4e973dc1d2b9a2f1101480aa2e}} 
+\index{CMilBuffer@{CMilBuffer}!BufLoad@{BufLoad}}
+\index{BufLoad@{BufLoad}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{BufLoad()}{BufLoad()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Buf\+Load (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+이미 할당되어있는 버퍼에 파일을 읽어 넣는다 ~\newline
+ 이미 크기가 할당되어 있는 버퍼를 사용해야 한다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 읽어들일 파일명 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a8f02138bd694e358ce1d10518d9f3836}\label{class_c_mil_buffer_a8f02138bd694e358ce1d10518d9f3836}} 
+\index{CMilBuffer@{CMilBuffer}!Child2D@{Child2D}}
+\index{Child2D@{Child2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Child2D()}{Child2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ CMil\+Buffer\+::\+Child2D (\begin{DoxyParamCaption}\item[{CRect $\ast$}]{p\+Rect }\end{DoxyParamCaption})}
+
+
+
+Child버퍼를 만든다. ~\newline
+ Child는 C의 포인터개념으로 Child에서 변경된것은 원본에도 영향을 미친다. 문론 원본을 수정하면 Child에도 영향을 미친다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Rect} & 원본에서 p\+Rect위치를 Child로 만든다 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Child Buffer를 반환한다 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a15aada41437c1c34fa1ca6d40f6d86b7}\label{class_c_mil_buffer_a15aada41437c1c34fa1ca6d40f6d86b7}} 
+\index{CMilBuffer@{CMilBuffer}!Child2D@{Child2D}}
+\index{Child2D@{Child2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Child2D()}{Child2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ CMil\+Buffer\+::\+Child2D (\begin{DoxyParamCaption}\item[{int}]{offsetX,  }\item[{int}]{offsetY,  }\item[{int}]{child\+Width,  }\item[{int}]{child\+Height }\end{DoxyParamCaption})}
+
+
+
+OffsetX, Offset\+Y에서 Child\+Width폭, child\+Height높이로 Child를 만든다 
+
+\mbox{\Hypertarget{class_c_mil_buffer_afee52c62aca0de2e4833e3be84203d4b}\label{class_c_mil_buffer_afee52c62aca0de2e4833e3be84203d4b}} 
+\index{CMilBuffer@{CMilBuffer}!Clear@{Clear}}
+\index{Clear@{Clear}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Clear (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+DOUBLE}]{Clear\+Color = {\ttfamily M\+\_\+COLOR\+\_\+BLACK} }\end{DoxyParamCaption})}
+
+
+
+버퍼를 Clear한다 ~\newline
+ 초기생성때 쓰레기값등을 지울때 혹은 있는 이미지를 지울때 
+
+
+\begin{DoxyParams}{매개변수}
+{\em Clear\+Color} & 화면을 지울때 색상(지워지고나서 모드 이색상으로 체워진다 @\+M\+\_\+\+RGB888(MIL\+\_\+\+INT Red, MIL\+\_\+\+INT Green, MIL\+\_\+\+INT Blue), M\+\_\+\+COLOR\+\_\+\+BLACK, M\+\_\+\+COLOR\+\_\+\+RED... \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a393819448c79c9377a9a35768598929c}\label{class_c_mil_buffer_a393819448c79c9377a9a35768598929c}} 
+\index{CMilBuffer@{CMilBuffer}!Close@{Close}}
+\index{Close@{Close}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+디스플레이와 버퍼를 연결 시킨다. 
+
+Mil Buffer를 해지함
+
+\begin{DoxyReturn}{반환값}
+현재 무조건 0으로 나옴 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a310ef4de3e4c40faa736c05403cd2cd8}\label{class_c_mil_buffer_a310ef4de3e4c40faa736c05403cd2cd8}} 
+\index{CMilBuffer@{CMilBuffer}!ConvertToBMPFmt@{ConvertToBMPFmt}}
+\index{ConvertToBMPFmt@{ConvertToBMPFmt}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ConvertToBMPFmt()}{ConvertToBMPFmt()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Convert\+To\+BMPFmt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+BMPBuffer,  }\item[{MIL\+\_\+\+INT64}]{Buffer\+Attribute = {\ttfamily M\+\_\+IMAGE+M\+\_\+PROC} }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer을 BMP에서 사용할 수 있는 형태의 버퍼로 만들어줌 ~\newline
+ 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling함 ~\newline
+ buffer할당까지 이루어짐 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+BMPBuffer} & 변환된 버퍼가 저장될 Mil buffer(Alloc을 하지 않은 버퍼) \\
+\hline
+{\em Buffer\+Attribute} & 변환될 버퍼의 Attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_ac4836723078d3bb72af6c55c89cf077c}\label{class_c_mil_buffer_ac4836723078d3bb72af6c55c89cf077c}} 
+\index{CMilBuffer@{CMilBuffer}!Copy@{Copy}}
+\index{Copy@{Copy}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src }\end{DoxyParamCaption})}
+
+
+
+p\+Mil\+Src에서 이미지를 복사해온다 
+
+\mbox{\Hypertarget{class_c_mil_buffer_a7d646f561c9a511634e22ebd429169cc}\label{class_c_mil_buffer_a7d646f561c9a511634e22ebd429169cc}} 
+\index{CMilBuffer@{CMilBuffer}!CopyClip@{CopyClip}}
+\index{CopyClip@{CopyClip}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{CopyClip()}{CopyClip()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Copy\+Clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Clip\+Buffer,  }\item[{CPoint}]{Offset }\end{DoxyParamCaption})}
+
+
+
+p\+Mil\+Clip\+Buffer의 Offset위치에서 이미지를 읽어 복사해온다. 
+
+\mbox{\Hypertarget{class_c_mil_buffer_a75e5ec71ef4b1a45745c16ff4d025ed1}\label{class_c_mil_buffer_a75e5ec71ef4b1a45745c16ff4d025ed1}} 
+\index{CMilBuffer@{CMilBuffer}!CopyColor2D@{CopyColor2D}}
+\index{CopyColor2D@{CopyColor2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{CopyColor2D()}{CopyColor2D()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Copy\+Color2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Buf\+Dest,  }\item[{CRect}]{rect\+Copy,  }\item[{CPoint}]{ofs\+Dest = {\ttfamily CPoint(0,0)},  }\item[{int}]{band\+Dest = {\ttfamily M\+\_\+ALL\+\_\+BANDS},  }\item[{int}]{band\+Src = {\ttfamily M\+\_\+ALL\+\_\+BANDS} }\end{DoxyParamCaption})}
+
+
+
+버퍼대 버퍼로 복사한다 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Buf\+Dest} & 복사되는 버퍼의 CMil\+Buffer포인트 \\
+\hline
+{\em rect\+Copy} & 원본에서의 복사할 대상위치및 크기 \\
+\hline
+{\em ofs\+Dest} & 복사되는 버퍼의 복사 시작위치 \\
+\hline
+{\em band\+Dest} & 복사되는 버퍼의 Band위치 \\
+\hline
+{\em band\+Src} & 원본의 Band 위치 Default=M\+\_\+\+ALL\+\_\+\+BANDS \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a7b525205ffe7fb327263adeee81f695c}\label{class_c_mil_buffer_a7b525205ffe7fb327263adeee81f695c}} 
+\index{CMilBuffer@{CMilBuffer}!Create2D@{Create2D}}
+\index{Create2D@{Create2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Create2D()}{Create2D()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Create2D (\begin{DoxyParamCaption}\item[{CSize}]{size\+Image,  }\item[{void $\ast$}]{p\+Addr,  }\item[{int}]{n\+Depth = {\ttfamily 8L+M\+\_\+UNSIGNED},  }\item[{int}]{Attr = {\ttfamily M\+\_\+IMAGE+M\+\_\+PROC} }\end{DoxyParamCaption})}
+
+
+
+size\+Image크기로 p\+Addr를 Host Address로 하는 버퍼를 생성한다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em n\+Depth} & 생성할 버퍼 depth \\
+\hline
+{\em Attr} & 생성할 버퍼의 Attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+return 0이 아니면 Error임 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a858d2ff7fb18e2823c19e550261b2396}\label{class_c_mil_buffer_a858d2ff7fb18e2823c19e550261b2396}} 
+\index{CMilBuffer@{CMilBuffer}!DuplicateBuff@{DuplicateBuff}}
+\index{DuplicateBuff@{DuplicateBuff}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{DuplicateBuff()}{DuplicateBuff()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ CMil\+Buffer\+::\+Duplicate\+Buff (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+동일한 속성과 크기의 버퍼를 생성하여 반환 
+
+\begin{DoxyReturn}{반환값}
+생성된 Mil buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_ac071911bf5034976c9911ee4caf8ebe9}\label{class_c_mil_buffer_ac071911bf5034976c9911ee4caf8ebe9}} 
+\index{CMilBuffer@{CMilBuffer}!Export@{Export}}
+\index{Export@{Export}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Export()}{Export()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Export (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name,  }\item[{int}]{m\+\_\+i\+File\+Format = {\ttfamily M\+\_\+TIFF} }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer을 각종형태의 파일로 저장 M\+\_\+\+BMP, M\+\_\+\+JPEG, M\+\_\+\+TIFF ~\newline
+ BMP의 경우 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling함 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 저장할 파일이름 \\
+\hline
+{\em m\+\_\+i\+File\+Format} & 저장할 파일 포멧 ~\newline
+ M\+\_\+\+TIFF, M\+\_\+\+BMP \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{할일}
+\item[\mbox{\hyperlink{todo__todo000003}{할일}}]jpeg의 경우 라이센스가 없어 동작할 수 없음. 라이센스는 10여만원이상하기 때문에 jpeg를 저장할 수 있는 모듈을 구해 구현해야함 \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_c_mil_buffer_a6edfed3c437efbcf1ff36b2cc56bfe6e}\label{class_c_mil_buffer_a6edfed3c437efbcf1ff36b2cc56bfe6e}} 
+\index{CMilBuffer@{CMilBuffer}!ExportAVI@{ExportAVI}}
+\index{ExportAVI@{ExportAVI}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ExportAVI()}{ExportAVI()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Export\+AVI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$}]{p\+EA = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_ab24d5c2678cc4b468b08c45b0ea22cde}\label{class_c_mil_buffer_ab24d5c2678cc4b468b08c45b0ea22cde}} 
+\index{CMilBuffer@{CMilBuffer}!ExportAVIClose@{ExportAVIClose}}
+\index{ExportAVIClose@{ExportAVIClose}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ExportAVIClose()}{ExportAVIClose()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Export\+AVIClose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$}]{p\+EA }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a7e56c8ee7bde276cd68affcd3c603887}\label{class_c_mil_buffer_a7e56c8ee7bde276cd68affcd3c603887}} 
+\index{CMilBuffer@{CMilBuffer}!ExportAVIOpen@{ExportAVIOpen}}
+\index{ExportAVIOpen@{ExportAVIOpen}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ExportAVIOpen()}{ExportAVIOpen()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Export\+AVIOpen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}} $\ast$}]{p\+EA,  }\item[{int}]{i\+Open\+Mode = {\ttfamily M\+\_\+OPEN} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a9100efd2fabbc07750c3f0d7e362c7ea}\label{class_c_mil_buffer_a9100efd2fabbc07750c3f0d7e362c7ea}} 
+\index{CMilBuffer@{CMilBuffer}!ExportBMP@{ExportBMP}}
+\index{ExportBMP@{ExportBMP}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ExportBMP()}{ExportBMP()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Export\+BMP (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer의 내용을 BMP파일로 저장 ~\newline
+ 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling함 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 저장할 파일이름 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_aefdff7b32b9fa1bf5205ccc231246136}\label{class_c_mil_buffer_aefdff7b32b9fa1bf5205ccc231246136}} 
+\index{CMilBuffer@{CMilBuffer}!ExportJPG@{ExportJPG}}
+\index{ExportJPG@{ExportJPG}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ExportJPG()}{ExportJPG()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Export\+JPG (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer의 내용을 JPG파일로 저장-\/\texorpdfstring{$>$}{>}추가 키락 없이 처리하기 위함 ~\newline
+ 16bit-\/\texorpdfstring{$>$}{>}8bit로 Gray value를 leveling한 영상을 CImage를 이용하여 JPG로 저장 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 저장할 파일이름 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_ad7d119bbbb18d78916a997e8d3b90e12}\label{class_c_mil_buffer_ad7d119bbbb18d78916a997e8d3b90e12}} 
+\index{CMilBuffer@{CMilBuffer}!Get2D@{Get2D}}
+\index{Get2D@{Get2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Get2D()}{Get2D()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get2D (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+User\+Array,  }\item[{CRect}]{rect }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer의 이미지를 사용자 배열인 p\+User\+Array주소로 rect크기 이미지를 읽어온다 ~\newline
+ Mil Buffer의 이미지를 다른 프로그램에서 사용하거나 Pixel단위로 조작하기 위해사용 
+
+\mbox{\Hypertarget{class_c_mil_buffer_a51e24d6685705bb5223a550163306adc}\label{class_c_mil_buffer_a51e24d6685705bb5223a550163306adc}} 
+\index{CMilBuffer@{CMilBuffer}!GetAddr@{GetAddr}}
+\index{GetAddr@{GetAddr}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetAddr()}{GetAddr()}}
+{\footnotesize\ttfamily void $\ast$ CMil\+Buffer\+::\+Get\+Addr (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+버퍼의 메모리주소를 얻는다. 
+
+\begin{DoxyReturn}{반환값}
+메모리버퍼의 주소를 받환한다 0이면 찾지 못함(\+Error) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a8a44f3bdddcc461396822a963720b0c0}\label{class_c_mil_buffer_a8a44f3bdddcc461396822a963720b0c0}} 
+\index{CMilBuffer@{CMilBuffer}!GetAttribute@{GetAttribute}}
+\index{GetAttribute@{GetAttribute}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetAttribute()}{GetAttribute()}}
+{\footnotesize\ttfamily MIL\+\_\+\+INT64 CMil\+Buffer\+::\+Get\+Attribute (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+할당할때 사용한 Attribute를 가져옴 ~\newline
+ 할당된것을 확인하는것은 Get\+Image\+Properties사용 
+
+\begin{DoxyReturn}{반환값}
+속성 값 ~\newline
+ M\+\_\+\+IMAGE, M\+\_\+\+DISP, M\+\_\+\+GRAB, M\+\_\+\+PROC, M\+\_\+\+DIB 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a699ec731bd6d7abfee7b86191a96c914}\label{class_c_mil_buffer_a699ec731bd6d7abfee7b86191a96c914}} 
+\index{CMilBuffer@{CMilBuffer}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Color (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+User\+Array }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer의 이미지를 사용자 배열인 p\+User\+Array주소로 이미지를 읽어온다 ~\newline
+ Mil Buffer의 이미지를 다른 프로그램에서 사용하거나 Pixel단위로 조작하기 위해사용 
+
+\mbox{\Hypertarget{class_c_mil_buffer_adf91b5a03f2abebdfaabdc7ec5274696}\label{class_c_mil_buffer_adf91b5a03f2abebdfaabdc7ec5274696}} 
+\index{CMilBuffer@{CMilBuffer}!GetColor2D@{GetColor2D}}
+\index{GetColor2D@{GetColor2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetColor2D()}{GetColor2D()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Color2D (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{CSize}]{size\+Image,  }\item[{void $\ast$}]{p\+Buffer,  }\item[{int}]{type\+Color = {\ttfamily M\+\_\+RGB24} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_aced35440ac813b3b7d61f5f3b88243c6}\label{class_c_mil_buffer_aced35440ac813b3b7d61f5f3b88243c6}} 
+\index{CMilBuffer@{CMilBuffer}!GetDepth@{GetDepth}}
+\index{GetDepth@{GetDepth}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetDepth()}{GetDepth()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Depth (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+할당할 때 사용한 Depth반환 ~\newline
+ 현재값을 정확히 알고자 할때는 Get\+Image\+Properties사용 
+
+\begin{DoxyReturn}{반환값}
+할당할 때 사용한 Depth 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a6786ddb84e90c0e04f979f6d36634f12}\label{class_c_mil_buffer_a6786ddb84e90c0e04f979f6d36634f12}} 
+\index{CMilBuffer@{CMilBuffer}!GetDisplay@{GetDisplay}}
+\index{GetDisplay@{GetDisplay}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetDisplay()}{GetDisplay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$ CMil\+Buffer\+::\+Get\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+할당된 Display의 주소를 얻는다. 
+
+\begin{DoxyReturn}{반환값}
+CMil\+Display의 주소가 반환된다. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_aa4a6a5820151b4458eff656b3ba30a85}\label{class_c_mil_buffer_aa4a6a5820151b4458eff656b3ba30a85}} 
+\index{CMilBuffer@{CMilBuffer}!GetIDBuffer@{GetIDBuffer}}
+\index{GetIDBuffer@{GetIDBuffer}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetIDBuffer()}{GetIDBuffer()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+IDBuffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+버퍼의 Mil ID를 받환한다. 
+
+\begin{DoxyReturn}{반환값}
+Mil Buffer의 Mil ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a0af147a12fa9b03f2ec9e1e89e087eac}\label{class_c_mil_buffer_a0af147a12fa9b03f2ec9e1e89e087eac}} 
+\index{CMilBuffer@{CMilBuffer}!GetImageProperties@{GetImageProperties}}
+\index{GetImageProperties@{GetImageProperties}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetImageProperties()}{GetImageProperties()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Get\+Image\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt_image_properties}{t\+Image\+Properties}} $\ast$}]{p\+Image\+Property }\end{DoxyParamCaption})}
+
+
+
+mil buffer의 속성을 알려준다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Image\+Property} & t\+Image\+Properties구조체에 속성을 반납한다. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_aeb5cfce16fcce8907f01174b927fdf02}\label{class_c_mil_buffer_aeb5cfce16fcce8907f01174b927fdf02}} 
+\index{CMilBuffer@{CMilBuffer}!GetMilCounter@{GetMilCounter}}
+\index{GetMilCounter@{GetMilCounter}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetMilCounter()}{GetMilCounter()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Mil\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+할당된 Mil버퍼카운트를 한다.(Child포함) 
+
+\begin{DoxyRefDesc}{할일}
+\item[\mbox{\hyperlink{todo__todo000002}{할일}}]현재 사용할 수 없는 상태이며 수정하여 완료하여야 한다. \end{DoxyRefDesc}
+\begin{DoxyReturn}{반환값}
+할당된 카운트갯수를 반환한다. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a4757eb37adbf5565b37a65b938276225}\label{class_c_mil_buffer_a4757eb37adbf5565b37a65b938276225}} 
+\index{CMilBuffer@{CMilBuffer}!GetPixelColor@{GetPixelColor}}
+\index{GetPixelColor@{GetPixelColor}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetPixelColor()}{GetPixelColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Pixel\+Color (\begin{DoxyParamCaption}\item[{CPoint}]{pos\+Pixel,  }\item[{COLORREF $\ast$}]{v\+Color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a6a377cd352c6536d0e1ec988efd0b08f}\label{class_c_mil_buffer_a6a377cd352c6536d0e1ec988efd0b08f}} 
+\index{CMilBuffer@{CMilBuffer}!GetPixelColor@{GetPixelColor}}
+\index{GetPixelColor@{GetPixelColor}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetPixelColor()}{GetPixelColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Pixel\+Color (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{COLORREF $\ast$}]{v\+Color,  }\item[{int}]{type\+Color = {\ttfamily M\+\_\+RGB24} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a28483f1f5f5570833540f6e92012ecc3}\label{class_c_mil_buffer_a28483f1f5f5570833540f6e92012ecc3}} 
+\index{CMilBuffer@{CMilBuffer}!GetPixelGray@{GetPixelGray}}
+\index{GetPixelGray@{GetPixelGray}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetPixelGray()}{GetPixelGray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Pixel\+Gray (\begin{DoxyParamCaption}\item[{CPoint}]{pos\+Pixel,  }\item[{int $\ast$}]{v\+Gray }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a80190e51fbc6eeb66d0140a82f66403f}\label{class_c_mil_buffer_a80190e51fbc6eeb66d0140a82f66403f}} 
+\index{CMilBuffer@{CMilBuffer}!GetPixelGray@{GetPixelGray}}
+\index{GetPixelGray@{GetPixelGray}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{GetPixelGray()}{GetPixelGray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Get\+Pixel\+Gray (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int $\ast$}]{v\+Gray }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_acaf446d7a87784d1da0616af24af079e}\label{class_c_mil_buffer_acaf446d7a87784d1da0616af24af079e}} 
+\index{CMilBuffer@{CMilBuffer}!IsAlloced@{IsAlloced}}
+\index{IsAlloced@{IsAlloced}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{IsAlloced()}{IsAlloced()}}
+{\footnotesize\ttfamily BOOL CMil\+Buffer\+::\+Is\+Alloced (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer가 할당되어 있는지 확인 
+
+\begin{DoxyReturn}{반환값}
+1\+:할당되어 있음 0\+:할당되어 있지 않음 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_af7e39f6af3d5339b58302770e009757f}\label{class_c_mil_buffer_af7e39f6af3d5339b58302770e009757f}} 
+\index{CMilBuffer@{CMilBuffer}!IsDispAllocated@{IsDispAllocated}}
+\index{IsDispAllocated@{IsDispAllocated}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{IsDispAllocated()}{IsDispAllocated()}}
+{\footnotesize\ttfamily BOOL CMil\+Buffer\+::\+Is\+Disp\+Allocated (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer와 Display buffer가 연결되어 있는지 확인할 수 있는 함수 
+
+\begin{DoxyReturn}{반환값}
+TRUE\+:할당되어 있음 FALSE\+:할당된 Display가 없음 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a2a2eb109354c1cfca6b634cefd258302}\label{class_c_mil_buffer_a2a2eb109354c1cfca6b634cefd258302}} 
+\index{CMilBuffer@{CMilBuffer}!IsSelectDisp@{IsSelectDisp}}
+\index{IsSelectDisp@{IsSelectDisp}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{IsSelectDisp()}{IsSelectDisp()}}
+{\footnotesize\ttfamily BOOL CMil\+Buffer\+::\+Is\+Select\+Disp (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_aee4889e26a0756868144728244958630}\label{class_c_mil_buffer_aee4889e26a0756868144728244958630}} 
+\index{CMilBuffer@{CMilBuffer}!LoadRawFile@{LoadRawFile}}
+\index{LoadRawFile@{LoadRawFile}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{LoadRawFile()}{LoadRawFile()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Load\+Raw\+File (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name,  }\item[{CSize}]{raw\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_ad028a509dcb739d5a527fb0709f2baa4}\label{class_c_mil_buffer_ad028a509dcb739d5a527fb0709f2baa4}} 
+\index{CMilBuffer@{CMilBuffer}!Lock@{Lock}}
+\index{Lock@{Lock}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Lock()}{Lock()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_aa9f560b7ee262a62129eeba443888045}\label{class_c_mil_buffer_aa9f560b7ee262a62129eeba443888045}} 
+\index{CMilBuffer@{CMilBuffer}!operator=@{operator=}}
+\index{operator=@{operator=}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ CMil\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} \&}]{LValue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_af19b19500e556de824f54ea0b5d7feab}\label{class_c_mil_buffer_af19b19500e556de824f54ea0b5d7feab}} 
+\index{CMilBuffer@{CMilBuffer}!Put@{Put}}
+\index{Put@{Put}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Put (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+User\+Array\+Ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a983048db67d8759b4d2d9bf619e17796}\label{class_c_mil_buffer_a983048db67d8759b4d2d9bf619e17796}} 
+\index{CMilBuffer@{CMilBuffer}!Put2D@{Put2D}}
+\index{Put2D@{Put2D}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Put2D()}{Put2D()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Put2D (\begin{DoxyParamCaption}\item[{CSize}]{offset\+Pos,  }\item[{CSize}]{size\+Image,  }\item[{void $\ast$}]{p\+User\+Array\+Ptr }\end{DoxyParamCaption})}
+
+
+
+사용자 배열인 p\+User\+Array\+Ptr에 있는 데이터를 Mil Buffer로 복사한다 
+
+
+\begin{DoxyParams}{매개변수}
+{\em offset\+Pos} & Copy시작위치 \\
+\hline
+{\em size\+Image} & offset\+Pos위치부터 size\+Image크기지정 \\
+\hline
+{\em p\+User\+Array\+Ptr} & 이미지가 있는 배열의 위치 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_aab80208711e40165680d03b6469cfe11}\label{class_c_mil_buffer_aab80208711e40165680d03b6469cfe11}} 
+\index{CMilBuffer@{CMilBuffer}!ResizeBuf@{ResizeBuf}}
+\index{ResizeBuf@{ResizeBuf}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{ResizeBuf()}{ResizeBuf()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Resize\+Buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{Cdbl\+Size}]{image\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_ad2d5d2694043b3c82df93cbb3181fe7a}\label{class_c_mil_buffer_ad2d5d2694043b3c82df93cbb3181fe7a}} 
+\index{CMilBuffer@{CMilBuffer}!Restore@{Restore}}
+\index{Restore@{Restore}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Restore()}{Restore()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Restore (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+파일을 읽어 Mil\+Buffer에 넣는다. ~\newline
+ Buffer Alloc이 자동으로 이루어지고 File포멧도 자동으로 확인하여 읽어온다 
+
+
+\begin{DoxyParams}{매개변수}
+{\em str\+File\+Name} & 읽어올 파일의 이름 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+0이면 에러 다른 값은 정상이다 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_buffer_a24b4c9c706cb43bfd1a826bd61e19523}\label{class_c_mil_buffer_a24b4c9c706cb43bfd1a826bd61e19523}} 
+\index{CMilBuffer@{CMilBuffer}!RestoreJPG@{RestoreJPG}}
+\index{RestoreJPG@{RestoreJPG}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{RestoreJPG()}{RestoreJPG()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Restore\+JPG (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Name,  }\item[{MIL\+\_\+\+ID}]{mil\+IDSystem,  }\item[{MIL\+\_\+\+ID $\ast$}]{p\+Mil\+IDBuffter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a4d47b6b1e64274f025e86f0a44d7c0f6}\label{class_c_mil_buffer_a4d47b6b1e64274f025e86f0a44d7c0f6}} 
+\index{CMilBuffer@{CMilBuffer}!Select@{Select}}
+\index{Select@{Select}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+Mil\+Display }\end{DoxyParamCaption})}
+
+
+
+Mil버퍼를 보일 Display를 연결한다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Mil\+Display} & 연결시킬 Mil\+Display(할당되어 있어야함) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a19fc6122afe80c24e6b691b8e131e170}\label{class_c_mil_buffer_a19fc6122afe80c24e6b691b8e131e170}} 
+\index{CMilBuffer@{CMilBuffer}!SelectWindow@{SelectWindow}}
+\index{SelectWindow@{SelectWindow}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SelectWindow()}{SelectWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Select\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+Mil\+Display,  }\item[{CWnd $\ast$}]{p\+HWindow,  }\item[{BOOL}]{b\+Remove = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a459083fc1624fe1a0312400e87d7eaff}\label{class_c_mil_buffer_a459083fc1624fe1a0312400e87d7eaff}} 
+\index{CMilBuffer@{CMilBuffer}!SelectWindow@{SelectWindow}}
+\index{SelectWindow@{SelectWindow}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SelectWindow()}{SelectWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Select\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+Mil\+Display,  }\item[{HWND}]{Client\+Window\+Handle }\end{DoxyParamCaption})}
+
+
+
+파라메터로 들어오는 Display로 윈도우 핸들로 Mil\+Buffer를 연결한다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Mil\+Display} & 연결할 Display buffer \\
+\hline
+{\em Client\+Window\+Handle} & 표시할 Dialog와 같은 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_ae6c54c96e48364044a6ca11b299a42a7}\label{class_c_mil_buffer_ae6c54c96e48364044a6ca11b299a42a7}} 
+\index{CMilBuffer@{CMilBuffer}!SelectWindow@{SelectWindow}}
+\index{SelectWindow@{SelectWindow}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SelectWindow()}{SelectWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Select\+Window (\begin{DoxyParamCaption}\item[{CWnd $\ast$}]{p\+HWindow }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer와 윈도우 핸들을 연결시킨다(화면에 보이기위해) 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+HWindow} & Mil Buffer를 보일 윈도우 핸들 Class \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_ae9aa47568805bfa333b0aae1c11120dd}\label{class_c_mil_buffer_ae9aa47568805bfa333b0aae1c11120dd}} 
+\index{CMilBuffer@{CMilBuffer}!SelectWindow@{SelectWindow}}
+\index{SelectWindow@{SelectWindow}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SelectWindow()}{SelectWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Select\+Window (\begin{DoxyParamCaption}\item[{HWND}]{Client\+Window\+Handle }\end{DoxyParamCaption})}
+
+
+
+Mil버퍼를 보일 Dialog와같은 원도우를 설정하는 함수 
+
+
+\begin{DoxyParams}{매개변수}
+{\em Client\+Window\+Handle} & 연결시킬 원도우의 핸들 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a725bff1a2a33f4ee8b75c18c8ea7dac5}\label{class_c_mil_buffer_a725bff1a2a33f4ee8b75c18c8ea7dac5}} 
+\index{CMilBuffer@{CMilBuffer}!SetAttribute@{SetAttribute}}
+\index{SetAttribute@{SetAttribute}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetAttribute()}{SetAttribute()}}
+{\footnotesize\ttfamily MIL\+\_\+\+INT64 CMil\+Buffer\+::\+Set\+Attribute (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+INT64}]{Buffer\+Attribute }\end{DoxyParamCaption})}
+
+
+
+할당할 Mil Buffer의 Atrribute를 설정한다 ~\newline
+ 이미할당한것을 변경하는것이 아니다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em Buffer\+Attribute} & 설정할 속성값 ~\newline
+ M\+\_\+\+IMAGE, M\+\_\+\+DISP, M\+\_\+\+GRAB, M\+\_\+\+PROC, M\+\_\+\+DIB \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_a2b743cb7e424b8508c51ced475a27601}\label{class_c_mil_buffer_a2b743cb7e424b8508c51ced475a27601}} 
+\index{CMilBuffer@{CMilBuffer}!SetChannelCount@{SetChannelCount}}
+\index{SetChannelCount@{SetChannelCount}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetChannelCount()}{SetChannelCount()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Set\+Channel\+Count (\begin{DoxyParamCaption}\item[{int}]{n\+Channel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a9a5320e1ae9e8ae0278e11fda4190ad2}\label{class_c_mil_buffer_a9a5320e1ae9e8ae0278e11fda4190ad2}} 
+\index{CMilBuffer@{CMilBuffer}!SetDepth@{SetDepth}}
+\index{SetDepth@{SetDepth}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetDepth()}{SetDepth()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Set\+Depth (\begin{DoxyParamCaption}\item[{int}]{Depth }\end{DoxyParamCaption})}
+
+
+
+할당할 버퍼의 Depth설정 ~\newline
+ 1,8,16,32 M\+\_\+\+FLOAT, M\+\_\+\+SIGNED, M\+\_\+\+UNSIGNED 
+
+\mbox{\Hypertarget{class_c_mil_buffer_ae204ca847b712f22268b6e096e005e69}\label{class_c_mil_buffer_ae204ca847b712f22268b6e096e005e69}} 
+\index{CMilBuffer@{CMilBuffer}!SetDisplay@{SetDisplay}}
+\index{SetDisplay@{SetDisplay}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetDisplay()}{SetDisplay()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Set\+Display (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+Mil\+Display }\end{DoxyParamCaption})}
+
+
+
+Display버퍼를 할당함 ~\newline
+ 연결을 하지 않고 있음 
+
+\mbox{\Hypertarget{class_c_mil_buffer_aa7296b86602cce86cddc5608341ac09f}\label{class_c_mil_buffer_aa7296b86602cce86cddc5608341ac09f}} 
+\index{CMilBuffer@{CMilBuffer}!SetFileFormat@{SetFileFormat}}
+\index{SetFileFormat@{SetFileFormat}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetFileFormat()}{SetFileFormat()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Set\+File\+Format (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+INT}]{i\+File\+Format }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer을 각종형태의 파일로 저장 M\+\_\+\+BMP, M\+\_\+\+JPEG, M\+\_\+\+TIFF 
+
+
+\begin{DoxyParams}{매개변수}
+{\em m\+\_\+i\+File\+Format} & 저장할 파일 포멧 ~\newline
+ M\+\_\+\+BMP,M\+\_\+\+JPEG\+\_\+\+LOSSLESS, M\+\_\+\+JPEG2000\+\_\+\+LOSSLESS, M\+\_\+\+JPEG\+\_\+\+LOSSLESS\+\_\+\+INTERLACED, M\+\_\+\+JPEG2000\+\_\+\+LOSSLESS\+\_\+\+JP2 ~\newline
+ M\+\_\+\+JPEG\+\_\+\+LOSSY,M\+\_\+\+JPEG2000\+\_\+\+LOSSY,M\+\_\+\+JPEG\+\_\+\+LOSSY\+\_\+\+INTERLACED,M\+\_\+\+JPEG2000\+\_\+\+LOSSY\+\_\+\+JP2,M\+\_\+\+JPEG\+\_\+\+LOSSY\+\_\+\+RGB ~\newline
+ M\+\_\+\+MIL+, M\+\_\+\+RAW, M\+\_\+\+TIFF+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_buffer_ab8a5c78c2ab42e7c4671f7a3a828635e}\label{class_c_mil_buffer_ab8a5c78c2ab42e7c4671f7a3a828635e}} 
+\index{CMilBuffer@{CMilBuffer}!SetIDBuffer@{SetIDBuffer}}
+\index{SetIDBuffer@{SetIDBuffer}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetIDBuffer()}{SetIDBuffer()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Set\+IDBuffer (\begin{DoxyParamCaption}\item[{int}]{mil\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_af439411f180488c69ab0721f54996359}\label{class_c_mil_buffer_af439411f180488c69ab0721f54996359}} 
+\index{CMilBuffer@{CMilBuffer}!SetImageProperties@{SetImageProperties}}
+\index{SetImageProperties@{SetImageProperties}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{SetImageProperties()}{SetImageProperties()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Set\+Image\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt_image_properties}{t\+Image\+Properties}} $\ast$}]{p\+Image\+Properties }\end{DoxyParamCaption})}
+
+
+
+Alloc을 할때 다른 Image\+Porperties를 사용하여 설정함 ~\newline
+ Alloc을 해야만 영향을 미침 
+
+\mbox{\Hypertarget{class_c_mil_buffer_ae16707f310b9c2399025daf601be1724}\label{class_c_mil_buffer_ae16707f310b9c2399025daf601be1724}} 
+\index{CMilBuffer@{CMilBuffer}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{Unlock()}{Unlock()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a898781beea4aa727fe722a6340561ba7}\label{class_c_mil_buffer_a898781beea4aa727fe722a6340561ba7}} 
+\index{CMilBuffer@{CMilBuffer}!UnSelectDisp@{UnSelectDisp}}
+\index{UnSelectDisp@{UnSelectDisp}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{UnSelectDisp()}{UnSelectDisp()}}
+{\footnotesize\ttfamily void CMil\+Buffer\+::\+Un\+Select\+Disp (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Mil Buffer와 Display와 연결된것을 해지한다. 
+
+\mbox{\Hypertarget{class_c_mil_buffer_a1ed13ef5eae3f54e268441ffb9a4f2ff}\label{class_c_mil_buffer_a1ed13ef5eae3f54e268441ffb9a4f2ff}} 
+\index{CMilBuffer@{CMilBuffer}!WndLvlTranform@{WndLvlTranform}}
+\index{WndLvlTranform@{WndLvlTranform}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{WndLvlTranform()}{WndLvlTranform()}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::\+Wnd\+Lvl\+Tranform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Buf\+Dest,  }\item[{int}]{Org\+Start,  }\item[{int}]{Org\+End,  }\item[{int}]{Dest\+Start,  }\item[{int}]{Dest\+End }\end{DoxyParamCaption})}
+
+
+
+Gray Value Windowing처리를 한다. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Buf\+Dest} & 처리된 결과가 들어갈 버퍼 \\
+\hline
+{\em Org\+Start} & 원본의 시작 Gray value \\
+\hline
+{\em Org\+End} & 원본의 끝 Gray value \\
+\hline
+{\em Dest\+Start} & 처리된 결과의 시작 Gray value \\
+\hline
+{\em Dest\+End} & 처리된 결과의 최대 Gray value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_buffer_aec0ce0448bf826ef372504f0d2d8fef8}\label{class_c_mil_buffer_aec0ce0448bf826ef372504f0d2d8fef8}} 
+\index{CMilBuffer@{CMilBuffer}!m\_bAVIClosed@{m\_bAVIClosed}}
+\index{m\_bAVIClosed@{m\_bAVIClosed}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_bAVIClosed}{m\_bAVIClosed}}
+{\footnotesize\ttfamily BOOL CMil\+Buffer\+::m\+\_\+b\+AVIClosed}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a325eb4afcc666d91c0797a922d80db6a}\label{class_c_mil_buffer_a325eb4afcc666d91c0797a922d80db6a}} 
+\index{CMilBuffer@{CMilBuffer}!m\_BufAttr@{m\_BufAttr}}
+\index{m\_BufAttr@{m\_BufAttr}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_BufAttr}{m\_BufAttr}}
+{\footnotesize\ttfamily MIL\+\_\+\+INT64 CMil\+Buffer\+::m\+\_\+\+Buf\+Attr}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a322642fdb4985d47abfbdd0aed21d3f1}\label{class_c_mil_buffer_a322642fdb4985d47abfbdd0aed21d3f1}} 
+\index{CMilBuffer@{CMilBuffer}!m\_iDepth@{m\_iDepth}}
+\index{m\_iDepth@{m\_iDepth}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_iDepth}{m\_iDepth}}
+{\footnotesize\ttfamily MIL\+\_\+\+INT CMil\+Buffer\+::m\+\_\+i\+Depth}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a5ce9116f490b82c84982a8e2d79cfb9e}\label{class_c_mil_buffer_a5ce9116f490b82c84982a8e2d79cfb9e}} 
+\index{CMilBuffer@{CMilBuffer}!m\_iFileFormat@{m\_iFileFormat}}
+\index{m\_iFileFormat@{m\_iFileFormat}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_iFileFormat}{m\_iFileFormat}}
+{\footnotesize\ttfamily MIL\+\_\+\+INT CMil\+Buffer\+::m\+\_\+i\+File\+Format}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a4f8de6ecddc206dbf64c6eb5a211af6e}\label{class_c_mil_buffer_a4f8de6ecddc206dbf64c6eb5a211af6e}} 
+\index{CMilBuffer@{CMilBuffer}!m\_milIDBuffCounter@{m\_milIDBuffCounter}}
+\index{m\_milIDBuffCounter@{m\_milIDBuffCounter}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_milIDBuffCounter}{m\_milIDBuffCounter}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::m\+\_\+mil\+IDBuff\+Counter =0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a4b9a9544567f3f29188ddb988ae8953a}\label{class_c_mil_buffer_a4b9a9544567f3f29188ddb988ae8953a}} 
+\index{CMilBuffer@{CMilBuffer}!m\_nChannel@{m\_nChannel}}
+\index{m\_nChannel@{m\_nChannel}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_nChannel}{m\_nChannel}}
+{\footnotesize\ttfamily int CMil\+Buffer\+::m\+\_\+n\+Channel}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a38a328d14027686da79b25799c649fa3}\label{class_c_mil_buffer_a38a328d14027686da79b25799c649fa3}} 
+\index{CMilBuffer@{CMilBuffer}!m\_pExportAVIInfo@{m\_pExportAVIInfo}}
+\index{m\_pExportAVIInfo@{m\_pExportAVIInfo}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_pExportAVIInfo}{m\_pExportAVIInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structt_export_a_v_i}{t\+Export\+AVI}}$\ast$ CMil\+Buffer\+::m\+\_\+p\+Export\+AVIInfo}
+
+\mbox{\Hypertarget{class_c_mil_buffer_a47e7eeeb25bafed83775bce21d2bfe3c}\label{class_c_mil_buffer_a47e7eeeb25bafed83775bce21d2bfe3c}} 
+\index{CMilBuffer@{CMilBuffer}!m\_pHWndSelected@{m\_pHWndSelected}}
+\index{m\_pHWndSelected@{m\_pHWndSelected}!CMilBuffer@{CMilBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_pHWndSelected}{m\_pHWndSelected}}
+{\footnotesize\ttfamily CWnd$\ast$ CMil\+Buffer\+::m\+\_\+p\+HWnd\+Selected}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_buffer_8h}{Mil\+Buffer.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_buffer_8cpp}{Mil\+Buffer.\+cpp}}\end{DoxyCompactItemize}

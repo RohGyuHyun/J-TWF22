@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Inspection: D:/OneDrive/ngh/J-TWF22/Project/Inspection/include/TimeCheck.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Inspection<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_bd976f84b5cc9bebc92e068d65fec952.html">OneDrive</a></li><li class="navelem"><a class="el" href="dir_526c377dd3d3fc952efb581059fc7050.html">ngh</a></li><li class="navelem"><a class="el" href="dir_03a9c10c0e9d1674deb214bc7339cb82.html">J-TWF22</a></li><li class="navelem"><a class="el" href="dir_6f840c36a948a9a39ad178e47c4e100c.html">Project</a></li><li class="navelem"><a class="el" href="dir_2fa6b85b08a3d5ce733a4e5a67a1adb8.html">Inspection</a></li><li class="navelem"><a class="el" href="dir_20461e0051bb9014d44a5b4d1d160328.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TimeCheck.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_time_check_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _CTIMER_CHECK</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _CTIMER_CHECK</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_c_timer_check.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_timer_check.html">CTimerCheck</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <a class="code hl_class" href="class_c_timer_check.html">CTimerCheck</a>(<span class="keywordtype">long</span> checktime = 100); <span class="comment">// 단위는 msec...</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <a class="code hl_function" href="class_c_timer_check.html#a7b127aab5aeda9356ff00d648363d30d">~CTimerCheck</a>();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">long</span> <a class="code hl_function" href="class_c_timer_check.html#ac808ecd70084448e32ddee6bbc7aad06">TimePassed</a>();      <span class="comment">// 현재 까지의 시간을 리턴....</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">long</span> <a class="code hl_function" href="class_c_timer_check.html#a2d26c1ba94100583ccecf1cafb85c4ab">GetCheckTime</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_timer_check.html#a25f957f5bf5f31773702e02e41243a10">SetCheckTime</a>(<span class="keywordtype">long</span> ctime);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_timer_check.html#abca6d70a39b653573602b225691134e4">IsTimeOver</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_timer_check.html#af10200d9c8b93a800b820d007d6f09eb">IsMoreThan</a>(<span class="keywordtype">long</span> ctime);    <span class="comment">// 단위는 msec..</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_timer_check.html#a80b679057f054694b0feb857a39b696c">IsLessThan</a>(<span class="keywordtype">long</span> ctime);    <span class="comment">// 단위는 msec..</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_timer_check.html#aa2ce7b35b1ea4b51f060e2e0b87e279e">StartTimer</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">long</span> m_CheckTime;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordtype">long</span> StartTime;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">long</span> EndTime;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_c_timer_check_html"><div class="ttname"><a href="class_c_timer_check.html">CTimerCheck</a></div><div class="ttdef"><b>Definition:</b> TimeCheck.h:5</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_a25f957f5bf5f31773702e02e41243a10"><div class="ttname"><a href="class_c_timer_check.html#a25f957f5bf5f31773702e02e41243a10">CTimerCheck::SetCheckTime</a></div><div class="ttdeci">void SetCheckTime(long ctime)</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:67</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_a2d26c1ba94100583ccecf1cafb85c4ab"><div class="ttname"><a href="class_c_timer_check.html#a2d26c1ba94100583ccecf1cafb85c4ab">CTimerCheck::GetCheckTime</a></div><div class="ttdeci">long GetCheckTime()</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:72</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_a7b127aab5aeda9356ff00d648363d30d"><div class="ttname"><a href="class_c_timer_check.html#a7b127aab5aeda9356ff00d648363d30d">CTimerCheck::~CTimerCheck</a></div><div class="ttdeci">~CTimerCheck()</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:11</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_a80b679057f054694b0feb857a39b696c"><div class="ttname"><a href="class_c_timer_check.html#a80b679057f054694b0feb857a39b696c">CTimerCheck::IsLessThan</a></div><div class="ttdeci">bool IsLessThan(long ctime)</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:22</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_aa2ce7b35b1ea4b51f060e2e0b87e279e"><div class="ttname"><a href="class_c_timer_check.html#aa2ce7b35b1ea4b51f060e2e0b87e279e">CTimerCheck::StartTimer</a></div><div class="ttdeci">void StartTimer()</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:16</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_abca6d70a39b653573602b225691134e4"><div class="ttname"><a href="class_c_timer_check.html#abca6d70a39b653573602b225691134e4">CTimerCheck::IsTimeOver</a></div><div class="ttdeci">bool IsTimeOver()</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:55</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_ac808ecd70084448e32ddee6bbc7aad06"><div class="ttname"><a href="class_c_timer_check.html#ac808ecd70084448e32ddee6bbc7aad06">CTimerCheck::TimePassed</a></div><div class="ttdeci">long TimePassed()</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:46</div></div>
+<div class="ttc" id="aclass_c_timer_check_html_af10200d9c8b93a800b820d007d6f09eb"><div class="ttname"><a href="class_c_timer_check.html#af10200d9c8b93a800b820d007d6f09eb">CTimerCheck::IsMoreThan</a></div><div class="ttdeci">bool IsMoreThan(long ctime)</div><div class="ttdef"><b>Definition:</b> TimeCheck.cpp:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 금 9월 23 2022 14:12:46, 프로젝트명 : Inspection, 생성자 : &#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

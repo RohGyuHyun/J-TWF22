@@ -1,0 +1,580 @@
+\hypertarget{_ngh_util_8h}{}\doxysection{D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\+Ngh\+Util.h 파일 참조}
+\label{_ngh_util_8h}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/NghUtil.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/NghUtil.h}}
+{\ttfamily \#include $<$Setup\+API.\+h$>$}\newline
+{\ttfamily \#include $<$Dbt.\+h$>$}\newline
+{\ttfamily \#include $<$atlstr.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+Ngh\+Util.\+h에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ngh_util_8h__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ngh_util_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}}
+\item 
+class \mbox{\hyperlink{class_cd_rect}{Cd\+Rect}}
+\item 
+class \mbox{\hyperlink{class_c_rs_port}{CRs\+Port}}
+\item 
+class \mbox{\hyperlink{class_c_barcode_rs_port_type}{CBarcode\+Rs\+Port\+Type}}
+\item 
+class \mbox{\hyperlink{class_c_barcode_keyboard_type}{CBarcode\+Keyboard\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a96b5217a0cc47821a45300e5821da783}{MAX\+\_\+\+VAL}}~255
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI}}~3.\+14159265
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a8a60f8362c81bdade1e142f7810a1a23}{SEARCH\+\_\+\+USB\+\_\+\+KEYBOARD}}~0
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a06f4ce3cb81c3b2d431e8033095377de}{SEARCH\+\_\+\+USB\+\_\+\+MOUSE}}~1
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a2047ed3549689306be755185a9e39f72}{NOT\+\_\+\+USE\+\_\+\+FUNC}}
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a126b96fc0900f393690296aea9c64f68}{CREATE\+\_\+\+CLASS}}(n\+Sys,  ptr,  Class)
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ab4fa05d7df45e96277ef150f6cc6bfd4}{CREATE\+\_\+\+DLG}}(n\+Sys,  ptr,  Class,  n\+IDD,  p\+Wnd,  n\+Show)
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a30a3ec387e38244827a3f772827af20d}{CREATE\+\_\+\+RECT\+\_\+\+DLG}}(ptr,  Class,  n\+IDD,  p\+Wnd,  rect,  n\+Show)
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a76d12b378497b5b143c28000324faa24}{CREATE\+\_\+\+EX\+\_\+\+DLG1}}(ptr,  Class,  n\+Show)
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_aca6b1f7f2f63c952326cf23895fa121a}{DELETE\+\_\+\+CLASS}}(ptr)~if(ptr) \{ delete ptr; ptr = NULL;\}
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_afcc736c936ebbfe8fad8740d3d5bfab1}{DELETE\+\_\+\+DLG}}(ptr)~if(ptr) \{(ptr)-\/$>$Destroy\+Window(); delete (ptr); ptr = NULL;\}
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a09b6953e6e039ed65072f88c5695f840}{DELETE\+\_\+\+ARRAY}}(ptr)~if(ptr)   \{ delete \mbox{[}$\,$\mbox{]} ptr; ptr = NULL;\}
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a46d68b8be271cc08ecad811f52bcd279}{FILE\+\_\+\+CREATE\+\_\+\+TIME}}~0
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ab0b2541388acb5dde42d8c505fa6f176}{FILE\+\_\+\+ACCESS\+\_\+\+TIME}}~1
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a62b68c567fb982c17053e8f79804bde7}{FILE\+\_\+\+WRITE\+\_\+\+TIME}}~2
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_af0f66dca78a00fede7c3864d4a30e820}{LIMITE\+\_\+\+RANGE\+\_\+\+CHECK\+\_\+\+TYPE\+\_\+\+INT}}~0
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a34f6d08297d1932f5daec0b80d6581de}{LIMITE\+\_\+\+RANGE\+\_\+\+CHECK\+\_\+\+TYPE\+\_\+\+DOUBLE}}~1
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_af19d48b9f61047a668649a2f9dc317ff}{NUL}}~0x00
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ab3796cca360697d3658162dba5965e28}{SOH}}~0x01
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_aacd744a917e61146ec8b7175b4761683}{STX}}~0x02
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_af02558e983dd26832a852bf186ed6726}{ETX}}~0x03
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_aa3210a5256085e136fed7897ae93a756}{EOT}}~0x04
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a4b4f88510ea966777e25224010c0a994}{ENQ}}~0x05
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a6f6489887e08bff4887d0bc5dcf214d8}{ACK}}~0x06
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a7ff3e502ffb5d509612c6c6741de45cc}{NAK}}~0x15
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_acdf721774c51e08c6609e6fa8cf82cc9}{XON}}~0x11
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a67fd78ae15d2b67c10d44d69a49ab1c5}{XOFF}}~0x13
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a4af1b6159e447ba72652bb7fcdfa726e}{ESC}}~0x1b
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a876ce77f3c672c7162658151e648389e}{CR}}~0x0d
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a350c9d6cb81908d59427ee96844d1a9c}{LF}}~0x0a
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ac1b10d698564ee5e870f42ca74f22d59}{SERIAL\+\_\+\+WRITE\+\_\+\+DELAY}}~40
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ad0365c05cefa1adf81dcd2ec1c65bf0c}{SERIAL\+\_\+\+READ\+\_\+\+DELAY}}~100
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}{END\+\_\+\+BARCODE\+\_\+\+READER\+\_\+\+CHAR}}~0x0d
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}{BARCODE\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+CNT}}~15
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_affdd02c6b32058e1ea5cc86c8d78d10f}{BARCODE\+\_\+\+READ\+\_\+\+THREAD\+\_\+\+END\+\_\+\+TIMEOUT}}~1000
+\item 
+\#define \mbox{\hyperlink{_ngh_util_8h_ac65bc0c9b4760ebb055063ef138cce60}{MAX\+\_\+\+BYTE\+\_\+\+CNT}}~200
+\end{DoxyCompactItemize}
+\doxysubsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} \mbox{\hyperlink{_ngh_util_8h_aa8fb14c2ccda76f907c3bd43cb7df05d}{TIME\+\_\+\+DATE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}{\+\_\+\+\_\+declspec}} (dllexport) int \mbox{\hyperlink{_ngh_util_8cpp_aa87625d6d24e987864417739501654fa}{Rand\+Val}}(int n\+Start = \+\_\+T(\char`\"{}D\+:\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ngh_util_8h_a07efaa18bdfba0d31b18cefda823374f}{n\+End}}
+\item 
+const CString \mbox{\hyperlink{_ngh_util_8h_a1358f699be13109f71df5ca6b1a55d55}{USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+GIGA\+\_\+\+BYTE}} = \+\_\+T(\char`\"{}GB\char`\"{})
+\item 
+const CString \mbox{\hyperlink{_ngh_util_8h_a0cc04fba13581d77ffe91b097d7492cd}{USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+MEGA\+\_\+\+BYTE}} = \+\_\+T(\char`\"{}MB\char`\"{})
+\item 
+const CString \mbox{\hyperlink{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}{USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+PERCENT}} = \+\_\+T(\char`\"{}PER\char`\"{})
+\item 
+CString \mbox{\hyperlink{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}{File\+Name}}
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8h_af1300690de3c6a4e76803e83cbd1af51}{b\+Event}} = FALSE)
+\item 
+double \mbox{\hyperlink{_ngh_util_8h_aa93131b56d4f88dadc070f19a7ba2fd6}{d\+Max}}
+\item 
+double double \mbox{\hyperlink{_ngh_util_8h_abe1f95b200441c080d433a188d65504c}{d\+After\+Val}}
+\item 
+double double double \mbox{\hyperlink{_ngh_util_8h_a7b3462627b9aacf7aa09979a39fa72ad}{d\+Befor\+Val}}
+\item 
+double double double int \mbox{\hyperlink{_ngh_util_8h_a4d9af100b9f858e1dc3c1b66b018bf9b}{n\+Input\+Type}} = \mbox{\hyperlink{_ngh_util_8h_af0f66dca78a00fede7c3864d4a30e820}{LIMITE\+\_\+\+RANGE\+\_\+\+CHECK\+\_\+\+TYPE\+\_\+\+INT}}
+\item 
+double double double int CString \mbox{\hyperlink{_ngh_util_8h_adfc704156de30042497c228c30dbca21}{str\+Input\+Label}} = NULL)
+\item 
+CString \mbox{\hyperlink{_ngh_util_8h_a698aca07fc55167ab7b0a1aeb207e85a}{str\+Size\+Type}} = \mbox{\hyperlink{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}{USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+PERCENT}})
+\item 
+SYSTEMTIME $\ast$ \mbox{\hyperlink{_ngh_util_8h_a1f9cb1d25414ba95ab7ee6f4a04dcd8c}{return\+Time}}
+\item 
+SYSTEMTIME int \mbox{\hyperlink{_ngh_util_8h_a05d4a6327dd04c2ce2d512b558c7e237}{n\+Get\+Time\+Type}} = \mbox{\hyperlink{_ngh_util_8h_a62b68c567fb982c17053e8f79804bde7}{FILE\+\_\+\+WRITE\+\_\+\+TIME}})
+\item 
+CString \mbox{\hyperlink{_ngh_util_8h_af9877f345f4cd49cab225f4f44395460}{str\+Backup\+File\+Path}}
+\item 
+CString CString \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{str\+File\+Name}}
+\item 
+int \mbox{\hyperlink{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}{n\+Each\+Rslt\+Cnt}}
+\item 
+int int \mbox{\hyperlink{_ngh_util_8h_a8f380b1c54ce5e92a6bf5b2d5b1dae69}{n\+Option}} = 0)
+\item 
+double \mbox{\hyperlink{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}{y}}
+\item 
+const int \mbox{\hyperlink{_ngh_util_8h_aa79e59d365151a3d3666cf8ca1452334}{DEF\+\_\+\+MAX\+\_\+\+SERIAL\+\_\+\+PORT}} = 6
+\begin{DoxyCompactList}\small\item\em Serial Port 수량 \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{_ngh_util_8h_a84eea3fc328d0baa941fe214ee013a6f}{ERR\+\_\+\+SERIAL\+\_\+\+PORT\+\_\+\+SUCCESS}} = 0
+\item 
+const int \mbox{\hyperlink{_ngh_util_8h_aca9c7436f9995afe9807cb5f22ab188b}{ERR\+\_\+\+PORT\+\_\+\+OPEN\+\_\+\+FAIL}} = 1
+\item 
+const int \mbox{\hyperlink{_ngh_util_8h_ae589d0a257191d743a17b4a2a9fc6d66}{ERR\+\_\+\+TIME\+\_\+\+OUT}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{매크로 문서화}
+\mbox{\Hypertarget{_ngh_util_8h_a6f6489887e08bff4887d0bc5dcf214d8}\label{_ngh_util_8h_a6f6489887e08bff4887d0bc5dcf214d8}} 
+\index{NghUtil.h@{NghUtil.h}!ACK@{ACK}}
+\index{ACK@{ACK}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ACK}{ACK}}
+{\footnotesize\ttfamily \#define ACK~0x06}
+
+\mbox{\Hypertarget{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}\label{_ngh_util_8h_a65e75c1c929caab1b07587bf62c70c2b}} 
+\index{NghUtil.h@{NghUtil.h}!BARCODE\_MAX\_STRING\_CNT@{BARCODE\_MAX\_STRING\_CNT}}
+\index{BARCODE\_MAX\_STRING\_CNT@{BARCODE\_MAX\_STRING\_CNT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{BARCODE\_MAX\_STRING\_CNT}{BARCODE\_MAX\_STRING\_CNT}}
+{\footnotesize\ttfamily \#define BARCODE\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+CNT~15}
+
+\mbox{\Hypertarget{_ngh_util_8h_affdd02c6b32058e1ea5cc86c8d78d10f}\label{_ngh_util_8h_affdd02c6b32058e1ea5cc86c8d78d10f}} 
+\index{NghUtil.h@{NghUtil.h}!BARCODE\_READ\_THREAD\_END\_TIMEOUT@{BARCODE\_READ\_THREAD\_END\_TIMEOUT}}
+\index{BARCODE\_READ\_THREAD\_END\_TIMEOUT@{BARCODE\_READ\_THREAD\_END\_TIMEOUT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{BARCODE\_READ\_THREAD\_END\_TIMEOUT}{BARCODE\_READ\_THREAD\_END\_TIMEOUT}}
+{\footnotesize\ttfamily \#define BARCODE\+\_\+\+READ\+\_\+\+THREAD\+\_\+\+END\+\_\+\+TIMEOUT~1000}
+
+\mbox{\Hypertarget{_ngh_util_8h_a876ce77f3c672c7162658151e648389e}\label{_ngh_util_8h_a876ce77f3c672c7162658151e648389e}} 
+\index{NghUtil.h@{NghUtil.h}!CR@{CR}}
+\index{CR@{CR}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{CR}{CR}}
+{\footnotesize\ttfamily \#define CR~0x0d}
+
+\mbox{\Hypertarget{_ngh_util_8h_a126b96fc0900f393690296aea9c64f68}\label{_ngh_util_8h_a126b96fc0900f393690296aea9c64f68}} 
+\index{NghUtil.h@{NghUtil.h}!CREATE\_CLASS@{CREATE\_CLASS}}
+\index{CREATE\_CLASS@{CREATE\_CLASS}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{CREATE\_CLASS}{CREATE\_CLASS}}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+CLASS(\begin{DoxyParamCaption}\item[{}]{n\+Sys,  }\item[{}]{ptr,  }\item[{}]{Class }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                                                                \textcolor{keywordflow}{if}(nSys == TRUE \&\& ptr == NULL) \(\backslash\)}
+\DoxyCodeLine{                                                                                \{ ptr = \textcolor{keyword}{new} Class;\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ngh_util_8h_ab4fa05d7df45e96277ef150f6cc6bfd4}\label{_ngh_util_8h_ab4fa05d7df45e96277ef150f6cc6bfd4}} 
+\index{NghUtil.h@{NghUtil.h}!CREATE\_DLG@{CREATE\_DLG}}
+\index{CREATE\_DLG@{CREATE\_DLG}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{CREATE\_DLG}{CREATE\_DLG}}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+DLG(\begin{DoxyParamCaption}\item[{}]{n\+Sys,  }\item[{}]{ptr,  }\item[{}]{Class,  }\item[{}]{n\+IDD,  }\item[{}]{p\+Wnd,  }\item[{}]{n\+Show }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                                                                                                \textcolor{keywordflow}{if}(nSys == TRUE \&\& ptr == NULL) \(\backslash\)}
+\DoxyCodeLine{                                                                                                                \{ ptr = \textcolor{keyword}{new} Class; \(\backslash\)}
+\DoxyCodeLine{                                                                                                                ptr-\/>Create(nIDD, pWnd); \(\backslash\)}
+\DoxyCodeLine{                                                                                                                ptr-\/>ShowWindow(nShow);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ngh_util_8h_a76d12b378497b5b143c28000324faa24}\label{_ngh_util_8h_a76d12b378497b5b143c28000324faa24}} 
+\index{NghUtil.h@{NghUtil.h}!CREATE\_EX\_DLG1@{CREATE\_EX\_DLG1}}
+\index{CREATE\_EX\_DLG1@{CREATE\_EX\_DLG1}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{CREATE\_EX\_DLG1}{CREATE\_EX\_DLG1}}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+EX\+\_\+\+DLG1(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{Class,  }\item[{}]{n\+Show }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                                                                                                \textcolor{keywordflow}{if}(ptr == NULL) \(\backslash\)}
+\DoxyCodeLine{                                                                                                                \{ ptr = \textcolor{keyword}{new} Class; ptr-\/>ShowWindow(nShow);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ngh_util_8h_a30a3ec387e38244827a3f772827af20d}\label{_ngh_util_8h_a30a3ec387e38244827a3f772827af20d}} 
+\index{NghUtil.h@{NghUtil.h}!CREATE\_RECT\_DLG@{CREATE\_RECT\_DLG}}
+\index{CREATE\_RECT\_DLG@{CREATE\_RECT\_DLG}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{CREATE\_RECT\_DLG}{CREATE\_RECT\_DLG}}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+RECT\+\_\+\+DLG(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{Class,  }\item[{}]{n\+IDD,  }\item[{}]{p\+Wnd,  }\item[{}]{rect,  }\item[{}]{n\+Show }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                                                                                                                \textcolor{keywordflow}{if}(ptr == NULL) \(\backslash\)}
+\DoxyCodeLine{                                                                                                                                \{ ptr = \textcolor{keyword}{new} Class; \(\backslash\)}
+\DoxyCodeLine{                                                                                                                                ptr-\/>Create(nIDD, pWnd); \(\backslash\)}
+\DoxyCodeLine{                                                                                                                                ptr-\/>MoveWindow(rect); \(\backslash\)}
+\DoxyCodeLine{                                                                                                                                ptr-\/>ShowWindow(nShow);\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ngh_util_8h_a09b6953e6e039ed65072f88c5695f840}\label{_ngh_util_8h_a09b6953e6e039ed65072f88c5695f840}} 
+\index{NghUtil.h@{NghUtil.h}!DELETE\_ARRAY@{DELETE\_ARRAY}}
+\index{DELETE\_ARRAY@{DELETE\_ARRAY}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{DELETE\_ARRAY}{DELETE\_ARRAY}}
+{\footnotesize\ttfamily \#define DELETE\+\_\+\+ARRAY(\begin{DoxyParamCaption}\item[{}]{ptr }\end{DoxyParamCaption})~if(ptr)   \{ delete \mbox{[}$\,$\mbox{]} ptr; ptr = NULL;\}}
+
+\mbox{\Hypertarget{_ngh_util_8h_aca6b1f7f2f63c952326cf23895fa121a}\label{_ngh_util_8h_aca6b1f7f2f63c952326cf23895fa121a}} 
+\index{NghUtil.h@{NghUtil.h}!DELETE\_CLASS@{DELETE\_CLASS}}
+\index{DELETE\_CLASS@{DELETE\_CLASS}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{DELETE\_CLASS}{DELETE\_CLASS}}
+{\footnotesize\ttfamily \#define DELETE\+\_\+\+CLASS(\begin{DoxyParamCaption}\item[{}]{ptr }\end{DoxyParamCaption})~if(ptr) \{ delete ptr; ptr = NULL;\}}
+
+\mbox{\Hypertarget{_ngh_util_8h_afcc736c936ebbfe8fad8740d3d5bfab1}\label{_ngh_util_8h_afcc736c936ebbfe8fad8740d3d5bfab1}} 
+\index{NghUtil.h@{NghUtil.h}!DELETE\_DLG@{DELETE\_DLG}}
+\index{DELETE\_DLG@{DELETE\_DLG}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{DELETE\_DLG}{DELETE\_DLG}}
+{\footnotesize\ttfamily \#define DELETE\+\_\+\+DLG(\begin{DoxyParamCaption}\item[{}]{ptr }\end{DoxyParamCaption})~if(ptr) \{(ptr)-\/$>$Destroy\+Window(); delete (ptr); ptr = NULL;\}}
+
+\mbox{\Hypertarget{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}\label{_ngh_util_8h_a1e6afd196a5e4d6aec4cc11e164593f9}} 
+\index{NghUtil.h@{NghUtil.h}!END\_BARCODE\_READER\_CHAR@{END\_BARCODE\_READER\_CHAR}}
+\index{END\_BARCODE\_READER\_CHAR@{END\_BARCODE\_READER\_CHAR}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{END\_BARCODE\_READER\_CHAR}{END\_BARCODE\_READER\_CHAR}}
+{\footnotesize\ttfamily \#define END\+\_\+\+BARCODE\+\_\+\+READER\+\_\+\+CHAR~0x0d}
+
+\mbox{\Hypertarget{_ngh_util_8h_a4b4f88510ea966777e25224010c0a994}\label{_ngh_util_8h_a4b4f88510ea966777e25224010c0a994}} 
+\index{NghUtil.h@{NghUtil.h}!ENQ@{ENQ}}
+\index{ENQ@{ENQ}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ENQ}{ENQ}}
+{\footnotesize\ttfamily \#define ENQ~0x05}
+
+\mbox{\Hypertarget{_ngh_util_8h_aa3210a5256085e136fed7897ae93a756}\label{_ngh_util_8h_aa3210a5256085e136fed7897ae93a756}} 
+\index{NghUtil.h@{NghUtil.h}!EOT@{EOT}}
+\index{EOT@{EOT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{EOT}{EOT}}
+{\footnotesize\ttfamily \#define EOT~0x04}
+
+\mbox{\Hypertarget{_ngh_util_8h_a4af1b6159e447ba72652bb7fcdfa726e}\label{_ngh_util_8h_a4af1b6159e447ba72652bb7fcdfa726e}} 
+\index{NghUtil.h@{NghUtil.h}!ESC@{ESC}}
+\index{ESC@{ESC}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ESC}{ESC}}
+{\footnotesize\ttfamily \#define ESC~0x1b}
+
+\mbox{\Hypertarget{_ngh_util_8h_af02558e983dd26832a852bf186ed6726}\label{_ngh_util_8h_af02558e983dd26832a852bf186ed6726}} 
+\index{NghUtil.h@{NghUtil.h}!ETX@{ETX}}
+\index{ETX@{ETX}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ETX}{ETX}}
+{\footnotesize\ttfamily \#define ETX~0x03}
+
+\mbox{\Hypertarget{_ngh_util_8h_ab0b2541388acb5dde42d8c505fa6f176}\label{_ngh_util_8h_ab0b2541388acb5dde42d8c505fa6f176}} 
+\index{NghUtil.h@{NghUtil.h}!FILE\_ACCESS\_TIME@{FILE\_ACCESS\_TIME}}
+\index{FILE\_ACCESS\_TIME@{FILE\_ACCESS\_TIME}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_ACCESS\_TIME}{FILE\_ACCESS\_TIME}}
+{\footnotesize\ttfamily \#define FILE\+\_\+\+ACCESS\+\_\+\+TIME~1}
+
+\mbox{\Hypertarget{_ngh_util_8h_a46d68b8be271cc08ecad811f52bcd279}\label{_ngh_util_8h_a46d68b8be271cc08ecad811f52bcd279}} 
+\index{NghUtil.h@{NghUtil.h}!FILE\_CREATE\_TIME@{FILE\_CREATE\_TIME}}
+\index{FILE\_CREATE\_TIME@{FILE\_CREATE\_TIME}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_CREATE\_TIME}{FILE\_CREATE\_TIME}}
+{\footnotesize\ttfamily \#define FILE\+\_\+\+CREATE\+\_\+\+TIME~0}
+
+\mbox{\Hypertarget{_ngh_util_8h_a62b68c567fb982c17053e8f79804bde7}\label{_ngh_util_8h_a62b68c567fb982c17053e8f79804bde7}} 
+\index{NghUtil.h@{NghUtil.h}!FILE\_WRITE\_TIME@{FILE\_WRITE\_TIME}}
+\index{FILE\_WRITE\_TIME@{FILE\_WRITE\_TIME}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_WRITE\_TIME}{FILE\_WRITE\_TIME}}
+{\footnotesize\ttfamily \#define FILE\+\_\+\+WRITE\+\_\+\+TIME~2}
+
+\mbox{\Hypertarget{_ngh_util_8h_a350c9d6cb81908d59427ee96844d1a9c}\label{_ngh_util_8h_a350c9d6cb81908d59427ee96844d1a9c}} 
+\index{NghUtil.h@{NghUtil.h}!LF@{LF}}
+\index{LF@{LF}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{LF}{LF}}
+{\footnotesize\ttfamily \#define LF~0x0a}
+
+\mbox{\Hypertarget{_ngh_util_8h_a34f6d08297d1932f5daec0b80d6581de}\label{_ngh_util_8h_a34f6d08297d1932f5daec0b80d6581de}} 
+\index{NghUtil.h@{NghUtil.h}!LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE@{LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE}}
+\index{LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE@{LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE}{LIMITE\_RANGE\_CHECK\_TYPE\_DOUBLE}}
+{\footnotesize\ttfamily \#define LIMITE\+\_\+\+RANGE\+\_\+\+CHECK\+\_\+\+TYPE\+\_\+\+DOUBLE~1}
+
+\mbox{\Hypertarget{_ngh_util_8h_af0f66dca78a00fede7c3864d4a30e820}\label{_ngh_util_8h_af0f66dca78a00fede7c3864d4a30e820}} 
+\index{NghUtil.h@{NghUtil.h}!LIMITE\_RANGE\_CHECK\_TYPE\_INT@{LIMITE\_RANGE\_CHECK\_TYPE\_INT}}
+\index{LIMITE\_RANGE\_CHECK\_TYPE\_INT@{LIMITE\_RANGE\_CHECK\_TYPE\_INT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{LIMITE\_RANGE\_CHECK\_TYPE\_INT}{LIMITE\_RANGE\_CHECK\_TYPE\_INT}}
+{\footnotesize\ttfamily \#define LIMITE\+\_\+\+RANGE\+\_\+\+CHECK\+\_\+\+TYPE\+\_\+\+INT~0}
+
+\mbox{\Hypertarget{_ngh_util_8h_ae71449b1cc6e6250b91f539153a7a0d3}\label{_ngh_util_8h_ae71449b1cc6e6250b91f539153a7a0d3}} 
+\index{NghUtil.h@{NghUtil.h}!M\_PI@{M\_PI}}
+\index{M\_PI@{M\_PI}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{M\_PI}{M\_PI}}
+{\footnotesize\ttfamily \#define M\+\_\+\+PI~3.\+14159265}
+
+\mbox{\Hypertarget{_ngh_util_8h_ac65bc0c9b4760ebb055063ef138cce60}\label{_ngh_util_8h_ac65bc0c9b4760ebb055063ef138cce60}} 
+\index{NghUtil.h@{NghUtil.h}!MAX\_BYTE\_CNT@{MAX\_BYTE\_CNT}}
+\index{MAX\_BYTE\_CNT@{MAX\_BYTE\_CNT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_BYTE\_CNT}{MAX\_BYTE\_CNT}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+BYTE\+\_\+\+CNT~200}
+
+\mbox{\Hypertarget{_ngh_util_8h_a96b5217a0cc47821a45300e5821da783}\label{_ngh_util_8h_a96b5217a0cc47821a45300e5821da783}} 
+\index{NghUtil.h@{NghUtil.h}!MAX\_VAL@{MAX\_VAL}}
+\index{MAX\_VAL@{MAX\_VAL}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_VAL}{MAX\_VAL}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+VAL~255}
+
+\mbox{\Hypertarget{_ngh_util_8h_a7ff3e502ffb5d509612c6c6741de45cc}\label{_ngh_util_8h_a7ff3e502ffb5d509612c6c6741de45cc}} 
+\index{NghUtil.h@{NghUtil.h}!NAK@{NAK}}
+\index{NAK@{NAK}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{NAK}{NAK}}
+{\footnotesize\ttfamily \#define NAK~0x15}
+
+\mbox{\Hypertarget{_ngh_util_8h_a2047ed3549689306be755185a9e39f72}\label{_ngh_util_8h_a2047ed3549689306be755185a9e39f72}} 
+\index{NghUtil.h@{NghUtil.h}!NOT\_USE\_FUNC@{NOT\_USE\_FUNC}}
+\index{NOT\_USE\_FUNC@{NOT\_USE\_FUNC}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{NOT\_USE\_FUNC}{NOT\_USE\_FUNC}}
+{\footnotesize\ttfamily \#define NOT\+\_\+\+USE\+\_\+\+FUNC}
+
+\mbox{\Hypertarget{_ngh_util_8h_af19d48b9f61047a668649a2f9dc317ff}\label{_ngh_util_8h_af19d48b9f61047a668649a2f9dc317ff}} 
+\index{NghUtil.h@{NghUtil.h}!NUL@{NUL}}
+\index{NUL@{NUL}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{NUL}{NUL}}
+{\footnotesize\ttfamily \#define NUL~0x00}
+
+\mbox{\Hypertarget{_ngh_util_8h_a8a60f8362c81bdade1e142f7810a1a23}\label{_ngh_util_8h_a8a60f8362c81bdade1e142f7810a1a23}} 
+\index{NghUtil.h@{NghUtil.h}!SEARCH\_USB\_KEYBOARD@{SEARCH\_USB\_KEYBOARD}}
+\index{SEARCH\_USB\_KEYBOARD@{SEARCH\_USB\_KEYBOARD}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{SEARCH\_USB\_KEYBOARD}{SEARCH\_USB\_KEYBOARD}}
+{\footnotesize\ttfamily \#define SEARCH\+\_\+\+USB\+\_\+\+KEYBOARD~0}
+
+\mbox{\Hypertarget{_ngh_util_8h_a06f4ce3cb81c3b2d431e8033095377de}\label{_ngh_util_8h_a06f4ce3cb81c3b2d431e8033095377de}} 
+\index{NghUtil.h@{NghUtil.h}!SEARCH\_USB\_MOUSE@{SEARCH\_USB\_MOUSE}}
+\index{SEARCH\_USB\_MOUSE@{SEARCH\_USB\_MOUSE}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{SEARCH\_USB\_MOUSE}{SEARCH\_USB\_MOUSE}}
+{\footnotesize\ttfamily \#define SEARCH\+\_\+\+USB\+\_\+\+MOUSE~1}
+
+\mbox{\Hypertarget{_ngh_util_8h_ad0365c05cefa1adf81dcd2ec1c65bf0c}\label{_ngh_util_8h_ad0365c05cefa1adf81dcd2ec1c65bf0c}} 
+\index{NghUtil.h@{NghUtil.h}!SERIAL\_READ\_DELAY@{SERIAL\_READ\_DELAY}}
+\index{SERIAL\_READ\_DELAY@{SERIAL\_READ\_DELAY}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{SERIAL\_READ\_DELAY}{SERIAL\_READ\_DELAY}}
+{\footnotesize\ttfamily \#define SERIAL\+\_\+\+READ\+\_\+\+DELAY~100}
+
+\mbox{\Hypertarget{_ngh_util_8h_ac1b10d698564ee5e870f42ca74f22d59}\label{_ngh_util_8h_ac1b10d698564ee5e870f42ca74f22d59}} 
+\index{NghUtil.h@{NghUtil.h}!SERIAL\_WRITE\_DELAY@{SERIAL\_WRITE\_DELAY}}
+\index{SERIAL\_WRITE\_DELAY@{SERIAL\_WRITE\_DELAY}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{SERIAL\_WRITE\_DELAY}{SERIAL\_WRITE\_DELAY}}
+{\footnotesize\ttfamily \#define SERIAL\+\_\+\+WRITE\+\_\+\+DELAY~40}
+
+\mbox{\Hypertarget{_ngh_util_8h_ab3796cca360697d3658162dba5965e28}\label{_ngh_util_8h_ab3796cca360697d3658162dba5965e28}} 
+\index{NghUtil.h@{NghUtil.h}!SOH@{SOH}}
+\index{SOH@{SOH}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{SOH}{SOH}}
+{\footnotesize\ttfamily \#define SOH~0x01}
+
+\mbox{\Hypertarget{_ngh_util_8h_aacd744a917e61146ec8b7175b4761683}\label{_ngh_util_8h_aacd744a917e61146ec8b7175b4761683}} 
+\index{NghUtil.h@{NghUtil.h}!STX@{STX}}
+\index{STX@{STX}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{STX}{STX}}
+{\footnotesize\ttfamily \#define STX~0x02}
+
+\mbox{\Hypertarget{_ngh_util_8h_a67fd78ae15d2b67c10d44d69a49ab1c5}\label{_ngh_util_8h_a67fd78ae15d2b67c10d44d69a49ab1c5}} 
+\index{NghUtil.h@{NghUtil.h}!XOFF@{XOFF}}
+\index{XOFF@{XOFF}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{XOFF}{XOFF}}
+{\footnotesize\ttfamily \#define XOFF~0x13}
+
+\mbox{\Hypertarget{_ngh_util_8h_acdf721774c51e08c6609e6fa8cf82cc9}\label{_ngh_util_8h_acdf721774c51e08c6609e6fa8cf82cc9}} 
+\index{NghUtil.h@{NghUtil.h}!XON@{XON}}
+\index{XON@{XON}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{XON}{XON}}
+{\footnotesize\ttfamily \#define XON~0x11}
+
+
+
+\doxysubsection{타입정의 문서화}
+\mbox{\Hypertarget{_ngh_util_8h_aa8fb14c2ccda76f907c3bd43cb7df05d}\label{_ngh_util_8h_aa8fb14c2ccda76f907c3bd43cb7df05d}} 
+\index{NghUtil.h@{NghUtil.h}!TIME\_DATE@{TIME\_DATE}}
+\index{TIME\_DATE@{TIME\_DATE}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{TIME\_DATE}{TIME\_DATE}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}}}
+
+
+
+\doxysubsection{함수 문서화}
+\mbox{\Hypertarget{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}\label{_ngh_util_8h_aea302a13c85969cfc94c5cf39afa56dc}} 
+\index{NghUtil.h@{NghUtil.h}!\_\_declspec@{\_\_declspec}}
+\index{\_\_declspec@{\_\_declspec}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{\_\_declspec()}{\_\_declspec()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+declspec (\begin{DoxyParamCaption}\item[{dllexport}]{ }\end{DoxyParamCaption}) = \+\_\+T(\char`\"{}D\+:\char`\"{})}
+
+
+
+\doxysubsection{변수 문서화}
+\mbox{\Hypertarget{_ngh_util_8h_af1300690de3c6a4e76803e83cbd1af51}\label{_ngh_util_8h_af1300690de3c6a4e76803e83cbd1af51}} 
+\index{NghUtil.h@{NghUtil.h}!bEvent@{bEvent}}
+\index{bEvent@{bEvent}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{bEvent}{bEvent}}
+{\footnotesize\ttfamily BOOL b\+Event = FALSE)}
+
+\mbox{\Hypertarget{_ngh_util_8h_abe1f95b200441c080d433a188d65504c}\label{_ngh_util_8h_abe1f95b200441c080d433a188d65504c}} 
+\index{NghUtil.h@{NghUtil.h}!dAfterVal@{dAfterVal}}
+\index{dAfterVal@{dAfterVal}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{dAfterVal}{dAfterVal}}
+{\footnotesize\ttfamily double double d\+After\+Val}
+
+\mbox{\Hypertarget{_ngh_util_8h_a7b3462627b9aacf7aa09979a39fa72ad}\label{_ngh_util_8h_a7b3462627b9aacf7aa09979a39fa72ad}} 
+\index{NghUtil.h@{NghUtil.h}!dBeforVal@{dBeforVal}}
+\index{dBeforVal@{dBeforVal}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{dBeforVal}{dBeforVal}}
+{\footnotesize\ttfamily double double double d\+Befor\+Val}
+
+\mbox{\Hypertarget{_ngh_util_8h_aa79e59d365151a3d3666cf8ca1452334}\label{_ngh_util_8h_aa79e59d365151a3d3666cf8ca1452334}} 
+\index{NghUtil.h@{NghUtil.h}!DEF\_MAX\_SERIAL\_PORT@{DEF\_MAX\_SERIAL\_PORT}}
+\index{DEF\_MAX\_SERIAL\_PORT@{DEF\_MAX\_SERIAL\_PORT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{DEF\_MAX\_SERIAL\_PORT}{DEF\_MAX\_SERIAL\_PORT}}
+{\footnotesize\ttfamily const int DEF\+\_\+\+MAX\+\_\+\+SERIAL\+\_\+\+PORT = 6}
+
+
+
+Serial Port 수량 
+
+\mbox{\Hypertarget{_ngh_util_8h_aa93131b56d4f88dadc070f19a7ba2fd6}\label{_ngh_util_8h_aa93131b56d4f88dadc070f19a7ba2fd6}} 
+\index{NghUtil.h@{NghUtil.h}!dMax@{dMax}}
+\index{dMax@{dMax}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{dMax}{dMax}}
+{\footnotesize\ttfamily double d\+Max}
+
+\mbox{\Hypertarget{_ngh_util_8h_aca9c7436f9995afe9807cb5f22ab188b}\label{_ngh_util_8h_aca9c7436f9995afe9807cb5f22ab188b}} 
+\index{NghUtil.h@{NghUtil.h}!ERR\_PORT\_OPEN\_FAIL@{ERR\_PORT\_OPEN\_FAIL}}
+\index{ERR\_PORT\_OPEN\_FAIL@{ERR\_PORT\_OPEN\_FAIL}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ERR\_PORT\_OPEN\_FAIL}{ERR\_PORT\_OPEN\_FAIL}}
+{\footnotesize\ttfamily const int ERR\+\_\+\+PORT\+\_\+\+OPEN\+\_\+\+FAIL = 1}
+
+\mbox{\Hypertarget{_ngh_util_8h_a84eea3fc328d0baa941fe214ee013a6f}\label{_ngh_util_8h_a84eea3fc328d0baa941fe214ee013a6f}} 
+\index{NghUtil.h@{NghUtil.h}!ERR\_SERIAL\_PORT\_SUCCESS@{ERR\_SERIAL\_PORT\_SUCCESS}}
+\index{ERR\_SERIAL\_PORT\_SUCCESS@{ERR\_SERIAL\_PORT\_SUCCESS}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ERR\_SERIAL\_PORT\_SUCCESS}{ERR\_SERIAL\_PORT\_SUCCESS}}
+{\footnotesize\ttfamily const int ERR\+\_\+\+SERIAL\+\_\+\+PORT\+\_\+\+SUCCESS = 0}
+
+\mbox{\Hypertarget{_ngh_util_8h_ae589d0a257191d743a17b4a2a9fc6d66}\label{_ngh_util_8h_ae589d0a257191d743a17b4a2a9fc6d66}} 
+\index{NghUtil.h@{NghUtil.h}!ERR\_TIME\_OUT@{ERR\_TIME\_OUT}}
+\index{ERR\_TIME\_OUT@{ERR\_TIME\_OUT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{ERR\_TIME\_OUT}{ERR\_TIME\_OUT}}
+{\footnotesize\ttfamily const int ERR\+\_\+\+TIME\+\_\+\+OUT = 2}
+
+\mbox{\Hypertarget{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}\label{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}} 
+\index{NghUtil.h@{NghUtil.h}!FileName@{FileName}}
+\index{FileName@{FileName}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{FileName}{FileName}}
+{\footnotesize\ttfamily CString File\+Name}
+
+\mbox{\Hypertarget{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}\label{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}} 
+\index{NghUtil.h@{NghUtil.h}!nEachRsltCnt@{nEachRsltCnt}}
+\index{nEachRsltCnt@{nEachRsltCnt}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{nEachRsltCnt}{nEachRsltCnt}}
+{\footnotesize\ttfamily int n\+Each\+Rslt\+Cnt}
+
+\mbox{\Hypertarget{_ngh_util_8h_a07efaa18bdfba0d31b18cefda823374f}\label{_ngh_util_8h_a07efaa18bdfba0d31b18cefda823374f}} 
+\index{NghUtil.h@{NghUtil.h}!nEnd@{nEnd}}
+\index{nEnd@{nEnd}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{nEnd}{nEnd}}
+{\footnotesize\ttfamily int n\+End}
+
+\mbox{\Hypertarget{_ngh_util_8h_a05d4a6327dd04c2ce2d512b558c7e237}\label{_ngh_util_8h_a05d4a6327dd04c2ce2d512b558c7e237}} 
+\index{NghUtil.h@{NghUtil.h}!nGetTimeType@{nGetTimeType}}
+\index{nGetTimeType@{nGetTimeType}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{nGetTimeType}{nGetTimeType}}
+{\footnotesize\ttfamily SYSTEMTIME int n\+Get\+Time\+Type = \mbox{\hyperlink{_ngh_util_8h_a62b68c567fb982c17053e8f79804bde7}{FILE\+\_\+\+WRITE\+\_\+\+TIME}})}
+
+\mbox{\Hypertarget{_ngh_util_8h_a4d9af100b9f858e1dc3c1b66b018bf9b}\label{_ngh_util_8h_a4d9af100b9f858e1dc3c1b66b018bf9b}} 
+\index{NghUtil.h@{NghUtil.h}!nInputType@{nInputType}}
+\index{nInputType@{nInputType}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{nInputType}{nInputType}}
+{\footnotesize\ttfamily double double double int n\+Input\+Type = \mbox{\hyperlink{_ngh_util_8h_af0f66dca78a00fede7c3864d4a30e820}{LIMITE\+\_\+\+RANGE\+\_\+\+CHECK\+\_\+\+TYPE\+\_\+\+INT}}}
+
+\mbox{\Hypertarget{_ngh_util_8h_a8f380b1c54ce5e92a6bf5b2d5b1dae69}\label{_ngh_util_8h_a8f380b1c54ce5e92a6bf5b2d5b1dae69}} 
+\index{NghUtil.h@{NghUtil.h}!nOption@{nOption}}
+\index{nOption@{nOption}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{nOption}{nOption}}
+{\footnotesize\ttfamily int int n\+Option = 0)}
+
+\mbox{\Hypertarget{_ngh_util_8h_a1f9cb1d25414ba95ab7ee6f4a04dcd8c}\label{_ngh_util_8h_a1f9cb1d25414ba95ab7ee6f4a04dcd8c}} 
+\index{NghUtil.h@{NghUtil.h}!returnTime@{returnTime}}
+\index{returnTime@{returnTime}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{returnTime}{returnTime}}
+{\footnotesize\ttfamily SYSTEMTIME$\ast$ return\+Time}
+
+\mbox{\Hypertarget{_ngh_util_8h_af9877f345f4cd49cab225f4f44395460}\label{_ngh_util_8h_af9877f345f4cd49cab225f4f44395460}} 
+\index{NghUtil.h@{NghUtil.h}!strBackupFilePath@{strBackupFilePath}}
+\index{strBackupFilePath@{strBackupFilePath}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{strBackupFilePath}{strBackupFilePath}}
+{\footnotesize\ttfamily CString str\+Backup\+File\+Path}
+
+\mbox{\Hypertarget{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}\label{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}} 
+\index{NghUtil.h@{NghUtil.h}!strFileName@{strFileName}}
+\index{strFileName@{strFileName}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{strFileName}{strFileName}}
+{\footnotesize\ttfamily CString CString str\+File\+Name}
+
+\mbox{\Hypertarget{_ngh_util_8h_adfc704156de30042497c228c30dbca21}\label{_ngh_util_8h_adfc704156de30042497c228c30dbca21}} 
+\index{NghUtil.h@{NghUtil.h}!strInputLabel@{strInputLabel}}
+\index{strInputLabel@{strInputLabel}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{strInputLabel}{strInputLabel}}
+{\footnotesize\ttfamily double double double int CString str\+Input\+Label = NULL)}
+
+\mbox{\Hypertarget{_ngh_util_8h_a698aca07fc55167ab7b0a1aeb207e85a}\label{_ngh_util_8h_a698aca07fc55167ab7b0a1aeb207e85a}} 
+\index{NghUtil.h@{NghUtil.h}!strSizeType@{strSizeType}}
+\index{strSizeType@{strSizeType}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{strSizeType}{strSizeType}}
+{\footnotesize\ttfamily CString str\+Size\+Type = \mbox{\hyperlink{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}{USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+PERCENT}})}
+
+\mbox{\Hypertarget{_ngh_util_8h_a1358f699be13109f71df5ca6b1a55d55}\label{_ngh_util_8h_a1358f699be13109f71df5ca6b1a55d55}} 
+\index{NghUtil.h@{NghUtil.h}!USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE@{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE}}
+\index{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE@{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_GIGA\_BYTE}}
+{\footnotesize\ttfamily const CString USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+GIGA\+\_\+\+BYTE = \+\_\+T(\char`\"{}GB\char`\"{})}
+
+\mbox{\Hypertarget{_ngh_util_8h_a0cc04fba13581d77ffe91b097d7492cd}\label{_ngh_util_8h_a0cc04fba13581d77ffe91b097d7492cd}} 
+\index{NghUtil.h@{NghUtil.h}!USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE@{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE}}
+\index{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE@{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_MEGA\_BYTE}}
+{\footnotesize\ttfamily const CString USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+MEGA\+\_\+\+BYTE = \+\_\+T(\char`\"{}MB\char`\"{})}
+
+\mbox{\Hypertarget{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}\label{_ngh_util_8h_ac98e04076e338976bd7b40bb9bd33a02}} 
+\index{NghUtil.h@{NghUtil.h}!USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT@{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT}}
+\index{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT@{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT}{USE\_DRIVE\_FREE\_SIZE\_RETURN\_VAL\_PERCENT}}
+{\footnotesize\ttfamily const CString USE\+\_\+\+DRIVE\+\_\+\+FREE\+\_\+\+SIZE\+\_\+\+RETURN\+\_\+\+VAL\+\_\+\+PERCENT = \+\_\+T(\char`\"{}PER\char`\"{})}
+
+\mbox{\Hypertarget{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}\label{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}} 
+\index{NghUtil.h@{NghUtil.h}!y@{y}}
+\index{y@{y}!NghUtil.h@{NghUtil.h}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double y}
+

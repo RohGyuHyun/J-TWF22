@@ -1,0 +1,4 @@
+<map id="CMilDigitizer" name="CMilDigitizer">
+<area shape="rect" id="node1" title="Mil의 Migitizer관련 함수군을 Class화하였다 Digitizer는 Channel관리에 해당하는 Class이다" alt="" coords="5,79,100,104"/>
+<area shape="rect" id="node2" href="$class_c_mil_base.html" title="모든 Class의 Base Class로 공용의 자료활용에 사용됨" alt="" coords="13,5,92,31"/>
+</map>

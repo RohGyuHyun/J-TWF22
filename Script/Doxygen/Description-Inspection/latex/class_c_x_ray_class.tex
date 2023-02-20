@@ -1,0 +1,460 @@
+\hypertarget{class_c_x_ray_class}{}\doxysection{CXRay\+Class 클래스 참조}
+\label{class_c_x_ray_class}\index{CXRayClass@{CXRayClass}}
+
+
+{\ttfamily \#include $<$CXRay\+Class.\+h$>$}
+
+
+
+CXRay\+Class에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_ray_class__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}{CXRay\+Class}} ()
+\item 
+\mbox{\hyperlink{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}{$\sim$\+CXRay\+Class}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}{Status\+Polling\+Thread}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}{Set\+Send\+Command}} (\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}} cmd, int n\+Data=-\/1)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}{Set\+Read\+Command}} (BYTE $\ast$p\+Data, int n\+Cnt)
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}{Open\+Port}} (CString str\+Port\+Name=\+\_\+T(\char`\"{}COM2\char`\"{}), DWORD dw\+Baud=9600, int n\+Read\+Interval=1)
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}{Close}} ()
+\item 
+\mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} \mbox{\hyperlink{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}{Get\+Xray\+Info}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}{Get\+Por\+Connection}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}{Set\+Xray\+On\+Off}} (BOOL is\+On\+Off)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}{Set\+Xray\+Vol\+Cur}} (double d\+Vol, double d\+Cur)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}{Set\+Xray\+Rest\+Fault}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}{Set\+Warmup\+State}} (BOOL is\+Warmup)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}{Get\+Warmup\+State}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}{Set\+Xray\+End\+Time}} (\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} c\+End\+Time)
+\item 
+\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} \mbox{\hyperlink{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}{Get\+Xray\+End\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}{Set\+Test\+XRay\+Status}} (int n\+Idx, BOOL b\+Val)
+\item 
+\mbox{\hyperlink{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}{CXRay\+Class}} ()
+\item 
+\mbox{\hyperlink{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}{$\sim$\+CXRay\+Class}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}{Status\+Polling\+Thread}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}{Set\+Send\+Command}} (\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}} cmd, int n\+Data=-\/1)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}{Set\+Read\+Command}} (BYTE $\ast$p\+Data, int n\+Cnt)
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}{Open\+Port}} (CString str\+Port\+Name=\+\_\+T(\char`\"{}COM2\char`\"{}), DWORD dw\+Baud=9600, int n\+Read\+Interval=1)
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}{Close}} ()
+\item 
+\mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} \mbox{\hyperlink{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}{Get\+Xray\+Info}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}{Get\+Por\+Connection}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}{Set\+Xray\+On\+Off}} (BOOL is\+On\+Off)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}{Set\+Xray\+Vol\+Cur}} (double d\+Vol, double d\+Cur)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}{Set\+Xray\+Rest\+Fault}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}{Set\+Warmup\+State}} (BOOL is\+Warmup)
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}{Get\+Warmup\+State}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}{Set\+Xray\+End\+Time}} (\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} c\+End\+Time)
+\item 
+\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} \mbox{\hyperlink{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}{Get\+Xray\+End\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}{Set\+Test\+XRay\+Status}} (int n\+Idx, BOOL b\+Val)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}} $\ast$ \mbox{\hyperlink{class_c_x_ray_class_a411bf51de964aa99d496db140a563e7b}{Instance}} ()
+\item 
+static UINT \mbox{\hyperlink{class_c_x_ray_class_a6ab36108b97d538cece98ddf20d3f6b4}{Thread\+Status\+Polling}} (LPVOID p\+Param)
+\item 
+static \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}} $\ast$ \mbox{\hyperlink{class_c_x_ray_class_afdb23ca545f62db7572a17729867ddd7}{Instance}} ()
+\item 
+static UINT \mbox{\hyperlink{class_c_x_ray_class_a1fb5bbc0417df180e4d7166820231ee2}{Thread\+Status\+Polling}} (LPVOID p\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}} $\ast$ \mbox{\hyperlink{class_c_x_ray_class_a5cafaeadfd6b60edf1835c272836df30}{m\+\_\+p\+Instance}} = NULL
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_comm_thread}{CComm\+Thread}} \mbox{\hyperlink{class_c_x_ray_class_acdc3ebde959450b83a9e4d6adf5e3a0b}{m\+\_\+\+Comport}}
+\item 
+\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}} \mbox{\hyperlink{class_c_x_ray_class_a4fbe835763ff7fc90eed2032696bcbcc}{m\+\_\+\+Send\+Command}}
+\item 
+\mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} \mbox{\hyperlink{class_c_x_ray_class_a041f5aeff3dfcf3ed0438ff90cde0b1c}{m\+\_\+\+Xray\+Info}}
+\item 
+int \mbox{\hyperlink{class_c_x_ray_class_a5f8e0ab7d552cd28bc954460b096affa}{m\+\_\+n\+Send\+Data\+Value}}
+\item 
+CWin\+Thread $\ast$ \mbox{\hyperlink{class_c_x_ray_class_a49ff4e9681f94e4ef7cbf7dcb3abffb4}{m\+\_\+p\+Status\+Polling\+Thread}}
+\item 
+int \mbox{\hyperlink{class_c_x_ray_class_a0242079700b05e2bf0bd05d708e6e15a}{m\+\_\+n\+Polling\+Interval}}
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_a9c01391d22a17713e6c9a2fdee69158b}{m\+\_\+b\+Thread\+End}}
+\item 
+BOOL \mbox{\hyperlink{class_c_x_ray_class_ab573d74a6c9d5c8eb43654bc153ddacf}{m\+\_\+b\+Warm\+Up\+State}}
+\item 
+\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} \mbox{\hyperlink{class_c_x_ray_class_a0827bcf0b48e6beeb8710c53893e0016}{m\+\_\+\+Xray\+End\+Time}}
+\item 
+int \mbox{\hyperlink{class_c_x_ray_class_a5f0c2afd35984ade88c6ec2106c106e4}{m\+\_\+n\+Send\+Cmd\+Index}}
+\item 
+\mbox{\hyperlink{class_c_timer_check}{CTimer\+Check}} \mbox{\hyperlink{class_c_x_ray_class_a0b2a55a9943be38f3983d5ae07e62a37}{m\+\_\+\+Time\+Out\+Check}}
+\item 
+CString \mbox{\hyperlink{class_c_x_ray_class_aa437f89042c418d5a858cf758b06efee}{m\+\_\+str\+Port\+Name}}
+\item 
+DWORD \mbox{\hyperlink{class_c_x_ray_class_aac01921a8cc6bae8e52e188c9f4a3440}{m\+\_\+dw\+Baud}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}\label{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}} 
+\index{CXRayClass@{CXRayClass}!CXRayClass@{CXRayClass}}
+\index{CXRayClass@{CXRayClass}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{CXRayClass()}{CXRayClass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CXRay\+Class\+::\+CXRay\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}\label{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}} 
+\index{CXRayClass@{CXRayClass}!````~CXRayClass@{$\sim$CXRayClass}}
+\index{````~CXRayClass@{$\sim$CXRayClass}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{$\sim$CXRayClass()}{~CXRayClass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CXRay\+Class\+::$\sim$\+CXRay\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}\label{class_c_x_ray_class_ab673efda512503bcd340b02ac05e1a4f}} 
+\index{CXRayClass@{CXRayClass}!CXRayClass@{CXRayClass}}
+\index{CXRayClass@{CXRayClass}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{CXRayClass()}{CXRayClass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CXRay\+Class\+::\+CXRay\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}\label{class_c_x_ray_class_ac019cd4f526dde0904a6e3b68a356f58}} 
+\index{CXRayClass@{CXRayClass}!````~CXRayClass@{$\sim$CXRayClass}}
+\index{````~CXRayClass@{$\sim$CXRayClass}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{$\sim$CXRayClass()}{~CXRayClass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CXRay\+Class\+::$\sim$\+CXRay\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}\label{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}} 
+\index{CXRayClass@{CXRayClass}!Close@{Close}}
+\index{Close@{Close}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}\label{class_c_x_ray_class_ae28a0d8c0521a00a0889e454a2076a02}} 
+\index{CXRayClass@{CXRayClass}!Close@{Close}}
+\index{Close@{Close}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}\label{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}} 
+\index{CXRayClass@{CXRayClass}!GetPorConnection@{GetPorConnection}}
+\index{GetPorConnection@{GetPorConnection}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetPorConnection()}{GetPorConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Get\+Por\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}\label{class_c_x_ray_class_ad7c740a50bf711c74f43997aabaa2979}} 
+\index{CXRayClass@{CXRayClass}!GetPorConnection@{GetPorConnection}}
+\index{GetPorConnection@{GetPorConnection}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetPorConnection()}{GetPorConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Get\+Por\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}\label{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}} 
+\index{CXRayClass@{CXRayClass}!GetWarmupState@{GetWarmupState}}
+\index{GetWarmupState@{GetWarmupState}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetWarmupState()}{GetWarmupState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Get\+Warmup\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}\label{class_c_x_ray_class_aa93db68e02823a2828b4aef66c1edadd}} 
+\index{CXRayClass@{CXRayClass}!GetWarmupState@{GetWarmupState}}
+\index{GetWarmupState@{GetWarmupState}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetWarmupState()}{GetWarmupState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Get\+Warmup\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}\label{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}} 
+\index{CXRayClass@{CXRayClass}!GetXrayEndTime@{GetXrayEndTime}}
+\index{GetXrayEndTime@{GetXrayEndTime}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetXrayEndTime()}{GetXrayEndTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} CXRay\+Class\+::\+Get\+Xray\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}\label{class_c_x_ray_class_a5ba99710ddbb6376b4fb2295c73b8695}} 
+\index{CXRayClass@{CXRayClass}!GetXrayEndTime@{GetXrayEndTime}}
+\index{GetXrayEndTime@{GetXrayEndTime}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetXrayEndTime()}{GetXrayEndTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} CXRay\+Class\+::\+Get\+Xray\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}\label{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}} 
+\index{CXRayClass@{CXRayClass}!GetXrayInfo@{GetXrayInfo}}
+\index{GetXrayInfo@{GetXrayInfo}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetXrayInfo()}{GetXrayInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} CXRay\+Class\+::\+Get\+Xray\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}\label{class_c_x_ray_class_a3a9fde904ab1afd317e721683ba4dfea}} 
+\index{CXRayClass@{CXRayClass}!GetXrayInfo@{GetXrayInfo}}
+\index{GetXrayInfo@{GetXrayInfo}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{GetXrayInfo()}{GetXrayInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} CXRay\+Class\+::\+Get\+Xray\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a411bf51de964aa99d496db140a563e7b}\label{class_c_x_ray_class_a411bf51de964aa99d496db140a563e7b}} 
+\index{CXRayClass@{CXRayClass}!Instance@{Instance}}
+\index{Instance@{Instance}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}} $\ast$ CXRay\+Class\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_afdb23ca545f62db7572a17729867ddd7}\label{class_c_x_ray_class_afdb23ca545f62db7572a17729867ddd7}} 
+\index{CXRayClass@{CXRayClass}!Instance@{Instance}}
+\index{Instance@{Instance}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}} $\ast$ CXRay\+Class\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}\label{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}} 
+\index{CXRayClass@{CXRayClass}!OpenPort@{OpenPort}}
+\index{OpenPort@{OpenPort}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{OpenPort()}{OpenPort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Open\+Port (\begin{DoxyParamCaption}\item[{CString}]{str\+Port\+Name = {\ttfamily \+\_\+T(\char`\"{}COM2\char`\"{})},  }\item[{DWORD}]{dw\+Baud = {\ttfamily 9600},  }\item[{int}]{n\+Read\+Interval = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}\label{class_c_x_ray_class_a6c2bb17600ad9d7ccbd1e019051e76da}} 
+\index{CXRayClass@{CXRayClass}!OpenPort@{OpenPort}}
+\index{OpenPort@{OpenPort}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{OpenPort()}{OpenPort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Open\+Port (\begin{DoxyParamCaption}\item[{CString}]{str\+Port\+Name = {\ttfamily \+\_\+T(\char`\"{}COM2\char`\"{})},  }\item[{DWORD}]{dw\+Baud = {\ttfamily 9600},  }\item[{int}]{n\+Read\+Interval = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}\label{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}} 
+\index{CXRayClass@{CXRayClass}!SetReadCommand@{SetReadCommand}}
+\index{SetReadCommand@{SetReadCommand}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetReadCommand()}{SetReadCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Read\+Command (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Data,  }\item[{int}]{n\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}\label{class_c_x_ray_class_a917d9ae01b353c0d915473f5269d339e}} 
+\index{CXRayClass@{CXRayClass}!SetReadCommand@{SetReadCommand}}
+\index{SetReadCommand@{SetReadCommand}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetReadCommand()}{SetReadCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Read\+Command (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{p\+Data,  }\item[{int}]{n\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}\label{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}} 
+\index{CXRayClass@{CXRayClass}!SetSendCommand@{SetSendCommand}}
+\index{SetSendCommand@{SetSendCommand}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetSendCommand()}{SetSendCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}}}]{cmd,  }\item[{int}]{n\+Data = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}\label{class_c_x_ray_class_ac99de0200a84cfd816a58c94803aca48}} 
+\index{CXRayClass@{CXRayClass}!SetSendCommand@{SetSendCommand}}
+\index{SetSendCommand@{SetSendCommand}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetSendCommand()}{SetSendCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}}}]{cmd,  }\item[{int}]{n\+Data = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}\label{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}} 
+\index{CXRayClass@{CXRayClass}!SetTestXRayStatus@{SetTestXRayStatus}}
+\index{SetTestXRayStatus@{SetTestXRayStatus}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetTestXRayStatus()}{SetTestXRayStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Set\+Test\+XRay\+Status (\begin{DoxyParamCaption}\item[{int}]{n\+Idx,  }\item[{BOOL}]{b\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}\label{class_c_x_ray_class_a749c5b0927bedaeb0c871616cc4f626e}} 
+\index{CXRayClass@{CXRayClass}!SetTestXRayStatus@{SetTestXRayStatus}}
+\index{SetTestXRayStatus@{SetTestXRayStatus}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetTestXRayStatus()}{SetTestXRayStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Set\+Test\+XRay\+Status (\begin{DoxyParamCaption}\item[{int}]{n\+Idx,  }\item[{BOOL}]{b\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}\label{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}} 
+\index{CXRayClass@{CXRayClass}!SetWarmupState@{SetWarmupState}}
+\index{SetWarmupState@{SetWarmupState}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetWarmupState()}{SetWarmupState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Set\+Warmup\+State (\begin{DoxyParamCaption}\item[{BOOL}]{is\+Warmup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}\label{class_c_x_ray_class_a06637720d520fdfcc0dd7fb6c028bbf6}} 
+\index{CXRayClass@{CXRayClass}!SetWarmupState@{SetWarmupState}}
+\index{SetWarmupState@{SetWarmupState}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetWarmupState()}{SetWarmupState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Set\+Warmup\+State (\begin{DoxyParamCaption}\item[{BOOL}]{is\+Warmup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}\label{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}} 
+\index{CXRayClass@{CXRayClass}!SetXrayEndTime@{SetXrayEndTime}}
+\index{SetXrayEndTime@{SetXrayEndTime}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayEndTime()}{SetXrayEndTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Set\+Xray\+End\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}}}]{c\+End\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}\label{class_c_x_ray_class_a7baa2508a540387294d09a40aa5c9088}} 
+\index{CXRayClass@{CXRayClass}!SetXrayEndTime@{SetXrayEndTime}}
+\index{SetXrayEndTime@{SetXrayEndTime}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayEndTime()}{SetXrayEndTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Set\+Xray\+End\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}}}]{c\+End\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}\label{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}} 
+\index{CXRayClass@{CXRayClass}!SetXrayOnOff@{SetXrayOnOff}}
+\index{SetXrayOnOff@{SetXrayOnOff}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayOnOff()}{SetXrayOnOff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Xray\+On\+Off (\begin{DoxyParamCaption}\item[{BOOL}]{is\+On\+Off }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}\label{class_c_x_ray_class_a5234c425868049b29551d321d7d0cb4a}} 
+\index{CXRayClass@{CXRayClass}!SetXrayOnOff@{SetXrayOnOff}}
+\index{SetXrayOnOff@{SetXrayOnOff}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayOnOff()}{SetXrayOnOff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Xray\+On\+Off (\begin{DoxyParamCaption}\item[{BOOL}]{is\+On\+Off }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}\label{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}} 
+\index{CXRayClass@{CXRayClass}!SetXrayRestFault@{SetXrayRestFault}}
+\index{SetXrayRestFault@{SetXrayRestFault}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayRestFault()}{SetXrayRestFault()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Xray\+Rest\+Fault (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}\label{class_c_x_ray_class_a7af845c1001a6a07a8a8c7fd685780f1}} 
+\index{CXRayClass@{CXRayClass}!SetXrayRestFault@{SetXrayRestFault}}
+\index{SetXrayRestFault@{SetXrayRestFault}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayRestFault()}{SetXrayRestFault()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Xray\+Rest\+Fault (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}\label{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}} 
+\index{CXRayClass@{CXRayClass}!SetXrayVolCur@{SetXrayVolCur}}
+\index{SetXrayVolCur@{SetXrayVolCur}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayVolCur()}{SetXrayVolCur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Xray\+Vol\+Cur (\begin{DoxyParamCaption}\item[{double}]{d\+Vol,  }\item[{double}]{d\+Cur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}\label{class_c_x_ray_class_a105d04dabb4c44169c1a0d739f7ef695}} 
+\index{CXRayClass@{CXRayClass}!SetXrayVolCur@{SetXrayVolCur}}
+\index{SetXrayVolCur@{SetXrayVolCur}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{SetXrayVolCur()}{SetXrayVolCur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::\+Set\+Xray\+Vol\+Cur (\begin{DoxyParamCaption}\item[{double}]{d\+Vol,  }\item[{double}]{d\+Cur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}\label{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}} 
+\index{CXRayClass@{CXRayClass}!StatusPollingThread@{StatusPollingThread}}
+\index{StatusPollingThread@{StatusPollingThread}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{StatusPollingThread()}{StatusPollingThread()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Status\+Polling\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}\label{class_c_x_ray_class_ac8208d3d1afcf14cb4e720248693a54e}} 
+\index{CXRayClass@{CXRayClass}!StatusPollingThread@{StatusPollingThread}}
+\index{StatusPollingThread@{StatusPollingThread}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{StatusPollingThread()}{StatusPollingThread()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CXRay\+Class\+::\+Status\+Polling\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a6ab36108b97d538cece98ddf20d3f6b4}\label{class_c_x_ray_class_a6ab36108b97d538cece98ddf20d3f6b4}} 
+\index{CXRayClass@{CXRayClass}!ThreadStatusPolling@{ThreadStatusPolling}}
+\index{ThreadStatusPolling@{ThreadStatusPolling}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{ThreadStatusPolling()}{ThreadStatusPolling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily UINT CXRay\+Class\+::\+Thread\+Status\+Polling (\begin{DoxyParamCaption}\item[{LPVOID}]{p\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a1fb5bbc0417df180e4d7166820231ee2}\label{class_c_x_ray_class_a1fb5bbc0417df180e4d7166820231ee2}} 
+\index{CXRayClass@{CXRayClass}!ThreadStatusPolling@{ThreadStatusPolling}}
+\index{ThreadStatusPolling@{ThreadStatusPolling}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{ThreadStatusPolling()}{ThreadStatusPolling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static UINT CXRay\+Class\+::\+Thread\+Status\+Polling (\begin{DoxyParamCaption}\item[{LPVOID}]{p\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_x_ray_class_a9c01391d22a17713e6c9a2fdee69158b}\label{class_c_x_ray_class_a9c01391d22a17713e6c9a2fdee69158b}} 
+\index{CXRayClass@{CXRayClass}!m\_bThreadEnd@{m\_bThreadEnd}}
+\index{m\_bThreadEnd@{m\_bThreadEnd}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_bThreadEnd}{m\_bThreadEnd}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::m\+\_\+b\+Thread\+End\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_ab573d74a6c9d5c8eb43654bc153ddacf}\label{class_c_x_ray_class_ab573d74a6c9d5c8eb43654bc153ddacf}} 
+\index{CXRayClass@{CXRayClass}!m\_bWarmUpState@{m\_bWarmUpState}}
+\index{m\_bWarmUpState@{m\_bWarmUpState}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_bWarmUpState}{m\_bWarmUpState}}
+{\footnotesize\ttfamily BOOL CXRay\+Class\+::m\+\_\+b\+Warm\+Up\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_acdc3ebde959450b83a9e4d6adf5e3a0b}\label{class_c_x_ray_class_acdc3ebde959450b83a9e4d6adf5e3a0b}} 
+\index{CXRayClass@{CXRayClass}!m\_Comport@{m\_Comport}}
+\index{m\_Comport@{m\_Comport}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_Comport}{m\_Comport}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_comm_thread}{CComm\+Thread}} CXRay\+Class\+::m\+\_\+\+Comport\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_aac01921a8cc6bae8e52e188c9f4a3440}\label{class_c_x_ray_class_aac01921a8cc6bae8e52e188c9f4a3440}} 
+\index{CXRayClass@{CXRayClass}!m\_dwBaud@{m\_dwBaud}}
+\index{m\_dwBaud@{m\_dwBaud}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_dwBaud}{m\_dwBaud}}
+{\footnotesize\ttfamily DWORD CXRay\+Class\+::m\+\_\+dw\+Baud\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a0242079700b05e2bf0bd05d708e6e15a}\label{class_c_x_ray_class_a0242079700b05e2bf0bd05d708e6e15a}} 
+\index{CXRayClass@{CXRayClass}!m\_nPollingInterval@{m\_nPollingInterval}}
+\index{m\_nPollingInterval@{m\_nPollingInterval}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_nPollingInterval}{m\_nPollingInterval}}
+{\footnotesize\ttfamily int CXRay\+Class\+::m\+\_\+n\+Polling\+Interval\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5f0c2afd35984ade88c6ec2106c106e4}\label{class_c_x_ray_class_a5f0c2afd35984ade88c6ec2106c106e4}} 
+\index{CXRayClass@{CXRayClass}!m\_nSendCmdIndex@{m\_nSendCmdIndex}}
+\index{m\_nSendCmdIndex@{m\_nSendCmdIndex}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_nSendCmdIndex}{m\_nSendCmdIndex}}
+{\footnotesize\ttfamily int CXRay\+Class\+::m\+\_\+n\+Send\+Cmd\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5f8e0ab7d552cd28bc954460b096affa}\label{class_c_x_ray_class_a5f8e0ab7d552cd28bc954460b096affa}} 
+\index{CXRayClass@{CXRayClass}!m\_nSendDataValue@{m\_nSendDataValue}}
+\index{m\_nSendDataValue@{m\_nSendDataValue}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_nSendDataValue}{m\_nSendDataValue}}
+{\footnotesize\ttfamily int CXRay\+Class\+::m\+\_\+n\+Send\+Data\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a5cafaeadfd6b60edf1835c272836df30}\label{class_c_x_ray_class_a5cafaeadfd6b60edf1835c272836df30}} 
+\index{CXRayClass@{CXRayClass}!m\_pInstance@{m\_pInstance}}
+\index{m\_pInstance@{m\_pInstance}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_pInstance}{m\_pInstance}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_c_x_ray_class}{CXRay\+Class}} $\ast$ CXRay\+Class\+::m\+\_\+p\+Instance = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a49ff4e9681f94e4ef7cbf7dcb3abffb4}\label{class_c_x_ray_class_a49ff4e9681f94e4ef7cbf7dcb3abffb4}} 
+\index{CXRayClass@{CXRayClass}!m\_pStatusPollingThread@{m\_pStatusPollingThread}}
+\index{m\_pStatusPollingThread@{m\_pStatusPollingThread}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_pStatusPollingThread}{m\_pStatusPollingThread}}
+{\footnotesize\ttfamily CWin\+Thread $\ast$ CXRay\+Class\+::m\+\_\+p\+Status\+Polling\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a4fbe835763ff7fc90eed2032696bcbcc}\label{class_c_x_ray_class_a4fbe835763ff7fc90eed2032696bcbcc}} 
+\index{CXRayClass@{CXRayClass}!m\_SendCommand@{m\_SendCommand}}
+\index{m\_SendCommand@{m\_SendCommand}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_SendCommand}{m\_SendCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{x-ray_2_c_x_ray_class_8h_a0b0832500bcf016015af1e7966e5bc58}{X\+\_\+\+RAY\+\_\+\+CMD}} CXRay\+Class\+::m\+\_\+\+Send\+Command\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_aa437f89042c418d5a858cf758b06efee}\label{class_c_x_ray_class_aa437f89042c418d5a858cf758b06efee}} 
+\index{CXRayClass@{CXRayClass}!m\_strPortName@{m\_strPortName}}
+\index{m\_strPortName@{m\_strPortName}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_strPortName}{m\_strPortName}}
+{\footnotesize\ttfamily CString CXRay\+Class\+::m\+\_\+str\+Port\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a0b2a55a9943be38f3983d5ae07e62a37}\label{class_c_x_ray_class_a0b2a55a9943be38f3983d5ae07e62a37}} 
+\index{CXRayClass@{CXRayClass}!m\_TimeOutCheck@{m\_TimeOutCheck}}
+\index{m\_TimeOutCheck@{m\_TimeOutCheck}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_TimeOutCheck}{m\_TimeOutCheck}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_timer_check}{CTimer\+Check}} CXRay\+Class\+::m\+\_\+\+Time\+Out\+Check\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a0827bcf0b48e6beeb8710c53893e0016}\label{class_c_x_ray_class_a0827bcf0b48e6beeb8710c53893e0016}} 
+\index{CXRayClass@{CXRayClass}!m\_XrayEndTime@{m\_XrayEndTime}}
+\index{m\_XrayEndTime@{m\_XrayEndTime}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_XrayEndTime}{m\_XrayEndTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\+\_\+\+DATE}} CXRay\+Class\+::m\+\_\+\+Xray\+End\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_ray_class_a041f5aeff3dfcf3ed0438ff90cde0b1c}\label{class_c_x_ray_class_a041f5aeff3dfcf3ed0438ff90cde0b1c}} 
+\index{CXRayClass@{CXRayClass}!m\_XrayInfo@{m\_XrayInfo}}
+\index{m\_XrayInfo@{m\_XrayInfo}!CXRayClass@{CXRayClass}}
+\doxysubsubsection{\texorpdfstring{m\_XrayInfo}{m\_XrayInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_x___r_a_y___i_n_f_o}{X\+\_\+\+RAY\+\_\+\+INFO}} CXRay\+Class\+::m\+\_\+\+Xray\+Info\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+X-\/\+Ray/\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8h}{CXRay\+Class.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/x-\/ray/\mbox{\hyperlink{x-ray_2_c_x_ray_class_8h}{CXRay\+Class.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+X-\/\+Ray/\mbox{\hyperlink{_x-_ray_2_c_x_ray_class_8cpp}{CXRay\+Class.\+cpp}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/x-\/ray/\mbox{\hyperlink{x-ray_2_c_x_ray_class_8cpp}{CXRay\+Class.\+cpp}}\end{DoxyCompactItemize}

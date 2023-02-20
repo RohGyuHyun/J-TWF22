@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Inspection: D:/OneDrive/ngh/J-TWF22/Project/Inspection/HW_SDK/Detector/CATDetector.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Inspection<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_bd976f84b5cc9bebc92e068d65fec952.html">OneDrive</a></li><li class="navelem"><a class="el" href="dir_526c377dd3d3fc952efb581059fc7050.html">ngh</a></li><li class="navelem"><a class="el" href="dir_03a9c10c0e9d1674deb214bc7339cb82.html">J-TWF22</a></li><li class="navelem"><a class="el" href="dir_6f840c36a948a9a39ad178e47c4e100c.html">Project</a></li><li class="navelem"><a class="el" href="dir_2fa6b85b08a3d5ce733a4e5a67a1adb8.html">Inspection</a></li><li class="navelem"><a class="el" href="dir_dc7d1ea31e5052b3b24042b3026556a8.html">HW_SDK</a></li><li class="navelem"><a class="el" href="dir_56ead54745439624bee850bb69be5fcb.html">Detector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">CATDetector.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_a_t_detector_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="_c_a_t_detector_8h.html#afa3252dc5709aa439546595569703651">    3</a></span><span class="preprocessor">#define ATDETECTOR_USE</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef ATDETECTOR_USE</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_a_t_xray_detector_8h.html">ATXrayDetector.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma comment(lib, &quot;ATXrayDetector.lib&quot;</span>)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma comment(lib, &quot;FTD3XX.lib&quot;</span>)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="class_a_t_xray_detector.html">ATXrayDetector</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_c_at_detector.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_at_detector.html">CAtDetector</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a6432a3a10c200382f3754a162af67d7e">   14</a></span>        <a class="code hl_class" href="class_a_t_xray_detector.html">ATXrayDetector</a> <a class="code hl_variable" href="class_c_at_detector.html#a6432a3a10c200382f3754a162af67d7e">m_ATXrayDetector</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a6d66fdae440265c06774bf856f077f2d">   15</a></span>        USHORT* <a class="code hl_variable" href="class_c_at_detector.html#a6d66fdae440265c06774bf856f077f2d">m_pImageBuff</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a66024783f87f7d2e53e674afe2aaf675">   16</a></span>        <a class="code hl_struct" href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html">DETECTOR_PARA</a> <a class="code hl_variable" href="class_c_at_detector.html#a66024783f87f7d2e53e674afe2aaf675">m_DetectorPara</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a53c58ad1a29087f08998d23ddb02214f">   18</a></span>        HWND <a class="code hl_variable" href="class_c_at_detector.html#a53c58ad1a29087f08998d23ddb02214f">m_MainHwnd</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#aa64f6ded1e2c34c05bdef16d740382c8">   19</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="class_c_at_detector.html#aa64f6ded1e2c34c05bdef16d740382c8">m_nMessage</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#aaee6c31dace8043023865802fa1922c8">   21</a></span>        CString <a class="code hl_variable" href="class_c_at_detector.html#aaee6c31dace8043023865802fa1922c8">m_strEvent</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a0c8710d3a8f8b9365c0716630a60d321">   22</a></span>        CSize <a class="code hl_variable" href="class_c_at_detector.html#a0c8710d3a8f8b9365c0716630a60d321">m_ImageSize</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#adae298f94ca65960766c5f62d5ce99d5">   23</a></span>        BOOL <a class="code hl_variable" href="class_c_at_detector.html#adae298f94ca65960766c5f62d5ce99d5">m_bConnection</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="class_c_at_detector.html#abbe5b7a1f3a4ac84c6dd6dee8648ea20">CAtDetector</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="class_c_at_detector.html#aba2358706b8cf9a3209d9acf6a3ca6a7">~CAtDetector</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a29585f5d1704317faa1e4d4dfaa02c9e">   32</a></span>        CString <a class="code hl_function" href="class_c_at_detector.html#a29585f5d1704317faa1e4d4dfaa02c9e">GetEventString</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_at_detector.html#aaee6c31dace8043023865802fa1922c8">m_strEvent</a>; };</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a9cf4678398bfc6d2d777f3d0fae2a15e">   33</a></span>        USHORT* <a class="code hl_function" href="class_c_at_detector.html#a9cf4678398bfc6d2d777f3d0fae2a15e">GetImageData</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_at_detector.html#a6d66fdae440265c06774bf856f077f2d">m_pImageBuff</a>; };</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">static</span> <a class="code hl_class" href="class_c_at_detector.html">CAtDetector</a>* <a class="code hl_function" href="class_c_at_detector.html#a6c30bcec3a9d5cdc33a53ada6888c0df">Instance</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a467681f0f097fad69c07743adbdf82d2">   36</a></span>        <span class="keyword">static</span> <a class="code hl_class" href="class_c_at_detector.html">CAtDetector</a>* <a class="code hl_variable" href="class_c_at_detector.html#a467681f0f097fad69c07743adbdf82d2">m_pInstance</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#aa26e284a2fcb0667b488eea651ee2784">   38</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_at_detector.html#aa26e284a2fcb0667b488eea651ee2784">SetMessage</a>(HWND hWnd, <span class="keywordtype">int</span> nMessage) { <a class="code hl_variable" href="class_c_at_detector.html#a53c58ad1a29087f08998d23ddb02214f">m_MainHwnd</a> = hWnd; <a class="code hl_variable" href="class_c_at_detector.html#aa64f6ded1e2c34c05bdef16d740382c8">m_nMessage</a> = nMessage; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_at_detector.html#a7aa6c66fb19c7c5708d918dc5098cae5">SetDetectorPara</a>(<a class="code hl_struct" href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html">DETECTOR_PARA</a> detectorPara);<span class="comment">// { m_DetectorPara = detectorPara; };</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_at_detector.html#a16613d5772c827073efc018fbd762fe7">ImageCopy</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_at_detector.html#a96962f9b4921cddbae76ae74a0e79c55">EventProcess</a>(<span class="keywordtype">int</span> code, <span class="keyword">const</span> <span class="keywordtype">char</span>* event);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        BOOL <a class="code hl_function" href="class_c_at_detector.html#a792f949dbb874f8834743448edb929e6">Init</a>(<a class="code hl_struct" href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html">DETECTOR_PARA</a> detectorPara);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#af1eb09ab87896e4233a2d91c3a11ef1d">   43</a></span>        USHORT* <a class="code hl_function" href="class_c_at_detector.html#af1eb09ab87896e4233a2d91c3a11ef1d">GetImageBuff</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_at_detector.html#a6d66fdae440265c06774bf856f077f2d">m_pImageBuff</a>; };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        BOOL <a class="code hl_function" href="class_c_at_detector.html#a36f79ca18e986823c39a3548b68a88e2">GrabStart</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        BOOL <a class="code hl_function" href="class_c_at_detector.html#ab9813376e5ec3376e8e180430f885b3b">GrabStop</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#a3f0cc04fda184c438cae47ee6230362b">   46</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_at_detector.html#a3f0cc04fda184c438cae47ee6230362b">SetImageSize</a>(<span class="keywordtype">int</span> nWidth, <span class="keywordtype">int</span> nHeight) { <a class="code hl_variable" href="class_c_at_detector.html#a0c8710d3a8f8b9365c0716630a60d321">m_ImageSize</a>.SetSize(nWidth, nHeight); };</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#ac79f989fb0fc70ce6039facd3eb8008f">   47</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_c_at_detector.html#ac79f989fb0fc70ce6039facd3eb8008f">GetImageType</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_at_detector.html#a66024783f87f7d2e53e674afe2aaf675">m_DetectorPara</a>.<a class="code hl_variable" href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html#a7475d6fe1afc8574f793fa385755d69c">nCamImageFormat</a>; };</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#aa65d97dfc5e079f7635b5c3953e3400f">   48</a></span>        BOOL <a class="code hl_function" href="class_c_at_detector.html#aa65d97dfc5e079f7635b5c3953e3400f">GetConnection</a>() {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_at_detector.html#adae298f94ca65960766c5f62d5ce99d5">m_bConnection</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        ;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        BOOL <a class="code hl_function" href="class_c_at_detector.html#ae1a4ee97196446097828d4fa45acc651">SetCal</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        BOOL <a class="code hl_function" href="class_c_at_detector.html#a8d148c2685f922cd0c83827551e7333d">Close</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_c_at_detector.html#af87ac199ed8bdd1a6dde7e7f82c5ba6a">   54</a></span>        <span class="keywordtype">double</span> <a class="code hl_function" href="class_c_at_detector.html#af87ac199ed8bdd1a6dde7e7f82c5ba6a">GetScanSpeed</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_at_detector.html#a66024783f87f7d2e53e674afe2aaf675">m_DetectorPara</a>.<a class="code hl_variable" href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html#a088e7ec0b48ba1b9ec85857b6c654069">dScanSpeed</a>; };</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+<div class="ttc" id="a_a_t_xray_detector_8h_html"><div class="ttname"><a href="_a_t_xray_detector_8h.html">ATXrayDetector.h</a></div></div>
+<div class="ttc" id="aclass_a_t_xray_detector_html"><div class="ttname"><a href="class_a_t_xray_detector.html">ATXrayDetector</a></div><div class="ttdef"><b>Definition:</b> ATXrayDetector.h:13</div></div>
+<div class="ttc" id="aclass_c_at_detector_html"><div class="ttname"><a href="class_c_at_detector.html">CAtDetector</a></div><div class="ttdef"><b>Definition:</b> CATDetector.h:12</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a0c8710d3a8f8b9365c0716630a60d321"><div class="ttname"><a href="class_c_at_detector.html#a0c8710d3a8f8b9365c0716630a60d321">CAtDetector::m_ImageSize</a></div><div class="ttdeci">CSize m_ImageSize</div><div class="ttdef"><b>Definition:</b> CATDetector.h:22</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a16613d5772c827073efc018fbd762fe7"><div class="ttname"><a href="class_c_at_detector.html#a16613d5772c827073efc018fbd762fe7">CAtDetector::ImageCopy</a></div><div class="ttdeci">void ImageCopy()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:60</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a29585f5d1704317faa1e4d4dfaa02c9e"><div class="ttname"><a href="class_c_at_detector.html#a29585f5d1704317faa1e4d4dfaa02c9e">CAtDetector::GetEventString</a></div><div class="ttdeci">CString GetEventString()</div><div class="ttdef"><b>Definition:</b> CATDetector.h:32</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a36f79ca18e986823c39a3548b68a88e2"><div class="ttname"><a href="class_c_at_detector.html#a36f79ca18e986823c39a3548b68a88e2">CAtDetector::GrabStart</a></div><div class="ttdeci">BOOL GrabStart()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:143</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a3f0cc04fda184c438cae47ee6230362b"><div class="ttname"><a href="class_c_at_detector.html#a3f0cc04fda184c438cae47ee6230362b">CAtDetector::SetImageSize</a></div><div class="ttdeci">void SetImageSize(int nWidth, int nHeight)</div><div class="ttdef"><b>Definition:</b> CATDetector.h:46</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a467681f0f097fad69c07743adbdf82d2"><div class="ttname"><a href="class_c_at_detector.html#a467681f0f097fad69c07743adbdf82d2">CAtDetector::m_pInstance</a></div><div class="ttdeci">static CAtDetector * m_pInstance</div><div class="ttdef"><b>Definition:</b> CATDetector.h:36</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a53c58ad1a29087f08998d23ddb02214f"><div class="ttname"><a href="class_c_at_detector.html#a53c58ad1a29087f08998d23ddb02214f">CAtDetector::m_MainHwnd</a></div><div class="ttdeci">HWND m_MainHwnd</div><div class="ttdef"><b>Definition:</b> CATDetector.h:18</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a6432a3a10c200382f3754a162af67d7e"><div class="ttname"><a href="class_c_at_detector.html#a6432a3a10c200382f3754a162af67d7e">CAtDetector::m_ATXrayDetector</a></div><div class="ttdeci">ATXrayDetector m_ATXrayDetector</div><div class="ttdef"><b>Definition:</b> CATDetector.h:14</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a66024783f87f7d2e53e674afe2aaf675"><div class="ttname"><a href="class_c_at_detector.html#a66024783f87f7d2e53e674afe2aaf675">CAtDetector::m_DetectorPara</a></div><div class="ttdeci">DETECTOR_PARA m_DetectorPara</div><div class="ttdef"><b>Definition:</b> CATDetector.h:16</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a6c30bcec3a9d5cdc33a53ada6888c0df"><div class="ttname"><a href="class_c_at_detector.html#a6c30bcec3a9d5cdc33a53ada6888c0df">CAtDetector::Instance</a></div><div class="ttdeci">static CAtDetector * Instance()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:45</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a6d66fdae440265c06774bf856f077f2d"><div class="ttname"><a href="class_c_at_detector.html#a6d66fdae440265c06774bf856f077f2d">CAtDetector::m_pImageBuff</a></div><div class="ttdeci">USHORT * m_pImageBuff</div><div class="ttdef"><b>Definition:</b> CATDetector.h:15</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a792f949dbb874f8834743448edb929e6"><div class="ttname"><a href="class_c_at_detector.html#a792f949dbb874f8834743448edb929e6">CAtDetector::Init</a></div><div class="ttdeci">BOOL Init(DETECTOR_PARA detectorPara)</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:68</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a7aa6c66fb19c7c5708d918dc5098cae5"><div class="ttname"><a href="class_c_at_detector.html#a7aa6c66fb19c7c5708d918dc5098cae5">CAtDetector::SetDetectorPara</a></div><div class="ttdeci">void SetDetectorPara(DETECTOR_PARA detectorPara)</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:118</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a8d148c2685f922cd0c83827551e7333d"><div class="ttname"><a href="class_c_at_detector.html#a8d148c2685f922cd0c83827551e7333d">CAtDetector::Close</a></div><div class="ttdeci">BOOL Close()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:28</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a96962f9b4921cddbae76ae74a0e79c55"><div class="ttname"><a href="class_c_at_detector.html#a96962f9b4921cddbae76ae74a0e79c55">CAtDetector::EventProcess</a></div><div class="ttdeci">void EventProcess(int code, const char *event)</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:54</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_a9cf4678398bfc6d2d777f3d0fae2a15e"><div class="ttname"><a href="class_c_at_detector.html#a9cf4678398bfc6d2d777f3d0fae2a15e">CAtDetector::GetImageData</a></div><div class="ttdeci">USHORT * GetImageData()</div><div class="ttdef"><b>Definition:</b> CATDetector.h:33</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_aa26e284a2fcb0667b488eea651ee2784"><div class="ttname"><a href="class_c_at_detector.html#aa26e284a2fcb0667b488eea651ee2784">CAtDetector::SetMessage</a></div><div class="ttdeci">void SetMessage(HWND hWnd, int nMessage)</div><div class="ttdef"><b>Definition:</b> CATDetector.h:38</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_aa64f6ded1e2c34c05bdef16d740382c8"><div class="ttname"><a href="class_c_at_detector.html#aa64f6ded1e2c34c05bdef16d740382c8">CAtDetector::m_nMessage</a></div><div class="ttdeci">int m_nMessage</div><div class="ttdef"><b>Definition:</b> CATDetector.h:19</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_aa65d97dfc5e079f7635b5c3953e3400f"><div class="ttname"><a href="class_c_at_detector.html#aa65d97dfc5e079f7635b5c3953e3400f">CAtDetector::GetConnection</a></div><div class="ttdeci">BOOL GetConnection()</div><div class="ttdef"><b>Definition:</b> CATDetector.h:48</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_aaee6c31dace8043023865802fa1922c8"><div class="ttname"><a href="class_c_at_detector.html#aaee6c31dace8043023865802fa1922c8">CAtDetector::m_strEvent</a></div><div class="ttdeci">CString m_strEvent</div><div class="ttdef"><b>Definition:</b> CATDetector.h:21</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_ab9813376e5ec3376e8e180430f885b3b"><div class="ttname"><a href="class_c_at_detector.html#ab9813376e5ec3376e8e180430f885b3b">CAtDetector::GrabStop</a></div><div class="ttdeci">BOOL GrabStop()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:172</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_aba2358706b8cf9a3209d9acf6a3ca6a7"><div class="ttname"><a href="class_c_at_detector.html#aba2358706b8cf9a3209d9acf6a3ca6a7">CAtDetector::~CAtDetector</a></div><div class="ttdeci">~CAtDetector()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:12</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_abbe5b7a1f3a4ac84c6dd6dee8648ea20"><div class="ttname"><a href="class_c_at_detector.html#abbe5b7a1f3a4ac84c6dd6dee8648ea20">CAtDetector::CAtDetector</a></div><div class="ttdeci">CAtDetector()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:6</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_ac79f989fb0fc70ce6039facd3eb8008f"><div class="ttname"><a href="class_c_at_detector.html#ac79f989fb0fc70ce6039facd3eb8008f">CAtDetector::GetImageType</a></div><div class="ttdeci">int GetImageType()</div><div class="ttdef"><b>Definition:</b> CATDetector.h:47</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_adae298f94ca65960766c5f62d5ce99d5"><div class="ttname"><a href="class_c_at_detector.html#adae298f94ca65960766c5f62d5ce99d5">CAtDetector::m_bConnection</a></div><div class="ttdeci">BOOL m_bConnection</div><div class="ttdef"><b>Definition:</b> CATDetector.h:23</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_ae1a4ee97196446097828d4fa45acc651"><div class="ttname"><a href="class_c_at_detector.html#ae1a4ee97196446097828d4fa45acc651">CAtDetector::SetCal</a></div><div class="ttdeci">BOOL SetCal()</div><div class="ttdef"><b>Definition:</b> CATDetector.cpp:182</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_af1eb09ab87896e4233a2d91c3a11ef1d"><div class="ttname"><a href="class_c_at_detector.html#af1eb09ab87896e4233a2d91c3a11ef1d">CAtDetector::GetImageBuff</a></div><div class="ttdeci">USHORT * GetImageBuff()</div><div class="ttdef"><b>Definition:</b> CATDetector.h:43</div></div>
+<div class="ttc" id="aclass_c_at_detector_html_af87ac199ed8bdd1a6dde7e7f82c5ba6a"><div class="ttname"><a href="class_c_at_detector.html#af87ac199ed8bdd1a6dde7e7f82c5ba6a">CAtDetector::GetScanSpeed</a></div><div class="ttdeci">double GetScanSpeed()</div><div class="ttdef"><b>Definition:</b> CATDetector.h:54</div></div>
+<div class="ttc" id="astruct_d_e_t_e_c_t_o_r___p_a_r_a_html"><div class="ttname"><a href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html">DETECTOR_PARA</a></div><div class="ttdoc">DETECTOR_PARA struct detector 연결 parameter</div><div class="ttdef"><b>Definition:</b> define.h:160</div></div>
+<div class="ttc" id="astruct_d_e_t_e_c_t_o_r___p_a_r_a_html_a088e7ec0b48ba1b9ec85857b6c654069"><div class="ttname"><a href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html#a088e7ec0b48ba1b9ec85857b6c654069">DETECTOR_PARA::dScanSpeed</a></div><div class="ttdeci">double dScanSpeed</div><div class="ttdef"><b>Definition:</b> define.h:162</div></div>
+<div class="ttc" id="astruct_d_e_t_e_c_t_o_r___p_a_r_a_html_a7475d6fe1afc8574f793fa385755d69c"><div class="ttname"><a href="struct_d_e_t_e_c_t_o_r___p_a_r_a.html#a7475d6fe1afc8574f793fa385755d69c">DETECTOR_PARA::nCamImageFormat</a></div><div class="ttdeci">int nCamImageFormat</div><div class="ttdef"><b>Definition:</b> define.h:172</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 금 9월 23 2022 14:12:46, 프로젝트명 : Inspection, 생성자 : &#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

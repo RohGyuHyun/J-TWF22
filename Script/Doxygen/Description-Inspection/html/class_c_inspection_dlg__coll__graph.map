@@ -1,0 +1,32 @@
+<map id="CInspectionDlg" name="CInspectionDlg">
+<area shape="rect" id="node1" title=" " alt="" coords="1139,746,1248,771"/>
+<area shape="rect" id="node2" title=" " alt="" coords="24,546,107,571"/>
+<area shape="rect" id="node3" href="$class_c_dialog_alarm.html" title=" " alt="" coords="291,251,393,277"/>
+<area shape="rect" id="node4" href="$class_c_dialog_manual.html" title=" " alt="" coords="579,694,689,719"/>
+<area shape="rect" id="node5" href="$class_c_dialog_x_ray_status.html" title=" " alt="" coords="275,601,409,626"/>
+<area shape="rect" id="node9" href="$class_c_dialog_recipe.html" title=" " alt="" coords="872,482,979,507"/>
+<area shape="rect" id="node10" href="$class_c_dialog_teaching.html" title=" " alt="" coords="575,355,693,381"/>
+<area shape="rect" id="node17" href="$class_c_dialog_system.html" title=" " alt="" coords="869,886,981,911"/>
+<area shape="rect" id="node21" href="$class_c_dialog_text_box.html" title=" " alt="" coords="285,551,399,577"/>
+<area shape="rect" id="node6" href="$struct_x___r_a_y___s_t_a_t_u_s.html" title=" " alt="" coords="5,1038,125,1063"/>
+<area shape="rect" id="node27" href="$struct_x___r_a_y___i_n_f_o.html" title=" " alt="" coords="292,1193,392,1218"/>
+<area shape="rect" id="node7" href="$struct_i_o___p_a_r_a.html" title="IO_PARA struct io 라벨 및 번호" alt="" coords="303,738,381,763"/>
+<area shape="rect" id="node29" href="$class_c_i_o_class.html" title=" " alt="" coords="743,803,820,829"/>
+<area shape="rect" id="node8" href="$struct_t_i_m_e___d_a_t_e.html" title=" " alt="" coords="295,811,389,837"/>
+<area shape="rect" id="node24" href="$class_c_x_ray_class.html" title=" " alt="" coords="587,1197,681,1222"/>
+<area shape="rect" id="node11" href="$struct_i_n_s_p_e_c___p_a_r_a.html" title="INSPEC_PARA struct inspection parameter 검사에 사용 되는 x&#45;ray kv,ma, 검사 parameter" alt="" coords="285,377,399,402"/>
+<area shape="rect" id="node12" href="$struct_r_e_s_u_l_t___d_a_t_a.html" title="RESULT_DATA struct 전체 검사 결과 정보 전체 ok,ng, 수량 ok,ng, 겹침 ok,ng, 개별 결과 정보 struct" alt="" coords="285,426,399,451"/>
+<area shape="rect" id="node13" href="$class_c_dialog_rect.html" title=" " alt="" coords="295,51,389,77"/>
+<area shape="rect" id="node14" title=" " alt="" coords="32,51,99,77"/>
+<area shape="rect" id="node15" href="$class_c_btnenhctrl.html" title=" " alt="" coords="297,182,387,207"/>
+<area shape="rect" id="node16" title=" " alt="" coords="36,182,95,207"/>
+<area shape="rect" id="node18" href="$struct_s_y_s_t_e_m___p_a_r_a.html" title="SYSTEM_PARA struct system parameter x&#45;ray, detector, inverter, image save, image size" alt="" coords="575,949,693,974"/>
+<area shape="rect" id="node19" href="$struct_x___r_a_y___p_a_r_a.html" title="X_RAY_PARA struct x&#45;ray 연결 parameter" alt="" coords="289,949,395,974"/>
+<area shape="rect" id="node20" href="$struct_d_e_t_e_c_t_o_r___p_a_r_a.html" title="DETECTOR_PARA struct detector 연결 parameter" alt="" coords="275,1073,409,1098"/>
+<area shape="rect" id="node22" href="$class_c_at_detector.html" title=" " alt="" coords="587,1109,681,1134"/>
+<area shape="rect" id="node23" href="$class_a_t_xray_detector.html" title=" " alt="" coords="286,1143,398,1169"/>
+<area shape="rect" id="node25" href="$class_c_comm_thread.html" title=" " alt="" coords="288,1291,396,1317"/>
+<area shape="rect" id="node26" href="$class_c_queue.html" title=" " alt="" coords="31,1291,100,1317"/>
+<area shape="rect" id="node28" href="$class_c_timer_check.html" title=" " alt="" coords="292,1242,392,1267"/>
+<area shape="rect" id="node30" href="$class_c_log_file.html" title=" " alt="" coords="889,1195,962,1221"/>
+</map>

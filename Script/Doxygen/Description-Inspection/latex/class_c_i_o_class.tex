@@ -1,0 +1,138 @@
+\hypertarget{class_c_i_o_class}{}\doxysection{CIOClass 클래스 참조}
+\label{class_c_i_o_class}\index{CIOClass@{CIOClass}}
+
+
+{\ttfamily \#include $<$CIOClass.\+h$>$}
+
+
+
+CIOClass에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_c_i_o_class__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i_o_class_a67db7e66a41a8c32b7efe2030e08749e}{CIOClass}} ()
+\item 
+\mbox{\hyperlink{class_c_i_o_class_aa471f2de325736de50773c5702ad4ba7}{$\sim$\+CIOClass}} ()
+\item 
+void \mbox{\hyperlink{class_c_i_o_class_a0621b2e1f3bdd90e49bb23553783c4b9}{Set\+IOPara}} (\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} $\ast$Input, \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} $\ast$Output)
+\item 
+BOOL \mbox{\hyperlink{class_c_i_o_class_aa9128f2a2d10178eea66f32c934c3c31}{Get\+Input\+Bit}} (int n\+Idx)
+\item 
+BOOL \mbox{\hyperlink{class_c_i_o_class_afa925d22a6af44c554a32a653af3afdc}{Get\+Output\+Bit}} (int n\+Idx)
+\item 
+void \mbox{\hyperlink{class_c_i_o_class_aea7cab8bf93d523b9ee1ab9f1912fda0}{Set\+Output\+Bit}} (int n\+Idx, BOOL is\+On\+Off)
+\item 
+int \mbox{\hyperlink{class_c_i_o_class_a8db16701aeb952bbb6bda914254f4f98}{Get\+Input\+Value}} (\mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3a}{Input\+\_\+\+Enum}} n\+Idx)
+\item 
+int \mbox{\hyperlink{class_c_i_o_class_a6e61a1f11779a24f2fc52e5d58232e02}{Set\+Output\+Value}} (\mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356b}{Output\+\_\+\+Enum}} n\+Idx, BOOL is\+On\+Off)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_i_o_class}{CIOClass}} $\ast$ \mbox{\hyperlink{class_c_i_o_class_a5b12cdc17f7a83c2cc1cf5914dc4c80f}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_i_o_class}{CIOClass}} $\ast$ \mbox{\hyperlink{class_c_i_o_class_a79449018a4d755eb6bfe63c4422a8a11}{m\+\_\+p\+Instance}} = NULL
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} \mbox{\hyperlink{class_c_i_o_class_ae6cc84a71ece49f6b2ed6288410f7fec}{m\+\_\+st\+Input}} \mbox{[}\mbox{\hyperlink{define_8h_a200281399f8f0217d82ea03238a2eb6a}{MAX\+\_\+\+INPUT\+\_\+\+NUM}}\mbox{]}
+\item 
+\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} \mbox{\hyperlink{class_c_i_o_class_aa23a9181659d019e194f67c81a333372}{m\+\_\+st\+Output}} \mbox{[}\mbox{\hyperlink{define_8h_a53aa580a1c97aec0efd90910de409556}{MAX\+\_\+\+OUTPUT\+\_\+\+NUM}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_i_o_class_a67db7e66a41a8c32b7efe2030e08749e}\label{class_c_i_o_class_a67db7e66a41a8c32b7efe2030e08749e}} 
+\index{CIOClass@{CIOClass}!CIOClass@{CIOClass}}
+\index{CIOClass@{CIOClass}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{CIOClass()}{CIOClass()}}
+{\footnotesize\ttfamily CIOClass\+::\+CIOClass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_o_class_aa471f2de325736de50773c5702ad4ba7}\label{class_c_i_o_class_aa471f2de325736de50773c5702ad4ba7}} 
+\index{CIOClass@{CIOClass}!````~CIOClass@{$\sim$CIOClass}}
+\index{````~CIOClass@{$\sim$CIOClass}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{$\sim$CIOClass()}{~CIOClass()}}
+{\footnotesize\ttfamily CIOClass\+::$\sim$\+CIOClass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_i_o_class_aa9128f2a2d10178eea66f32c934c3c31}\label{class_c_i_o_class_aa9128f2a2d10178eea66f32c934c3c31}} 
+\index{CIOClass@{CIOClass}!GetInputBit@{GetInputBit}}
+\index{GetInputBit@{GetInputBit}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{GetInputBit()}{GetInputBit()}}
+{\footnotesize\ttfamily BOOL CIOClass\+::\+Get\+Input\+Bit (\begin{DoxyParamCaption}\item[{int}]{n\+Idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_o_class_a8db16701aeb952bbb6bda914254f4f98}\label{class_c_i_o_class_a8db16701aeb952bbb6bda914254f4f98}} 
+\index{CIOClass@{CIOClass}!GetInputValue@{GetInputValue}}
+\index{GetInputValue@{GetInputValue}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{GetInputValue()}{GetInputValue()}}
+{\footnotesize\ttfamily BOOL CIOClass\+::\+Get\+Input\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_i_o_class_8h_a5d8a6d96bf4de673a28e961daf11ec3a}{Input\+\_\+\+Enum}}}]{n\+Idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_o_class_afa925d22a6af44c554a32a653af3afdc}\label{class_c_i_o_class_afa925d22a6af44c554a32a653af3afdc}} 
+\index{CIOClass@{CIOClass}!GetOutputBit@{GetOutputBit}}
+\index{GetOutputBit@{GetOutputBit}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{GetOutputBit()}{GetOutputBit()}}
+{\footnotesize\ttfamily BOOL CIOClass\+::\+Get\+Output\+Bit (\begin{DoxyParamCaption}\item[{int}]{n\+Idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_o_class_a5b12cdc17f7a83c2cc1cf5914dc4c80f}\label{class_c_i_o_class_a5b12cdc17f7a83c2cc1cf5914dc4c80f}} 
+\index{CIOClass@{CIOClass}!Instance@{Instance}}
+\index{Instance@{Instance}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_i_o_class}{CIOClass}} $\ast$ CIOClass\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_i_o_class_a0621b2e1f3bdd90e49bb23553783c4b9}\label{class_c_i_o_class_a0621b2e1f3bdd90e49bb23553783c4b9}} 
+\index{CIOClass@{CIOClass}!SetIOPara@{SetIOPara}}
+\index{SetIOPara@{SetIOPara}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{SetIOPara()}{SetIOPara()}}
+{\footnotesize\ttfamily void CIOClass\+::\+Set\+IOPara (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} $\ast$}]{Input,  }\item[{\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} $\ast$}]{Output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_o_class_aea7cab8bf93d523b9ee1ab9f1912fda0}\label{class_c_i_o_class_aea7cab8bf93d523b9ee1ab9f1912fda0}} 
+\index{CIOClass@{CIOClass}!SetOutputBit@{SetOutputBit}}
+\index{SetOutputBit@{SetOutputBit}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{SetOutputBit()}{SetOutputBit()}}
+{\footnotesize\ttfamily void CIOClass\+::\+Set\+Output\+Bit (\begin{DoxyParamCaption}\item[{int}]{n\+Idx,  }\item[{BOOL}]{is\+On\+Off }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_o_class_a6e61a1f11779a24f2fc52e5d58232e02}\label{class_c_i_o_class_a6e61a1f11779a24f2fc52e5d58232e02}} 
+\index{CIOClass@{CIOClass}!SetOutputValue@{SetOutputValue}}
+\index{SetOutputValue@{SetOutputValue}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{SetOutputValue()}{SetOutputValue()}}
+{\footnotesize\ttfamily int CIOClass\+::\+Set\+Output\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_i_o_class_8h_aad613b5fd6d76010b6aab251081f356b}{Output\+\_\+\+Enum}}}]{n\+Idx,  }\item[{BOOL}]{is\+On\+Off }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_i_o_class_a79449018a4d755eb6bfe63c4422a8a11}\label{class_c_i_o_class_a79449018a4d755eb6bfe63c4422a8a11}} 
+\index{CIOClass@{CIOClass}!m\_pInstance@{m\_pInstance}}
+\index{m\_pInstance@{m\_pInstance}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{m\_pInstance}{m\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_i_o_class}{CIOClass}} $\ast$ CIOClass\+::m\+\_\+p\+Instance = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_i_o_class_ae6cc84a71ece49f6b2ed6288410f7fec}\label{class_c_i_o_class_ae6cc84a71ece49f6b2ed6288410f7fec}} 
+\index{CIOClass@{CIOClass}!m\_stInput@{m\_stInput}}
+\index{m\_stInput@{m\_stInput}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{m\_stInput}{m\_stInput}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} CIOClass\+::m\+\_\+st\+Input\mbox{[}\mbox{\hyperlink{define_8h_a200281399f8f0217d82ea03238a2eb6a}{MAX\+\_\+\+INPUT\+\_\+\+NUM}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_i_o_class_aa23a9181659d019e194f67c81a333372}\label{class_c_i_o_class_aa23a9181659d019e194f67c81a333372}} 
+\index{CIOClass@{CIOClass}!m\_stOutput@{m\_stOutput}}
+\index{m\_stOutput@{m\_stOutput}!CIOClass@{CIOClass}}
+\doxysubsubsection{\texorpdfstring{m\_stOutput}{m\_stOutput}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} CIOClass\+::m\+\_\+st\+Output\mbox{[}\mbox{\hyperlink{define_8h_a53aa580a1c97aec0efd90910de409556}{MAX\+\_\+\+OUTPUT\+\_\+\+NUM}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+IO/\mbox{\hyperlink{_c_i_o_class_8h}{CIOClass.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+IO/\mbox{\hyperlink{_c_i_o_class_8cpp}{CIOClass.\+cpp}}\end{DoxyCompactItemize}

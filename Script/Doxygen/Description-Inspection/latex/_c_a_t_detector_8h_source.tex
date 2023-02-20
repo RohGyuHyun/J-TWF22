@@ -1,0 +1,61 @@
+\hypertarget{_c_a_t_detector_8h_source}{}\doxysection{CATDetector.\+h}
+\label{_c_a_t_detector_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/Detector/CATDetector.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/HW\_SDK/Detector/CATDetector.h}}
+\mbox{\hyperlink{_c_a_t_detector_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define ATDETECTOR\_USE}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#ifdef ATDETECTOR\_USE}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_t_xray_detector_8h}{ATXrayDetector.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma comment(lib, "{}ATXrayDetector.lib"{}})}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#pragma comment(lib, "{}FTD3XX.lib"{}})}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_a_t_xray_detector}{ATXrayDetector}};}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_at_detector}{CAtDetector}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_a_t_xray_detector}{ATXrayDetector}} \mbox{\hyperlink{class_c_at_detector_a6432a3a10c200382f3754a162af67d7e}{m\_ATXrayDetector}};}
+\DoxyCodeLine{15         USHORT* \mbox{\hyperlink{class_c_at_detector_a6d66fdae440265c06774bf856f077f2d}{m\_pImageBuff}};}
+\DoxyCodeLine{16         \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\_PARA}} \mbox{\hyperlink{class_c_at_detector_a66024783f87f7d2e53e674afe2aaf675}{m\_DetectorPara}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         HWND \mbox{\hyperlink{class_c_at_detector_a53c58ad1a29087f08998d23ddb02214f}{m\_MainHwnd}};}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_at_detector_aa64f6ded1e2c34c05bdef16d740382c8}{m\_nMessage}};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         CString \mbox{\hyperlink{class_c_at_detector_aaee6c31dace8043023865802fa1922c8}{m\_strEvent}};}
+\DoxyCodeLine{22         CSize \mbox{\hyperlink{class_c_at_detector_a0c8710d3a8f8b9365c0716630a60d321}{m\_ImageSize}};}
+\DoxyCodeLine{23         BOOL \mbox{\hyperlink{class_c_at_detector_adae298f94ca65960766c5f62d5ce99d5}{m\_bConnection}};}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25         }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_c_at_detector_abbe5b7a1f3a4ac84c6dd6dee8648ea20}{CAtDetector}}();}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_c_at_detector_aba2358706b8cf9a3209d9acf6a3ca6a7}{\string~CAtDetector}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         CString \mbox{\hyperlink{class_c_at_detector_a29585f5d1704317faa1e4d4dfaa02c9e}{GetEventString}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_at_detector_aaee6c31dace8043023865802fa1922c8}{m\_strEvent}}; \};}
+\DoxyCodeLine{33         USHORT* \mbox{\hyperlink{class_c_at_detector_a9cf4678398bfc6d2d777f3d0fae2a15e}{GetImageData}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_at_detector_a6d66fdae440265c06774bf856f077f2d}{m\_pImageBuff}}; \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_at_detector}{CAtDetector}}* \mbox{\hyperlink{class_c_at_detector_a6c30bcec3a9d5cdc33a53ada6888c0df}{Instance}}();}
+\DoxyCodeLine{36         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_at_detector}{CAtDetector}}* \mbox{\hyperlink{class_c_at_detector_a467681f0f097fad69c07743adbdf82d2}{m\_pInstance}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_at_detector_aa26e284a2fcb0667b488eea651ee2784}{SetMessage}}(HWND hWnd, \textcolor{keywordtype}{int} nMessage) \{ \mbox{\hyperlink{class_c_at_detector_a53c58ad1a29087f08998d23ddb02214f}{m\_MainHwnd}} = hWnd; \mbox{\hyperlink{class_c_at_detector_aa64f6ded1e2c34c05bdef16d740382c8}{m\_nMessage}} = nMessage; \}}
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_at_detector_a7aa6c66fb19c7c5708d918dc5098cae5}{SetDetectorPara}}(\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\_PARA}} detectorPara);\textcolor{comment}{// \{ m\_DetectorPara = detectorPara; \};}}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_at_detector_a16613d5772c827073efc018fbd762fe7}{ImageCopy}}();}
+\DoxyCodeLine{41         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_at_detector_a96962f9b4921cddbae76ae74a0e79c55}{EventProcess}}(\textcolor{keywordtype}{int} code, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* event);}
+\DoxyCodeLine{42         BOOL \mbox{\hyperlink{class_c_at_detector_a792f949dbb874f8834743448edb929e6}{Init}}(\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\_PARA}} detectorPara);}
+\DoxyCodeLine{43         USHORT* \mbox{\hyperlink{class_c_at_detector_af1eb09ab87896e4233a2d91c3a11ef1d}{GetImageBuff}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_at_detector_a6d66fdae440265c06774bf856f077f2d}{m\_pImageBuff}}; \};}
+\DoxyCodeLine{44         BOOL \mbox{\hyperlink{class_c_at_detector_a36f79ca18e986823c39a3548b68a88e2}{GrabStart}}();}
+\DoxyCodeLine{45         BOOL \mbox{\hyperlink{class_c_at_detector_ab9813376e5ec3376e8e180430f885b3b}{GrabStop}}();}
+\DoxyCodeLine{46         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_at_detector_a3f0cc04fda184c438cae47ee6230362b}{SetImageSize}}(\textcolor{keywordtype}{int} nWidth, \textcolor{keywordtype}{int} nHeight) \{ \mbox{\hyperlink{class_c_at_detector_a0c8710d3a8f8b9365c0716630a60d321}{m\_ImageSize}}.SetSize(nWidth, nHeight); \};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_at_detector_ac79f989fb0fc70ce6039facd3eb8008f}{GetImageType}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_at_detector_a66024783f87f7d2e53e674afe2aaf675}{m\_DetectorPara}}.\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a_a7475d6fe1afc8574f793fa385755d69c}{nCamImageFormat}}; \};}
+\DoxyCodeLine{48         BOOL \mbox{\hyperlink{class_c_at_detector_aa65d97dfc5e079f7635b5c3953e3400f}{GetConnection}}() \{}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_at_detector_adae298f94ca65960766c5f62d5ce99d5}{m\_bConnection}}}
+\DoxyCodeLine{50                         ;}
+\DoxyCodeLine{51         \};}
+\DoxyCodeLine{52         BOOL \mbox{\hyperlink{class_c_at_detector_ae1a4ee97196446097828d4fa45acc651}{SetCal}}();}
+\DoxyCodeLine{53         BOOL \mbox{\hyperlink{class_c_at_detector_a8d148c2685f922cd0c83827551e7333d}{Close}}();}
+\DoxyCodeLine{54         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_at_detector_af87ac199ed8bdd1a6dde7e7f82c5ba6a}{GetScanSpeed}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_at_detector_a66024783f87f7d2e53e674afe2aaf675}{m\_DetectorPara}}.\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a_a088e7ec0b48ba1b9ec85857b6c654069}{dScanSpeed}}; \};}
+\DoxyCodeLine{55 \};}
+
+\end{DoxyCode}

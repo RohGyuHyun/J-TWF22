@@ -1,0 +1,197 @@
+\hypertarget{_sequence_module_8h_source}{}\doxysection{Sequence\+Module.\+h}
+\label{_sequence_module_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/SequenceModule.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/SequenceModule.h}}
+\mbox{\hyperlink{_sequence_module_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_time_check_8h}{TimeCheck.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define MAX\_CHAR                                        512}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define MOT\_PROCESS\_MAX\_NUM                                                     1}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define MOT\_STATUS\_MAX\_NUM                                                      3}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define MOT\_STATUS\_SUB\_MAX\_NUM                                          10000}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define SEQ\_STATUS\_STEP1                        0}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define SEQ\_STATUS\_STEP2                        1}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SEQ\_STATUS\_STEP3                        2}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define SEQ\_STATUS\_STEP4                        3}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define SEQ\_STATUS\_READY                        5}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define SEQ\_STATUS\_END                          6}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define TIMEOUT\_SAFE\_INTERLOCK          10}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{comment}{//Motion Process Status///////////////////////////////////////////////////////}}
+\DoxyCodeLine{21 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_motion_process_status}{MotionProcessStatus}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23         \textcolor{comment}{//Timeout}}
+\DoxyCodeLine{24         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_motion_process_status_a3464113aa0b5cd5953933f76b90825f3}{m\_dTimeoutS}};\textcolor{comment}{//시작 시간}}
+\DoxyCodeLine{25         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_motion_process_status_a1faaf1074aa222baf7920de3b6def31a}{m\_dTimeoutE}};\textcolor{comment}{//종료 시간(현재)}}
+\DoxyCodeLine{26         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_motion_process_status_a17e49a9c2d531d576a2a51e174ee0ea4}{m\_dTimeout}};\textcolor{comment}{//지정된 시간}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{comment}{//Status문자(에러 또는 정상종료시 출력할 문자열)}}
+\DoxyCodeLine{29         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_motion_process_status_afbcb2df86534e5e583d4c3e45ce8a5dd}{m\_cNGStatus}}[\mbox{\hyperlink{_sequence_module_8h_a82acb32225c05e9aa4c524c40bc5852a}{MAX\_CHAR}}];}
+\DoxyCodeLine{30         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_motion_process_status_aa0efef5a66cc8748d7ca970f747bc2de}{m\_cNGCode}}[\mbox{\hyperlink{_sequence_module_8h_a82acb32225c05e9aa4c524c40bc5852a}{MAX\_CHAR}}];}
+\DoxyCodeLine{31         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_motion_process_status_afbbb42ff7d9898613cea2221b568cbe3}{m\_cTypeStatus}}[\mbox{\hyperlink{_sequence_module_8h_a82acb32225c05e9aa4c524c40bc5852a}{MAX\_CHAR}}];}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_motion_process_status_a61e4c42348b7fe02146c376377a7f903}{m\_iNGSeqIdx}};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \}\mbox{\hyperlink{_sequence_module_8h_ac45e47db3b5a3c32d8ce91c083668d19}{typeMotionProcessSts}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{comment}{//Motion Sequence///////////////////////////////////////////////////////}}
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_motion_seq}{MotionSeq}}}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41         \textcolor{comment}{//Sequence}}
+\DoxyCodeLine{42         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_motion_seq_a1fadba9639bf99678064df9312decb78}{m\_iSubSeqIdx}};}
+\DoxyCodeLine{43         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_motion_seq_adee444d6456edaea34798f697b9c7ec0}{m\_iNextSubSeqIdx}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         \textcolor{comment}{//Flag}}
+\DoxyCodeLine{46         BOOL \mbox{\hyperlink{struct_motion_seq_a3effab6195d20b01b349b1a90bfc8d98}{m\_bAutoStart}};}
+\DoxyCodeLine{47         BOOL \mbox{\hyperlink{struct_motion_seq_ae56b563d36932654eaad4195e4f742dc}{m\_bAlarm}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{comment}{//버튼중심의 동작상태}}
+\DoxyCodeLine{50         BOOL \mbox{\hyperlink{struct_motion_seq_a50203fb849db5694abc0b6156e3a65f8}{m\_bOpSts}};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \}\mbox{\hyperlink{_sequence_module_8h_a53ef9648986fb172d980c01b305e8d8f}{typeMotionSeq}};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_motion_data}{CMotionData}}}
+\DoxyCodeLine{55 \{}
+\DoxyCodeLine{56 \textcolor{keyword}{public}:}
+\DoxyCodeLine{57         \mbox{\hyperlink{class_c_motion_data_a5825a5d81fac73e489930a5cdde3ac9e}{CMotionData}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_c_motion_data_ac8dac498c777b2eca5c2b0f4c9c5cbcf}{\string~CMotionData}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         \textcolor{comment}{//Motion process status}}
+\DoxyCodeLine{61         \mbox{\hyperlink{struct_motion_process_status}{typeMotionProcessSts}}        \mbox{\hyperlink{class_c_motion_data_ac91f98c078204ae489d6d3763c262867}{m\_ProSts}}[\mbox{\hyperlink{_sequence_module_8h_a054d6c874898f3f0beedbfbb8acfe97e}{MOT\_STATUS\_MAX\_NUM}}][\mbox{\hyperlink{_sequence_module_8h_a1478ea25c4ad940ce18f4d04dd852821}{MOT\_STATUS\_SUB\_MAX\_NUM}}];}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         \textcolor{comment}{//Motion sequence}}
+\DoxyCodeLine{64         \mbox{\hyperlink{struct_motion_seq}{typeMotionSeq}}                      \mbox{\hyperlink{class_c_motion_data_adb5183c4033e6b95f21e0a6c8ea24889}{m\_Seq}}[\mbox{\hyperlink{_sequence_module_8h_a054d6c874898f3f0beedbfbb8acfe97e}{MOT\_STATUS\_MAX\_NUM}}];}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_motion_data_a285c1fb9e3f075897bdc9d313361199a}{ResetSeq}}();}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{comment}{//Motion flag///////////////////////////////////////////////////////}}
+\DoxyCodeLine{72 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_motion_flag}{MotionFlag}}}
+\DoxyCodeLine{73 \{}
+\DoxyCodeLine{74         BOOL \mbox{\hyperlink{struct_motion_flag_a7446f0a06ce3dea9981a7e17ed28e369}{m\_bProcessThread}};}
+\DoxyCodeLine{75         BOOL \mbox{\hyperlink{struct_motion_flag_af3ca868854e30949a3092b4f34f73245}{m\_bAutoStart}};}
+\DoxyCodeLine{76         BOOL \mbox{\hyperlink{struct_motion_flag_a127e850ce076dca066d007673066271d}{m\_bFirstStart}};}
+\DoxyCodeLine{77         BOOL \mbox{\hyperlink{struct_motion_flag_a35881703834210ef548f8fd1943e452a}{m\_bAlarm}};}
+\DoxyCodeLine{78         BOOL \mbox{\hyperlink{struct_motion_flag_a6beb342b95d835fd9a45c0ab3ecfb70f}{m\_bAreaSensor}};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \}\mbox{\hyperlink{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}{typeMotionFlag}};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_sequence_flag}{SequenceFlag}}}
+\DoxyCodeLine{85 \{}
+\DoxyCodeLine{86         BOOL                                    \mbox{\hyperlink{struct_sequence_flag_af2f734f4be80cea4d9bf702c1d1027de}{m\_bInitialized}};}
+\DoxyCodeLine{87         BOOL                                    \mbox{\hyperlink{struct_sequence_flag_ac90c0af21a9f7b3901c2e5ca484f28c7}{m\_bByPass}};}
+\DoxyCodeLine{88         \textcolor{keywordtype}{int}                                             \mbox{\hyperlink{struct_sequence_flag_a31cbd708d1346a45a1cd259e7ca2af44}{m\_nSeqIndex}};         \textcolor{comment}{// 0:대기위치   1:스텝\#1   2:스텝\#2             3:스텝\#3}}
+\DoxyCodeLine{89         \textcolor{keywordtype}{int}                                             \mbox{\hyperlink{struct_sequence_flag_aff47bd3c4bd98a4eb5fdec16c2617e10}{m\_nMotSubSeqIdx}};}
+\DoxyCodeLine{90         }
+\DoxyCodeLine{91         \textcolor{keywordtype}{long}                                    \mbox{\hyperlink{struct_sequence_flag_a59fc68fcb65c7cdd17c2c9525715ece2}{m\_lAxisPos}}[4];                \textcolor{comment}{//AXIS\_X, AXIS\_Y, AXIS\_Z1, AXIS\_Z2}}
+\DoxyCodeLine{92         \textcolor{keywordtype}{long}                                    \mbox{\hyperlink{struct_sequence_flag_af3036566a2cbe355305547a5e30876bc}{m\_lAxisVel}}[\mbox{\hyperlink{_sequence_module_8h_a054d6c874898f3f0beedbfbb8acfe97e}{MOT\_STATUS\_MAX\_NUM}}];}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \}\mbox{\hyperlink{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}{typeSequenceFlag}};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_sequence_module}{CSequenceModule}}}
+\DoxyCodeLine{98 \{}
+\DoxyCodeLine{99 \textcolor{keyword}{public}:}
+\DoxyCodeLine{100         \mbox{\hyperlink{class_c_sequence_module_a641a27fed6fc66d025b272f3f8e61660}{CSequenceModule}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{101         \mbox{\hyperlink{class_c_sequence_module_a9fbea91069ea4070fae0a10bc8209882}{\string~CSequenceModule}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{104         HWND                                    \mbox{\hyperlink{class_c_sequence_module_ad45feb7b0b0bcffbab0f2ab67e08b6ae}{m\_hWndMain}};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 \textcolor{keyword}{public}:}
+\DoxyCodeLine{107         \mbox{\hyperlink{struct_sequence_flag}{typeSequenceFlag}}                \mbox{\hyperlink{class_c_sequence_module_a4ba90b4d85b5470f409d6721d205680a}{m\_SeqFlag}};}
+\DoxyCodeLine{108         \mbox{\hyperlink{struct_motion_flag}{typeMotionFlag}}                    \mbox{\hyperlink{class_c_sequence_module_adc145e8af520f928f4548754106351e8}{m\_Flag}};}
+\DoxyCodeLine{109         \mbox{\hyperlink{class_c_motion_data}{CMotionData}}                          \mbox{\hyperlink{class_c_sequence_module_a38a2e32d81c2a17df9a748b7948340e9}{m\_MDat}}[\mbox{\hyperlink{_sequence_module_8h_ac70ccfd303d938b246e29064f6366fee}{MOT\_PROCESS\_MAX\_NUM}}];}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111         \textcolor{comment}{//CLogFile                              *m\_pMotLog;}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113         BOOL \mbox{\hyperlink{class_c_sequence_module_a2cb4a8c8abf921bdd1cb0c9fe3f5dc97}{m\_bswStart}}[2];}
+\DoxyCodeLine{114         BOOL \mbox{\hyperlink{class_c_sequence_module_af98ffb70d07d42b1ecdbf9dc5bd96896}{m\_bSeqEnd}};}
+\DoxyCodeLine{115         \textcolor{comment}{//20190315 ngh}}
+\DoxyCodeLine{116         BOOL \mbox{\hyperlink{class_c_sequence_module_ad34d272b760e9480f3b871d8271d5a41}{m\_bSeqProgress}};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a739f0efa17dfd288c19d4888df52b262}{m\_nSeqChannel}};}
+\DoxyCodeLine{119         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_adb18a67f57d652a09069764caae25704}{m\_nGrabStepIndex}};}
+\DoxyCodeLine{120         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a3525031b7d7cc789fcae275e95a5670a}{m\_nMaxStepCnt}};}
+\DoxyCodeLine{121         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a8bab4e0075662619a5b851955d2d3a90}{m\_nSeqIdx}};}
+\DoxyCodeLine{122         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_abb431f6243020097bbf7a4c598729a12}{m\_nDstDeqIdx}};}
+\DoxyCodeLine{123         BOOL \mbox{\hyperlink{class_c_sequence_module_ad9ad7088924e4004b4dfbf327a33b063}{m\_bReadyState}};}
+\DoxyCodeLine{124         BOOL \mbox{\hyperlink{class_c_sequence_module_a333a0135b22d371ce5dccf4b1bb0dc07}{m\_bInspecting}};}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126         \mbox{\hyperlink{class_c_timer_check}{CTimerCheck}} \mbox{\hyperlink{class_c_sequence_module_a1559f8c30011c8ab88a4aff258457e28}{m\_TimeCheck}};}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128         BOOL \mbox{\hyperlink{class_c_sequence_module_afe532a783c48f7896d9181461c17ee6b}{m\_bInitSeq}};}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_afd2e3ea0b544e808f7d1ab553eec7156}{m\_nPrc\_Idx}};}
+\DoxyCodeLine{131         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a84ce73dd5dc32399b43fabca25292a5b}{m\_nSeq\_Idx}};}
+\DoxyCodeLine{132         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a0e2da50e33b2acc1de62cd59d7f49185}{m\_nSeq\_Sub\_Idx}};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134         deque<CString> \mbox{\hyperlink{class_c_sequence_module_ac16b410f28b9b99c18c935e94f443c2e}{m\_strMainLogString}};}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136 \textcolor{keyword}{public}:}
+\DoxyCodeLine{137         \textcolor{comment}{//Motion Sequence}}
+\DoxyCodeLine{138         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a1f73c163db6676587843fbd678aba3be}{MotionProcess}}(\textcolor{keywordtype}{int} prc\_idx, \textcolor{keywordtype}{int} seq\_idx);}
+\DoxyCodeLine{139         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a5c814248e3dcf17e8a0dda6a500185ae}{StopModeOperation}}(\textcolor{keywordtype}{int} *prc\_idx, \textcolor{keywordtype}{int} *seq\_idx);}
+\DoxyCodeLine{140         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a76f23e639ec10306983c0ab0833c1b17}{CheckTimeout}}(\textcolor{keywordtype}{int} prc\_idx, \textcolor{keywordtype}{int} seq\_idx, \textcolor{keywordtype}{int} seq\_sub\_idx, \textcolor{keywordtype}{char}* status\_type);}
+\DoxyCodeLine{141         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a11aedf2204505bd92e02e5d937ed9588}{CheckDelay}}(\textcolor{keywordtype}{int} prc\_idx, \textcolor{keywordtype}{int} seq\_idx, \textcolor{keywordtype}{int} delay);}
+\DoxyCodeLine{142         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_a9d3a67513e915a03238dec94a2ec51ca}{SetSeqIdx}}(\textcolor{keywordtype}{int} prc\_idx, \textcolor{keywordtype}{int} seq\_idx, \textcolor{keywordtype}{int} seq\_sub\_idx);}
+\DoxyCodeLine{143         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_a3087acb12308af77464914625b9d1eed}{SequenceLoop}}();}
+\DoxyCodeLine{144         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_ac089221b4ac3ee2104d62ffb63d08cc6}{Open}}(HWND hWnd, \textcolor{keywordtype}{int} nChannel, CListCtrl* listLog = NULL);}
+\DoxyCodeLine{145         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_af07b17fe2d9e9ed94511396ceac4b771}{Close}}();}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_acaa4c0f4719f863a3c47d20cb4ae2eec}{Reset}}();}
+\DoxyCodeLine{148         BOOL \mbox{\hyperlink{class_c_sequence_module_a9c3445607abbceca14ac0de521a3d763}{Start}}();}
+\DoxyCodeLine{149         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_aa33ed833bcd79601db2f08e76e16d783}{Stop}}();}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_aaad7d96ba741908acb836612921b72fb}{SetLamp}}(\textcolor{keywordtype}{int} nColor);\textcolor{comment}{//, BOOL bBuzz);}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_a64e620c89607f9e74183d30b9d8651fb}{InitSeq}}();}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_a813db637f7cf934af8187a8560b454f5}{SetSeqFirst}}(BOOL bFlag) \{ \mbox{\hyperlink{class_c_sequence_module_adc145e8af520f928f4548754106351e8}{m\_Flag}}.\mbox{\hyperlink{struct_motion_flag_a127e850ce076dca066d007673066271d}{m\_bFirstStart}} = bFlag; \}}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157         \textcolor{comment}{//20190215 ngh}}
+\DoxyCodeLine{158         BOOL \mbox{\hyperlink{class_c_sequence_module_af5c35ac078a4211a5d7cb9a16b430c71}{GetSeqEnd}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_sequence_module_af98ffb70d07d42b1ecdbf9dc5bd96896}{m\_bSeqEnd}};\};}
+\DoxyCodeLine{159         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_adeb08270416a6b26f61296c49f668a53}{SetSeqEnd}}(BOOL isEnd)\{\mbox{\hyperlink{class_c_sequence_module_af98ffb70d07d42b1ecdbf9dc5bd96896}{m\_bSeqEnd}} = isEnd;\};}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161         \textcolor{comment}{//20190315 ngh}}
+\DoxyCodeLine{162         BOOL \mbox{\hyperlink{class_c_sequence_module_acc87aec9eb74684f8b4042571134a6d2}{GetSeqProgress}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_sequence_module_ad34d272b760e9480f3b871d8271d5a41}{m\_bSeqProgress}};\};}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_af3439a76aa7151f9127edca0a1b70b24}{SetSeqChannel}}(\textcolor{keywordtype}{int} nChannel)\{\mbox{\hyperlink{class_c_sequence_module_a739f0efa17dfd288c19d4888df52b262}{m\_nSeqChannel}} = nChannel;\};}
+\DoxyCodeLine{165         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_a86e8046b1b0b656cf61dea98a35757a9}{SetGrabStepIndex}}(\textcolor{keywordtype}{int} nIndex)\{\mbox{\hyperlink{class_c_sequence_module_adb18a67f57d652a09069764caae25704}{m\_nGrabStepIndex}} = nIndex;\};}
+\DoxyCodeLine{166         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_a7709ec1c37d149fa98a71c8c2253406c}{GetGrabStepIndex}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_sequence_module_adb18a67f57d652a09069764caae25704}{m\_nGrabStepIndex}};\};}
+\DoxyCodeLine{167         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_ae764fc1da86c4a204d4d7361d4942ebe}{SetMaxStepCnt}}(\textcolor{keywordtype}{int} nCnt)\{\mbox{\hyperlink{class_c_sequence_module_a3525031b7d7cc789fcae275e95a5670a}{m\_nMaxStepCnt}} = nCnt;\};}
+\DoxyCodeLine{168         BOOL \mbox{\hyperlink{class_c_sequence_module_a7f504978ce42a09c3c65744224641d86}{GetAutoStart}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_sequence_module_adc145e8af520f928f4548754106351e8}{m\_Flag}}.\mbox{\hyperlink{struct_motion_flag_af3ca868854e30949a3092b4f34f73245}{m\_bAutoStart}};\};}
+\DoxyCodeLine{169         BOOL \mbox{\hyperlink{class_c_sequence_module_a2ada800c9ce8c04bbc59b8b5d0328792}{GetReadyState}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_sequence_module_ad9ad7088924e4004b4dfbf327a33b063}{m\_bReadyState}};\};}
+\DoxyCodeLine{170         BOOL \mbox{\hyperlink{class_c_sequence_module_a7efb95ee693fe302000fa9033b414bf9}{GetInspecting}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_sequence_module_a333a0135b22d371ce5dccf4b1bb0dc07}{m\_bInspecting}};\};}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_acff51e9359b159ed441480bdcf5c8989}{GetSeqIdx}}(\textcolor{keywordtype}{int} *prc\_idx, \textcolor{keywordtype}{int} *seq\_idx, \textcolor{keywordtype}{int} *seq\_sub\_idx);}
+\DoxyCodeLine{173         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_sequence_module_aa2dd1df7725c183109bfed387a7a5e51}{GetSeqSubIdx}}(\textcolor{keywordtype}{int} prc\_idx, \textcolor{keywordtype}{int} seq\_idx);}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_sequence_module_a4d2186d0850d92151ed92a30dfdc8327}{WriteLog}}(CString strLog);}
+\DoxyCodeLine{176 \};}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179 \textcolor{comment}{/*}}
+\DoxyCodeLine{180 \textcolor{comment}{        [노트]}}
+\DoxyCodeLine{181 \textcolor{comment}{}}
+\DoxyCodeLine{182 \textcolor{comment}{        -\/ AUTO / START / RESET / STOP / INITIALIZE  동작 잡기}}
+\DoxyCodeLine{183 \textcolor{comment}{        }}
+\DoxyCodeLine{184 \textcolor{comment}{        -\/ DRY RUN 테스트}}
+\DoxyCodeLine{185 \textcolor{comment}{}}
+\DoxyCodeLine{186 \textcolor{comment}{        -\/ 시퀀스 완성도 올리기}}
+\DoxyCodeLine{187 \textcolor{comment}{}}
+\DoxyCodeLine{188 \textcolor{comment}{        -\/ 로그 작업}}
+\DoxyCodeLine{189 \textcolor{comment}{}}
+\DoxyCodeLine{190 \textcolor{comment}{}}
+\DoxyCodeLine{191 \textcolor{comment}{*/}}
+
+\end{DoxyCode}

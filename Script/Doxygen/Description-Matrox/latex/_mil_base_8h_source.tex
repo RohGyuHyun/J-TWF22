@@ -1,0 +1,54 @@
+\hypertarget{_mil_base_8h_source}{}\doxysection{Mil\+Base.\+h}
+\label{_mil_base_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilBase.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilBase.h}}
+\mbox{\hyperlink{_mil_base_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifdef \_MATROX\_DLL}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define MIL\_DLLDECL \_\_declspec(dllexport)}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define MIL\_DLLDECL \_\_declspec(dllimport)}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef \_WIN64}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_DEBUG}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#pragma comment(lib, "{}Matrox32"{}})}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#pragma comment(lib, "{}MatroxD32"{}})}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#ifndef \_DEBUG}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#pragma comment(lib, "{}Matrox64"{}})}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#pragma comment(lib, "{}MatroxD64"{}})}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define GB\_BLUEEYE      \_T("{}BLUEEYE4A"{}})}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define GB\_BASLER       \_T("{}BASLER"{}})}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define GB\_METER4M      \_T("{}METEROR4M"{}})}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define GB\_SOLIOS       \_T("{}SOLIOS"{}})}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define GB\_NONE         \_T("{}NONE"{}})}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GB\_NI           \_T("{}NI"{}})}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define GB\_PAXSCAN      \_T("{}PAXSCAN"{}})}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define GB\_XMARU        \_T("{}XMARU"{}})}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define GB\_EURESYS  \_T("{}EURESYS"{}})}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39 \textcolor{keyword}{struct }\mbox{\hyperlink{structt_wnd_lv}{tWndLv}}}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41         \textcolor{keywordtype}{long} \mbox{\hyperlink{structt_wnd_lv_ad0b221085b233860f5ed051ba092ae3c}{OrgStart}}, \mbox{\hyperlink{structt_wnd_lv_a242cf23bd73b3792ec331e56e450376b}{OrgEnd}}, \mbox{\hyperlink{structt_wnd_lv_ae791d2b3a45387a10b2df864347c33ac}{DestStart}}, \mbox{\hyperlink{structt_wnd_lv_a576fde8e6eaf4d2f8c020b40108122be}{DestEnd}};}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{49 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{50 \{}
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_c_mil_base}{CMilBase}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{53         \mbox{\hyperlink{class_c_mil_base}{\string~CMilBase}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{54         \textcolor{keyword}{static} MIL\_ID \mbox{\hyperlink{class_c_mil_base_a9a5a6a0ea94200631793ae33df6f13a7}{m\_milIDApplication}};}
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#define WM\_REQ\_INSP WM\_USER+200+1}}
+
+\end{DoxyCode}

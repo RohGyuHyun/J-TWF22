@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{fcc6982b-a6bd-47ea-81a1-e5a058ac3aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW_SDK">
+      <UniqueIdentifier>{62f63c27-de74-4725-9e63-9cdac51daca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="define">
+      <UniqueIdentifier>{3a2479e4-4f55-42a3-91e5-0b1bfe2623e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW_SDK\Mil">
+      <UniqueIdentifier>{3d513a8a-020e-40a1-947b-b928f57df15c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW_SDK\X-Ray">
+      <UniqueIdentifier>{bb5d85cd-f557-4195-9d69-a0442f7219aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW_SDK\Detector">
+      <UniqueIdentifier>{4f92f4b6-c27c-4d37-bcd1-36d2cf6d6dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{d0a1c9a4-2944-42ed-8752-eb5a9d6dbfb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ImageView">
+      <UniqueIdentifier>{9f2a3f88-69c4-4bfd-a26b-bc2653643d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Sequence">
+      <UniqueIdentifier>{f7714992-23f6-41e8-9796-eafc43245614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW_SDK\IO">
+      <UniqueIdentifier>{b206d440-62cb-4d70-814d-68750ce04707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW_SDK\Inverter">
+      <UniqueIdentifier>{133f1a46-fb87-4f53-a16f-023b54eced27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inspection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectionDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogAlarm.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogManual.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogRecipe.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogSystem.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogXRayStatus.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="define\define.h">
+      <Filter>define</Filter>
+    </ClInclude>
+    <ClInclude Include="HW_SDK\Detector\ATXrayDetector.h">
+      <Filter>HW_SDK\Detector</Filter>
+    </ClInclude>
+    <ClInclude Include="HW_SDK\Detector\CATDetector.h">
+      <Filter>HW_SDK\Detector</Filter>
+    </ClInclude>
+    <ClInclude Include="HW_SDK\X-Ray\CXRayClass.h">
+      <Filter>HW_SDK\X-Ray</Filter>
+    </ClInclude>
+    <ClInclude Include="HW_SDK\Mil\Repository.h">
+      <Filter>HW_SDK\Mil</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProfileDataIF.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CInspectionClass.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\btnenhctrl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\_Font.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NghUtil.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\_CtrlTracker.h">
+      <Filter>Include\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DialogRect.h">
+      <Filter>Include\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GetNumDlg.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GetTextDlg.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SequenceModule.h">
+      <Filter>Include\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TimeCheck.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LogFile.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogTextBox.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="include\COMMTHREAD.H">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogLogin.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="HW_SDK\IO\CIOClass.h">
+      <Filter>HW_SDK\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogXRayWarmup.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogTeachingPattern.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogTeachingBlobs.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="HW_SDK\Inverter\CInverterClass.h">
+      <Filter>HW_SDK\Inverter</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogNgView.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyListCtrl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogBlobsMasking.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogResultNG.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialgInterLockStatus.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogLogo.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogAlarmLogView.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogAlarmLogReport.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\CDialogResultReport.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Inspection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectionDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogAlarm.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogManual.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogRecipe.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogSystem.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogXRayStatus.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="HW_SDK\Detector\CATDetector.cpp">
+      <Filter>HW_SDK\Detector</Filter>
+    </ClCompile>
+    <ClCompile Include="HW_SDK\X-Ray\CXRayClass.cpp">
+      <Filter>HW_SDK\X-Ray</Filter>
+    </ClCompile>
+    <ClCompile Include="HW_SDK\Mil\Repository.cpp">
+      <Filter>HW_SDK\Mil</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ProfileDataIF.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\CInspectionClass.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\btnenhctrl.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\NghUtil.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\_CtrlTracker.cpp">
+      <Filter>Include\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DialogRect.cpp">
+      <Filter>Include\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="include\GetNumDlg.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\GetTextDlg.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SequenceModule.cpp">
+      <Filter>Include\Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TimeCheck.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\LogFile.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogTextBox.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="include\COMMTHREAD.CPP">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogLogin.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="HW_SDK\IO\CIOClass.cpp">
+      <Filter>HW_SDK\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogXRayWarmup.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogTeachingPattern.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogTeachingBlobs.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="HW_SDK\Inverter\CInverterClass.cpp">
+      <Filter>HW_SDK\Inverter</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogNgView.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MyListCtrl.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogBlobsMasking.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogResultNG.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialgInterLockStatus.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogLogo.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogAlarmLogView.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogAlarmLogReport.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\CDialogResultReport.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Inspection.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Inspection.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Inspection.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Off.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\On.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

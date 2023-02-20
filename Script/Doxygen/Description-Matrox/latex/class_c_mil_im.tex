@@ -1,0 +1,282 @@
+\hypertarget{class_c_mil_im}{}\doxysection{CMil\+Im 클래스 참조}
+\label{class_c_mil_im}\index{CMilIm@{CMilIm}}
+
+
+Mil의 Image Process관련 함수군을 Class화하였다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Im.\+h$>$}
+
+
+
+CMil\+Im에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_c_mil_im__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Im에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_c_mil_im__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_im_aea2693cb8b67a78e98211c209531162e}{CMil\+Im}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_im_ad2bd7ab8ff0bfe079cbb89812879576a}{$\sim$\+CMil\+Im}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_acbb547756e9f2d35bef89c981f2f4b66}{Arith}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src1, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src2=M\+\_\+\+NULL, MIL\+\_\+\+INT Operation=M\+\_\+\+ADD)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a72855c7c751d939e037a1477fec54a06}{Arith\+Const}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+DOUBLE SConst=M\+\_\+\+NULL, MIL\+\_\+\+INT Operation=M\+\_\+\+ADD\+\_\+\+CONST)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a3c83c0aba52d2f32cdb865cf1f98fb37}{Resize}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, double FactorX, double FactorY, MIL\+\_\+\+INT Interpolation\+Type=M\+\_\+\+DEFAULT)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a9319cd478bcc46fe0c56d2d441dcb84a}{Open}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+INT Nb\+Iteration=1, MIL\+\_\+\+INT Proc\+Mode=M\+\_\+\+GRAYSCALE)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a67efa98b63f7c130805d54788a1b986d}{Close}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+INT Nb\+Iteration=1, MIL\+\_\+\+INT Proc\+Mode=M\+\_\+\+GRAYSCALE)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a9175621434d63f6d7228652c4776dd49}{Erode}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+INT Nb\+Iteration=1, MIL\+\_\+\+INT Proc\+Mode=M\+\_\+\+GRAYSCALE)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_aad56bcbfd308d4037d2fc14d5b7ef9ba}{Dilate}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+INT Nb\+Iteration=1, MIL\+\_\+\+INT Proc\+Mode=M\+\_\+\+GRAYSCALE)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a44b4df0921b2bb9f4e61e7a0a115ccfc}{Convolve}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+INT Filter\+ID)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a98a167711b42743041728b168ab94f50}{Watershed}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+INT Minimum\+Variation=M\+\_\+\+DEFAULT, MIL\+\_\+\+INT Control\+Flag=M\+\_\+\+DEFAULT)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a544b9c46450467137b9c69ef62763634}{Binarize}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+DOUBLE Cond\+Low=M\+\_\+\+DEFAULT, MIL\+\_\+\+DOUBLE Cond\+High=M\+\_\+\+DEFAULT, MIL\+\_\+\+INT Condition=M\+\_\+\+GREATER\+\_\+\+OR\+\_\+\+EQUAL)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_afc5206b0d05f97cf42899bfc40e01092}{Rotate}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+DOUBLE rot\+Angle, Cdbl\+Point Dst\+Cen, Cdbl\+Point Src\+Cen)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_a6ac36c4fbca3fd509c8a3fc1d6bf5138}{Histogram}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, MIL\+\_\+\+ID hist\+Result)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_a94309e782e8c3502e332eb97d7240684}{Histogram}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, int n\+Val\+Count, MIL\+\_\+\+INT $\ast$p\+Histo\+Value)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_a7d66393270eb226095191b772a7bd976}{Shift}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, int n\+Shift)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_aaa6365946ef35b80ad7f9b18670d900c}{Get\+Min}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_aa512e5c9cc14a5f91f50916c1ac05838}{Get\+Max}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_aea3ae265df20fc17add5cf2952a2acb0}{Get\+Min\+Max}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, long $\ast$p\+Min, long $\ast$p\+Max)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_a846dd370d1c59d632c9686381a670b67}{Get\+Limited\+Min\+Max}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, int Limit, long $\ast$p\+Min, long $\ast$p\+Max, BOOL b\+Cut\+High=TRUE, BOOL b\+Cut\+Low=TRUE)
+\begin{DoxyCompactList}\small\item\em Limit Count \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_mil_im_a4a8de46caae44f0b7fbb4a4b44141b0a}{Median}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, int Mask\+Method=M\+\_\+3\+X3\+\_\+\+CROSS, int Proc\+Mode=M\+\_\+\+GRAYSCALE)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_a95a04e443b6301b91144f7cf005c168d}{User\+Define1}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src)
+\item 
+static int \mbox{\hyperlink{class_c_mil_im_a8677d552c56aa03e5daac8d31534ada1}{Flip}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Dest, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Src, int i\+Dir=M\+\_\+\+FLIP\+\_\+\+HORIZONTAL)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_a8fd1208893c516cc02aedd0381029044}{Split\+Lines}} (int n\+Split, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Src\+Img, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+First\+Line\+Img, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Second\+Line\+Img, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Third\+Line\+Img)
+\item 
+static void \mbox{\hyperlink{class_c_mil_im_acc87230f26788c9db6c7316d981d4140}{Split\+Lines}} (int n\+Split, MIL\+\_\+\+ID id\+Src\+Img, CSize size\+Image, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+First\+Line\+Img, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Second\+Line\+Img, \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Third\+Line\+Img)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_im_a24d8efe71c8ebffe860b8dd7bb88e48a}{m\+\_\+p\+Buffer}}
+\begin{DoxyCompactList}\small\item\em basis Source buffer to manipulate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Image Process관련 함수군을 Class화하였다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_im_aea2693cb8b67a78e98211c209531162e}\label{class_c_mil_im_aea2693cb8b67a78e98211c209531162e}} 
+\index{CMilIm@{CMilIm}!CMilIm@{CMilIm}}
+\index{CMilIm@{CMilIm}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{CMilIm()}{CMilIm()}}
+{\footnotesize\ttfamily CMil\+Im\+::\+CMil\+Im (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_im_ad2bd7ab8ff0bfe079cbb89812879576a}\label{class_c_mil_im_ad2bd7ab8ff0bfe079cbb89812879576a}} 
+\index{CMilIm@{CMilIm}!````~CMilIm@{$\sim$CMilIm}}
+\index{````~CMilIm@{$\sim$CMilIm}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilIm()}{~CMilIm()}}
+{\footnotesize\ttfamily CMil\+Im\+::$\sim$\+CMil\+Im (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_im_acbb547756e9f2d35bef89c981f2f4b66}\label{class_c_mil_im_acbb547756e9f2d35bef89c981f2f4b66}} 
+\index{CMilIm@{CMilIm}!Arith@{Arith}}
+\index{Arith@{Arith}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Arith()}{Arith()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Arith (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src1,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src2 = {\ttfamily M\+\_\+NULL},  }\item[{MIL\+\_\+\+INT}]{Operation = {\ttfamily M\+\_\+ADD} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a72855c7c751d939e037a1477fec54a06}\label{class_c_mil_im_a72855c7c751d939e037a1477fec54a06}} 
+\index{CMilIm@{CMilIm}!ArithConst@{ArithConst}}
+\index{ArithConst@{ArithConst}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{ArithConst()}{ArithConst()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Arith\+Const (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+DOUBLE}]{SConst = {\ttfamily M\+\_\+NULL},  }\item[{MIL\+\_\+\+INT}]{Operation = {\ttfamily M\+\_\+ADD\+\_\+CONST} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a544b9c46450467137b9c69ef62763634}\label{class_c_mil_im_a544b9c46450467137b9c69ef62763634}} 
+\index{CMilIm@{CMilIm}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Binarize()}{Binarize()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Binarize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+DOUBLE}]{Cond\+Low = {\ttfamily M\+\_\+DEFAULT},  }\item[{MIL\+\_\+\+DOUBLE}]{Cond\+High = {\ttfamily M\+\_\+DEFAULT},  }\item[{MIL\+\_\+\+INT}]{Condition = {\ttfamily M\+\_\+GREATER\+\_\+OR\+\_\+EQUAL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a67efa98b63f7c130805d54788a1b986d}\label{class_c_mil_im_a67efa98b63f7c130805d54788a1b986d}} 
+\index{CMilIm@{CMilIm}!Close@{Close}}
+\index{Close@{Close}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+INT}]{Nb\+Iteration = {\ttfamily 1},  }\item[{MIL\+\_\+\+INT}]{Proc\+Mode = {\ttfamily M\+\_\+GRAYSCALE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a44b4df0921b2bb9f4e61e7a0a115ccfc}\label{class_c_mil_im_a44b4df0921b2bb9f4e61e7a0a115ccfc}} 
+\index{CMilIm@{CMilIm}!Convolve@{Convolve}}
+\index{Convolve@{Convolve}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Convolve()}{Convolve()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Convolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+INT}]{Filter\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_aad56bcbfd308d4037d2fc14d5b7ef9ba}\label{class_c_mil_im_aad56bcbfd308d4037d2fc14d5b7ef9ba}} 
+\index{CMilIm@{CMilIm}!Dilate@{Dilate}}
+\index{Dilate@{Dilate}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Dilate()}{Dilate()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Dilate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+INT}]{Nb\+Iteration = {\ttfamily 1},  }\item[{MIL\+\_\+\+INT}]{Proc\+Mode = {\ttfamily M\+\_\+GRAYSCALE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a9175621434d63f6d7228652c4776dd49}\label{class_c_mil_im_a9175621434d63f6d7228652c4776dd49}} 
+\index{CMilIm@{CMilIm}!Erode@{Erode}}
+\index{Erode@{Erode}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Erode()}{Erode()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Erode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+INT}]{Nb\+Iteration = {\ttfamily 1},  }\item[{MIL\+\_\+\+INT}]{Proc\+Mode = {\ttfamily M\+\_\+GRAYSCALE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a8677d552c56aa03e5daac8d31534ada1}\label{class_c_mil_im_a8677d552c56aa03e5daac8d31534ada1}} 
+\index{CMilIm@{CMilIm}!Flip@{Flip}}
+\index{Flip@{Flip}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Flip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{int}]{i\+Dir = {\ttfamily M\+\_\+FLIP\+\_\+HORIZONTAL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a846dd370d1c59d632c9686381a670b67}\label{class_c_mil_im_a846dd370d1c59d632c9686381a670b67}} 
+\index{CMilIm@{CMilIm}!GetLimitedMinMax@{GetLimitedMinMax}}
+\index{GetLimitedMinMax@{GetLimitedMinMax}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{GetLimitedMinMax()}{GetLimitedMinMax()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Get\+Limited\+Min\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{int}]{Limit,  }\item[{long $\ast$}]{p\+Min,  }\item[{long $\ast$}]{p\+Max,  }\item[{BOOL}]{b\+Cut\+High = {\ttfamily TRUE},  }\item[{BOOL}]{b\+Cut\+Low = {\ttfamily TRUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Limit Count 
+
+Find Limit Min\+Limit
+
+Find Limit Max\+Limit\mbox{\Hypertarget{class_c_mil_im_aa512e5c9cc14a5f91f50916c1ac05838}\label{class_c_mil_im_aa512e5c9cc14a5f91f50916c1ac05838}} 
+\index{CMilIm@{CMilIm}!GetMax@{GetMax}}
+\index{GetMax@{GetMax}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{GetMax()}{GetMax()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Get\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_aaa6365946ef35b80ad7f9b18670d900c}\label{class_c_mil_im_aaa6365946ef35b80ad7f9b18670d900c}} 
+\index{CMilIm@{CMilIm}!GetMin@{GetMin}}
+\index{GetMin@{GetMin}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{GetMin()}{GetMin()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Get\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_aea3ae265df20fc17add5cf2952a2acb0}\label{class_c_mil_im_aea3ae265df20fc17add5cf2952a2acb0}} 
+\index{CMilIm@{CMilIm}!GetMinMax@{GetMinMax}}
+\index{GetMinMax@{GetMinMax}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{GetMinMax()}{GetMinMax()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Get\+Min\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{long $\ast$}]{p\+Min,  }\item[{long $\ast$}]{p\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a94309e782e8c3502e332eb97d7240684}\label{class_c_mil_im_a94309e782e8c3502e332eb97d7240684}} 
+\index{CMilIm@{CMilIm}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{int}]{n\+Val\+Count,  }\item[{MIL\+\_\+\+INT $\ast$}]{p\+Histo\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a6ac36c4fbca3fd509c8a3fc1d6bf5138}\label{class_c_mil_im_a6ac36c4fbca3fd509c8a3fc1d6bf5138}} 
+\index{CMilIm@{CMilIm}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+ID}]{hist\+Result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a4a8de46caae44f0b7fbb4a4b44141b0a}\label{class_c_mil_im_a4a8de46caae44f0b7fbb4a4b44141b0a}} 
+\index{CMilIm@{CMilIm}!Median@{Median}}
+\index{Median@{Median}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Median()}{Median()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Median (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{int}]{Mask\+Method = {\ttfamily M\+\_\+3X3\+\_\+CROSS},  }\item[{int}]{Proc\+Mode = {\ttfamily M\+\_\+GRAYSCALE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a9319cd478bcc46fe0c56d2d441dcb84a}\label{class_c_mil_im_a9319cd478bcc46fe0c56d2d441dcb84a}} 
+\index{CMilIm@{CMilIm}!Open@{Open}}
+\index{Open@{Open}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+INT}]{Nb\+Iteration = {\ttfamily 1},  }\item[{MIL\+\_\+\+INT}]{Proc\+Mode = {\ttfamily M\+\_\+GRAYSCALE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a3c83c0aba52d2f32cdb865cf1f98fb37}\label{class_c_mil_im_a3c83c0aba52d2f32cdb865cf1f98fb37}} 
+\index{CMilIm@{CMilIm}!Resize@{Resize}}
+\index{Resize@{Resize}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{double}]{FactorX,  }\item[{double}]{FactorY,  }\item[{MIL\+\_\+\+INT}]{Interpolation\+Type = {\ttfamily M\+\_\+DEFAULT} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_afc5206b0d05f97cf42899bfc40e01092}\label{class_c_mil_im_afc5206b0d05f97cf42899bfc40e01092}} 
+\index{CMilIm@{CMilIm}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+DOUBLE}]{rot\+Angle,  }\item[{Cdbl\+Point}]{Dst\+Cen,  }\item[{Cdbl\+Point}]{Src\+Cen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a7d66393270eb226095191b772a7bd976}\label{class_c_mil_im_a7d66393270eb226095191b772a7bd976}} 
+\index{CMilIm@{CMilIm}!Shift@{Shift}}
+\index{Shift@{Shift}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Shift()}{Shift()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+Shift (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{int}]{n\+Shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a8fd1208893c516cc02aedd0381029044}\label{class_c_mil_im_a8fd1208893c516cc02aedd0381029044}} 
+\index{CMilIm@{CMilIm}!SplitLines@{SplitLines}}
+\index{SplitLines@{SplitLines}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{SplitLines()}{SplitLines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Split\+Lines (\begin{DoxyParamCaption}\item[{int}]{n\+Split,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Src\+Img,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+First\+Line\+Img,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Second\+Line\+Img,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Third\+Line\+Img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_acc87230f26788c9db6c7316d981d4140}\label{class_c_mil_im_acc87230f26788c9db6c7316d981d4140}} 
+\index{CMilIm@{CMilIm}!SplitLines@{SplitLines}}
+\index{SplitLines@{SplitLines}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{SplitLines()}{SplitLines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Split\+Lines (\begin{DoxyParamCaption}\item[{int}]{n\+Split,  }\item[{MIL\+\_\+\+ID}]{id\+Src\+Img,  }\item[{CSize}]{size\+Image,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+First\+Line\+Img,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Second\+Line\+Img,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Third\+Line\+Img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a95a04e443b6301b91144f7cf005c168d}\label{class_c_mil_im_a95a04e443b6301b91144f7cf005c168d}} 
+\index{CMilIm@{CMilIm}!UserDefine1@{UserDefine1}}
+\index{UserDefine1@{UserDefine1}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{UserDefine1()}{UserDefine1()}}
+{\footnotesize\ttfamily int CMil\+Im\+::\+User\+Define1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_mil_im_a98a167711b42743041728b168ab94f50}\label{class_c_mil_im_a98a167711b42743041728b168ab94f50}} 
+\index{CMilIm@{CMilIm}!Watershed@{Watershed}}
+\index{Watershed@{Watershed}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{Watershed()}{Watershed()}}
+{\footnotesize\ttfamily void CMil\+Im\+::\+Watershed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Dest,  }\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Src,  }\item[{MIL\+\_\+\+INT}]{Minimum\+Variation = {\ttfamily M\+\_\+DEFAULT},  }\item[{MIL\+\_\+\+INT}]{Control\+Flag = {\ttfamily M\+\_\+DEFAULT} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_im_a24d8efe71c8ebffe860b8dd7bb88e48a}\label{class_c_mil_im_a24d8efe71c8ebffe860b8dd7bb88e48a}} 
+\index{CMilIm@{CMilIm}!m\_pBuffer@{m\_pBuffer}}
+\index{m\_pBuffer@{m\_pBuffer}!CMilIm@{CMilIm}}
+\doxysubsubsection{\texorpdfstring{m\_pBuffer}{m\_pBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}}$\ast$ CMil\+Im\+::m\+\_\+p\+Buffer}
+
+
+
+basis Source buffer to manipulate 
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_im_8h}{Mil\+Im.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_im_8cpp}{Mil\+Im.\+cpp}}\end{DoxyCompactItemize}

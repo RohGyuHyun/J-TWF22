@@ -1,0 +1,7 @@
+<map id="CDialogSystem" name="CDialogSystem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,181,117,207"/>
+<area shape="rect" id="node2" title=" " alt="" coords="20,93,103,119"/>
+<area shape="rect" id="node3" href="$struct_s_y_s_t_e_m___p_a_r_a.html" title="SYSTEM_PARA struct system parameter x&#45;ray, detector, inverter, image save, image size" alt="" coords="127,93,246,119"/>
+<area shape="rect" id="node4" href="$struct_x___r_a_y___p_a_r_a.html" title="X_RAY_PARA struct x&#45;ray 연결 parameter" alt="" coords="61,5,168,31"/>
+<area shape="rect" id="node5" href="$struct_d_e_t_e_c_t_o_r___p_a_r_a.html" title="DETECTOR_PARA struct detector 연결 parameter" alt="" coords="193,5,327,31"/>
+</map>

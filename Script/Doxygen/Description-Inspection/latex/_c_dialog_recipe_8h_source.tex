@@ -1,0 +1,71 @@
+\hypertarget{_c_dialog_recipe_8h_source}{}\doxysection{CDialog\+Recipe.\+h}
+\label{_c_dialog_recipe_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/dialog/CDialogRecipe.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/dialog/CDialogRecipe.h}}
+\mbox{\hyperlink{_c_dialog_recipe_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}afxdialogex.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_a_t_detector_8h}{CATDetector.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_dialog_teaching_8h}{CDialogTeaching.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{// CDialogRecipe 대화 상자}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_dialog_recipe}{CDialogRecipe}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10         DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_dialog_recipe}{CDialogRecipe}})}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_c_dialog_recipe}{CDialogRecipe}}(CWnd* pParent = \textcolor{keyword}{nullptr});   \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{14         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_dialog_recipe_adb39a3900d05f96ad153906ce415dd63}{\string~CDialogRecipe}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{18         \textcolor{keyword}{enum} \{ IDD = \mbox{\hyperlink{resource_8h_a84a1b4918bd9883cfe0ec08299cb8fc4}{IDD\_DIALOG\_RECIPE}} \};}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{20 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_c_dialog_teaching}{CDialogTeaching}}* \mbox{\hyperlink{class_c_dialog_recipe_a9e956cb81fe250eb2c229e5615f777f5}{m\_dlgTeaching}};}
+\DoxyCodeLine{22         \textcolor{keywordtype}{wchar\_t} \mbox{\hyperlink{class_c_dialog_recipe_a77fb27a25346388bdc2e4c55b2cdf5ad}{m\_strCurrentRecipeName}}[\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\_CHAR\_LENG}}];}
+\DoxyCodeLine{23         \mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}{LOGIN\_TYPE}} \mbox{\hyperlink{class_c_dialog_recipe_a3ab82559024e09284272ad4389999b0c}{m\_LoginType}};}
+\DoxyCodeLine{24         \textcolor{keyword}{typedef} void(*\mbox{\hyperlink{class_c_dialog_recipe_a0fe58df78cab3863e40034663034acf9}{CALLBACK\_FUNCTION\_Event}})(int);}
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26         BOOL SaveRecipeInfo();}
+\DoxyCodeLine{27         BOOL LoadRecipeInfo();}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} ChangeRecipe(CString strBeforeName, CString strAfterName);}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} InitRecipeList();}
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} DeleteRecipeList();}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} InsertRecipeList();}
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33         CString \mbox{\hyperlink{class_c_dialog_recipe_aa518bc4b5367afd973324aea446076c2}{GetCurrentRecipeInfo}}();}
+\DoxyCodeLine{34         \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\_PARA}} \mbox{\hyperlink{class_c_dialog_recipe_a8e42ad44b553eb06732503ad1866878f}{GetInspectionPara}}(\textcolor{keywordtype}{int} nPtnIndex) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_dialog_recipe_a9e956cb81fe250eb2c229e5615f777f5}{m\_dlgTeaching}}-\/>\mbox{\hyperlink{class_c_dialog_teaching_a515c47d219a8aa008448737c3eb7b18e}{GetInspectionPara}}(nPtnIndex); \};}
+\DoxyCodeLine{35         \textcolor{comment}{//void SetDetector(CAtDetector* AtDetector) \{ m\_dlgTeaching-\/>SetDetector(AtDetector); \};}}
+\DoxyCodeLine{36         HWND \mbox{\hyperlink{class_c_dialog_recipe_aa98626d250a1c38205a4cacc11c1868f}{GetTeachingDlgHwnd}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_dialog_recipe_a9e956cb81fe250eb2c229e5615f777f5}{m\_dlgTeaching}}-\/>\mbox{\hyperlink{class_c_dialog_teaching_a05a26330b86279f6fb42bf7d9227ed30}{GetTeachingDlgHwnd}}(); \};}
+\DoxyCodeLine{37         \textcolor{comment}{//void SetXray(CXRayClass* xray) \{ m\_dlgTeaching-\/>SetXray(xray); \};}}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_acb5ea26c04f0994b08cafed34ef76298}{SetLoginType}}(\mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}{LOGIN\_TYPE}} login\_type) \{ \mbox{\hyperlink{class_c_dialog_recipe_a3ab82559024e09284272ad4389999b0c}{m\_LoginType}} = login\_type; \};}
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_a0274d34b86770ac0cd7f526ea6c24207}{SetImageSize}}(\textcolor{keywordtype}{int} nWidth, \textcolor{keywordtype}{int} nHeight) \{ \mbox{\hyperlink{class_c_dialog_recipe_a9e956cb81fe250eb2c229e5615f777f5}{m\_dlgTeaching}}-\/>\mbox{\hyperlink{class_c_dialog_teaching_aa37ecd67e1863918448b22dce926275d}{SetImageSize}}(nWidth, nHeight); \};}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_a3e3f2a037f1a2b8fa2cf4c2c026a8f57}{SetCallBack}}(\mbox{\hyperlink{class_c_dialog_recipe_a0fe58df78cab3863e40034663034acf9}{CALLBACK\_FUNCTION\_Event}} event) \{ \mbox{\hyperlink{class_c_dialog_recipe_a9e956cb81fe250eb2c229e5615f777f5}{m\_dlgTeaching}}-\/>\mbox{\hyperlink{class_c_dialog_teaching_ab4e9555dea3d83e19a7c1e1f4efa77eb}{SetCallBack}}(event); \};}
+\DoxyCodeLine{41 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{42         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_af26d1a55686ef250eda20a52fbac83cf}{DoDataExchange}}(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{45 public:}
+\DoxyCodeLine{46         virtual BOOL \mbox{\hyperlink{class_c_dialog_recipe_ae33e796191493d35540cc8e0a65d708b}{OnInitDialog}}();}
+\DoxyCodeLine{47         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_aedcba37d5777e9f7c3b4111ef753e199}{OnBnClickedButtonInspectionTeaching}}();}
+\DoxyCodeLine{48         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_ae19b768c09766233952301b913bb5cdc}{OnShowWindow}}(BOOL bShow, UINT nStatus);}
+\DoxyCodeLine{49         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_ab4d867b7868c3c788e2002fa8afbf7a5}{OnBnClickedButtonClose}}();}
+\DoxyCodeLine{50         \textcolor{comment}{//CListCtrl m\_list\_Recipe;}}
+\DoxyCodeLine{51         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_a4db38d9a00616bdec2efab0c65a9d841}{OnBnClickedButtonNewRecipe}}();}
+\DoxyCodeLine{52         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_a7b9101f35ca403cf8dc74ff908874c1a}{OnBnClickedButtonDeleteRecipe}}();}
+\DoxyCodeLine{53         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_ac1db83741b83faea5359f8c09c8a059a}{OnBnClickedButtonChangeRecipe}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         CString \mbox{\hyperlink{class_c_dialog_recipe_ab181e609159f3dd6d43d5ead52ebc263}{m\_edit\_SelectRecipe}};}
+\DoxyCodeLine{56         CListBox \mbox{\hyperlink{class_c_dialog_recipe_aa08ab33043d77cc2a1120c682eebac73}{m\_list\_Recipe}};}
+\DoxyCodeLine{57         CString \mbox{\hyperlink{class_c_dialog_recipe_a2fb0f4434bb8bc3233fe4be23812eda0}{m\_edit\_CurrentRecipeName}};}
+\DoxyCodeLine{58         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_a30e03c6c9b46fa24be5d819b071217bf}{OnLbnSelchangeListRecipe}}();}
+\DoxyCodeLine{59         DECLARE\_EVENTSINK\_MAP()}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_ad20d7426f14689fb6b79bb6e083a0b2f}{ClickBtnenhctrlNewRecipe}}();}
+\DoxyCodeLine{61         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_ad2dc5f98f208e38638803f0d25749c40}{ClickBtnenhctrlDeleteRecipe}}();}
+\DoxyCodeLine{62         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_a28a1ef112808ecb63757939fda32a8b4}{ClickBtnenhctrlChangeRecipe}}();}
+\DoxyCodeLine{63         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_recipe_aa81d8f30fc9f9184aab198b91c415968}{ClickBtnenhctrlInspTeaching}}();}
+\DoxyCodeLine{64         virtual BOOL \mbox{\hyperlink{class_c_dialog_recipe_ae8ac03b655619c3b861d933fa034fa20}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{65 \};}
+
+\end{DoxyCode}

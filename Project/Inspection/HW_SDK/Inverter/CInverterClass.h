@@ -1,0 +1,180 @@
+#pragma once
+#include "commthread.h"
+#include "TimeCheck.h"
+#ifdef INVERTER_COM
+
+#define INVERTER_WRITE_MS		1000
+
+enum INVERTER_WRITE_CMD
+{
+	NON_WRITE_CMD,
+	INVERTER_WRITE_SPEED,
+	INVERTER_WRITE_RUN,
+	INVERTER_WRITE_ALARM_RESET,
+	INVERTER_WRITE_EMG_STOP
+};
+
+enum INVERTER_READ_CMD
+{
+	NON_READ_CMD,
+	INVERTER_READ_STATUS1,
+	INVERTER_READ_STATUS2,
+	INVERTER_READ_STATUS3,
+	INVERTER_READ_ALARM_INFO,
+	INVERTER_READ_MOTOR_SPEED,
+};
+
+typedef struct WRITE_DATA
+{
+	BYTE byData[512];
+	int nDataLenght;
+}WRITE_DATA;
+
+typedef struct INVERTER_STATUS
+{
+	BOOL bRun;
+	BOOL bRunning;
+	int nSpeed;
+	BOOL bAlarm;
+}INVERTER_STATUS;
+
+
+#define INVERTER_STATUS_INFO_1_FALLUE_FL							0
+#define INVERTER_STATUS_INFO_1_FALLUE								1
+#define INVERTER_STATUS_INFO_1_ALARM								2
+#define INVERTER_STATUS_INFO_1_UNDER_VOLTAGE						3
+#define INVERTER_STATUS_INFO_1_MOTOR_SECTION						4
+#define INVERTER_STATUS_INFO_1_PID_CONTROL_OFF						5
+#define INVERTER_STATUS_INFO_1_ACC_DEC_PATTERN_SELECTION			6
+#define INVERTER_STATUS_INFO_1_DC_BRAKING							7
+#define INVERTER_STATUS_INFO_1_JOG_RUN								8
+#define INVERTER_STATUS_INFO_1_FORWARD_REVERSE_RUN					9
+#define INVERTER_STATUS_INFO_1_RUN_STOP								10
+#define INVERTER_STATUS_INFO_1_COAST_STOP							11
+#define INVERTER_STATUS_INFO_1_EMERGENCY_STOP						12
+#define INVERTER_STATUS_INFO_1_STANDBY_ST							13
+#define INVERTER_STATUS_INFO_1_STANDBY								14
+
+#define INVERTER_STATUS_INFO_2_MAX_DEC_FORCED_STOP					7
+#define INVERTER_STATUS_INFO_2_ACC_DEC_PATTERN_SELECTION_1			8
+#define INVERTER_STATUS_INFO_2_ACC_DEC_PATTERN_SELECTION_2			9
+#define INVERTER_STATUS_INFO_2_OC_STALL_LEVEL						12
+
+#define INVERTER_STATUS_INF_3_RY_TERMINAL_OUTPUT_HOLD				0
+#define INVERTER_STATUS_INF_3_OUT_TERMINAL_OUTPUT_HOLD				1
+#define INVERTER_STATUS_INF_3_RUNNING_CONST							10
+#define INVERTER_STATUS_INF_3_HEALTHY_SIGNAL						11
+#define INVERTER_STATUS_INF_3_ACC_DEC_COMPLETION					12
+#define INVERTER_STATUS_INF_3_SPECIFIED_SPEED_REACH					13
+#define INVERTER_STATUS_INF_3_RUNNING_ACC							14
+#define INVERTER_STATUS_INF_3_RUNNING_DEC							15
+
+
+#define INVERTER_COMMUNICATION_CMD_1_PRESET_SPEED_FREQUENCIES_1		0
+#define INVERTER_COMMUNICATION_CMD_1_PRESET_SPEED_FREQUENCIES_2		1
+#define INVERTER_COMMUNICATION_CMD_1_PRESET_SPEED_FREQUENCIES_3		2
+#define INVERTER_COMMUNICATION_CMD_1_PRESET_SPEED_FREQUENCIES_4		3
+#define INVERTER_COMMUNICATION_CMD_1_MOTOR_SELECTION				4
+#define INVERTER_COMMUNICATION_CMD_1_PID_CONTROL					5
+#define INVERTER_COMMUNICATION_CMD_1_ACC_DEC_PATTERN_SELECTION		6
+#define INVERTER_COMMUNICATION_CMD_1_DC_BRAKING						7
+#define INVERTER_COMMUNICATION_CMD_1_JOG_RUN						8
+#define INVERTER_COMMUNICATION_CMD_1_FORWARD_REVERSE_RUN			9
+#define INVERTER_COMMUNICATION_CMD_1_RUN_STOP						10
+#define INVERTER_COMMUNICATION_CMD_1_COAST_STOP						11
+#define INVERTER_COMMUNICATION_CMD_1_EMERGENCY_STOP					12
+#define INVERTER_COMMUNICATION_CMD_1_FAULT_RESET					13
+#define INVERTER_COMMUNICATION_CMD_1_FREQUENCY_PRIORITY_SELECTION	14
+#define INVERTER_COMMUNICATION_CMD_1_COMMAND_PRIORITY_SELECTION		15
+
+
+#define INVERTER_ALARM_INFO_OVER_CURRENT_ALARM							0
+#define INVERTER_ALARM_INFO_INVERTER_OVER_LOAD_ALARM					1
+#define INVERTER_ALARM_INFO_MOTOR_OVER_LOAD_ALARM						2
+#define INVERTER_ALARM_INFO_OVER_HEAT_ALARM								3
+#define INVERTER_ALARM_INFO_OVER_VOLTAGE_ALARM							4
+#define INVERTER_ALARM_INFO_UNDER_VOLTAGE_ALARM							5
+#define INVERTER_ALARM_INFO_MAIN_MODULE_OVER_LOAD_ALARM					6
+#define INVERTER_ALARM_INFO_LOW_CURRENT_ALARM							7
+#define INVERTER_ALARM_INFO_OVER_TORQUE_ALARM							8
+#define INVERTER_ALARM_INFO_BRAKING_RESISTOR_OVER_LOAD_ALARM			9
+#define INVERTER_ALARM_INFO_CUMULATIVE_OPERATION_HOURS_ALARM			10
+#define INVERTER_ALARM_INFO_OPTION_COMMUNICATION_ALARM					11
+#define INVERTER_ALARM_INFO_SERIAL_COMMUNICATION_ALARM					12
+#define INVERTER_ALARM_INFO_MAIN_CIRCUIT_VOLTAGE_ERROR_ALARM			13
+#define INVERTER_ALARM_INFO_REGENERATIVE_POWER_RIDE_THOUGH_CONTROL		14
+#define INVERTER_ALARM_INFO_STOP_AT_LOWER_LIMIT_FREQUENCY_OPERATION		15
+
+
+class CInverterClass
+{
+protected:
+	CCommThread m_Comport;
+	CTimerCheck m_TimeOutCheck;
+	CString m_strPortName;
+	DWORD m_dwBaud;
+	INVERTER_WRITE_CMD m_WriteCommand;
+	INVERTER_READ_CMD m_ReadCommand;
+	deque<WRITE_DATA> m_queWriteData;
+
+	BOOL m_bThreadEnd;
+	CWinThread* m_pWriteThread;
+	BOOL m_bReadCommandEnd;
+	BYTE m_bySendCommand[4];
+
+	BOOL m_bStatusInfo1[16];
+	BOOL m_bStatusInfo2[16];
+	BOOL m_bStatusInfo3[16];
+	BOOL m_bAlarmInfo[16];
+
+	int m_nDirection;
+	double m_dSpeed;
+	BOOL m_bRun;
+	double m_dInverterSpeed;
+	BOOL m_bTimeOutError;
+	BOOL m_bReConnect;
+private:
+	BOOL WriteCommand(BYTE* byData, int nLenght);
+	BOOL ReadCommand(BYTE* byData, int nLenght);
+	BOOL StatusInfoSet(int nStatusIndex, int nStatusSectionIdx, BOOL bData);
+	BOOL StatusInfoGet(int nStatusIndex, int nStatusSectionIdx, BOOL *bData);
+
+public:
+	CInverterClass();
+	~CInverterClass();
+
+	static CInverterClass* Instance();
+	static CInverterClass* m_pInstance;
+
+	UINT static ThreadWritePolling(LPVOID pParam);
+	void WritePollingThread();
+
+	BOOL SetInverterMove(int nDirection = 0, double dSpeed = 0., BOOL isRun = FALSE);
+
+	BOOL SetWriteCommand(INVERTER_WRITE_CMD write_cmd, int nWriteData = 0);
+	BOOL SetReadCommand(INVERTER_READ_CMD read_cmd);
+	BOOL SetReadCommand(BYTE* byData, int nLenght) { return ReadCommand(byData, nLenght); };
+
+	void OpenPort(CString strPortName = _T("COM1"), DWORD dwBaud = 9600, int nReadInterval = 1);
+	void Close();
+	BOOL GetOpenPort() { 
+#ifdef HW_USE
+		return m_Comport.m_bPortOpen; 
+#else
+		return TRUE;
+#endif
+	};
+	void SetReconnect() { m_Comport.m_bPortOpen = FALSE; m_bReConnect = TRUE; };
+
+	BOOL SetInverterSpeed(double dVal);
+	double GetInverterSpeed() { return m_dInverterSpeed; };
+	BOOL GetInverterRunning();
+	BOOL GetInverterRun();
+	BOOL GetInverterAlarm();
+	BOOL GetInverterTimeOutError() { return m_bTimeOutError; };
+	BOOL SetInverterAlarmReset();
+	BOOL SetInverterEMGStop(BOOL isStop = TRUE);
+	int GetWriteCmdCount() { return (int)m_queWriteData.size(); };
+};
+
+#endif

@@ -1,0 +1,266 @@
+\hypertarget{class_c_at_detector}{}\doxysection{CAt\+Detector 클래스 참조}
+\label{class_c_at_detector}\index{CAtDetector@{CAtDetector}}
+
+
+{\ttfamily \#include $<$CATDetector.\+h$>$}
+
+
+
+CAt\+Detector에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_c_at_detector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_at_detector_abbe5b7a1f3a4ac84c6dd6dee8648ea20}{CAt\+Detector}} ()
+\item 
+\mbox{\hyperlink{class_c_at_detector_aba2358706b8cf9a3209d9acf6a3ca6a7}{$\sim$\+CAt\+Detector}} ()
+\item 
+CString \mbox{\hyperlink{class_c_at_detector_a29585f5d1704317faa1e4d4dfaa02c9e}{Get\+Event\+String}} ()
+\item 
+USHORT $\ast$ \mbox{\hyperlink{class_c_at_detector_a9cf4678398bfc6d2d777f3d0fae2a15e}{Get\+Image\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_c_at_detector_aa26e284a2fcb0667b488eea651ee2784}{Set\+Message}} (HWND h\+Wnd, int n\+Message)
+\item 
+void \mbox{\hyperlink{class_c_at_detector_a7aa6c66fb19c7c5708d918dc5098cae5}{Set\+Detector\+Para}} (\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} detector\+Para)
+\item 
+void \mbox{\hyperlink{class_c_at_detector_a16613d5772c827073efc018fbd762fe7}{Image\+Copy}} ()
+\item 
+void \mbox{\hyperlink{class_c_at_detector_a96962f9b4921cddbae76ae74a0e79c55}{Event\+Process}} (int code, const char $\ast$event)
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_a792f949dbb874f8834743448edb929e6}{Init}} (\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} detector\+Para)
+\item 
+USHORT $\ast$ \mbox{\hyperlink{class_c_at_detector_af1eb09ab87896e4233a2d91c3a11ef1d}{Get\+Image\+Buff}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_a36f79ca18e986823c39a3548b68a88e2}{Grab\+Start}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_ab9813376e5ec3376e8e180430f885b3b}{Grab\+Stop}} ()
+\item 
+void \mbox{\hyperlink{class_c_at_detector_a3f0cc04fda184c438cae47ee6230362b}{Set\+Image\+Size}} (int n\+Width, int n\+Height)
+\item 
+int \mbox{\hyperlink{class_c_at_detector_ac79f989fb0fc70ce6039facd3eb8008f}{Get\+Image\+Type}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_aa65d97dfc5e079f7635b5c3953e3400f}{Get\+Connection}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_ae1a4ee97196446097828d4fa45acc651}{Set\+Cal}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_a8d148c2685f922cd0c83827551e7333d}{Close}} ()
+\item 
+double \mbox{\hyperlink{class_c_at_detector_af87ac199ed8bdd1a6dde7e7f82c5ba6a}{Get\+Scan\+Speed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_at_detector}{CAt\+Detector}} $\ast$ \mbox{\hyperlink{class_c_at_detector_a6c30bcec3a9d5cdc33a53ada6888c0df}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_at_detector}{CAt\+Detector}} $\ast$ \mbox{\hyperlink{class_c_at_detector_a467681f0f097fad69c07743adbdf82d2}{m\+\_\+p\+Instance}} = NULL
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_t_xray_detector}{ATXray\+Detector}} \mbox{\hyperlink{class_c_at_detector_a6432a3a10c200382f3754a162af67d7e}{m\+\_\+\+ATXray\+Detector}}
+\item 
+USHORT $\ast$ \mbox{\hyperlink{class_c_at_detector_a6d66fdae440265c06774bf856f077f2d}{m\+\_\+p\+Image\+Buff}}
+\item 
+\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} \mbox{\hyperlink{class_c_at_detector_a66024783f87f7d2e53e674afe2aaf675}{m\+\_\+\+Detector\+Para}}
+\item 
+HWND \mbox{\hyperlink{class_c_at_detector_a53c58ad1a29087f08998d23ddb02214f}{m\+\_\+\+Main\+Hwnd}}
+\item 
+int \mbox{\hyperlink{class_c_at_detector_aa64f6ded1e2c34c05bdef16d740382c8}{m\+\_\+n\+Message}}
+\item 
+CString \mbox{\hyperlink{class_c_at_detector_aaee6c31dace8043023865802fa1922c8}{m\+\_\+str\+Event}}
+\item 
+CSize \mbox{\hyperlink{class_c_at_detector_a0c8710d3a8f8b9365c0716630a60d321}{m\+\_\+\+Image\+Size}}
+\item 
+BOOL \mbox{\hyperlink{class_c_at_detector_adae298f94ca65960766c5f62d5ce99d5}{m\+\_\+b\+Connection}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_at_detector_abbe5b7a1f3a4ac84c6dd6dee8648ea20}\label{class_c_at_detector_abbe5b7a1f3a4ac84c6dd6dee8648ea20}} 
+\index{CAtDetector@{CAtDetector}!CAtDetector@{CAtDetector}}
+\index{CAtDetector@{CAtDetector}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{CAtDetector()}{CAtDetector()}}
+{\footnotesize\ttfamily CAt\+Detector\+::\+CAt\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_aba2358706b8cf9a3209d9acf6a3ca6a7}\label{class_c_at_detector_aba2358706b8cf9a3209d9acf6a3ca6a7}} 
+\index{CAtDetector@{CAtDetector}!````~CAtDetector@{$\sim$CAtDetector}}
+\index{````~CAtDetector@{$\sim$CAtDetector}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{$\sim$CAtDetector()}{~CAtDetector()}}
+{\footnotesize\ttfamily CAt\+Detector\+::$\sim$\+CAt\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_at_detector_a8d148c2685f922cd0c83827551e7333d}\label{class_c_at_detector_a8d148c2685f922cd0c83827551e7333d}} 
+\index{CAtDetector@{CAtDetector}!Close@{Close}}
+\index{Close@{Close}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_a96962f9b4921cddbae76ae74a0e79c55}\label{class_c_at_detector_a96962f9b4921cddbae76ae74a0e79c55}} 
+\index{CAtDetector@{CAtDetector}!EventProcess@{EventProcess}}
+\index{EventProcess@{EventProcess}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{EventProcess()}{EventProcess()}}
+{\footnotesize\ttfamily void CAt\+Detector\+::\+Event\+Process (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{const char $\ast$}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_aa65d97dfc5e079f7635b5c3953e3400f}\label{class_c_at_detector_aa65d97dfc5e079f7635b5c3953e3400f}} 
+\index{CAtDetector@{CAtDetector}!GetConnection@{GetConnection}}
+\index{GetConnection@{GetConnection}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GetConnection()}{GetConnection()}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::\+Get\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a29585f5d1704317faa1e4d4dfaa02c9e}\label{class_c_at_detector_a29585f5d1704317faa1e4d4dfaa02c9e}} 
+\index{CAtDetector@{CAtDetector}!GetEventString@{GetEventString}}
+\index{GetEventString@{GetEventString}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GetEventString()}{GetEventString()}}
+{\footnotesize\ttfamily CString CAt\+Detector\+::\+Get\+Event\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_af1eb09ab87896e4233a2d91c3a11ef1d}\label{class_c_at_detector_af1eb09ab87896e4233a2d91c3a11ef1d}} 
+\index{CAtDetector@{CAtDetector}!GetImageBuff@{GetImageBuff}}
+\index{GetImageBuff@{GetImageBuff}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GetImageBuff()}{GetImageBuff()}}
+{\footnotesize\ttfamily USHORT $\ast$ CAt\+Detector\+::\+Get\+Image\+Buff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a9cf4678398bfc6d2d777f3d0fae2a15e}\label{class_c_at_detector_a9cf4678398bfc6d2d777f3d0fae2a15e}} 
+\index{CAtDetector@{CAtDetector}!GetImageData@{GetImageData}}
+\index{GetImageData@{GetImageData}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GetImageData()}{GetImageData()}}
+{\footnotesize\ttfamily USHORT $\ast$ CAt\+Detector\+::\+Get\+Image\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_ac79f989fb0fc70ce6039facd3eb8008f}\label{class_c_at_detector_ac79f989fb0fc70ce6039facd3eb8008f}} 
+\index{CAtDetector@{CAtDetector}!GetImageType@{GetImageType}}
+\index{GetImageType@{GetImageType}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GetImageType()}{GetImageType()}}
+{\footnotesize\ttfamily int CAt\+Detector\+::\+Get\+Image\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_af87ac199ed8bdd1a6dde7e7f82c5ba6a}\label{class_c_at_detector_af87ac199ed8bdd1a6dde7e7f82c5ba6a}} 
+\index{CAtDetector@{CAtDetector}!GetScanSpeed@{GetScanSpeed}}
+\index{GetScanSpeed@{GetScanSpeed}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GetScanSpeed()}{GetScanSpeed()}}
+{\footnotesize\ttfamily double CAt\+Detector\+::\+Get\+Scan\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a36f79ca18e986823c39a3548b68a88e2}\label{class_c_at_detector_a36f79ca18e986823c39a3548b68a88e2}} 
+\index{CAtDetector@{CAtDetector}!GrabStart@{GrabStart}}
+\index{GrabStart@{GrabStart}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GrabStart()}{GrabStart()}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::\+Grab\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_ab9813376e5ec3376e8e180430f885b3b}\label{class_c_at_detector_ab9813376e5ec3376e8e180430f885b3b}} 
+\index{CAtDetector@{CAtDetector}!GrabStop@{GrabStop}}
+\index{GrabStop@{GrabStop}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{GrabStop()}{GrabStop()}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::\+Grab\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_a16613d5772c827073efc018fbd762fe7}\label{class_c_at_detector_a16613d5772c827073efc018fbd762fe7}} 
+\index{CAtDetector@{CAtDetector}!ImageCopy@{ImageCopy}}
+\index{ImageCopy@{ImageCopy}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{ImageCopy()}{ImageCopy()}}
+{\footnotesize\ttfamily void CAt\+Detector\+::\+Image\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_a792f949dbb874f8834743448edb929e6}\label{class_c_at_detector_a792f949dbb874f8834743448edb929e6}} 
+\index{CAtDetector@{CAtDetector}!Init@{Init}}
+\index{Init@{Init}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}}}]{detector\+Para }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_a6c30bcec3a9d5cdc33a53ada6888c0df}\label{class_c_at_detector_a6c30bcec3a9d5cdc33a53ada6888c0df}} 
+\index{CAtDetector@{CAtDetector}!Instance@{Instance}}
+\index{Instance@{Instance}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_at_detector}{CAt\+Detector}} $\ast$ CAt\+Detector\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_at_detector_ae1a4ee97196446097828d4fa45acc651}\label{class_c_at_detector_ae1a4ee97196446097828d4fa45acc651}} 
+\index{CAtDetector@{CAtDetector}!SetCal@{SetCal}}
+\index{SetCal@{SetCal}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{SetCal()}{SetCal()}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::\+Set\+Cal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_a7aa6c66fb19c7c5708d918dc5098cae5}\label{class_c_at_detector_a7aa6c66fb19c7c5708d918dc5098cae5}} 
+\index{CAtDetector@{CAtDetector}!SetDetectorPara@{SetDetectorPara}}
+\index{SetDetectorPara@{SetDetectorPara}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{SetDetectorPara()}{SetDetectorPara()}}
+{\footnotesize\ttfamily void CAt\+Detector\+::\+Set\+Detector\+Para (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}}}]{detector\+Para }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_at_detector_a3f0cc04fda184c438cae47ee6230362b}\label{class_c_at_detector_a3f0cc04fda184c438cae47ee6230362b}} 
+\index{CAtDetector@{CAtDetector}!SetImageSize@{SetImageSize}}
+\index{SetImageSize@{SetImageSize}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{SetImageSize()}{SetImageSize()}}
+{\footnotesize\ttfamily void CAt\+Detector\+::\+Set\+Image\+Size (\begin{DoxyParamCaption}\item[{int}]{n\+Width,  }\item[{int}]{n\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_at_detector_aa26e284a2fcb0667b488eea651ee2784}\label{class_c_at_detector_aa26e284a2fcb0667b488eea651ee2784}} 
+\index{CAtDetector@{CAtDetector}!SetMessage@{SetMessage}}
+\index{SetMessage@{SetMessage}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{SetMessage()}{SetMessage()}}
+{\footnotesize\ttfamily void CAt\+Detector\+::\+Set\+Message (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{int}]{n\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_at_detector_a6432a3a10c200382f3754a162af67d7e}\label{class_c_at_detector_a6432a3a10c200382f3754a162af67d7e}} 
+\index{CAtDetector@{CAtDetector}!m\_ATXrayDetector@{m\_ATXrayDetector}}
+\index{m\_ATXrayDetector@{m\_ATXrayDetector}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_ATXrayDetector}{m\_ATXrayDetector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_t_xray_detector}{ATXray\+Detector}} CAt\+Detector\+::m\+\_\+\+ATXray\+Detector\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_adae298f94ca65960766c5f62d5ce99d5}\label{class_c_at_detector_adae298f94ca65960766c5f62d5ce99d5}} 
+\index{CAtDetector@{CAtDetector}!m\_bConnection@{m\_bConnection}}
+\index{m\_bConnection@{m\_bConnection}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_bConnection}{m\_bConnection}}
+{\footnotesize\ttfamily BOOL CAt\+Detector\+::m\+\_\+b\+Connection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a66024783f87f7d2e53e674afe2aaf675}\label{class_c_at_detector_a66024783f87f7d2e53e674afe2aaf675}} 
+\index{CAtDetector@{CAtDetector}!m\_DetectorPara@{m\_DetectorPara}}
+\index{m\_DetectorPara@{m\_DetectorPara}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_DetectorPara}{m\_DetectorPara}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} CAt\+Detector\+::m\+\_\+\+Detector\+Para\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a0c8710d3a8f8b9365c0716630a60d321}\label{class_c_at_detector_a0c8710d3a8f8b9365c0716630a60d321}} 
+\index{CAtDetector@{CAtDetector}!m\_ImageSize@{m\_ImageSize}}
+\index{m\_ImageSize@{m\_ImageSize}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_ImageSize}{m\_ImageSize}}
+{\footnotesize\ttfamily CSize CAt\+Detector\+::m\+\_\+\+Image\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a53c58ad1a29087f08998d23ddb02214f}\label{class_c_at_detector_a53c58ad1a29087f08998d23ddb02214f}} 
+\index{CAtDetector@{CAtDetector}!m\_MainHwnd@{m\_MainHwnd}}
+\index{m\_MainHwnd@{m\_MainHwnd}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_MainHwnd}{m\_MainHwnd}}
+{\footnotesize\ttfamily HWND CAt\+Detector\+::m\+\_\+\+Main\+Hwnd\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_aa64f6ded1e2c34c05bdef16d740382c8}\label{class_c_at_detector_aa64f6ded1e2c34c05bdef16d740382c8}} 
+\index{CAtDetector@{CAtDetector}!m\_nMessage@{m\_nMessage}}
+\index{m\_nMessage@{m\_nMessage}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_nMessage}{m\_nMessage}}
+{\footnotesize\ttfamily int CAt\+Detector\+::m\+\_\+n\+Message\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a6d66fdae440265c06774bf856f077f2d}\label{class_c_at_detector_a6d66fdae440265c06774bf856f077f2d}} 
+\index{CAtDetector@{CAtDetector}!m\_pImageBuff@{m\_pImageBuff}}
+\index{m\_pImageBuff@{m\_pImageBuff}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_pImageBuff}{m\_pImageBuff}}
+{\footnotesize\ttfamily USHORT$\ast$ CAt\+Detector\+::m\+\_\+p\+Image\+Buff\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_at_detector_a467681f0f097fad69c07743adbdf82d2}\label{class_c_at_detector_a467681f0f097fad69c07743adbdf82d2}} 
+\index{CAtDetector@{CAtDetector}!m\_pInstance@{m\_pInstance}}
+\index{m\_pInstance@{m\_pInstance}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_pInstance}{m\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_at_detector}{CAt\+Detector}} $\ast$ CAt\+Detector\+::m\+\_\+p\+Instance = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_at_detector_aaee6c31dace8043023865802fa1922c8}\label{class_c_at_detector_aaee6c31dace8043023865802fa1922c8}} 
+\index{CAtDetector@{CAtDetector}!m\_strEvent@{m\_strEvent}}
+\index{m\_strEvent@{m\_strEvent}!CAtDetector@{CAtDetector}}
+\doxysubsubsection{\texorpdfstring{m\_strEvent}{m\_strEvent}}
+{\footnotesize\ttfamily CString CAt\+Detector\+::m\+\_\+str\+Event\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+Detector/\mbox{\hyperlink{_c_a_t_detector_8h}{CATDetector.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+HW\+\_\+\+SDK/\+Detector/\mbox{\hyperlink{_c_a_t_detector_8cpp}{CATDetector.\+cpp}}\end{DoxyCompactItemize}

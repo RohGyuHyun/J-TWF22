@@ -1,0 +1,9 @@
+<map id="CSequenceModule" name="CSequenceModule">
+<area shape="rect" id="node1" title=" " alt="" coords="161,181,291,207"/>
+<area shape="rect" id="node2" href="$struct_sequence_flag.html" title=" " alt="" coords="5,93,111,119"/>
+<area shape="rect" id="node3" href="$struct_motion_flag.html" title=" " alt="" coords="135,93,221,119"/>
+<area shape="rect" id="node4" href="$class_c_motion_data.html" title=" " alt="" coords="245,93,343,119"/>
+<area shape="rect" id="node5" href="$struct_motion_process_status.html" title=" " alt="" coords="150,5,297,31"/>
+<area shape="rect" id="node6" href="$struct_motion_seq.html" title=" " alt="" coords="321,5,405,31"/>
+<area shape="rect" id="node7" href="$class_c_timer_check.html" title=" " alt="" coords="367,93,467,119"/>
+</map>

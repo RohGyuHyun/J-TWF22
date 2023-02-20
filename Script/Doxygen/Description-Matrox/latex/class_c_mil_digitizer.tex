@@ -1,0 +1,273 @@
+\hypertarget{class_c_mil_digitizer}{}\doxysection{CMil\+Digitizer 클래스 참조}
+\label{class_c_mil_digitizer}\index{CMilDigitizer@{CMilDigitizer}}
+
+
+Mil의 Migitizer관련 함수군을 Class화하였다 Digitizer는 Channel관리에 해당하는 Class이다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Digitizer.\+h$>$}
+
+
+
+CMil\+Digitizer에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_c_mil_digitizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Digitizer에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mil_digitizer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_digitizer_a3ddea3ad75a75211fcd81151183cbe63}{CMil\+Digitizer}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_digitizer_a499d6eabffe4e577816f3897016a3b9a}{$\sim$\+CMil\+Digitizer}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_abb1b26cf2866b8c1b4c01ec8b52cc6b9}{Create}} (\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$p\+Mil\+Application, \mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$p\+Mil\+System)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_afb8171b9c6d97091bee37dfb6356e239}{Alloc}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_ae72dd18514643550aaa44056dea7947c}{Set\+Continuous}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_aa8d69fac4355d5fc07d1757717590f72}{Inquire}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_a62360a099849e0aa591a73ad3b31a41d}{Get\+Resolution}} (CSize \&Rect)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_a1ed9eaf1decfdaf3326e82c3875aa7a0}{Set\+Buffer}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Buffer)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_af6f9d19a6030e879dc838e5cc677d64f}{Close}} (void)
+\begin{DoxyCompactList}\small\item\em Grab된 이미지가 들어올 Mi\+Buffer \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_ad76eb2e380656a7e659d5f5345a25a41}{Grab}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_a0a500dccec42b67e2f3e7df92bc612a8}{Stop\+Grab}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_a7187b1c09a04f8736336de448b60451f}{Stop\+Grab\+Continuous}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_aa0a2cb6ecffd3e6ece8531c4dc917ca9}{Setup\+Trigger}} (BOOL On\+Off)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_af4d6993caa971fba99da4ee05f20aebd}{Grab\+Trigger}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_digitizer_a13a3ef362048e81dd1743c500d297351}{Get\+Grab\+Buffer}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_a8c407ba68866d91f4eecd389eae822cc}{Process}} ()
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_a50f52a4c3deb0ea2dd3dae175e6f8e95}{Control}} (int i\+Type, int i\+Param)
+\item 
+int \mbox{\hyperlink{class_c_mil_digitizer_af5ebb9f4ce9350ef9623e07e57c93039}{Set\+Time\+Infinite}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_digitizer_a8a96d790117d996ce9518e1f749cc58e}{m\+\_\+mil\+IDApplication}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_digitizer_a36202b3985539210eb7265470e331e19}{m\+\_\+mil\+IDSystem}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_digitizer_a290fc096156086635e5e05f3b826e70c}{m\+\_\+mil\+IDDigitizer}}
+\item 
+\mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$ \mbox{\hyperlink{class_c_mil_digitizer_a4072287b04f6ee5422369dcd57684184}{m\+\_\+p\+Mil\+System}}
+\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_digitizer_a9d0aa0dd3fa911479cc215c8fbb2a40b}{m\+\_\+p\+Mil\+Buffer}}
+\item 
+\mbox{\hyperlink{class_c_mil_digitizer}{CMil\+Digitizer}} $\ast$ \mbox{\hyperlink{class_c_mil_digitizer_a9f1ee87f1d503f2ac3a9f1d1a42d1790}{m\+\_\+p\+Instance}}
+\item 
+CString \mbox{\hyperlink{class_c_mil_digitizer_a364f6157231290ad1386b218cd126561}{m\+\_\+str\+Camera\+File}}
+\item 
+CGrab\+Channel $\ast$ \mbox{\hyperlink{class_c_mil_digitizer_a9f6ce748035cc5c8e400b5066503686b}{m\+\_\+p\+Grab\+Channel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Migitizer관련 함수군을 Class화하였다 Digitizer는 Channel관리에 해당하는 Class이다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_digitizer_a3ddea3ad75a75211fcd81151183cbe63}\label{class_c_mil_digitizer_a3ddea3ad75a75211fcd81151183cbe63}} 
+\index{CMilDigitizer@{CMilDigitizer}!CMilDigitizer@{CMilDigitizer}}
+\index{CMilDigitizer@{CMilDigitizer}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{CMilDigitizer()}{CMilDigitizer()}}
+{\footnotesize\ttfamily CMil\+Digitizer\+::\+CMil\+Digitizer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a499d6eabffe4e577816f3897016a3b9a}\label{class_c_mil_digitizer_a499d6eabffe4e577816f3897016a3b9a}} 
+\index{CMilDigitizer@{CMilDigitizer}!````~CMilDigitizer@{$\sim$CMilDigitizer}}
+\index{````~CMilDigitizer@{$\sim$CMilDigitizer}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilDigitizer()}{~CMilDigitizer()}}
+{\footnotesize\ttfamily CMil\+Digitizer\+::$\sim$\+CMil\+Digitizer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_digitizer_afb8171b9c6d97091bee37dfb6356e239}\label{class_c_mil_digitizer_afb8171b9c6d97091bee37dfb6356e239}} 
+\index{CMilDigitizer@{CMilDigitizer}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Alloc()}{Alloc()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_af6f9d19a6030e879dc838e5cc677d64f}\label{class_c_mil_digitizer_af6f9d19a6030e879dc838e5cc677d64f}} 
+\index{CMilDigitizer@{CMilDigitizer}!Close@{Close}}
+\index{Close@{Close}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Grab된 이미지가 들어올 Mi\+Buffer 
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a50f52a4c3deb0ea2dd3dae175e6f8e95}\label{class_c_mil_digitizer_a50f52a4c3deb0ea2dd3dae175e6f8e95}} 
+\index{CMilDigitizer@{CMilDigitizer}!Control@{Control}}
+\index{Control@{Control}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Control()}{Control()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Control (\begin{DoxyParamCaption}\item[{int}]{i\+Type,  }\item[{int}]{i\+Param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_abb1b26cf2866b8c1b4c01ec8b52cc6b9}\label{class_c_mil_digitizer_abb1b26cf2866b8c1b4c01ec8b52cc6b9}} 
+\index{CMilDigitizer@{CMilDigitizer}!Create@{Create}}
+\index{Create@{Create}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_application}{CMil\+Application}} $\ast$}]{p\+Mil\+Application,  }\item[{\mbox{\hyperlink{class_c_mil_system}{CMil\+System}} $\ast$}]{p\+Mil\+System }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a13a3ef362048e81dd1743c500d297351}\label{class_c_mil_digitizer_a13a3ef362048e81dd1743c500d297351}} 
+\index{CMilDigitizer@{CMilDigitizer}!GetGrabBuffer@{GetGrabBuffer}}
+\index{GetGrabBuffer@{GetGrabBuffer}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{GetGrabBuffer()}{GetGrabBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ CMil\+Digitizer\+::\+Get\+Grab\+Buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a62360a099849e0aa591a73ad3b31a41d}\label{class_c_mil_digitizer_a62360a099849e0aa591a73ad3b31a41d}} 
+\index{CMilDigitizer@{CMilDigitizer}!GetResolution@{GetResolution}}
+\index{GetResolution@{GetResolution}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{GetResolution()}{GetResolution()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Get\+Resolution (\begin{DoxyParamCaption}\item[{CSize \&}]{Rect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_ad76eb2e380656a7e659d5f5345a25a41}\label{class_c_mil_digitizer_ad76eb2e380656a7e659d5f5345a25a41}} 
+\index{CMilDigitizer@{CMilDigitizer}!Grab@{Grab}}
+\index{Grab@{Grab}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Grab()}{Grab()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Grab (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_af4d6993caa971fba99da4ee05f20aebd}\label{class_c_mil_digitizer_af4d6993caa971fba99da4ee05f20aebd}} 
+\index{CMilDigitizer@{CMilDigitizer}!GrabTrigger@{GrabTrigger}}
+\index{GrabTrigger@{GrabTrigger}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{GrabTrigger()}{GrabTrigger()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Grab\+Trigger (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_aa8d69fac4355d5fc07d1757717590f72}\label{class_c_mil_digitizer_aa8d69fac4355d5fc07d1757717590f72}} 
+\index{CMilDigitizer@{CMilDigitizer}!Inquire@{Inquire}}
+\index{Inquire@{Inquire}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Inquire()}{Inquire()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Inquire (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a8c407ba68866d91f4eecd389eae822cc}\label{class_c_mil_digitizer_a8c407ba68866d91f4eecd389eae822cc}} 
+\index{CMilDigitizer@{CMilDigitizer}!Process@{Process}}
+\index{Process@{Process}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a1ed9eaf1decfdaf3326e82c3875aa7a0}\label{class_c_mil_digitizer_a1ed9eaf1decfdaf3326e82c3875aa7a0}} 
+\index{CMilDigitizer@{CMilDigitizer}!SetBuffer@{SetBuffer}}
+\index{SetBuffer@{SetBuffer}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{SetBuffer()}{SetBuffer()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Set\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_ae72dd18514643550aaa44056dea7947c}\label{class_c_mil_digitizer_ae72dd18514643550aaa44056dea7947c}} 
+\index{CMilDigitizer@{CMilDigitizer}!SetContinuous@{SetContinuous}}
+\index{SetContinuous@{SetContinuous}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{SetContinuous()}{SetContinuous()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Set\+Continuous (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_af5ebb9f4ce9350ef9623e07e57c93039}\label{class_c_mil_digitizer_af5ebb9f4ce9350ef9623e07e57c93039}} 
+\index{CMilDigitizer@{CMilDigitizer}!SetTimeInfinite@{SetTimeInfinite}}
+\index{SetTimeInfinite@{SetTimeInfinite}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{SetTimeInfinite()}{SetTimeInfinite()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Set\+Time\+Infinite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_aa0a2cb6ecffd3e6ece8531c4dc917ca9}\label{class_c_mil_digitizer_aa0a2cb6ecffd3e6ece8531c4dc917ca9}} 
+\index{CMilDigitizer@{CMilDigitizer}!SetupTrigger@{SetupTrigger}}
+\index{SetupTrigger@{SetupTrigger}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{SetupTrigger()}{SetupTrigger()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Setup\+Trigger (\begin{DoxyParamCaption}\item[{BOOL}]{On\+Off }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a0a500dccec42b67e2f3e7df92bc612a8}\label{class_c_mil_digitizer_a0a500dccec42b67e2f3e7df92bc612a8}} 
+\index{CMilDigitizer@{CMilDigitizer}!StopGrab@{StopGrab}}
+\index{StopGrab@{StopGrab}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{StopGrab()}{StopGrab()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Stop\+Grab (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a7187b1c09a04f8736336de448b60451f}\label{class_c_mil_digitizer_a7187b1c09a04f8736336de448b60451f}} 
+\index{CMilDigitizer@{CMilDigitizer}!StopGrabContinuous@{StopGrabContinuous}}
+\index{StopGrabContinuous@{StopGrabContinuous}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{StopGrabContinuous()}{StopGrabContinuous()}}
+{\footnotesize\ttfamily int CMil\+Digitizer\+::\+Stop\+Grab\+Continuous (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_digitizer_a8a96d790117d996ce9518e1f749cc58e}\label{class_c_mil_digitizer_a8a96d790117d996ce9518e1f749cc58e}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_milIDApplication@{m\_milIDApplication}}
+\index{m\_milIDApplication@{m\_milIDApplication}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_milIDApplication}{m\_milIDApplication}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Digitizer\+::m\+\_\+mil\+IDApplication}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a290fc096156086635e5e05f3b826e70c}\label{class_c_mil_digitizer_a290fc096156086635e5e05f3b826e70c}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_milIDDigitizer@{m\_milIDDigitizer}}
+\index{m\_milIDDigitizer@{m\_milIDDigitizer}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_milIDDigitizer}{m\_milIDDigitizer}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Digitizer\+::m\+\_\+mil\+IDDigitizer}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a36202b3985539210eb7265470e331e19}\label{class_c_mil_digitizer_a36202b3985539210eb7265470e331e19}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_milIDSystem@{m\_milIDSystem}}
+\index{m\_milIDSystem@{m\_milIDSystem}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_milIDSystem}{m\_milIDSystem}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Digitizer\+::m\+\_\+mil\+IDSystem}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a9f6ce748035cc5c8e400b5066503686b}\label{class_c_mil_digitizer_a9f6ce748035cc5c8e400b5066503686b}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_pGrabChannel@{m\_pGrabChannel}}
+\index{m\_pGrabChannel@{m\_pGrabChannel}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_pGrabChannel}{m\_pGrabChannel}}
+{\footnotesize\ttfamily CGrab\+Channel$\ast$ CMil\+Digitizer\+::m\+\_\+p\+Grab\+Channel}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a9f1ee87f1d503f2ac3a9f1d1a42d1790}\label{class_c_mil_digitizer_a9f1ee87f1d503f2ac3a9f1d1a42d1790}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_pInstance@{m\_pInstance}}
+\index{m\_pInstance@{m\_pInstance}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_pInstance}{m\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_digitizer}{CMil\+Digitizer}}$\ast$ CMil\+Digitizer\+::m\+\_\+p\+Instance}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a9d0aa0dd3fa911479cc215c8fbb2a40b}\label{class_c_mil_digitizer_a9d0aa0dd3fa911479cc215c8fbb2a40b}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_pMilBuffer@{m\_pMilBuffer}}
+\index{m\_pMilBuffer@{m\_pMilBuffer}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_pMilBuffer}{m\_pMilBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}}$\ast$ CMil\+Digitizer\+::m\+\_\+p\+Mil\+Buffer}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a4072287b04f6ee5422369dcd57684184}\label{class_c_mil_digitizer_a4072287b04f6ee5422369dcd57684184}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_pMilSystem@{m\_pMilSystem}}
+\index{m\_pMilSystem@{m\_pMilSystem}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_pMilSystem}{m\_pMilSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_system}{CMil\+System}}$\ast$ CMil\+Digitizer\+::m\+\_\+p\+Mil\+System}
+
+\mbox{\Hypertarget{class_c_mil_digitizer_a364f6157231290ad1386b218cd126561}\label{class_c_mil_digitizer_a364f6157231290ad1386b218cd126561}} 
+\index{CMilDigitizer@{CMilDigitizer}!m\_strCameraFile@{m\_strCameraFile}}
+\index{m\_strCameraFile@{m\_strCameraFile}!CMilDigitizer@{CMilDigitizer}}
+\doxysubsubsection{\texorpdfstring{m\_strCameraFile}{m\_strCameraFile}}
+{\footnotesize\ttfamily CString CMil\+Digitizer\+::m\+\_\+str\+Camera\+File}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_digitizer_8h}{Mil\+Digitizer.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_digitizer_8cpp}{Mil\+Digitizer.\+cpp}}\end{DoxyCompactItemize}

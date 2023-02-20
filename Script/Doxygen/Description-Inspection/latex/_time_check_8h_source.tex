@@ -1,0 +1,30 @@
+\hypertarget{_time_check_8h_source}{}\doxysection{Time\+Check.\+h}
+\label{_time_check_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/TimeCheck.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/TimeCheck.h}}
+\mbox{\hyperlink{_time_check_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_CTIMER\_CHECK}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_CTIMER\_CHECK}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_timer_check}{CTimerCheck}}}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 \textcolor{keyword}{public}:}
+\DoxyCodeLine{7         \mbox{\hyperlink{class_c_timer_check}{CTimerCheck}}(\textcolor{keywordtype}{long} checktime = 100); \textcolor{comment}{// 단위는 msec...}}
+\DoxyCodeLine{8         \mbox{\hyperlink{class_c_timer_check_a7b127aab5aeda9356ff00d648363d30d}{\string~CTimerCheck}}();}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_timer_check_ac808ecd70084448e32ddee6bbc7aad06}{TimePassed}}();    \textcolor{comment}{// 현재 까지의 시간을 리턴....}}
+\DoxyCodeLine{12         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c_timer_check_a2d26c1ba94100583ccecf1cafb85c4ab}{GetCheckTime}}();}
+\DoxyCodeLine{13         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_timer_check_a25f957f5bf5f31773702e02e41243a10}{SetCheckTime}}(\textcolor{keywordtype}{long} ctime);}
+\DoxyCodeLine{14         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_timer_check_abca6d70a39b653573602b225691134e4}{IsTimeOver}}();}
+\DoxyCodeLine{15         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_timer_check_af10200d9c8b93a800b820d007d6f09eb}{IsMoreThan}}(\textcolor{keywordtype}{long} ctime);  \textcolor{comment}{// 단위는 msec..}}
+\DoxyCodeLine{16         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_timer_check_a80b679057f054694b0feb857a39b696c}{IsLessThan}}(\textcolor{keywordtype}{long} ctime);  \textcolor{comment}{// 단위는 msec..}}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_timer_check_aa2ce7b35b1ea4b51f060e2e0b87e279e}{StartTimer}}();}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19         \textcolor{keywordtype}{long} m\_CheckTime;}
+\DoxyCodeLine{20         \textcolor{keywordtype}{long} StartTime;}
+\DoxyCodeLine{21         \textcolor{keywordtype}{long} EndTime;}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

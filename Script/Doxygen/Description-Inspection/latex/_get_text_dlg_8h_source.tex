@@ -1,0 +1,126 @@
+\hypertarget{_get_text_dlg_8h_source}{}\doxysection{Get\+Text\+Dlg.\+h}
+\label{_get_text_dlg_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/GetTextDlg.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/GetTextDlg.h}}
+\mbox{\hyperlink{_get_text_dlg_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//\{\{AFX\_INCLUDES()}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{btnenhctrl_8h}{btnenhctrl.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{comment}{//\}\}AFX\_INCLUDES}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#if !defined(AFX\_GETTEXTDLG\_H\_\_2DCECE2D\_026B\_45B0\_BD81\_51D582C2AD25\_\_INCLUDED\_)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define AFX\_GETTEXTDLG\_H\_\_2DCECE2D\_026B\_45B0\_BD81\_51D582C2AD25\_\_INCLUDED\_}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#if \_MSC\_VER > 1000}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_MSC\_VER > 1000}}
+\DoxyCodeLine{10 \textcolor{comment}{// CGetTextDlg.h : header file}}
+\DoxyCodeLine{11 \textcolor{comment}{//}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{14 \textcolor{comment}{// CGetTextDlg dialog}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_get_text_dlg}{CGetTextDlg}} : \textcolor{keyword}{public} CDialog}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{comment}{// Construction}}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20         }
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a9daab83e120c0fdd2ffff2d7fd5dfd3e}{BtnDisable}}();}
+\DoxyCodeLine{22         CString \mbox{\hyperlink{class_c_get_text_dlg_afc9a0dfdffa94501cf38dbbe58010670}{GetStringValue}}();}
+\DoxyCodeLine{23         \mbox{\hyperlink{class_c_get_text_dlg}{CGetTextDlg}}(\textcolor{keywordtype}{int} maxchar = 20, TCHAR* getnum = \_T(\textcolor{stringliteral}{"{}"{}}), TCHAR* title = \_T(\textcolor{stringliteral}{"{}Input the Value."{}}), CWnd* pParent = NULL,}
+\DoxyCodeLine{24                              BOOL pwd = FALSE, BOOL btndisable = FALSE);   \textcolor{comment}{// standard constructor}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{comment}{// Dialog Data}}
+\DoxyCodeLine{27         \textcolor{comment}{//\{\{AFX\_DATA(CGetTextDlg)}}
+\DoxyCodeLine{28         \textcolor{keyword}{enum} \{ \mbox{\hyperlink{class_c_get_text_dlg_a23cd30c57e25b06f75bf228595ed14ada0647c40069d06dcf15afbd59673db517}{IDD}} = \mbox{\hyperlink{resource_8h_ac9a6b89f5cbd349c867a803ee7388448}{IDD\_DIALOG\_TEXT\_BOX}} \};}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}}  \mbox{\hyperlink{class_c_get_text_dlg_a270a43d416d5972cb3bad1e142e785a1}{m\_sDispValue}};}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}}  \mbox{\hyperlink{class_c_get_text_dlg_a4dea9b44e0c9c02040e8b6878791dee4}{m\_bDot}};}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}}  \mbox{\hyperlink{class_c_get_text_dlg_ab4a532ae8b0e0c483745500384f91d3d}{m\_bEqual}};}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}}  \mbox{\hyperlink{class_c_get_text_dlg_a84642357cba613296073abe7f5762151}{m\_bColon}};}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}}  \mbox{\hyperlink{class_c_get_text_dlg_a022b6fc76ecbe9c6ae5a371a8b8a8e23}{m\_bWon}};}
+\DoxyCodeLine{34         \textcolor{comment}{//\}\}AFX\_DATA}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{comment}{// Overrides}}
+\DoxyCodeLine{38         \textcolor{comment}{// ClassWizard generated virtual function overrides}}
+\DoxyCodeLine{39         \textcolor{comment}{//\{\{AFX\_VIRTUAL(CGetTextDlg)}}
+\DoxyCodeLine{40         \textcolor{keyword}{protected}:}
+\DoxyCodeLine{41         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a901f52e6d33eef50f6a415223da39f17}{DoDataExchange}}(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV support}}
+\DoxyCodeLine{42         \textcolor{comment}{//\}\}AFX\_VIRTUAL}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{comment}{// Implementation}}
+\DoxyCodeLine{45 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{46         BOOL \mbox{\hyperlink{class_c_get_text_dlg_ae8cafd72b13f7a229f5571f34158be0a}{m\_bpwd}};}
+\DoxyCodeLine{47         BOOL \mbox{\hyperlink{class_c_get_text_dlg_a141ef4bd14f1214bac256c1d4090df6e}{m\_bbtndisable}};}
+\DoxyCodeLine{48         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_get_text_dlg_a0461443a56c937e2468aecec6e51febe}{m\_intMaxChar}};}
+\DoxyCodeLine{49         CString \mbox{\hyperlink{class_c_get_text_dlg_adcdcaa8771c14c758fb5cffbf50fbafd}{m\_strGetVal}};}
+\DoxyCodeLine{50         CString \mbox{\hyperlink{class_c_get_text_dlg_a119304699db2b571d8a07574b85c5da2}{m\_strWndText}};}
+\DoxyCodeLine{51         }
+\DoxyCodeLine{52         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_aea17e5bed340555aabd738d2bdfb37da}{InitStaticDispWnd}}();}
+\DoxyCodeLine{53         BOOL \mbox{\hyperlink{class_c_get_text_dlg_a9b13ff9a692db1e91c914ce106e9108e}{VerifyMaxChar}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{comment}{// Generated message map functions}}
+\DoxyCodeLine{56         \textcolor{comment}{//\{\{AFX\_MSG(CGetTextDlg)}}
+\DoxyCodeLine{57         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ab3f9eaa5fe93c57b41b3c4195d229113}{OnKeyOk}}();}
+\DoxyCodeLine{58         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a053abfaea987e4eed704c394b9509c0f}{OnKeyEsc}}();}
+\DoxyCodeLine{59         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ab7aaea7cf065bafb27cf703a4c38721d}{OnKeyBack}}();}
+\DoxyCodeLine{60         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a91f907fb2da8245b2a1b7d4df7f3d1e5}{OnKeyClear}}();}
+\DoxyCodeLine{61         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_aaddec29ecebbfa0564fdc298f257876c}{OnKey1}}();}
+\DoxyCodeLine{62         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a9ef6128a5431f939a8f065a14e6b362d}{OnKey2}}();}
+\DoxyCodeLine{63         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a4a0cba7b93e21d690f1e70097ff2c0da}{OnKey3}}();}
+\DoxyCodeLine{64         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_af8e6dd8f80e49844db86f0180a28c420}{OnKey4}}();}
+\DoxyCodeLine{65         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a669197601243d2c9741898c74881a98a}{OnKey5}}();}
+\DoxyCodeLine{66         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a823e0ce8e34438710a71f1b61221ef20}{OnKey6}}();}
+\DoxyCodeLine{67         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a93e129d36f2242ca57c98f1aca3aff95}{OnKey7}}();}
+\DoxyCodeLine{68         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ae35d6ab7c2796c489914ec0225670f94}{OnKey8}}();}
+\DoxyCodeLine{69         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a7bb0a5ca5bccc2317dbe0053af02df2a}{OnKey9}}();}
+\DoxyCodeLine{70         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a3b0cb98ddbc6e67b12ed04339817a167}{OnKey0}}();}
+\DoxyCodeLine{71         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ab07527a8cf0dc06cb9bc7198332d9235}{OnKeyQ}}();}
+\DoxyCodeLine{72         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_adb8b5fe16bf65af758b8bcd489f721fb}{OnKeyW}}();}
+\DoxyCodeLine{73         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a75e5ebb362327a3f3b48dc91cc92f61d}{OnKeyE}}();}
+\DoxyCodeLine{74         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ac7563124da0aaa422f12d75d50680e02}{OnKeyR}}();}
+\DoxyCodeLine{75         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a68e192440fedbf6e2bb1b609a7d3af06}{OnKeyT}}();}
+\DoxyCodeLine{76         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a69e7b03275cd22dda2f491fb9e846e10}{OnKeyY}}();}
+\DoxyCodeLine{77         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a4461daaa59ad251ea5f05f521fae7bc0}{OnKeyU}}();}
+\DoxyCodeLine{78         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a87e8697b746f82eb1125b2c5238799b0}{OnKeyI}}();}
+\DoxyCodeLine{79         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ad05fb504b1b82e94037d5720c1bde4eb}{OnKeyO}}();}
+\DoxyCodeLine{80         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a8dfe7cbd1c2102b750a5cf35ed5e2dd2}{OnKeyP}}();}
+\DoxyCodeLine{81         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_afe20c7c646690acd78f0b8fd57b3b4ec}{OnKeyA}}();}
+\DoxyCodeLine{82         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a840fea7c4aec7db270a6dd7410d79e09}{OnKeyS}}();}
+\DoxyCodeLine{83         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_afcd7d622eae87ae749bc72c1bdbc0769}{OnKeyD}}();}
+\DoxyCodeLine{84         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a0436220c6007cc42220cd929abb3761f}{OnKeyF}}();}
+\DoxyCodeLine{85         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a6b8882e473953da25486df7196e80f9b}{OnKeyG}}();}
+\DoxyCodeLine{86         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a062dd48dad265b841f049c9aae40b0e9}{OnKeyH}}();}
+\DoxyCodeLine{87         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a0a51738d1528eb0f10783b5616da6a3e}{OnKeyJ}}();}
+\DoxyCodeLine{88         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a0171129e8238219c04cadd5dc40b3312}{OnKeyK}}();}
+\DoxyCodeLine{89         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a9f8858002bfff77cb1d81e92403d8a97}{OnKeyL}}();}
+\DoxyCodeLine{90         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a646dbaf0d8da3aec3bb7b022752e5123}{OnKeyZ}}();}
+\DoxyCodeLine{91         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a8040c0154307194fcdb3b917735ad2c8}{OnKeyX}}();}
+\DoxyCodeLine{92         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a87f505d19f506e0af52e4a855f5e16d1}{OnKeyC}}();}
+\DoxyCodeLine{93         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a367fdcd16e5ec272c109bc4d43f2c5ef}{OnKeyV}}();}
+\DoxyCodeLine{94         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_aec9f2bea288181fd5206d5c95fc702a5}{OnKeyB}}();}
+\DoxyCodeLine{95         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a6a58e33a5feaf851c766972f0cf063dd}{OnKeyN}}();}
+\DoxyCodeLine{96         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a7778c13213fb8297169917b3fb3f5e67}{OnKeyM}}();}
+\DoxyCodeLine{97         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ad27c689f170d499fa682f8f6417f97d7}{OnKeyEqual}}();}
+\DoxyCodeLine{98         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ab39da587451b8e56887e604c378b5630}{OnKeyWon}}();}
+\DoxyCodeLine{99         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_aa3d2f7b384189b4b5d485a10ed6e4650}{OnKeyColon}}();}
+\DoxyCodeLine{100         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_ac149d4d378bb07d5a1fc85355a46e593}{OnKeyDot}}();}
+\DoxyCodeLine{101         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_aa0d18e3b094d3ffd7638829f3100a164}{OnKeyDash}}();}
+\DoxyCodeLine{102         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a486ce0484265e10f13407cd335628362}{OnKeyUnderBar}}();}
+\DoxyCodeLine{103         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_get_text_dlg_a797eb4a9d877c4ccc1a27d51f45941c8}{OnPaint}}();}
+\DoxyCodeLine{104         \textcolor{keyword}{virtual} BOOL \mbox{\hyperlink{class_c_get_text_dlg_a4826b35ebcb6872d8f0b6c3ce79ce493}{OnInitDialog}}();}
+\DoxyCodeLine{105         DECLARE\_EVENTSINK\_MAP()}
+\DoxyCodeLine{106         \textcolor{comment}{//\}\}AFX\_MSG}}
+\DoxyCodeLine{107         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{108         }
+\DoxyCodeLine{109 private:}
+\DoxyCodeLine{110         \textcolor{keywordtype}{int} m\_cxChar;}
+\DoxyCodeLine{111         \textcolor{keywordtype}{int} m\_cyChar;}
+\DoxyCodeLine{112         CRect m\_rect;}
+\DoxyCodeLine{113         \textcolor{keywordtype}{void} UpdateDisplay(COLORREF bkcolor=RGB(255,255,255));}
+\DoxyCodeLine{114 public:}
+\DoxyCodeLine{115         virtual BOOL \mbox{\hyperlink{class_c_get_text_dlg_af597aa0df9695a2e4ed9e23adba08514}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{116 \};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{comment}{//\{\{AFX\_INSERT\_LOCATION\}\}}}
+\DoxyCodeLine{119 \textcolor{comment}{// Microsoft Visual C++ will insert additional declarations immediately before the previous line.}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !defined(AFX\_GETVALUEDLG\_H\_\_2DCECE2D\_026B\_45B0\_BD81\_51D582C2AD25\_\_INCLUDED\_)}}
+
+\end{DoxyCode}

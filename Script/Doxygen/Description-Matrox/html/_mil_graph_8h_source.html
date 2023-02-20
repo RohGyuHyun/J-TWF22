@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Matrox: D:/OneDrive/ngh/J-TWF22/Library/Matrox/MilGraph.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Logo-MatroxImaging.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Matrox<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_bd976f84b5cc9bebc92e068d65fec952.html">OneDrive</a></li><li class="navelem"><a class="el" href="dir_526c377dd3d3fc952efb581059fc7050.html">ngh</a></li><li class="navelem"><a class="el" href="dir_03a9c10c0e9d1674deb214bc7339cb82.html">J-TWF22</a></li><li class="navelem"><a class="el" href="dir_27d2e3319eb018fb205d2bb854feecd3.html">Library</a></li><li class="navelem"><a class="el" href="dir_7ba3e800ede1a5bca504f1ffc43e3c8c.html">Matrox</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MilGraph.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mil_graph_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;mil.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_mil_base_8h.html">MilBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_c_mil_graph.html">   10</a></span><span class="keyword">class </span><a class="code hl_define" href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">MIL_DLLDECL</a> <a class="code hl_class" href="class_c_mil_graph.html">CMilGraph</a>:<span class="keyword">public</span> <a class="code hl_class" href="class_c_mil_base.html">CMilBase</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_c_mil_graph.html#af056d5aa47cd96e43c354cb8b68e79f6a878428b48c950bd862dc9ebfb4134413">   13</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_c_mil_graph.html#af056d5aa47cd96e43c354cb8b68e79f6">tGRACOLOR</a> {GRA_RED=M_COLOR_RED, GRA_GREEN=M_COLOR_GREEN, GRA_BLACK=M_COLOR_BLACK};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_c_mil_graph.html#a7f8a516d66fda16d385ba1802725aab0a28fcae896e054a175c12940c441a15f8">   14</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_c_mil_graph.html#a7f8a516d66fda16d385ba1802725aab0">tFONTSIZE</a> {GRA_LARGE=M_FONT_DEFAULT_LARGE, GRA_MEDIUM=M_FONT_DEFAULT_MEDIUM, GRA_SMALL=M_FONT_DEFAULT_SMALL};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_class" href="class_c_mil_graph.html">CMilGraph</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_class" href="class_c_mil_graph.html">~CMilGraph</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> SetColor(MIL_DOUBLE color);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">void</span> Clear(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">int</span> EnableGraph(BOOL bState=TRUE);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_c_mil_graph.html#abd32dd4ff87280f9296752553ec7c7e3">   20</a></span>        MIL_ID m_milIDSystem, <a class="code hl_variable" href="class_c_mil_graph.html#abd32dd4ff87280f9296752553ec7c7e3">m_milIDGraph</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">void</span> Free(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">void</span> Rect(CRect rectToDraw);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> Rect(<span class="keywordtype">double</span> dblLeft, <span class="keywordtype">double</span> dblTop, <span class="keywordtype">double</span> dblRight, <span class="keywordtype">double</span> dblBottom);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">void</span> Line(<span class="keywordtype">double</span> dblLeft, <span class="keywordtype">double</span> dblTop, <span class="keywordtype">double</span> dblRight, <span class="keywordtype">double</span> dblBottom);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">int</span> GetIDGraph(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> Dot(<span class="keywordtype">double</span> dblX, <span class="keywordtype">double</span> dblY);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> OutputText(<span class="keywordtype">double</span> dblX, <span class="keywordtype">double</span> dblY, TCHAR * szText);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">void</span> FontScale(<span class="keywordtype">double</span> dblXScale, <span class="keywordtype">double</span> dblYScale);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordtype">void</span> FontSize(<span class="keywordtype">int</span> sizeFont);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span> Arc(<span class="keywordtype">double</span> dblXCenter, <span class="keywordtype">double</span> dblYCenter, <span class="keywordtype">double</span> dblXRad, <span class="keywordtype">double</span> dblYRad, <span class="keywordtype">double</span> dblStartAngle, <span class="keywordtype">double</span> dblEndAngle);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> Ellipse(<span class="keywordtype">double</span> dblXCenter, <span class="keywordtype">double</span> dblYCenter, <span class="keywordtype">double</span> dblXRad, <span class="keywordtype">double</span> dblYRad);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        CDC *GetDC(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">void</span> FreeDC(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">int</span> Modified(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_c_mil_graph.html#a9a13011c09d3e8994fa1c84cedb80585">   38</a></span>        MIL_ID <a class="code hl_variable" href="class_c_mil_graph.html#a9a13011c09d3e8994fa1c84cedb80585">m_milIDBuffer</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">void</span> AddInteractiveRect();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">void</span> DrawPolygon(CPtrList *pList);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="ttc" id="a_mil_base_8h_html"><div class="ttname"><a href="_mil_base_8h.html">MilBase.h</a></div></div>
+<div class="ttc" id="a_mil_base_8h_html_ac59caefbe3fb1e18fa522ad367a45a49"><div class="ttname"><a href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">MIL_DLLDECL</a></div><div class="ttdeci">#define MIL_DLLDECL</div><div class="ttdef"><b>Definition:</b> MilBase.h:8</div></div>
+<div class="ttc" id="aclass_c_mil_base_html"><div class="ttname"><a href="class_c_mil_base.html">CMilBase</a></div><div class="ttdoc">모든 Class의 Base Class로 공용의 자료활용에 사용됨</div><div class="ttdef"><b>Definition:</b> MilBase.h:50</div></div>
+<div class="ttc" id="aclass_c_mil_graph_html"><div class="ttname"><a href="class_c_mil_graph.html">CMilGraph</a></div><div class="ttdoc">Mil의 Graph관련 함수군을 Class화 하였다</div><div class="ttdef"><b>Definition:</b> MilGraph.h:11</div></div>
+<div class="ttc" id="aclass_c_mil_graph_html_a7f8a516d66fda16d385ba1802725aab0"><div class="ttname"><a href="class_c_mil_graph.html#a7f8a516d66fda16d385ba1802725aab0">CMilGraph::tFONTSIZE</a></div><div class="ttdeci">tFONTSIZE</div><div class="ttdef"><b>Definition:</b> MilGraph.h:14</div></div>
+<div class="ttc" id="aclass_c_mil_graph_html_a9a13011c09d3e8994fa1c84cedb80585"><div class="ttname"><a href="class_c_mil_graph.html#a9a13011c09d3e8994fa1c84cedb80585">CMilGraph::m_milIDBuffer</a></div><div class="ttdeci">MIL_ID m_milIDBuffer</div><div class="ttdef"><b>Definition:</b> MilGraph.h:38</div></div>
+<div class="ttc" id="aclass_c_mil_graph_html_abd32dd4ff87280f9296752553ec7c7e3"><div class="ttname"><a href="class_c_mil_graph.html#abd32dd4ff87280f9296752553ec7c7e3">CMilGraph::m_milIDGraph</a></div><div class="ttdeci">MIL_ID m_milIDGraph</div><div class="ttdef"><b>Definition:</b> MilGraph.h:20</div></div>
+<div class="ttc" id="aclass_c_mil_graph_html_af056d5aa47cd96e43c354cb8b68e79f6"><div class="ttname"><a href="class_c_mil_graph.html#af056d5aa47cd96e43c354cb8b68e79f6">CMilGraph::tGRACOLOR</a></div><div class="ttdeci">tGRACOLOR</div><div class="ttdef"><b>Definition:</b> MilGraph.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 금 9월 23 2022 08:29:06, 프로젝트명 : Matrox, 생성자 : &#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

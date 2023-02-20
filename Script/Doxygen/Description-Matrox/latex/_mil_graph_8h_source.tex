@@ -1,0 +1,42 @@
+\hypertarget{_mil_graph_8h_source}{}\doxysection{Mil\+Graph.\+h}
+\label{_mil_graph_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilGraph.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilGraph.h}}
+\mbox{\hyperlink{_mil_graph_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_base_8h}{MilBase.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_graph}{CMilGraph}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13         \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_mil_graph_af056d5aa47cd96e43c354cb8b68e79f6}{tGRACOLOR}} \{GRA\_RED=M\_COLOR\_RED, GRA\_GREEN=M\_COLOR\_GREEN, GRA\_BLACK=M\_COLOR\_BLACK\};}
+\DoxyCodeLine{14         \textcolor{keyword}{enum} \mbox{\hyperlink{class_c_mil_graph_a7f8a516d66fda16d385ba1802725aab0}{tFONTSIZE}} \{GRA\_LARGE=M\_FONT\_DEFAULT\_LARGE, GRA\_MEDIUM=M\_FONT\_DEFAULT\_MEDIUM, GRA\_SMALL=M\_FONT\_DEFAULT\_SMALL\};}
+\DoxyCodeLine{15         \mbox{\hyperlink{class_c_mil_graph}{CMilGraph}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_c_mil_graph}{\string~CMilGraph}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} SetColor(MIL\_DOUBLE color);}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} Clear(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} EnableGraph(BOOL bState=TRUE);}
+\DoxyCodeLine{20         MIL\_ID m\_milIDSystem, \mbox{\hyperlink{class_c_mil_graph_abd32dd4ff87280f9296752553ec7c7e3}{m\_milIDGraph}};}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} Free(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} Rect(CRect rectToDraw);}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} Rect(\textcolor{keywordtype}{double} dblLeft, \textcolor{keywordtype}{double} dblTop, \textcolor{keywordtype}{double} dblRight, \textcolor{keywordtype}{double} dblBottom);}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} Line(\textcolor{keywordtype}{double} dblLeft, \textcolor{keywordtype}{double} dblTop, \textcolor{keywordtype}{double} dblRight, \textcolor{keywordtype}{double} dblBottom);}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} GetIDGraph(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} Dot(\textcolor{keywordtype}{double} dblX, \textcolor{keywordtype}{double} dblY);}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} OutputText(\textcolor{keywordtype}{double} dblX, \textcolor{keywordtype}{double} dblY, TCHAR * szText);}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} FontScale(\textcolor{keywordtype}{double} dblXScale, \textcolor{keywordtype}{double} dblYScale);}
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} FontSize(\textcolor{keywordtype}{int} sizeFont);}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} Arc(\textcolor{keywordtype}{double} dblXCenter, \textcolor{keywordtype}{double} dblYCenter, \textcolor{keywordtype}{double} dblXRad, \textcolor{keywordtype}{double} dblYRad, \textcolor{keywordtype}{double} dblStartAngle, \textcolor{keywordtype}{double} dblEndAngle);}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} Ellipse(\textcolor{keywordtype}{double} dblXCenter, \textcolor{keywordtype}{double} dblYCenter, \textcolor{keywordtype}{double} dblXRad, \textcolor{keywordtype}{double} dblYRad);}
+\DoxyCodeLine{33         CDC *GetDC(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} FreeDC(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{35         \textcolor{keywordtype}{int} Modified(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{38         MIL\_ID \mbox{\hyperlink{class_c_mil_graph_a9a13011c09d3e8994fa1c84cedb80585}{m\_milIDBuffer}};}
+\DoxyCodeLine{39 \textcolor{keyword}{public}:}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} AddInteractiveRect();}
+\DoxyCodeLine{41         \textcolor{keywordtype}{void} DrawPolygon(CPtrList *pList);}
+\DoxyCodeLine{42 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,54 @@
+\hypertarget{_c_dialog_x_ray_warmup_8h_source}{}\doxysection{CDialog\+XRay\+Warmup.\+h}
+\label{_c_dialog_x_ray_warmup_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/dialog/CDialogXRayWarmup.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/dialog/CDialogXRayWarmup.h}}
+\mbox{\hyperlink{_c_dialog_x_ray_warmup_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}afxdialogex.h"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define X\_RAY\_CUR\_VALUE\_READ    0}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define X\_RAY\_WARMUP\_START              1}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define X\_RAY\_WARMUP\_INIT               2}}
+\DoxyCodeLine{7 \textcolor{comment}{// CDialogXRayWarmup 대화 상자}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_dialog_x_ray_warmup}{CDialogXRayWarmup}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11         DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_dialog_x_ray_warmup}{CDialogXRayWarmup}})}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_c_dialog_x_ray_warmup}{CDialogXRayWarmup}}(CWnd* pParent = \textcolor{keyword}{nullptr});   \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{15         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_ad0e11f3ea6b2a257e329095e4c19e5c8}{\string~CDialogXRayWarmup}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{19         \textcolor{keyword}{enum} \{ IDD = \mbox{\hyperlink{resource_8h_add0be0c94b3a72521d8aa95edf4adcf9}{IDD\_DIALOG\_X\_RAY\_WARMUP}} \};}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a973f387b900a5e1b3fc4dfb9b6c666f8}{m\_nWarmupStepTimeSec}};}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a456c1ac28657feb8e0a250a4b70334e2}{m\_nWarmupStepCnt}};}
+\DoxyCodeLine{25         BOOL \mbox{\hyperlink{class_c_dialog_x_ray_warmup_aa5a0bc9fef9be3adac6ef27362248483}{m\_bWarmupStart}};}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a3c73cbcd1442dbb91f7844207792d575}{m\_nWarmupStepTimeSecCnt}};}
+\DoxyCodeLine{27         \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_afd02bba03717cdad098d6e43fafd683f}{m\_cXrayEndTime}};}
+\DoxyCodeLine{28         BOOL \mbox{\hyperlink{class_c_dialog_x_ray_warmup_acaac77109cf8b38162e563a4e2612d0e}{m\_bWarmupEnd}};}
+\DoxyCodeLine{29         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a66234868b1dad1e6f446c10e9d0840ef}{m\_nInitCnt}};}
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a0b256679df2a568ac1fb82408a8e97a7}{SetXrayEndTime}}(\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} cXrayEndTime) \{\mbox{\hyperlink{class_c_dialog_x_ray_warmup_afd02bba03717cdad098d6e43fafd683f}{m\_cXrayEndTime}} = cXrayEndTime;\};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a4c7e8a5e0dcd7fcb7847d68fcda3333d}{SetWarmnup}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{38         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a394f35fa982e02a655adb8bf60ad6c47}{DoDataExchange}}(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{41 public:}
+\DoxyCodeLine{42         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a4e69f210b67bf79c03120e9ef6b0d7b2}{OnTimer}}(UINT\_PTR nIDEvent);}
+\DoxyCodeLine{43         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a90b658de8fab9a64c5345702a02fef59}{OnShowWindow}}(BOOL bShow, UINT nStatus);}
+\DoxyCodeLine{44         DECLARE\_EVENTSINK\_MAP()}
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_x_ray_warmup_ab6281c32404491fe11ce3daead6f0bac}{ClickBtnenhctrlWarmupExit}}();}
+\DoxyCodeLine{46         CProgressCtrl \mbox{\hyperlink{class_c_dialog_x_ray_warmup_a7906382a8c3b9447a1ad6c6cb0d969ca}{m\_ProgressWarmup}};}
+\DoxyCodeLine{47         virtual BOOL \mbox{\hyperlink{class_c_dialog_x_ray_warmup_adc942c8af916974412c1078de8ecbc2c}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{48 \};}
+
+\end{DoxyCode}

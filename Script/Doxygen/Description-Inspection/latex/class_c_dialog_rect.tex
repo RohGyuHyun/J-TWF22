@@ -1,0 +1,523 @@
+\hypertarget{class_c_dialog_rect}{}\doxysection{CDialog\+Rect 클래스 참조}
+\label{class_c_dialog_rect}\index{CDialogRect@{CDialogRect}}
+
+
+{\ttfamily \#include $<$Dialog\+Rect.\+h$>$}
+
+
+
+CDialog\+Rect에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_c_dialog_rect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CDialog\+Rect에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_c_dialog_rect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_c_dialog_rect_a04f707f20e0867990168d3ef229e2bc1a1a61e0707c23dd834a38241678b9265d}{IDD}} = IDD\+\_\+\+DIALOG\+\_\+\+RECT
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_dialog_rect_a31abff222a133a9c1cb5d813fba1abe7}{CDialog\+Rect}} (CWnd $\ast$p\+Parent=NULL)
+\item 
+virtual \mbox{\hyperlink{class_c_dialog_rect_a8b1abb39d247eb29f8c0330ad2c91424}{$\sim$\+CDialog\+Rect}} ()
+\item 
+int \mbox{\hyperlink{class_c_dialog_rect_a7f430af2de320e2dc716c51cfe1bbb26}{Get\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a21ff67965e9b90f0c802a33ceed532a2}{Set\+Enable}} (int idx, BOOL enable)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a0501925d994be932d20cbb56604811ab}{Set\+Tracker\+Num}} (int i)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_ac389066f2741c59e6ddc6212d4c79225}{Set\+Dlg\+Idx}} (int idx)
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_afeb3dd86bdfc4c5334be2b5dea7cd862}{Get\+Zoom}} ()
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a9030c94cc593e8f98bc2729127da1c0c}{Set\+Zoom}} (double ratio, long img\+\_\+wd, long img\+\_\+ht)
+\item 
+HWND \mbox{\hyperlink{class_c_dialog_rect_a7076f39a43ad3b729cc4d85551f2d816}{Get\+Win\+Hwnd}} ()
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a4f9b3f529831eaf52cab1e706009c5d3}{Get\+Tracker}} (int idx, double $\ast$left, double $\ast$top, double $\ast$right, double $\ast$bottom)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a8f9ca89f8bc068005ba82449055a2b21}{Set\+Tracker}} (int idx, double left, double top, double right, double bottom)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a1579c6d9c5e3f50e522da11bd49224ce}{Set\+Active\+Tracker}} (int idx, BOOL active)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a82a14c11f9576bca529e42da378dbb1d}{Zoom\+Display}} ()
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a055ebfb449ee313347dc1b93adf5c597}{Zoom\+Tracker}} (CRect $\ast$rect, double o\+\_\+rat)
+\item 
+LRESULT \mbox{\hyperlink{class_c_dialog_rect_a56cee1d33c46686cc09704ce64da55e3}{On\+Image\+Rect\+Message}} (WPARAM para0, LPARAM para1)
+\item 
+BOOL \mbox{\hyperlink{class_c_dialog_rect_aeb60ea7334d1d2de10517005c8f26dcc}{Check\+Tracker}} (int idx, CPoint point)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a3159cbd55b5615dbf04bd8e735de5af6}{Set\+Active\+Image\+Rect}} (BOOL active)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a7abc6204c7efdf828c80b8b04730a16c}{Delete\+All}} ()
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a428e5366d4eacf1c9bb00606890c6169}{Add\+Tracker}} (int type, CRect rect, COLORREF color, char $\ast$cap)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_ace0dbf45dd1555d97176b524d526a033}{Set\+Image\+Size}} (int n\+Width, int n\+Height)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a3b29d30ab01accae8550e8deb2536520}{Set\+Main\+Message}} (HWND main\+Hwnd, UINT n\+Messge\+ID)
+\item 
+void \mbox{\hyperlink{class_c_dialog_rect_a5d5e7e6d19560959409f8af9b4090972}{Set\+Rect}} (CRect rect)
+\item 
+virtual BOOL \mbox{\hyperlink{class_c_dialog_rect_a4acff5457bedcbde12d0e7bf1777949e}{On\+Init\+Dialog}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_a09299aff66e5df584981b5c8fa545641}{On\+Mouse\+Move}} (UINT n\+Flags, CPoint point)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_a9fee6e26d111f0617a510909cbce13d1}{On\+LButton\+Down}} (UINT n\+Flags, CPoint point)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_ac3c280d66db90a59f9157aff43439e4a}{On\+LButton\+Up}} (UINT n\+Flags, CPoint point)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_aeaa82180c540cb01cc7e6109039d0dc0}{On\+LButton\+Dbl\+Clk}} (UINT n\+Flags, CPoint point)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_aa1489af39af7b56957c786c72973c6ba}{On\+Timer}} (UINT\+\_\+\+PTR n\+IDEvent)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_aea7a07976938c62bd4111ac2bbecdcaa}{On\+Paint}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_ac89435ec4c19732583912e433a8a3de3}{On\+Context\+Menu}} (CWnd $\ast$, CPoint)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_dialog_rect_a84e8aa670f56fc638c4b19df053169bf}{On\+Show\+Window}} (BOOL b\+Show, UINT n\+Status)
+\item 
+afx\+\_\+msg HBRUSH \mbox{\hyperlink{class_c_dialog_rect_aadde12dacd7fd26fc71af0f2328dc9e8}{On\+Ctl\+Color}} (CDC $\ast$p\+DC, CWnd $\ast$p\+Wnd, UINT n\+Ctl\+Color)
+\item 
+virtual BOOL \mbox{\hyperlink{class_c_dialog_rect_a1fe3db1f4bd0a8424a391e895c1fb97c}{Pre\+Translate\+Message}} (MSG $\ast$p\+Msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{class_c_dialog_rect_a9fdc7cfdc07c0b8935ec74942feb127d}{m\+\_\+b\+Db\+Click\+Use}}
+\item 
+BOOL \mbox{\hyperlink{class_c_dialog_rect_ac5ded90ed469d795aace48e36c2ed326}{m\+\_\+b\+Active}}
+\item 
+CRect \mbox{\hyperlink{class_c_dialog_rect_a3578afdb54bb89543ffb4f7eddd620e5}{m\+\_\+\+Win\+Rect}}
+\item 
+int \mbox{\hyperlink{class_c_dialog_rect_a415b6dcadab9ff8f9ecea001f2338516}{m\+\_\+i\+Active\+Idx}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_af819fba862614426e868afb378fad3e7}{m\+\_\+d\+Zoom\+Ratio}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_a7f0a0fadc1f0840d31ae2a9662247280}{m\+\_\+d\+Default\+Zoom\+Ratio}}
+\item 
+COLORREF \mbox{\hyperlink{class_c_dialog_rect_a98554ebe506b12f79778689b2b02efcf}{m\+\_\+cur\+Color}}
+\item 
+int \mbox{\hyperlink{class_c_dialog_rect_a71026d7bcf3d40f87221bc20fd3ed587}{m\+\_\+i\+Img\+Wd}}
+\item 
+int \mbox{\hyperlink{class_c_dialog_rect_a9a520a9e391d003814b56ec694ffe466}{m\+\_\+i\+Img\+Ht}}
+\item 
+int \mbox{\hyperlink{class_c_dialog_rect_a54475c8d349e469cefdbd660ae63b730}{m\+\_\+i\+Dlg\+Idx}}
+\item 
+int \mbox{\hyperlink{class_c_dialog_rect_aa68874fd1426c63046589424ffcaceab}{m\+\_\+i\+Tracker\+Num}}
+\item 
+long \mbox{\hyperlink{class_c_dialog_rect_a316f6a1c1736e933492084cd34c8c943}{m\+\_\+l\+Pan\+SX}}
+\item 
+long \mbox{\hyperlink{class_c_dialog_rect_acf8f165121020ed4c2ae700ad9ea43d6}{m\+\_\+l\+Pan\+SY}}
+\item 
+long \mbox{\hyperlink{class_c_dialog_rect_ad3e7998a609422ca35dd829aadcb1d4e}{m\+\_\+l\+Pan\+EX}}
+\item 
+long \mbox{\hyperlink{class_c_dialog_rect_a4fadd5699623c3858422b391d1be5e09}{m\+\_\+l\+Pan\+EY}}
+\item 
+BOOL \mbox{\hyperlink{class_c_dialog_rect_a8c73eacd97c2666afcdc70fd0e87f972}{m\+\_\+b\+Pan\+DN}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_af2bcfb06836032b63e894ccd322b0fa4}{m\+\_\+d\+PX}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_a928a04d6f4fe1a9a04aa1331987c41a1}{m\+\_\+d\+PY}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_a50742a62ba3603b5083a053dbc11d214}{m\+\_\+d\+Zoom\+Rat}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_a165758f452afc996f507a45cb8a54198}{m\+\_\+d\+Zoom\+Rat\+Old}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_a99934dd5c3e8ea5aafe7ef5da21f2f77}{m\+\_\+d\+Zoom\+SX}}
+\item 
+double \mbox{\hyperlink{class_c_dialog_rect_abf4936dd32b37f67d9694c2af70d0e7b}{m\+\_\+d\+Zoom\+SY}}
+\item 
+BOOL \mbox{\hyperlink{class_c_dialog_rect_a51a56b3e326cce86974a96d446cae035}{m\+\_\+b\+Main\+Dlg}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_dialog_rect_ac9784da6f35f527d0af674f6a4ab3413}{Do\+Data\+Exchange}} (CData\+Exchange $\ast$p\+DX)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_c_dialog_rect_a04f707f20e0867990168d3ef229e2bc1}\label{class_c_dialog_rect_a04f707f20e0867990168d3ef229e2bc1}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDD@{IDD}!CDialogRect@{CDialogRect}}\index{CDialogRect@{CDialogRect}!IDD@{IDD}}}\mbox{\Hypertarget{class_c_dialog_rect_a04f707f20e0867990168d3ef229e2bc1a1a61e0707c23dd834a38241678b9265d}\label{class_c_dialog_rect_a04f707f20e0867990168d3ef229e2bc1a1a61e0707c23dd834a38241678b9265d}} 
+IDD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_dialog_rect_a31abff222a133a9c1cb5d813fba1abe7}\label{class_c_dialog_rect_a31abff222a133a9c1cb5d813fba1abe7}} 
+\index{CDialogRect@{CDialogRect}!CDialogRect@{CDialogRect}}
+\index{CDialogRect@{CDialogRect}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{CDialogRect()}{CDialogRect()}}
+{\footnotesize\ttfamily CDialog\+Rect\+::\+CDialog\+Rect (\begin{DoxyParamCaption}\item[{CWnd $\ast$}]{p\+Parent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a8b1abb39d247eb29f8c0330ad2c91424}\label{class_c_dialog_rect_a8b1abb39d247eb29f8c0330ad2c91424}} 
+\index{CDialogRect@{CDialogRect}!````~CDialogRect@{$\sim$CDialogRect}}
+\index{````~CDialogRect@{$\sim$CDialogRect}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{$\sim$CDialogRect()}{~CDialogRect()}}
+{\footnotesize\ttfamily CDialog\+Rect\+::$\sim$\+CDialog\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_dialog_rect_a428e5366d4eacf1c9bb00606890c6169}\label{class_c_dialog_rect_a428e5366d4eacf1c9bb00606890c6169}} 
+\index{CDialogRect@{CDialogRect}!AddTracker@{AddTracker}}
+\index{AddTracker@{AddTracker}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{AddTracker()}{AddTracker()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Add\+Tracker (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{CRect}]{rect,  }\item[{COLORREF}]{color,  }\item[{char $\ast$}]{cap }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_aeb60ea7334d1d2de10517005c8f26dcc}\label{class_c_dialog_rect_aeb60ea7334d1d2de10517005c8f26dcc}} 
+\index{CDialogRect@{CDialogRect}!CheckTracker@{CheckTracker}}
+\index{CheckTracker@{CheckTracker}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{CheckTracker()}{CheckTracker()}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::\+Check\+Tracker (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{CPoint}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a7abc6204c7efdf828c80b8b04730a16c}\label{class_c_dialog_rect_a7abc6204c7efdf828c80b8b04730a16c}} 
+\index{CDialogRect@{CDialogRect}!DeleteAll@{DeleteAll}}
+\index{DeleteAll@{DeleteAll}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{DeleteAll()}{DeleteAll()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Delete\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_ac9784da6f35f527d0af674f6a4ab3413}\label{class_c_dialog_rect_ac9784da6f35f527d0af674f6a4ab3413}} 
+\index{CDialogRect@{CDialogRect}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{DoDataExchange()}{DoDataExchange()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Do\+Data\+Exchange (\begin{DoxyParamCaption}\item[{CData\+Exchange $\ast$}]{p\+DX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a7f430af2de320e2dc716c51cfe1bbb26}\label{class_c_dialog_rect_a7f430af2de320e2dc716c51cfe1bbb26}} 
+\index{CDialogRect@{CDialogRect}!GetEnable@{GetEnable}}
+\index{GetEnable@{GetEnable}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{GetEnable()}{GetEnable()}}
+{\footnotesize\ttfamily int CDialog\+Rect\+::\+Get\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a4f9b3f529831eaf52cab1e706009c5d3}\label{class_c_dialog_rect_a4f9b3f529831eaf52cab1e706009c5d3}} 
+\index{CDialogRect@{CDialogRect}!GetTracker@{GetTracker}}
+\index{GetTracker@{GetTracker}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{GetTracker()}{GetTracker()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Get\+Tracker (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{double $\ast$}]{left,  }\item[{double $\ast$}]{top,  }\item[{double $\ast$}]{right,  }\item[{double $\ast$}]{bottom }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a7076f39a43ad3b729cc4d85551f2d816}\label{class_c_dialog_rect_a7076f39a43ad3b729cc4d85551f2d816}} 
+\index{CDialogRect@{CDialogRect}!GetWinHwnd@{GetWinHwnd}}
+\index{GetWinHwnd@{GetWinHwnd}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{GetWinHwnd()}{GetWinHwnd()}}
+{\footnotesize\ttfamily HWND CDialog\+Rect\+::\+Get\+Win\+Hwnd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_afeb3dd86bdfc4c5334be2b5dea7cd862}\label{class_c_dialog_rect_afeb3dd86bdfc4c5334be2b5dea7cd862}} 
+\index{CDialogRect@{CDialogRect}!GetZoom@{GetZoom}}
+\index{GetZoom@{GetZoom}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{GetZoom()}{GetZoom()}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::\+Get\+Zoom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_ac89435ec4c19732583912e433a8a3de3}\label{class_c_dialog_rect_ac89435ec4c19732583912e433a8a3de3}} 
+\index{CDialogRect@{CDialogRect}!OnContextMenu@{OnContextMenu}}
+\index{OnContextMenu@{OnContextMenu}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnContextMenu()}{OnContextMenu()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+Context\+Menu (\begin{DoxyParamCaption}\item[{CWnd $\ast$}]{p\+Wnd,  }\item[{CPoint}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_aadde12dacd7fd26fc71af0f2328dc9e8}\label{class_c_dialog_rect_aadde12dacd7fd26fc71af0f2328dc9e8}} 
+\index{CDialogRect@{CDialogRect}!OnCtlColor@{OnCtlColor}}
+\index{OnCtlColor@{OnCtlColor}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnCtlColor()}{OnCtlColor()}}
+{\footnotesize\ttfamily HBRUSH CDialog\+Rect\+::\+On\+Ctl\+Color (\begin{DoxyParamCaption}\item[{CDC $\ast$}]{p\+DC,  }\item[{CWnd $\ast$}]{p\+Wnd,  }\item[{UINT}]{n\+Ctl\+Color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a56cee1d33c46686cc09704ce64da55e3}\label{class_c_dialog_rect_a56cee1d33c46686cc09704ce64da55e3}} 
+\index{CDialogRect@{CDialogRect}!OnImageRectMessage@{OnImageRectMessage}}
+\index{OnImageRectMessage@{OnImageRectMessage}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnImageRectMessage()}{OnImageRectMessage()}}
+{\footnotesize\ttfamily LRESULT CDialog\+Rect\+::\+On\+Image\+Rect\+Message (\begin{DoxyParamCaption}\item[{WPARAM}]{para0,  }\item[{LPARAM}]{para1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a4acff5457bedcbde12d0e7bf1777949e}\label{class_c_dialog_rect_a4acff5457bedcbde12d0e7bf1777949e}} 
+\index{CDialogRect@{CDialogRect}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnInitDialog()}{OnInitDialog()}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::\+On\+Init\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_aeaa82180c540cb01cc7e6109039d0dc0}\label{class_c_dialog_rect_aeaa82180c540cb01cc7e6109039d0dc0}} 
+\index{CDialogRect@{CDialogRect}!OnLButtonDblClk@{OnLButtonDblClk}}
+\index{OnLButtonDblClk@{OnLButtonDblClk}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnLButtonDblClk()}{OnLButtonDblClk()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+LButton\+Dbl\+Clk (\begin{DoxyParamCaption}\item[{UINT}]{n\+Flags,  }\item[{CPoint}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a9fee6e26d111f0617a510909cbce13d1}\label{class_c_dialog_rect_a9fee6e26d111f0617a510909cbce13d1}} 
+\index{CDialogRect@{CDialogRect}!OnLButtonDown@{OnLButtonDown}}
+\index{OnLButtonDown@{OnLButtonDown}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnLButtonDown()}{OnLButtonDown()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+LButton\+Down (\begin{DoxyParamCaption}\item[{UINT}]{n\+Flags,  }\item[{CPoint}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_ac3c280d66db90a59f9157aff43439e4a}\label{class_c_dialog_rect_ac3c280d66db90a59f9157aff43439e4a}} 
+\index{CDialogRect@{CDialogRect}!OnLButtonUp@{OnLButtonUp}}
+\index{OnLButtonUp@{OnLButtonUp}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnLButtonUp()}{OnLButtonUp()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+LButton\+Up (\begin{DoxyParamCaption}\item[{UINT}]{n\+Flags,  }\item[{CPoint}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a09299aff66e5df584981b5c8fa545641}\label{class_c_dialog_rect_a09299aff66e5df584981b5c8fa545641}} 
+\index{CDialogRect@{CDialogRect}!OnMouseMove@{OnMouseMove}}
+\index{OnMouseMove@{OnMouseMove}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnMouseMove()}{OnMouseMove()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+Mouse\+Move (\begin{DoxyParamCaption}\item[{UINT}]{n\+Flags,  }\item[{CPoint}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_aea7a07976938c62bd4111ac2bbecdcaa}\label{class_c_dialog_rect_aea7a07976938c62bd4111ac2bbecdcaa}} 
+\index{CDialogRect@{CDialogRect}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a84e8aa670f56fc638c4b19df053169bf}\label{class_c_dialog_rect_a84e8aa670f56fc638c4b19df053169bf}} 
+\index{CDialogRect@{CDialogRect}!OnShowWindow@{OnShowWindow}}
+\index{OnShowWindow@{OnShowWindow}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnShowWindow()}{OnShowWindow()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+Show\+Window (\begin{DoxyParamCaption}\item[{BOOL}]{b\+Show,  }\item[{UINT}]{n\+Status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_aa1489af39af7b56957c786c72973c6ba}\label{class_c_dialog_rect_aa1489af39af7b56957c786c72973c6ba}} 
+\index{CDialogRect@{CDialogRect}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{OnTimer()}{OnTimer()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+On\+Timer (\begin{DoxyParamCaption}\item[{UINT\+\_\+\+PTR}]{n\+IDEvent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a1fe3db1f4bd0a8424a391e895c1fb97c}\label{class_c_dialog_rect_a1fe3db1f4bd0a8424a391e895c1fb97c}} 
+\index{CDialogRect@{CDialogRect}!PreTranslateMessage@{PreTranslateMessage}}
+\index{PreTranslateMessage@{PreTranslateMessage}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{PreTranslateMessage()}{PreTranslateMessage()}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::\+Pre\+Translate\+Message (\begin{DoxyParamCaption}\item[{MSG $\ast$}]{p\+Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a3159cbd55b5615dbf04bd8e735de5af6}\label{class_c_dialog_rect_a3159cbd55b5615dbf04bd8e735de5af6}} 
+\index{CDialogRect@{CDialogRect}!SetActiveImageRect@{SetActiveImageRect}}
+\index{SetActiveImageRect@{SetActiveImageRect}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetActiveImageRect()}{SetActiveImageRect()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Active\+Image\+Rect (\begin{DoxyParamCaption}\item[{BOOL}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a1579c6d9c5e3f50e522da11bd49224ce}\label{class_c_dialog_rect_a1579c6d9c5e3f50e522da11bd49224ce}} 
+\index{CDialogRect@{CDialogRect}!SetActiveTracker@{SetActiveTracker}}
+\index{SetActiveTracker@{SetActiveTracker}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetActiveTracker()}{SetActiveTracker()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Active\+Tracker (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{BOOL}]{active }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_ac389066f2741c59e6ddc6212d4c79225}\label{class_c_dialog_rect_ac389066f2741c59e6ddc6212d4c79225}} 
+\index{CDialogRect@{CDialogRect}!SetDlgIdx@{SetDlgIdx}}
+\index{SetDlgIdx@{SetDlgIdx}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetDlgIdx()}{SetDlgIdx()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Dlg\+Idx (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a21ff67965e9b90f0c802a33ceed532a2}\label{class_c_dialog_rect_a21ff67965e9b90f0c802a33ceed532a2}} 
+\index{CDialogRect@{CDialogRect}!SetEnable@{SetEnable}}
+\index{SetEnable@{SetEnable}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetEnable()}{SetEnable()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Enable (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{BOOL}]{enable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_ace0dbf45dd1555d97176b524d526a033}\label{class_c_dialog_rect_ace0dbf45dd1555d97176b524d526a033}} 
+\index{CDialogRect@{CDialogRect}!SetImageSize@{SetImageSize}}
+\index{SetImageSize@{SetImageSize}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetImageSize()}{SetImageSize()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Image\+Size (\begin{DoxyParamCaption}\item[{int}]{n\+Width,  }\item[{int}]{n\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a3b29d30ab01accae8550e8deb2536520}\label{class_c_dialog_rect_a3b29d30ab01accae8550e8deb2536520}} 
+\index{CDialogRect@{CDialogRect}!SetMainMessage@{SetMainMessage}}
+\index{SetMainMessage@{SetMainMessage}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetMainMessage()}{SetMainMessage()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Main\+Message (\begin{DoxyParamCaption}\item[{HWND}]{main\+Hwnd,  }\item[{UINT}]{n\+Messge\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a5d5e7e6d19560959409f8af9b4090972}\label{class_c_dialog_rect_a5d5e7e6d19560959409f8af9b4090972}} 
+\index{CDialogRect@{CDialogRect}!SetRect@{SetRect}}
+\index{SetRect@{SetRect}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetRect()}{SetRect()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Rect (\begin{DoxyParamCaption}\item[{CRect}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a8f9ca89f8bc068005ba82449055a2b21}\label{class_c_dialog_rect_a8f9ca89f8bc068005ba82449055a2b21}} 
+\index{CDialogRect@{CDialogRect}!SetTracker@{SetTracker}}
+\index{SetTracker@{SetTracker}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetTracker()}{SetTracker()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Tracker (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{double}]{left,  }\item[{double}]{top,  }\item[{double}]{right,  }\item[{double}]{bottom }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a0501925d994be932d20cbb56604811ab}\label{class_c_dialog_rect_a0501925d994be932d20cbb56604811ab}} 
+\index{CDialogRect@{CDialogRect}!SetTrackerNum@{SetTrackerNum}}
+\index{SetTrackerNum@{SetTrackerNum}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetTrackerNum()}{SetTrackerNum()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Tracker\+Num (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a9030c94cc593e8f98bc2729127da1c0c}\label{class_c_dialog_rect_a9030c94cc593e8f98bc2729127da1c0c}} 
+\index{CDialogRect@{CDialogRect}!SetZoom@{SetZoom}}
+\index{SetZoom@{SetZoom}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{SetZoom()}{SetZoom()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Set\+Zoom (\begin{DoxyParamCaption}\item[{double}]{ratio,  }\item[{long}]{img\+\_\+wd,  }\item[{long}]{img\+\_\+ht }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a82a14c11f9576bca529e42da378dbb1d}\label{class_c_dialog_rect_a82a14c11f9576bca529e42da378dbb1d}} 
+\index{CDialogRect@{CDialogRect}!ZoomDisplay@{ZoomDisplay}}
+\index{ZoomDisplay@{ZoomDisplay}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{ZoomDisplay()}{ZoomDisplay()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Zoom\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a055ebfb449ee313347dc1b93adf5c597}\label{class_c_dialog_rect_a055ebfb449ee313347dc1b93adf5c597}} 
+\index{CDialogRect@{CDialogRect}!ZoomTracker@{ZoomTracker}}
+\index{ZoomTracker@{ZoomTracker}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{ZoomTracker()}{ZoomTracker()}}
+{\footnotesize\ttfamily void CDialog\+Rect\+::\+Zoom\+Tracker (\begin{DoxyParamCaption}\item[{CRect $\ast$}]{rect,  }\item[{double}]{o\+\_\+rat }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_dialog_rect_ac5ded90ed469d795aace48e36c2ed326}\label{class_c_dialog_rect_ac5ded90ed469d795aace48e36c2ed326}} 
+\index{CDialogRect@{CDialogRect}!m\_bActive@{m\_bActive}}
+\index{m\_bActive@{m\_bActive}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_bActive}{m\_bActive}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::m\+\_\+b\+Active}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a9fdc7cfdc07c0b8935ec74942feb127d}\label{class_c_dialog_rect_a9fdc7cfdc07c0b8935ec74942feb127d}} 
+\index{CDialogRect@{CDialogRect}!m\_bDbClickUse@{m\_bDbClickUse}}
+\index{m\_bDbClickUse@{m\_bDbClickUse}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_bDbClickUse}{m\_bDbClickUse}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::m\+\_\+b\+Db\+Click\+Use}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a51a56b3e326cce86974a96d446cae035}\label{class_c_dialog_rect_a51a56b3e326cce86974a96d446cae035}} 
+\index{CDialogRect@{CDialogRect}!m\_bMainDlg@{m\_bMainDlg}}
+\index{m\_bMainDlg@{m\_bMainDlg}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_bMainDlg}{m\_bMainDlg}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::m\+\_\+b\+Main\+Dlg}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a8c73eacd97c2666afcdc70fd0e87f972}\label{class_c_dialog_rect_a8c73eacd97c2666afcdc70fd0e87f972}} 
+\index{CDialogRect@{CDialogRect}!m\_bPanDN@{m\_bPanDN}}
+\index{m\_bPanDN@{m\_bPanDN}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_bPanDN}{m\_bPanDN}}
+{\footnotesize\ttfamily BOOL CDialog\+Rect\+::m\+\_\+b\+Pan\+DN}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a98554ebe506b12f79778689b2b02efcf}\label{class_c_dialog_rect_a98554ebe506b12f79778689b2b02efcf}} 
+\index{CDialogRect@{CDialogRect}!m\_curColor@{m\_curColor}}
+\index{m\_curColor@{m\_curColor}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_curColor}{m\_curColor}}
+{\footnotesize\ttfamily COLORREF CDialog\+Rect\+::m\+\_\+cur\+Color}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a7f0a0fadc1f0840d31ae2a9662247280}\label{class_c_dialog_rect_a7f0a0fadc1f0840d31ae2a9662247280}} 
+\index{CDialogRect@{CDialogRect}!m\_dDefaultZoomRatio@{m\_dDefaultZoomRatio}}
+\index{m\_dDefaultZoomRatio@{m\_dDefaultZoomRatio}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dDefaultZoomRatio}{m\_dDefaultZoomRatio}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+Default\+Zoom\+Ratio}
+
+\mbox{\Hypertarget{class_c_dialog_rect_af2bcfb06836032b63e894ccd322b0fa4}\label{class_c_dialog_rect_af2bcfb06836032b63e894ccd322b0fa4}} 
+\index{CDialogRect@{CDialogRect}!m\_dPX@{m\_dPX}}
+\index{m\_dPX@{m\_dPX}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dPX}{m\_dPX}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+PX}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a928a04d6f4fe1a9a04aa1331987c41a1}\label{class_c_dialog_rect_a928a04d6f4fe1a9a04aa1331987c41a1}} 
+\index{CDialogRect@{CDialogRect}!m\_dPY@{m\_dPY}}
+\index{m\_dPY@{m\_dPY}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dPY}{m\_dPY}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+PY}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a50742a62ba3603b5083a053dbc11d214}\label{class_c_dialog_rect_a50742a62ba3603b5083a053dbc11d214}} 
+\index{CDialogRect@{CDialogRect}!m\_dZoomRat@{m\_dZoomRat}}
+\index{m\_dZoomRat@{m\_dZoomRat}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dZoomRat}{m\_dZoomRat}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+Zoom\+Rat}
+
+\mbox{\Hypertarget{class_c_dialog_rect_af819fba862614426e868afb378fad3e7}\label{class_c_dialog_rect_af819fba862614426e868afb378fad3e7}} 
+\index{CDialogRect@{CDialogRect}!m\_dZoomRatio@{m\_dZoomRatio}}
+\index{m\_dZoomRatio@{m\_dZoomRatio}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dZoomRatio}{m\_dZoomRatio}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+Zoom\+Ratio}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a165758f452afc996f507a45cb8a54198}\label{class_c_dialog_rect_a165758f452afc996f507a45cb8a54198}} 
+\index{CDialogRect@{CDialogRect}!m\_dZoomRatOld@{m\_dZoomRatOld}}
+\index{m\_dZoomRatOld@{m\_dZoomRatOld}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dZoomRatOld}{m\_dZoomRatOld}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+Zoom\+Rat\+Old}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a99934dd5c3e8ea5aafe7ef5da21f2f77}\label{class_c_dialog_rect_a99934dd5c3e8ea5aafe7ef5da21f2f77}} 
+\index{CDialogRect@{CDialogRect}!m\_dZoomSX@{m\_dZoomSX}}
+\index{m\_dZoomSX@{m\_dZoomSX}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dZoomSX}{m\_dZoomSX}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+Zoom\+SX}
+
+\mbox{\Hypertarget{class_c_dialog_rect_abf4936dd32b37f67d9694c2af70d0e7b}\label{class_c_dialog_rect_abf4936dd32b37f67d9694c2af70d0e7b}} 
+\index{CDialogRect@{CDialogRect}!m\_dZoomSY@{m\_dZoomSY}}
+\index{m\_dZoomSY@{m\_dZoomSY}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_dZoomSY}{m\_dZoomSY}}
+{\footnotesize\ttfamily double CDialog\+Rect\+::m\+\_\+d\+Zoom\+SY}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a415b6dcadab9ff8f9ecea001f2338516}\label{class_c_dialog_rect_a415b6dcadab9ff8f9ecea001f2338516}} 
+\index{CDialogRect@{CDialogRect}!m\_iActiveIdx@{m\_iActiveIdx}}
+\index{m\_iActiveIdx@{m\_iActiveIdx}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_iActiveIdx}{m\_iActiveIdx}}
+{\footnotesize\ttfamily int CDialog\+Rect\+::m\+\_\+i\+Active\+Idx}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a54475c8d349e469cefdbd660ae63b730}\label{class_c_dialog_rect_a54475c8d349e469cefdbd660ae63b730}} 
+\index{CDialogRect@{CDialogRect}!m\_iDlgIdx@{m\_iDlgIdx}}
+\index{m\_iDlgIdx@{m\_iDlgIdx}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_iDlgIdx}{m\_iDlgIdx}}
+{\footnotesize\ttfamily int CDialog\+Rect\+::m\+\_\+i\+Dlg\+Idx}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a9a520a9e391d003814b56ec694ffe466}\label{class_c_dialog_rect_a9a520a9e391d003814b56ec694ffe466}} 
+\index{CDialogRect@{CDialogRect}!m\_iImgHt@{m\_iImgHt}}
+\index{m\_iImgHt@{m\_iImgHt}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_iImgHt}{m\_iImgHt}}
+{\footnotesize\ttfamily int CDialog\+Rect\+::m\+\_\+i\+Img\+Ht}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a71026d7bcf3d40f87221bc20fd3ed587}\label{class_c_dialog_rect_a71026d7bcf3d40f87221bc20fd3ed587}} 
+\index{CDialogRect@{CDialogRect}!m\_iImgWd@{m\_iImgWd}}
+\index{m\_iImgWd@{m\_iImgWd}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_iImgWd}{m\_iImgWd}}
+{\footnotesize\ttfamily int CDialog\+Rect\+::m\+\_\+i\+Img\+Wd}
+
+\mbox{\Hypertarget{class_c_dialog_rect_aa68874fd1426c63046589424ffcaceab}\label{class_c_dialog_rect_aa68874fd1426c63046589424ffcaceab}} 
+\index{CDialogRect@{CDialogRect}!m\_iTrackerNum@{m\_iTrackerNum}}
+\index{m\_iTrackerNum@{m\_iTrackerNum}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_iTrackerNum}{m\_iTrackerNum}}
+{\footnotesize\ttfamily int CDialog\+Rect\+::m\+\_\+i\+Tracker\+Num}
+
+\mbox{\Hypertarget{class_c_dialog_rect_ad3e7998a609422ca35dd829aadcb1d4e}\label{class_c_dialog_rect_ad3e7998a609422ca35dd829aadcb1d4e}} 
+\index{CDialogRect@{CDialogRect}!m\_lPanEX@{m\_lPanEX}}
+\index{m\_lPanEX@{m\_lPanEX}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_lPanEX}{m\_lPanEX}}
+{\footnotesize\ttfamily long CDialog\+Rect\+::m\+\_\+l\+Pan\+EX}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a4fadd5699623c3858422b391d1be5e09}\label{class_c_dialog_rect_a4fadd5699623c3858422b391d1be5e09}} 
+\index{CDialogRect@{CDialogRect}!m\_lPanEY@{m\_lPanEY}}
+\index{m\_lPanEY@{m\_lPanEY}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_lPanEY}{m\_lPanEY}}
+{\footnotesize\ttfamily long CDialog\+Rect\+::m\+\_\+l\+Pan\+EY}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a316f6a1c1736e933492084cd34c8c943}\label{class_c_dialog_rect_a316f6a1c1736e933492084cd34c8c943}} 
+\index{CDialogRect@{CDialogRect}!m\_lPanSX@{m\_lPanSX}}
+\index{m\_lPanSX@{m\_lPanSX}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_lPanSX}{m\_lPanSX}}
+{\footnotesize\ttfamily long CDialog\+Rect\+::m\+\_\+l\+Pan\+SX}
+
+\mbox{\Hypertarget{class_c_dialog_rect_acf8f165121020ed4c2ae700ad9ea43d6}\label{class_c_dialog_rect_acf8f165121020ed4c2ae700ad9ea43d6}} 
+\index{CDialogRect@{CDialogRect}!m\_lPanSY@{m\_lPanSY}}
+\index{m\_lPanSY@{m\_lPanSY}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_lPanSY}{m\_lPanSY}}
+{\footnotesize\ttfamily long CDialog\+Rect\+::m\+\_\+l\+Pan\+SY}
+
+\mbox{\Hypertarget{class_c_dialog_rect_a3578afdb54bb89543ffb4f7eddd620e5}\label{class_c_dialog_rect_a3578afdb54bb89543ffb4f7eddd620e5}} 
+\index{CDialogRect@{CDialogRect}!m\_WinRect@{m\_WinRect}}
+\index{m\_WinRect@{m\_WinRect}!CDialogRect@{CDialogRect}}
+\doxysubsubsection{\texorpdfstring{m\_WinRect}{m\_WinRect}}
+{\footnotesize\ttfamily CRect CDialog\+Rect\+::m\+\_\+\+Win\+Rect}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_dialog_rect_8h}{Dialog\+Rect.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_dialog_rect_8cpp}{Dialog\+Rect.\+cpp}}\end{DoxyCompactItemize}

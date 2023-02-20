@@ -1,0 +1,666 @@
+\hypertarget{define_8h}{}\doxysection{D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/define/define.h 파일 참조}
+\label{define_8h}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/define/define.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/define/define.h}}
+
+
+define header File  
+
+
+{\ttfamily \#include \char`\"{}Profile\+Data\+IF.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ngh\+Util.\+h\char`\"{}}\newline
+define.\+h에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{define_8h__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{define_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} struct io 라벨 및 번호 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}} struct 검사 결과 개별 정보~\newline
+score, center posX,Y, center avg val, overlap \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}} struct 전체 검사 결과 정보~\newline
+전체 ok,ng, 수량 ok,ng, 겹침 ok,ng, 개별 결과 정보 struct \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} struct detector 연결 parameter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} struct x-\/ray 연결 parameter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} struct system parameter~\newline
+x-\/ray, detector, inverter, image save, image size \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}} struct inspection parameter~\newline
+검사에 사용 되는 x-\/ray kv,ma, 검사 parameter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}} struct recipe parameter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}} struct search area 검출 parameter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}} struct 이물 검사 parameter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{define_8h_a75c41e0fb6cf8a941ce9d3929bd1cc2e}{X\+\_\+\+RAY\+\_\+\+KV\+\_\+\+OFFSET}}~0.\+2
+\item 
+\#define \mbox{\hyperlink{define_8h_ad868f3fd00bc1a9e80309f7efd490a1d}{X\+\_\+\+RAY\+\_\+\+MA\+\_\+\+OFFSET}}~0.\+02
+\item 
+\#define \mbox{\hyperlink{define_8h_a157a80112a11ae3faac32efc6afdb095}{TEACHING\+\_\+\+TO\+\_\+\+MAIN\+\_\+\+MESSAGE}}~WM\+\_\+\+USER + 100
+\begin{DoxyCompactList}\small\item\em MESSAGE 각종 Message define \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{define_8h_a0d03ea31c53548fb8612cc8acfe6371f}{DETECTOR\+\_\+\+TO\+\_\+\+MAIN\+\_\+\+MESSAGE}}~WM\+\_\+\+USER + 101
+\item 
+\#define \mbox{\hyperlink{define_8h_a982feae925f258767365bb9f5f36d139}{USE\+\_\+\+MSG\+\_\+\+IMAGE\+\_\+\+VIEW\+\_\+\+TO\+\_\+\+TEACHING\+\_\+\+DIALOG}}~WM\+\_\+\+USER + 102
+\item 
+\#define \mbox{\hyperlink{define_8h_aad50e0b996460045dfb357dc915e3712}{USE\+\_\+\+MSG\+\_\+\+DETECTOR\+\_\+\+TO\+\_\+\+MAIN}}~WM\+\_\+\+USER + 103
+\item 
+\#define \mbox{\hyperlink{define_8h_a178641478c04f54722b0ad6c8ac54ebd}{USE\+\_\+\+MSG\+\_\+\+INSPECTION\+\_\+\+END}}~WM\+\_\+\+USER + 104
+\item 
+\#define \mbox{\hyperlink{define_8h_aab73946e635b70f9b61ea0ad611a03c6}{USE\+\_\+\+MSG\+\_\+\+ALARM\+\_\+\+SEQUENCE\+\_\+\+TO\+\_\+\+MAIN}}~WM\+\_\+\+USER + 105
+\item 
+\#define \mbox{\hyperlink{define_8h_abcaf7741ae09c2e703bb22c0f5831fbf}{USE\+\_\+\+MSG\+\_\+\+IMAGE\+\_\+\+VIEW\+\_\+\+TO\+\_\+\+MAIN\+\_\+\+DIALOG}}~WM\+\_\+\+USER + 106
+\item 
+\#define \mbox{\hyperlink{define_8h_a563307878b0755e6a74d2e13975ccc62}{USE\+\_\+\+MSG\+\_\+\+LOG\+\_\+\+TO\+\_\+\+MAIN}}~WM\+\_\+\+USER + 107
+\item 
+\#define \mbox{\hyperlink{define_8h_abfd81322006636d7e4a393a9ea7c51fc}{USE\+\_\+\+MSG\+\_\+\+LOG\+\_\+\+TO\+\_\+\+INSPECTION}}~WM\+\_\+\+USER + 108
+\item 
+\#define \mbox{\hyperlink{define_8h_aea67310e594533fea0c5985d5bd0ff19}{USE\+\_\+\+MSG\+\_\+\+LOG\+\_\+\+WRITE}}~WM\+\_\+\+USER + 109
+\item 
+\#define \mbox{\hyperlink{define_8h_a8d1212c90d851b1bd2503075ef80932b}{PATTERN\+\_\+0\+\_\+\+RESULT\+\_\+\+COLOR}}~RGB(0, 255, 0)
+\begin{DoxyCompactList}\small\item\em Pattern Color 각 Pattern 별 Color define \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{define_8h_a6c72ebbb2c52299117d569f6601e7c65}{PATTERN\+\_\+1\+\_\+\+RESULT\+\_\+\+COLOR}}~RGB(0, 255, 255)
+\item 
+\#define \mbox{\hyperlink{define_8h_aa7f0ca49bcee65c37fb3e0559cd3710c}{PATTERN\+\_\+2\+\_\+\+RESULT\+\_\+\+COLOR}}~RGB(255, 255, 0)
+\item 
+\#define \mbox{\hyperlink{define_8h_a9cf6064a62618cd0d0ff8ae6b7c47bf3}{PATTERN\+\_\+3\+\_\+\+RESULT\+\_\+\+COLOR}}~RGB(255, 0, 255)
+\item 
+\#define \mbox{\hyperlink{define_8h_a70ca0c0ae96f220d995e435ea84e404b}{PATTERN\+\_\+4\+\_\+\+RESULT\+\_\+\+COLOR}}~RGB(100, 255, 100)
+\item 
+\#define \mbox{\hyperlink{define_8h_a29cab2c39ad6e72c5e4816addacec4b7}{MAX\+\_\+\+RECT\+\_\+\+CNT}}~20
+\item 
+\#define \mbox{\hyperlink{define_8h_a4c93a8b6bfd0c232c9d5f2758b787f7e}{TIMER\+\_\+\+SHOW\+\_\+\+MAIN\+\_\+\+DIALOG}}~0
+\begin{DoxyCompactList}\small\item\em Timer 각 Timer 별 define \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{define_8h_aafada5b8b05088950e3ce3442e44ebcc}{TIMER\+\_\+\+CURRENT\+\_\+\+TIME}}~10
+\item 
+\#define \mbox{\hyperlink{define_8h_a2903ff1b766ec0cd732292c9ba3cf000}{TIMER\+\_\+\+X\+\_\+\+RAY\+\_\+\+ON\+\_\+\+OFF}}~11
+\item 
+\#define \mbox{\hyperlink{define_8h_a4ddf38d4775f9d493d9f6428832a2952}{TIMER\+\_\+\+X\+\_\+\+RAY\+\_\+\+INFO}}~12
+\item 
+\#define \mbox{\hyperlink{define_8h_a0b2cb3667f281d4f800330969307ef2b}{TIMER\+\_\+\+HW\+\_\+\+CONNECTION\+\_\+\+CHECK}}~13
+\item 
+\#define \mbox{\hyperlink{define_8h_a2461f746606f58f7683ffac706e1e34c}{TIMER\+\_\+\+HIDE\+\_\+\+RECIPE\+\_\+\+DLG\+\_\+\+CHEC}}~14
+\item 
+\#define \mbox{\hyperlink{define_8h_a42552e985860843e52f45b1862357dec}{TIMER\+\_\+\+STOP\+\_\+\+MODE\+\_\+\+INTERLOCK\+\_\+\+CHECK}}~15
+\item 
+\#define \mbox{\hyperlink{define_8h_a64f1b9cc802f80a0a3184fb44b544e7a}{TIMER\+\_\+\+ALARM\+\_\+\+SHOW}}~16
+\item 
+\#define \mbox{\hyperlink{define_8h_a9033f12b48f4d6f37f5a66c0f278326d}{DEFAULT\+\_\+\+IMAGE\+\_\+\+WIDTH}}~1126
+\item 
+\#define \mbox{\hyperlink{define_8h_aa1fcecb983d1e39c1e68cd871327e858}{DEFAULT\+\_\+\+IMAGE\+\_\+\+HEIGHT}}~1024
+\item 
+\#define \mbox{\hyperlink{define_8h_a80a4ac8589675ee4c319bbfb0bf8d49c}{IMAGE\+\_\+\+CUT\+\_\+\+OFFSET}}~150
+\item 
+\#define \mbox{\hyperlink{define_8h_a200281399f8f0217d82ea03238a2eb6a}{MAX\+\_\+\+INPUT\+\_\+\+NUM}}~16
+\begin{DoxyCompactList}\small\item\em Input, Output Count in, output Max Count \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{define_8h_a53aa580a1c97aec0efd90910de409556}{MAX\+\_\+\+OUTPUT\+\_\+\+NUM}}~16
+\item 
+\#define \mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\+\_\+\+CHAR\+\_\+\+LENG}}~256
+\item 
+\#define \mbox{\hyperlink{define_8h_a985371fcd4758af6afdefb4afb406081}{MAX\+\_\+\+RSLT\+\_\+\+POINT\+\_\+\+CNT}}~2
+\item 
+\#define \mbox{\hyperlink{define_8h_a8d8b0c283a571ee211dafd94dee021c1}{MAX\+\_\+\+PATTERN\+\_\+\+ADD\+\_\+\+CNT}}~5
+\item 
+\#define \mbox{\hyperlink{define_8h_a9fb7f2ccb1358a0446ed3571c5d64431}{TEST\+\_\+\+IMAGE\+\_\+\+LOAD}}
+\end{DoxyCompactItemize}
+\doxysubsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_a89addff1a6c1e2527b39d9712cc68188}{IO\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} struct io 라벨 및 번호 \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}} \mbox{\hyperlink{define_8h_a53ef8b8bde191251a5035cee042f3126}{EACH\+\_\+\+RESULT\+\_\+\+DATA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}} struct 검사 결과 개별 정보~\newline
+score, center posX,Y, center avg val, overlap \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}} \mbox{\hyperlink{define_8h_af63a25ee3252766191fa58cf0f8e04d6}{RESULT\+\_\+\+DATA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}} struct 전체 검사 결과 정보~\newline
+전체 ok,ng, 수량 ok,ng, 겹침 ok,ng, 개별 결과 정보 struct \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_ad447051831b66cb5f4705734672ea1e9}{DETECTOR\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} struct detector 연결 parameter \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_a19d60964ba2dc6c5d057819c581ea529}{X\+\_\+\+RAY\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} struct x-\/ray 연결 parameter \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_ae8d30a245320f1703ebdb63f867d84ac}{SYSTEM\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} struct system parameter~\newline
+x-\/ray, detector, inverter, image save, image size \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_a30951d30e088364aeb937520b305a68f}{INSPEC\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}} struct inspection parameter~\newline
+검사에 사용 되는 x-\/ray kv,ma, 검사 parameter \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_a7756c9fdc287a135abe123e96ab3a32d}{RECIPE\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}} struct recipe parameter \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_abe6816922d39ed85d881c3184eefa0f0}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}} struct search area 검출 parameter \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}} \mbox{\hyperlink{define_8h_a1300fe2c3cc6baeda94df9aa8b03c44f}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}} struct 이물 검사 parameter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{열거형 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}{LOGIN\+\_\+\+TYPE}} \{ \mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61aa7372fb474b10df62a6b4e942bcc9e8d2}{LOGIN\+\_\+\+USER}}
+, \mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61aa034a3db09cd82abf3df87f9280064391}{LOGIN\+\_\+\+ADMIN}}
+ \}
+\begin{DoxyCompactList}\small\item\em LOGIN\+\_\+\+TYPE LOGIN\+\_\+\+USER, LOGIN\+\_\+\+ADMIN define~\newline
+user, admin mode로 x-\/ray 제어 가능 유무(on,off제외 출력 변화) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+const CString \mbox{\hyperlink{define_8h_a2549fbf786e0c4d2cc61a7738ceab210}{ADMIN\+\_\+\+PW\+\_\+\+STRING}} = \+\_\+T(\char`\"{}ADMIN\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a9216be8e7f68b8f7b52b808c467a4d24}{USER\+\_\+\+PW\+\_\+\+STRING}} = \+\_\+T(\char`\"{}USER\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a9cdfb63045375b975a951ce186e24e81}{SYSTEM\+\_\+\+FILE\+\_\+\+VERSION}} = \+\_\+T(\char`\"{}ver\+\_\+20220719\+\_\+0\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a4e71e0fec092ee57f7a7f9b53cc5267a}{IO\+\_\+\+STR\+\_\+\+PARA\+\_\+\+FILENAME}} = \+\_\+T(\char`\"{}DIOLabel.\+ini\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_aed50a4f8ce1593b62c7b2432c9af6d88}{SYSTEM\+\_\+\+STR\+\_\+\+PARA\+\_\+\+FILENAME}} = \+\_\+T(\char`\"{}System.\+ini\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a5153f8e21fe0ba4c48ed6875afda54fb}{RECIPE\+\_\+\+STR\+\_\+\+PARA\+\_\+\+FILENAME}} = \+\_\+T(\char`\"{}Recipe.\+ini\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_add3957a4bff46a2f1d43398093512131}{RESULT\+\_\+\+DATA\+\_\+\+\_\+\+CSV\+\_\+\+FILENAME}} = \+\_\+T(\char`\"{}Result\+Data.\+csv\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a074de2cb7aa6d90ec82c064194a371bb}{LOG\+\_\+\+FILE\+\_\+\+PATH}} = \+\_\+T(\char`\"{}LOG\textbackslash{}\textbackslash{}\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a1a1063dfb0cfa8260ab48998776bbfd2}{ALARM\+\_\+\+MSG\+\_\+\+EMG\+\_\+\+INTER\+\_\+\+LOCK}} = \+\_\+T(\char`\"{}EMG Inter Lock\char`\"{})
+\begin{DoxyCompactList}\small\item\em Alarm Message String Alarm Message String define \end{DoxyCompactList}\item 
+const CString \mbox{\hyperlink{define_8h_a8d1054adcd90664d9e278cb20ad65c7a}{ALARM\+\_\+\+MSG\+\_\+\+KEY\+\_\+\+SW\+\_\+\+INTER\+\_\+\+LOCK}} = \+\_\+T(\char`\"{}Key SW Inter Lock\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a1f5417a32eefa7582388ad6dc9e12f66}{ALARM\+\_\+\+MSG\+\_\+\+DOOR\+\_\+\+INTER\+\_\+\+LOCK}} = \+\_\+T(\char`\"{}Door Open Inter Lock\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a3ae09e30c3aec39032fbff038ae7a46d}{ALARM\+\_\+\+MSG\+\_\+\+INVERTER\+\_\+\+ALARM\+\_\+\+INTER\+\_\+\+LOCK}} = \+\_\+T(\char`\"{}Inverter Alarm Inter Lock\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a33f3d376130219267f51f32b7e618906}{ALARM\+\_\+\+MSG\+\_\+\+TUBE\+\_\+\+ALARM\+\_\+\+INTER\+\_\+\+LOCK}} = \+\_\+T(\char`\"{}Tube Alarm Inter Lock\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a7010836184251afe75261f403c2cbbce}{ALARM\+\_\+\+MSG\+\_\+\+X\+\_\+\+RAY\+\_\+\+LAMP\+\_\+\+ALARM\+\_\+\+INTER\+\_\+\+LOCK}} = \+\_\+T(\char`\"{}X\+\_\+\+Ray Lamp Alarm Inter Lock\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_a951cf60710ce042741270f48b9769970}{RESULT\+\_\+\+CSV\+\_\+\+FILE\+\_\+\+LABEL\+\_\+\+NAME}} = \+\_\+T(\char`\"{}Date,Total\+\_\+\+Result,1\+\_\+\+Ptn\+\_\+\+Result,1\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,1\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,1\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,2\+\_\+\+Ptn\+\_\+\+Result,2\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,2\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,2\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,3\+\_\+\+Ptn\+\_\+\+Result,3\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,3\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,3\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,4\+\_\+\+Ptn\+\_\+\+Result,4\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,4\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,4\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,5\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,5\+\_\+\+Ptn\+\_\+\+Result,5\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,5\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt\char`\"{})
+\item 
+const CString \mbox{\hyperlink{define_8h_ae9c8b5eabce043437b55148cff1b4b69}{TEST\+\_\+\+IMAGE\+\_\+\+FILE\+\_\+\+PATH}} = \+\_\+T(\char`\"{}d\+:\textbackslash{}\textbackslash{}ngh\textbackslash{}\textbackslash{}\+Test\+Image\textbackslash{}\textbackslash{}\+I410\+S\textbackslash{}\textbackslash{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+define header File 
+
+\begin{DoxyAuthor}{작성자}
+노규현
+\end{DoxyAuthor}
+message, timer, struct define 파일.~\newline
+
+
+\doxysubsection{매크로 문서화}
+\mbox{\Hypertarget{define_8h_aa1fcecb983d1e39c1e68cd871327e858}\label{define_8h_aa1fcecb983d1e39c1e68cd871327e858}} 
+\index{define.h@{define.h}!DEFAULT\_IMAGE\_HEIGHT@{DEFAULT\_IMAGE\_HEIGHT}}
+\index{DEFAULT\_IMAGE\_HEIGHT@{DEFAULT\_IMAGE\_HEIGHT}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_IMAGE\_HEIGHT}{DEFAULT\_IMAGE\_HEIGHT}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+IMAGE\+\_\+\+HEIGHT~1024}
+
+\mbox{\Hypertarget{define_8h_a9033f12b48f4d6f37f5a66c0f278326d}\label{define_8h_a9033f12b48f4d6f37f5a66c0f278326d}} 
+\index{define.h@{define.h}!DEFAULT\_IMAGE\_WIDTH@{DEFAULT\_IMAGE\_WIDTH}}
+\index{DEFAULT\_IMAGE\_WIDTH@{DEFAULT\_IMAGE\_WIDTH}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_IMAGE\_WIDTH}{DEFAULT\_IMAGE\_WIDTH}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+IMAGE\+\_\+\+WIDTH~1126}
+
+\mbox{\Hypertarget{define_8h_a0d03ea31c53548fb8612cc8acfe6371f}\label{define_8h_a0d03ea31c53548fb8612cc8acfe6371f}} 
+\index{define.h@{define.h}!DETECTOR\_TO\_MAIN\_MESSAGE@{DETECTOR\_TO\_MAIN\_MESSAGE}}
+\index{DETECTOR\_TO\_MAIN\_MESSAGE@{DETECTOR\_TO\_MAIN\_MESSAGE}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{DETECTOR\_TO\_MAIN\_MESSAGE}{DETECTOR\_TO\_MAIN\_MESSAGE}}
+{\footnotesize\ttfamily \#define DETECTOR\+\_\+\+TO\+\_\+\+MAIN\+\_\+\+MESSAGE~WM\+\_\+\+USER + 101}
+
+\mbox{\Hypertarget{define_8h_a80a4ac8589675ee4c319bbfb0bf8d49c}\label{define_8h_a80a4ac8589675ee4c319bbfb0bf8d49c}} 
+\index{define.h@{define.h}!IMAGE\_CUT\_OFFSET@{IMAGE\_CUT\_OFFSET}}
+\index{IMAGE\_CUT\_OFFSET@{IMAGE\_CUT\_OFFSET}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{IMAGE\_CUT\_OFFSET}{IMAGE\_CUT\_OFFSET}}
+{\footnotesize\ttfamily \#define IMAGE\+\_\+\+CUT\+\_\+\+OFFSET~150}
+
+\mbox{\Hypertarget{define_8h_a44cab813e2c3fba276263efc4a1ba495}\label{define_8h_a44cab813e2c3fba276263efc4a1ba495}} 
+\index{define.h@{define.h}!MAX\_CHAR\_LENG@{MAX\_CHAR\_LENG}}
+\index{MAX\_CHAR\_LENG@{MAX\_CHAR\_LENG}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_CHAR\_LENG}{MAX\_CHAR\_LENG}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+CHAR\+\_\+\+LENG~256}
+
+\mbox{\Hypertarget{define_8h_a200281399f8f0217d82ea03238a2eb6a}\label{define_8h_a200281399f8f0217d82ea03238a2eb6a}} 
+\index{define.h@{define.h}!MAX\_INPUT\_NUM@{MAX\_INPUT\_NUM}}
+\index{MAX\_INPUT\_NUM@{MAX\_INPUT\_NUM}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_INPUT\_NUM}{MAX\_INPUT\_NUM}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+INPUT\+\_\+\+NUM~16}
+
+
+
+Input, Output Count in, output Max Count 
+
+\mbox{\Hypertarget{define_8h_a53aa580a1c97aec0efd90910de409556}\label{define_8h_a53aa580a1c97aec0efd90910de409556}} 
+\index{define.h@{define.h}!MAX\_OUTPUT\_NUM@{MAX\_OUTPUT\_NUM}}
+\index{MAX\_OUTPUT\_NUM@{MAX\_OUTPUT\_NUM}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_OUTPUT\_NUM}{MAX\_OUTPUT\_NUM}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+OUTPUT\+\_\+\+NUM~16}
+
+\mbox{\Hypertarget{define_8h_a8d8b0c283a571ee211dafd94dee021c1}\label{define_8h_a8d8b0c283a571ee211dafd94dee021c1}} 
+\index{define.h@{define.h}!MAX\_PATTERN\_ADD\_CNT@{MAX\_PATTERN\_ADD\_CNT}}
+\index{MAX\_PATTERN\_ADD\_CNT@{MAX\_PATTERN\_ADD\_CNT}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_PATTERN\_ADD\_CNT}{MAX\_PATTERN\_ADD\_CNT}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+PATTERN\+\_\+\+ADD\+\_\+\+CNT~5}
+
+\mbox{\Hypertarget{define_8h_a29cab2c39ad6e72c5e4816addacec4b7}\label{define_8h_a29cab2c39ad6e72c5e4816addacec4b7}} 
+\index{define.h@{define.h}!MAX\_RECT\_CNT@{MAX\_RECT\_CNT}}
+\index{MAX\_RECT\_CNT@{MAX\_RECT\_CNT}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_RECT\_CNT}{MAX\_RECT\_CNT}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+RECT\+\_\+\+CNT~20}
+
+\mbox{\Hypertarget{define_8h_a985371fcd4758af6afdefb4afb406081}\label{define_8h_a985371fcd4758af6afdefb4afb406081}} 
+\index{define.h@{define.h}!MAX\_RSLT\_POINT\_CNT@{MAX\_RSLT\_POINT\_CNT}}
+\index{MAX\_RSLT\_POINT\_CNT@{MAX\_RSLT\_POINT\_CNT}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_RSLT\_POINT\_CNT}{MAX\_RSLT\_POINT\_CNT}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+RSLT\+\_\+\+POINT\+\_\+\+CNT~2}
+
+\mbox{\Hypertarget{define_8h_a8d1212c90d851b1bd2503075ef80932b}\label{define_8h_a8d1212c90d851b1bd2503075ef80932b}} 
+\index{define.h@{define.h}!PATTERN\_0\_RESULT\_COLOR@{PATTERN\_0\_RESULT\_COLOR}}
+\index{PATTERN\_0\_RESULT\_COLOR@{PATTERN\_0\_RESULT\_COLOR}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_0\_RESULT\_COLOR}{PATTERN\_0\_RESULT\_COLOR}}
+{\footnotesize\ttfamily \#define PATTERN\+\_\+0\+\_\+\+RESULT\+\_\+\+COLOR~RGB(0, 255, 0)}
+
+
+
+Pattern Color 각 Pattern 별 Color define 
+
+\mbox{\Hypertarget{define_8h_a6c72ebbb2c52299117d569f6601e7c65}\label{define_8h_a6c72ebbb2c52299117d569f6601e7c65}} 
+\index{define.h@{define.h}!PATTERN\_1\_RESULT\_COLOR@{PATTERN\_1\_RESULT\_COLOR}}
+\index{PATTERN\_1\_RESULT\_COLOR@{PATTERN\_1\_RESULT\_COLOR}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_1\_RESULT\_COLOR}{PATTERN\_1\_RESULT\_COLOR}}
+{\footnotesize\ttfamily \#define PATTERN\+\_\+1\+\_\+\+RESULT\+\_\+\+COLOR~RGB(0, 255, 255)}
+
+\mbox{\Hypertarget{define_8h_aa7f0ca49bcee65c37fb3e0559cd3710c}\label{define_8h_aa7f0ca49bcee65c37fb3e0559cd3710c}} 
+\index{define.h@{define.h}!PATTERN\_2\_RESULT\_COLOR@{PATTERN\_2\_RESULT\_COLOR}}
+\index{PATTERN\_2\_RESULT\_COLOR@{PATTERN\_2\_RESULT\_COLOR}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_2\_RESULT\_COLOR}{PATTERN\_2\_RESULT\_COLOR}}
+{\footnotesize\ttfamily \#define PATTERN\+\_\+2\+\_\+\+RESULT\+\_\+\+COLOR~RGB(255, 255, 0)}
+
+\mbox{\Hypertarget{define_8h_a9cf6064a62618cd0d0ff8ae6b7c47bf3}\label{define_8h_a9cf6064a62618cd0d0ff8ae6b7c47bf3}} 
+\index{define.h@{define.h}!PATTERN\_3\_RESULT\_COLOR@{PATTERN\_3\_RESULT\_COLOR}}
+\index{PATTERN\_3\_RESULT\_COLOR@{PATTERN\_3\_RESULT\_COLOR}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_3\_RESULT\_COLOR}{PATTERN\_3\_RESULT\_COLOR}}
+{\footnotesize\ttfamily \#define PATTERN\+\_\+3\+\_\+\+RESULT\+\_\+\+COLOR~RGB(255, 0, 255)}
+
+\mbox{\Hypertarget{define_8h_a70ca0c0ae96f220d995e435ea84e404b}\label{define_8h_a70ca0c0ae96f220d995e435ea84e404b}} 
+\index{define.h@{define.h}!PATTERN\_4\_RESULT\_COLOR@{PATTERN\_4\_RESULT\_COLOR}}
+\index{PATTERN\_4\_RESULT\_COLOR@{PATTERN\_4\_RESULT\_COLOR}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_4\_RESULT\_COLOR}{PATTERN\_4\_RESULT\_COLOR}}
+{\footnotesize\ttfamily \#define PATTERN\+\_\+4\+\_\+\+RESULT\+\_\+\+COLOR~RGB(100, 255, 100)}
+
+\mbox{\Hypertarget{define_8h_a157a80112a11ae3faac32efc6afdb095}\label{define_8h_a157a80112a11ae3faac32efc6afdb095}} 
+\index{define.h@{define.h}!TEACHING\_TO\_MAIN\_MESSAGE@{TEACHING\_TO\_MAIN\_MESSAGE}}
+\index{TEACHING\_TO\_MAIN\_MESSAGE@{TEACHING\_TO\_MAIN\_MESSAGE}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TEACHING\_TO\_MAIN\_MESSAGE}{TEACHING\_TO\_MAIN\_MESSAGE}}
+{\footnotesize\ttfamily \#define TEACHING\+\_\+\+TO\+\_\+\+MAIN\+\_\+\+MESSAGE~WM\+\_\+\+USER + 100}
+
+
+
+MESSAGE 각종 Message define 
+
+\mbox{\Hypertarget{define_8h_a9fb7f2ccb1358a0446ed3571c5d64431}\label{define_8h_a9fb7f2ccb1358a0446ed3571c5d64431}} 
+\index{define.h@{define.h}!TEST\_IMAGE\_LOAD@{TEST\_IMAGE\_LOAD}}
+\index{TEST\_IMAGE\_LOAD@{TEST\_IMAGE\_LOAD}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_IMAGE\_LOAD}{TEST\_IMAGE\_LOAD}}
+{\footnotesize\ttfamily \#define TEST\+\_\+\+IMAGE\+\_\+\+LOAD}
+
+\mbox{\Hypertarget{define_8h_a64f1b9cc802f80a0a3184fb44b544e7a}\label{define_8h_a64f1b9cc802f80a0a3184fb44b544e7a}} 
+\index{define.h@{define.h}!TIMER\_ALARM\_SHOW@{TIMER\_ALARM\_SHOW}}
+\index{TIMER\_ALARM\_SHOW@{TIMER\_ALARM\_SHOW}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_ALARM\_SHOW}{TIMER\_ALARM\_SHOW}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+ALARM\+\_\+\+SHOW~16}
+
+\mbox{\Hypertarget{define_8h_aafada5b8b05088950e3ce3442e44ebcc}\label{define_8h_aafada5b8b05088950e3ce3442e44ebcc}} 
+\index{define.h@{define.h}!TIMER\_CURRENT\_TIME@{TIMER\_CURRENT\_TIME}}
+\index{TIMER\_CURRENT\_TIME@{TIMER\_CURRENT\_TIME}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_CURRENT\_TIME}{TIMER\_CURRENT\_TIME}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+CURRENT\+\_\+\+TIME~10}
+
+\mbox{\Hypertarget{define_8h_a2461f746606f58f7683ffac706e1e34c}\label{define_8h_a2461f746606f58f7683ffac706e1e34c}} 
+\index{define.h@{define.h}!TIMER\_HIDE\_RECIPE\_DLG\_CHEC@{TIMER\_HIDE\_RECIPE\_DLG\_CHEC}}
+\index{TIMER\_HIDE\_RECIPE\_DLG\_CHEC@{TIMER\_HIDE\_RECIPE\_DLG\_CHEC}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_HIDE\_RECIPE\_DLG\_CHEC}{TIMER\_HIDE\_RECIPE\_DLG\_CHEC}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+HIDE\+\_\+\+RECIPE\+\_\+\+DLG\+\_\+\+CHEC~14}
+
+\mbox{\Hypertarget{define_8h_a0b2cb3667f281d4f800330969307ef2b}\label{define_8h_a0b2cb3667f281d4f800330969307ef2b}} 
+\index{define.h@{define.h}!TIMER\_HW\_CONNECTION\_CHECK@{TIMER\_HW\_CONNECTION\_CHECK}}
+\index{TIMER\_HW\_CONNECTION\_CHECK@{TIMER\_HW\_CONNECTION\_CHECK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_HW\_CONNECTION\_CHECK}{TIMER\_HW\_CONNECTION\_CHECK}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+HW\+\_\+\+CONNECTION\+\_\+\+CHECK~13}
+
+\mbox{\Hypertarget{define_8h_a4c93a8b6bfd0c232c9d5f2758b787f7e}\label{define_8h_a4c93a8b6bfd0c232c9d5f2758b787f7e}} 
+\index{define.h@{define.h}!TIMER\_SHOW\_MAIN\_DIALOG@{TIMER\_SHOW\_MAIN\_DIALOG}}
+\index{TIMER\_SHOW\_MAIN\_DIALOG@{TIMER\_SHOW\_MAIN\_DIALOG}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_SHOW\_MAIN\_DIALOG}{TIMER\_SHOW\_MAIN\_DIALOG}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+SHOW\+\_\+\+MAIN\+\_\+\+DIALOG~0}
+
+
+
+Timer 각 Timer 별 define 
+
+\mbox{\Hypertarget{define_8h_a42552e985860843e52f45b1862357dec}\label{define_8h_a42552e985860843e52f45b1862357dec}} 
+\index{define.h@{define.h}!TIMER\_STOP\_MODE\_INTERLOCK\_CHECK@{TIMER\_STOP\_MODE\_INTERLOCK\_CHECK}}
+\index{TIMER\_STOP\_MODE\_INTERLOCK\_CHECK@{TIMER\_STOP\_MODE\_INTERLOCK\_CHECK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_STOP\_MODE\_INTERLOCK\_CHECK}{TIMER\_STOP\_MODE\_INTERLOCK\_CHECK}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+STOP\+\_\+\+MODE\+\_\+\+INTERLOCK\+\_\+\+CHECK~15}
+
+\mbox{\Hypertarget{define_8h_a4ddf38d4775f9d493d9f6428832a2952}\label{define_8h_a4ddf38d4775f9d493d9f6428832a2952}} 
+\index{define.h@{define.h}!TIMER\_X\_RAY\_INFO@{TIMER\_X\_RAY\_INFO}}
+\index{TIMER\_X\_RAY\_INFO@{TIMER\_X\_RAY\_INFO}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_X\_RAY\_INFO}{TIMER\_X\_RAY\_INFO}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+X\+\_\+\+RAY\+\_\+\+INFO~12}
+
+\mbox{\Hypertarget{define_8h_a2903ff1b766ec0cd732292c9ba3cf000}\label{define_8h_a2903ff1b766ec0cd732292c9ba3cf000}} 
+\index{define.h@{define.h}!TIMER\_X\_RAY\_ON\_OFF@{TIMER\_X\_RAY\_ON\_OFF}}
+\index{TIMER\_X\_RAY\_ON\_OFF@{TIMER\_X\_RAY\_ON\_OFF}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_X\_RAY\_ON\_OFF}{TIMER\_X\_RAY\_ON\_OFF}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+X\+\_\+\+RAY\+\_\+\+ON\+\_\+\+OFF~11}
+
+\mbox{\Hypertarget{define_8h_aab73946e635b70f9b61ea0ad611a03c6}\label{define_8h_aab73946e635b70f9b61ea0ad611a03c6}} 
+\index{define.h@{define.h}!USE\_MSG\_ALARM\_SEQUENCE\_TO\_MAIN@{USE\_MSG\_ALARM\_SEQUENCE\_TO\_MAIN}}
+\index{USE\_MSG\_ALARM\_SEQUENCE\_TO\_MAIN@{USE\_MSG\_ALARM\_SEQUENCE\_TO\_MAIN}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_ALARM\_SEQUENCE\_TO\_MAIN}{USE\_MSG\_ALARM\_SEQUENCE\_TO\_MAIN}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+ALARM\+\_\+\+SEQUENCE\+\_\+\+TO\+\_\+\+MAIN~WM\+\_\+\+USER + 105}
+
+\mbox{\Hypertarget{define_8h_aad50e0b996460045dfb357dc915e3712}\label{define_8h_aad50e0b996460045dfb357dc915e3712}} 
+\index{define.h@{define.h}!USE\_MSG\_DETECTOR\_TO\_MAIN@{USE\_MSG\_DETECTOR\_TO\_MAIN}}
+\index{USE\_MSG\_DETECTOR\_TO\_MAIN@{USE\_MSG\_DETECTOR\_TO\_MAIN}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_DETECTOR\_TO\_MAIN}{USE\_MSG\_DETECTOR\_TO\_MAIN}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+DETECTOR\+\_\+\+TO\+\_\+\+MAIN~WM\+\_\+\+USER + 103}
+
+\mbox{\Hypertarget{define_8h_abcaf7741ae09c2e703bb22c0f5831fbf}\label{define_8h_abcaf7741ae09c2e703bb22c0f5831fbf}} 
+\index{define.h@{define.h}!USE\_MSG\_IMAGE\_VIEW\_TO\_MAIN\_DIALOG@{USE\_MSG\_IMAGE\_VIEW\_TO\_MAIN\_DIALOG}}
+\index{USE\_MSG\_IMAGE\_VIEW\_TO\_MAIN\_DIALOG@{USE\_MSG\_IMAGE\_VIEW\_TO\_MAIN\_DIALOG}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_IMAGE\_VIEW\_TO\_MAIN\_DIALOG}{USE\_MSG\_IMAGE\_VIEW\_TO\_MAIN\_DIALOG}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+IMAGE\+\_\+\+VIEW\+\_\+\+TO\+\_\+\+MAIN\+\_\+\+DIALOG~WM\+\_\+\+USER + 106}
+
+\mbox{\Hypertarget{define_8h_a982feae925f258767365bb9f5f36d139}\label{define_8h_a982feae925f258767365bb9f5f36d139}} 
+\index{define.h@{define.h}!USE\_MSG\_IMAGE\_VIEW\_TO\_TEACHING\_DIALOG@{USE\_MSG\_IMAGE\_VIEW\_TO\_TEACHING\_DIALOG}}
+\index{USE\_MSG\_IMAGE\_VIEW\_TO\_TEACHING\_DIALOG@{USE\_MSG\_IMAGE\_VIEW\_TO\_TEACHING\_DIALOG}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_IMAGE\_VIEW\_TO\_TEACHING\_DIALOG}{USE\_MSG\_IMAGE\_VIEW\_TO\_TEACHING\_DIALOG}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+IMAGE\+\_\+\+VIEW\+\_\+\+TO\+\_\+\+TEACHING\+\_\+\+DIALOG~WM\+\_\+\+USER + 102}
+
+\mbox{\Hypertarget{define_8h_a178641478c04f54722b0ad6c8ac54ebd}\label{define_8h_a178641478c04f54722b0ad6c8ac54ebd}} 
+\index{define.h@{define.h}!USE\_MSG\_INSPECTION\_END@{USE\_MSG\_INSPECTION\_END}}
+\index{USE\_MSG\_INSPECTION\_END@{USE\_MSG\_INSPECTION\_END}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_INSPECTION\_END}{USE\_MSG\_INSPECTION\_END}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+INSPECTION\+\_\+\+END~WM\+\_\+\+USER + 104}
+
+\mbox{\Hypertarget{define_8h_abfd81322006636d7e4a393a9ea7c51fc}\label{define_8h_abfd81322006636d7e4a393a9ea7c51fc}} 
+\index{define.h@{define.h}!USE\_MSG\_LOG\_TO\_INSPECTION@{USE\_MSG\_LOG\_TO\_INSPECTION}}
+\index{USE\_MSG\_LOG\_TO\_INSPECTION@{USE\_MSG\_LOG\_TO\_INSPECTION}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_LOG\_TO\_INSPECTION}{USE\_MSG\_LOG\_TO\_INSPECTION}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+LOG\+\_\+\+TO\+\_\+\+INSPECTION~WM\+\_\+\+USER + 108}
+
+\mbox{\Hypertarget{define_8h_a563307878b0755e6a74d2e13975ccc62}\label{define_8h_a563307878b0755e6a74d2e13975ccc62}} 
+\index{define.h@{define.h}!USE\_MSG\_LOG\_TO\_MAIN@{USE\_MSG\_LOG\_TO\_MAIN}}
+\index{USE\_MSG\_LOG\_TO\_MAIN@{USE\_MSG\_LOG\_TO\_MAIN}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_LOG\_TO\_MAIN}{USE\_MSG\_LOG\_TO\_MAIN}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+LOG\+\_\+\+TO\+\_\+\+MAIN~WM\+\_\+\+USER + 107}
+
+\mbox{\Hypertarget{define_8h_aea67310e594533fea0c5985d5bd0ff19}\label{define_8h_aea67310e594533fea0c5985d5bd0ff19}} 
+\index{define.h@{define.h}!USE\_MSG\_LOG\_WRITE@{USE\_MSG\_LOG\_WRITE}}
+\index{USE\_MSG\_LOG\_WRITE@{USE\_MSG\_LOG\_WRITE}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USE\_MSG\_LOG\_WRITE}{USE\_MSG\_LOG\_WRITE}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+MSG\+\_\+\+LOG\+\_\+\+WRITE~WM\+\_\+\+USER + 109}
+
+\mbox{\Hypertarget{define_8h_a75c41e0fb6cf8a941ce9d3929bd1cc2e}\label{define_8h_a75c41e0fb6cf8a941ce9d3929bd1cc2e}} 
+\index{define.h@{define.h}!X\_RAY\_KV\_OFFSET@{X\_RAY\_KV\_OFFSET}}
+\index{X\_RAY\_KV\_OFFSET@{X\_RAY\_KV\_OFFSET}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{X\_RAY\_KV\_OFFSET}{X\_RAY\_KV\_OFFSET}}
+{\footnotesize\ttfamily \#define X\+\_\+\+RAY\+\_\+\+KV\+\_\+\+OFFSET~0.\+2}
+
+\mbox{\Hypertarget{define_8h_ad868f3fd00bc1a9e80309f7efd490a1d}\label{define_8h_ad868f3fd00bc1a9e80309f7efd490a1d}} 
+\index{define.h@{define.h}!X\_RAY\_MA\_OFFSET@{X\_RAY\_MA\_OFFSET}}
+\index{X\_RAY\_MA\_OFFSET@{X\_RAY\_MA\_OFFSET}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{X\_RAY\_MA\_OFFSET}{X\_RAY\_MA\_OFFSET}}
+{\footnotesize\ttfamily \#define X\+\_\+\+RAY\+\_\+\+MA\+\_\+\+OFFSET~0.\+02}
+
+
+
+\doxysubsection{타입정의 문서화}
+\mbox{\Hypertarget{define_8h_a1300fe2c3cc6baeda94df9aa8b03c44f}\label{define_8h_a1300fe2c3cc6baeda94df9aa8b03c44f}} 
+\index{define.h@{define.h}!BLOB\_INSPEC\_PARA@{BLOB\_INSPEC\_PARA}}
+\index{BLOB\_INSPEC\_PARA@{BLOB\_INSPEC\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{BLOB\_INSPEC\_PARA}{BLOB\_INSPEC\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}} \mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_b_l_o_b___i_n_s_p_e_c___p_a_r_a}{BLOB\+\_\+\+INSPEC\+\_\+\+PARA}} struct 이물 검사 parameter 
+
+\mbox{\Hypertarget{define_8h_ad447051831b66cb5f4705734672ea1e9}\label{define_8h_ad447051831b66cb5f4705734672ea1e9}} 
+\index{define.h@{define.h}!DETECTOR\_PARA@{DETECTOR\_PARA}}
+\index{DETECTOR\_PARA@{DETECTOR\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{DETECTOR\_PARA}{DETECTOR\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} struct detector 연결 parameter 
+
+\mbox{\Hypertarget{define_8h_a53ef8b8bde191251a5035cee042f3126}\label{define_8h_a53ef8b8bde191251a5035cee042f3126}} 
+\index{define.h@{define.h}!EACH\_RESULT\_DATA@{EACH\_RESULT\_DATA}}
+\index{EACH\_RESULT\_DATA@{EACH\_RESULT\_DATA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{EACH\_RESULT\_DATA}{EACH\_RESULT\_DATA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}} \mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}}}
+
+
+
+\mbox{\hyperlink{struct_e_a_c_h___r_e_s_u_l_t___d_a_t_a}{EACH\+\_\+\+RESULT\+\_\+\+DATA}} struct 검사 결과 개별 정보~\newline
+score, center posX,Y, center avg val, overlap 
+
+\mbox{\Hypertarget{define_8h_a30951d30e088364aeb937520b305a68f}\label{define_8h_a30951d30e088364aeb937520b305a68f}} 
+\index{define.h@{define.h}!INSPEC\_PARA@{INSPEC\_PARA}}
+\index{INSPEC\_PARA@{INSPEC\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{INSPEC\_PARA}{INSPEC\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}} \mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_i_n_s_p_e_c___p_a_r_a}{INSPEC\+\_\+\+PARA}} struct inspection parameter~\newline
+검사에 사용 되는 x-\/ray kv,ma, 검사 parameter 
+
+\mbox{\Hypertarget{define_8h_a89addff1a6c1e2527b39d9712cc68188}\label{define_8h_a89addff1a6c1e2527b39d9712cc68188}} 
+\index{define.h@{define.h}!IO\_PARA@{IO\_PARA}}
+\index{IO\_PARA@{IO\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{IO\_PARA}{IO\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} \mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_i_o___p_a_r_a}{IO\+\_\+\+PARA}} struct io 라벨 및 번호 
+
+\mbox{\Hypertarget{define_8h_a7756c9fdc287a135abe123e96ab3a32d}\label{define_8h_a7756c9fdc287a135abe123e96ab3a32d}} 
+\index{define.h@{define.h}!RECIPE\_PARA@{RECIPE\_PARA}}
+\index{RECIPE\_PARA@{RECIPE\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{RECIPE\_PARA}{RECIPE\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}} \mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_r_e_c_i_p_e___p_a_r_a}{RECIPE\+\_\+\+PARA}} struct recipe parameter 
+
+\mbox{\Hypertarget{define_8h_af63a25ee3252766191fa58cf0f8e04d6}\label{define_8h_af63a25ee3252766191fa58cf0f8e04d6}} 
+\index{define.h@{define.h}!RESULT\_DATA@{RESULT\_DATA}}
+\index{RESULT\_DATA@{RESULT\_DATA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{RESULT\_DATA}{RESULT\_DATA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}} \mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}}}
+
+
+
+\mbox{\hyperlink{struct_r_e_s_u_l_t___d_a_t_a}{RESULT\+\_\+\+DATA}} struct 전체 검사 결과 정보~\newline
+전체 ok,ng, 수량 ok,ng, 겹침 ok,ng, 개별 결과 정보 struct 
+
+\mbox{\Hypertarget{define_8h_abe6816922d39ed85d881c3184eefa0f0}\label{define_8h_abe6816922d39ed85d881c3184eefa0f0}} 
+\index{define.h@{define.h}!SEARCH\_AREA\_PARA@{SEARCH\_AREA\_PARA}}
+\index{SEARCH\_AREA\_PARA@{SEARCH\_AREA\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{SEARCH\_AREA\_PARA}{SEARCH\_AREA\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}} \mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_s_e_a_r_c_h___a_r_e_a___p_a_r_a}{SEARCH\+\_\+\+AREA\+\_\+\+PARA}} struct search area 검출 parameter 
+
+\mbox{\Hypertarget{define_8h_ae8d30a245320f1703ebdb63f867d84ac}\label{define_8h_ae8d30a245320f1703ebdb63f867d84ac}} 
+\index{define.h@{define.h}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{SYSTEM\_PARA}{SYSTEM\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} struct system parameter~\newline
+x-\/ray, detector, inverter, image save, image size 
+
+\mbox{\Hypertarget{define_8h_a19d60964ba2dc6c5d057819c581ea529}\label{define_8h_a19d60964ba2dc6c5d057819c581ea529}} 
+\index{define.h@{define.h}!X\_RAY\_PARA@{X\_RAY\_PARA}}
+\index{X\_RAY\_PARA@{X\_RAY\_PARA}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{X\_RAY\_PARA}{X\_RAY\_PARA}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}}}
+
+
+
+\mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} struct x-\/ray 연결 parameter 
+
+
+
+\doxysubsection{열거형 타입 문서화}
+\mbox{\Hypertarget{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}\label{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}} 
+\index{define.h@{define.h}!LOGIN\_TYPE@{LOGIN\_TYPE}}
+\index{LOGIN\_TYPE@{LOGIN\_TYPE}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{LOGIN\_TYPE}{LOGIN\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{define_8h_a2ba3120af043e6671a34a8edb1f2f61a}{LOGIN\+\_\+\+TYPE}}}
+
+
+
+LOGIN\+\_\+\+TYPE LOGIN\+\_\+\+USER, LOGIN\+\_\+\+ADMIN define~\newline
+user, admin mode로 x-\/ray 제어 가능 유무(on,off제외 출력 변화) 
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGIN\_USER@{LOGIN\_USER}!define.h@{define.h}}\index{define.h@{define.h}!LOGIN\_USER@{LOGIN\_USER}}}\mbox{\Hypertarget{define_8h_a2ba3120af043e6671a34a8edb1f2f61aa7372fb474b10df62a6b4e942bcc9e8d2}\label{define_8h_a2ba3120af043e6671a34a8edb1f2f61aa7372fb474b10df62a6b4e942bcc9e8d2}} 
+LOGIN\+\_\+\+USER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGIN\_ADMIN@{LOGIN\_ADMIN}!define.h@{define.h}}\index{define.h@{define.h}!LOGIN\_ADMIN@{LOGIN\_ADMIN}}}\mbox{\Hypertarget{define_8h_a2ba3120af043e6671a34a8edb1f2f61aa034a3db09cd82abf3df87f9280064391}\label{define_8h_a2ba3120af043e6671a34a8edb1f2f61aa034a3db09cd82abf3df87f9280064391}} 
+LOGIN\+\_\+\+ADMIN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{변수 문서화}
+\mbox{\Hypertarget{define_8h_a2549fbf786e0c4d2cc61a7738ceab210}\label{define_8h_a2549fbf786e0c4d2cc61a7738ceab210}} 
+\index{define.h@{define.h}!ADMIN\_PW\_STRING@{ADMIN\_PW\_STRING}}
+\index{ADMIN\_PW\_STRING@{ADMIN\_PW\_STRING}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ADMIN\_PW\_STRING}{ADMIN\_PW\_STRING}}
+{\footnotesize\ttfamily const CString ADMIN\+\_\+\+PW\+\_\+\+STRING = \+\_\+T(\char`\"{}ADMIN\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a1f5417a32eefa7582388ad6dc9e12f66}\label{define_8h_a1f5417a32eefa7582388ad6dc9e12f66}} 
+\index{define.h@{define.h}!ALARM\_MSG\_DOOR\_INTER\_LOCK@{ALARM\_MSG\_DOOR\_INTER\_LOCK}}
+\index{ALARM\_MSG\_DOOR\_INTER\_LOCK@{ALARM\_MSG\_DOOR\_INTER\_LOCK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_MSG\_DOOR\_INTER\_LOCK}{ALARM\_MSG\_DOOR\_INTER\_LOCK}}
+{\footnotesize\ttfamily const CString ALARM\+\_\+\+MSG\+\_\+\+DOOR\+\_\+\+INTER\+\_\+\+LOCK = \+\_\+T(\char`\"{}Door Open Inter Lock\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a1a1063dfb0cfa8260ab48998776bbfd2}\label{define_8h_a1a1063dfb0cfa8260ab48998776bbfd2}} 
+\index{define.h@{define.h}!ALARM\_MSG\_EMG\_INTER\_LOCK@{ALARM\_MSG\_EMG\_INTER\_LOCK}}
+\index{ALARM\_MSG\_EMG\_INTER\_LOCK@{ALARM\_MSG\_EMG\_INTER\_LOCK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_MSG\_EMG\_INTER\_LOCK}{ALARM\_MSG\_EMG\_INTER\_LOCK}}
+{\footnotesize\ttfamily const CString ALARM\+\_\+\+MSG\+\_\+\+EMG\+\_\+\+INTER\+\_\+\+LOCK = \+\_\+T(\char`\"{}EMG Inter Lock\char`\"{})}
+
+
+
+Alarm Message String Alarm Message String define 
+
+\mbox{\Hypertarget{define_8h_a3ae09e30c3aec39032fbff038ae7a46d}\label{define_8h_a3ae09e30c3aec39032fbff038ae7a46d}} 
+\index{define.h@{define.h}!ALARM\_MSG\_INVERTER\_ALARM\_INTER\_LOCK@{ALARM\_MSG\_INVERTER\_ALARM\_INTER\_LOCK}}
+\index{ALARM\_MSG\_INVERTER\_ALARM\_INTER\_LOCK@{ALARM\_MSG\_INVERTER\_ALARM\_INTER\_LOCK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_MSG\_INVERTER\_ALARM\_INTER\_LOCK}{ALARM\_MSG\_INVERTER\_ALARM\_INTER\_LOCK}}
+{\footnotesize\ttfamily const CString ALARM\+\_\+\+MSG\+\_\+\+INVERTER\+\_\+\+ALARM\+\_\+\+INTER\+\_\+\+LOCK = \+\_\+T(\char`\"{}Inverter Alarm Inter Lock\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a8d1054adcd90664d9e278cb20ad65c7a}\label{define_8h_a8d1054adcd90664d9e278cb20ad65c7a}} 
+\index{define.h@{define.h}!ALARM\_MSG\_KEY\_SW\_INTER\_LOCK@{ALARM\_MSG\_KEY\_SW\_INTER\_LOCK}}
+\index{ALARM\_MSG\_KEY\_SW\_INTER\_LOCK@{ALARM\_MSG\_KEY\_SW\_INTER\_LOCK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_MSG\_KEY\_SW\_INTER\_LOCK}{ALARM\_MSG\_KEY\_SW\_INTER\_LOCK}}
+{\footnotesize\ttfamily const CString ALARM\+\_\+\+MSG\+\_\+\+KEY\+\_\+\+SW\+\_\+\+INTER\+\_\+\+LOCK = \+\_\+T(\char`\"{}Key SW Inter Lock\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a33f3d376130219267f51f32b7e618906}\label{define_8h_a33f3d376130219267f51f32b7e618906}} 
+\index{define.h@{define.h}!ALARM\_MSG\_TUBE\_ALARM\_INTER\_LOCK@{ALARM\_MSG\_TUBE\_ALARM\_INTER\_LOCK}}
+\index{ALARM\_MSG\_TUBE\_ALARM\_INTER\_LOCK@{ALARM\_MSG\_TUBE\_ALARM\_INTER\_LOCK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_MSG\_TUBE\_ALARM\_INTER\_LOCK}{ALARM\_MSG\_TUBE\_ALARM\_INTER\_LOCK}}
+{\footnotesize\ttfamily const CString ALARM\+\_\+\+MSG\+\_\+\+TUBE\+\_\+\+ALARM\+\_\+\+INTER\+\_\+\+LOCK = \+\_\+T(\char`\"{}Tube Alarm Inter Lock\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a7010836184251afe75261f403c2cbbce}\label{define_8h_a7010836184251afe75261f403c2cbbce}} 
+\index{define.h@{define.h}!ALARM\_MSG\_X\_RAY\_LAMP\_ALARM\_INTER\_LOCK@{ALARM\_MSG\_X\_RAY\_LAMP\_ALARM\_INTER\_LOCK}}
+\index{ALARM\_MSG\_X\_RAY\_LAMP\_ALARM\_INTER\_LOCK@{ALARM\_MSG\_X\_RAY\_LAMP\_ALARM\_INTER\_LOCK}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_MSG\_X\_RAY\_LAMP\_ALARM\_INTER\_LOCK}{ALARM\_MSG\_X\_RAY\_LAMP\_ALARM\_INTER\_LOCK}}
+{\footnotesize\ttfamily const CString ALARM\+\_\+\+MSG\+\_\+\+X\+\_\+\+RAY\+\_\+\+LAMP\+\_\+\+ALARM\+\_\+\+INTER\+\_\+\+LOCK = \+\_\+T(\char`\"{}X\+\_\+\+Ray Lamp Alarm Inter Lock\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a4e71e0fec092ee57f7a7f9b53cc5267a}\label{define_8h_a4e71e0fec092ee57f7a7f9b53cc5267a}} 
+\index{define.h@{define.h}!IO\_STR\_PARA\_FILENAME@{IO\_STR\_PARA\_FILENAME}}
+\index{IO\_STR\_PARA\_FILENAME@{IO\_STR\_PARA\_FILENAME}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{IO\_STR\_PARA\_FILENAME}{IO\_STR\_PARA\_FILENAME}}
+{\footnotesize\ttfamily const CString IO\+\_\+\+STR\+\_\+\+PARA\+\_\+\+FILENAME = \+\_\+T(\char`\"{}DIOLabel.\+ini\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a074de2cb7aa6d90ec82c064194a371bb}\label{define_8h_a074de2cb7aa6d90ec82c064194a371bb}} 
+\index{define.h@{define.h}!LOG\_FILE\_PATH@{LOG\_FILE\_PATH}}
+\index{LOG\_FILE\_PATH@{LOG\_FILE\_PATH}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FILE\_PATH}{LOG\_FILE\_PATH}}
+{\footnotesize\ttfamily const CString LOG\+\_\+\+FILE\+\_\+\+PATH = \+\_\+T(\char`\"{}LOG\textbackslash{}\textbackslash{}\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a5153f8e21fe0ba4c48ed6875afda54fb}\label{define_8h_a5153f8e21fe0ba4c48ed6875afda54fb}} 
+\index{define.h@{define.h}!RECIPE\_STR\_PARA\_FILENAME@{RECIPE\_STR\_PARA\_FILENAME}}
+\index{RECIPE\_STR\_PARA\_FILENAME@{RECIPE\_STR\_PARA\_FILENAME}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{RECIPE\_STR\_PARA\_FILENAME}{RECIPE\_STR\_PARA\_FILENAME}}
+{\footnotesize\ttfamily const CString RECIPE\+\_\+\+STR\+\_\+\+PARA\+\_\+\+FILENAME = \+\_\+T(\char`\"{}Recipe.\+ini\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a951cf60710ce042741270f48b9769970}\label{define_8h_a951cf60710ce042741270f48b9769970}} 
+\index{define.h@{define.h}!RESULT\_CSV\_FILE\_LABEL\_NAME@{RESULT\_CSV\_FILE\_LABEL\_NAME}}
+\index{RESULT\_CSV\_FILE\_LABEL\_NAME@{RESULT\_CSV\_FILE\_LABEL\_NAME}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{RESULT\_CSV\_FILE\_LABEL\_NAME}{RESULT\_CSV\_FILE\_LABEL\_NAME}}
+{\footnotesize\ttfamily const CString RESULT\+\_\+\+CSV\+\_\+\+FILE\+\_\+\+LABEL\+\_\+\+NAME = \+\_\+T(\char`\"{}Date,Total\+\_\+\+Result,1\+\_\+\+Ptn\+\_\+\+Result,1\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,1\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,1\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,2\+\_\+\+Ptn\+\_\+\+Result,2\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,2\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,2\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,3\+\_\+\+Ptn\+\_\+\+Result,3\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,3\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,3\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,4\+\_\+\+Ptn\+\_\+\+Result,4\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,4\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,4\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt,5\+\_\+\+Ptn\+\_\+\+Teach\+\_\+\+Cnt,5\+\_\+\+Ptn\+\_\+\+Result,5\+\_\+\+Ptn\+\_\+\+Insp\+\_\+\+Cnt,5\+\_\+\+Ptn\+\_\+\+Over\+\_\+\+Cnt\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_add3957a4bff46a2f1d43398093512131}\label{define_8h_add3957a4bff46a2f1d43398093512131}} 
+\index{define.h@{define.h}!RESULT\_DATA\_\_CSV\_FILENAME@{RESULT\_DATA\_\_CSV\_FILENAME}}
+\index{RESULT\_DATA\_\_CSV\_FILENAME@{RESULT\_DATA\_\_CSV\_FILENAME}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{RESULT\_DATA\_\_CSV\_FILENAME}{RESULT\_DATA\_\_CSV\_FILENAME}}
+{\footnotesize\ttfamily const CString RESULT\+\_\+\+DATA\+\_\+\+\_\+\+CSV\+\_\+\+FILENAME = \+\_\+T(\char`\"{}Result\+Data.\+csv\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a9cdfb63045375b975a951ce186e24e81}\label{define_8h_a9cdfb63045375b975a951ce186e24e81}} 
+\index{define.h@{define.h}!SYSTEM\_FILE\_VERSION@{SYSTEM\_FILE\_VERSION}}
+\index{SYSTEM\_FILE\_VERSION@{SYSTEM\_FILE\_VERSION}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{SYSTEM\_FILE\_VERSION}{SYSTEM\_FILE\_VERSION}}
+{\footnotesize\ttfamily const CString SYSTEM\+\_\+\+FILE\+\_\+\+VERSION = \+\_\+T(\char`\"{}ver\+\_\+20220719\+\_\+0\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_aed50a4f8ce1593b62c7b2432c9af6d88}\label{define_8h_aed50a4f8ce1593b62c7b2432c9af6d88}} 
+\index{define.h@{define.h}!SYSTEM\_STR\_PARA\_FILENAME@{SYSTEM\_STR\_PARA\_FILENAME}}
+\index{SYSTEM\_STR\_PARA\_FILENAME@{SYSTEM\_STR\_PARA\_FILENAME}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{SYSTEM\_STR\_PARA\_FILENAME}{SYSTEM\_STR\_PARA\_FILENAME}}
+{\footnotesize\ttfamily const CString SYSTEM\+\_\+\+STR\+\_\+\+PARA\+\_\+\+FILENAME = \+\_\+T(\char`\"{}System.\+ini\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_ae9c8b5eabce043437b55148cff1b4b69}\label{define_8h_ae9c8b5eabce043437b55148cff1b4b69}} 
+\index{define.h@{define.h}!TEST\_IMAGE\_FILE\_PATH@{TEST\_IMAGE\_FILE\_PATH}}
+\index{TEST\_IMAGE\_FILE\_PATH@{TEST\_IMAGE\_FILE\_PATH}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_IMAGE\_FILE\_PATH}{TEST\_IMAGE\_FILE\_PATH}}
+{\footnotesize\ttfamily const CString TEST\+\_\+\+IMAGE\+\_\+\+FILE\+\_\+\+PATH = \+\_\+T(\char`\"{}d\+:\textbackslash{}\textbackslash{}ngh\textbackslash{}\textbackslash{}\+Test\+Image\textbackslash{}\textbackslash{}\+I410\+S\textbackslash{}\textbackslash{}\char`\"{})}
+
+\mbox{\Hypertarget{define_8h_a9216be8e7f68b8f7b52b808c467a4d24}\label{define_8h_a9216be8e7f68b8f7b52b808c467a4d24}} 
+\index{define.h@{define.h}!USER\_PW\_STRING@{USER\_PW\_STRING}}
+\index{USER\_PW\_STRING@{USER\_PW\_STRING}!define.h@{define.h}}
+\doxysubsubsection{\texorpdfstring{USER\_PW\_STRING}{USER\_PW\_STRING}}
+{\footnotesize\ttfamily const CString USER\+\_\+\+PW\+\_\+\+STRING = \+\_\+T(\char`\"{}USER\char`\"{})}
+

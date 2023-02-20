@@ -1,0 +1,18 @@
+<map id="그래픽컬한 클래스 계통도" name="그래픽컬한 클래스 계통도">
+<area shape="rect" id="node1" href="$class_c_mil_base.html" title="모든 Class의 Base Class로 공용의 자료활용에 사용됨" alt="" coords="5,301,84,327"/>
+<area shape="rect" id="node2" href="$class_c_mil_application.html" title="Mil의 Application관련 함수를 Class화함" alt="" coords="133,5,245,31"/>
+<area shape="rect" id="node3" href="$class_c_mil_blob.html" title="Mil의 Blob관련 함수군을 Class화하였다" alt="" coords="152,55,227,80"/>
+<area shape="rect" id="node4" href="$class_c_mil_cal.html" title="Mil의 Calibration관련 함수를 Class화함" alt="" coords="156,104,223,129"/>
+<area shape="rect" id="node5" href="$class_c_mil_digitizer.html" title="Mil의 Migitizer관련 함수군을 Class화하였다 Digitizer는 Channel관리에 해당하는 Class이다" alt="" coords="142,153,237,179"/>
+<area shape="rect" id="node6" href="$class_c_mil_edge_finder.html" title="Mil의 Edge Finder관련 함수를 Class화함" alt="" coords="132,203,247,228"/>
+<area shape="rect" id="node7" href="$class_c_mil_graph.html" title="Mil의 Graph관련 함수군을 Class화 하였다" alt="" coords="148,252,231,277"/>
+<area shape="rect" id="node10" href="$class_c_mil_im.html" title="Mil의 Image Process관련 함수군을 Class화하였다" alt="" coords="158,301,221,327"/>
+<area shape="rect" id="node11" href="$class_c_mil_measure.html" title=" " alt="" coords="140,351,239,376"/>
+<area shape="rect" id="node12" href="$class_c_mil_mod_finder.html" title="Mil의 Model Finder관련 함수군을 Class화하였다" alt="" coords="135,400,244,425"/>
+<area shape="rect" id="node13" href="$class_c_mil_pat.html" title="Mil Pattern Matching함수를 Class화함" alt="" coords="155,449,223,475"/>
+<area shape="rect" id="node14" href="$class_c_mil_result.html" title="Mil의 각종결과를 받아 원하는 형태로 가공하여 제공하는 Class화함" alt="" coords="147,499,232,524"/>
+<area shape="rect" id="node15" href="$class_c_mil_system.html" title="Mil의 System관련 함수를 Class화함, 기본적으로 1개는 있어야 하며, 추가되는것은 Grabber라 생각하면 됨." alt="" coords="143,548,236,573"/>
+<area shape="rect" id="node16" href="$class_mil_code.html" title="Mil의 Code(바코드 리더)관련 함수를 Class화함" alt="" coords="155,597,224,623"/>
+<area shape="rect" id="node8" href="$class_c_mil_buffer.html" title="Mil의 MilBuffer관련 함수군을 Class화하였다" alt="" coords="299,228,381,253"/>
+<area shape="rect" id="node9" href="$class_c_mil_display.html" title="Mil의 Display관련 함수군을 Class화하였다" alt="" coords="295,277,385,303"/>
+</map>

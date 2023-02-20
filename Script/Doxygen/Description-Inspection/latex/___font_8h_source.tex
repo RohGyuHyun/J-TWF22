@@ -1,0 +1,115 @@
+\hypertarget{___font_8h_source}{}\doxysection{\+\_\+\+Font.\+h}
+\label{___font_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/\_Font.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/\_Font.h}}
+\mbox{\hyperlink{___font_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{comment}{// 마법사에서 Microsoft Visual C++를 사용하여 IDispatch 래퍼 클래스를 생성했습니다.}}
+\DoxyCodeLine{4 \textcolor{comment}{//}}
+\DoxyCodeLine{5 \textcolor{comment}{// COleFont 래퍼 클래스입니다.}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_ole_font}{COleFont}} : \textcolor{keyword}{public} COleDispatchDriver}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10         \mbox{\hyperlink{class_c_ole_font_a6dcb4ebe34d07b4f58536ea741731d48}{COleFont}}() \{\}           \textcolor{comment}{// COleDispatchDriver 기본 생성자를 호출합니다.}}
+\DoxyCodeLine{11         \mbox{\hyperlink{class_c_ole_font_a8097c73c436f8b83b2bc8acd6c92be2b}{COleFont}}(LPDISPATCH pDispatch) : COleDispatchDriver(pDispatch) \{\}}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_c_ole_font_ada5efbad991ad6306940f20572eec0b3}{COleFont}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_ole_font}{COleFont}}\& dispatchSrc) : COleDispatchDriver(dispatchSrc) \{\}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         CString \mbox{\hyperlink{class_c_ole_font_a4df4e53d81207b3f0c110bb6e876e405}{GetName}}()}
+\DoxyCodeLine{15         \{}
+\DoxyCodeLine{16                 CString result;}
+\DoxyCodeLine{17                 GetProperty(0x0, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{18                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{19         \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_ab81a988f77b519d092f02132f0e3e0f4}{SetName}}(LPCTSTR propVal)}
+\DoxyCodeLine{22         \{}
+\DoxyCodeLine{23                 SetProperty(0x0, VT\_BSTR, propVal);}
+\DoxyCodeLine{24         \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         CY \mbox{\hyperlink{class_c_ole_font_a5dd19e6959eb8d3d72ce252e90bb358d}{GetSize}}()}
+\DoxyCodeLine{27         \{}
+\DoxyCodeLine{28                 CY result;}
+\DoxyCodeLine{29                 GetProperty(0x2, VT\_CY, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{30                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{31         \}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a15dc0192c59fa8da8aaeb3e575e8f870}{SetSize}}(\textcolor{keyword}{const} CY\& propVal)}
+\DoxyCodeLine{34         \{}
+\DoxyCodeLine{35                 SetProperty(0x2, VT\_CY, \&propVal);}
+\DoxyCodeLine{36         \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         BOOL \mbox{\hyperlink{class_c_ole_font_a952b28e8f18e61ad83d97f1d794d2a4b}{GetBold}}()}
+\DoxyCodeLine{39         \{}
+\DoxyCodeLine{40                 BOOL result;}
+\DoxyCodeLine{41                 GetProperty(0x3, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{42                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{43         \}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a45b052118441658e049cbc1fb16e5abe}{SetBold}}(BOOL propVal)}
+\DoxyCodeLine{46         \{}
+\DoxyCodeLine{47                 SetProperty(0x3, VT\_BOOL, propVal);}
+\DoxyCodeLine{48         \}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         BOOL \mbox{\hyperlink{class_c_ole_font_ac1c874ad869f33881e24573e52be9160}{GetItalic}}()}
+\DoxyCodeLine{51         \{}
+\DoxyCodeLine{52                 BOOL result;}
+\DoxyCodeLine{53                 GetProperty(0x4, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{54                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a6bd6217d3d56c87a3ea85882c2fa3f51}{SetItalic}}(BOOL propVal)}
+\DoxyCodeLine{58         \{}
+\DoxyCodeLine{59                 SetProperty(0x4, VT\_BOOL, propVal);}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62         BOOL \mbox{\hyperlink{class_c_ole_font_a360a96de21707b13f8ba90af715a17c4}{GetUnderline}}()}
+\DoxyCodeLine{63         \{}
+\DoxyCodeLine{64                 BOOL result;}
+\DoxyCodeLine{65                 GetProperty(0x5, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{66                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a255c606238eec8a08fd457484ada3281}{SetUnderline}}(BOOL propVal)}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71                 SetProperty(0x5, VT\_BOOL, propVal);}
+\DoxyCodeLine{72         \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         BOOL \mbox{\hyperlink{class_c_ole_font_a37a903f0e431039906d096e79bdb61fe}{GetStrikethrough}}()}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76                 BOOL result;}
+\DoxyCodeLine{77                 GetProperty(0x6, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a00478d1f2ec0939048719e74327d67de}{SetStrikethrough}}(BOOL propVal)}
+\DoxyCodeLine{82         \{}
+\DoxyCodeLine{83                 SetProperty(0x6, VT\_BOOL, propVal);}
+\DoxyCodeLine{84         \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         \textcolor{keywordtype}{short} \mbox{\hyperlink{class_c_ole_font_a5aa4d52ef63eedcfc6995a61f9d34647}{GetWeight}}()}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88                 \textcolor{keywordtype}{short} result;}
+\DoxyCodeLine{89                 GetProperty(0x7, VT\_I2, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{90                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{91         \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a95543c8118943fe82c92e4ffc1cfe9b5}{SetWeight}}(\textcolor{keywordtype}{short} propVal)}
+\DoxyCodeLine{94         \{}
+\DoxyCodeLine{95                 SetProperty(0x7, VT\_I2, propVal);}
+\DoxyCodeLine{96         \}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98         \textcolor{keywordtype}{short} \mbox{\hyperlink{class_c_ole_font_a1df50154551ce6a36c9bcdfd9c571e26}{GetCharset}}()}
+\DoxyCodeLine{99         \{}
+\DoxyCodeLine{100                 \textcolor{keywordtype}{short} result;}
+\DoxyCodeLine{101                 GetProperty(0x8, VT\_I2, (\textcolor{keywordtype}{void}*)\&result);}
+\DoxyCodeLine{102                 \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{103         \}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_ole_font_a405ec4c44e62da4f189a78ebdd39cf72}{SetCharset}}(\textcolor{keywordtype}{short} propVal)}
+\DoxyCodeLine{106         \{}
+\DoxyCodeLine{107                 SetProperty(0x8, VT\_I2, propVal);}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,95 @@
+\hypertarget{___ctrl_tracker_8h_source}{}\doxysection{\+\_\+\+Ctrl\+Tracker.\+h}
+\label{___ctrl_tracker_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/\_CtrlTracker.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/\_CtrlTracker.h}}
+\mbox{\hyperlink{___ctrl_tracker_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{comment}{//Tracker}}
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_c___ctrl_tracker}{C\_CtrlTracker}}\{}
+\DoxyCodeLine{5 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{6         \textcolor{comment}{//그룹화}}
+\DoxyCodeLine{7         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_ae681d7c4cd6333d0e38067eb9f907e98}{m\_bGroup}};}
+\DoxyCodeLine{8         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_ad0fdd6a1e6afeb74f30a201fc37e5ab7}{m\_iType}};\textcolor{comment}{//영역 종류 0: rectangle(no angle), 1: line(angle), 2: circle, 3: ellipse}}
+\DoxyCodeLine{9         CString \mbox{\hyperlink{class_c___ctrl_tracker_a499fba67c1fda162eef63cb335aee6f1}{m\_sCaption}};\textcolor{comment}{//영역 각주}}
+\DoxyCodeLine{10         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_a6bd330154a07ee6caa642e9fcfd29ca3}{m\_bEnable}};\textcolor{comment}{//활성화 여부}}
+\DoxyCodeLine{11         COLORREF \mbox{\hyperlink{class_c___ctrl_tracker_a39931cd4dd8fa754eef3c0d55fda0ff6}{m\_cColor}};\textcolor{comment}{//선 색}}
+\DoxyCodeLine{12         CWnd *\mbox{\hyperlink{class_c___ctrl_tracker_af96c9b365c5ec68824da28756aeae792}{m\_pParentWnd}};\textcolor{comment}{//부모 윈도우 핸들러}}
+\DoxyCodeLine{13         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_ae356daf804451e406f617d102fcf3558}{m\_bDown}};\textcolor{comment}{//마우스 버튼 플러그 }}
+\DoxyCodeLine{14         CRect \mbox{\hyperlink{class_c___ctrl_tracker_ac04bc42b93ea6e4db37e5a1a9297fe60}{m\_rectOld}};\textcolor{comment}{//이전 영역 좌표 저장 변수}}
+\DoxyCodeLine{15         \textcolor{comment}{//마우스가 추적박스에서 8개방향과 이동 위치의 어느점에 있는가의 }}
+\DoxyCodeLine{16         \textcolor{comment}{//값을 저장하고 있는 변수}}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_ac5fde299ec0640bf945c6ef9cb2b1fea}{m\_nChoNum}};}
+\DoxyCodeLine{18         \textcolor{comment}{//현재 프로세스를 설정하고 있는 변수}}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_aa9a9afe0a60a998286c44b583ff965ab}{m\_nProcess}};}
+\DoxyCodeLine{20         \textcolor{comment}{//8개 방향의 좌표와 4개방향의 이동좌표 저장 변수}}
+\DoxyCodeLine{21         CRect \mbox{\hyperlink{class_c___ctrl_tracker_aad27ac5a8c6e425173954f090a908826}{m\_rectDirect}}[12];}
+\DoxyCodeLine{22         \textcolor{comment}{//이전 마우스 포인터 변수}}
+\DoxyCodeLine{23         CPoint \mbox{\hyperlink{class_c___ctrl_tracker_a9d935452025837af1c456bd0b802eb0c}{m\_OldPoint}};}
+\DoxyCodeLine{24         \textcolor{comment}{//m\_rect영역이 설정되면 이영역을 토대로 m\_rectDirect의 영역을 만들어주는 }}
+\DoxyCodeLine{25         \textcolor{comment}{//함수}}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_af7242553216b6553feed4dfa5c233a91}{MakeDirect}}();}
+\DoxyCodeLine{27         \textcolor{comment}{//8개 영역 박스 점이 선보다 얼마나 두꺼운가를 저장하는 변수}}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_ae4514f4a3251f723ba852e4b3c5a6569}{m\_nLineDot}};}
+\DoxyCodeLine{29         \textcolor{comment}{//추적박스 라인의 두께 }}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_a934b543c685d8c3b7eabc709c28c6543}{m\_nLindTick}};}
+\DoxyCodeLine{31         \textcolor{comment}{//m\_rectDirect영역이 설정되어 있으면 TRUE그렇지 않으면 FALSE}}
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_ad65907eb848a9735f7bc3059806ca1a7}{m\_bSet}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{comment}{//Zoom}}
+\DoxyCodeLine{35         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c___ctrl_tracker_a9ecf16488c462ab0e633b141635b7a31}{m\_lZoomStartX}};}
+\DoxyCodeLine{36         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c___ctrl_tracker_afb8e5967ce8e9bb6ffda6e4159510d87}{m\_lZoomStartY}};}
+\DoxyCodeLine{37         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c___ctrl_tracker_a20769b0ac643a073e601adb551da6231}{m\_lZoomEndX}};}
+\DoxyCodeLine{38         \textcolor{keywordtype}{long} \mbox{\hyperlink{class_c___ctrl_tracker_a39c9de04a979690d7a4775a212ae9a51}{m\_lZoomEndY}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{comment}{//Rectangle//////////////////////////////////}}
+\DoxyCodeLine{41         \textcolor{comment}{//이동되는 영역 좌표 저장 변수}}
+\DoxyCodeLine{42         CRect \mbox{\hyperlink{class_c___ctrl_tracker_a2bcc3d7ba8da0c752f10c60dcc6f8e13}{m\_rectTrack}};}
+\DoxyCodeLine{43         \textcolor{comment}{//현재 추적박스의 좌표}}
+\DoxyCodeLine{44         CRect \mbox{\hyperlink{class_c___ctrl_tracker_ae8f95114508e58b5454921b84e1cf6eb}{m\_rect}};}
+\DoxyCodeLine{45         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_a00c5730b0b0345eb6abca5bc06f4fd07}{m\_bActive}};}
+\DoxyCodeLine{46         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c___ctrl_tracker_a0b27c393753103306197a1a053fbc153}{m\_dRectL}};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c___ctrl_tracker_a58f61ab7736392e250b1ff72452e5a36}{m\_dRectT}};}
+\DoxyCodeLine{48         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c___ctrl_tracker_a7f45cbb6b9126d464ff792053ec42fc0}{m\_dRectR}};}
+\DoxyCodeLine{49         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c___ctrl_tracker_adcfda84a322343eaf6050a3283760eb8}{m\_dRectB}};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_a4837062a1085d08fe97ffecf7e377780}{m\_bMouseClick}};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{public}:}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_ab79fb129f62c87a209b218a1537affe9}{GetZoom}}(\textcolor{keywordtype}{long} *start\_x, \textcolor{keywordtype}{long} *start\_y, \textcolor{keywordtype}{long} *end\_x, \textcolor{keywordtype}{long} *end\_y);}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a4b91ccf7c9ab8849f3fb86b257dc9ecd}{SetZoom}}(\textcolor{keywordtype}{long} start\_x, \textcolor{keywordtype}{long} start\_y, \textcolor{keywordtype}{long} end\_x, \textcolor{keywordtype}{long} end\_y);}
+\DoxyCodeLine{56         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_ade106a63bd3933484bdc3484addf24c8}{GetRect}}(\textcolor{keywordtype}{double} *left, \textcolor{keywordtype}{double} *top, \textcolor{keywordtype}{double} *right, \textcolor{keywordtype}{double} *bottom);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a57a9b16aed952ac6d0c6efa781a05aa5}{SetRect}}(\textcolor{keywordtype}{double} left, \textcolor{keywordtype}{double} top, \textcolor{keywordtype}{double} right, \textcolor{keywordtype}{double} bottom);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_ab21e378ac0a149cf8fcd59b3b29498c2}{SetActive}}(BOOL active);}
+\DoxyCodeLine{60         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_a98206a6473e0a155b5bbcaa45ff243a1}{GetActive}}();}
+\DoxyCodeLine{61         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a2435822429387f054663a06ae35a4243}{Draw}}(\textcolor{keywordtype}{int} idx);}
+\DoxyCodeLine{62         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_a21d329083f0a633d347b90a93ec7959d}{GetGroup}}();}
+\DoxyCodeLine{63         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a9cad3f943e1dee1043c09ce13f7152c3}{SetEnableGroup}}(BOOL enable);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_a3d02c650b60251ee2b2d97c087be904b}{GetType}}();}
+\DoxyCodeLine{66         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_ac31a65085ac6c0859605b6519d174441}{GetEnable}}();}
+\DoxyCodeLine{67         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a956d7910f4ef20ac67b3f3b6e65f06a4}{SetEnable}}(BOOL enable);}
+\DoxyCodeLine{68         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_afc9afbb3749e74f3cf69da8f36331b5d}{SetCaption}}(\textcolor{keywordtype}{char}* caption);}
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a08604c37f66023d8a8b61776a270aa8f}{SetColor}}(COLORREF color);}
+\DoxyCodeLine{70         \mbox{\hyperlink{class_c___ctrl_tracker_a5ca3cbf3fd9d8d19828b3ab337e83c4e}{C\_CtrlTracker}}();}
+\DoxyCodeLine{71         \mbox{\hyperlink{class_c___ctrl_tracker_a5ca3cbf3fd9d8d19828b3ab337e83c4e}{C\_CtrlTracker}}(CWnd *pWnd, \textcolor{keywordtype}{int} type = 0, \textcolor{keywordtype}{int} dot = 2, \textcolor{keywordtype}{int} tick = 3);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a7a1bd8c583c750202c9cd7016a004b5e}{OnMouseMove}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{74         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a392a366968353fcb0f43387ce956be1c}{OnLButtonDown}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{75         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a1582119a29a39a13e96807a3061461cb}{OnLButtonUp}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{76         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a29b0548c3f6e6bd669cf64cf25f35614}{SetProcess}}(\textcolor{keywordtype}{int} num);}
+\DoxyCodeLine{77         \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_c___ctrl_tracker_a5547cb931b7b02bb0a4db84a164cd8a9}{GetProcess}}();}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_adc131fa88b708a8365ecd702fda6edc6}{PtInRect}}(CPoint point);}
+\DoxyCodeLine{80         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_ab1734c314ebb805d2fb75ce188b0cc96}{SetMouseCursor}}();}
+\DoxyCodeLine{81         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c___ctrl_tracker_a18dd708d5e4348cd8eb74a91dcfc3741}{GetChoNum}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_c___ctrl_tracker_ac5fde299ec0640bf945c6ef9cb2b1fea}{m\_nChoNum}};\}}
+\DoxyCodeLine{82         BOOL \mbox{\hyperlink{class_c___ctrl_tracker_a8f2f3b5af51fdc7791dd355044e8b4ed}{OnLButtonDblClk}}(UINT nFlags, CPoint point);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a4d502595c24f56b526037c4edcb4a60c}{SetMouseClick}}(BOOL isClick = FALSE) \{ \mbox{\hyperlink{class_c___ctrl_tracker_a4837062a1085d08fe97ffecf7e377780}{m\_bMouseClick}} = isClick; \};}
+\DoxyCodeLine{85 \textcolor{keyword}{private}:}
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c___ctrl_tracker_a57a9b16aed952ac6d0c6efa781a05aa5}{SetRect}}(CRect rect);}
+\DoxyCodeLine{87         CRect GetRect();}
+\DoxyCodeLine{88         }
+\DoxyCodeLine{89 \};}
+
+\end{DoxyCode}

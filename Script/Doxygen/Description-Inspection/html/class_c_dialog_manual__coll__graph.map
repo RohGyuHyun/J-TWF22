@@ -1,0 +1,8 @@
+<map id="CDialogManual" name="CDialogManual">
+<area shape="rect" id="node1" title=" " alt="" coords="101,196,211,221"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,88,31"/>
+<area shape="rect" id="node3" href="$class_c_dialog_x_ray_status.html" title=" " alt="" coords="97,93,231,119"/>
+<area shape="rect" id="node4" href="$struct_x___r_a_y___s_t_a_t_u_s.html" title=" " alt="" coords="112,5,232,31"/>
+<area shape="rect" id="node5" href="$struct_i_o___p_a_r_a.html" title="IO_PARA struct io 라벨 및 번호" alt="" coords="255,93,334,119"/>
+<area shape="rect" id="node6" href="$struct_t_i_m_e___d_a_t_e.html" title=" " alt="" coords="359,93,452,119"/>
+</map>

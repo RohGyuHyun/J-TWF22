@@ -1,0 +1,5 @@
+<map id="SYSTEM_PARA" name="SYSTEM_PARA">
+<area shape="rect" id="node1" title="SYSTEM_PARA struct system parameter x&#45;ray, detector, inverter, image save, image size" alt="" coords="71,93,190,119"/>
+<area shape="rect" id="node2" href="$struct_x___r_a_y___p_a_r_a.html" title="X_RAY_PARA struct x&#45;ray 연결 parameter" alt="" coords="5,5,112,31"/>
+<area shape="rect" id="node3" href="$struct_d_e_t_e_c_t_o_r___p_a_r_a.html" title="DETECTOR_PARA struct detector 연결 parameter" alt="" coords="137,5,271,31"/>
+</map>

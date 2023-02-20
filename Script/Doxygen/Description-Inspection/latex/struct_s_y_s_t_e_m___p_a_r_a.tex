@@ -1,0 +1,108 @@
+\hypertarget{struct_s_y_s_t_e_m___p_a_r_a}{}\doxysection{SYSTEM\+\_\+\+PARA 구조체 참조}
+\label{struct_s_y_s_t_e_m___p_a_r_a}\index{SYSTEM\_PARA@{SYSTEM\_PARA}}
+
+
+\mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} struct system parameter~\newline
+x-\/ray, detector, inverter, image save, image size  
+
+
+
+
+{\ttfamily \#include $<$define.\+h$>$}
+
+
+
+SYSTEM\+\_\+\+PARA에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{struct_s_y_s_t_e_m___p_a_r_a__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_a84452a62fb6ca0abd446d4e2b4afec28}{n\+Inverter\+Direction}}
+\item 
+int \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_aee34ff81ceef9d6f6d6abd751657feb8}{n\+Inverter\+Speed}}
+\item 
+\mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_a51ebf6444dc239a08ec2525d18f79256}{st\+XRay}}
+\item 
+\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_a0be29e75679f25ed9b883ec4e5316ffa}{st\+Detector}}
+\item 
+wchar\+\_\+t \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_afd5a81ec00401381f6dd5b0226a0769b}{str\+Sve\+Image\+Directory}} \mbox{[}\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\+\_\+\+CHAR\+\_\+\+LENG}}\mbox{]}
+\item 
+BOOL \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_a4a79b0d53f2ca8e034a970e033f8d80d}{b\+Save\+Inspection\+Raw\+Image}}
+\item 
+BOOL \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_ae3e8c577aa586ee91924a9eaf227cfaf}{b\+Save\+Result\+OKImage}}
+\item 
+BOOL \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_ae9b7244d02d0c108f0eebbad2abd84b4}{b\+Save\+Result\+NGImage}}
+\item 
+CSize \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_ab0e7cfbee26d53c7a6c509038950d522}{Image\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\+\_\+\+PARA}} struct system parameter~\newline
+x-\/ray, detector, inverter, image save, image size 
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_a4a79b0d53f2ca8e034a970e033f8d80d}\label{struct_s_y_s_t_e_m___p_a_r_a_a4a79b0d53f2ca8e034a970e033f8d80d}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!bSaveInspectionRawImage@{bSaveInspectionRawImage}}
+\index{bSaveInspectionRawImage@{bSaveInspectionRawImage}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{bSaveInspectionRawImage}{bSaveInspectionRawImage}}
+{\footnotesize\ttfamily BOOL SYSTEM\+\_\+\+PARA\+::b\+Save\+Inspection\+Raw\+Image}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_ae9b7244d02d0c108f0eebbad2abd84b4}\label{struct_s_y_s_t_e_m___p_a_r_a_ae9b7244d02d0c108f0eebbad2abd84b4}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!bSaveResultNGImage@{bSaveResultNGImage}}
+\index{bSaveResultNGImage@{bSaveResultNGImage}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{bSaveResultNGImage}{bSaveResultNGImage}}
+{\footnotesize\ttfamily BOOL SYSTEM\+\_\+\+PARA\+::b\+Save\+Result\+NGImage}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_ae3e8c577aa586ee91924a9eaf227cfaf}\label{struct_s_y_s_t_e_m___p_a_r_a_ae3e8c577aa586ee91924a9eaf227cfaf}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!bSaveResultOKImage@{bSaveResultOKImage}}
+\index{bSaveResultOKImage@{bSaveResultOKImage}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{bSaveResultOKImage}{bSaveResultOKImage}}
+{\footnotesize\ttfamily BOOL SYSTEM\+\_\+\+PARA\+::b\+Save\+Result\+OKImage}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_ab0e7cfbee26d53c7a6c509038950d522}\label{struct_s_y_s_t_e_m___p_a_r_a_ab0e7cfbee26d53c7a6c509038950d522}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!ImageSize@{ImageSize}}
+\index{ImageSize@{ImageSize}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{ImageSize}{ImageSize}}
+{\footnotesize\ttfamily CSize SYSTEM\+\_\+\+PARA\+::\+Image\+Size}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_a84452a62fb6ca0abd446d4e2b4afec28}\label{struct_s_y_s_t_e_m___p_a_r_a_a84452a62fb6ca0abd446d4e2b4afec28}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!nInverterDirection@{nInverterDirection}}
+\index{nInverterDirection@{nInverterDirection}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{nInverterDirection}{nInverterDirection}}
+{\footnotesize\ttfamily int SYSTEM\+\_\+\+PARA\+::n\+Inverter\+Direction}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_aee34ff81ceef9d6f6d6abd751657feb8}\label{struct_s_y_s_t_e_m___p_a_r_a_aee34ff81ceef9d6f6d6abd751657feb8}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!nInverterSpeed@{nInverterSpeed}}
+\index{nInverterSpeed@{nInverterSpeed}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{nInverterSpeed}{nInverterSpeed}}
+{\footnotesize\ttfamily int SYSTEM\+\_\+\+PARA\+::n\+Inverter\+Speed}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_a0be29e75679f25ed9b883ec4e5316ffa}\label{struct_s_y_s_t_e_m___p_a_r_a_a0be29e75679f25ed9b883ec4e5316ffa}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!stDetector@{stDetector}}
+\index{stDetector@{stDetector}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{stDetector}{stDetector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a}{DETECTOR\+\_\+\+PARA}} SYSTEM\+\_\+\+PARA\+::st\+Detector}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_afd5a81ec00401381f6dd5b0226a0769b}\label{struct_s_y_s_t_e_m___p_a_r_a_afd5a81ec00401381f6dd5b0226a0769b}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!strSveImageDirectory@{strSveImageDirectory}}
+\index{strSveImageDirectory@{strSveImageDirectory}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{strSveImageDirectory}{strSveImageDirectory}}
+{\footnotesize\ttfamily wchar\+\_\+t SYSTEM\+\_\+\+PARA\+::str\+Sve\+Image\+Directory\mbox{[}\mbox{\hyperlink{define_8h_a44cab813e2c3fba276263efc4a1ba495}{MAX\+\_\+\+CHAR\+\_\+\+LENG}}\mbox{]}}
+
+\mbox{\Hypertarget{struct_s_y_s_t_e_m___p_a_r_a_a51ebf6444dc239a08ec2525d18f79256}\label{struct_s_y_s_t_e_m___p_a_r_a_a51ebf6444dc239a08ec2525d18f79256}} 
+\index{SYSTEM\_PARA@{SYSTEM\_PARA}!stXRay@{stXRay}}
+\index{stXRay@{stXRay}!SYSTEM\_PARA@{SYSTEM\_PARA}}
+\doxysubsubsection{\texorpdfstring{stXRay}{stXRay}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_x___r_a_y___p_a_r_a}{X\+\_\+\+RAY\+\_\+\+PARA}} SYSTEM\+\_\+\+PARA\+::st\+XRay}
+
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/define/\mbox{\hyperlink{define_8h}{define.\+h}}\end{DoxyCompactItemize}

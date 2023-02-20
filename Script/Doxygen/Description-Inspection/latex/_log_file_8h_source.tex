@@ -1,0 +1,43 @@
+\hypertarget{_log_file_8h_source}{}\doxysection{Log\+File.\+h}
+\label{_log_file_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/LogFile.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/LogFile.h}}
+\mbox{\hyperlink{_log_file_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define LOG\_FILE\_PATH\_LEN               512}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define LOG\_FILE\_NAME\_LEN               100}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define LOG\_FILE\_FULL\_PATH\_LEN  512 + LOG\_FILE\_NAME\_LEN}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define LOG\_LEN                                 512}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define LOG\_FILE\_BACKUP\_SIZE    10.0}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_log_file}{CLogFile}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_c_log_file_a53a332c77821446875ab05b9d617934f}{CLogFile}}();}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_c_log_file_a53a332c77821446875ab05b9d617934f}{CLogFile}}(LPCTSTR strPath, LPCTSTR \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{strFileName}}, CListCtrl *ctrList = NULL, LPCTSTR strCol = \_T(\textcolor{stringliteral}{"{}Log"{}}), \textcolor{keywordtype}{int} nListSize = 1000, \textcolor{keywordtype}{int} nMaxList = 50, BOOL isListTimeView = FALSE);}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_c_log_file_a9c075e0ffcf85aa933980c338225955d}{\string~CLogFile}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} MakeDir(LPCTSTR path);}
+\DoxyCodeLine{18         }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         TCHAR m\_strFilePath[\mbox{\hyperlink{_log_file_8h_ac336cf9f0f3c68728516caa2c7e8756a}{LOG\_FILE\_PATH\_LEN}}];\textcolor{comment}{//파일 경로}}
+\DoxyCodeLine{21         TCHAR m\_strFileName[\mbox{\hyperlink{_log_file_8h_ae2ff481c303c99a31dd728a7f6446fe1}{LOG\_FILE\_NAME\_LEN}}];\textcolor{comment}{//파일 이름}}
+\DoxyCodeLine{22         BOOL m\_bLogCreate;}
+\DoxyCodeLine{23         BOOL m\_bListCreate;}
+\DoxyCodeLine{24         CListCtrl *m\_ctrListLog;}
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} m\_nMaxList;}
+\DoxyCodeLine{26         BOOL m\_bListTimeView;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         CCriticalSection m\_Critical;}
+\DoxyCodeLine{29         }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         BOOL \mbox{\hyperlink{class_c_log_file_a76a2bf9c5c3b82df11587caf2291ca23}{Create}}(LPCTSTR strPath, LPCTSTR \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{strFileName}});\textcolor{comment}{//Log 생성}}
+\DoxyCodeLine{32         BOOL \mbox{\hyperlink{class_c_log_file_ad98602c953452dd2a6c68e936046a893}{WriteText}}(LPCTSTR strLog, BOOL isList = FALSE, \textcolor{keywordtype}{long} limit\_file = 1000000);\textcolor{comment}{//Log 작성}}
+\DoxyCodeLine{33         BOOL \mbox{\hyperlink{class_c_log_file_a6fc93bacef98101717f5108d05a650a6}{LogListInit}}(CListCtrl *ctrList, LPCTSTR strCol = \_T(\textcolor{stringliteral}{"{}Log"{}}), \textcolor{keywordtype}{int} nListSize = 1000, \textcolor{keywordtype}{int} nMaxList = 50, BOOL isListTimeView = FALSE);\textcolor{comment}{//List 초기화}}
+\DoxyCodeLine{34         BOOL \mbox{\hyperlink{class_c_log_file_ab529ee1230470a31834144e00a75dcd7}{ListAllDelete}}();\textcolor{comment}{//List 내용 전체 삭제}}
+\DoxyCodeLine{35         BOOL \mbox{\hyperlink{class_c_log_file_a8b097d9acd7167e838232d0b725e3a60}{isLogCreate}}()\{\textcolor{keywordflow}{return} m\_bLogCreate;\};}
+\DoxyCodeLine{36         BOOL \mbox{\hyperlink{class_c_log_file_a02fbc53231d5bd2f9b12b9c318fcadf0}{isListCreate}}()\{\textcolor{keywordflow}{return} m\_bListCreate;\};}
+\DoxyCodeLine{37 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,431 @@
+\hypertarget{class_c_sequence_module}{}\doxysection{CSequence\+Module 클래스 참조}
+\label{class_c_sequence_module}\index{CSequenceModule@{CSequenceModule}}
+
+
+{\ttfamily \#include $<$Sequence\+Module.\+h$>$}
+
+
+
+CSequence\+Module에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sequence_module__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_sequence_module_a641a27fed6fc66d025b272f3f8e61660}{CSequence\+Module}} (void)
+\item 
+\mbox{\hyperlink{class_c_sequence_module_a9fbea91069ea4070fae0a10bc8209882}{$\sim$\+CSequence\+Module}} (void)
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a1f73c163db6676587843fbd678aba3be}{Motion\+Process}} (int prc\+\_\+idx, int seq\+\_\+idx)
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a5c814248e3dcf17e8a0dda6a500185ae}{Stop\+Mode\+Operation}} (int $\ast$prc\+\_\+idx, int $\ast$seq\+\_\+idx)
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a76f23e639ec10306983c0ab0833c1b17}{Check\+Timeout}} (int prc\+\_\+idx, int seq\+\_\+idx, int seq\+\_\+sub\+\_\+idx, char $\ast$status\+\_\+type)
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a11aedf2204505bd92e02e5d937ed9588}{Check\+Delay}} (int prc\+\_\+idx, int seq\+\_\+idx, int delay)
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_a9d3a67513e915a03238dec94a2ec51ca}{Set\+Seq\+Idx}} (int prc\+\_\+idx, int seq\+\_\+idx, int seq\+\_\+sub\+\_\+idx)
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_a3087acb12308af77464914625b9d1eed}{Sequence\+Loop}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_ac089221b4ac3ee2104d62ffb63d08cc6}{Open}} (HWND h\+Wnd, int n\+Channel, CList\+Ctrl $\ast$list\+Log=NULL)
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_af07b17fe2d9e9ed94511396ceac4b771}{Close}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_acaa4c0f4719f863a3c47d20cb4ae2eec}{Reset}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_a9c3445607abbceca14ac0de521a3d763}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_aa33ed833bcd79601db2f08e76e16d783}{Stop}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_aaad7d96ba741908acb836612921b72fb}{Set\+Lamp}} (int n\+Color)
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_a64e620c89607f9e74183d30b9d8651fb}{Init\+Seq}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_a813db637f7cf934af8187a8560b454f5}{Set\+Seq\+First}} (BOOL b\+Flag)
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_af5c35ac078a4211a5d7cb9a16b430c71}{Get\+Seq\+End}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_adeb08270416a6b26f61296c49f668a53}{Set\+Seq\+End}} (BOOL is\+End)
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_acc87aec9eb74684f8b4042571134a6d2}{Get\+Seq\+Progress}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_af3439a76aa7151f9127edca0a1b70b24}{Set\+Seq\+Channel}} (int n\+Channel)
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_a86e8046b1b0b656cf61dea98a35757a9}{Set\+Grab\+Step\+Index}} (int n\+Index)
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a7709ec1c37d149fa98a71c8c2253406c}{Get\+Grab\+Step\+Index}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_ae764fc1da86c4a204d4d7361d4942ebe}{Set\+Max\+Step\+Cnt}} (int n\+Cnt)
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_a7f504978ce42a09c3c65744224641d86}{Get\+Auto\+Start}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_a2ada800c9ce8c04bbc59b8b5d0328792}{Get\+Ready\+State}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_a7efb95ee693fe302000fa9033b414bf9}{Get\+Inspecting}} ()
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_acff51e9359b159ed441480bdcf5c8989}{Get\+Seq\+Idx}} (int $\ast$prc\+\_\+idx, int $\ast$seq\+\_\+idx, int $\ast$seq\+\_\+sub\+\_\+idx)
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_aa2dd1df7725c183109bfed387a7a5e51}{Get\+Seq\+Sub\+Idx}} (int prc\+\_\+idx, int seq\+\_\+idx)
+\item 
+void \mbox{\hyperlink{class_c_sequence_module_a4d2186d0850d92151ed92a30dfdc8327}{Write\+Log}} (CString str\+Log)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}{type\+Sequence\+Flag}} \mbox{\hyperlink{class_c_sequence_module_a4ba90b4d85b5470f409d6721d205680a}{m\+\_\+\+Seq\+Flag}}
+\item 
+\mbox{\hyperlink{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}{type\+Motion\+Flag}} \mbox{\hyperlink{class_c_sequence_module_adc145e8af520f928f4548754106351e8}{m\+\_\+\+Flag}}
+\item 
+\mbox{\hyperlink{class_c_motion_data}{CMotion\+Data}} \mbox{\hyperlink{class_c_sequence_module_a38a2e32d81c2a17df9a748b7948340e9}{m\+\_\+\+MDat}} \mbox{[}\mbox{\hyperlink{_sequence_module_8h_ac70ccfd303d938b246e29064f6366fee}{MOT\+\_\+\+PROCESS\+\_\+\+MAX\+\_\+\+NUM}}\mbox{]}
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_a2cb4a8c8abf921bdd1cb0c9fe3f5dc97}{m\+\_\+bsw\+Start}} \mbox{[}2\mbox{]}
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_af98ffb70d07d42b1ecdbf9dc5bd96896}{m\+\_\+b\+Seq\+End}}
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_ad34d272b760e9480f3b871d8271d5a41}{m\+\_\+b\+Seq\+Progress}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a739f0efa17dfd288c19d4888df52b262}{m\+\_\+n\+Seq\+Channel}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_adb18a67f57d652a09069764caae25704}{m\+\_\+n\+Grab\+Step\+Index}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a3525031b7d7cc789fcae275e95a5670a}{m\+\_\+n\+Max\+Step\+Cnt}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a8bab4e0075662619a5b851955d2d3a90}{m\+\_\+n\+Seq\+Idx}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_abb431f6243020097bbf7a4c598729a12}{m\+\_\+n\+Dst\+Deq\+Idx}}
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_ad9ad7088924e4004b4dfbf327a33b063}{m\+\_\+b\+Ready\+State}}
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_a333a0135b22d371ce5dccf4b1bb0dc07}{m\+\_\+b\+Inspecting}}
+\item 
+\mbox{\hyperlink{class_c_timer_check}{CTimer\+Check}} \mbox{\hyperlink{class_c_sequence_module_a1559f8c30011c8ab88a4aff258457e28}{m\+\_\+\+Time\+Check}}
+\item 
+BOOL \mbox{\hyperlink{class_c_sequence_module_afe532a783c48f7896d9181461c17ee6b}{m\+\_\+b\+Init\+Seq}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_afd2e3ea0b544e808f7d1ab553eec7156}{m\+\_\+n\+Prc\+\_\+\+Idx}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a84ce73dd5dc32399b43fabca25292a5b}{m\+\_\+n\+Seq\+\_\+\+Idx}}
+\item 
+int \mbox{\hyperlink{class_c_sequence_module_a0e2da50e33b2acc1de62cd59d7f49185}{m\+\_\+n\+Seq\+\_\+\+Sub\+\_\+\+Idx}}
+\item 
+deque$<$ CString $>$ \mbox{\hyperlink{class_c_sequence_module_ac16b410f28b9b99c18c935e94f443c2e}{m\+\_\+str\+Main\+Log\+String}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+HWND \mbox{\hyperlink{class_c_sequence_module_ad45feb7b0b0bcffbab0f2ab67e08b6ae}{m\+\_\+h\+Wnd\+Main}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_sequence_module_a641a27fed6fc66d025b272f3f8e61660}\label{class_c_sequence_module_a641a27fed6fc66d025b272f3f8e61660}} 
+\index{CSequenceModule@{CSequenceModule}!CSequenceModule@{CSequenceModule}}
+\index{CSequenceModule@{CSequenceModule}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{CSequenceModule()}{CSequenceModule()}}
+{\footnotesize\ttfamily CSequence\+Module\+::\+CSequence\+Module (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a9fbea91069ea4070fae0a10bc8209882}\label{class_c_sequence_module_a9fbea91069ea4070fae0a10bc8209882}} 
+\index{CSequenceModule@{CSequenceModule}!````~CSequenceModule@{$\sim$CSequenceModule}}
+\index{````~CSequenceModule@{$\sim$CSequenceModule}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSequenceModule()}{~CSequenceModule()}}
+{\footnotesize\ttfamily CSequence\+Module\+::$\sim$\+CSequence\+Module (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_sequence_module_a11aedf2204505bd92e02e5d937ed9588}\label{class_c_sequence_module_a11aedf2204505bd92e02e5d937ed9588}} 
+\index{CSequenceModule@{CSequenceModule}!CheckDelay@{CheckDelay}}
+\index{CheckDelay@{CheckDelay}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{CheckDelay()}{CheckDelay()}}
+{\footnotesize\ttfamily int CSequence\+Module\+::\+Check\+Delay (\begin{DoxyParamCaption}\item[{int}]{prc\+\_\+idx,  }\item[{int}]{seq\+\_\+idx,  }\item[{int}]{delay }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a76f23e639ec10306983c0ab0833c1b17}\label{class_c_sequence_module_a76f23e639ec10306983c0ab0833c1b17}} 
+\index{CSequenceModule@{CSequenceModule}!CheckTimeout@{CheckTimeout}}
+\index{CheckTimeout@{CheckTimeout}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{CheckTimeout()}{CheckTimeout()}}
+{\footnotesize\ttfamily int CSequence\+Module\+::\+Check\+Timeout (\begin{DoxyParamCaption}\item[{int}]{prc\+\_\+idx,  }\item[{int}]{seq\+\_\+idx,  }\item[{int}]{seq\+\_\+sub\+\_\+idx,  }\item[{char $\ast$}]{status\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_af07b17fe2d9e9ed94511396ceac4b771}\label{class_c_sequence_module_af07b17fe2d9e9ed94511396ceac4b771}} 
+\index{CSequenceModule@{CSequenceModule}!Close@{Close}}
+\index{Close@{Close}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a7f504978ce42a09c3c65744224641d86}\label{class_c_sequence_module_a7f504978ce42a09c3c65744224641d86}} 
+\index{CSequenceModule@{CSequenceModule}!GetAutoStart@{GetAutoStart}}
+\index{GetAutoStart@{GetAutoStart}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetAutoStart()}{GetAutoStart()}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::\+Get\+Auto\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_a7709ec1c37d149fa98a71c8c2253406c}\label{class_c_sequence_module_a7709ec1c37d149fa98a71c8c2253406c}} 
+\index{CSequenceModule@{CSequenceModule}!GetGrabStepIndex@{GetGrabStepIndex}}
+\index{GetGrabStepIndex@{GetGrabStepIndex}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetGrabStepIndex()}{GetGrabStepIndex()}}
+{\footnotesize\ttfamily int CSequence\+Module\+::\+Get\+Grab\+Step\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_a7efb95ee693fe302000fa9033b414bf9}\label{class_c_sequence_module_a7efb95ee693fe302000fa9033b414bf9}} 
+\index{CSequenceModule@{CSequenceModule}!GetInspecting@{GetInspecting}}
+\index{GetInspecting@{GetInspecting}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetInspecting()}{GetInspecting()}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::\+Get\+Inspecting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_a2ada800c9ce8c04bbc59b8b5d0328792}\label{class_c_sequence_module_a2ada800c9ce8c04bbc59b8b5d0328792}} 
+\index{CSequenceModule@{CSequenceModule}!GetReadyState@{GetReadyState}}
+\index{GetReadyState@{GetReadyState}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetReadyState()}{GetReadyState()}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::\+Get\+Ready\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_af5c35ac078a4211a5d7cb9a16b430c71}\label{class_c_sequence_module_af5c35ac078a4211a5d7cb9a16b430c71}} 
+\index{CSequenceModule@{CSequenceModule}!GetSeqEnd@{GetSeqEnd}}
+\index{GetSeqEnd@{GetSeqEnd}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetSeqEnd()}{GetSeqEnd()}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::\+Get\+Seq\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_acff51e9359b159ed441480bdcf5c8989}\label{class_c_sequence_module_acff51e9359b159ed441480bdcf5c8989}} 
+\index{CSequenceModule@{CSequenceModule}!GetSeqIdx@{GetSeqIdx}}
+\index{GetSeqIdx@{GetSeqIdx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetSeqIdx()}{GetSeqIdx()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Get\+Seq\+Idx (\begin{DoxyParamCaption}\item[{int $\ast$}]{prc\+\_\+idx,  }\item[{int $\ast$}]{seq\+\_\+idx,  }\item[{int $\ast$}]{seq\+\_\+sub\+\_\+idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_acc87aec9eb74684f8b4042571134a6d2}\label{class_c_sequence_module_acc87aec9eb74684f8b4042571134a6d2}} 
+\index{CSequenceModule@{CSequenceModule}!GetSeqProgress@{GetSeqProgress}}
+\index{GetSeqProgress@{GetSeqProgress}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetSeqProgress()}{GetSeqProgress()}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::\+Get\+Seq\+Progress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_aa2dd1df7725c183109bfed387a7a5e51}\label{class_c_sequence_module_aa2dd1df7725c183109bfed387a7a5e51}} 
+\index{CSequenceModule@{CSequenceModule}!GetSeqSubIdx@{GetSeqSubIdx}}
+\index{GetSeqSubIdx@{GetSeqSubIdx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{GetSeqSubIdx()}{GetSeqSubIdx()}}
+{\footnotesize\ttfamily int CSequence\+Module\+::\+Get\+Seq\+Sub\+Idx (\begin{DoxyParamCaption}\item[{int}]{prc\+\_\+idx,  }\item[{int}]{seq\+\_\+idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a64e620c89607f9e74183d30b9d8651fb}\label{class_c_sequence_module_a64e620c89607f9e74183d30b9d8651fb}} 
+\index{CSequenceModule@{CSequenceModule}!InitSeq@{InitSeq}}
+\index{InitSeq@{InitSeq}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{InitSeq()}{InitSeq()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Init\+Seq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a1f73c163db6676587843fbd678aba3be}\label{class_c_sequence_module_a1f73c163db6676587843fbd678aba3be}} 
+\index{CSequenceModule@{CSequenceModule}!MotionProcess@{MotionProcess}}
+\index{MotionProcess@{MotionProcess}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{MotionProcess()}{MotionProcess()}}
+{\footnotesize\ttfamily int CSequence\+Module\+::\+Motion\+Process (\begin{DoxyParamCaption}\item[{int}]{prc\+\_\+idx,  }\item[{int}]{seq\+\_\+idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_ac089221b4ac3ee2104d62ffb63d08cc6}\label{class_c_sequence_module_ac089221b4ac3ee2104d62ffb63d08cc6}} 
+\index{CSequenceModule@{CSequenceModule}!Open@{Open}}
+\index{Open@{Open}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Open (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{int}]{n\+Channel,  }\item[{CList\+Ctrl $\ast$}]{list\+Log = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_acaa4c0f4719f863a3c47d20cb4ae2eec}\label{class_c_sequence_module_acaa4c0f4719f863a3c47d20cb4ae2eec}} 
+\index{CSequenceModule@{CSequenceModule}!Reset@{Reset}}
+\index{Reset@{Reset}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a3087acb12308af77464914625b9d1eed}\label{class_c_sequence_module_a3087acb12308af77464914625b9d1eed}} 
+\index{CSequenceModule@{CSequenceModule}!SequenceLoop@{SequenceLoop}}
+\index{SequenceLoop@{SequenceLoop}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SequenceLoop()}{SequenceLoop()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Sequence\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a86e8046b1b0b656cf61dea98a35757a9}\label{class_c_sequence_module_a86e8046b1b0b656cf61dea98a35757a9}} 
+\index{CSequenceModule@{CSequenceModule}!SetGrabStepIndex@{SetGrabStepIndex}}
+\index{SetGrabStepIndex@{SetGrabStepIndex}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetGrabStepIndex()}{SetGrabStepIndex()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Grab\+Step\+Index (\begin{DoxyParamCaption}\item[{int}]{n\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_aaad7d96ba741908acb836612921b72fb}\label{class_c_sequence_module_aaad7d96ba741908acb836612921b72fb}} 
+\index{CSequenceModule@{CSequenceModule}!SetLamp@{SetLamp}}
+\index{SetLamp@{SetLamp}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetLamp()}{SetLamp()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Lamp (\begin{DoxyParamCaption}\item[{int}]{n\+Color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_ae764fc1da86c4a204d4d7361d4942ebe}\label{class_c_sequence_module_ae764fc1da86c4a204d4d7361d4942ebe}} 
+\index{CSequenceModule@{CSequenceModule}!SetMaxStepCnt@{SetMaxStepCnt}}
+\index{SetMaxStepCnt@{SetMaxStepCnt}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetMaxStepCnt()}{SetMaxStepCnt()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Max\+Step\+Cnt (\begin{DoxyParamCaption}\item[{int}]{n\+Cnt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_af3439a76aa7151f9127edca0a1b70b24}\label{class_c_sequence_module_af3439a76aa7151f9127edca0a1b70b24}} 
+\index{CSequenceModule@{CSequenceModule}!SetSeqChannel@{SetSeqChannel}}
+\index{SetSeqChannel@{SetSeqChannel}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetSeqChannel()}{SetSeqChannel()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Seq\+Channel (\begin{DoxyParamCaption}\item[{int}]{n\+Channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_adeb08270416a6b26f61296c49f668a53}\label{class_c_sequence_module_adeb08270416a6b26f61296c49f668a53}} 
+\index{CSequenceModule@{CSequenceModule}!SetSeqEnd@{SetSeqEnd}}
+\index{SetSeqEnd@{SetSeqEnd}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetSeqEnd()}{SetSeqEnd()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Seq\+End (\begin{DoxyParamCaption}\item[{BOOL}]{is\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_a813db637f7cf934af8187a8560b454f5}\label{class_c_sequence_module_a813db637f7cf934af8187a8560b454f5}} 
+\index{CSequenceModule@{CSequenceModule}!SetSeqFirst@{SetSeqFirst}}
+\index{SetSeqFirst@{SetSeqFirst}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetSeqFirst()}{SetSeqFirst()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Seq\+First (\begin{DoxyParamCaption}\item[{BOOL}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_a9d3a67513e915a03238dec94a2ec51ca}\label{class_c_sequence_module_a9d3a67513e915a03238dec94a2ec51ca}} 
+\index{CSequenceModule@{CSequenceModule}!SetSeqIdx@{SetSeqIdx}}
+\index{SetSeqIdx@{SetSeqIdx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{SetSeqIdx()}{SetSeqIdx()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Set\+Seq\+Idx (\begin{DoxyParamCaption}\item[{int}]{prc\+\_\+idx,  }\item[{int}]{seq\+\_\+idx,  }\item[{int}]{seq\+\_\+sub\+\_\+idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a9c3445607abbceca14ac0de521a3d763}\label{class_c_sequence_module_a9c3445607abbceca14ac0de521a3d763}} 
+\index{CSequenceModule@{CSequenceModule}!Start@{Start}}
+\index{Start@{Start}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_aa33ed833bcd79601db2f08e76e16d783}\label{class_c_sequence_module_aa33ed833bcd79601db2f08e76e16d783}} 
+\index{CSequenceModule@{CSequenceModule}!Stop@{Stop}}
+\index{Stop@{Stop}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a5c814248e3dcf17e8a0dda6a500185ae}\label{class_c_sequence_module_a5c814248e3dcf17e8a0dda6a500185ae}} 
+\index{CSequenceModule@{CSequenceModule}!StopModeOperation@{StopModeOperation}}
+\index{StopModeOperation@{StopModeOperation}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{StopModeOperation()}{StopModeOperation()}}
+{\footnotesize\ttfamily int CSequence\+Module\+::\+Stop\+Mode\+Operation (\begin{DoxyParamCaption}\item[{int $\ast$}]{prc\+\_\+idx,  }\item[{int $\ast$}]{seq\+\_\+idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sequence_module_a4d2186d0850d92151ed92a30dfdc8327}\label{class_c_sequence_module_a4d2186d0850d92151ed92a30dfdc8327}} 
+\index{CSequenceModule@{CSequenceModule}!WriteLog@{WriteLog}}
+\index{WriteLog@{WriteLog}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{WriteLog()}{WriteLog()}}
+{\footnotesize\ttfamily void CSequence\+Module\+::\+Write\+Log (\begin{DoxyParamCaption}\item[{CString}]{str\+Log }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_sequence_module_afe532a783c48f7896d9181461c17ee6b}\label{class_c_sequence_module_afe532a783c48f7896d9181461c17ee6b}} 
+\index{CSequenceModule@{CSequenceModule}!m\_bInitSeq@{m\_bInitSeq}}
+\index{m\_bInitSeq@{m\_bInitSeq}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_bInitSeq}{m\_bInitSeq}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::m\+\_\+b\+Init\+Seq}
+
+\mbox{\Hypertarget{class_c_sequence_module_a333a0135b22d371ce5dccf4b1bb0dc07}\label{class_c_sequence_module_a333a0135b22d371ce5dccf4b1bb0dc07}} 
+\index{CSequenceModule@{CSequenceModule}!m\_bInspecting@{m\_bInspecting}}
+\index{m\_bInspecting@{m\_bInspecting}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_bInspecting}{m\_bInspecting}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::m\+\_\+b\+Inspecting}
+
+\mbox{\Hypertarget{class_c_sequence_module_ad9ad7088924e4004b4dfbf327a33b063}\label{class_c_sequence_module_ad9ad7088924e4004b4dfbf327a33b063}} 
+\index{CSequenceModule@{CSequenceModule}!m\_bReadyState@{m\_bReadyState}}
+\index{m\_bReadyState@{m\_bReadyState}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_bReadyState}{m\_bReadyState}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::m\+\_\+b\+Ready\+State}
+
+\mbox{\Hypertarget{class_c_sequence_module_af98ffb70d07d42b1ecdbf9dc5bd96896}\label{class_c_sequence_module_af98ffb70d07d42b1ecdbf9dc5bd96896}} 
+\index{CSequenceModule@{CSequenceModule}!m\_bSeqEnd@{m\_bSeqEnd}}
+\index{m\_bSeqEnd@{m\_bSeqEnd}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_bSeqEnd}{m\_bSeqEnd}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::m\+\_\+b\+Seq\+End}
+
+\mbox{\Hypertarget{class_c_sequence_module_ad34d272b760e9480f3b871d8271d5a41}\label{class_c_sequence_module_ad34d272b760e9480f3b871d8271d5a41}} 
+\index{CSequenceModule@{CSequenceModule}!m\_bSeqProgress@{m\_bSeqProgress}}
+\index{m\_bSeqProgress@{m\_bSeqProgress}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_bSeqProgress}{m\_bSeqProgress}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::m\+\_\+b\+Seq\+Progress}
+
+\mbox{\Hypertarget{class_c_sequence_module_a2cb4a8c8abf921bdd1cb0c9fe3f5dc97}\label{class_c_sequence_module_a2cb4a8c8abf921bdd1cb0c9fe3f5dc97}} 
+\index{CSequenceModule@{CSequenceModule}!m\_bswStart@{m\_bswStart}}
+\index{m\_bswStart@{m\_bswStart}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_bswStart}{m\_bswStart}}
+{\footnotesize\ttfamily BOOL CSequence\+Module\+::m\+\_\+bsw\+Start\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_adc145e8af520f928f4548754106351e8}\label{class_c_sequence_module_adc145e8af520f928f4548754106351e8}} 
+\index{CSequenceModule@{CSequenceModule}!m\_Flag@{m\_Flag}}
+\index{m\_Flag@{m\_Flag}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_Flag}{m\_Flag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}{type\+Motion\+Flag}} CSequence\+Module\+::m\+\_\+\+Flag}
+
+\mbox{\Hypertarget{class_c_sequence_module_ad45feb7b0b0bcffbab0f2ab67e08b6ae}\label{class_c_sequence_module_ad45feb7b0b0bcffbab0f2ab67e08b6ae}} 
+\index{CSequenceModule@{CSequenceModule}!m\_hWndMain@{m\_hWndMain}}
+\index{m\_hWndMain@{m\_hWndMain}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_hWndMain}{m\_hWndMain}}
+{\footnotesize\ttfamily HWND CSequence\+Module\+::m\+\_\+h\+Wnd\+Main\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_a38a2e32d81c2a17df9a748b7948340e9}\label{class_c_sequence_module_a38a2e32d81c2a17df9a748b7948340e9}} 
+\index{CSequenceModule@{CSequenceModule}!m\_MDat@{m\_MDat}}
+\index{m\_MDat@{m\_MDat}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_MDat}{m\_MDat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_motion_data}{CMotion\+Data}} CSequence\+Module\+::m\+\_\+\+MDat\mbox{[}\mbox{\hyperlink{_sequence_module_8h_ac70ccfd303d938b246e29064f6366fee}{MOT\+\_\+\+PROCESS\+\_\+\+MAX\+\_\+\+NUM}}\mbox{]}}
+
+\mbox{\Hypertarget{class_c_sequence_module_abb431f6243020097bbf7a4c598729a12}\label{class_c_sequence_module_abb431f6243020097bbf7a4c598729a12}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nDstDeqIdx@{m\_nDstDeqIdx}}
+\index{m\_nDstDeqIdx@{m\_nDstDeqIdx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nDstDeqIdx}{m\_nDstDeqIdx}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Dst\+Deq\+Idx}
+
+\mbox{\Hypertarget{class_c_sequence_module_adb18a67f57d652a09069764caae25704}\label{class_c_sequence_module_adb18a67f57d652a09069764caae25704}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nGrabStepIndex@{m\_nGrabStepIndex}}
+\index{m\_nGrabStepIndex@{m\_nGrabStepIndex}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nGrabStepIndex}{m\_nGrabStepIndex}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Grab\+Step\+Index}
+
+\mbox{\Hypertarget{class_c_sequence_module_a3525031b7d7cc789fcae275e95a5670a}\label{class_c_sequence_module_a3525031b7d7cc789fcae275e95a5670a}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nMaxStepCnt@{m\_nMaxStepCnt}}
+\index{m\_nMaxStepCnt@{m\_nMaxStepCnt}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nMaxStepCnt}{m\_nMaxStepCnt}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Max\+Step\+Cnt}
+
+\mbox{\Hypertarget{class_c_sequence_module_afd2e3ea0b544e808f7d1ab553eec7156}\label{class_c_sequence_module_afd2e3ea0b544e808f7d1ab553eec7156}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nPrc\_Idx@{m\_nPrc\_Idx}}
+\index{m\_nPrc\_Idx@{m\_nPrc\_Idx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nPrc\_Idx}{m\_nPrc\_Idx}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Prc\+\_\+\+Idx}
+
+\mbox{\Hypertarget{class_c_sequence_module_a84ce73dd5dc32399b43fabca25292a5b}\label{class_c_sequence_module_a84ce73dd5dc32399b43fabca25292a5b}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nSeq\_Idx@{m\_nSeq\_Idx}}
+\index{m\_nSeq\_Idx@{m\_nSeq\_Idx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nSeq\_Idx}{m\_nSeq\_Idx}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Seq\+\_\+\+Idx}
+
+\mbox{\Hypertarget{class_c_sequence_module_a0e2da50e33b2acc1de62cd59d7f49185}\label{class_c_sequence_module_a0e2da50e33b2acc1de62cd59d7f49185}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nSeq\_Sub\_Idx@{m\_nSeq\_Sub\_Idx}}
+\index{m\_nSeq\_Sub\_Idx@{m\_nSeq\_Sub\_Idx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nSeq\_Sub\_Idx}{m\_nSeq\_Sub\_Idx}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Seq\+\_\+\+Sub\+\_\+\+Idx}
+
+\mbox{\Hypertarget{class_c_sequence_module_a739f0efa17dfd288c19d4888df52b262}\label{class_c_sequence_module_a739f0efa17dfd288c19d4888df52b262}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nSeqChannel@{m\_nSeqChannel}}
+\index{m\_nSeqChannel@{m\_nSeqChannel}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nSeqChannel}{m\_nSeqChannel}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Seq\+Channel}
+
+\mbox{\Hypertarget{class_c_sequence_module_a8bab4e0075662619a5b851955d2d3a90}\label{class_c_sequence_module_a8bab4e0075662619a5b851955d2d3a90}} 
+\index{CSequenceModule@{CSequenceModule}!m\_nSeqIdx@{m\_nSeqIdx}}
+\index{m\_nSeqIdx@{m\_nSeqIdx}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_nSeqIdx}{m\_nSeqIdx}}
+{\footnotesize\ttfamily int CSequence\+Module\+::m\+\_\+n\+Seq\+Idx}
+
+\mbox{\Hypertarget{class_c_sequence_module_a4ba90b4d85b5470f409d6721d205680a}\label{class_c_sequence_module_a4ba90b4d85b5470f409d6721d205680a}} 
+\index{CSequenceModule@{CSequenceModule}!m\_SeqFlag@{m\_SeqFlag}}
+\index{m\_SeqFlag@{m\_SeqFlag}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_SeqFlag}{m\_SeqFlag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}{type\+Sequence\+Flag}} CSequence\+Module\+::m\+\_\+\+Seq\+Flag}
+
+\mbox{\Hypertarget{class_c_sequence_module_ac16b410f28b9b99c18c935e94f443c2e}\label{class_c_sequence_module_ac16b410f28b9b99c18c935e94f443c2e}} 
+\index{CSequenceModule@{CSequenceModule}!m\_strMainLogString@{m\_strMainLogString}}
+\index{m\_strMainLogString@{m\_strMainLogString}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_strMainLogString}{m\_strMainLogString}}
+{\footnotesize\ttfamily deque$<$CString$>$ CSequence\+Module\+::m\+\_\+str\+Main\+Log\+String}
+
+\mbox{\Hypertarget{class_c_sequence_module_a1559f8c30011c8ab88a4aff258457e28}\label{class_c_sequence_module_a1559f8c30011c8ab88a4aff258457e28}} 
+\index{CSequenceModule@{CSequenceModule}!m\_TimeCheck@{m\_TimeCheck}}
+\index{m\_TimeCheck@{m\_TimeCheck}!CSequenceModule@{CSequenceModule}}
+\doxysubsubsection{\texorpdfstring{m\_TimeCheck}{m\_TimeCheck}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_timer_check}{CTimer\+Check}} CSequence\+Module\+::m\+\_\+\+Time\+Check}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_sequence_module_8h}{Sequence\+Module.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_sequence_module_8cpp}{Sequence\+Module.\+cpp}}\end{DoxyCompactItemize}

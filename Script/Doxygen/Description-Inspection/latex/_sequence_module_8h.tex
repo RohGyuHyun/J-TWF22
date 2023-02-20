@@ -1,0 +1,164 @@
+\hypertarget{_sequence_module_8h}{}\doxysection{D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\+Sequence\+Module.h 파일 참조}
+\label{_sequence_module_8h}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/SequenceModule.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/SequenceModule.h}}
+{\ttfamily \#include \char`\"{}Time\+Check.\+h\char`\"{}}\newline
+Sequence\+Module.\+h에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{_sequence_module_8h__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_sequence_module_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_motion_process_status}{Motion\+Process\+Status}}
+\item 
+struct \mbox{\hyperlink{struct_motion_seq}{Motion\+Seq}}
+\item 
+class \mbox{\hyperlink{class_c_motion_data}{CMotion\+Data}}
+\item 
+struct \mbox{\hyperlink{struct_motion_flag}{Motion\+Flag}}
+\item 
+struct \mbox{\hyperlink{struct_sequence_flag}{Sequence\+Flag}}
+\item 
+class \mbox{\hyperlink{class_c_sequence_module}{CSequence\+Module}}
+\end{DoxyCompactItemize}
+\doxysubsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a82acb32225c05e9aa4c524c40bc5852a}{MAX\+\_\+\+CHAR}}~512
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_ac70ccfd303d938b246e29064f6366fee}{MOT\+\_\+\+PROCESS\+\_\+\+MAX\+\_\+\+NUM}}~1
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a054d6c874898f3f0beedbfbb8acfe97e}{MOT\+\_\+\+STATUS\+\_\+\+MAX\+\_\+\+NUM}}~3
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a1478ea25c4ad940ce18f4d04dd852821}{MOT\+\_\+\+STATUS\+\_\+\+SUB\+\_\+\+MAX\+\_\+\+NUM}}~10000
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a52dcffa7cb32bb61726bb2f0212c49f1}{SEQ\+\_\+\+STATUS\+\_\+\+STEP1}}~0
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a5e76a0a6fea63008086930e096f83f3e}{SEQ\+\_\+\+STATUS\+\_\+\+STEP2}}~1
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a6e6677f948981202b7beddd3a586644a}{SEQ\+\_\+\+STATUS\+\_\+\+STEP3}}~2
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a96cfeae6269aede4b9d4b0df73e5cb28}{SEQ\+\_\+\+STATUS\+\_\+\+STEP4}}~3
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_afa18a6c0dfae0387f7a7dc99ac3a164b}{SEQ\+\_\+\+STATUS\+\_\+\+READY}}~5
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a714154f6c5f20e40c795e19237ce17f0}{SEQ\+\_\+\+STATUS\+\_\+\+END}}~6
+\item 
+\#define \mbox{\hyperlink{_sequence_module_8h_a0ab3c5068c750fe52c0fb620b0d54fbb}{TIMEOUT\+\_\+\+SAFE\+\_\+\+INTERLOCK}}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_motion_process_status}{Motion\+Process\+Status}} \mbox{\hyperlink{_sequence_module_8h_ac45e47db3b5a3c32d8ce91c083668d19}{type\+Motion\+Process\+Sts}}
+\item 
+typedef struct \mbox{\hyperlink{struct_motion_seq}{Motion\+Seq}} \mbox{\hyperlink{_sequence_module_8h_a53ef9648986fb172d980c01b305e8d8f}{type\+Motion\+Seq}}
+\item 
+typedef struct \mbox{\hyperlink{struct_motion_flag}{Motion\+Flag}} \mbox{\hyperlink{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}{type\+Motion\+Flag}}
+\item 
+typedef struct \mbox{\hyperlink{struct_sequence_flag}{Sequence\+Flag}} \mbox{\hyperlink{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}{type\+Sequence\+Flag}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{매크로 문서화}
+\mbox{\Hypertarget{_sequence_module_8h_a82acb32225c05e9aa4c524c40bc5852a}\label{_sequence_module_8h_a82acb32225c05e9aa4c524c40bc5852a}} 
+\index{SequenceModule.h@{SequenceModule.h}!MAX\_CHAR@{MAX\_CHAR}}
+\index{MAX\_CHAR@{MAX\_CHAR}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_CHAR}{MAX\_CHAR}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+CHAR~512}
+
+\mbox{\Hypertarget{_sequence_module_8h_ac70ccfd303d938b246e29064f6366fee}\label{_sequence_module_8h_ac70ccfd303d938b246e29064f6366fee}} 
+\index{SequenceModule.h@{SequenceModule.h}!MOT\_PROCESS\_MAX\_NUM@{MOT\_PROCESS\_MAX\_NUM}}
+\index{MOT\_PROCESS\_MAX\_NUM@{MOT\_PROCESS\_MAX\_NUM}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{MOT\_PROCESS\_MAX\_NUM}{MOT\_PROCESS\_MAX\_NUM}}
+{\footnotesize\ttfamily \#define MOT\+\_\+\+PROCESS\+\_\+\+MAX\+\_\+\+NUM~1}
+
+\mbox{\Hypertarget{_sequence_module_8h_a054d6c874898f3f0beedbfbb8acfe97e}\label{_sequence_module_8h_a054d6c874898f3f0beedbfbb8acfe97e}} 
+\index{SequenceModule.h@{SequenceModule.h}!MOT\_STATUS\_MAX\_NUM@{MOT\_STATUS\_MAX\_NUM}}
+\index{MOT\_STATUS\_MAX\_NUM@{MOT\_STATUS\_MAX\_NUM}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{MOT\_STATUS\_MAX\_NUM}{MOT\_STATUS\_MAX\_NUM}}
+{\footnotesize\ttfamily \#define MOT\+\_\+\+STATUS\+\_\+\+MAX\+\_\+\+NUM~3}
+
+\mbox{\Hypertarget{_sequence_module_8h_a1478ea25c4ad940ce18f4d04dd852821}\label{_sequence_module_8h_a1478ea25c4ad940ce18f4d04dd852821}} 
+\index{SequenceModule.h@{SequenceModule.h}!MOT\_STATUS\_SUB\_MAX\_NUM@{MOT\_STATUS\_SUB\_MAX\_NUM}}
+\index{MOT\_STATUS\_SUB\_MAX\_NUM@{MOT\_STATUS\_SUB\_MAX\_NUM}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{MOT\_STATUS\_SUB\_MAX\_NUM}{MOT\_STATUS\_SUB\_MAX\_NUM}}
+{\footnotesize\ttfamily \#define MOT\+\_\+\+STATUS\+\_\+\+SUB\+\_\+\+MAX\+\_\+\+NUM~10000}
+
+\mbox{\Hypertarget{_sequence_module_8h_a714154f6c5f20e40c795e19237ce17f0}\label{_sequence_module_8h_a714154f6c5f20e40c795e19237ce17f0}} 
+\index{SequenceModule.h@{SequenceModule.h}!SEQ\_STATUS\_END@{SEQ\_STATUS\_END}}
+\index{SEQ\_STATUS\_END@{SEQ\_STATUS\_END}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{SEQ\_STATUS\_END}{SEQ\_STATUS\_END}}
+{\footnotesize\ttfamily \#define SEQ\+\_\+\+STATUS\+\_\+\+END~6}
+
+\mbox{\Hypertarget{_sequence_module_8h_afa18a6c0dfae0387f7a7dc99ac3a164b}\label{_sequence_module_8h_afa18a6c0dfae0387f7a7dc99ac3a164b}} 
+\index{SequenceModule.h@{SequenceModule.h}!SEQ\_STATUS\_READY@{SEQ\_STATUS\_READY}}
+\index{SEQ\_STATUS\_READY@{SEQ\_STATUS\_READY}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{SEQ\_STATUS\_READY}{SEQ\_STATUS\_READY}}
+{\footnotesize\ttfamily \#define SEQ\+\_\+\+STATUS\+\_\+\+READY~5}
+
+\mbox{\Hypertarget{_sequence_module_8h_a52dcffa7cb32bb61726bb2f0212c49f1}\label{_sequence_module_8h_a52dcffa7cb32bb61726bb2f0212c49f1}} 
+\index{SequenceModule.h@{SequenceModule.h}!SEQ\_STATUS\_STEP1@{SEQ\_STATUS\_STEP1}}
+\index{SEQ\_STATUS\_STEP1@{SEQ\_STATUS\_STEP1}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{SEQ\_STATUS\_STEP1}{SEQ\_STATUS\_STEP1}}
+{\footnotesize\ttfamily \#define SEQ\+\_\+\+STATUS\+\_\+\+STEP1~0}
+
+\mbox{\Hypertarget{_sequence_module_8h_a5e76a0a6fea63008086930e096f83f3e}\label{_sequence_module_8h_a5e76a0a6fea63008086930e096f83f3e}} 
+\index{SequenceModule.h@{SequenceModule.h}!SEQ\_STATUS\_STEP2@{SEQ\_STATUS\_STEP2}}
+\index{SEQ\_STATUS\_STEP2@{SEQ\_STATUS\_STEP2}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{SEQ\_STATUS\_STEP2}{SEQ\_STATUS\_STEP2}}
+{\footnotesize\ttfamily \#define SEQ\+\_\+\+STATUS\+\_\+\+STEP2~1}
+
+\mbox{\Hypertarget{_sequence_module_8h_a6e6677f948981202b7beddd3a586644a}\label{_sequence_module_8h_a6e6677f948981202b7beddd3a586644a}} 
+\index{SequenceModule.h@{SequenceModule.h}!SEQ\_STATUS\_STEP3@{SEQ\_STATUS\_STEP3}}
+\index{SEQ\_STATUS\_STEP3@{SEQ\_STATUS\_STEP3}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{SEQ\_STATUS\_STEP3}{SEQ\_STATUS\_STEP3}}
+{\footnotesize\ttfamily \#define SEQ\+\_\+\+STATUS\+\_\+\+STEP3~2}
+
+\mbox{\Hypertarget{_sequence_module_8h_a96cfeae6269aede4b9d4b0df73e5cb28}\label{_sequence_module_8h_a96cfeae6269aede4b9d4b0df73e5cb28}} 
+\index{SequenceModule.h@{SequenceModule.h}!SEQ\_STATUS\_STEP4@{SEQ\_STATUS\_STEP4}}
+\index{SEQ\_STATUS\_STEP4@{SEQ\_STATUS\_STEP4}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{SEQ\_STATUS\_STEP4}{SEQ\_STATUS\_STEP4}}
+{\footnotesize\ttfamily \#define SEQ\+\_\+\+STATUS\+\_\+\+STEP4~3}
+
+\mbox{\Hypertarget{_sequence_module_8h_a0ab3c5068c750fe52c0fb620b0d54fbb}\label{_sequence_module_8h_a0ab3c5068c750fe52c0fb620b0d54fbb}} 
+\index{SequenceModule.h@{SequenceModule.h}!TIMEOUT\_SAFE\_INTERLOCK@{TIMEOUT\_SAFE\_INTERLOCK}}
+\index{TIMEOUT\_SAFE\_INTERLOCK@{TIMEOUT\_SAFE\_INTERLOCK}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT\_SAFE\_INTERLOCK}{TIMEOUT\_SAFE\_INTERLOCK}}
+{\footnotesize\ttfamily \#define TIMEOUT\+\_\+\+SAFE\+\_\+\+INTERLOCK~10}
+
+
+
+\doxysubsection{타입정의 문서화}
+\mbox{\Hypertarget{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}\label{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}} 
+\index{SequenceModule.h@{SequenceModule.h}!typeMotionFlag@{typeMotionFlag}}
+\index{typeMotionFlag@{typeMotionFlag}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{typeMotionFlag}{typeMotionFlag}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_motion_flag}{Motion\+Flag}} \mbox{\hyperlink{_sequence_module_8h_a8060f2da765ca066ce5ff6e530f21262}{type\+Motion\+Flag}}}
+
+\mbox{\Hypertarget{_sequence_module_8h_ac45e47db3b5a3c32d8ce91c083668d19}\label{_sequence_module_8h_ac45e47db3b5a3c32d8ce91c083668d19}} 
+\index{SequenceModule.h@{SequenceModule.h}!typeMotionProcessSts@{typeMotionProcessSts}}
+\index{typeMotionProcessSts@{typeMotionProcessSts}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{typeMotionProcessSts}{typeMotionProcessSts}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_motion_process_status}{Motion\+Process\+Status}} \mbox{\hyperlink{_sequence_module_8h_ac45e47db3b5a3c32d8ce91c083668d19}{type\+Motion\+Process\+Sts}}}
+
+\mbox{\Hypertarget{_sequence_module_8h_a53ef9648986fb172d980c01b305e8d8f}\label{_sequence_module_8h_a53ef9648986fb172d980c01b305e8d8f}} 
+\index{SequenceModule.h@{SequenceModule.h}!typeMotionSeq@{typeMotionSeq}}
+\index{typeMotionSeq@{typeMotionSeq}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{typeMotionSeq}{typeMotionSeq}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_motion_seq}{Motion\+Seq}} \mbox{\hyperlink{_sequence_module_8h_a53ef9648986fb172d980c01b305e8d8f}{type\+Motion\+Seq}}}
+
+\mbox{\Hypertarget{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}\label{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}} 
+\index{SequenceModule.h@{SequenceModule.h}!typeSequenceFlag@{typeSequenceFlag}}
+\index{typeSequenceFlag@{typeSequenceFlag}!SequenceModule.h@{SequenceModule.h}}
+\doxysubsubsection{\texorpdfstring{typeSequenceFlag}{typeSequenceFlag}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_sequence_flag}{Sequence\+Flag}} \mbox{\hyperlink{_sequence_module_8h_aa0f7e0c68285efca28b13684c07b2258}{type\+Sequence\+Flag}}}
+

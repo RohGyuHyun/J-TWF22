@@ -1,0 +1,71 @@
+\hypertarget{_c_dialog_system_8h_source}{}\doxysection{CDialog\+System.\+h}
+\label{_c_dialog_system_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/dialog/CDialogSystem.h@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/dialog/CDialogSystem.h}}
+\mbox{\hyperlink{_c_dialog_system_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}afxdialogex.h"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{// CDialogSystem 대화 상자}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_dialog_system}{CDialogSystem}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9         DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_dialog_system}{CDialogSystem}})}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_c_dialog_system}{CDialogSystem}}(CWnd* pParent = \textcolor{keyword}{nullptr});   \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{13         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_dialog_system_a8ea1e5e1a18049b125062e2383f7c7eb}{\string~CDialogSystem}}();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{17         \textcolor{keyword}{enum} \{ IDD = \mbox{\hyperlink{resource_8h_a1cdab5411bc9d11904a4416974ee5e70}{IDD\_DIALOG\_SYSTEM}} \};}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{19 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20         \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\_PARA}}  \mbox{\hyperlink{class_c_dialog_system_af7ecb1e2aeacabbb12189295ba5d9104}{m\_stSystemPara}};}
+\DoxyCodeLine{21         CString \mbox{\hyperlink{class_c_dialog_system_a7d98f154d91f789efc21eb196fffff84}{m\_strCalibrationFileName}};}
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} InitCombo();}
+\DoxyCodeLine{24         BOOL LoadSystemPara();}
+\DoxyCodeLine{25         BOOL SaveSystemPara();}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} UpdatePara(BOOL isUpdate);}
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a3b75b6f83a3a38547714c9aa8fa3eebb}{SetCalFileName}}(CString \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{strFileName}});}
+\DoxyCodeLine{29         \mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a}{SYSTEM\_PARA}} \mbox{\hyperlink{class_c_dialog_system_a4841f0ded33747af18bce53924473c18}{GetSystemPara}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_dialog_system_af7ecb1e2aeacabbb12189295ba5d9104}{m\_stSystemPara}}; \};}
+\DoxyCodeLine{30         CSize \mbox{\hyperlink{class_c_dialog_system_af1a24d6b6597dae7383bdfa3f10a4e59}{GetInspImageSize}}() \{ \textcolor{keywordflow}{return} CSize(\mbox{\hyperlink{class_c_dialog_system_af7ecb1e2aeacabbb12189295ba5d9104}{m\_stSystemPara}}.\mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_a0be29e75679f25ed9b883ec4e5316ffa}{stDetector}}.\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a_a690f35df2b0be5bfbcc7496d27950741}{lCamHeight}}, \mbox{\hyperlink{class_c_dialog_system_af7ecb1e2aeacabbb12189295ba5d9104}{m\_stSystemPara}}.\mbox{\hyperlink{struct_s_y_s_t_e_m___p_a_r_a_a0be29e75679f25ed9b883ec4e5316ffa}{stDetector}}.\mbox{\hyperlink{struct_d_e_t_e_c_t_o_r___p_a_r_a_ac3686b0d80f5f62422380df0ebaf0129}{ICamWidth}}); \};}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_ab6a4b4ee27ce5560f46a87f1020100dc}{SetXrayEndTimeWrite}}(\mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} cEndTime);}
+\DoxyCodeLine{32         \mbox{\hyperlink{struct_t_i_m_e___d_a_t_e}{TIME\_DATE}} \mbox{\hyperlink{class_c_dialog_system_ab98f46600f5edcbe51854a1a1ac2595d}{GetXrayEndTimeRead}}();}
+\DoxyCodeLine{33 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{34         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a1dfeaa27228a8fa2d9e90d3e4cbbab11}{DoDataExchange}}(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{37 public:}
+\DoxyCodeLine{38         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a585e1b4406be15bbd41e451d3ec0e446}{OnBnClickedButtonClose}}();}
+\DoxyCodeLine{39         virtual BOOL \mbox{\hyperlink{class_c_dialog_system_a4788c16e7ae86672234bb3d3d5932663}{OnInitDialog}}();}
+\DoxyCodeLine{40         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_ad633f5092c6e79ea94c48e4dc8e2cc93}{OnBnClickedButtonSave}}();}
+\DoxyCodeLine{41         BOOL \mbox{\hyperlink{class_c_dialog_system_ad0640df17a6bc00da08b00443522990e}{m\_chk\_SysPara0}};}
+\DoxyCodeLine{42         BOOL \mbox{\hyperlink{class_c_dialog_system_a3748b1d686ac9ac08697f9c65688689e}{m\_chk\_SysPara1}};}
+\DoxyCodeLine{43         BOOL \mbox{\hyperlink{class_c_dialog_system_abb390b60c7d7fdea6317119dbaeb6f16}{m\_chk\_SysPara2}};}
+\DoxyCodeLine{44         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a5fc5a388edab1409666838aac7a8e729}{OnShowWindow}}(BOOL bShow, UINT nStatus);}
+\DoxyCodeLine{45         DECLARE\_EVENTSINK\_MAP()}
+\DoxyCodeLine{46         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a5660d46880a589a965af7319ac02cf5d}{ClickBtnenhctrlSystemParaString}}();}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_aad7db1cb8f22852a63753b66ccd2340c}{ClickBtnenhctrlSystemParaInt}}();}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_aa55ddc2a4a7b77a9374a69e90e96c94b}{ClickBtnenhctrlSystemParaDouble}}();}
+\DoxyCodeLine{49         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_aebc54636fc14a0fa1900bf6685b482b7}{OnBnClickedCheckSystemPara0}}();}
+\DoxyCodeLine{50         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a42798aa20b3ebd9bbd5f1494a7005230}{OnBnClickedCheckSystemPara1}}();}
+\DoxyCodeLine{51         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_ad7f764124754c6f9e0540e97b4dbcc4c}{OnBnClickedCheckSystemPara2}}();}
+\DoxyCodeLine{52         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a87555aab5338a0ece8e482ce3e2c7a23}{OnBnClickedCheckSystemPara3}}();}
+\DoxyCodeLine{53         afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_dialog_system_a736e650cc69f8e3bc11d71a6c7d2ac53}{OnBnClickedCheckSystemPara4}}();}
+\DoxyCodeLine{54         CComboBox \mbox{\hyperlink{class_c_dialog_system_a1f4957a050440e1df5318c6649785fcb}{m\_combo\_SystemPara0}};}
+\DoxyCodeLine{55         CComboBox \mbox{\hyperlink{class_c_dialog_system_ac04612920b564588c9f94547f15a75ab}{m\_combo\_SystemPara1}};}
+\DoxyCodeLine{56         CComboBox \mbox{\hyperlink{class_c_dialog_system_a9a8fadd425b15d31b619a400ced9fd89}{m\_combo\_SystemPara2}};}
+\DoxyCodeLine{57         CComboBox \mbox{\hyperlink{class_c_dialog_system_aded221feaca0f198b31abc971fe7b69f}{m\_combo\_SystemPara3}};}
+\DoxyCodeLine{58         CComboBox \mbox{\hyperlink{class_c_dialog_system_ac0af37db060f511452a34d217d75ce21}{m\_combo\_SystemPara4}};}
+\DoxyCodeLine{59         CComboBox \mbox{\hyperlink{class_c_dialog_system_a51965806602bb9e8e07c7f500bedda53}{m\_combo\_SystemPara5}};}
+\DoxyCodeLine{60         CComboBox \mbox{\hyperlink{class_c_dialog_system_a43670cd14bf217fcbf7e9968be94300d}{m\_combo\_SystemPara6}};}
+\DoxyCodeLine{61         CComboBox \mbox{\hyperlink{class_c_dialog_system_ab01bc9a96291b67e44cf950e52013c61}{m\_combo\_SystemPara7}};}
+\DoxyCodeLine{62         BOOL \mbox{\hyperlink{class_c_dialog_system_ad5cd5eb84550785e17e3c2f6efc8c267}{m\_chk\_SysPara3}};}
+\DoxyCodeLine{63         BOOL \mbox{\hyperlink{class_c_dialog_system_a1f614f9be109ffde480a2cebc4832fa3}{m\_chk\_SysPara4}};}
+\DoxyCodeLine{64         virtual BOOL \mbox{\hyperlink{class_c_dialog_system_a700f2d69e2ac77542c377a684383295c}{PreTranslateMessage}}(MSG* pMsg);}
+\DoxyCodeLine{65 \};}
+
+\end{DoxyCode}

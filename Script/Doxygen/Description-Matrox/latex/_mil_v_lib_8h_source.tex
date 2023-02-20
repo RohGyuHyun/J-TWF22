@@ -1,0 +1,94 @@
+\hypertarget{_mil_v_lib_8h_source}{}\doxysection{Mil\+VLib.\+h}
+\label{_mil_v_lib_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilVLib.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilVLib.h}}
+\mbox{\hyperlink{_mil_v_lib_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_class_8h}{MilClass.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_base_8h}{MilBase.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <deque>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define MAX\_DIGITIZER 5}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define CREVIS\_DCF \_T("{}JMV-\/BS20A.dcf"{}})}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define ES51\_INI \_T("{}XC-\/ES51.ini"{}})}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define BS20A\_INI \_T("{}MV-\/BS20A.ini"{}})}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}};}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_blob}{CMilBlob}};}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}};}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_pat}{CMilPat}};}
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_mod_finder}{CMilModFinder}};}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_edge_finder}{CMilEdgeFinder}};}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{24 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_v_lib}{CMilVLib}}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28         CString \mbox{\hyperlink{class_c_mil_v_lib_ae24cf750c4724e4278ca87079d56e322}{strGrabberName}};}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_c_mil_v_lib}{CMilVLib}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_c_mil_v_lib}{\string~CMilVLib}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{31         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_mil_v_lib}{CMilVLib}} * Instance(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{32         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_mil_v_lib}{CMilVLib}} *\mbox{\hyperlink{class_c_mil_v_lib_a2eca20a70cf66688b11588092e5a12c0}{m\_pInstance}};}
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} Setting(TCHAR* szGrabber, TCHAR *camFile);}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} AddCamera(TCHAR* szGrabber, TCHAR * camFile);}
+\DoxyCodeLine{35         \textcolor{keywordtype}{int} DefaultSetting(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{36         \textcolor{keywordtype}{void} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* NewImage(\textcolor{keywordtype}{int} iDepth=8);}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* NewImage(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pOrgBuff);}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}}* NewDisplay(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}}* NewDigitizer(\textcolor{keywordtype}{int} tGrabber);}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_c_mil_blob}{CMilBlob}}*        NewBlobTool(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilBuffer);}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_c_mil_pat}{CMilPat}}* NewPatTool(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_c_mil_mod_finder}{CMilModFinder}}* NewModFinderTool(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_c_mil_edge_finder}{CMilEdgeFinder}}* NewEdgeFinderTool(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{45         \textcolor{keyword}{static} CString          \mbox{\hyperlink{class_c_mil_v_lib_a7227964ba5eff6c986ca74d5c1cfe1c6}{m\_strError}};}
+\DoxyCodeLine{46         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      \mbox{\hyperlink{class_c_mil_v_lib_a7b4e712740f9e915f6d44735e85ab569}{m\_nPixelMapEntries}};}
+\DoxyCodeLine{47         \textcolor{keyword}{static} CString          \mbox{\hyperlink{class_c_mil_v_lib_a423b0acf51de387722fe51e29b4911a5}{m\_strPixelMapFilePath}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      **\mbox{\hyperlink{class_c_mil_v_lib_ae371c6d161d483a5c5158cc73588bca4}{m\_pPointDefect}};}
+\DoxyCodeLine{50         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      **\mbox{\hyperlink{class_c_mil_v_lib_a6d2ecdcdb000681344ef1216aff853eb}{m\_pColDefect}};}
+\DoxyCodeLine{51         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      **\mbox{\hyperlink{class_c_mil_v_lib_ae09c5ad9f379546788a6c1743ed0ceab}{m\_pRowDefect}};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      \mbox{\hyperlink{class_c_mil_v_lib_a1f6afd61d781dc7ac3d1e00883bcbbd4}{m\_nPointDefectCnt}};}
+\DoxyCodeLine{54         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      \mbox{\hyperlink{class_c_mil_v_lib_af3823b160b2432e92387d7efc99e9549}{m\_nColDefectCnt}};}
+\DoxyCodeLine{55         \textcolor{keyword}{static} \textcolor{keywordtype}{int}                      \mbox{\hyperlink{class_c_mil_v_lib_aa9a8ce089fd46061c5a9daa9967a6a46}{m\_nRowDefectCnt}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keyword}{private}:}
+\DoxyCodeLine{58         }
+\DoxyCodeLine{59         \mbox{\hyperlink{class_c_mil_application}{CMilApplication}}  *m\_pMilApplication;}
+\DoxyCodeLine{60         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} *m\_pMilDisplay;}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}} *m\_pMilDigitizer[\mbox{\hyperlink{_mil_v_lib_8h_a870eaff10bf1c066e7a9d52a80010972}{MAX\_DIGITIZER}}];}
+\DoxyCodeLine{62         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* m\_pMilBuffer;}
+\DoxyCodeLine{63         \textcolor{keywordtype}{int} m\_currDigiNum;}
+\DoxyCodeLine{64         \textcolor{keywordtype}{int} m\_nDigitizer;}
+\DoxyCodeLine{65         }
+\DoxyCodeLine{66 \textcolor{keyword}{public}:}
+\DoxyCodeLine{67         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} * GetDefaultDisp(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{68         \textcolor{keywordtype}{void} SetDefDigitizer(\textcolor{keywordtype}{int} nDigitizer);}
+\DoxyCodeLine{69         \textcolor{keywordtype}{int} GrabContinuous(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{70         \textcolor{keywordtype}{int} SingleGrab(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{71         \textcolor{keywordtype}{int} SingleGrabTrigger(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{72         \textcolor{keywordtype}{int} StopGrab(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{73         \textcolor{keywordtype}{int} StopGrabContinuous(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{74         \textcolor{keywordtype}{void} MilSaveImage(CString DIR);}
+\DoxyCodeLine{75         \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}}* GetDigitizer(\textcolor{keywordtype}{int} iDigitizer=0);}
+\DoxyCodeLine{76         \textcolor{keywordtype}{int} SetAverageCounter(\textcolor{keywordtype}{int} nCounter) ;}
+\DoxyCodeLine{77         \textcolor{keywordtype}{int} GetAverageCounter(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{78     \textcolor{keywordtype}{int} SetAverageCounterSoft(\textcolor{keywordtype}{int} nCounter) ;}
+\DoxyCodeLine{79         \textcolor{keywordtype}{int} GetHRSCLevel(\textcolor{keywordtype}{int} nLevel);}
+\DoxyCodeLine{80         \textcolor{keywordtype}{int} GetAverageCounterSoft(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{81         \textcolor{keywordtype}{int} GetHRSCLevel(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{82         \textcolor{keywordtype}{int} SetImgEnhance(\textcolor{keywordtype}{int} nCount);}
+\DoxyCodeLine{83         \textcolor{keywordtype}{int} GetImgEnhance(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{84         }
+\DoxyCodeLine{85         \textcolor{keywordtype}{int} SetupTrigger(BOOL OnOff);}
+\DoxyCodeLine{86         \textcolor{keywordtype}{int} MakeCombineImage(CString strFileName, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilSrc, \textcolor{keywordtype}{int} FileType=M\_BMP);}
+\DoxyCodeLine{87         BOOL IsGrabDone(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{88         \textcolor{keyword}{static} \textcolor{keywordtype}{int} ScrnNormalize(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilResult, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilOrg, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilWhite, \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDark, \textcolor{keywordtype}{int} MaxWhiteValue);}
+\DoxyCodeLine{89         \textcolor{keywordtype}{int} SetAverageStatus(BOOL status);}
+\DoxyCodeLine{90         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* GetGrabBuffer(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{91         deque<CMilBuffer *> \mbox{\hyperlink{class_c_mil_v_lib_ac50bbd0f453ab61ec6269bcbbc607069}{m\_dequeMilBuff}};}
+\DoxyCodeLine{92         deque<CMilDisplay *> \mbox{\hyperlink{class_c_mil_v_lib_a201f75b89bf890a11f78ba6a3a4818fc}{m\_dequeMilDisp}};}
+\DoxyCodeLine{93 \};}
+
+\end{DoxyCode}

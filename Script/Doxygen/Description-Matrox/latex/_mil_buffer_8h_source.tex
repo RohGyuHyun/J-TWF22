@@ -1,0 +1,117 @@
+\hypertarget{_mil_buffer_8h_source}{}\doxysection{Mil\+Buffer.\+h}
+\label{_mil_buffer_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilBuffer.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilBuffer.h}}
+\mbox{\hyperlink{_mil_buffer_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stdafx_8h}{stdafx.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_class_8h}{MilClass.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_graph_8h}{MilGraph.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <UniUtility.h>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{13 \textcolor{keyword}{struct }\mbox{\hyperlink{structt_image_properties}{tImageProperties}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15         CSize \mbox{\hyperlink{structt_image_properties_ae02baf2f6772b3a8f8fac69027d1f258}{ImageSize}};}
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} \mbox{\hyperlink{structt_image_properties_a55600ea234165ebc3d3e0b57f79cbe0f}{Depth}};}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} \mbox{\hyperlink{structt_image_properties_acde309a6d412645f60e5902aa9efe70d}{BandSize}};}
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} \mbox{\hyperlink{structt_image_properties_add449b37cde4a37a4d00035a26cda5a8}{Sign}};}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} \mbox{\hyperlink{structt_image_properties_af2d3d670418c28e7ab26a4c4a30f15dd}{Type}};}
+\DoxyCodeLine{20         MIL\_INT64 \mbox{\hyperlink{structt_image_properties_a1cbcd2cf4cc14cc9dbb31d8ea24e208a}{Attr}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{struct }\mbox{\hyperlink{structt_export_a_v_i}{tExportAVI}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26         CString \mbox{\hyperlink{structt_export_a_v_i_ad1da36747335ce77c1b2d115ce23037e}{strFileName}};}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int}     \mbox{\hyperlink{structt_export_a_v_i_a74a68ab29bd0f1ce7f036d18c605006c}{iFrame}};}
+\DoxyCodeLine{28         \textcolor{keywordtype}{double} \mbox{\hyperlink{structt_export_a_v_i_a8ed8312741e9cd0f34007ffbe57a87e1}{dblFrameRate}};}
+\DoxyCodeLine{29         MIL\_INT64 \mbox{\hyperlink{structt_export_a_v_i_a889763bc8292e6ac01b78346cc6324a9}{FileFormat}};}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}};}
+\DoxyCodeLine{38 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_graph}{CMilGraph}}}
+\DoxyCodeLine{39 \{}
+\DoxyCodeLine{40 \textcolor{keyword}{public}:}
+\DoxyCodeLine{41 \textcolor{comment}{//      enum tMilAttr\{BUF\_ARRAY=M\_ARRAY, BUF\_IMAGE=M\_IMAGE, BUF\_KERNEL=M\_KERNEL, BUF\_LUT=M\_LUT, BUF\_DISP=M\_DISP, BUF\_PROC=M\_PROC, BUF\_DIB=M\_DIB\};}}
+\DoxyCodeLine{42 \textcolor{comment}{//      enum tMilDepth\{DEP\_1=1, DEP\_8=8, DEP\_16=16, DEP\_32=32, DEP\_UNSIGNED=M\_UNSIGNED, DEP\_SIGNED=M\_SIGNED, DEP\_FLOAT=M\_FLOAT\};}}
+\DoxyCodeLine{43         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_mil_buffer_a4f8de6ecddc206dbf64c6eb5a211af6e}{m\_milIDBuffCounter}};}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}(CSize ImageSize);}
+\DoxyCodeLine{46         \mbox{\hyperlink{class_c_mil_buffer}{\string~CMilBuffer}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{47     }
+\DoxyCodeLine{48         \textcolor{keywordtype}{int} GetMilCounter(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{49         \textcolor{keywordtype}{int} Restore(CString strFileName);}
+\DoxyCodeLine{50         \textcolor{keywordtype}{int} RestoreJPG(CString strFileName, MIL\_ID milIDSystem, MIL\_ID * pMilIDBuffter);}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} BufLoad(CString strFileName);}
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} BufImport(CString strFileName, MIL\_INT FileFormat=M\_BMP, MIL\_INT Operation=M\_LOAD);}
+\DoxyCodeLine{54         \textcolor{keywordtype}{int} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{55         BOOL IsAlloced(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{56         \textcolor{keywordtype}{void} ConvertToBMPFmt(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pBMPBuffer, MIL\_INT64 BufferAttribute=M\_IMAGE+M\_PROC);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void} ExportBMP(CString strFileName);}
+\DoxyCodeLine{58         \textcolor{keywordtype}{void} ExportJPG(CString strFileName);}
+\DoxyCodeLine{59         \textcolor{keywordtype}{void} Export(CString strFileName, \textcolor{keywordtype}{int} m\_iFileFormat = M\_TIFF);}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} SetFileFormat(MIL\_INT iFileFormat);}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* operator=(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} \&  LValue);}
+\DoxyCodeLine{62         MIL\_INT64 SetAttribute(MIL\_INT64 BufferAttribute);}
+\DoxyCodeLine{63         MIL\_INT64 GetAttribute(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{64         \textcolor{keywordtype}{void} Select(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} * pMilDisplay);}
+\DoxyCodeLine{65         \textcolor{keywordtype}{void} UnSelectDisp(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{66         BOOL IsSelectDisp(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{67         \textcolor{keywordtype}{void} SelectWindow(HWND ClientWindowHandle);}
+\DoxyCodeLine{68         \textcolor{keywordtype}{void} SelectWindow(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} * pMilDisplay,  HWND ClientWindowHandle);}
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} SelectWindow(CWnd *pHWindow);}
+\DoxyCodeLine{70         \textcolor{keywordtype}{void} SelectWindow(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} * pMilDisplay, CWnd *pHWindow, BOOL bRemove=FALSE);}
+\DoxyCodeLine{71         BOOL IsDispAllocated(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{72         \textcolor{keywordtype}{void} GetImageProperties(\mbox{\hyperlink{structt_image_properties}{tImageProperties}} *pImageProperty);}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} ResizeBuf(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilDest, CdblSize imageSize);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         MIL\_INT \mbox{\hyperlink{class_c_mil_buffer_a322642fdb4985d47abfbdd0aed21d3f1}{m\_iDepth}};}
+\DoxyCodeLine{76         MIL\_INT64 \mbox{\hyperlink{class_c_mil_buffer_a325eb4afcc666d91c0797a922d80db6a}{m\_BufAttr}};}
+\DoxyCodeLine{77         MIL\_INT \mbox{\hyperlink{class_c_mil_buffer_a5ce9116f490b82c84982a8e2d79cfb9e}{m\_iFileFormat}};}
+\DoxyCodeLine{78         \mbox{\hyperlink{structt_export_a_v_i}{tExportAVI}}* \mbox{\hyperlink{class_c_mil_buffer_a38a328d14027686da79b25799c649fa3}{m\_pExportAVIInfo}};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         \textcolor{keywordtype}{int} Alloc2D(CSize imageSize);}
+\DoxyCodeLine{81         \textcolor{keywordtype}{int} AllocColor2D(CSize imageSize);}
+\DoxyCodeLine{82         \textcolor{keywordtype}{void} Put2D(CSize offsetPos, CSize sizeImage, \textcolor{keywordtype}{void} *pUserArrayPtr);}
+\DoxyCodeLine{83         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * Child2D(CRect *pRect);}
+\DoxyCodeLine{84         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * Child2D(\textcolor{keywordtype}{int} offsetX, \textcolor{keywordtype}{int} offsetY, \textcolor{keywordtype}{int} childWidth, \textcolor{keywordtype}{int} childHeight);}
+\DoxyCodeLine{85         \textcolor{keywordtype}{int} Create2D(CSize sizeImage, \textcolor{keywordtype}{void} *pAddr, \textcolor{keywordtype}{int} nDepth=8L+M\_UNSIGNED, \textcolor{keywordtype}{int} Attr=M\_IMAGE+M\_PROC);}
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} * GetAddr(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{87         \textcolor{keywordtype}{void} SetDepth(\textcolor{keywordtype}{int} Depth);}
+\DoxyCodeLine{88         \textcolor{keywordtype}{void} SetChannelCount(\textcolor{keywordtype}{int} nChannel);}
+\DoxyCodeLine{89         \textcolor{keywordtype}{int} GetDepth(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{90         CWnd *\mbox{\hyperlink{class_c_mil_buffer_a47e7eeeb25bafed83775bce21d2bfe3c}{m\_pHWndSelected}};}
+\DoxyCodeLine{91         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* DuplicateBuff(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{92         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_mil_graph_a03ef8928ebdc2aba7026a683927db9bb}{Clear}}(MIL\_DOUBLE ClearColor=M\_COLOR\_BLACK);}
+\DoxyCodeLine{93         \textcolor{keywordtype}{int} Copy(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* pMilSrc);}
+\DoxyCodeLine{94         \textcolor{keywordtype}{int} CopyClip(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}}* pMilClipBuffer, CPoint Offset);}
+\DoxyCodeLine{95         \textcolor{keywordtype}{int} Get2D(\textcolor{keywordtype}{void} * pUserArray, CRect rect);}
+\DoxyCodeLine{96         \textcolor{keywordtype}{int} GetColor(\textcolor{keywordtype}{void} * pUserArray);}
+\DoxyCodeLine{97         \textcolor{keywordtype}{int} SetImageProperties(\mbox{\hyperlink{structt_image_properties}{tImageProperties}}* pImageProperties);}
+\DoxyCodeLine{98         \textcolor{keywordtype}{int} SetDisplay(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}}* pMilDisplay);}
+\DoxyCodeLine{99         \textcolor{keywordtype}{void} CopyColor2D(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pBufDest, CRect rectCopy, CPoint ofsDest=CPoint(0,0), \textcolor{keywordtype}{int} bandDest=M\_ALL\_BANDS , \textcolor{keywordtype}{int} bandSrc=M\_ALL\_BANDS);}
+\DoxyCodeLine{100         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}}* GetDisplay();}
+\DoxyCodeLine{101         \textcolor{keywordtype}{int} WndLvlTranform(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pBufDest, \textcolor{keywordtype}{int} OrgStart, \textcolor{keywordtype}{int} OrgEnd, \textcolor{keywordtype}{int} DestStart, \textcolor{keywordtype}{int} DestEnd);}
+\DoxyCodeLine{102 \textcolor{keyword}{private}:}
+\DoxyCodeLine{103         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} *m\_pMilDisplay;}
+\DoxyCodeLine{104 \textcolor{keyword}{public}:}
+\DoxyCodeLine{105         \textcolor{keywordtype}{int} GetIDBuffer(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{106         \textcolor{keywordtype}{void} SetIDBuffer(\textcolor{keywordtype}{int} milID);}
+\DoxyCodeLine{107         \textcolor{keywordtype}{int} GetPixelGray(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} * vGray);}
+\DoxyCodeLine{108         \textcolor{keywordtype}{int} GetPixelGray(CPoint posPixel, \textcolor{keywordtype}{int} * vGray);}
+\DoxyCodeLine{109         \textcolor{keywordtype}{int} GetPixelColor(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, COLORREF * vColor, \textcolor{keywordtype}{int} typeColor= M\_RGB24);}
+\DoxyCodeLine{110         \textcolor{keywordtype}{int} GetPixelColor(CPoint posPixel, COLORREF * vColor);}
+\DoxyCodeLine{111         \textcolor{keywordtype}{int} GetColor2D(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, CSize sizeImage, \textcolor{keywordtype}{void} * pBuffer, \textcolor{keywordtype}{int} typeColor = M\_RGB24);}
+\DoxyCodeLine{112         \textcolor{keywordtype}{int} LoadRawFile(CString strFileName, CSize rawSize);}
+\DoxyCodeLine{113         \textcolor{keywordtype}{void} Put(\textcolor{keywordtype}{void} * pUserArrayPtr);}
+\DoxyCodeLine{114         \textcolor{keywordtype}{int} BufImportJPG(CString strFileName, MIL\_ID milIDSystem, MIL\_ID milIDBuffter);}
+\DoxyCodeLine{115         \textcolor{keywordtype}{int} ExportAVIOpen(\mbox{\hyperlink{structt_export_a_v_i}{tExportAVI}} *pEA, \textcolor{keywordtype}{int} iOpenMode = M\_OPEN);}
+\DoxyCodeLine{116         \textcolor{keywordtype}{int} ExportAVI(\mbox{\hyperlink{structt_export_a_v_i}{tExportAVI}} *pEA=NULL);}
+\DoxyCodeLine{117         \textcolor{keywordtype}{int} ExportAVIClose(\mbox{\hyperlink{structt_export_a_v_i}{tExportAVI}} *pEA);}
+\DoxyCodeLine{118         BOOL \mbox{\hyperlink{class_c_mil_buffer_aec0ce0448bf826ef372504f0d2d8fef8}{m\_bAVIClosed}};}
+\DoxyCodeLine{119         \textcolor{keywordtype}{void} Lock();}
+\DoxyCodeLine{120         \textcolor{keywordtype}{void} Unlock();}
+\DoxyCodeLine{121         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_mil_buffer_a4b9a9544567f3f29188ddb988ae8953a}{m\_nChannel}};}
+\DoxyCodeLine{122 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Matrox: D:/OneDrive/ngh/J-TWF22/Library/Matrox/MilBase.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Logo-MatroxImaging.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Matrox<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_bd976f84b5cc9bebc92e068d65fec952.html">OneDrive</a></li><li class="navelem"><a class="el" href="dir_526c377dd3d3fc952efb581059fc7050.html">ngh</a></li><li class="navelem"><a class="el" href="dir_03a9c10c0e9d1674deb214bc7339cb82.html">J-TWF22</a></li><li class="navelem"><a class="el" href="dir_27d2e3319eb018fb205d2bb854feecd3.html">Library</a></li><li class="navelem"><a class="el" href="dir_7ba3e800ede1a5bca504f1ffc43e3c8c.html">Matrox</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MilBase.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mil_base_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;mil.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifdef _MATROX_DLL</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define MIL_DLLDECL __declspec(dllexport)</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">    8</a></span><span class="preprocessor">#define MIL_DLLDECL __declspec(dllimport)</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _WIN64</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef _DEBUG</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma comment(lib, &quot;Matrox32&quot;</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma comment(lib, &quot;MatroxD32&quot;</span>)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef _DEBUG</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma comment(lib, &quot;Matrox64&quot;</span>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#pragma comment(lib, &quot;MatroxD64&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#abe29297766349913b28a5ca90c2b9833">   25</a></span><span class="preprocessor">#define GB_BLUEEYE      _T(&quot;BLUEEYE4A&quot;</span>)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a9594127a05a366181c3bf807682be8e9">   26</a></span><span class="preprocessor">#define GB_BASLER       _T(&quot;BASLER&quot;</span>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a2956bb2bab4fba7ebd1d160ec7d9b86f">   27</a></span><span class="preprocessor">#define GB_METER4M      _T(&quot;METEROR4M&quot;</span>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#affd83e8d44aa082b534bbe23353a9baf">   28</a></span><span class="preprocessor">#define GB_SOLIOS       _T(&quot;SOLIOS&quot;</span>)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#aa021de03642b1f692388585291a1d970">   29</a></span><span class="preprocessor">#define GB_NONE         _T(&quot;NONE&quot;</span>)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a05650cef4e858c223401e203bf423a91">   30</a></span><span class="preprocessor">#define GB_NI           _T(&quot;NI&quot;</span>)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a828129148fbaf3b9d865bceef43b09a3">   31</a></span><span class="preprocessor">#define GB_PAXSCAN      _T(&quot;PAXSCAN&quot;</span>)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a500bc15dd3dd180c56b00326e4507ae9">   32</a></span><span class="preprocessor">#define GB_XMARU        _T(&quot;XMARU&quot;</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a58eb556f4b32d2fc38182f8c5f281eb1">   33</a></span><span class="preprocessor">#define GB_EURESYS  _T(&quot;EURESYS&quot;</span>)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structt_wnd_lv.html">   39</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structt_wnd_lv.html">tWndLv</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structt_wnd_lv.html#a576fde8e6eaf4d2f8c020b40108122be">   41</a></span>        <span class="keywordtype">long</span> <a class="code hl_variable" href="structt_wnd_lv.html#ad0b221085b233860f5ed051ba092ae3c">OrgStart</a>, <a class="code hl_variable" href="structt_wnd_lv.html#a242cf23bd73b3792ec331e56e450376b">OrgEnd</a>, <a class="code hl_variable" href="structt_wnd_lv.html#ae791d2b3a45387a10b2df864347c33ac">DestStart</a>, <a class="code hl_variable" href="structt_wnd_lv.html#a576fde8e6eaf4d2f8c020b40108122be">DestEnd</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_c_mil_base.html">   49</a></span><span class="keyword">class </span><a class="code hl_define" href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">MIL_DLLDECL</a> <a class="code hl_class" href="class_c_mil_base.html">CMilBase</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_class" href="class_c_mil_base.html">CMilBase</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_class" href="class_c_mil_base.html">~CMilBase</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_c_mil_base.html#a9a5a6a0ea94200631793ae33df6f13a7">   54</a></span>        <span class="keyword">static</span> MIL_ID <a class="code hl_variable" href="class_c_mil_base.html#a9a5a6a0ea94200631793ae33df6f13a7">m_milIDApplication</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="_mil_base_8h.html#a24fea8a19f5d7e03de82d1d34adabea5">   57</a></span><span class="preprocessor">#define WM_REQ_INSP WM_USER+200+1</span></div>
+<div class="ttc" id="a_mil_base_8h_html_ac59caefbe3fb1e18fa522ad367a45a49"><div class="ttname"><a href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">MIL_DLLDECL</a></div><div class="ttdeci">#define MIL_DLLDECL</div><div class="ttdef"><b>Definition:</b> MilBase.h:8</div></div>
+<div class="ttc" id="aclass_c_mil_base_html"><div class="ttname"><a href="class_c_mil_base.html">CMilBase</a></div><div class="ttdoc">모든 Class의 Base Class로 공용의 자료활용에 사용됨</div><div class="ttdef"><b>Definition:</b> MilBase.h:50</div></div>
+<div class="ttc" id="aclass_c_mil_base_html_a9a5a6a0ea94200631793ae33df6f13a7"><div class="ttname"><a href="class_c_mil_base.html#a9a5a6a0ea94200631793ae33df6f13a7">CMilBase::m_milIDApplication</a></div><div class="ttdeci">static MIL_ID m_milIDApplication</div><div class="ttdef"><b>Definition:</b> MilBase.h:54</div></div>
+<div class="ttc" id="astructt_wnd_lv_html"><div class="ttname"><a href="structt_wnd_lv.html">tWndLv</a></div><div class="ttdoc">이미지의 Gray level windowing의 파라메터전달을 위해사용(CMilBuffer::WndLvlTranform)</div><div class="ttdef"><b>Definition:</b> MilBase.h:40</div></div>
+<div class="ttc" id="astructt_wnd_lv_html_a242cf23bd73b3792ec331e56e450376b"><div class="ttname"><a href="structt_wnd_lv.html#a242cf23bd73b3792ec331e56e450376b">tWndLv::OrgEnd</a></div><div class="ttdeci">long OrgEnd</div><div class="ttdef"><b>Definition:</b> MilBase.h:41</div></div>
+<div class="ttc" id="astructt_wnd_lv_html_a576fde8e6eaf4d2f8c020b40108122be"><div class="ttname"><a href="structt_wnd_lv.html#a576fde8e6eaf4d2f8c020b40108122be">tWndLv::DestEnd</a></div><div class="ttdeci">long DestEnd</div><div class="ttdef"><b>Definition:</b> MilBase.h:41</div></div>
+<div class="ttc" id="astructt_wnd_lv_html_ad0b221085b233860f5ed051ba092ae3c"><div class="ttname"><a href="structt_wnd_lv.html#ad0b221085b233860f5ed051ba092ae3c">tWndLv::OrgStart</a></div><div class="ttdeci">long OrgStart</div><div class="ttdef"><b>Definition:</b> MilBase.h:41</div></div>
+<div class="ttc" id="astructt_wnd_lv_html_ae791d2b3a45387a10b2df864347c33ac"><div class="ttname"><a href="structt_wnd_lv.html#ae791d2b3a45387a10b2df864347c33ac">tWndLv::DestStart</a></div><div class="ttdeci">long DestStart</div><div class="ttdef"><b>Definition:</b> MilBase.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 금 9월 23 2022 08:29:06, 프로젝트명 : Matrox, 생성자 : &#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

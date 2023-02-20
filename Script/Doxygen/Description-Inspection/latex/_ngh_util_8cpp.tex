@@ -1,0 +1,189 @@
+\hypertarget{_ngh_util_8cpp}{}\doxysection{D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\+Ngh\+Util.cpp 파일 참조}
+\label{_ngh_util_8cpp}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/NghUtil.cpp@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/include/NghUtil.cpp}}
+{\ttfamily \#include \char`\"{}pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}afxwin.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}define.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ngh\+Util.\+h\char`\"{}}\newline
+Ngh\+Util.\+cpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ngh_util_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ngh_util_8cpp_aa87625d6d24e987864417739501654fa}{Rand\+Val}} (int n\+Start, int \mbox{\hyperlink{_ngh_util_8h_a07efaa18bdfba0d31b18cefda823374f}{n\+End}})
+\item 
+int \mbox{\hyperlink{_ngh_util_8cpp_a0c31714250c7efa998e14c00d28a2a1e}{limite}} (int n\+Val)
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_af9bd9071e3cf95589d1892dda03c9999}{File\+Delete}} (CString File\+Path, CString \mbox{\hyperlink{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}{File\+Name}})
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_afe9ecc23b2250bb5e4e4cbf9b1c55002}{File\+Search}} (CString File\+Path, CString \mbox{\hyperlink{_ngh_util_8h_aac0b8fa50d2366102c00c0270f40742d}{File\+Name}})
+\item 
+void \mbox{\hyperlink{_ngh_util_8cpp_af2a78d13176e842d06b3678b10df905f}{Make\+Directories}} (CString path)
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_a37b7afba445e9ed4aadcb64cb3116cc9}{Degree\+To\+Ration}} (double deg)
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_a76912f2995137f137c5e69f16eeaa545}{Ratian\+To\+Degree}} (double rad)
+\item 
+void \mbox{\hyperlink{_ngh_util_8cpp_aae4f250cbabb6f94bfc2a0505f62a474}{Do\+Events}} ()
+\item 
+void \mbox{\hyperlink{_ngh_util_8cpp_a4b698d87e4619748df5120d08002f3ee}{Delay}} (long ms, BOOL \mbox{\hyperlink{_ngh_util_8h_af1300690de3c6a4e76803e83cbd1af51}{b\+Event}})
+\item 
+void \mbox{\hyperlink{_ngh_util_8cpp_a979840c0d04cf50cf95a7d0b161bb087}{Delete\+Folder\+And\+File}} (CString str\+Path)
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_ae403c27e57bcb858d983d3336cbfaaeb}{Create\+Dir}} (LPCTSTR lpsz\+Directory)
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_afaa9126ba1ef824bad213ad0555c8c2b}{Folder\+Search}} (CString str\+Folder)
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_a9c490d2cc388be966a5f0ae7e184f46f}{Limite\+Range\+Check}} (double d\+Min, double \mbox{\hyperlink{_ngh_util_8h_aa93131b56d4f88dadc070f19a7ba2fd6}{d\+Max}}, double \mbox{\hyperlink{_ngh_util_8h_abe1f95b200441c080d433a188d65504c}{d\+After\+Val}}, double \mbox{\hyperlink{_ngh_util_8h_a7b3462627b9aacf7aa09979a39fa72ad}{d\+Befor\+Val}}, int \mbox{\hyperlink{_ngh_util_8h_a4d9af100b9f858e1dc3c1b66b018bf9b}{n\+Input\+Type}}, CString \mbox{\hyperlink{_ngh_util_8h_adfc704156de30042497c228c30dbca21}{str\+Input\+Label}})
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_af9471c31533d998117492fc73103742f}{Drive\+Use\+Search}} (CString str\+Use\+Drive\+Name)
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_a5c66b727ddf14ed68ea62b4fb39ce33d}{Use\+Drive\+Free\+Size}} (CString str\+Drive\+Name, CString \mbox{\hyperlink{_ngh_util_8h_a698aca07fc55167ab7b0a1aeb207e85a}{str\+Size\+Type}})
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_a68b06f6d314a0bf9738d6a4add771b29}{Get\+Write\+File\+Time}} (CString str\+File\+Path, SYSTEMTIME $\ast$\mbox{\hyperlink{_ngh_util_8h_a1f9cb1d25414ba95ab7ee6f4a04dcd8c}{return\+Time}}, int \mbox{\hyperlink{_ngh_util_8h_a05d4a6327dd04c2ce2d512b558c7e237}{n\+Get\+Time\+Type}})
+\item 
+BOOL \mbox{\hyperlink{_ngh_util_8cpp_af7b510a30e440ce5b380af504d6acb38}{File\+Write\+Time\+To\+Backup\+File}} (CString str\+Src\+File\+Path, CString \mbox{\hyperlink{_ngh_util_8h_af9877f345f4cd49cab225f4f44395460}{str\+Backup\+File\+Path}}, CString \mbox{\hyperlink{_ngh_util_8h_abbbaebf870c67f1fed0004b665097366}{str\+File\+Name}})
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_a4200699fb1ae963a326790601cb90eb4}{Get\+Avg}} (double $\ast$d\+Each\+Rslt\+Arr, int \mbox{\hyperlink{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}{n\+Each\+Rslt\+Cnt}})
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_a2cd9561d97d1fd2b3b9f9de0e8504340}{Get\+STD}} (double $\ast$d\+Each\+Rslt\+Arr, int \mbox{\hyperlink{_ngh_util_8h_a51ca865171f8dba2c7c43362935a84bf}{n\+Each\+Rslt\+Cnt}}, int \mbox{\hyperlink{_ngh_util_8h_a8f380b1c54ce5e92a6bf5b2d5b1dae69}{n\+Option}})
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_a21bc28a6fefaaaac7924cda57f42fe65}{Get\+Pita\+Hight}} (double x, double \mbox{\hyperlink{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}{y}})
+\item 
+double \mbox{\hyperlink{_ngh_util_8cpp_aabde5fefde3ef6dedd20b9303e262e84}{Get\+Pita}} (double x, double \mbox{\hyperlink{_ngh_util_8h_ab927965981178aa1fba979a37168db2a}{y}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{함수 문서화}
+\mbox{\Hypertarget{_ngh_util_8cpp_ae403c27e57bcb858d983d3336cbfaaeb}\label{_ngh_util_8cpp_ae403c27e57bcb858d983d3336cbfaaeb}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!CreateDir@{CreateDir}}
+\index{CreateDir@{CreateDir}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{CreateDir()}{CreateDir()}}
+{\footnotesize\ttfamily BOOL Create\+Dir (\begin{DoxyParamCaption}\item[{LPCTSTR}]{lpsz\+Directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a37b7afba445e9ed4aadcb64cb3116cc9}\label{_ngh_util_8cpp_a37b7afba445e9ed4aadcb64cb3116cc9}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!DegreeToRation@{DegreeToRation}}
+\index{DegreeToRation@{DegreeToRation}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{DegreeToRation()}{DegreeToRation()}}
+{\footnotesize\ttfamily double Degree\+To\+Ration (\begin{DoxyParamCaption}\item[{double}]{deg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a4b698d87e4619748df5120d08002f3ee}\label{_ngh_util_8cpp_a4b698d87e4619748df5120d08002f3ee}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!Delay@{Delay}}
+\index{Delay@{Delay}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{Delay()}{Delay()}}
+{\footnotesize\ttfamily void Delay (\begin{DoxyParamCaption}\item[{long}]{ms,  }\item[{BOOL}]{b\+Event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a979840c0d04cf50cf95a7d0b161bb087}\label{_ngh_util_8cpp_a979840c0d04cf50cf95a7d0b161bb087}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!DeleteFolderAndFile@{DeleteFolderAndFile}}
+\index{DeleteFolderAndFile@{DeleteFolderAndFile}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{DeleteFolderAndFile()}{DeleteFolderAndFile()}}
+{\footnotesize\ttfamily void Delete\+Folder\+And\+File (\begin{DoxyParamCaption}\item[{CString}]{str\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_aae4f250cbabb6f94bfc2a0505f62a474}\label{_ngh_util_8cpp_aae4f250cbabb6f94bfc2a0505f62a474}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!DoEvents@{DoEvents}}
+\index{DoEvents@{DoEvents}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{DoEvents()}{DoEvents()}}
+{\footnotesize\ttfamily void Do\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_af9471c31533d998117492fc73103742f}\label{_ngh_util_8cpp_af9471c31533d998117492fc73103742f}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!DriveUseSearch@{DriveUseSearch}}
+\index{DriveUseSearch@{DriveUseSearch}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{DriveUseSearch()}{DriveUseSearch()}}
+{\footnotesize\ttfamily BOOL Drive\+Use\+Search (\begin{DoxyParamCaption}\item[{CString}]{str\+Use\+Drive\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_af9bd9071e3cf95589d1892dda03c9999}\label{_ngh_util_8cpp_af9bd9071e3cf95589d1892dda03c9999}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!FileDelete@{FileDelete}}
+\index{FileDelete@{FileDelete}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{FileDelete()}{FileDelete()}}
+{\footnotesize\ttfamily BOOL File\+Delete (\begin{DoxyParamCaption}\item[{CString}]{File\+Path,  }\item[{CString}]{File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_afe9ecc23b2250bb5e4e4cbf9b1c55002}\label{_ngh_util_8cpp_afe9ecc23b2250bb5e4e4cbf9b1c55002}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!FileSearch@{FileSearch}}
+\index{FileSearch@{FileSearch}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{FileSearch()}{FileSearch()}}
+{\footnotesize\ttfamily BOOL File\+Search (\begin{DoxyParamCaption}\item[{CString}]{File\+Path,  }\item[{CString}]{File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_af7b510a30e440ce5b380af504d6acb38}\label{_ngh_util_8cpp_af7b510a30e440ce5b380af504d6acb38}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!FileWriteTimeToBackupFile@{FileWriteTimeToBackupFile}}
+\index{FileWriteTimeToBackupFile@{FileWriteTimeToBackupFile}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{FileWriteTimeToBackupFile()}{FileWriteTimeToBackupFile()}}
+{\footnotesize\ttfamily BOOL File\+Write\+Time\+To\+Backup\+File (\begin{DoxyParamCaption}\item[{CString}]{str\+Src\+File\+Path,  }\item[{CString}]{str\+Backup\+File\+Path,  }\item[{CString}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_afaa9126ba1ef824bad213ad0555c8c2b}\label{_ngh_util_8cpp_afaa9126ba1ef824bad213ad0555c8c2b}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!FolderSearch@{FolderSearch}}
+\index{FolderSearch@{FolderSearch}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{FolderSearch()}{FolderSearch()}}
+{\footnotesize\ttfamily BOOL Folder\+Search (\begin{DoxyParamCaption}\item[{CString}]{str\+Folder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a4200699fb1ae963a326790601cb90eb4}\label{_ngh_util_8cpp_a4200699fb1ae963a326790601cb90eb4}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!GetAvg@{GetAvg}}
+\index{GetAvg@{GetAvg}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{GetAvg()}{GetAvg()}}
+{\footnotesize\ttfamily double Get\+Avg (\begin{DoxyParamCaption}\item[{double $\ast$}]{d\+Each\+Rslt\+Arr,  }\item[{int}]{n\+Each\+Rslt\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_aabde5fefde3ef6dedd20b9303e262e84}\label{_ngh_util_8cpp_aabde5fefde3ef6dedd20b9303e262e84}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!GetPita@{GetPita}}
+\index{GetPita@{GetPita}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{GetPita()}{GetPita()}}
+{\footnotesize\ttfamily double Get\+Pita (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a21bc28a6fefaaaac7924cda57f42fe65}\label{_ngh_util_8cpp_a21bc28a6fefaaaac7924cda57f42fe65}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!GetPitaHight@{GetPitaHight}}
+\index{GetPitaHight@{GetPitaHight}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{GetPitaHight()}{GetPitaHight()}}
+{\footnotesize\ttfamily double Get\+Pita\+Hight (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a2cd9561d97d1fd2b3b9f9de0e8504340}\label{_ngh_util_8cpp_a2cd9561d97d1fd2b3b9f9de0e8504340}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!GetSTD@{GetSTD}}
+\index{GetSTD@{GetSTD}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{GetSTD()}{GetSTD()}}
+{\footnotesize\ttfamily double Get\+STD (\begin{DoxyParamCaption}\item[{double $\ast$}]{d\+Each\+Rslt\+Arr,  }\item[{int}]{n\+Each\+Rslt\+Cnt,  }\item[{int}]{n\+Option }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a68b06f6d314a0bf9738d6a4add771b29}\label{_ngh_util_8cpp_a68b06f6d314a0bf9738d6a4add771b29}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!GetWriteFileTime@{GetWriteFileTime}}
+\index{GetWriteFileTime@{GetWriteFileTime}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{GetWriteFileTime()}{GetWriteFileTime()}}
+{\footnotesize\ttfamily BOOL Get\+Write\+File\+Time (\begin{DoxyParamCaption}\item[{CString}]{str\+File\+Path,  }\item[{SYSTEMTIME $\ast$}]{return\+Time,  }\item[{int}]{n\+Get\+Time\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a0c31714250c7efa998e14c00d28a2a1e}\label{_ngh_util_8cpp_a0c31714250c7efa998e14c00d28a2a1e}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!limite@{limite}}
+\index{limite@{limite}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{limite()}{limite()}}
+{\footnotesize\ttfamily int limite (\begin{DoxyParamCaption}\item[{int}]{n\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a9c490d2cc388be966a5f0ae7e184f46f}\label{_ngh_util_8cpp_a9c490d2cc388be966a5f0ae7e184f46f}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!LimiteRangeCheck@{LimiteRangeCheck}}
+\index{LimiteRangeCheck@{LimiteRangeCheck}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{LimiteRangeCheck()}{LimiteRangeCheck()}}
+{\footnotesize\ttfamily BOOL Limite\+Range\+Check (\begin{DoxyParamCaption}\item[{double}]{d\+Min,  }\item[{double}]{d\+Max,  }\item[{double}]{d\+After\+Val,  }\item[{double}]{d\+Befor\+Val,  }\item[{int}]{n\+Input\+Type,  }\item[{CString}]{str\+Input\+Label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_af2a78d13176e842d06b3678b10df905f}\label{_ngh_util_8cpp_af2a78d13176e842d06b3678b10df905f}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!MakeDirectories@{MakeDirectories}}
+\index{MakeDirectories@{MakeDirectories}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{MakeDirectories()}{MakeDirectories()}}
+{\footnotesize\ttfamily void Make\+Directories (\begin{DoxyParamCaption}\item[{CString}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_aa87625d6d24e987864417739501654fa}\label{_ngh_util_8cpp_aa87625d6d24e987864417739501654fa}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!RandVal@{RandVal}}
+\index{RandVal@{RandVal}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{RandVal()}{RandVal()}}
+{\footnotesize\ttfamily int Rand\+Val (\begin{DoxyParamCaption}\item[{int}]{n\+Start,  }\item[{int}]{n\+End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a76912f2995137f137c5e69f16eeaa545}\label{_ngh_util_8cpp_a76912f2995137f137c5e69f16eeaa545}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!RatianToDegree@{RatianToDegree}}
+\index{RatianToDegree@{RatianToDegree}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{RatianToDegree()}{RatianToDegree()}}
+{\footnotesize\ttfamily double Ratian\+To\+Degree (\begin{DoxyParamCaption}\item[{double}]{rad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ngh_util_8cpp_a5c66b727ddf14ed68ea62b4fb39ce33d}\label{_ngh_util_8cpp_a5c66b727ddf14ed68ea62b4fb39ce33d}} 
+\index{NghUtil.cpp@{NghUtil.cpp}!UseDriveFreeSize@{UseDriveFreeSize}}
+\index{UseDriveFreeSize@{UseDriveFreeSize}!NghUtil.cpp@{NghUtil.cpp}}
+\doxysubsubsection{\texorpdfstring{UseDriveFreeSize()}{UseDriveFreeSize()}}
+{\footnotesize\ttfamily double Use\+Drive\+Free\+Size (\begin{DoxyParamCaption}\item[{CString}]{str\+Drive\+Name,  }\item[{CString}]{str\+Size\+Type }\end{DoxyParamCaption})}
+

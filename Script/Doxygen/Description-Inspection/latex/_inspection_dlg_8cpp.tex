@@ -1,0 +1,91 @@
+\hypertarget{_inspection_dlg_8cpp}{}\doxysection{D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/\+Inspection\+Dlg.cpp 파일 참조}
+\label{_inspection_dlg_8cpp}\index{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/InspectionDlg.cpp@{D:/OneDrive/ngh/J-\/TWF22/Project/Inspection/InspectionDlg.cpp}}
+
+
+Inspection\+Dlg Source File  
+
+
+{\ttfamily \#include \char`\"{}pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}framework.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Inspection.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Inspection\+Dlg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}afxdialogex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sequence\+Module.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uniioport.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Inspection\+Dlg.\+cpp에 대한 include 의존 그래프
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_inspection_dlg_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_about_dlg}{CAbout\+Dlg}}
+\end{DoxyCompactItemize}
+\doxysubsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_inspection_dlg_8cpp_ae7b1382089add6b1cc83fd5c6b74ed71}{BIT\+\_\+\+COUNT}}~24;
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_inspection_dlg_8cpp_a41331c57c95d4fad386be179832d51d9}{XRay\+Call\+Back\+Func}} (int n\+Data)
+\begin{DoxyCompactList}\small\item\em XRay\+Call\+Back\+Func X-\/ray Class 에서 사용될 callback 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_inspection_dlg}{CInspection\+Dlg}} $\ast$ \mbox{\hyperlink{_inspection_dlg_8cpp_a82a8e41e839b3bb30978a5b22cf6a23b}{m\+\_\+\+This}}
+\item 
+\mbox{\hyperlink{class_c_sequence_module}{CSequence\+Module}} \mbox{\hyperlink{_inspection_dlg_8cpp_a423ff51d427d7113825b448f3bb09551}{g\+\_\+\+Seq\+Module}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Inspection\+Dlg Source File 
+
+\begin{DoxyAuthor}{작성자}
+노규현
+\end{DoxyAuthor}
+서스 패드 검사기 메인 소스 파일.~\newline
+
+
+\doxysubsection{매크로 문서화}
+\mbox{\Hypertarget{_inspection_dlg_8cpp_ae7b1382089add6b1cc83fd5c6b74ed71}\label{_inspection_dlg_8cpp_ae7b1382089add6b1cc83fd5c6b74ed71}} 
+\index{InspectionDlg.cpp@{InspectionDlg.cpp}!BIT\_COUNT@{BIT\_COUNT}}
+\index{BIT\_COUNT@{BIT\_COUNT}!InspectionDlg.cpp@{InspectionDlg.cpp}}
+\doxysubsubsection{\texorpdfstring{BIT\_COUNT}{BIT\_COUNT}}
+{\footnotesize\ttfamily \#define BIT\+\_\+\+COUNT~24;}
+
+
+
+\doxysubsection{함수 문서화}
+\mbox{\Hypertarget{_inspection_dlg_8cpp_a41331c57c95d4fad386be179832d51d9}\label{_inspection_dlg_8cpp_a41331c57c95d4fad386be179832d51d9}} 
+\index{InspectionDlg.cpp@{InspectionDlg.cpp}!XRayCallBackFunc@{XRayCallBackFunc}}
+\index{XRayCallBackFunc@{XRayCallBackFunc}!InspectionDlg.cpp@{InspectionDlg.cpp}}
+\doxysubsubsection{\texorpdfstring{XRayCallBackFunc()}{XRayCallBackFunc()}}
+{\footnotesize\ttfamily void XRay\+Call\+Back\+Func (\begin{DoxyParamCaption}\item[{int}]{n\+Data }\end{DoxyParamCaption})}
+
+
+
+XRay\+Call\+Back\+Func X-\/ray Class 에서 사용될 callback 함수 
+
+
+
+\doxysubsection{변수 문서화}
+\mbox{\Hypertarget{_inspection_dlg_8cpp_a423ff51d427d7113825b448f3bb09551}\label{_inspection_dlg_8cpp_a423ff51d427d7113825b448f3bb09551}} 
+\index{InspectionDlg.cpp@{InspectionDlg.cpp}!g\_SeqModule@{g\_SeqModule}}
+\index{g\_SeqModule@{g\_SeqModule}!InspectionDlg.cpp@{InspectionDlg.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_SeqModule}{g\_SeqModule}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_sequence_module}{CSequence\+Module}} g\+\_\+\+Seq\+Module}
+
+Sequenc Class \mbox{\Hypertarget{_inspection_dlg_8cpp_a82a8e41e839b3bb30978a5b22cf6a23b}\label{_inspection_dlg_8cpp_a82a8e41e839b3bb30978a5b22cf6a23b}} 
+\index{InspectionDlg.cpp@{InspectionDlg.cpp}!m\_This@{m\_This}}
+\index{m\_This@{m\_This}!InspectionDlg.cpp@{InspectionDlg.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_This}{m\_This}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_inspection_dlg}{CInspection\+Dlg}}$\ast$ m\+\_\+\+This}
+

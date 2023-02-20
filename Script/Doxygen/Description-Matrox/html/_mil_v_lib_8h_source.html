@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Matrox: D:/OneDrive/ngh/J-TWF22/Library/Matrox/MilVLib.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Logo-MatroxImaging.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Matrox<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_bd976f84b5cc9bebc92e068d65fec952.html">OneDrive</a></li><li class="navelem"><a class="el" href="dir_526c377dd3d3fc952efb581059fc7050.html">ngh</a></li><li class="navelem"><a class="el" href="dir_03a9c10c0e9d1674deb214bc7339cb82.html">J-TWF22</a></li><li class="navelem"><a class="el" href="dir_27d2e3319eb018fb205d2bb854feecd3.html">Library</a></li><li class="navelem"><a class="el" href="dir_7ba3e800ede1a5bca504f1ffc43e3c8c.html">Matrox</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MilVLib.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mil_v_lib_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_mil_class_8h.html">MilClass.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_mil_base_8h.html">MilBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="_mil_v_lib_8h.html#a870eaff10bf1c066e7a9d52a80010972">    7</a></span><span class="preprocessor">#define MAX_DIGITIZER 5</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_mil_v_lib_8h.html#abcaa7a2726bf09b53a00faca9438725f">    8</a></span><span class="preprocessor">#define CREVIS_DCF _T(&quot;JMV-BS20A.dcf&quot;</span>)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_mil_v_lib_8h.html#a409582b1abeb2fe1981e7faad7fac7f8">    9</a></span><span class="preprocessor">#define ES51_INI _T(&quot;XC-ES51.ini&quot;</span>)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="_mil_v_lib_8h.html#a91118f4ba1ddcb0bdbe191d4023ef6dc">   10</a></span><span class="preprocessor">#define BS20A_INI _T(&quot;MV-BS20A.ini&quot;</span>)</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_digitizer.html">CMilDigitizer</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_blob.html">CMilBlob</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_pat.html">CMilPat</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_mod_finder.html">CMilModFinder</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_edge_finder.html">CMilEdgeFinder</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span><a class="code hl_class" href="class_c_mil_display.html">CMilDisplay</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html">   25</a></span><span class="keyword">class </span><a class="code hl_define" href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">MIL_DLLDECL</a> <a class="code hl_class" href="class_c_mil_v_lib.html">CMilVLib</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#ae24cf750c4724e4278ca87079d56e322">   28</a></span>        CString <a class="code hl_variable" href="class_c_mil_v_lib.html#ae24cf750c4724e4278ca87079d56e322">strGrabberName</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="class_c_mil_v_lib.html">CMilVLib</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_class" href="class_c_mil_v_lib.html">~CMilVLib</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">static</span> <a class="code hl_class" href="class_c_mil_v_lib.html">CMilVLib</a> * Instance(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a2eca20a70cf66688b11588092e5a12c0">   32</a></span>        <span class="keyword">static</span> <a class="code hl_class" href="class_c_mil_v_lib.html">CMilVLib</a> *<a class="code hl_variable" href="class_c_mil_v_lib.html#a2eca20a70cf66688b11588092e5a12c0">m_pInstance</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">int</span> Setting(TCHAR* szGrabber, TCHAR *camFile);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">int</span> AddCamera(TCHAR* szGrabber, TCHAR * camFile);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">int</span> DefaultSetting(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">void</span> Close(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a>* NewImage(<span class="keywordtype">int</span> iDepth=8);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a>* NewImage(<a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pOrgBuff);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_class" href="class_c_mil_display.html">CMilDisplay</a>* NewDisplay(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_class" href="class_c_mil_digitizer.html">CMilDigitizer</a>* NewDigitizer(<span class="keywordtype">int</span> tGrabber);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_class" href="class_c_mil_blob.html">CMilBlob</a>*        NewBlobTool(<a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pMilBuffer);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="class_c_mil_pat.html">CMilPat</a>*        NewPatTool(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_class" href="class_c_mil_mod_finder.html">CMilModFinder</a>* NewModFinderTool(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_class" href="class_c_mil_edge_finder.html">CMilEdgeFinder</a>* NewEdgeFinderTool(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a7227964ba5eff6c986ca74d5c1cfe1c6">   45</a></span>        <span class="keyword">static</span> CString          <a class="code hl_variable" href="class_c_mil_v_lib.html#a7227964ba5eff6c986ca74d5c1cfe1c6">m_strError</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a7b4e712740f9e915f6d44735e85ab569">   46</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      <a class="code hl_variable" href="class_c_mil_v_lib.html#a7b4e712740f9e915f6d44735e85ab569">m_nPixelMapEntries</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a423b0acf51de387722fe51e29b4911a5">   47</a></span>        <span class="keyword">static</span> CString          <a class="code hl_variable" href="class_c_mil_v_lib.html#a423b0acf51de387722fe51e29b4911a5">m_strPixelMapFilePath</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#ae371c6d161d483a5c5158cc73588bca4">   49</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      **<a class="code hl_variable" href="class_c_mil_v_lib.html#ae371c6d161d483a5c5158cc73588bca4">m_pPointDefect</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a6d2ecdcdb000681344ef1216aff853eb">   50</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      **<a class="code hl_variable" href="class_c_mil_v_lib.html#a6d2ecdcdb000681344ef1216aff853eb">m_pColDefect</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#ae09c5ad9f379546788a6c1743ed0ceab">   51</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      **<a class="code hl_variable" href="class_c_mil_v_lib.html#ae09c5ad9f379546788a6c1743ed0ceab">m_pRowDefect</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a1f6afd61d781dc7ac3d1e00883bcbbd4">   53</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      <a class="code hl_variable" href="class_c_mil_v_lib.html#a1f6afd61d781dc7ac3d1e00883bcbbd4">m_nPointDefectCnt</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#af3823b160b2432e92387d7efc99e9549">   54</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      <a class="code hl_variable" href="class_c_mil_v_lib.html#af3823b160b2432e92387d7efc99e9549">m_nColDefectCnt</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#aa9a8ce089fd46061c5a9daa9967a6a46">   55</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span>                      <a class="code hl_variable" href="class_c_mil_v_lib.html#aa9a8ce089fd46061c5a9daa9967a6a46">m_nRowDefectCnt</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_class" href="class_c_mil_application.html">CMilApplication</a> *m_pMilApplication;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_class" href="class_c_mil_display.html">CMilDisplay</a> *m_pMilDisplay;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_class" href="class_c_mil_digitizer.html">CMilDigitizer</a> *m_pMilDigitizer[<a class="code hl_define" href="_mil_v_lib_8h.html#a870eaff10bf1c066e7a9d52a80010972">MAX_DIGITIZER</a>];</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a>* m_pMilBuffer;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">int</span> m_currDigiNum;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">int</span> m_nDigitizer;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_class" href="class_c_mil_display.html">CMilDisplay</a> * GetDefaultDisp(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">void</span> SetDefDigitizer(<span class="keywordtype">int</span> nDigitizer);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">int</span> GrabContinuous(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">int</span> SingleGrab(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">int</span> SingleGrabTrigger(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">int</span> StopGrab(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">int</span> StopGrabContinuous(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span> MilSaveImage(CString DIR);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_class" href="class_c_mil_digitizer.html">CMilDigitizer</a>* GetDigitizer(<span class="keywordtype">int</span> iDigitizer=0);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">int</span> SetAverageCounter(<span class="keywordtype">int</span> nCounter) ;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">int</span> GetAverageCounter(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> SetAverageCounterSoft(<span class="keywordtype">int</span> nCounter) ;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">int</span> GetHRSCLevel(<span class="keywordtype">int</span> nLevel);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">int</span> GetAverageCounterSoft(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">int</span> GetHRSCLevel(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">int</span> SetImgEnhance(<span class="keywordtype">int</span> nCount);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">int</span> GetImgEnhance(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">int</span> SetupTrigger(BOOL OnOff);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">int</span> MakeCombineImage(CString strFileName, <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pMilSrc, <span class="keywordtype">int</span> FileType=M_BMP);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        BOOL IsGrabDone(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> ScrnNormalize(<a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pMilResult, <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pMilOrg, <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pMilWhite, <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a> *pMilDark, <span class="keywordtype">int</span> MaxWhiteValue);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordtype">int</span> SetAverageStatus(BOOL status);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_class" href="class_c_mil_buffer.html">CMilBuffer</a>* GetGrabBuffer(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#ac50bbd0f453ab61ec6269bcbbc607069">   91</a></span>        deque&lt;CMilBuffer *&gt; <a class="code hl_variable" href="class_c_mil_v_lib.html#ac50bbd0f453ab61ec6269bcbbc607069">m_dequeMilBuff</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_c_mil_v_lib.html#a201f75b89bf890a11f78ba6a3a4818fc">   92</a></span>        deque&lt;CMilDisplay *&gt; <a class="code hl_variable" href="class_c_mil_v_lib.html#a201f75b89bf890a11f78ba6a3a4818fc">m_dequeMilDisp</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
+<div class="ttc" id="a_mil_base_8h_html"><div class="ttname"><a href="_mil_base_8h.html">MilBase.h</a></div></div>
+<div class="ttc" id="a_mil_base_8h_html_ac59caefbe3fb1e18fa522ad367a45a49"><div class="ttname"><a href="_mil_base_8h.html#ac59caefbe3fb1e18fa522ad367a45a49">MIL_DLLDECL</a></div><div class="ttdeci">#define MIL_DLLDECL</div><div class="ttdef"><b>Definition:</b> MilBase.h:8</div></div>
+<div class="ttc" id="a_mil_class_8h_html"><div class="ttname"><a href="_mil_class_8h.html">MilClass.h</a></div></div>
+<div class="ttc" id="a_mil_v_lib_8h_html_a870eaff10bf1c066e7a9d52a80010972"><div class="ttname"><a href="_mil_v_lib_8h.html#a870eaff10bf1c066e7a9d52a80010972">MAX_DIGITIZER</a></div><div class="ttdeci">#define MAX_DIGITIZER</div><div class="ttdef"><b>Definition:</b> MilVLib.h:7</div></div>
+<div class="ttc" id="aclass_c_mil_application_html"><div class="ttname"><a href="class_c_mil_application.html">CMilApplication</a></div><div class="ttdoc">Mil의 Application관련 함수를 Class화함</div><div class="ttdef"><b>Definition:</b> MilApplication.h:12</div></div>
+<div class="ttc" id="aclass_c_mil_blob_html"><div class="ttname"><a href="class_c_mil_blob.html">CMilBlob</a></div><div class="ttdoc">Mil의 Blob관련 함수군을 Class화하였다</div><div class="ttdef"><b>Definition:</b> MilBlob.h:30</div></div>
+<div class="ttc" id="aclass_c_mil_buffer_html"><div class="ttname"><a href="class_c_mil_buffer.html">CMilBuffer</a></div><div class="ttdoc">Mil의 MilBuffer관련 함수군을 Class화하였다</div><div class="ttdef"><b>Definition:</b> MilBuffer.h:39</div></div>
+<div class="ttc" id="aclass_c_mil_digitizer_html"><div class="ttname"><a href="class_c_mil_digitizer.html">CMilDigitizer</a></div><div class="ttdoc">Mil의 Migitizer관련 함수군을 Class화하였다 Digitizer는 Channel관리에 해당하는 Class이다</div><div class="ttdef"><b>Definition:</b> MilDigitizer.h:17</div></div>
+<div class="ttc" id="aclass_c_mil_display_html"><div class="ttname"><a href="class_c_mil_display.html">CMilDisplay</a></div><div class="ttdoc">Mil의 Display관련 함수군을 Class화하였다</div><div class="ttdef"><b>Definition:</b> MilDisplay.h:12</div></div>
+<div class="ttc" id="aclass_c_mil_edge_finder_html"><div class="ttname"><a href="class_c_mil_edge_finder.html">CMilEdgeFinder</a></div><div class="ttdoc">Mil의 Edge Finder관련 함수를 Class화함</div><div class="ttdef"><b>Definition:</b> MilEdgeFinder.h:11</div></div>
+<div class="ttc" id="aclass_c_mil_mod_finder_html"><div class="ttname"><a href="class_c_mil_mod_finder.html">CMilModFinder</a></div><div class="ttdoc">Mil의 Model Finder관련 함수군을 Class화하였다</div><div class="ttdef"><b>Definition:</b> MilModFinder.h:32</div></div>
+<div class="ttc" id="aclass_c_mil_pat_html"><div class="ttname"><a href="class_c_mil_pat.html">CMilPat</a></div><div class="ttdoc">Mil Pattern Matching함수를 Class화함</div><div class="ttdef"><b>Definition:</b> MilPat.h:11</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html"><div class="ttname"><a href="class_c_mil_v_lib.html">CMilVLib</a></div><div class="ttdef"><b>Definition:</b> MilVLib.h:26</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a1f6afd61d781dc7ac3d1e00883bcbbd4"><div class="ttname"><a href="class_c_mil_v_lib.html#a1f6afd61d781dc7ac3d1e00883bcbbd4">CMilVLib::m_nPointDefectCnt</a></div><div class="ttdeci">static int m_nPointDefectCnt</div><div class="ttdef"><b>Definition:</b> MilVLib.h:53</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a201f75b89bf890a11f78ba6a3a4818fc"><div class="ttname"><a href="class_c_mil_v_lib.html#a201f75b89bf890a11f78ba6a3a4818fc">CMilVLib::m_dequeMilDisp</a></div><div class="ttdeci">deque&lt; CMilDisplay * &gt; m_dequeMilDisp</div><div class="ttdef"><b>Definition:</b> MilVLib.h:92</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a2eca20a70cf66688b11588092e5a12c0"><div class="ttname"><a href="class_c_mil_v_lib.html#a2eca20a70cf66688b11588092e5a12c0">CMilVLib::m_pInstance</a></div><div class="ttdeci">static CMilVLib * m_pInstance</div><div class="ttdef"><b>Definition:</b> MilVLib.h:32</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a423b0acf51de387722fe51e29b4911a5"><div class="ttname"><a href="class_c_mil_v_lib.html#a423b0acf51de387722fe51e29b4911a5">CMilVLib::m_strPixelMapFilePath</a></div><div class="ttdeci">static CString m_strPixelMapFilePath</div><div class="ttdef"><b>Definition:</b> MilVLib.h:47</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a6d2ecdcdb000681344ef1216aff853eb"><div class="ttname"><a href="class_c_mil_v_lib.html#a6d2ecdcdb000681344ef1216aff853eb">CMilVLib::m_pColDefect</a></div><div class="ttdeci">static int ** m_pColDefect</div><div class="ttdef"><b>Definition:</b> MilVLib.h:50</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a7227964ba5eff6c986ca74d5c1cfe1c6"><div class="ttname"><a href="class_c_mil_v_lib.html#a7227964ba5eff6c986ca74d5c1cfe1c6">CMilVLib::m_strError</a></div><div class="ttdeci">static CString m_strError</div><div class="ttdef"><b>Definition:</b> MilVLib.h:45</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_a7b4e712740f9e915f6d44735e85ab569"><div class="ttname"><a href="class_c_mil_v_lib.html#a7b4e712740f9e915f6d44735e85ab569">CMilVLib::m_nPixelMapEntries</a></div><div class="ttdeci">static int m_nPixelMapEntries</div><div class="ttdef"><b>Definition:</b> MilVLib.h:46</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_aa9a8ce089fd46061c5a9daa9967a6a46"><div class="ttname"><a href="class_c_mil_v_lib.html#aa9a8ce089fd46061c5a9daa9967a6a46">CMilVLib::m_nRowDefectCnt</a></div><div class="ttdeci">static int m_nRowDefectCnt</div><div class="ttdef"><b>Definition:</b> MilVLib.h:55</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_ac50bbd0f453ab61ec6269bcbbc607069"><div class="ttname"><a href="class_c_mil_v_lib.html#ac50bbd0f453ab61ec6269bcbbc607069">CMilVLib::m_dequeMilBuff</a></div><div class="ttdeci">deque&lt; CMilBuffer * &gt; m_dequeMilBuff</div><div class="ttdef"><b>Definition:</b> MilVLib.h:91</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_ae09c5ad9f379546788a6c1743ed0ceab"><div class="ttname"><a href="class_c_mil_v_lib.html#ae09c5ad9f379546788a6c1743ed0ceab">CMilVLib::m_pRowDefect</a></div><div class="ttdeci">static int ** m_pRowDefect</div><div class="ttdef"><b>Definition:</b> MilVLib.h:51</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_ae24cf750c4724e4278ca87079d56e322"><div class="ttname"><a href="class_c_mil_v_lib.html#ae24cf750c4724e4278ca87079d56e322">CMilVLib::strGrabberName</a></div><div class="ttdeci">CString strGrabberName</div><div class="ttdef"><b>Definition:</b> MilVLib.h:28</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_ae371c6d161d483a5c5158cc73588bca4"><div class="ttname"><a href="class_c_mil_v_lib.html#ae371c6d161d483a5c5158cc73588bca4">CMilVLib::m_pPointDefect</a></div><div class="ttdeci">static int ** m_pPointDefect</div><div class="ttdef"><b>Definition:</b> MilVLib.h:49</div></div>
+<div class="ttc" id="aclass_c_mil_v_lib_html_af3823b160b2432e92387d7efc99e9549"><div class="ttname"><a href="class_c_mil_v_lib.html#af3823b160b2432e92387d7efc99e9549">CMilVLib::m_nColDefectCnt</a></div><div class="ttdeci">static int m_nColDefectCnt</div><div class="ttdef"><b>Definition:</b> MilVLib.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 금 9월 23 2022 08:29:06, 프로젝트명 : Matrox, 생성자 : &#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

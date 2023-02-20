@@ -1,0 +1,56 @@
+\hypertarget{_mil_blob_8h_source}{}\doxysection{Mil\+Blob.\+h}
+\label{_mil_blob_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilBlob.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilBlob.h}}
+\mbox{\hyperlink{_mil_blob_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_base_8h}{MilBase.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}};}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{struct }tWndBlobCondition;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{15 \textcolor{keyword}{struct }\mbox{\hyperlink{structt_blob_result_list}{tBlobResultList}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} \mbox{\hyperlink{structt_blob_result_list_a4bc4c8cd70b4ec7e739468c38f1da072}{nCount}};}
+\DoxyCodeLine{18         \textcolor{keywordtype}{double} *\mbox{\hyperlink{structt_blob_result_list_ab23aaf643d4a029302aabcca8115a140}{pCXs}}, *\mbox{\hyperlink{structt_blob_result_list_ad74c637a7d8d6197afd49d6824faa34f}{pCYs}};}
+\DoxyCodeLine{19         \textcolor{keywordtype}{double} *\mbox{\hyperlink{structt_blob_result_list_af68793cf10288bd473f6d539239660d6}{pArea}};}
+\DoxyCodeLine{20         \textcolor{keywordtype}{double} *\mbox{\hyperlink{structt_blob_result_list_afcfdb59ae6e311c7644cd476bfac0052}{pBoxLeft}}, *\mbox{\hyperlink{structt_blob_result_list_a0323a03449efe87f1e0feb0c109bb6c6}{pBoxTop}}, *\mbox{\hyperlink{structt_blob_result_list_a8f2beb2fd81c0ea0fb49d9ce8df53488}{pBoxRight}}, *\mbox{\hyperlink{structt_blob_result_list_abe5a96de647e6c352283b7bc8687db49}{pBoxBottom}};}
+\DoxyCodeLine{21         tWndBlobCondition *\mbox{\hyperlink{structt_blob_result_list_ad566ecf6f0cf5fd6813d680a8398bcb8}{pWndBlobCdt}};}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_blob}{CMilBlob}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_c_mil_blob}{CMilBlob}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_c_mil_blob}{CMilBlob}}(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilBuffer);}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_c_mil_blob}{\string~CMilBlob}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} Caculate(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{36         \textcolor{keywordtype}{int} Control(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{37         \textcolor{keywordtype}{void} ReleaseResultMem(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} Select(MIL\_INT Operation, MIL\_INT Feature, MIL\_INT Condition, \textcolor{keywordtype}{double} CondLow, \textcolor{keywordtype}{double} CondHigh);}
+\DoxyCodeLine{39         \textcolor{keywordtype}{int} GetNumber(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{40         \textcolor{keywordtype}{int} GetResult(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{41         \textcolor{keywordtype}{int} SelectFeret(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{42         \textcolor{keywordtype}{void} SelectFeature(MIL\_INT feature);}
+\DoxyCodeLine{43         \textcolor{keywordtype}{int} Reconstruct(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{44         \textcolor{keywordtype}{int} Fill(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} Label(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{46         \textcolor{keywordtype}{int} AllocFeatureList(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{47         \textcolor{keywordtype}{int} AllocResult(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} SetMilBuffer(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *pMilBuffer);}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} Draw(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} *pMyDisplay, \textcolor{keywordtype}{int} iLabel);}
+\DoxyCodeLine{50         \textcolor{keywordtype}{void} Draw(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} *pMilDisplay);}
+\DoxyCodeLine{51         MIL\_ID \mbox{\hyperlink{class_c_mil_blob_a7b491db458fa817d4c8d8aab1c121b41}{m\_featureList}};}
+\DoxyCodeLine{52         MIL\_ID \mbox{\hyperlink{class_c_mil_blob_a12dfb5d07eefb3428139a02fab43ba4c}{m\_milIDBuffer}};}
+\DoxyCodeLine{53         MIL\_ID \mbox{\hyperlink{class_c_mil_blob_abf7c26c70fd40cdb6f8465f4ea6d6181}{m\_milIDSystem}};}
+\DoxyCodeLine{54         MIL\_ID \mbox{\hyperlink{class_c_mil_blob_aee0c3f22a4b7a5e323f55227b4440742}{m\_milResult}};}
+\DoxyCodeLine{55         \mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} *\mbox{\hyperlink{class_c_mil_blob_a250876341570d16c1669d563968e0efd}{m\_pMilBuffer}};}
+\DoxyCodeLine{56         \mbox{\hyperlink{structt_blob_result_list}{tBlobResultList}} \mbox{\hyperlink{class_c_mil_blob_a70524534db228d0ed190c58f71ebf0f5}{m\_ResultList}};}
+\DoxyCodeLine{57         \textcolor{keywordtype}{int} Free(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{58         \textcolor{keywordtype}{void} SetBuffer(\mbox{\hyperlink{class_c_mil_buffer}{CMilBuffer}} * pMilBuffer);}
+\DoxyCodeLine{59 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,42 @@
+\hypertarget{_mil_system_8h_source}{}\doxysection{Mil\+System.\+h}
+\label{_mil_system_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilSystem.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilSystem.h}}
+\mbox{\hyperlink{_mil_system_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_class_8h}{MilClass.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_base_8h}{MilBase.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}.\(\backslash\)Grabber\(\backslash\)Grabber.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }CGrabber;}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}};}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_mil_system}{CMilSystem}};}
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_system}{CMilSystem}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_base}{CMilBase}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_c_mil_system}{CMilSystem}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{20         \mbox{\hyperlink{class_c_mil_system}{CMilSystem}}(\mbox{\hyperlink{class_c_mil_application}{CMilApplication}} *pMilapplication);}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_c_mil_system}{\string~CMilSystem}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{22         \textcolor{keywordtype}{int} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{23         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} * Instance(TCHAR* szGrabber);}
+\DoxyCodeLine{24         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} * Instance(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} Create(TCHAR *szGrabber=\_T(\textcolor{stringliteral}{"{}NONE"{}}));}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} Create(\mbox{\hyperlink{class_c_mil_application}{CMilApplication}} *pMilApplication);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{keyword}{static} \mbox{\hyperlink{class_c_mil_application}{CMilApplication}} *\mbox{\hyperlink{class_c_mil_system_a9616c8110474fa00a5ae6e0a862e92d6}{m\_pMilApplication}};}
+\DoxyCodeLine{30         MIL\_ID \mbox{\hyperlink{class_c_mil_system_a35a46752afc9aed7347f45d8e6e5849d}{m\_milIDApplication}};}
+\DoxyCodeLine{31         MIL\_ID \mbox{\hyperlink{class_c_mil_system_a182f383470aad5c2b316e8b64df441b5}{m\_milIDSystem}};}
+\DoxyCodeLine{32         \textcolor{keyword}{static} vector<CMilSystem *> \mbox{\hyperlink{class_c_mil_system_ae2b7297768844ccb2c1082e063ed6c98}{m\_vMilSystem}};}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} *\mbox{\hyperlink{class_c_mil_system_ab7c8c7e1c66f72efc642870009265c03}{m\_pMilSystem}};}
+\DoxyCodeLine{34         MIL\_ID GetSystemID(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} SetSystemID(MIL\_ID idSystem);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         CGrabber *\mbox{\hyperlink{class_c_mil_system_a09640e4c38724f9f2693d211b369b968}{m\_pGrabber}};}
+\DoxyCodeLine{38         \textcolor{keywordtype}{int} GetDongleType(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{39         CString \mbox{\hyperlink{class_c_mil_system_a1dea217086c7746c202a8ad8faf94d53}{m\_strGrabberName}};}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_c_mil_digitizer}{CMilDigitizer}}* NewDigitizer(TCHAR *pCamFile);}
+\DoxyCodeLine{41 \};}
+
+\end{DoxyCode}

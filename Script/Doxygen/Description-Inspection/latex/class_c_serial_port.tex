@@ -1,0 +1,634 @@
+\hypertarget{class_c_serial_port}{}\doxysection{CSerial\+Port 클래스 참조}
+\label{class_c_serial_port}\index{CSerialPort@{CSerialPort}}
+
+
+{\ttfamily \#include $<$Serial\+Port.\+h$>$}
+
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{Flow\+Control}} \{ \newline
+\mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}{No\+Flow\+Control}}
+, \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae174312a5ebdef778e1c00a2726f1a1c}{Cts\+Rts\+Flow\+Control}}
+, \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae524405638dbea1e2aa32428633f11d3}{Cts\+Dtr\+Flow\+Control}}
+, \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a61516c7c0999af7c5d9cb93cf66fdcb9}{Dsr\+Rts\+Flow\+Control}}
+, \newline
+\mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96afdece2e330bb94a2336abc1aa728c482}{Dsr\+Dtr\+Flow\+Control}}
+, \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ad0735cbc4a6cd2be2e6ba59aaae53e7f}{Xon\+Xoff\+Flow\+Control}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{Parity}} \{ \newline
+\mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}{No\+Parity}} = 0
+, \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca188ff8a372599cbb5fe633f7a10f71c9}{Odd\+Parity}} = 1
+, \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca6474f4458be766d04a3ad2bfd72b10ae}{Even\+Parity}} = 2
+, \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca0b7bac6e5d9cdc88872cd83c881f7b54}{Mark\+Parity}} = 3
+, \newline
+\mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91cac254a94a25e7fd02beb9b42863c914f7}{Space\+Parity}} = 4
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{Stop\+Bits}} \{ \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}{One\+Stop\+Bit}}
+, \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a154a201ce6fb804109528d6a811f1f40}{One\+Point\+Five\+Stop\+Bits}}
+, \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a10f3e2d412585d9155520cddc6484643}{Two\+Stop\+Bits}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_serial_port_a4f99783ee3859f782d394eff9fb9c3d6}{CSerial\+Port}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_serial_port_abd72f8599d0696d9b14a56780cce8d21}{$\sim$\+CSerial\+Port}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_serial_port_a860d2c304e113c06b7b47bcad4db5507}{Open}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} int n\+Port, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Baud=9600, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{Parity}} parity=\mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}{No\+Parity}}, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BYTE Data\+Bits=8, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{Stop\+Bits}} stop\+Bits=\mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}{One\+Stop\+Bit}}, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{Flow\+Control}} fc=\mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}{No\+Flow\+Control}}, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BOOL b\+Overlapped=FALSE)
+\item 
+BOOL \mbox{\hyperlink{class_c_serial_port_a66a3fdf3f5aa95008875d588e1312792}{Open}} (\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\+\_\+\+In\+\_\+z\+\_\+}} LPCTSTR psz\+Port, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Baud=9600, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{Parity}} parity=\mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}{No\+Parity}}, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BYTE Data\+Bits=8, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{Stop\+Bits}} stop\+Bits=\mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}{One\+Stop\+Bit}}, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{Flow\+Control}} fc=\mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}{No\+Flow\+Control}}, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BOOL b\+Overlapped=FALSE)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ab2347da0dda8b24ea87f04f87c0b09fe}{Close}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a2c27ddd0b615d6131ac61135f32f85d4}{Attach}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} HANDLE h\+Comm)
+\item 
+HANDLE \mbox{\hyperlink{class_c_serial_port_a4b2f499e29f86aa1a4de7c5c034467a1}{Detach}} ()
+\item 
+\mbox{\hyperlink{class_c_serial_port_ae3ec585a716805f80ae5c1a80b9a5ec3}{operator HANDLE}} () const
+\item 
+BOOL \mbox{\hyperlink{class_c_serial_port_a75805efcb633290d46a0859cf3c34228}{Is\+Open}} () const
+\item 
+DWORD \mbox{\hyperlink{class_c_serial_port_a78fb1ffadba7437ff9d45f73333a6e00}{Read}} (\mbox{\hyperlink{_serial_port_8h_a94739e7abc557d7aedd871c65c8d92a4}{\+\_\+\+Out\+\_\+writes\+\_\+bytes\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Read) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\+\_\+\+\_\+out\+\_\+data\+\_\+source}}(FILE) void $\ast$lp\+Buffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Number\+Of\+Bytes\+To\+Read)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a373108fa9807d3b26f89c7dc5db2f33e}{Read}} (\mbox{\hyperlink{_serial_port_8h_ad4417e0e714eb3711ebc68d2e88356f4}{\+\_\+\+Out\+\_\+writes\+\_\+bytes\+\_\+to\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Read, $\ast$lp\+Number\+Of\+Bytes\+Read) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\+\_\+\+\_\+out\+\_\+data\+\_\+source}}(FILE) void $\ast$lp\+Buffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Number\+Of\+Bytes\+To\+Read, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} OVERLAPPED \&overlapped, \mbox{\hyperlink{_serial_port_8h_a9741e627e14220d0e9a803d9fa222a69}{\+\_\+\+Inout\+\_\+opt\+\_\+}} DWORD $\ast$lp\+Number\+Of\+Bytes\+Read=NULL)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a2b1bcf3e3780700a50b2620b6254eaf6}{Read\+Ex}} (\mbox{\hyperlink{_serial_port_8h_ad4b1ff83a10269bb43cc8d7f6a095ca9}{\+\_\+\+Out\+\_\+writes\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Read) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\+\_\+\+\_\+out\+\_\+data\+\_\+source}}(FILE) LPVOID lp\+Buffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Number\+Of\+Bytes\+To\+Read, \mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} LPOVERLAPPED lp\+Overlapped, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} LPOVERLAPPED\+\_\+\+COMPLETION\+\_\+\+ROUTINE lp\+Completion\+Routine)
+\item 
+DWORD \mbox{\hyperlink{class_c_serial_port_a843e39d9695c4b684d461c734b61c22e}{Write}} (\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Write) const void $\ast$lp\+Buffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Number\+Of\+Bytes\+To\+Write)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ab742981b2f6d5e7da8acda36b84d4770}{Write}} (\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Write) const void $\ast$lp\+Buffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Number\+Of\+Bytes\+To\+Write, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} OVERLAPPED \&overlapped, \mbox{\hyperlink{_serial_port_8h_a0cee083d022d10fcad4840d6debdedb8}{\+\_\+\+Out\+\_\+opt\+\_\+}} DWORD $\ast$lp\+Number\+Of\+Bytes\+Written=NULL)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ac8f3704925c34786b0a60c1e2beddc8d}{Write\+Ex}} (\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Write) LPCVOID lp\+Buffer, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Number\+Of\+Bytes\+To\+Write, \mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} LPOVERLAPPED lp\+Overlapped, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} LPOVERLAPPED\+\_\+\+COMPLETION\+\_\+\+ROUTINE lp\+Completion\+Routine)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a31a110b69af5d8bb66144293f1bff224}{Transmit\+Char}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} char c\+Char)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_afeb1e30c96dda1b3ceaeeb58ce8b27ca}{Get\+Overlapped\+Result}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} OVERLAPPED \&overlapped, \mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&dw\+Bytes\+Transferred, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BOOL b\+Wait)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a9a311b33785e2e175c36fe9d19f4cd5f}{Cancel\+Io}} ()
+\item 
+DWORD \mbox{\hyperlink{class_c_serial_port_ad882112f1b0753d65f2438d11a0fa87a}{Bytes\+Waiting}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_acbe623ed298e8862eac206d366898c29}{Get\+Config}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&config)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_abb2c4c60aacc6fc8d1d77c24f3987337}{Set\+Config}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&Config)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a66e936c789cc76ebdf37a6219c1d457e}{Clear\+Break}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a22fda56648492f464d92007449e4d6c5}{Set\+Break}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ae73873cd013d0e39328cf5d88f402c95}{Clear\+Error}} (\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&dw\+Errors)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ab08d21454920abda9c274e0d13b05997}{Get\+Status}} (\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMSTAT \&stat)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a146623618e862e0cfdd1cfac849a9f2a}{Get\+State}} (\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DCB \&dcb)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a3455a44d9f0a604ebc0f3bc96cbb99dc}{Set\+State}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DCB \&dcb)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a54a3097377fa9bf81a6934ae36b7a9ad}{Escape}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Func)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a5f66d0436bf0746d74d84c491a3c9a5c}{Clear\+DTR}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a932680bef4ceecdd78f3864646f6cbde}{Clear\+RTS}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a77317d9e3a2b6b1ddb848997e982e273}{Set\+DTR}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a8b78de0f0cbbf0b64c76a11c4e4b4c20}{Set\+RTS}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ac89dcfb6c01f430d54c7fb44b326f922}{Set\+XOFF}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_aed31733fa54b43fb8539a95e9660b0c8}{Set\+XON}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a2a4d44515e5da88f94e970d77070089e}{Get\+Properties}} (\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} COMMPROP \&properties)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a7c2697a85a5bc3a8e7484d9cb463a029}{Get\+Modem\+Status}} (\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&dw\+Modem\+Status)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_aef0971e189cdedd8353dddacb0121362}{Set\+Timeouts}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMTIMEOUTS \&timeouts)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ae4577af3805c562bd962821a17602874}{Get\+Timeouts}} (\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMMTIMEOUTS \&timeouts)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_adf55d649c3f2c897ccd772d6dffddd53}{Set0\+Timeout}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a17a0171e2621caf64c6840f05c2bb066}{Set0\+Write\+Timeout}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_aa3cc97021e5679c1b723df66c5f0514b}{Set0\+Read\+Timeout}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a9059db62e2fcf5cf2925e95e54a5fc7e}{Set\+Mask}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Mask)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_abd4b728b49c529b0a7cf8bb1faff8869}{Get\+Mask}} (\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&dw\+Mask)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_af7e8210bd7e5ecdf846e5d29f8a26f32}{Wait\+Event}} (\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} DWORD \&dw\+Mask)
+\item 
+BOOL \mbox{\hyperlink{class_c_serial_port_a59bfb5ec6cd91d3bcb99f87c67c4c6d0}{Wait\+Event}} (\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} DWORD \&dw\+Mask, \mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} OVERLAPPED \&overlapped)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a92e83806d996081c35e19ad6e4211d99}{Flush}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_aeb09fe2d22e085fd2e689c2f7e4b8758}{Purge}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Flags)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a1568d861400816b339064a0b05542ada}{Terminate\+Outstanding\+Writes}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ad2a5573174495d23d0e4ddd90fecf7f2}{Terminate\+Outstanding\+Reads}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a9d261bad85b88d1d3b4237a8f9287eb0}{Clear\+Write\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_a514a100b45c0c03716b772a5efa71817}{Clear\+Read\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{class_c_serial_port_ab3b3251eefa942b9463b8bcfeb7ef726}{Setup}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+In\+Queue, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Out\+Queue)
+\item 
+void \mbox{\hyperlink{class_c_serial_port_aaf8e3f9eeb6b7301484c3c87c2027703}{Set\+Call\+Back}} (\mbox{\hyperlink{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} event)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_serial_port_a6bf60794a6c63c8207328dfa5f3d1b3e}{Get\+Default\+Config}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} int n\+Port, \mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMMCONFIG \&config)
+\item 
+static void \mbox{\hyperlink{class_c_serial_port_aa0790e4718961685fc5e28f7e70f9859}{Get\+Default\+Config}} (\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\+\_\+\+In\+\_\+z\+\_\+}} LPCTSTR psz\+Port, \mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMMCONFIG \&config)
+\item 
+static void \mbox{\hyperlink{class_c_serial_port_ada6a1798ac6a63e9b6deebe6a9380398}{Set\+Default\+Config}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} int n\+Port, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&config)
+\item 
+static void \mbox{\hyperlink{class_c_serial_port_affa21a03782220d45cc4c923d74fdce1}{Set\+Default\+Config}} (\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\+\_\+\+In\+\_\+z\+\_\+}} LPCTSTR psz\+Port, \mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&config)
+\item 
+static void \mbox{\hyperlink{class_c_serial_port_aa331c4d7f1e0ba929dece2587b9858bb}{Throw\+Serial\+Exception}} (\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD dw\+Error=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}}) (BYTE $\ast$, int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+HANDLE \mbox{\hyperlink{class_c_serial_port_a234faffa92379fada3f91ce21a8cac35}{m\+\_\+h\+Comm}}
+\item 
+\mbox{\hyperlink{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} \mbox{\hyperlink{class_c_serial_port_a98e5937b91cc11dd0479efcbee8055f8}{call\+Eventfunc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}\label{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}} 
+\index{CSerialPort@{CSerialPort}!CALLBACK\_FUNCTION\_Event@{CALLBACK\_FUNCTION\_Event}}
+\index{CALLBACK\_FUNCTION\_Event@{CALLBACK\_FUNCTION\_Event}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{CALLBACK\_FUNCTION\_Event}{CALLBACK\_FUNCTION\_Event}}
+{\footnotesize\ttfamily typedef void($\ast$ CSerial\+Port\+::\+CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event) (BYTE $\ast$, int)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}} 
+\index{CSerialPort@{CSerialPort}!FlowControl@{FlowControl}}
+\index{FlowControl@{FlowControl}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{FlowControl}{FlowControl}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{CSerial\+Port\+::\+Flow\+Control}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoFlowControl@{NoFlowControl}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!NoFlowControl@{NoFlowControl}}}\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}} 
+No\+Flow\+Control&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CtsRtsFlowControl@{CtsRtsFlowControl}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!CtsRtsFlowControl@{CtsRtsFlowControl}}}\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae174312a5ebdef778e1c00a2726f1a1c}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae174312a5ebdef778e1c00a2726f1a1c}} 
+Cts\+Rts\+Flow\+Control&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CtsDtrFlowControl@{CtsDtrFlowControl}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!CtsDtrFlowControl@{CtsDtrFlowControl}}}\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae524405638dbea1e2aa32428633f11d3}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ae524405638dbea1e2aa32428633f11d3}} 
+Cts\+Dtr\+Flow\+Control&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DsrRtsFlowControl@{DsrRtsFlowControl}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!DsrRtsFlowControl@{DsrRtsFlowControl}}}\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a61516c7c0999af7c5d9cb93cf66fdcb9}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a61516c7c0999af7c5d9cb93cf66fdcb9}} 
+Dsr\+Rts\+Flow\+Control&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DsrDtrFlowControl@{DsrDtrFlowControl}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!DsrDtrFlowControl@{DsrDtrFlowControl}}}\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96afdece2e330bb94a2336abc1aa728c482}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96afdece2e330bb94a2336abc1aa728c482}} 
+Dsr\+Dtr\+Flow\+Control&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XonXoffFlowControl@{XonXoffFlowControl}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!XonXoffFlowControl@{XonXoffFlowControl}}}\mbox{\Hypertarget{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ad0735cbc4a6cd2be2e6ba59aaae53e7f}\label{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96ad0735cbc4a6cd2be2e6ba59aaae53e7f}} 
+Xon\+Xoff\+Flow\+Control&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}\label{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}} 
+\index{CSerialPort@{CSerialPort}!Parity@{Parity}}
+\index{Parity@{Parity}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Parity}{Parity}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{CSerial\+Port\+::\+Parity}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoParity@{NoParity}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!NoParity@{NoParity}}}\mbox{\Hypertarget{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}\label{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}} 
+No\+Parity&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OddParity@{OddParity}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!OddParity@{OddParity}}}\mbox{\Hypertarget{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca188ff8a372599cbb5fe633f7a10f71c9}\label{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca188ff8a372599cbb5fe633f7a10f71c9}} 
+Odd\+Parity&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EvenParity@{EvenParity}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!EvenParity@{EvenParity}}}\mbox{\Hypertarget{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca6474f4458be766d04a3ad2bfd72b10ae}\label{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca6474f4458be766d04a3ad2bfd72b10ae}} 
+Even\+Parity&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MarkParity@{MarkParity}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!MarkParity@{MarkParity}}}\mbox{\Hypertarget{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca0b7bac6e5d9cdc88872cd83c881f7b54}\label{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca0b7bac6e5d9cdc88872cd83c881f7b54}} 
+Mark\+Parity&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpaceParity@{SpaceParity}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!SpaceParity@{SpaceParity}}}\mbox{\Hypertarget{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91cac254a94a25e7fd02beb9b42863c914f7}\label{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91cac254a94a25e7fd02beb9b42863c914f7}} 
+Space\+Parity&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}\label{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}} 
+\index{CSerialPort@{CSerialPort}!StopBits@{StopBits}}
+\index{StopBits@{StopBits}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{StopBits}{StopBits}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{CSerial\+Port\+::\+Stop\+Bits}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OneStopBit@{OneStopBit}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!OneStopBit@{OneStopBit}}}\mbox{\Hypertarget{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}\label{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}} 
+One\+Stop\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnePointFiveStopBits@{OnePointFiveStopBits}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!OnePointFiveStopBits@{OnePointFiveStopBits}}}\mbox{\Hypertarget{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a154a201ce6fb804109528d6a811f1f40}\label{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a154a201ce6fb804109528d6a811f1f40}} 
+One\+Point\+Five\+Stop\+Bits&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwoStopBits@{TwoStopBits}!CSerialPort@{CSerialPort}}\index{CSerialPort@{CSerialPort}!TwoStopBits@{TwoStopBits}}}\mbox{\Hypertarget{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a10f3e2d412585d9155520cddc6484643}\label{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a10f3e2d412585d9155520cddc6484643}} 
+Two\+Stop\+Bits&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_serial_port_a4f99783ee3859f782d394eff9fb9c3d6}\label{class_c_serial_port_a4f99783ee3859f782d394eff9fb9c3d6}} 
+\index{CSerialPort@{CSerialPort}!CSerialPort@{CSerialPort}}
+\index{CSerialPort@{CSerialPort}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{CSerialPort()}{CSerialPort()}}
+{\footnotesize\ttfamily CSerial\+Port\+::\+CSerial\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_abd72f8599d0696d9b14a56780cce8d21}\label{class_c_serial_port_abd72f8599d0696d9b14a56780cce8d21}} 
+\index{CSerialPort@{CSerialPort}!````~CSerialPort@{$\sim$CSerialPort}}
+\index{````~CSerialPort@{$\sim$CSerialPort}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSerialPort()}{~CSerialPort()}}
+{\footnotesize\ttfamily CSerial\+Port\+::$\sim$\+CSerial\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_serial_port_a2c27ddd0b615d6131ac61135f32f85d4}\label{class_c_serial_port_a2c27ddd0b615d6131ac61135f32f85d4}} 
+\index{CSerialPort@{CSerialPort}!Attach@{Attach}}
+\index{Attach@{Attach}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} HANDLE}]{h\+Comm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ad882112f1b0753d65f2438d11a0fa87a}\label{class_c_serial_port_ad882112f1b0753d65f2438d11a0fa87a}} 
+\index{CSerialPort@{CSerialPort}!BytesWaiting@{BytesWaiting}}
+\index{BytesWaiting@{BytesWaiting}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{BytesWaiting()}{BytesWaiting()}}
+{\footnotesize\ttfamily DWORD CSerial\+Port\+::\+Bytes\+Waiting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a9a311b33785e2e175c36fe9d19f4cd5f}\label{class_c_serial_port_a9a311b33785e2e175c36fe9d19f4cd5f}} 
+\index{CSerialPort@{CSerialPort}!CancelIo@{CancelIo}}
+\index{CancelIo@{CancelIo}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{CancelIo()}{CancelIo()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Cancel\+Io (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a66e936c789cc76ebdf37a6219c1d457e}\label{class_c_serial_port_a66e936c789cc76ebdf37a6219c1d457e}} 
+\index{CSerialPort@{CSerialPort}!ClearBreak@{ClearBreak}}
+\index{ClearBreak@{ClearBreak}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ClearBreak()}{ClearBreak()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Clear\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a5f66d0436bf0746d74d84c491a3c9a5c}\label{class_c_serial_port_a5f66d0436bf0746d74d84c491a3c9a5c}} 
+\index{CSerialPort@{CSerialPort}!ClearDTR@{ClearDTR}}
+\index{ClearDTR@{ClearDTR}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ClearDTR()}{ClearDTR()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Clear\+DTR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ae73873cd013d0e39328cf5d88f402c95}\label{class_c_serial_port_ae73873cd013d0e39328cf5d88f402c95}} 
+\index{CSerialPort@{CSerialPort}!ClearError@{ClearError}}
+\index{ClearError@{ClearError}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ClearError()}{ClearError()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Clear\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&}]{dw\+Errors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a514a100b45c0c03716b772a5efa71817}\label{class_c_serial_port_a514a100b45c0c03716b772a5efa71817}} 
+\index{CSerialPort@{CSerialPort}!ClearReadBuffer@{ClearReadBuffer}}
+\index{ClearReadBuffer@{ClearReadBuffer}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ClearReadBuffer()}{ClearReadBuffer()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Clear\+Read\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a932680bef4ceecdd78f3864646f6cbde}\label{class_c_serial_port_a932680bef4ceecdd78f3864646f6cbde}} 
+\index{CSerialPort@{CSerialPort}!ClearRTS@{ClearRTS}}
+\index{ClearRTS@{ClearRTS}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ClearRTS()}{ClearRTS()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Clear\+RTS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a9d261bad85b88d1d3b4237a8f9287eb0}\label{class_c_serial_port_a9d261bad85b88d1d3b4237a8f9287eb0}} 
+\index{CSerialPort@{CSerialPort}!ClearWriteBuffer@{ClearWriteBuffer}}
+\index{ClearWriteBuffer@{ClearWriteBuffer}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ClearWriteBuffer()}{ClearWriteBuffer()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Clear\+Write\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ab2347da0dda8b24ea87f04f87c0b09fe}\label{class_c_serial_port_ab2347da0dda8b24ea87f04f87c0b09fe}} 
+\index{CSerialPort@{CSerialPort}!Close@{Close}}
+\index{Close@{Close}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a4b2f499e29f86aa1a4de7c5c034467a1}\label{class_c_serial_port_a4b2f499e29f86aa1a4de7c5c034467a1}} 
+\index{CSerialPort@{CSerialPort}!Detach@{Detach}}
+\index{Detach@{Detach}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Detach()}{Detach()}}
+{\footnotesize\ttfamily HANDLE CSerial\+Port\+::\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a54a3097377fa9bf81a6934ae36b7a9ad}\label{class_c_serial_port_a54a3097377fa9bf81a6934ae36b7a9ad}} 
+\index{CSerialPort@{CSerialPort}!Escape@{Escape}}
+\index{Escape@{Escape}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Escape()}{Escape()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Escape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a92e83806d996081c35e19ad6e4211d99}\label{class_c_serial_port_a92e83806d996081c35e19ad6e4211d99}} 
+\index{CSerialPort@{CSerialPort}!Flush@{Flush}}
+\index{Flush@{Flush}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_acbe623ed298e8862eac206d366898c29}\label{class_c_serial_port_acbe623ed298e8862eac206d366898c29}} 
+\index{CSerialPort@{CSerialPort}!GetConfig@{GetConfig}}
+\index{GetConfig@{GetConfig}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetConfig()}{GetConfig()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&}]{config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a6bf60794a6c63c8207328dfa5f3d1b3e}\label{class_c_serial_port_a6bf60794a6c63c8207328dfa5f3d1b3e}} 
+\index{CSerialPort@{CSerialPort}!GetDefaultConfig@{GetDefaultConfig}}
+\index{GetDefaultConfig@{GetDefaultConfig}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetDefaultConfig()}{GetDefaultConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Default\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} int}]{n\+Port,  }\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMMCONFIG \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_serial_port_aa0790e4718961685fc5e28f7e70f9859}\label{class_c_serial_port_aa0790e4718961685fc5e28f7e70f9859}} 
+\index{CSerialPort@{CSerialPort}!GetDefaultConfig@{GetDefaultConfig}}
+\index{GetDefaultConfig@{GetDefaultConfig}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetDefaultConfig()}{GetDefaultConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Default\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\+\_\+\+In\+\_\+z\+\_\+}} LPCTSTR}]{psz\+Port,  }\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMMCONFIG \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_serial_port_abd4b728b49c529b0a7cf8bb1faff8869}\label{class_c_serial_port_abd4b728b49c529b0a7cf8bb1faff8869}} 
+\index{CSerialPort@{CSerialPort}!GetMask@{GetMask}}
+\index{GetMask@{GetMask}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetMask()}{GetMask()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&}]{dw\+Mask }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a7c2697a85a5bc3a8e7484d9cb463a029}\label{class_c_serial_port_a7c2697a85a5bc3a8e7484d9cb463a029}} 
+\index{CSerialPort@{CSerialPort}!GetModemStatus@{GetModemStatus}}
+\index{GetModemStatus@{GetModemStatus}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetModemStatus()}{GetModemStatus()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Modem\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&}]{dw\+Modem\+Status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_afeb1e30c96dda1b3ceaeeb58ce8b27ca}\label{class_c_serial_port_afeb1e30c96dda1b3ceaeeb58ce8b27ca}} 
+\index{CSerialPort@{CSerialPort}!GetOverlappedResult@{GetOverlappedResult}}
+\index{GetOverlappedResult@{GetOverlappedResult}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetOverlappedResult()}{GetOverlappedResult()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Overlapped\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} OVERLAPPED \&}]{overlapped,  }\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DWORD \&}]{dw\+Bytes\+Transferred,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BOOL}]{b\+Wait }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a2a4d44515e5da88f94e970d77070089e}\label{class_c_serial_port_a2a4d44515e5da88f94e970d77070089e}} 
+\index{CSerialPort@{CSerialPort}!GetProperties@{GetProperties}}
+\index{GetProperties@{GetProperties}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetProperties()}{GetProperties()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} COMMPROP \&}]{properties }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a146623618e862e0cfdd1cfac849a9f2a}\label{class_c_serial_port_a146623618e862e0cfdd1cfac849a9f2a}} 
+\index{CSerialPort@{CSerialPort}!GetState@{GetState}}
+\index{GetState@{GetState}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetState()}{GetState()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} DCB \&}]{dcb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ab08d21454920abda9c274e0d13b05997}\label{class_c_serial_port_ab08d21454920abda9c274e0d13b05997}} 
+\index{CSerialPort@{CSerialPort}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMSTAT \&}]{stat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ae4577af3805c562bd962821a17602874}\label{class_c_serial_port_ae4577af3805c562bd962821a17602874}} 
+\index{CSerialPort@{CSerialPort}!GetTimeouts@{GetTimeouts}}
+\index{GetTimeouts@{GetTimeouts}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{GetTimeouts()}{GetTimeouts()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Get\+Timeouts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a9c50bd6a6ca6e0be76a0f3a79379b90e}{\+\_\+\+Out\+\_\+}} COMMTIMEOUTS \&}]{timeouts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a75805efcb633290d46a0859cf3c34228}\label{class_c_serial_port_a75805efcb633290d46a0859cf3c34228}} 
+\index{CSerialPort@{CSerialPort}!IsOpen@{IsOpen}}
+\index{IsOpen@{IsOpen}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{IsOpen()}{IsOpen()}}
+{\footnotesize\ttfamily BOOL CSerial\+Port\+::\+Is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_serial_port_a860d2c304e113c06b7b47bcad4db5507}\label{class_c_serial_port_a860d2c304e113c06b7b47bcad4db5507}} 
+\index{CSerialPort@{CSerialPort}!Open@{Open}}
+\index{Open@{Open}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BOOL CSerial\+Port\+::\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} int}]{n\+Port,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Baud = {\ttfamily 9600},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{Parity}}}]{parity = {\ttfamily \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}{No\+Parity}}},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BYTE}]{Data\+Bits = {\ttfamily 8},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{Stop\+Bits}}}]{stop\+Bits = {\ttfamily \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}{One\+Stop\+Bit}}},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{Flow\+Control}}}]{fc = {\ttfamily \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}{No\+Flow\+Control}}},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BOOL}]{b\+Overlapped = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a66a3fdf3f5aa95008875d588e1312792}\label{class_c_serial_port_a66a3fdf3f5aa95008875d588e1312792}} 
+\index{CSerialPort@{CSerialPort}!Open@{Open}}
+\index{Open@{Open}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CSerial\+Port\+::\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\+\_\+\+In\+\_\+z\+\_\+}} LPCTSTR}]{psz\+Port,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Baud = {\ttfamily 9600},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91c}{Parity}}}]{parity = {\ttfamily \mbox{\hyperlink{class_c_serial_port_a8bae3d43d7f40bee784811ef23c5e91ca029aaf9623fc3b313adf80e2ed51f6a7}{No\+Parity}}},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BYTE}]{Data\+Bits = {\ttfamily 8},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1}{Stop\+Bits}}}]{stop\+Bits = {\ttfamily \mbox{\hyperlink{class_c_serial_port_a41f54614c51e4508e704d534c98485e1a7ab77778f58ae8a005443d5c5452f1de}{One\+Stop\+Bit}}},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96}{Flow\+Control}}}]{fc = {\ttfamily \mbox{\hyperlink{class_c_serial_port_a8293987be66ae21a4a1def671cff0d96a9afd5cbc81cd0cb61ffdf41c378ad54f}{No\+Flow\+Control}}},  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} BOOL}]{b\+Overlapped = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ae3ec585a716805f80ae5c1a80b9a5ec3}\label{class_c_serial_port_ae3ec585a716805f80ae5c1a80b9a5ec3}} 
+\index{CSerialPort@{CSerialPort}!operator HANDLE@{operator HANDLE}}
+\index{operator HANDLE@{operator HANDLE}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{operator HANDLE()}{operator HANDLE()}}
+{\footnotesize\ttfamily CSerial\+Port\+::operator HANDLE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_serial_port_aeb09fe2d22e085fd2e689c2f7e4b8758}\label{class_c_serial_port_aeb09fe2d22e085fd2e689c2f7e4b8758}} 
+\index{CSerialPort@{CSerialPort}!Purge@{Purge}}
+\index{Purge@{Purge}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Purge()}{Purge()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Purge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a78fb1ffadba7437ff9d45f73333a6e00}\label{class_c_serial_port_a78fb1ffadba7437ff9d45f73333a6e00}} 
+\index{CSerialPort@{CSerialPort}!Read@{Read}}
+\index{Read@{Read}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily DWORD CSerial\+Port\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a94739e7abc557d7aedd871c65c8d92a4}{\+\_\+\+Out\+\_\+writes\+\_\+bytes\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Read) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\+\_\+\+\_\+out\+\_\+data\+\_\+source}}(FILE) void $\ast$}]{lp\+Buffer,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Number\+Of\+Bytes\+To\+Read }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a373108fa9807d3b26f89c7dc5db2f33e}\label{class_c_serial_port_a373108fa9807d3b26f89c7dc5db2f33e}} 
+\index{CSerialPort@{CSerialPort}!Read@{Read}}
+\index{Read@{Read}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_ad4417e0e714eb3711ebc68d2e88356f4}{\+\_\+\+Out\+\_\+writes\+\_\+bytes\+\_\+to\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Read, $\ast$lp\+Number\+Of\+Bytes\+Read) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\+\_\+\+\_\+out\+\_\+data\+\_\+source}}(FILE) void $\ast$}]{lp\+Buffer,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Number\+Of\+Bytes\+To\+Read,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} OVERLAPPED \&}]{overlapped,  }\item[{\mbox{\hyperlink{_serial_port_8h_a9741e627e14220d0e9a803d9fa222a69}{\+\_\+\+Inout\+\_\+opt\+\_\+}} DWORD $\ast$}]{lp\+Number\+Of\+Bytes\+Read = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a2b1bcf3e3780700a50b2620b6254eaf6}\label{class_c_serial_port_a2b1bcf3e3780700a50b2620b6254eaf6}} 
+\index{CSerialPort@{CSerialPort}!ReadEx@{ReadEx}}
+\index{ReadEx@{ReadEx}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ReadEx()}{ReadEx()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Read\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_ad4b1ff83a10269bb43cc8d7f6a095ca9}{\+\_\+\+Out\+\_\+writes\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Read) \mbox{\hyperlink{_serial_port_8h_a40a30a3f22b41afaf13ba55299d80e85}{\+\_\+\+\_\+out\+\_\+data\+\_\+source}}(FILE) LPVOID}]{lp\+Buffer,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Number\+Of\+Bytes\+To\+Read,  }\item[{\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} LPOVERLAPPED}]{lp\+Overlapped,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} LPOVERLAPPED\+\_\+\+COMPLETION\+\_\+\+ROUTINE}]{lp\+Completion\+Routine }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_aa3cc97021e5679c1b723df66c5f0514b}\label{class_c_serial_port_aa3cc97021e5679c1b723df66c5f0514b}} 
+\index{CSerialPort@{CSerialPort}!Set0ReadTimeout@{Set0ReadTimeout}}
+\index{Set0ReadTimeout@{Set0ReadTimeout}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Set0ReadTimeout()}{Set0ReadTimeout()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set0\+Read\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_adf55d649c3f2c897ccd772d6dffddd53}\label{class_c_serial_port_adf55d649c3f2c897ccd772d6dffddd53}} 
+\index{CSerialPort@{CSerialPort}!Set0Timeout@{Set0Timeout}}
+\index{Set0Timeout@{Set0Timeout}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Set0Timeout()}{Set0Timeout()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set0\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a17a0171e2621caf64c6840f05c2bb066}\label{class_c_serial_port_a17a0171e2621caf64c6840f05c2bb066}} 
+\index{CSerialPort@{CSerialPort}!Set0WriteTimeout@{Set0WriteTimeout}}
+\index{Set0WriteTimeout@{Set0WriteTimeout}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Set0WriteTimeout()}{Set0WriteTimeout()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set0\+Write\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a22fda56648492f464d92007449e4d6c5}\label{class_c_serial_port_a22fda56648492f464d92007449e4d6c5}} 
+\index{CSerialPort@{CSerialPort}!SetBreak@{SetBreak}}
+\index{SetBreak@{SetBreak}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetBreak()}{SetBreak()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_aaf8e3f9eeb6b7301484c3c87c2027703}\label{class_c_serial_port_aaf8e3f9eeb6b7301484c3c87c2027703}} 
+\index{CSerialPort@{CSerialPort}!SetCallBack@{SetCallBack}}
+\index{SetCallBack@{SetCallBack}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetCallBack()}{SetCallBack()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_serial_port_abb2c4c60aacc6fc8d1d77c24f3987337}\label{class_c_serial_port_abb2c4c60aacc6fc8d1d77c24f3987337}} 
+\index{CSerialPort@{CSerialPort}!SetConfig@{SetConfig}}
+\index{SetConfig@{SetConfig}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetConfig()}{SetConfig()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&}]{Config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ada6a1798ac6a63e9b6deebe6a9380398}\label{class_c_serial_port_ada6a1798ac6a63e9b6deebe6a9380398}} 
+\index{CSerialPort@{CSerialPort}!SetDefaultConfig@{SetDefaultConfig}}
+\index{SetDefaultConfig@{SetDefaultConfig}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetDefaultConfig()}{SetDefaultConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Default\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} int}]{n\+Port,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_serial_port_affa21a03782220d45cc4c923d74fdce1}\label{class_c_serial_port_affa21a03782220d45cc4c923d74fdce1}} 
+\index{CSerialPort@{CSerialPort}!SetDefaultConfig@{SetDefaultConfig}}
+\index{SetDefaultConfig@{SetDefaultConfig}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetDefaultConfig()}{SetDefaultConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Default\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a445adb5c0468d0aeaaaeb006ac4bbf7f}{\+\_\+\+In\+\_\+z\+\_\+}} LPCTSTR}]{psz\+Port,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMCONFIG \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_serial_port_a77317d9e3a2b6b1ddb848997e982e273}\label{class_c_serial_port_a77317d9e3a2b6b1ddb848997e982e273}} 
+\index{CSerialPort@{CSerialPort}!SetDTR@{SetDTR}}
+\index{SetDTR@{SetDTR}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetDTR()}{SetDTR()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+DTR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a9059db62e2fcf5cf2925e95e54a5fc7e}\label{class_c_serial_port_a9059db62e2fcf5cf2925e95e54a5fc7e}} 
+\index{CSerialPort@{CSerialPort}!SetMask@{SetMask}}
+\index{SetMask@{SetMask}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetMask()}{SetMask()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Mask }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a8b78de0f0cbbf0b64c76a11c4e4b4c20}\label{class_c_serial_port_a8b78de0f0cbbf0b64c76a11c4e4b4c20}} 
+\index{CSerialPort@{CSerialPort}!SetRTS@{SetRTS}}
+\index{SetRTS@{SetRTS}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetRTS()}{SetRTS()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+RTS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a3455a44d9f0a604ebc0f3bc96cbb99dc}\label{class_c_serial_port_a3455a44d9f0a604ebc0f3bc96cbb99dc}} 
+\index{CSerialPort@{CSerialPort}!SetState@{SetState}}
+\index{SetState@{SetState}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DCB \&}]{dcb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_aef0971e189cdedd8353dddacb0121362}\label{class_c_serial_port_aef0971e189cdedd8353dddacb0121362}} 
+\index{CSerialPort@{CSerialPort}!SetTimeouts@{SetTimeouts}}
+\index{SetTimeouts@{SetTimeouts}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetTimeouts()}{SetTimeouts()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+Timeouts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} COMMTIMEOUTS \&}]{timeouts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ab3b3251eefa942b9463b8bcfeb7ef726}\label{class_c_serial_port_ab3b3251eefa942b9463b8bcfeb7ef726}} 
+\index{CSerialPort@{CSerialPort}!Setup@{Setup}}
+\index{Setup@{Setup}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+In\+Queue,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Out\+Queue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ac89dcfb6c01f430d54c7fb44b326f922}\label{class_c_serial_port_ac89dcfb6c01f430d54c7fb44b326f922}} 
+\index{CSerialPort@{CSerialPort}!SetXOFF@{SetXOFF}}
+\index{SetXOFF@{SetXOFF}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetXOFF()}{SetXOFF()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+XOFF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_aed31733fa54b43fb8539a95e9660b0c8}\label{class_c_serial_port_aed31733fa54b43fb8539a95e9660b0c8}} 
+\index{CSerialPort@{CSerialPort}!SetXON@{SetXON}}
+\index{SetXON@{SetXON}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{SetXON()}{SetXON()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Set\+XON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ad2a5573174495d23d0e4ddd90fecf7f2}\label{class_c_serial_port_ad2a5573174495d23d0e4ddd90fecf7f2}} 
+\index{CSerialPort@{CSerialPort}!TerminateOutstandingReads@{TerminateOutstandingReads}}
+\index{TerminateOutstandingReads@{TerminateOutstandingReads}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{TerminateOutstandingReads()}{TerminateOutstandingReads()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Terminate\+Outstanding\+Reads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a1568d861400816b339064a0b05542ada}\label{class_c_serial_port_a1568d861400816b339064a0b05542ada}} 
+\index{CSerialPort@{CSerialPort}!TerminateOutstandingWrites@{TerminateOutstandingWrites}}
+\index{TerminateOutstandingWrites@{TerminateOutstandingWrites}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{TerminateOutstandingWrites()}{TerminateOutstandingWrites()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Terminate\+Outstanding\+Writes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_aa331c4d7f1e0ba929dece2587b9858bb}\label{class_c_serial_port_aa331c4d7f1e0ba929dece2587b9858bb}} 
+\index{CSerialPort@{CSerialPort}!ThrowSerialException@{ThrowSerialException}}
+\index{ThrowSerialException@{ThrowSerialException}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{ThrowSerialException()}{ThrowSerialException()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Throw\+Serial\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Error = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_serial_port_a31a110b69af5d8bb66144293f1bff224}\label{class_c_serial_port_a31a110b69af5d8bb66144293f1bff224}} 
+\index{CSerialPort@{CSerialPort}!TransmitChar@{TransmitChar}}
+\index{TransmitChar@{TransmitChar}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{TransmitChar()}{TransmitChar()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Transmit\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} char}]{c\+Char }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_af7e8210bd7e5ecdf846e5d29f8a26f32}\label{class_c_serial_port_af7e8210bd7e5ecdf846e5d29f8a26f32}} 
+\index{CSerialPort@{CSerialPort}!WaitEvent@{WaitEvent}}
+\index{WaitEvent@{WaitEvent}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{WaitEvent()}{WaitEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Wait\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} DWORD \&}]{dw\+Mask }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a59bfb5ec6cd91d3bcb99f87c67c4c6d0}\label{class_c_serial_port_a59bfb5ec6cd91d3bcb99f87c67c4c6d0}} 
+\index{CSerialPort@{CSerialPort}!WaitEvent@{WaitEvent}}
+\index{WaitEvent@{WaitEvent}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{WaitEvent()}{WaitEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BOOL CSerial\+Port\+::\+Wait\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} DWORD \&}]{dw\+Mask,  }\item[{\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} OVERLAPPED \&}]{overlapped }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_a843e39d9695c4b684d461c734b61c22e}\label{class_c_serial_port_a843e39d9695c4b684d461c734b61c22e}} 
+\index{CSerialPort@{CSerialPort}!Write@{Write}}
+\index{Write@{Write}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily DWORD CSerial\+Port\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Write) const void $\ast$}]{lp\+Buffer,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Number\+Of\+Bytes\+To\+Write }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ab742981b2f6d5e7da8acda36b84d4770}\label{class_c_serial_port_ab742981b2f6d5e7da8acda36b84d4770}} 
+\index{CSerialPort@{CSerialPort}!Write@{Write}}
+\index{Write@{Write}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Write) const void $\ast$}]{lp\+Buffer,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Number\+Of\+Bytes\+To\+Write,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} OVERLAPPED \&}]{overlapped,  }\item[{\mbox{\hyperlink{_serial_port_8h_a0cee083d022d10fcad4840d6debdedb8}{\+\_\+\+Out\+\_\+opt\+\_\+}} DWORD $\ast$}]{lp\+Number\+Of\+Bytes\+Written = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_serial_port_ac8f3704925c34786b0a60c1e2beddc8d}\label{class_c_serial_port_ac8f3704925c34786b0a60c1e2beddc8d}} 
+\index{CSerialPort@{CSerialPort}!WriteEx@{WriteEx}}
+\index{WriteEx@{WriteEx}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{WriteEx()}{WriteEx()}}
+{\footnotesize\ttfamily void CSerial\+Port\+::\+Write\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_serial_port_8h_a1b5eae8f373bdfc76eaa82b560ee61d2}{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+opt\+\_\+}}(dw\+Number\+Of\+Bytes\+To\+Write) LPCVOID}]{lp\+Buffer,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} DWORD}]{dw\+Number\+Of\+Bytes\+To\+Write,  }\item[{\mbox{\hyperlink{_serial_port_8h_a198d136b8176ee5824b09c7bd8b7beb0}{\+\_\+\+Inout\+\_\+}} LPOVERLAPPED}]{lp\+Overlapped,  }\item[{\mbox{\hyperlink{_serial_port_8h_aa74f89aa7d942f4a79ea12d7c9b763ef}{\+\_\+\+In\+\_\+}} LPOVERLAPPED\+\_\+\+COMPLETION\+\_\+\+ROUTINE}]{lp\+Completion\+Routine }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_serial_port_a98e5937b91cc11dd0479efcbee8055f8}\label{class_c_serial_port_a98e5937b91cc11dd0479efcbee8055f8}} 
+\index{CSerialPort@{CSerialPort}!callEventfunc@{callEventfunc}}
+\index{callEventfunc@{callEventfunc}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{callEventfunc}{callEventfunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_serial_port_a26012b35b308e24da9ffdb111cf4fbd0}{CALLBACK\+\_\+\+FUNCTION\+\_\+\+Event}} CSerial\+Port\+::call\+Eventfunc\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_serial_port_a234faffa92379fada3f91ce21a8cac35}\label{class_c_serial_port_a234faffa92379fada3f91ce21a8cac35}} 
+\index{CSerialPort@{CSerialPort}!m\_hComm@{m\_hComm}}
+\index{m\_hComm@{m\_hComm}!CSerialPort@{CSerialPort}}
+\doxysubsubsection{\texorpdfstring{m\_hComm}{m\_hComm}}
+{\footnotesize\ttfamily HANDLE CSerial\+Port\+::m\+\_\+h\+Comm\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_serial_port_8h}{Serial\+Port.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_serial_port_8cpp}{Serial\+Port.\+cpp}}\end{DoxyCompactItemize}

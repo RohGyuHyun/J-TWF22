@@ -1,0 +1,284 @@
+\hypertarget{class_c_mil_blob}{}\doxysection{CMil\+Blob 클래스 참조}
+\label{class_c_mil_blob}\index{CMilBlob@{CMilBlob}}
+
+
+Mil의 Blob관련 함수군을 Class화하였다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Blob.\+h$>$}
+
+
+
+CMil\+Blob에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_c_mil_blob__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Blob에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_c_mil_blob__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_blob_a770bb44681a3941d942974fcbf6a5fd0}{CMil\+Blob}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_blob_abfd00aa741c16d9379f4172b424dc166}{CMil\+Blob}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Buffer)
+\item 
+\mbox{\hyperlink{class_c_mil_blob_ac3c8f5c8fbc061c1c9c3fb2372f514ee}{$\sim$\+CMil\+Blob}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_a4ac2cb9e2bfecef4518b2c03bb8c43cb}{Caculate}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_adc7f6ccf367d25d0acd9f3ed70622df9}{Control}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_a4da050894f181ba9b68e93cd1d5672d1}{Release\+Result\+Mem}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_abd9781d04f50b2629964d43ee9f79b70}{Select}} (MIL\+\_\+\+INT Operation, MIL\+\_\+\+INT Feature, MIL\+\_\+\+INT Condition, double Cond\+Low, double Cond\+High)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_ac1a8606d5a9643228c247d92415dab66}{Get\+Number}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_a5d62b53a21e9664d7a7d0f4a90c9f37a}{Get\+Result}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_a0a5057e8fa15dc37d280c938ed606ee8}{Select\+Feret}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_aa43b70c351e070fffbf62459ca4efc64}{Select\+Feature}} (MIL\+\_\+\+INT feature)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_a70cffc2461cf58a40fca52b8c3af406b}{Reconstruct}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_ae0ab6e7316ac1f3713bea601d55c37f4}{Fill}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_ad604dfd4755b263c06f1db80213f3188}{Label}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_aeae74472a8947b8ec843494a02e68fe7}{Alloc\+Feature\+List}} (void)
+\begin{DoxyCompactList}\small\item\em Feature를 갖어올 리스트를 만듦 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_blob_a1117b570372c23f091d68426be4a5b52}{Alloc\+Result}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_ae13e6039e2828ff6badc2f90ecd98dbb}{Set\+Mil\+Buffer}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Buffer)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_a6901398213eeece0f1be69741d3e33e9}{Draw}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+My\+Display, int i\+Label)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_a3a8a2a8b7deeeee81eaac26d1be96b6a}{Draw}} (\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$p\+Mil\+Display)
+\item 
+int \mbox{\hyperlink{class_c_mil_blob_a19a217668b5d60834cdf4cf4fe4045b9}{Free}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_blob_af7030092f841ac2545742797001293e5}{Set\+Buffer}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Mil\+Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_blob_a7b491db458fa817d4c8d8aab1c121b41}{m\+\_\+feature\+List}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_blob_a12dfb5d07eefb3428139a02fab43ba4c}{m\+\_\+mil\+IDBuffer}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_blob_abf7c26c70fd40cdb6f8465f4ea6d6181}{m\+\_\+mil\+IDSystem}}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_blob_aee0c3f22a4b7a5e323f55227b4440742}{m\+\_\+mil\+Result}}
+\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_blob_a250876341570d16c1669d563968e0efd}{m\+\_\+p\+Mil\+Buffer}}
+\item 
+\mbox{\hyperlink{structt_blob_result_list}{t\+Blob\+Result\+List}} \mbox{\hyperlink{class_c_mil_blob_a70524534db228d0ed190c58f71ebf0f5}{m\+\_\+\+Result\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Blob관련 함수군을 Class화하였다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_blob_a770bb44681a3941d942974fcbf6a5fd0}\label{class_c_mil_blob_a770bb44681a3941d942974fcbf6a5fd0}} 
+\index{CMilBlob@{CMilBlob}!CMilBlob@{CMilBlob}}
+\index{CMilBlob@{CMilBlob}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{CMilBlob()}{CMilBlob()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CMil\+Blob\+::\+CMil\+Blob (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_abfd00aa741c16d9379f4172b424dc166}\label{class_c_mil_blob_abfd00aa741c16d9379f4172b424dc166}} 
+\index{CMilBlob@{CMilBlob}!CMilBlob@{CMilBlob}}
+\index{CMilBlob@{CMilBlob}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{CMilBlob()}{CMilBlob()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CMil\+Blob\+::\+CMil\+Blob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_ac3c8f5c8fbc061c1c9c3fb2372f514ee}\label{class_c_mil_blob_ac3c8f5c8fbc061c1c9c3fb2372f514ee}} 
+\index{CMilBlob@{CMilBlob}!````~CMilBlob@{$\sim$CMilBlob}}
+\index{````~CMilBlob@{$\sim$CMilBlob}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilBlob()}{~CMilBlob()}}
+{\footnotesize\ttfamily CMil\+Blob\+::$\sim$\+CMil\+Blob (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_blob_aeae74472a8947b8ec843494a02e68fe7}\label{class_c_mil_blob_aeae74472a8947b8ec843494a02e68fe7}} 
+\index{CMilBlob@{CMilBlob}!AllocFeatureList@{AllocFeatureList}}
+\index{AllocFeatureList@{AllocFeatureList}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{AllocFeatureList()}{AllocFeatureList()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Alloc\+Feature\+List (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Feature를 갖어올 리스트를 만듦 
+
+\begin{DoxyReturn}{반환값}
+M\+\_\+\+NULL(0) Alloc Fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_mil_blob_a1117b570372c23f091d68426be4a5b52}\label{class_c_mil_blob_a1117b570372c23f091d68426be4a5b52}} 
+\index{CMilBlob@{CMilBlob}!AllocResult@{AllocResult}}
+\index{AllocResult@{AllocResult}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{AllocResult()}{AllocResult()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Alloc\+Result (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a4ac2cb9e2bfecef4518b2c03bb8c43cb}\label{class_c_mil_blob_a4ac2cb9e2bfecef4518b2c03bb8c43cb}} 
+\index{CMilBlob@{CMilBlob}!Caculate@{Caculate}}
+\index{Caculate@{Caculate}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Caculate()}{Caculate()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Caculate (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_adc7f6ccf367d25d0acd9f3ed70622df9}\label{class_c_mil_blob_adc7f6ccf367d25d0acd9f3ed70622df9}} 
+\index{CMilBlob@{CMilBlob}!Control@{Control}}
+\index{Control@{Control}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Control()}{Control()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Control (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a3a8a2a8b7deeeee81eaac26d1be96b6a}\label{class_c_mil_blob_a3a8a2a8b7deeeee81eaac26d1be96b6a}} 
+\index{CMilBlob@{CMilBlob}!Draw@{Draw}}
+\index{Draw@{Draw}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+Mil\+Display }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a6901398213eeece0f1be69741d3e33e9}\label{class_c_mil_blob_a6901398213eeece0f1be69741d3e33e9}} 
+\index{CMilBlob@{CMilBlob}!Draw@{Draw}}
+\index{Draw@{Draw}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_display}{CMil\+Display}} $\ast$}]{p\+My\+Display,  }\item[{int}]{i\+Label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_ae0ab6e7316ac1f3713bea601d55c37f4}\label{class_c_mil_blob_ae0ab6e7316ac1f3713bea601d55c37f4}} 
+\index{CMilBlob@{CMilBlob}!Fill@{Fill}}
+\index{Fill@{Fill}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Fill (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a19a217668b5d60834cdf4cf4fe4045b9}\label{class_c_mil_blob_a19a217668b5d60834cdf4cf4fe4045b9}} 
+\index{CMilBlob@{CMilBlob}!Free@{Free}}
+\index{Free@{Free}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Free (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_ac1a8606d5a9643228c247d92415dab66}\label{class_c_mil_blob_ac1a8606d5a9643228c247d92415dab66}} 
+\index{CMilBlob@{CMilBlob}!GetNumber@{GetNumber}}
+\index{GetNumber@{GetNumber}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{GetNumber()}{GetNumber()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Get\+Number (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a5d62b53a21e9664d7a7d0f4a90c9f37a}\label{class_c_mil_blob_a5d62b53a21e9664d7a7d0f4a90c9f37a}} 
+\index{CMilBlob@{CMilBlob}!GetResult@{GetResult}}
+\index{GetResult@{GetResult}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{GetResult()}{GetResult()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Get\+Result (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_ad604dfd4755b263c06f1db80213f3188}\label{class_c_mil_blob_ad604dfd4755b263c06f1db80213f3188}} 
+\index{CMilBlob@{CMilBlob}!Label@{Label}}
+\index{Label@{Label}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Label()}{Label()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Label (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a70cffc2461cf58a40fca52b8c3af406b}\label{class_c_mil_blob_a70cffc2461cf58a40fca52b8c3af406b}} 
+\index{CMilBlob@{CMilBlob}!Reconstruct@{Reconstruct}}
+\index{Reconstruct@{Reconstruct}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Reconstruct()}{Reconstruct()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Reconstruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a4da050894f181ba9b68e93cd1d5672d1}\label{class_c_mil_blob_a4da050894f181ba9b68e93cd1d5672d1}} 
+\index{CMilBlob@{CMilBlob}!ReleaseResultMem@{ReleaseResultMem}}
+\index{ReleaseResultMem@{ReleaseResultMem}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{ReleaseResultMem()}{ReleaseResultMem()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Release\+Result\+Mem (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_abd9781d04f50b2629964d43ee9f79b70}\label{class_c_mil_blob_abd9781d04f50b2629964d43ee9f79b70}} 
+\index{CMilBlob@{CMilBlob}!Select@{Select}}
+\index{Select@{Select}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Select (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+INT}]{Operation,  }\item[{MIL\+\_\+\+INT}]{Feature,  }\item[{MIL\+\_\+\+INT}]{Condition,  }\item[{double}]{Cond\+Low,  }\item[{double}]{Cond\+High }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_aa43b70c351e070fffbf62459ca4efc64}\label{class_c_mil_blob_aa43b70c351e070fffbf62459ca4efc64}} 
+\index{CMilBlob@{CMilBlob}!SelectFeature@{SelectFeature}}
+\index{SelectFeature@{SelectFeature}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{SelectFeature()}{SelectFeature()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Select\+Feature (\begin{DoxyParamCaption}\item[{MIL\+\_\+\+INT}]{feature }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_a0a5057e8fa15dc37d280c938ed606ee8}\label{class_c_mil_blob_a0a5057e8fa15dc37d280c938ed606ee8}} 
+\index{CMilBlob@{CMilBlob}!SelectFeret@{SelectFeret}}
+\index{SelectFeret@{SelectFeret}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{SelectFeret()}{SelectFeret()}}
+{\footnotesize\ttfamily int CMil\+Blob\+::\+Select\+Feret (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_af7030092f841ac2545742797001293e5}\label{class_c_mil_blob_af7030092f841ac2545742797001293e5}} 
+\index{CMilBlob@{CMilBlob}!SetBuffer@{SetBuffer}}
+\index{SetBuffer@{SetBuffer}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{SetBuffer()}{SetBuffer()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Set\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_blob_ae13e6039e2828ff6badc2f90ecd98dbb}\label{class_c_mil_blob_ae13e6039e2828ff6badc2f90ecd98dbb}} 
+\index{CMilBlob@{CMilBlob}!SetMilBuffer@{SetMilBuffer}}
+\index{SetMilBuffer@{SetMilBuffer}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{SetMilBuffer()}{SetMilBuffer()}}
+{\footnotesize\ttfamily void CMil\+Blob\+::\+Set\+Mil\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Mil\+Buffer }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_blob_a7b491db458fa817d4c8d8aab1c121b41}\label{class_c_mil_blob_a7b491db458fa817d4c8d8aab1c121b41}} 
+\index{CMilBlob@{CMilBlob}!m\_featureList@{m\_featureList}}
+\index{m\_featureList@{m\_featureList}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{m\_featureList}{m\_featureList}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Blob\+::m\+\_\+feature\+List}
+
+\mbox{\Hypertarget{class_c_mil_blob_a12dfb5d07eefb3428139a02fab43ba4c}\label{class_c_mil_blob_a12dfb5d07eefb3428139a02fab43ba4c}} 
+\index{CMilBlob@{CMilBlob}!m\_milIDBuffer@{m\_milIDBuffer}}
+\index{m\_milIDBuffer@{m\_milIDBuffer}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{m\_milIDBuffer}{m\_milIDBuffer}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Blob\+::m\+\_\+mil\+IDBuffer}
+
+\mbox{\Hypertarget{class_c_mil_blob_abf7c26c70fd40cdb6f8465f4ea6d6181}\label{class_c_mil_blob_abf7c26c70fd40cdb6f8465f4ea6d6181}} 
+\index{CMilBlob@{CMilBlob}!m\_milIDSystem@{m\_milIDSystem}}
+\index{m\_milIDSystem@{m\_milIDSystem}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{m\_milIDSystem}{m\_milIDSystem}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Blob\+::m\+\_\+mil\+IDSystem}
+
+\mbox{\Hypertarget{class_c_mil_blob_aee0c3f22a4b7a5e323f55227b4440742}\label{class_c_mil_blob_aee0c3f22a4b7a5e323f55227b4440742}} 
+\index{CMilBlob@{CMilBlob}!m\_milResult@{m\_milResult}}
+\index{m\_milResult@{m\_milResult}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{m\_milResult}{m\_milResult}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Blob\+::m\+\_\+mil\+Result}
+
+\mbox{\Hypertarget{class_c_mil_blob_a250876341570d16c1669d563968e0efd}\label{class_c_mil_blob_a250876341570d16c1669d563968e0efd}} 
+\index{CMilBlob@{CMilBlob}!m\_pMilBuffer@{m\_pMilBuffer}}
+\index{m\_pMilBuffer@{m\_pMilBuffer}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{m\_pMilBuffer}{m\_pMilBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}}$\ast$ CMil\+Blob\+::m\+\_\+p\+Mil\+Buffer}
+
+\mbox{\Hypertarget{class_c_mil_blob_a70524534db228d0ed190c58f71ebf0f5}\label{class_c_mil_blob_a70524534db228d0ed190c58f71ebf0f5}} 
+\index{CMilBlob@{CMilBlob}!m\_ResultList@{m\_ResultList}}
+\index{m\_ResultList@{m\_ResultList}!CMilBlob@{CMilBlob}}
+\doxysubsubsection{\texorpdfstring{m\_ResultList}{m\_ResultList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structt_blob_result_list}{t\+Blob\+Result\+List}} CMil\+Blob\+::m\+\_\+\+Result\+List}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_blob_8h}{Mil\+Blob.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_blob_8cpp}{Mil\+Blob.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+\hypertarget{_mil_display_8h_source}{}\doxysection{Mil\+Display.\+h}
+\label{_mil_display_8h_source}\index{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilDisplay.h@{D:/OneDrive/ngh/J-\/TWF22/Library/Matrox/MilDisplay.h}}
+\mbox{\hyperlink{_mil_display_8h}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <mil.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mil_graph_8h}{MilGraph.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <UniUtility.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{_mil_base_8h_ac59caefbe3fb1e18fa522ad367a45a49}{MIL\_DLLDECL}} \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_c_mil_graph}{CMilGraph}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{15         \mbox{\hyperlink{class_c_mil_display}{CMilDisplay}}(\mbox{\hyperlink{class_c_mil_application}{CMilApplication}} * pMilApplication, \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} * pMilSystem);}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_c_mil_display}{\string~CMilDisplay}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} Create(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} Create(\mbox{\hyperlink{class_c_mil_application}{CMilApplication}} * pMilApplication, \mbox{\hyperlink{class_c_mil_system}{CMilSystem}} * pMilSystem);}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} Control(MIL\_INT ctrlType, MIL\_DOUBLE ctrlValue);}
+\DoxyCodeLine{20         \textcolor{keywordtype}{int} EnableOverlay(BOOL bState=TRUE);}
+\DoxyCodeLine{21         \textcolor{keywordtype}{int} Close(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{22         MIL\_ID \mbox{\hyperlink{class_c_mil_display_a2b2bfcb0d80f274764760b5d4c3c1ba7}{m\_milIDApplication}};}
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} GetDisplayID(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} GetIDOverlay(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} ClearOverlay(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} ClearOverlay(\mbox{\hyperlink{class_c_mil_display}{CMilDisplay}} *pMilDisplay);}
+\DoxyCodeLine{27         BOOL IsSelected(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} UnSelectDisp(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{29         MIL\_ID \mbox{\hyperlink{class_c_mil_display_a0d14455a4a3b6597a0081f3326c45848}{m\_milIDDisplay}};}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} SetViewShift(\textcolor{keywordtype}{int} vShift);}
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} SetViewAutoScale(BOOL bState=TRUE);}
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} SetZoomFactor(\textcolor{keywordtype}{double} XFactor, \textcolor{keywordtype}{double} YFactor);}
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} SetPanFactor(\textcolor{keywordtype}{double} XOffset, \textcolor{keywordtype}{double} YOffset);}
+\DoxyCodeLine{34         UINT GetTransparencyColor(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} FilWindow(\textcolor{keywordtype}{bool} bStatus=TRUE);}
+\DoxyCodeLine{36         \textcolor{keywordtype}{void} DispCenter(\textcolor{keywordtype}{bool} bStatus = TRUE);}
+\DoxyCodeLine{37         CdblSize GetZoomFactor();}
+\DoxyCodeLine{38         \textcolor{keywordtype}{int} GetMousePosImgXY(CdblPoint * pDblPoint);}
+\DoxyCodeLine{39         \textcolor{keywordtype}{int} EnableAutoPanZoom();}
+\DoxyCodeLine{40 \};}
+
+\end{DoxyCode}

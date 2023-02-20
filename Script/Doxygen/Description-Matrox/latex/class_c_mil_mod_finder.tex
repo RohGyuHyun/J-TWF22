@@ -1,0 +1,391 @@
+\hypertarget{class_c_mil_mod_finder}{}\doxysection{CMil\+Mod\+Finder 클래스 참조}
+\label{class_c_mil_mod_finder}\index{CMilModFinder@{CMilModFinder}}
+
+
+Mil의 Model Finder관련 함수군을 Class화하였다  
+
+
+
+
+{\ttfamily \#include $<$Mil\+Mod\+Finder.\+h$>$}
+
+
+
+CMil\+Mod\+Finder에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_c_mil_mod_finder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMil\+Mod\+Finder에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mil_mod_finder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}{t\+Mod\+Target\+Type}} \{ \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa82caf603d7174b99339c26ccff0987ca}{MOD\+\_\+\+TARGET\+\_\+\+RST}}
+, \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa02baad4851c5c276667297cea50c37a8}{MOD\+\_\+\+TARGET\+\_\+\+CXT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mil_mod_finder_aaa0760251edd0c18944c267cbc3db0cd}{CMil\+Mod\+Finder}} (void)
+\item 
+\mbox{\hyperlink{class_c_mil_mod_finder_a1a41eb84f70c5c676e8df13ef7762aae}{$\sim$\+CMil\+Mod\+Finder}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_ab130951ed1e60fc572156b09c032970a}{Set\+Context}} (\mbox{\hyperlink{class_c_mil_context}{CMil\+Context}} $\ast$p\+Mil\+Context)
+\begin{DoxyCompactList}\small\item\em Context를 설정한다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_afc632b16e1179bf7be0e43d80fbf99ad}{Get\+Feature}} (void)
+\begin{DoxyCompactList}\small\item\em 기 설정된 Parameter로 옵션을 설정한다. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_abac26111a46f79317b0e922981e051ba}{Get\+Feature}} (CRect aoi\+Rect)
+\begin{DoxyCompactList}\small\item\em aoi\+Rect 영역내에서 Get\+Feature를 함 ~\newline
+ Set\+Buffer으로 설정된 이미지 내에서의 aoi\+Rect을 의미함 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a0fabb84b95fdd816ae6b5208db1b6aa5}{Del\+All\+Feature}} (int Index)
+\begin{DoxyCompactList}\small\item\em Context에서 등록된 모든 모델을 지운다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_aa2c512e1b89894db059d765eb0a747a8}{Set\+Buffer}} (\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$p\+Image)
+\begin{DoxyCompactList}\small\item\em Model\+Finder를 돌릴 버퍼를 설정한다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_aefedbdfb85a85674f36cf217639b97b1}{Set\+Result}} (\mbox{\hyperlink{class_c_mil_result}{CMil\+Result}} $\ast$p\+Result)
+\begin{DoxyCompactList}\small\item\em 결과값받을 CMil\+Result를 설정한다 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_aadf2c1adcc75dd5714b072702b0b677b}{Define}} (long ltype, double dbl\+Param1, double dbl\+Param2, double dbl\+Param3, double dbl\+Param4, double dbl\+Param5)
+\begin{DoxyCompactList}\small\item\em Mod\+Define을 그대로 캡슐화함 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_aa33f14331bdd0b9399b6199743b96357}{Set\+AOI}} (void)
+\begin{DoxyCompactList}\small\item\em 전체버퍼영역에서 Mod\+Define함 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a2a1e9b3bb9f6768767a462466fc4326d}{Set\+AOI}} (CRect aoi\+Rect)
+\begin{DoxyCompactList}\small\item\em aoi\+Rect내부에서만 Mod\+Define함 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a320d30bd9915ffaf00cb7683b2100645}{Control}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a3a293e1058b3d72f030910e2ba3b846e}{Pre\+Process}} ()
+\begin{DoxyCompactList}\small\item\em Context환경을 만듦 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_aa0c62e732477576b749ddc9c389fdc19}{Find}} (\mbox{\hyperlink{structt_mod_result}{t\+Mod\+Result}} $\ast$p\+Result)
+\begin{DoxyCompactList}\small\item\em Context환경을 만듦 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_af7c3bb18dc7337c60a79fa6480e009f9}{Find}} (\mbox{\hyperlink{class_c_mil_result}{CMil\+Result}} $\ast$p\+Result)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a4228ee2c7df80b948a32a2eb67de2c0b}{Draw\+Context}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_ae6f2c5c72cae0955b8faf1f9bb1b1070}{Set\+Draw\+Offset}} (CSize Offset=CSize(M\+\_\+\+DEFAULT, M\+\_\+\+DEFAULT))
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a618d908d6fe84c068cc5e8bf776b3289}{Get\+Draw\+Box\+Offset}} (Cdbl\+Size $\ast$p\+Offset)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a6f404000bd78911f188251f6fc90ab8b}{Draw\+Result}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a1d87329c4e31a1cd559a805f760b2066}{Alloc}} (void)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a9689aaafcd2b5554c83ebb767681c4d7}{Control}} (long Index, long Ctrl\+Type, double Ctrl\+Value, \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}{t\+Mod\+Target\+Type}} Target=\mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa02baad4851c5c276667297cea50c37a8}{MOD\+\_\+\+TARGET\+\_\+\+CXT}})
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_ae5d3f75f72961c6033a26bd13914d81e}{Set\+Speed}} (long l\+Speed=M\+\_\+\+VERY\+\_\+\+HIGH)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_ad1536a71ec22114b1a54c00e0caceb93}{Set\+Search\+Angle\+Range}} (double dbl\+Score=M\+\_\+\+DEFAULT)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_ab5f881f246ff95f2ea0bc688348e7f41}{Set\+Search\+Scale\+Range}} (double dbl\+Score=M\+\_\+\+DEFAULT)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a61478b5bad8ddd5b5a0db3547a9b8cf2}{Set\+Accptance\+Score}} (double dbl\+Score)
+\item 
+int \mbox{\hyperlink{class_c_mil_mod_finder_a8548e27c8083e11e89c6f0386d0f61bc}{Close}} (void)
+\item 
+void \mbox{\hyperlink{class_c_mil_mod_finder_a9e66a64004becf5e2d5d0cc9dee8ef32}{Get\+Image\+Size}} (CSize $\ast$p\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+MIL\+\_\+\+ID \mbox{\hyperlink{class_c_mil_mod_finder_ac0d19ee64505ba333339e4a2eb7868e7}{m\+\_\+m\+Il\+IDSystem}}
+\item 
+\mbox{\hyperlink{class_c_mil_context}{CMil\+Context}} $\ast$ \mbox{\hyperlink{class_c_mil_mod_finder_a0579dafb618a036c78b0d3e2e14cd143}{m\+\_\+p\+Mil\+Context}}
+\item 
+\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_mil_mod_finder_a0c19b9ca90039e218d92435948496f79}{m\+\_\+p\+Mil\+Buffer}}
+\item 
+\mbox{\hyperlink{class_c_mil_result}{CMil\+Result}} $\ast$ \mbox{\hyperlink{class_c_mil_mod_finder_a7363e289e7663d1879af3bfe3ab2038f}{m\+\_\+p\+Mil\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+Mil의 Model Finder관련 함수군을 Class화하였다 
+
+\begin{DoxyAuthor}{작성자}
+전병근 
+\end{DoxyAuthor}
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}\label{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}} 
+\index{CMilModFinder@{CMilModFinder}!tModTargetType@{tModTargetType}}
+\index{tModTargetType@{tModTargetType}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{tModTargetType}{tModTargetType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}{CMil\+Mod\+Finder\+::t\+Mod\+Target\+Type}}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_TARGET\_RST@{MOD\_TARGET\_RST}!CMilModFinder@{CMilModFinder}}\index{CMilModFinder@{CMilModFinder}!MOD\_TARGET\_RST@{MOD\_TARGET\_RST}}}\mbox{\Hypertarget{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa82caf603d7174b99339c26ccff0987ca}\label{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa82caf603d7174b99339c26ccff0987ca}} 
+MOD\+\_\+\+TARGET\+\_\+\+RST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_TARGET\_CXT@{MOD\_TARGET\_CXT}!CMilModFinder@{CMilModFinder}}\index{CMilModFinder@{CMilModFinder}!MOD\_TARGET\_CXT@{MOD\_TARGET\_CXT}}}\mbox{\Hypertarget{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa02baad4851c5c276667297cea50c37a8}\label{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa02baad4851c5c276667297cea50c37a8}} 
+MOD\+\_\+\+TARGET\+\_\+\+CXT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_mil_mod_finder_aaa0760251edd0c18944c267cbc3db0cd}\label{class_c_mil_mod_finder_aaa0760251edd0c18944c267cbc3db0cd}} 
+\index{CMilModFinder@{CMilModFinder}!CMilModFinder@{CMilModFinder}}
+\index{CMilModFinder@{CMilModFinder}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{CMilModFinder()}{CMilModFinder()}}
+{\footnotesize\ttfamily CMil\+Mod\+Finder\+::\+CMil\+Mod\+Finder (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a1a41eb84f70c5c676e8df13ef7762aae}\label{class_c_mil_mod_finder_a1a41eb84f70c5c676e8df13ef7762aae}} 
+\index{CMilModFinder@{CMilModFinder}!````~CMilModFinder@{$\sim$CMilModFinder}}
+\index{````~CMilModFinder@{$\sim$CMilModFinder}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMilModFinder()}{~CMilModFinder()}}
+{\footnotesize\ttfamily CMil\+Mod\+Finder\+::$\sim$\+CMil\+Mod\+Finder (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_mil_mod_finder_a1d87329c4e31a1cd559a805f760b2066}\label{class_c_mil_mod_finder_a1d87329c4e31a1cd559a805f760b2066}} 
+\index{CMilModFinder@{CMilModFinder}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Alloc()}{Alloc()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a8548e27c8083e11e89c6f0386d0f61bc}\label{class_c_mil_mod_finder_a8548e27c8083e11e89c6f0386d0f61bc}} 
+\index{CMilModFinder@{CMilModFinder}!Close@{Close}}
+\index{Close@{Close}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a9689aaafcd2b5554c83ebb767681c4d7}\label{class_c_mil_mod_finder_a9689aaafcd2b5554c83ebb767681c4d7}} 
+\index{CMilModFinder@{CMilModFinder}!Control@{Control}}
+\index{Control@{Control}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Control()}{Control()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Control (\begin{DoxyParamCaption}\item[{long}]{Index,  }\item[{long}]{Ctrl\+Type,  }\item[{double}]{Ctrl\+Value,  }\item[{\mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198a}{t\+Mod\+Target\+Type}}}]{Target = {\ttfamily \mbox{\hyperlink{class_c_mil_mod_finder_afe33b33d80a0fafcda563d5b7768198aa02baad4851c5c276667297cea50c37a8}{MOD\+\_\+\+TARGET\+\_\+\+CXT}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a320d30bd9915ffaf00cb7683b2100645}\label{class_c_mil_mod_finder_a320d30bd9915ffaf00cb7683b2100645}} 
+\index{CMilModFinder@{CMilModFinder}!Control@{Control}}
+\index{Control@{Control}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Control()}{Control()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Control (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_aadf2c1adcc75dd5714b072702b0b677b}\label{class_c_mil_mod_finder_aadf2c1adcc75dd5714b072702b0b677b}} 
+\index{CMilModFinder@{CMilModFinder}!Define@{Define}}
+\index{Define@{Define}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Define()}{Define()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Define (\begin{DoxyParamCaption}\item[{long}]{ltype,  }\item[{double}]{dbl\+Param1,  }\item[{double}]{dbl\+Param2,  }\item[{double}]{dbl\+Param3,  }\item[{double}]{dbl\+Param4,  }\item[{double}]{dbl\+Param5 }\end{DoxyParamCaption})}
+
+
+
+Mod\+Define을 그대로 캡슐화함 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a0fabb84b95fdd816ae6b5208db1b6aa5}\label{class_c_mil_mod_finder_a0fabb84b95fdd816ae6b5208db1b6aa5}} 
+\index{CMilModFinder@{CMilModFinder}!DelAllFeature@{DelAllFeature}}
+\index{DelAllFeature@{DelAllFeature}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{DelAllFeature()}{DelAllFeature()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Del\+All\+Feature (\begin{DoxyParamCaption}\item[{int}]{Index }\end{DoxyParamCaption})}
+
+
+
+Context에서 등록된 모든 모델을 지운다 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Mil\+Context사용할} & \mbox{\hyperlink{class_c_mil_context}{CMil\+Context}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_mod_finder_a4228ee2c7df80b948a32a2eb67de2c0b}\label{class_c_mil_mod_finder_a4228ee2c7df80b948a32a2eb67de2c0b}} 
+\index{CMilModFinder@{CMilModFinder}!DrawContext@{DrawContext}}
+\index{DrawContext@{DrawContext}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{DrawContext()}{DrawContext()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Draw\+Context (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a6f404000bd78911f188251f6fc90ab8b}\label{class_c_mil_mod_finder_a6f404000bd78911f188251f6fc90ab8b}} 
+\index{CMilModFinder@{CMilModFinder}!DrawResult@{DrawResult}}
+\index{DrawResult@{DrawResult}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{DrawResult()}{DrawResult()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Draw\+Result (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_af7c3bb18dc7337c60a79fa6480e009f9}\label{class_c_mil_mod_finder_af7c3bb18dc7337c60a79fa6480e009f9}} 
+\index{CMilModFinder@{CMilModFinder}!Find@{Find}}
+\index{Find@{Find}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_result}{CMil\+Result}} $\ast$}]{p\+Result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_aa0c62e732477576b749ddc9c389fdc19}\label{class_c_mil_mod_finder_aa0c62e732477576b749ddc9c389fdc19}} 
+\index{CMilModFinder@{CMilModFinder}!Find@{Find}}
+\index{Find@{Find}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt_mod_result}{t\+Mod\+Result}} $\ast$}]{p\+Result }\end{DoxyParamCaption})}
+
+
+
+Context환경을 만듦 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a618d908d6fe84c068cc5e8bf776b3289}\label{class_c_mil_mod_finder_a618d908d6fe84c068cc5e8bf776b3289}} 
+\index{CMilModFinder@{CMilModFinder}!GetDrawBoxOffset@{GetDrawBoxOffset}}
+\index{GetDrawBoxOffset@{GetDrawBoxOffset}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{GetDrawBoxOffset()}{GetDrawBoxOffset()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Get\+Draw\+Box\+Offset (\begin{DoxyParamCaption}\item[{Cdbl\+Size $\ast$}]{p\+Offset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_abac26111a46f79317b0e922981e051ba}\label{class_c_mil_mod_finder_abac26111a46f79317b0e922981e051ba}} 
+\index{CMilModFinder@{CMilModFinder}!GetFeature@{GetFeature}}
+\index{GetFeature@{GetFeature}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{GetFeature()}{GetFeature()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Get\+Feature (\begin{DoxyParamCaption}\item[{CRect}]{aoi\+Rect }\end{DoxyParamCaption})}
+
+
+
+aoi\+Rect 영역내에서 Get\+Feature를 함 ~\newline
+ Set\+Buffer으로 설정된 이미지 내에서의 aoi\+Rect을 의미함 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_afc632b16e1179bf7be0e43d80fbf99ad}\label{class_c_mil_mod_finder_afc632b16e1179bf7be0e43d80fbf99ad}} 
+\index{CMilModFinder@{CMilModFinder}!GetFeature@{GetFeature}}
+\index{GetFeature@{GetFeature}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{GetFeature()}{GetFeature()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Get\+Feature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+기 설정된 Parameter로 옵션을 설정한다. 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a9e66a64004becf5e2d5d0cc9dee8ef32}\label{class_c_mil_mod_finder_a9e66a64004becf5e2d5d0cc9dee8ef32}} 
+\index{CMilModFinder@{CMilModFinder}!GetImageSize@{GetImageSize}}
+\index{GetImageSize@{GetImageSize}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{GetImageSize()}{GetImageSize()}}
+{\footnotesize\ttfamily void CMil\+Mod\+Finder\+::\+Get\+Image\+Size (\begin{DoxyParamCaption}\item[{CSize $\ast$}]{p\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a3a293e1058b3d72f030910e2ba3b846e}\label{class_c_mil_mod_finder_a3a293e1058b3d72f030910e2ba3b846e}} 
+\index{CMilModFinder@{CMilModFinder}!PreProcess@{PreProcess}}
+\index{PreProcess@{PreProcess}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{PreProcess()}{PreProcess()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Pre\+Process (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Context환경을 만듦 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a61478b5bad8ddd5b5a0db3547a9b8cf2}\label{class_c_mil_mod_finder_a61478b5bad8ddd5b5a0db3547a9b8cf2}} 
+\index{CMilModFinder@{CMilModFinder}!SetAccptanceScore@{SetAccptanceScore}}
+\index{SetAccptanceScore@{SetAccptanceScore}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetAccptanceScore()}{SetAccptanceScore()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Accptance\+Score (\begin{DoxyParamCaption}\item[{double}]{dbl\+Score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a2a1e9b3bb9f6768767a462466fc4326d}\label{class_c_mil_mod_finder_a2a1e9b3bb9f6768767a462466fc4326d}} 
+\index{CMilModFinder@{CMilModFinder}!SetAOI@{SetAOI}}
+\index{SetAOI@{SetAOI}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetAOI()}{SetAOI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+AOI (\begin{DoxyParamCaption}\item[{CRect}]{aoi\+Rect }\end{DoxyParamCaption})}
+
+
+
+aoi\+Rect내부에서만 Mod\+Define함 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_aa33f14331bdd0b9399b6199743b96357}\label{class_c_mil_mod_finder_aa33f14331bdd0b9399b6199743b96357}} 
+\index{CMilModFinder@{CMilModFinder}!SetAOI@{SetAOI}}
+\index{SetAOI@{SetAOI}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetAOI()}{SetAOI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+AOI (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+전체버퍼영역에서 Mod\+Define함 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_aa2c512e1b89894db059d765eb0a747a8}\label{class_c_mil_mod_finder_aa2c512e1b89894db059d765eb0a747a8}} 
+\index{CMilModFinder@{CMilModFinder}!SetBuffer@{SetBuffer}}
+\index{SetBuffer@{SetBuffer}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetBuffer()}{SetBuffer()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}} $\ast$}]{p\+Image }\end{DoxyParamCaption})}
+
+
+
+Model\+Finder를 돌릴 버퍼를 설정한다 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_ab130951ed1e60fc572156b09c032970a}\label{class_c_mil_mod_finder_ab130951ed1e60fc572156b09c032970a}} 
+\index{CMilModFinder@{CMilModFinder}!SetContext@{SetContext}}
+\index{SetContext@{SetContext}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetContext()}{SetContext()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_context}{CMil\+Context}} $\ast$}]{p\+Mil\+Context }\end{DoxyParamCaption})}
+
+
+
+Context를 설정한다 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p\+Mil\+Context사용할} & \mbox{\hyperlink{class_c_mil_context}{CMil\+Context}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mil_mod_finder_ae6f2c5c72cae0955b8faf1f9bb1b1070}\label{class_c_mil_mod_finder_ae6f2c5c72cae0955b8faf1f9bb1b1070}} 
+\index{CMilModFinder@{CMilModFinder}!SetDrawOffset@{SetDrawOffset}}
+\index{SetDrawOffset@{SetDrawOffset}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetDrawOffset()}{SetDrawOffset()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Draw\+Offset (\begin{DoxyParamCaption}\item[{CSize}]{Offset = {\ttfamily CSize(M\+\_\+DEFAULT,~M\+\_\+DEFAULT)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_aefedbdfb85a85674f36cf217639b97b1}\label{class_c_mil_mod_finder_aefedbdfb85a85674f36cf217639b97b1}} 
+\index{CMilModFinder@{CMilModFinder}!SetResult@{SetResult}}
+\index{SetResult@{SetResult}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetResult()}{SetResult()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mil_result}{CMil\+Result}} $\ast$}]{p\+Result }\end{DoxyParamCaption})}
+
+
+
+결과값받을 CMil\+Result를 설정한다 
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_ad1536a71ec22114b1a54c00e0caceb93}\label{class_c_mil_mod_finder_ad1536a71ec22114b1a54c00e0caceb93}} 
+\index{CMilModFinder@{CMilModFinder}!SetSearchAngleRange@{SetSearchAngleRange}}
+\index{SetSearchAngleRange@{SetSearchAngleRange}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetSearchAngleRange()}{SetSearchAngleRange()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Search\+Angle\+Range (\begin{DoxyParamCaption}\item[{double}]{dbl\+Score = {\ttfamily M\+\_\+DEFAULT} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_ab5f881f246ff95f2ea0bc688348e7f41}\label{class_c_mil_mod_finder_ab5f881f246ff95f2ea0bc688348e7f41}} 
+\index{CMilModFinder@{CMilModFinder}!SetSearchScaleRange@{SetSearchScaleRange}}
+\index{SetSearchScaleRange@{SetSearchScaleRange}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetSearchScaleRange()}{SetSearchScaleRange()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Search\+Scale\+Range (\begin{DoxyParamCaption}\item[{double}]{dbl\+Score = {\ttfamily M\+\_\+DEFAULT} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_ae5d3f75f72961c6033a26bd13914d81e}\label{class_c_mil_mod_finder_ae5d3f75f72961c6033a26bd13914d81e}} 
+\index{CMilModFinder@{CMilModFinder}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily int CMil\+Mod\+Finder\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{long}]{l\+Speed = {\ttfamily M\+\_\+VERY\+\_\+HIGH} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_mil_mod_finder_ac0d19ee64505ba333339e4a2eb7868e7}\label{class_c_mil_mod_finder_ac0d19ee64505ba333339e4a2eb7868e7}} 
+\index{CMilModFinder@{CMilModFinder}!m\_mIlIDSystem@{m\_mIlIDSystem}}
+\index{m\_mIlIDSystem@{m\_mIlIDSystem}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{m\_mIlIDSystem}{m\_mIlIDSystem}}
+{\footnotesize\ttfamily MIL\+\_\+\+ID CMil\+Mod\+Finder\+::m\+\_\+m\+Il\+IDSystem}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a0c19b9ca90039e218d92435948496f79}\label{class_c_mil_mod_finder_a0c19b9ca90039e218d92435948496f79}} 
+\index{CMilModFinder@{CMilModFinder}!m\_pMilBuffer@{m\_pMilBuffer}}
+\index{m\_pMilBuffer@{m\_pMilBuffer}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{m\_pMilBuffer}{m\_pMilBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_buffer}{CMil\+Buffer}}$\ast$ CMil\+Mod\+Finder\+::m\+\_\+p\+Mil\+Buffer}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a0579dafb618a036c78b0d3e2e14cd143}\label{class_c_mil_mod_finder_a0579dafb618a036c78b0d3e2e14cd143}} 
+\index{CMilModFinder@{CMilModFinder}!m\_pMilContext@{m\_pMilContext}}
+\index{m\_pMilContext@{m\_pMilContext}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{m\_pMilContext}{m\_pMilContext}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_context}{CMil\+Context}}$\ast$ CMil\+Mod\+Finder\+::m\+\_\+p\+Mil\+Context}
+
+\mbox{\Hypertarget{class_c_mil_mod_finder_a7363e289e7663d1879af3bfe3ab2038f}\label{class_c_mil_mod_finder_a7363e289e7663d1879af3bfe3ab2038f}} 
+\index{CMilModFinder@{CMilModFinder}!m\_pMilResult@{m\_pMilResult}}
+\index{m\_pMilResult@{m\_pMilResult}!CMilModFinder@{CMilModFinder}}
+\doxysubsubsection{\texorpdfstring{m\_pMilResult}{m\_pMilResult}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mil_result}{CMil\+Result}}$\ast$ CMil\+Mod\+Finder\+::m\+\_\+p\+Mil\+Result}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_mod_finder_8h}{Mil\+Mod\+Finder.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Library/\+Matrox/\mbox{\hyperlink{_mil_mod_finder_8cpp}{Mil\+Mod\+Finder.\+cpp}}\end{DoxyCompactItemize}

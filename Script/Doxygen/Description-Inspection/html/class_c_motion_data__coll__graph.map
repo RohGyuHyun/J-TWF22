@@ -1,0 +1,5 @@
+<map id="CMotionData" name="CMotionData">
+<area shape="rect" id="node1" title=" " alt="" coords="99,93,197,119"/>
+<area shape="rect" id="node2" href="$struct_motion_process_status.html" title=" " alt="" coords="5,5,152,31"/>
+<area shape="rect" id="node3" href="$struct_motion_seq.html" title=" " alt="" coords="177,5,261,31"/>
+</map>

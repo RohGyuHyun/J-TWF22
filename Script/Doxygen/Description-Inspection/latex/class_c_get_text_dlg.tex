@@ -1,0 +1,590 @@
+\hypertarget{class_c_get_text_dlg}{}\doxysection{CGet\+Text\+Dlg 클래스 참조}
+\label{class_c_get_text_dlg}\index{CGetTextDlg@{CGetTextDlg}}
+
+
+{\ttfamily \#include $<$Get\+Text\+Dlg.\+h$>$}
+
+
+
+CGet\+Text\+Dlg에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{class_c_get_text_dlg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CGet\+Text\+Dlg에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_c_get_text_dlg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_c_get_text_dlg_a23cd30c57e25b06f75bf228595ed14ada0647c40069d06dcf15afbd59673db517}{IDD}} = IDD\+\_\+\+DIALOG\+\_\+\+TEXT\+\_\+\+BOX
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_get_text_dlg_a9daab83e120c0fdd2ffff2d7fd5dfd3e}{Btn\+Disable}} ()
+\item 
+CString \mbox{\hyperlink{class_c_get_text_dlg_afc9a0dfdffa94501cf38dbbe58010670}{Get\+String\+Value}} ()
+\item 
+\mbox{\hyperlink{class_c_get_text_dlg_a0381d6567166b8fc547969775372b49b}{CGet\+Text\+Dlg}} (int maxchar=20, TCHAR $\ast$getnum=\+\_\+T(\char`\"{}\char`\"{}), TCHAR $\ast$title=\+\_\+T(\char`\"{}Input the Value.\char`\"{}), CWnd $\ast$p\+Parent=NULL, BOOL pwd=FALSE, BOOL btndisable=FALSE)
+\item 
+virtual BOOL \mbox{\hyperlink{class_c_get_text_dlg_af597aa0df9695a2e4ed9e23adba08514}{Pre\+Translate\+Message}} (MSG $\ast$p\+Msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_get_text_dlg_a270a43d416d5972cb3bad1e142e785a1}{m\+\_\+s\+Disp\+Value}}
+\item 
+\mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_get_text_dlg_a4dea9b44e0c9c02040e8b6878791dee4}{m\+\_\+b\+Dot}}
+\item 
+\mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_get_text_dlg_ab4a532ae8b0e0c483745500384f91d3d}{m\+\_\+b\+Equal}}
+\item 
+\mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_get_text_dlg_a84642357cba613296073abe7f5762151}{m\+\_\+b\+Colon}}
+\item 
+\mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} \mbox{\hyperlink{class_c_get_text_dlg_a022b6fc76ecbe9c6ae5a371a8b8a8e23}{m\+\_\+b\+Won}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_get_text_dlg_a901f52e6d33eef50f6a415223da39f17}{Do\+Data\+Exchange}} (CData\+Exchange $\ast$p\+DX)
+\item 
+void \mbox{\hyperlink{class_c_get_text_dlg_aea17e5bed340555aabd738d2bdfb37da}{Init\+Static\+Disp\+Wnd}} ()
+\item 
+BOOL \mbox{\hyperlink{class_c_get_text_dlg_a9b13ff9a692db1e91c914ce106e9108e}{Verify\+Max\+Char}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ab3f9eaa5fe93c57b41b3c4195d229113}{On\+Key\+Ok}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a053abfaea987e4eed704c394b9509c0f}{On\+Key\+Esc}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ab7aaea7cf065bafb27cf703a4c38721d}{On\+Key\+Back}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a91f907fb2da8245b2a1b7d4df7f3d1e5}{On\+Key\+Clear}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_aaddec29ecebbfa0564fdc298f257876c}{On\+Key1}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a9ef6128a5431f939a8f065a14e6b362d}{On\+Key2}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a4a0cba7b93e21d690f1e70097ff2c0da}{On\+Key3}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_af8e6dd8f80e49844db86f0180a28c420}{On\+Key4}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a669197601243d2c9741898c74881a98a}{On\+Key5}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a823e0ce8e34438710a71f1b61221ef20}{On\+Key6}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a93e129d36f2242ca57c98f1aca3aff95}{On\+Key7}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ae35d6ab7c2796c489914ec0225670f94}{On\+Key8}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a7bb0a5ca5bccc2317dbe0053af02df2a}{On\+Key9}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a3b0cb98ddbc6e67b12ed04339817a167}{On\+Key0}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ab07527a8cf0dc06cb9bc7198332d9235}{On\+KeyQ}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_adb8b5fe16bf65af758b8bcd489f721fb}{On\+KeyW}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a75e5ebb362327a3f3b48dc91cc92f61d}{On\+KeyE}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ac7563124da0aaa422f12d75d50680e02}{On\+KeyR}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a68e192440fedbf6e2bb1b609a7d3af06}{On\+KeyT}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a69e7b03275cd22dda2f491fb9e846e10}{On\+KeyY}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a4461daaa59ad251ea5f05f521fae7bc0}{On\+KeyU}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a87e8697b746f82eb1125b2c5238799b0}{On\+KeyI}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ad05fb504b1b82e94037d5720c1bde4eb}{On\+KeyO}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a8dfe7cbd1c2102b750a5cf35ed5e2dd2}{On\+KeyP}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_afe20c7c646690acd78f0b8fd57b3b4ec}{On\+KeyA}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a840fea7c4aec7db270a6dd7410d79e09}{On\+KeyS}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_afcd7d622eae87ae749bc72c1bdbc0769}{On\+KeyD}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a0436220c6007cc42220cd929abb3761f}{On\+KeyF}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a6b8882e473953da25486df7196e80f9b}{On\+KeyG}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a062dd48dad265b841f049c9aae40b0e9}{On\+KeyH}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a0a51738d1528eb0f10783b5616da6a3e}{On\+KeyJ}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a0171129e8238219c04cadd5dc40b3312}{On\+KeyK}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a9f8858002bfff77cb1d81e92403d8a97}{On\+KeyL}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a646dbaf0d8da3aec3bb7b022752e5123}{On\+KeyZ}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a8040c0154307194fcdb3b917735ad2c8}{On\+KeyX}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a87f505d19f506e0af52e4a855f5e16d1}{On\+KeyC}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a367fdcd16e5ec272c109bc4d43f2c5ef}{On\+KeyV}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_aec9f2bea288181fd5206d5c95fc702a5}{On\+KeyB}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a6a58e33a5feaf851c766972f0cf063dd}{On\+KeyN}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a7778c13213fb8297169917b3fb3f5e67}{On\+KeyM}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ad27c689f170d499fa682f8f6417f97d7}{On\+Key\+Equal}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ab39da587451b8e56887e604c378b5630}{On\+Key\+Won}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_aa3d2f7b384189b4b5d485a10ed6e4650}{On\+Key\+Colon}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_ac149d4d378bb07d5a1fc85355a46e593}{On\+Key\+Dot}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_aa0d18e3b094d3ffd7638829f3100a164}{On\+Key\+Dash}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a486ce0484265e10f13407cd335628362}{On\+Key\+Under\+Bar}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_get_text_dlg_a797eb4a9d877c4ccc1a27d51f45941c8}{On\+Paint}} ()
+\item 
+virtual BOOL \mbox{\hyperlink{class_c_get_text_dlg_a4826b35ebcb6872d8f0b6c3ce79ce493}{On\+Init\+Dialog}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{class_c_get_text_dlg_ae8cafd72b13f7a229f5571f34158be0a}{m\+\_\+bpwd}}
+\item 
+BOOL \mbox{\hyperlink{class_c_get_text_dlg_a141ef4bd14f1214bac256c1d4090df6e}{m\+\_\+bbtndisable}}
+\item 
+int \mbox{\hyperlink{class_c_get_text_dlg_a0461443a56c937e2468aecec6e51febe}{m\+\_\+int\+Max\+Char}}
+\item 
+CString \mbox{\hyperlink{class_c_get_text_dlg_adcdcaa8771c14c758fb5cffbf50fbafd}{m\+\_\+str\+Get\+Val}}
+\item 
+CString \mbox{\hyperlink{class_c_get_text_dlg_a119304699db2b571d8a07574b85c5da2}{m\+\_\+str\+Wnd\+Text}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_c_get_text_dlg_a23cd30c57e25b06f75bf228595ed14ad}\label{class_c_get_text_dlg_a23cd30c57e25b06f75bf228595ed14ad}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDD@{IDD}!CGetTextDlg@{CGetTextDlg}}\index{CGetTextDlg@{CGetTextDlg}!IDD@{IDD}}}\mbox{\Hypertarget{class_c_get_text_dlg_a23cd30c57e25b06f75bf228595ed14ada0647c40069d06dcf15afbd59673db517}\label{class_c_get_text_dlg_a23cd30c57e25b06f75bf228595ed14ada0647c40069d06dcf15afbd59673db517}} 
+IDD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_c_get_text_dlg_a0381d6567166b8fc547969775372b49b}\label{class_c_get_text_dlg_a0381d6567166b8fc547969775372b49b}} 
+\index{CGetTextDlg@{CGetTextDlg}!CGetTextDlg@{CGetTextDlg}}
+\index{CGetTextDlg@{CGetTextDlg}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{CGetTextDlg()}{CGetTextDlg()}}
+{\footnotesize\ttfamily CGet\+Text\+Dlg\+::\+CGet\+Text\+Dlg (\begin{DoxyParamCaption}\item[{int}]{maxchar = {\ttfamily 20},  }\item[{TCHAR $\ast$}]{getnum = {\ttfamily \+\_\+T(\char`\"{}\char`\"{})},  }\item[{TCHAR $\ast$}]{title = {\ttfamily \+\_\+T(\char`\"{}Input~the~Value.\char`\"{})},  }\item[{CWnd $\ast$}]{p\+Parent = {\ttfamily NULL},  }\item[{BOOL}]{pwd = {\ttfamily FALSE},  }\item[{BOOL}]{btndisable = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_get_text_dlg_a9daab83e120c0fdd2ffff2d7fd5dfd3e}\label{class_c_get_text_dlg_a9daab83e120c0fdd2ffff2d7fd5dfd3e}} 
+\index{CGetTextDlg@{CGetTextDlg}!BtnDisable@{BtnDisable}}
+\index{BtnDisable@{BtnDisable}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{BtnDisable()}{BtnDisable()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+Btn\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a901f52e6d33eef50f6a415223da39f17}\label{class_c_get_text_dlg_a901f52e6d33eef50f6a415223da39f17}} 
+\index{CGetTextDlg@{CGetTextDlg}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{DoDataExchange()}{DoDataExchange()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+Do\+Data\+Exchange (\begin{DoxyParamCaption}\item[{CData\+Exchange $\ast$}]{p\+DX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_afc9a0dfdffa94501cf38dbbe58010670}\label{class_c_get_text_dlg_afc9a0dfdffa94501cf38dbbe58010670}} 
+\index{CGetTextDlg@{CGetTextDlg}!GetStringValue@{GetStringValue}}
+\index{GetStringValue@{GetStringValue}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{GetStringValue()}{GetStringValue()}}
+{\footnotesize\ttfamily CString CGet\+Text\+Dlg\+::\+Get\+String\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_aea17e5bed340555aabd738d2bdfb37da}\label{class_c_get_text_dlg_aea17e5bed340555aabd738d2bdfb37da}} 
+\index{CGetTextDlg@{CGetTextDlg}!InitStaticDispWnd@{InitStaticDispWnd}}
+\index{InitStaticDispWnd@{InitStaticDispWnd}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{InitStaticDispWnd()}{InitStaticDispWnd()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+Init\+Static\+Disp\+Wnd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a4826b35ebcb6872d8f0b6c3ce79ce493}\label{class_c_get_text_dlg_a4826b35ebcb6872d8f0b6c3ce79ce493}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnInitDialog()}{OnInitDialog()}}
+{\footnotesize\ttfamily BOOL CGet\+Text\+Dlg\+::\+On\+Init\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a3b0cb98ddbc6e67b12ed04339817a167}\label{class_c_get_text_dlg_a3b0cb98ddbc6e67b12ed04339817a167}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey0@{OnKey0}}
+\index{OnKey0@{OnKey0}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey0()}{OnKey0()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_aaddec29ecebbfa0564fdc298f257876c}\label{class_c_get_text_dlg_aaddec29ecebbfa0564fdc298f257876c}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey1@{OnKey1}}
+\index{OnKey1@{OnKey1}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey1()}{OnKey1()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a9ef6128a5431f939a8f065a14e6b362d}\label{class_c_get_text_dlg_a9ef6128a5431f939a8f065a14e6b362d}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey2@{OnKey2}}
+\index{OnKey2@{OnKey2}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey2()}{OnKey2()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a4a0cba7b93e21d690f1e70097ff2c0da}\label{class_c_get_text_dlg_a4a0cba7b93e21d690f1e70097ff2c0da}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey3@{OnKey3}}
+\index{OnKey3@{OnKey3}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey3()}{OnKey3()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_af8e6dd8f80e49844db86f0180a28c420}\label{class_c_get_text_dlg_af8e6dd8f80e49844db86f0180a28c420}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey4@{OnKey4}}
+\index{OnKey4@{OnKey4}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey4()}{OnKey4()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a669197601243d2c9741898c74881a98a}\label{class_c_get_text_dlg_a669197601243d2c9741898c74881a98a}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey5@{OnKey5}}
+\index{OnKey5@{OnKey5}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey5()}{OnKey5()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key5 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a823e0ce8e34438710a71f1b61221ef20}\label{class_c_get_text_dlg_a823e0ce8e34438710a71f1b61221ef20}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey6@{OnKey6}}
+\index{OnKey6@{OnKey6}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey6()}{OnKey6()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key6 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a93e129d36f2242ca57c98f1aca3aff95}\label{class_c_get_text_dlg_a93e129d36f2242ca57c98f1aca3aff95}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey7@{OnKey7}}
+\index{OnKey7@{OnKey7}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey7()}{OnKey7()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key7 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ae35d6ab7c2796c489914ec0225670f94}\label{class_c_get_text_dlg_ae35d6ab7c2796c489914ec0225670f94}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey8@{OnKey8}}
+\index{OnKey8@{OnKey8}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey8()}{OnKey8()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a7bb0a5ca5bccc2317dbe0053af02df2a}\label{class_c_get_text_dlg_a7bb0a5ca5bccc2317dbe0053af02df2a}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKey9@{OnKey9}}
+\index{OnKey9@{OnKey9}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKey9()}{OnKey9()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key9 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_afe20c7c646690acd78f0b8fd57b3b4ec}\label{class_c_get_text_dlg_afe20c7c646690acd78f0b8fd57b3b4ec}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyA@{OnKeyA}}
+\index{OnKeyA@{OnKeyA}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyA()}{OnKeyA()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_aec9f2bea288181fd5206d5c95fc702a5}\label{class_c_get_text_dlg_aec9f2bea288181fd5206d5c95fc702a5}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyB@{OnKeyB}}
+\index{OnKeyB@{OnKeyB}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyB()}{OnKeyB()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ab7aaea7cf065bafb27cf703a4c38721d}\label{class_c_get_text_dlg_ab7aaea7cf065bafb27cf703a4c38721d}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyBack@{OnKeyBack}}
+\index{OnKeyBack@{OnKeyBack}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyBack()}{OnKeyBack()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a87f505d19f506e0af52e4a855f5e16d1}\label{class_c_get_text_dlg_a87f505d19f506e0af52e4a855f5e16d1}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyC@{OnKeyC}}
+\index{OnKeyC@{OnKeyC}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyC()}{OnKeyC()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a91f907fb2da8245b2a1b7d4df7f3d1e5}\label{class_c_get_text_dlg_a91f907fb2da8245b2a1b7d4df7f3d1e5}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyClear@{OnKeyClear}}
+\index{OnKeyClear@{OnKeyClear}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyClear()}{OnKeyClear()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_aa3d2f7b384189b4b5d485a10ed6e4650}\label{class_c_get_text_dlg_aa3d2f7b384189b4b5d485a10ed6e4650}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyColon@{OnKeyColon}}
+\index{OnKeyColon@{OnKeyColon}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyColon()}{OnKeyColon()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Colon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_afcd7d622eae87ae749bc72c1bdbc0769}\label{class_c_get_text_dlg_afcd7d622eae87ae749bc72c1bdbc0769}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyD@{OnKeyD}}
+\index{OnKeyD@{OnKeyD}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyD()}{OnKeyD()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_aa0d18e3b094d3ffd7638829f3100a164}\label{class_c_get_text_dlg_aa0d18e3b094d3ffd7638829f3100a164}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyDash@{OnKeyDash}}
+\index{OnKeyDash@{OnKeyDash}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyDash()}{OnKeyDash()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Dash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ac149d4d378bb07d5a1fc85355a46e593}\label{class_c_get_text_dlg_ac149d4d378bb07d5a1fc85355a46e593}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyDot@{OnKeyDot}}
+\index{OnKeyDot@{OnKeyDot}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyDot()}{OnKeyDot()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Dot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a75e5ebb362327a3f3b48dc91cc92f61d}\label{class_c_get_text_dlg_a75e5ebb362327a3f3b48dc91cc92f61d}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyE@{OnKeyE}}
+\index{OnKeyE@{OnKeyE}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyE()}{OnKeyE()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ad27c689f170d499fa682f8f6417f97d7}\label{class_c_get_text_dlg_ad27c689f170d499fa682f8f6417f97d7}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyEqual@{OnKeyEqual}}
+\index{OnKeyEqual@{OnKeyEqual}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyEqual()}{OnKeyEqual()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Equal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a053abfaea987e4eed704c394b9509c0f}\label{class_c_get_text_dlg_a053abfaea987e4eed704c394b9509c0f}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyEsc@{OnKeyEsc}}
+\index{OnKeyEsc@{OnKeyEsc}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyEsc()}{OnKeyEsc()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Esc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a0436220c6007cc42220cd929abb3761f}\label{class_c_get_text_dlg_a0436220c6007cc42220cd929abb3761f}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyF@{OnKeyF}}
+\index{OnKeyF@{OnKeyF}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyF()}{OnKeyF()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a6b8882e473953da25486df7196e80f9b}\label{class_c_get_text_dlg_a6b8882e473953da25486df7196e80f9b}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyG@{OnKeyG}}
+\index{OnKeyG@{OnKeyG}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyG()}{OnKeyG()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a062dd48dad265b841f049c9aae40b0e9}\label{class_c_get_text_dlg_a062dd48dad265b841f049c9aae40b0e9}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyH@{OnKeyH}}
+\index{OnKeyH@{OnKeyH}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyH()}{OnKeyH()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a87e8697b746f82eb1125b2c5238799b0}\label{class_c_get_text_dlg_a87e8697b746f82eb1125b2c5238799b0}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyI@{OnKeyI}}
+\index{OnKeyI@{OnKeyI}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyI()}{OnKeyI()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a0a51738d1528eb0f10783b5616da6a3e}\label{class_c_get_text_dlg_a0a51738d1528eb0f10783b5616da6a3e}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyJ@{OnKeyJ}}
+\index{OnKeyJ@{OnKeyJ}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyJ()}{OnKeyJ()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a0171129e8238219c04cadd5dc40b3312}\label{class_c_get_text_dlg_a0171129e8238219c04cadd5dc40b3312}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyK@{OnKeyK}}
+\index{OnKeyK@{OnKeyK}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyK()}{OnKeyK()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a9f8858002bfff77cb1d81e92403d8a97}\label{class_c_get_text_dlg_a9f8858002bfff77cb1d81e92403d8a97}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyL@{OnKeyL}}
+\index{OnKeyL@{OnKeyL}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyL()}{OnKeyL()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a7778c13213fb8297169917b3fb3f5e67}\label{class_c_get_text_dlg_a7778c13213fb8297169917b3fb3f5e67}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyM@{OnKeyM}}
+\index{OnKeyM@{OnKeyM}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyM()}{OnKeyM()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a6a58e33a5feaf851c766972f0cf063dd}\label{class_c_get_text_dlg_a6a58e33a5feaf851c766972f0cf063dd}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyN@{OnKeyN}}
+\index{OnKeyN@{OnKeyN}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyN()}{OnKeyN()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ad05fb504b1b82e94037d5720c1bde4eb}\label{class_c_get_text_dlg_ad05fb504b1b82e94037d5720c1bde4eb}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyO@{OnKeyO}}
+\index{OnKeyO@{OnKeyO}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyO()}{OnKeyO()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ab3f9eaa5fe93c57b41b3c4195d229113}\label{class_c_get_text_dlg_ab3f9eaa5fe93c57b41b3c4195d229113}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyOk@{OnKeyOk}}
+\index{OnKeyOk@{OnKeyOk}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyOk()}{OnKeyOk()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a8dfe7cbd1c2102b750a5cf35ed5e2dd2}\label{class_c_get_text_dlg_a8dfe7cbd1c2102b750a5cf35ed5e2dd2}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyP@{OnKeyP}}
+\index{OnKeyP@{OnKeyP}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyP()}{OnKeyP()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ab07527a8cf0dc06cb9bc7198332d9235}\label{class_c_get_text_dlg_ab07527a8cf0dc06cb9bc7198332d9235}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyQ@{OnKeyQ}}
+\index{OnKeyQ@{OnKeyQ}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyQ()}{OnKeyQ()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyQ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ac7563124da0aaa422f12d75d50680e02}\label{class_c_get_text_dlg_ac7563124da0aaa422f12d75d50680e02}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyR@{OnKeyR}}
+\index{OnKeyR@{OnKeyR}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyR()}{OnKeyR()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a840fea7c4aec7db270a6dd7410d79e09}\label{class_c_get_text_dlg_a840fea7c4aec7db270a6dd7410d79e09}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyS@{OnKeyS}}
+\index{OnKeyS@{OnKeyS}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyS()}{OnKeyS()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a68e192440fedbf6e2bb1b609a7d3af06}\label{class_c_get_text_dlg_a68e192440fedbf6e2bb1b609a7d3af06}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyT@{OnKeyT}}
+\index{OnKeyT@{OnKeyT}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyT()}{OnKeyT()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a4461daaa59ad251ea5f05f521fae7bc0}\label{class_c_get_text_dlg_a4461daaa59ad251ea5f05f521fae7bc0}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyU@{OnKeyU}}
+\index{OnKeyU@{OnKeyU}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyU()}{OnKeyU()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a486ce0484265e10f13407cd335628362}\label{class_c_get_text_dlg_a486ce0484265e10f13407cd335628362}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyUnderBar@{OnKeyUnderBar}}
+\index{OnKeyUnderBar@{OnKeyUnderBar}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyUnderBar()}{OnKeyUnderBar()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Under\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a367fdcd16e5ec272c109bc4d43f2c5ef}\label{class_c_get_text_dlg_a367fdcd16e5ec272c109bc4d43f2c5ef}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyV@{OnKeyV}}
+\index{OnKeyV@{OnKeyV}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyV()}{OnKeyV()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_adb8b5fe16bf65af758b8bcd489f721fb}\label{class_c_get_text_dlg_adb8b5fe16bf65af758b8bcd489f721fb}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyW@{OnKeyW}}
+\index{OnKeyW@{OnKeyW}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyW()}{OnKeyW()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ab39da587451b8e56887e604c378b5630}\label{class_c_get_text_dlg_ab39da587451b8e56887e604c378b5630}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyWon@{OnKeyWon}}
+\index{OnKeyWon@{OnKeyWon}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyWon()}{OnKeyWon()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Key\+Won (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a8040c0154307194fcdb3b917735ad2c8}\label{class_c_get_text_dlg_a8040c0154307194fcdb3b917735ad2c8}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyX@{OnKeyX}}
+\index{OnKeyX@{OnKeyX}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyX()}{OnKeyX()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a69e7b03275cd22dda2f491fb9e846e10}\label{class_c_get_text_dlg_a69e7b03275cd22dda2f491fb9e846e10}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyY@{OnKeyY}}
+\index{OnKeyY@{OnKeyY}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyY()}{OnKeyY()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a646dbaf0d8da3aec3bb7b022752e5123}\label{class_c_get_text_dlg_a646dbaf0d8da3aec3bb7b022752e5123}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnKeyZ@{OnKeyZ}}
+\index{OnKeyZ@{OnKeyZ}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnKeyZ()}{OnKeyZ()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+KeyZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a797eb4a9d877c4ccc1a27d51f45941c8}\label{class_c_get_text_dlg_a797eb4a9d877c4ccc1a27d51f45941c8}} 
+\index{CGetTextDlg@{CGetTextDlg}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily void CGet\+Text\+Dlg\+::\+On\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_af597aa0df9695a2e4ed9e23adba08514}\label{class_c_get_text_dlg_af597aa0df9695a2e4ed9e23adba08514}} 
+\index{CGetTextDlg@{CGetTextDlg}!PreTranslateMessage@{PreTranslateMessage}}
+\index{PreTranslateMessage@{PreTranslateMessage}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{PreTranslateMessage()}{PreTranslateMessage()}}
+{\footnotesize\ttfamily BOOL CGet\+Text\+Dlg\+::\+Pre\+Translate\+Message (\begin{DoxyParamCaption}\item[{MSG $\ast$}]{p\+Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a9b13ff9a692db1e91c914ce106e9108e}\label{class_c_get_text_dlg_a9b13ff9a692db1e91c914ce106e9108e}} 
+\index{CGetTextDlg@{CGetTextDlg}!VerifyMaxChar@{VerifyMaxChar}}
+\index{VerifyMaxChar@{VerifyMaxChar}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{VerifyMaxChar()}{VerifyMaxChar()}}
+{\footnotesize\ttfamily BOOL CGet\+Text\+Dlg\+::\+Verify\+Max\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_get_text_dlg_a141ef4bd14f1214bac256c1d4090df6e}\label{class_c_get_text_dlg_a141ef4bd14f1214bac256c1d4090df6e}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_bbtndisable@{m\_bbtndisable}}
+\index{m\_bbtndisable@{m\_bbtndisable}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_bbtndisable}{m\_bbtndisable}}
+{\footnotesize\ttfamily BOOL CGet\+Text\+Dlg\+::m\+\_\+bbtndisable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a84642357cba613296073abe7f5762151}\label{class_c_get_text_dlg_a84642357cba613296073abe7f5762151}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_bColon@{m\_bColon}}
+\index{m\_bColon@{m\_bColon}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_bColon}{m\_bColon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} CGet\+Text\+Dlg\+::m\+\_\+b\+Colon}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a4dea9b44e0c9c02040e8b6878791dee4}\label{class_c_get_text_dlg_a4dea9b44e0c9c02040e8b6878791dee4}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_bDot@{m\_bDot}}
+\index{m\_bDot@{m\_bDot}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_bDot}{m\_bDot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} CGet\+Text\+Dlg\+::m\+\_\+b\+Dot}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ab4a532ae8b0e0c483745500384f91d3d}\label{class_c_get_text_dlg_ab4a532ae8b0e0c483745500384f91d3d}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_bEqual@{m\_bEqual}}
+\index{m\_bEqual@{m\_bEqual}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_bEqual}{m\_bEqual}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} CGet\+Text\+Dlg\+::m\+\_\+b\+Equal}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_ae8cafd72b13f7a229f5571f34158be0a}\label{class_c_get_text_dlg_ae8cafd72b13f7a229f5571f34158be0a}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_bpwd@{m\_bpwd}}
+\index{m\_bpwd@{m\_bpwd}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_bpwd}{m\_bpwd}}
+{\footnotesize\ttfamily BOOL CGet\+Text\+Dlg\+::m\+\_\+bpwd\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a022b6fc76ecbe9c6ae5a371a8b8a8e23}\label{class_c_get_text_dlg_a022b6fc76ecbe9c6ae5a371a8b8a8e23}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_bWon@{m\_bWon}}
+\index{m\_bWon@{m\_bWon}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_bWon}{m\_bWon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} CGet\+Text\+Dlg\+::m\+\_\+b\+Won}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a0461443a56c937e2468aecec6e51febe}\label{class_c_get_text_dlg_a0461443a56c937e2468aecec6e51febe}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_intMaxChar@{m\_intMaxChar}}
+\index{m\_intMaxChar@{m\_intMaxChar}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_intMaxChar}{m\_intMaxChar}}
+{\footnotesize\ttfamily int CGet\+Text\+Dlg\+::m\+\_\+int\+Max\+Char\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a270a43d416d5972cb3bad1e142e785a1}\label{class_c_get_text_dlg_a270a43d416d5972cb3bad1e142e785a1}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_sDispValue@{m\_sDispValue}}
+\index{m\_sDispValue@{m\_sDispValue}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_sDispValue}{m\_sDispValue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_btnenhctrl}{CBtnenhctrl}} CGet\+Text\+Dlg\+::m\+\_\+s\+Disp\+Value}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_adcdcaa8771c14c758fb5cffbf50fbafd}\label{class_c_get_text_dlg_adcdcaa8771c14c758fb5cffbf50fbafd}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_strGetVal@{m\_strGetVal}}
+\index{m\_strGetVal@{m\_strGetVal}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_strGetVal}{m\_strGetVal}}
+{\footnotesize\ttfamily CString CGet\+Text\+Dlg\+::m\+\_\+str\+Get\+Val\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_get_text_dlg_a119304699db2b571d8a07574b85c5da2}\label{class_c_get_text_dlg_a119304699db2b571d8a07574b85c5da2}} 
+\index{CGetTextDlg@{CGetTextDlg}!m\_strWndText@{m\_strWndText}}
+\index{m\_strWndText@{m\_strWndText}!CGetTextDlg@{CGetTextDlg}}
+\doxysubsubsection{\texorpdfstring{m\_strWndText}{m\_strWndText}}
+{\footnotesize\ttfamily CString CGet\+Text\+Dlg\+::m\+\_\+str\+Wnd\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_get_text_dlg_8h}{Get\+Text\+Dlg.\+h}}\item 
+D\+:/\+One\+Drive/ngh/\+J-\/\+TWF22/\+Project/\+Inspection/include/\mbox{\hyperlink{_get_text_dlg_8cpp}{Get\+Text\+Dlg.\+cpp}}\end{DoxyCompactItemize}
